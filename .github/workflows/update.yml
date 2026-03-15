@@ -26,7 +26,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 cloudscraper
+          pip install playwright beautifulsoup4
+          playwright install chromium
 
       - name: Run script
         run: python crawl_thiendinh.py
