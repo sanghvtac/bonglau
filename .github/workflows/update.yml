@@ -31,15 +31,15 @@ jobs:
       - name: Run script
         run: python crawl_thiendinh.py
 
-     - name: Commit and Push results
+      - name: Commit and Push results
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Lệnh này sẽ tự động add tất cả file mới phát sinh (json và txt)
-          git add *.json *.txt || echo "Không tìm thấy file kết quả"
+          # Chỉ add các file kết quả, nếu file chưa tồn tại git sẽ tự tạo
+          git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
           
-          # Kiểm tra nếu có thay đổi thì mới commit
+          # Kiểm tra xem có thay đổi không trước khi commit
           if git diff --staged --quiet; then
             echo "Không có thay đổi nào để cập nhật."
           else
