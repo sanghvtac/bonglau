@@ -2,11 +2,9 @@ name: Crawl ThienDinh
 
 on:
   schedule:
-    - cron: '0 * * * *' # Chạy mỗi 1 giờ
-  workflow_dispatch: # Chạy thủ công
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
+    # Chạy mỗi giờ từ 17h chiều đến 5h sáng hôm sau
+    - cron: '0 17-23,0-5 * * *' 
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,16 +15,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Lấy toàn bộ lịch sử để tránh lỗi 128 khi push
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # CẤU HÌNH CACHE CHO PLAYWRIGHT
+      - name: Get Playwright cache path
+        id: playwright-cache
+        run: echo "path=~/.cache/ms-playwright" >> $GITHUB_OUTPUT
+
+      - name: Cache Playwright
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.playwright-cache.outputs.path }}
+          key: ${{ runner.os }}-playwright-1.40.0
+
       - name: Install dependencies
         run: |
           pip install playwright beautifulsoup4
+          # Chỉ cài lại trình duyệt nếu cache bị hỏng/thiếu
           playwright install chromium
 
       - name: Run script
@@ -36,14 +46,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
-          # Chỉ add các file kết quả, nếu file chưa tồn tại git sẽ tự tạo
           git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
-          
-          # Kiểm tra xem có thay đổi không trước khi commit
           if git diff --staged --quiet; then
-            echo "Không có thay đổi nào để cập nhật."
+            echo "Không có thay đổi."
           else
-            git commit -m "Auto-update stream links $(date)"
+            git commit -m "Auto-update $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin main
           fi
