@@ -3,30 +3,33 @@ name: Crawl ThienDinh
 on:
   schedule:
     - cron: '0 * * * *' # Chạy mỗi 1 giờ
-  workflow_dispatch: # Cho phép bạn bấm nút chạy thủ công
+  workflow_dispatch: # Nút chạy thủ công
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Cấp quyền ghi trực tiếp trong file cấu hình
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Cập nhật lên v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Cập nhật lên v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 cloudscraper
+        run: |
+          pip install requests beautifulsoup4 cloudscraper
 
       - name: Run script
         run: python crawl_thiendinh.py
 
-      - name: Commit results
+      - name: Commit and Push results
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add .
-          git commit -m "Auto-update stream links"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
+          git commit -m "Auto-update stream links" || echo "No changes to commit"
           git push
