@@ -1,8 +1,6 @@
 import json
-import re
 import asyncio
 from playwright.async_api import async_playwright
-from bs4 import BeautifulSoup
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 
@@ -10,50 +8,48 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
-        
-        # Vẫn chặn ảnh/media để nhanh, nhưng để lại file script/XHR
-        await page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "font"] else route.continue_())
-        
+
+        # DANH SÁCH LƯU TRỮ
+        match_data = []
+
+        # HÀM LẮNG NGHE LINK M3U8
+        m3u8_links = []
+        def intercept_response(response):
+            if ".m3u8" in response.url:
+                m3u8_links.append(response.url)
+
         print(f"--- Đang mở: {TARGET_URL} ---")
         await page.goto(TARGET_URL, wait_until="domcontentloaded")
+        await asyncio.sleep(5)
         
-        # MẸO QUAN TRỌNG: Đợi thêm 5 giây để Javascript tải dữ liệu trận đấu
-        await asyncio.sleep(5) 
+        # Lấy danh sách trận
+        links = await page.eval_on_selector_all("a[href*='/xem-truc-tiep/']", "elements => elements.map(e => ({url: e.href, name: e.innerText}))")
         
-        content = await page.content()
-        soup = BeautifulSoup(content, 'html.parser')
-        
-        # Quét rộng hơn: tìm tất cả các thẻ có class liên quan đến trận đấu
-        # Nếu web dùng dynamic loading, đôi khi dữ liệu nằm trong các thẻ div có class cụ thể
-        elements = soup.find_all('a', href=re.compile(r'/xem-truc-tiep/'))
-        
-        match_data = []
-        for el in elements:
-            url = "https://sv1.thiendinh.live" + el['href'] if el['href'].startswith('/') else el['href']
-            name = el.get_text(" ", strip=True)
-            if not any(d['url'] == url for d in match_data):
-                match_data.append({"url": url, "name": name, "stream_url": ""})
-        
-        print(f"--- Tìm thấy {len(match_data)} trận. Đang lấy link stream... ---")
-        
-        # ... (Phần lấy stream_url giữ nguyên như cũ)
-        for item in match_data:
-            if "LIVE" in item['name'].upper() or "TRỰC TIẾP" in item['name'].upper():
-                try:
-                    await page.goto(item['url'], wait_until="domcontentloaded", timeout=15000)
-                    await asyncio.sleep(2) # Đợi trang chi tiết render
-                    detail_content = await page.content()
-                    links = re.findall(r'https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*', detail_content)
-                    if links:
-                        item['stream_url'] = max(links, key=len)
-                        print(f" ✅ {item['name']}: OK")
-                except Exception as e:
-                    print(f" ⚠️ Lỗi load {item['name']}: {e}")
+        for item in links:
+            print(f"-> Đang kiểm tra: {item['name']}")
+            m3u8_links.clear()
+            page.on("response", intercept_response)
+            
+            try:
+                await page.goto(item['url'], wait_until="domcontentloaded", timeout=15000)
+                await asyncio.sleep(5) # Đợi link stream được gửi về
+                stream = max(m3u8_links, key=len) if m3u8_links else ""
+                match_data.append({"url": item['url'], "name": item['name'].strip(), "stream_url": stream})
+            except:
+                match_data.append({"url": item['url'], "name": item['name'].strip(), "stream_url": ""})
+            
+            page.remove_listener("response", intercept_response)
 
-        # ... (Phần xuất file giữ nguyên như cũ)
+        # XUẤT FILE
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(match_data, f, ensure_ascii=False, indent=4)
         
+        with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for ch in match_data:
+                if ch['stream_url']:
+                    f.write(f'#EXTINF:-1,{ch["name"]}\n{ch["stream_url"]}\n')
+                    
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
