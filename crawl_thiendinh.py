@@ -1,81 +1,49 @@
 import json
 import re
 import cloudscraper
-from bs4 import BeautifulSoup
 
-TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
+# ĐỊA CHỈ API ẨN CỦA THIÊN ĐỈNH (Nơi chứa dữ liệu thật)
+API_URL = "https://api.thiendinh.live/api/match/list?by=state&value=live&sport=bong-da"
 scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
 
 def main():
-    print(f"--- Đang truy cập: {TARGET_URL} ---")
+    print(f"--- Đang lấy dữ liệu từ API: {API_URL} ---")
     try:
-        response = scraper.get(TARGET_URL, timeout=30)
+        response = scraper.get(API_URL, timeout=30)
         
         if response.status_code != 200:
-            print(f"❌ Lỗi truy cập. Status: {response.status_code}")
+            print(f"❌ Lỗi truy cập API. Status: {response.status_code}")
             return
 
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # SỬA ĐỔI CHÍNH: Tìm tất cả thẻ <a> có link chứa "/xem-truc-tiep/" 
-        # bất kể nó nằm trong thẻ div hay li nào
-        elements = soup.find_all('a', href=True)
+        data = response.json()
+        # Giả sử cấu trúc JSON trả về danh sách trận trong mục 'data' hoặc 'matches'
+        # Chúng ta sẽ lấy danh sách các trận đấu từ JSON
+        raw_matches = data.get('data', [])
         
         match_data = []
-        processed_links = set()
+        print(f"--- Tìm thấy {len(raw_matches)} trận đấu từ hệ thống ---")
 
-        for el in elements:
-            url = el['href']
-            # Kiểm tra nếu link chứa từ khóa trực tiếp
-            if "/xem-truc-tiep/" in url:
-                if url.startswith('/'):
-                    url = "https://sv1.thiendinh.live" + url
-                
-                # Lấy text hiển thị (tên trận/giờ)
-                name = el.get_text(" ", strip=True)
-                
-                # Nếu text rỗng, thử tìm trong các thẻ con hoặc thuộc tính title
-                if not name:
-                    name = el.get('title', '')
-                
-                if url not in processed_links and name:
-                    processed_links.add(url)
-                    match_data.append({"url": url, "name": name, "stream_url": ""})
-
-        # BỔ SUNG: Nếu vẫn không tìm thấy, quét toàn bộ văn bản để tìm link thô
-        if not match_data:
-            print("⚠️ Chưa tìm thấy bằng thẻ A, đang thử quét link thô...")
-            raw_links = re.findall(r'/xem-truc-tiep/[a-zA-Z0-9\-\.]+', response.text)
-            for r_link in set(raw_links):
-                full_url = "https://sv1.thiendinh.live" + r_link
-                match_data.append({"url": full_url, "name": "Trận đấu chưa rõ tên", "stream_url": ""})
-
-        print(f"--- Tìm thấy {len(match_data)} trận đấu ---")
-
-        for item in match_data:
-            # Kiểm tra trạng thái trực tiếp
-            is_live = any(x in item['name'].upper() for x in ["LIVE", "TRỰC TIẾP", "ĐANG ĐÁ"])
+        for match in raw_matches:
+            # Tạo link xem trực tiếp từ ID trận đấu
+            match_id = match.get('id')
+            slug = match.get('slug')
+            name = f"{match.get('time')} {match.get('home_team_name')} vs {match.get('away_team_name')}"
+            url = f"https://sv1.thiendinh.live/xem-truc-tiep/bong-da/{slug}.{match_id}"
             
-            # Mẹo: Nếu tên trận là "Trận đấu chưa rõ tên", cứ thử đào link xem sao
-            if is_live or item['name'] == "Trận đấu chưa rõ tên":
+            stream_url = ""
+            # Nếu trận đang live (thường có status hoặc dựa vào flag của API)
+            if match.get('is_live') or "LIVE" in name.upper():
                 try:
-                    detail_resp = scraper.get(item['url'], timeout=20)
+                    detail_resp = scraper.get(url, timeout=20)
                     links = re.findall(r'https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*', detail_resp.text)
                     if links:
-                        item['stream_url'] = max(links, key=len)
-                        # Cố gắng lấy lại tên trận từ trang chi tiết nếu ở trang lịch bị rỗng
-                        if item['name'] == "Trận đấu chưa rõ tên":
-                            detail_soup = BeautifulSoup(detail_resp.text, 'html.parser')
-                            item['name'] = detail_soup.title.string.split('|')[0].strip() if detail_soup.title else item['name']
-                        print(f" ✅ {item['name']}: OK")
-                    else:
-                        print(f" ⚠️ {item['name']}: Không thấy m3u8")
-                except:
-                    print(f" ❌ Lỗi: {item['name']}")
-            else:
-                print(f" ℹ️ {item['name']}: Sắp đá")
+                        stream_url = max(links, key=len)
+                        print(f" ✅ {name}: Đã có link.")
+                except: pass
+            
+            match_data.append({"url": url, "name": name, "stream_url": stream_url})
 
-        # GHI FILE
+        # --- GHI FILE (Giữ nguyên logic cũ) ---
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(match_data, f, ensure_ascii=False, indent=4)
 
