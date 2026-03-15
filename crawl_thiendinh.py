@@ -3,7 +3,7 @@ import re
 import cloudscraper
 from bs4 import BeautifulSoup
 
-# Đường dẫn trang lịch thi đấu bạn yêu cầu
+# Đường dẫn trang lịch thi đấu
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 scraper = cloudscraper.create_scraper()
 
@@ -36,32 +36,30 @@ def main():
             if "LIVE" in name_upper or "TRỰC TIẾP" in name_upper:
                 try:
                     detail_resp = scraper.get(item['url'])
-                    # Tìm link m3u8 dài (có token) bằng Regex
+                    # Tìm link m3u8 dài nhất (chứa token)
                     links = re.findall(r'https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*', detail_resp.text)
                     if links:
-                        # Ưu tiên lấy link dài nhất (thường chứa token wsSession)
                         item['stream_url'] = max(links, key=len)
                         print(f" ✅ {item['name']}: Đã lấy link.")
                     else:
                         print(f" ⚠️ {item['name']}: Không tìm thấy link m3u8.")
                 except:
-                    print(f" ❌ Lỗi khi truy cập trận: {item['name']}")
+                    print(f" ❌ Lỗi khi truy cập: {item['name']}")
             else:
                 print(f" ℹ️ {item['name']}: Sắp diễn ra.")
 
-        # 3. XUẤT FILE KẾT QUẢ
-        # File JSON
+        # 3. XUẤT FILE JSON
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(match_data, f, ensure_ascii=False, indent=4)
 
-        # File TXT cho VLC (Không hậu tố)
+        # 4. XUẤT FILE TXT CHO VLC (Không hậu tố)
         with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
                 if ch['stream_url']:
                     f.write(f'#EXTINF:-1,{ch["name"]}\n{ch["stream_url"]}\n')
 
-        # File TXT cho IPTV (Có hậu tố Referer)
+        # 5. XUẤT FILE TXT CHO IPTV (Có hậu tố Referer)
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
@@ -70,7 +68,7 @@ def main():
                 else:
                     f.write(f'#EXTINF:-1 group-title="Sắp diễn ra",{ch["name"]}\n#\n')
 
-        print("--- HOÀN TẤT ---")
+        print("--- HOÀN TẤT VIẾT FILE ---")
 
     except Exception as e:
         print(f"Lỗi hệ thống: {e}")
