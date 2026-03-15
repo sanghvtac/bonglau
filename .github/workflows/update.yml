@@ -1,0 +1,32 @@
+name: Crawl ThienDinh
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Chạy mỗi 1 giờ
+  workflow_dispatch: # Cho phép bạn bấm nút chạy thủ công
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 cloudscraper
+
+      - name: Run script
+        run: python crawl_thiendinh.py
+
+      - name: Commit results
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Auto-update stream links"
+          git push
