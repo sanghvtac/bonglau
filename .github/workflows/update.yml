@@ -3,19 +3,24 @@ name: Crawl ThienDinh
 on:
   schedule:
     - cron: '0 * * * *' # Chạy mỗi 1 giờ
-  workflow_dispatch: # Nút chạy thủ công
+  workflow_dispatch: # Chạy thủ công
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Ép chạy Node 24 để xóa cảnh báo
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Cấp quyền ghi trực tiếp trong file cấu hình
+      contents: write # Cấp quyền ghi nội dung
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4 # Cập nhật lên v4
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Dùng token mặc định để xác thực quyền ghi
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # Cập nhật lên v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
@@ -31,5 +36,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
-          git commit -m "Auto-update stream links" || echo "No changes to commit"
-          git push
+          # Kiểm tra nếu không có gì thay đổi thì không báo lỗi
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update stream links" && git push origin main)
