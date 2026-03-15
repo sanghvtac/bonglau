@@ -2,8 +2,11 @@ name: Crawl ThienDinh
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *' # Chạy mỗi 1 giờ
+  workflow_dispatch: # Chạy thủ công
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
 
 jobs:
   build:
@@ -13,6 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Lấy toàn bộ lịch sử để tránh lỗi 128 khi push
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,8 +31,18 @@ jobs:
       - name: Run script
         run: python crawl_thiendinh.py
 
-      - name: Auto Commit Results
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Auto-update stream links"
-          file_pattern: 'thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt'
+      - name: Commit and Push results
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Chỉ add các file kết quả, nếu file chưa tồn tại git sẽ tự tạo
+          git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
+          
+          # Kiểm tra xem có thay đổi không trước khi commit
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi nào để cập nhật."
+          else
+            git commit -m "Auto-update stream links $(date)"
+            git push origin main
+          fi
