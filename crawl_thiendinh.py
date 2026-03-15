@@ -1,39 +1,79 @@
 import json
-import cloudscraper # Thay thế selenium bằng cloudscraper
+import re
+import cloudscraper
 from bs4 import BeautifulSoup
 
+# Đường dẫn trang lịch thi đấu bạn yêu cầu
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 scraper = cloudscraper.create_scraper()
 
-def get_matches():
-    response = scraper.get(TARGET_URL)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    match_data = []
-    
-    # Tìm các link trận đấu
-    elements = soup.select('a[href*="/xem-truc-tiep/"]')
-    for el in elements:
-        url = "https://sv1.thiendinh.live" + el['href'] if el['href'].startswith('/') else el['href']
-        name = el.get_text(strip=True)
-        if not any(d['url'] == url for d in match_data):
-            match_data.append({"url": url, "name": name, "stream_url": ""})
-    return match_data
-
-def get_stream_url(match_url):
+def main():
+    print(f"--- Đang quét lịch thi đấu: {TARGET_URL} ---")
     try:
-        resp = scraper.get(match_url)
-        # Tìm link m3u8 trong mã nguồn
-        import re
-        m3u8 = re.search(r'https://.*?\.m3u8', resp.text)
-        return m3u8.group(0) if m3u8 else ""
-    except: return ""
+        response = scraper.get(TARGET_URL)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # 1. Tìm tất cả các link trận đấu
+        elements = soup.select('a[href*="/xem-truc-tiep/"]')
+        match_data = []
+        processed_links = set()
 
-# --- CHẠY CHÍNH ---
-match_data = get_matches()
-for item in match_data:
-    if "LIVE" in item['name'].upper() or "TRỰC TIẾP" in item['name'].upper():
-        item['stream_url'] = get_stream_url(item['url'])
+        for el in elements:
+            url = el['href']
+            if url.startswith('/'):
+                url = "https://sv1.thiendinh.live" + url
+            
+            name = el.get_text(strip=True).replace('\n', ' ')
+            if url not in processed_links:
+                processed_links.add(url)
+                match_data.append({"url": url, "name": name, "stream_url": ""})
 
-# Xuất file JSON, TXT... (Giữ nguyên logic xuất file cũ của bạn)
-with open("thiendinh.json", "w", encoding="utf-8") as f: json.dump(match_data, f, ensure_ascii=False, indent=4)
-# ... (Thêm code xuất file TXT giống như bạn đã làm)
+        print(f"Tìm thấy {len(match_data)} trận. Đang lấy link stream...")
+
+        # 2. Đào link m3u8 cho các trận đang LIVE
+        for item in match_data:
+            name_upper = item['name'].upper()
+            if "LIVE" in name_upper or "TRỰC TIẾP" in name_upper:
+                try:
+                    detail_resp = scraper.get(item['url'])
+                    # Tìm link m3u8 dài (có token) bằng Regex
+                    links = re.findall(r'https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*', detail_resp.text)
+                    if links:
+                        # Ưu tiên lấy link dài nhất (thường chứa token wsSession)
+                        item['stream_url'] = max(links, key=len)
+                        print(f" ✅ {item['name']}: Đã lấy link.")
+                    else:
+                        print(f" ⚠️ {item['name']}: Không tìm thấy link m3u8.")
+                except:
+                    print(f" ❌ Lỗi khi truy cập trận: {item['name']}")
+            else:
+                print(f" ℹ️ {item['name']}: Sắp diễn ra.")
+
+        # 3. XUẤT FILE KẾT QUẢ
+        # File JSON
+        with open("thiendinh.json", "w", encoding="utf-8") as f:
+            json.dump(match_data, f, ensure_ascii=False, indent=4)
+
+        # File TXT cho VLC (Không hậu tố)
+        with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for ch in match_data:
+                if ch['stream_url']:
+                    f.write(f'#EXTINF:-1,{ch["name"]}\n{ch["stream_url"]}\n')
+
+        # File TXT cho IPTV (Có hậu tố Referer)
+        with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for ch in match_data:
+                if ch['stream_url']:
+                    f.write(f'#EXTINF:-1 group-title="ThienDinhTV",{ch["name"]}\n{ch["stream_url"]}|Referer=https://sv1.thiendinh.live/\n')
+                else:
+                    f.write(f'#EXTINF:-1 group-title="Sắp diễn ra",{ch["name"]}\n#\n')
+
+        print("--- HOÀN TẤT ---")
+
+    except Exception as e:
+        print(f"Lỗi hệ thống: {e}")
+
+if __name__ == "__main__":
+    main()
