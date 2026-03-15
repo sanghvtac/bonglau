@@ -1,6 +1,7 @@
 import json
 import asyncio
 from playwright.async_api import async_playwright
+from datetime import datetime, timedelta
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 
@@ -9,75 +10,69 @@ async def main():
         browser = await p.chromium.launch()
         page = await browser.new_page()
 
-        # Chặn tài nguyên thừa (ảnh, font) để tăng tốc độ load trang
-        await page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["image", "font", "media"] else route.continue_())
-
         print(f"--- Đang mở: {TARGET_URL} ---")
         await page.goto(TARGET_URL, wait_until="domcontentloaded")
         
-        # Cuộn trang để ép website load đủ danh sách
-        for _ in range(5):
-            await page.mouse.wheel(0, 1000)
-            await asyncio.sleep(1)
+        # Cuộn trang mạnh mẽ hơn để lấy đủ 32+ trận
+        for _ in range(8):
+            await page.mouse.wheel(0, 2000)
+            await asyncio.sleep(1.5)
         
-        links = await page.eval_on_selector_all("a[href*='/xem-truc-tiep/']", "elements => elements.map(e => ({url: e.href, name: e.innerText}))")
-        print(f"--- Đã tìm thấy {len(links)} trận đấu ---")
-        
+        # Lấy tất cả link và tên trận
+        elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
         match_data = []
-        for item in links:
-            if any(d['url'] == item['url'] for d in match_data): continue
+        
+        for el in elements:
+            url = await el.get_attribute("href")
+            full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
+            name = await el.text_content()
             
-            m3u8_info = {"url": "", "referer": item['url']}
-            def intercept_response(response):
-                if ".m3u8" in response.url: m3u8_info["url"] = response.url
+            # Kiểm tra trùng lặp
+            if not any(d['url'] == full_url for d in match_data):
+                match_data.append({"title": name.strip(), "url": full_url, "stream": ""})
+
+        print(f"--- Đã tìm thấy {len(match_data)} trận. Đang đào link stream... ---")
+
+        # Đào link m3u8 (Chỉ đào cho trận cần thiết để tăng tốc)
+        for item in match_data:
+            m3u8_list = []
+            def intercept(res):
+                if ".m3u8" in res.url: m3u8_list.append(res.url)
             
-            page.on("response", intercept_response)
+            page.on("response", intercept)
             try:
-                await page.goto(item['url'], wait_until="domcontentloaded", timeout=10000)
-                await asyncio.sleep(2)
+                # Chỉ truy cập các trận có khả năng Live
+                if "LIVE" in item['title'].upper() or "TRỰC TIẾP" in item['title'].upper():
+                    await page.goto(item['url'], wait_until="domcontentloaded", timeout=10000)
+                    await asyncio.sleep(2)
+                    if m3u8_list: item['stream'] = max(m3u8_list, key=len)
             except: pass
-            page.remove_listener("response", intercept_response)
-            
-            match_data.append({"title": item['name'].strip(), **m3u8_info})
+            page.remove_listener("response", intercept)
 
-        # --- XUẤT 3 FILE ĐỊNH DẠNG CHUẨN ---
-
-        # 1. File IPTV M3U (Chuẩn cho TiviMate, IPTV Smarters)
+        # --- XUẤT FILE ---
+        # File IPTV (M3U) - Hiển thị đủ 32 trận
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
-                if ch["url"]:
-                    f.write(f'#EXTINF:-1 group-title="🔴 Live",{ch["title"]}\n{ch["url"]}|Referer={ch["referer"]}\n')
+                group = "🔴 LIVE" if ch['stream'] else "🗓 Sắp diễn ra"
+                f.write(f'#EXTINF:-1 group-title="{group}",{ch["title"]}\n')
+                if ch['stream']:
+                    f.write(f'{ch["stream"]}|Referer={ch["url"]}\n')
                 else:
-                    f.write(f'#EXTINF:-1 group-title="Sắp diễn ra",{ch["title"]}\n#\n')
+                    f.write(f'#\n')
 
-        # 2. File VLC (Định dạng đơn giản, tương thích VLC)
-        with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for ch in match_data:
-                if ch["url"]:
-                    f.write(f'#EXTINF:-1,{ch["title"]}\n{ch["url"]}\n')
-        
-        # 3. File JSON (Định dạng phân cấp cho các App IPTV tùy chỉnh)
-        json_output = {
-            "name": "ThienDinh TV",
-            "groups": [{"name": "🔴 Live", "channels": []}]
-        }
+        # File JSON - Theo chuẩn Bún Chả TV
+        json_output = {"name": "Thiên Đỉnh TV", "groups": [{"name": "🔴 Live", "channels": []}]}
         for ch in match_data:
-            if ch["url"]:
-                channel = {
-                    "name": ch["title"],
-                    "sources": [{"contents": [{"streams": [{"stream_links": [{
-                        "url": ch["url"],
-                        "request_headers": [{"key": "Referer", "value": ch["referer"]}]
-                    }]}]}]}]
-                }
-                json_output["groups"][0]["channels"].append(channel)
-            
+            if ch['stream']:
+                json_output["groups"][0]["channels"].append({
+                    "name": ch['title'],
+                    "sources": [{"contents": [{"streams": [{"stream_links": [{"url": ch['stream'], "request_headers": [{"key": "Referer", "value": ch['url']}]}]}]}]}]
+                })
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(json_output, f, ensure_ascii=False, indent=4)
         
-        print("--- HOÀN TẤT: Đã tạo 3 file (IPTV, VLC, JSON) ---")
+        print("--- HOÀN TẤT ---")
         await browser.close()
 
 if __name__ == "__main__":
