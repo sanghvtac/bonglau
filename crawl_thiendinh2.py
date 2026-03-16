@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 
-# Hàm cộng 7 giờ cho múi giờ Việt Nam
 def adjust_time(text):
     def replace_time(match):
         t_str = match.group(0)
@@ -15,15 +14,14 @@ def adjust_time(text):
         return new_t.strftime("%H:%M")
     return re.sub(r'\d{2}:\d{2}', replace_time, text)
 
-# Hàm làm sạch tiêu đề
 def clean_title(text):
     # 1. Xóa "Live" / "Sắp diễn ra"
     text = re.sub(r'(Live|Sắp diễn ra)', '', text, flags=re.IGNORECASE).strip()
-    # 2. Tách giờ với ngày (HH:MMDD/MM -> HH:MM DD/MM)
+    # 2. Tách giờ với ngày: 23:1515/03 -> 23:15 15/03
     text = re.sub(r'(\d{2}:\d{2})(\d{2}/\d{2})', r'\1 \2', text)
-    # 3. Thêm khoảng trắng giữa ngày (ví dụ 16/03) và tên đội
+    # 3. Chèn khoảng trắng giữa ngày (15/03) và tên đội: 15/03Đội -> 15/03 Đội
     text = re.sub(r'(\d{2}/\d{2})([A-ZÀ-Ỹa-zà-ỹ])', r'\1 \2', text)
-    # 4. Xóa tên giải đấu
+    # 4. Xóa giải đấu
     leagues = ['Ligue1', 'Serie A', 'Bundesliga', 'Premier League', 'La Liga', 'Champions League', 'Europa League']
     for league in leagues:
         text = re.sub(re.escape(league), '', text, flags=re.IGNORECASE)
@@ -33,31 +31,31 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
-        # Chặn hình ảnh/font để crawl nhanh hơn, nhưng logo vẫn lấy được qua URL
-        await page.route("**/*", lambda route: route.abort() if route.request.resource_type in ["font", "media"] else route.continue_())
-
         await page.goto(TARGET_URL, wait_until="domcontentloaded")
+        
+        # Cuộn trang để tải dữ liệu
         for _ in range(8):
             await page.mouse.wheel(0, 2000)
             await asyncio.sleep(1)
         
-        # Tìm các link trận đấu
+        # Chọn tất cả thẻ <a> có href chứa '/xem-truc-tiep/'
         elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
         match_data = []
         
         for el in elements:
             url = await el.get_attribute("href")
             full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
+            
+            # Lấy text nội dung
             raw_name = (await el.text_content()).strip()
             
-            # Lấy logo từ thẻ cha bao quanh (div class="flex space-x-4")
-            # Tìm thẻ div gần nhất chứa các ảnh img
-            logo_urls = await el.evaluate("el => Array.from(el.parentElement.querySelectorAll('img')).map(img => img.src)")
+            # LẤY LOGO: Tìm tất cả ảnh <img> nằm trong thẻ <a> này
+            logo_urls = await el.evaluate("el => Array.from(el.querySelectorAll('img')).map(img => img.src)")
             
             logo_home = logo_urls[0] if len(logo_urls) > 0 else ""
             logo_away = logo_urls[1] if len(logo_urls) > 1 else ""
 
-            # Xử lý giờ và tiêu đề
+            # Xử lý tiêu đề
             final_title = clean_title(adjust_time(raw_name))
             
             if not any(d['url'] == full_url for d in match_data):
@@ -69,7 +67,7 @@ async def main():
                     "stream": ""
                 })
 
-        # Đào link stream
+        # Đào link stream (giữ nguyên logic của bạn)
         for item in match_data:
             if "LIVE" in item['title'].upper() or "TRỰC TIẾP" in item['title'].upper():
                 m3u8_list = []
@@ -83,7 +81,8 @@ async def main():
                 except: pass
                 page.remove_listener("response", intercept)
 
-        # 1. Xuất file IPTV
+        # Xuất file (IPTV, VLC, JSON)
+        # 1. IPTV
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
@@ -92,13 +91,13 @@ async def main():
                 if ch['stream']: f.write(f'{ch["stream"]}|Referer={ch["url"]}\n')
                 else: f.write(f'#\n')
 
-        # 2. Xuất file VLC
+        # 2. VLC
         with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
                 f.write(f'#EXTINF:-1,{ch["title"]}\n{ch["stream"] if ch["stream"] else "#"}\n')
 
-        # 3. Xuất file JSON
+        # 3. JSON
         json_output = {"name": "Thiên Đỉnh TV", "groups": [{"name": "🔴 Live", "channels": []}, {"name": "🗓 Sắp diễn ra", "channels": []}]}
         for ch in match_data:
             channel = {
