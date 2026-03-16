@@ -45,31 +45,38 @@ async def main():
                 "stream": ""
             })
 
+        # SỬA LỖI KEYERROR: Định nghĩa hàm cụ thể thay vì dùng lambda
         for item in match_data:
             if any(k in item['title'].upper() for k in ["LIVE", "TRỰC TIẾP"]):
                 m3u8_list = []
-                page.on("response", lambda res: m3u8_list.append(res.url) if ".m3u8" in res.url else None)
+                
+                def intercept_response(response):
+                    if ".m3u8" in response.url:
+                        m3u8_list.append(response.url)
+                
+                page.on("response", intercept_response)
                 try:
                     await page.goto(item['url'], wait_until="domcontentloaded", timeout=5000)
                     await asyncio.sleep(2)
                     if m3u8_list: item['stream'] = max(m3u8_list, key=len)
                 except: pass
-                page.remove_listener("response", lambda res: None)
+                # Xóa bằng chính tên hàm đã định nghĩa
+                page.remove_listener("response", intercept_response)
 
-        # 1. Xuất JSON
+        # Xuất JSON
         json_output = {"name": "Thiên Đỉnh TV", "channels": []}
         for ch in match_data:
             json_output["channels"].append({"name": ch['title'], "logo": ch['logo'], "stream": ch['stream'], "referer": ch['url']})
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(json_output, f, ensure_ascii=False, indent=4)
 
-        # 2. Xuất IPTV (M3U)
+        # Xuất IPTV
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
                 f.write(f'#EXTINF:-1 tvg-logo="{ch["logo"]}",{ch["title"]}\n{ch["stream"] if ch["stream"] else "#"}\n')
 
-        # 3. Xuất VLC
+        # Xuất VLC
         with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
