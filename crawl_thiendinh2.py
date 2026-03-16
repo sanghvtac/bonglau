@@ -10,35 +10,33 @@ TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=liv
 # Hàm cộng 7 giờ (Việt Nam)
 def adjust_time(text):
     def replace_time(match):
-        t_str = match.group(0)
-        t = datetime.strptime(t_str, "%H:%M")
-        new_t = t + timedelta(hours=7)
-        return new_t.strftime("%H:%M")
+        t = datetime.strptime(match.group(0), "%H:%M")
+        return (t + timedelta(hours=7)).strftime("%H:%M")
     return re.sub(r'\d{2}:\d{2}', replace_time, text)
 
-# Hàm làm sạch tiêu đề
+# Hàm làm sạch tiêu đề và tách tên đội/tỷ số
 def clean_title(text):
-    # Xóa "Live" / "Sắp diễn ra"
-    text = re.sub(r'(Live|Sắp diễn ra)', '', text, flags=re.IGNORECASE).strip()
-    # Tách giờ với ngày: 23:1515/03 -> 23:15 15/03
+    # 1. Bỏ rác
+    text = re.sub(r'(Live|Sắp diễn ra|Sắp bắt đầu|null)', '', text, flags=re.IGNORECASE)
+    # 2. Xóa tên giải đấu
+    leagues = ['Ligue 1', 'Serie A', 'Bundesliga', 'Premier League', 'La Liga', '1. Lig', 'V.League']
+    for l in leagues: text = re.sub(re.escape(l), '', text, flags=re.IGNORECASE)
+    
+    # 3. Định dạng thời gian: Tách HH:MM và ngày
     text = re.sub(r'(\d{2}:\d{2})(\d{2}/\d{2})', r'\1 \2', text)
-    # Tách khoảng trắng giữa ngày (ví dụ 16/03) và tên đội/giải (16/031.Lig -> 16/03 1.Lig)
-    text = re.sub(r'(\d{2}/\d{2})([A-ZÀ-Ỹa-zà-ỹ0-9\.])', r'\1 \2', text)
-    # Xóa tên giải đấu
-    leagues = ['Ligue1', 'Serie A', 'Bundesliga', 'Premier League', 'La Liga', 'Champions League', 'Europa League']
-    for league in leagues:
-        text = re.sub(re.escape(league), '', text, flags=re.IGNORECASE)
-    return text.strip()
+    
+    # 4. Tách tên đội: Chèn khoảng trắng vào giữa Tên Đội và Tỷ số/VS
+    # Tìm cụm (chữ)(tỷ số/VS)(chữ) -> chèn khoảng cách
+    text = re.sub(r'([a-zA-ZÀ-Ỹa-zà-ỹ]+)(\d-\d|VS)([a-zA-ZÀ-Ỹa-zà-ỹ]+)', r'\1 \2 \3', text)
+    
+    return " ".join(text.split())
 
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        # Thêm user_agent để giả lập trình duyệt thật, tránh bị chặn
-        page = await browser.new_page(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-        
+        page = await browser.new_page(user_agent="Mozilla/5.0")
         await page.goto(TARGET_URL, wait_until="domcontentloaded")
         
-        # Cuộn trang để nội dung tải hết
         for _ in range(8):
             await page.mouse.wheel(0, 2000)
             await asyncio.sleep(1)
@@ -49,21 +47,22 @@ async def main():
         for el in elements:
             url = await el.get_attribute("href")
             full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
-            raw_name = (await el.text_content()).strip()
             
-            # Lấy logo bằng cách tìm tất cả ảnh <img> bên trong thẻ <a> hiện tại
-            logo_list = await el.evaluate("el => Array.from(el.querySelectorAll('img')).map(img => img.src)")
-            logo_home = logo_list[0] if len(logo_list) > 0 else ""
-            logo_away = logo_list[1] if len(logo_list) > 1 else ""
-
+            # Lấy logo chính xác theo class w-[48px]
+            logo_list = await el.evaluate("""el => {
+                const imgs = Array.from(el.querySelectorAll('img'));
+                return imgs.filter(i => i.className.includes('w-[48px]')).map(i => i.src);
+            }""")
+            
+            raw_name = (await el.text_content()).strip()
             final_title = clean_title(adjust_time(raw_name))
             
             if not any(d['url'] == full_url for d in match_data):
                 match_data.append({
-                    "title": final_title, 
-                    "url": full_url, 
-                    "logo_home": logo_home,
-                    "logo_away": logo_away,
+                    "title": final_title,
+                    "url": full_url,
+                    "logo_home": logo_list[0] if len(logo_list) > 0 else "",
+                    "logo_away": logo_list[1] if len(logo_list) > 1 else "",
                     "stream": ""
                 })
 
@@ -75,14 +74,13 @@ async def main():
                     if ".m3u8" in res.url: m3u8_list.append(res.url)
                 page.on("response", intercept)
                 try:
-                    await page.goto(item['url'], wait_until="domcontentloaded", timeout=8000)
+                    await page.goto(item['url'], wait_until="domcontentloaded", timeout=5000)
                     await asyncio.sleep(2)
                     if m3u8_list: item['stream'] = max(m3u8_list, key=len)
                 except: pass
                 page.remove_listener("response", intercept)
 
-        # Xuất file
-        # 1. IPTV
+        # 1. Xuất file IPTV
         with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
@@ -91,13 +89,13 @@ async def main():
                 if ch['stream']: f.write(f'{ch["stream"]}|Referer={ch["url"]}\n')
                 else: f.write(f'#\n')
 
-        # 2. VLC
+        # 2. Xuất file VLC
         with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for ch in match_data:
                 f.write(f'#EXTINF:-1,{ch["title"]}\n{ch["stream"] if ch["stream"] else "#"}\n')
 
-        # 3. JSON
+        # 3. Xuất file JSON
         json_output = {"name": "Thiên Đỉnh TV", "groups": [{"name": "🔴 Live", "channels": []}, {"name": "🗓 Sắp diễn ra", "channels": []}]}
         for ch in match_data:
             channel = {
