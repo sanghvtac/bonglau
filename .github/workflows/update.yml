@@ -40,7 +40,7 @@ jobs:
           playwright install chromium
 
       - name: Run script
-        run: python crawl_thiendinh.py
+        run: python crawl_thiendinh2.py
 
       - name: Commit and Push results
         run: |
