@@ -6,69 +6,71 @@ from datetime import datetime, timedelta
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 
-def clean_title(text):
-    # 1. Trích xuất thời gian (HH:MM và DD/MM)
+def process_match_info(text):
+    # 1. Tách giờ và ngày (VD: 17:30 16/03)
     time_match = re.search(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', text)
     time_str = f"{time_match.group(1)} {time_match.group(2)}" if time_match else ""
     
-    # 2. Trích xuất tỷ số (0-0, 1-2, v.v.)
-    score_match = re.search(r'(\d-\d)', text)
-    score_str = score_match.group(1) if score_match else ""
+    # 2. Xử lý tên đội và tỷ số: loại bỏ các phần rác bằng cách tìm vị trí VS hoặc tỷ số
+    # Cắt từ đoạn sau ngày tháng
+    content = re.sub(r'\d{2}:\d{2}\s*\d{2}/\d{2}', '', text)
+    # Tìm tỷ số (ví dụ: 0-0) hoặc chữ "VS"
+    separator = re.search(r'(\d-\d|VS)', content)
     
-    # 3. Trích xuất tên 2 đội (Dựa trên cấu trúc thường gặp: [Đội 1] VS/Score [Đội 2])
-    # Loại bỏ rác khỏi tên đội
-    clean_base = re.sub(r'(Live|Sắp bắt đầu|Sắp diễn ra|null|H1|H2|BLV.*)', '', text, flags=re.IGNORECASE)
-    teams = re.split(r'\d-\d|VS', clean_base)
-    team1 = teams[0].strip() if len(teams) > 0 else ""
-    team2 = teams[1].strip() if len(teams) > 1 else ""
-    
-    # 4. Tên hiển thị chuẩn: HH:MM DD/MM Team1 score Team2
-    new_title = f"{time_str} {team1} {score_str} {team2}".strip()
-    return new_title
+    if separator:
+        parts = re.split(r'\d-\d|VS', content)
+        # Lấy phần trước và sau dấu phân cách, dọn dẹp các ký tự rác xung quanh
+        team1 = re.sub(r'(Live|Sắp diễn ra|null|H1|H2|BLV.*)', '', parts[0]).strip()
+        team2 = re.sub(r'(Live|Sắp diễn ra|null|H1|H2|BLV.*)', '', parts[1]).split('BLV')[0].strip()
+        return f"{time_str} {team1} {separator.group(1)} {team2}"
+    return text.strip()
 
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page(user_agent="Mozilla/5.0")
         await page.goto(TARGET_URL, wait_until="domcontentloaded")
-        for _ in range(5):
-            await page.mouse.wheel(0, 1000)
-            await asyncio.sleep(1)
+        await asyncio.sleep(3) # Đợi tải danh sách
         
         elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
         match_data = []
         
         for el in elements:
-            url = await el.get_attribute("href")
-            full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
-            logo_list = await el.evaluate("el => Array.from(el.querySelectorAll('img')).filter(i => i.className.includes('w-[48px]')).map(i => i.src)")
-            raw_name = (await el.text_content()).strip()
+            # Lấy logo chuẩn nhất
+            logos = await el.evaluate("el => Array.from(el.querySelectorAll('img')).filter(i => i.className.includes('w-[48px]')).map(i => i.src)")
+            
+            raw_text = (await el.text_content()).strip()
+            # Loại bỏ giải đấu để không bị dính vào tên đội
+            leagues = ['Ligue 1', 'Serie A', 'Bundesliga', 'Premier League', 'La Liga', '1. Lig', 'V.League']
+            for l in leagues: raw_text = raw_text.replace(l, '')
+            
+            processed_name = process_match_info(raw_text)
             
             match_data.append({
-                "name": clean_title(raw_name),
-                "logo": logo_list[0] if len(logo_list) > 0 else "",
-                "stream": "",
-                "referer": full_url
+                "name": processed_name,
+                "logo": logos[0] if logos else "",
+                "url": "https://sv1.thiendinh.live" + await el.get_attribute("href")
             })
 
         # Đào stream
         for item in match_data:
-            m3u8_list = []
+            m3u8 = None
             def intercept(res):
-                if ".m3u8" in res.url: m3u8_list.append(res.url)
+                nonlocal m3u8
+                if ".m3u8" in res.url and not m3u8: m3u8 = res.url
             page.on("response", intercept)
             try:
-                await page.goto(item['referer'], wait_until="domcontentloaded", timeout=5000)
+                await page.goto(item['url'], wait_until="domcontentloaded", timeout=5000)
                 await asyncio.sleep(2)
-                if m3u8_list: item['stream'] = max(m3u8_list, key=len)
-            except: pass
+                item['stream'] = m3u8 if m3u8 else ""
+            except: item['stream'] = ""
             page.remove_listener("response", intercept)
 
-        # Xuất JSON cấu trúc "Flat" (App Tivi thích cái này)
-        final_json = {"channels": [m for m in match_data if m['stream']]}
+        # Xuất JSON
+        final_channels = [{"name": m['name'], "logo": m['logo'], "url": m['stream']} for m in match_data if m['stream']]
         with open("thiendinh.json", "w", encoding="utf-8") as f:
-            json.dump(final_json, f, ensure_ascii=False, indent=4)
-            
+            json.dump({"channels": final_channels}, f, ensure_ascii=False, indent=4)
+        
         await browser.close()
 
 if __name__ == "__main__":
