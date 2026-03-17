@@ -51,15 +51,19 @@ def clean_title(text):
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
     text_clean = re.sub(r'(BLV.*)', '', text, flags=re.IGNORECASE).strip()
 
-    # 4. LỌC GIẢI ĐẤU
+    # --- BƯỚC BẢO VỆ LIVERPOOL ---
+    text_clean = re.sub(r'(?i)Liverpool', 'LVP_PROTECTED', text_clean)
+
+    # 4. LỌC GIẢI ĐẤU (Xóa không nương tay)
     for league in LEAGUE_BLACKLIST:
-        text_clean = re.sub(rf'(?i)\b{re.escape(league)}\b', ' ', text_clean) # Dùng \b để không cắt nhầm Liverpool
+        text_clean = re.sub(rf'(?i){re.escape(league)}', ' ', text_clean)
 
     # 5. Lấy mốc thời gian bảo vệ
     time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text_clean)
     time_str = time_match.group(0) if time_match else ""
     
-    # 6. Xử lý nội dung core (Xóa tỷ số, icon, từ khóa Live - dùng \b để bảo vệ Liverpool)
+    # 6. Xử lý nội dung core
+    # Xóa icon ●, chữ Live đứng lẻ, tỉ số, hiệp đấu
     core = re.sub(r'(●|\bLive\b|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
     core = core.replace(time_str, "").strip()
     
@@ -69,6 +73,9 @@ def clean_title(text):
     if ' VS ' not in core:
         core = re.sub(r'([a-zA-Z])(\d)', r'\1 VS \2', core)
     
+    # --- PHỤC HỒI LIVERPOOL ---
+    core = core.replace('LVP_PROTECTED', 'Liverpool')
+
     # 8. Làm sạch khoảng trắng và nối lại
     teams = [t.strip() for t in core.split(' VS ') if t.strip()]
     if len(teams) >= 2:
@@ -76,11 +83,16 @@ def clean_title(text):
     else:
         final_teams = core
 
+    # Kiểm tra lần cuối để xóa chữ VS thừa ở đầu (như ví dụ "UEFA VS Sporting" của bạn)
+    final_teams = re.sub(r'^VS\s+', '', final_teams).strip()
+
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
 async def main():
-    # Sử dụng chuẩn timezone-aware mới nhất để tránh DeprecationWarning
-    vn_now = datetime.now(timezone.utc) + timedelta(hours=7)
+    # Ép chuẩn múi giờ Việt Nam dù chạy trên GitHub hay Local
+    # GitHub Action mặc định chạy giờ UTC (GMT+0)
+    vn_timezone = timezone(timedelta(hours=7))
+    vn_now = datetime.now(vn_timezone)
     now_str = vn_now.strftime("%H:%M %d/%m/%Y")
 
     async with async_playwright() as p:
@@ -150,7 +162,7 @@ async def main():
             with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
             with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
             
-            print(f"Cập nhật hoàn tất lúc: {now_str} (Giờ VN)")
+            print(f"Hoàn tất lúc: {now_str} (Giờ VN chuẩn)")
         finally:
             await browser.close()
 
