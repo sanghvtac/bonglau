@@ -2,8 +2,9 @@ name: Crawl ThienDinh
 
 on:
   schedule:
-    # Chạy mỗi giờ từ 17h chiều đến 5h sáng hôm sau
-    - cron: '0 17-23,0-5 * * *' 
+    # Chạy mỗi giờ từ 17h chiều đến 5h sáng hôm sau (Giờ UTC)
+    # Lưu ý: GitHub Actions dùng giờ UTC, bạn nên trừ đi 7 tiếng nếu muốn theo giờ Việt Nam
+    - cron: '0 10-22,0-2 * * *' 
   workflow_dispatch:
 
 jobs:
@@ -14,42 +15,35 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          cache: 'pip' # Tự động cache các gói pip
 
-      # CẤU HÌNH CACHE CHO PLAYWRIGHT
-      - name: Get Playwright cache path
+      - name: Cache Playwright browsers
         id: playwright-cache
-        run: echo "path=~/.cache/ms-playwright" >> $GITHUB_OUTPUT
-
-      - name: Cache Playwright
         uses: actions/cache@v3
         with:
-          path: ${{ steps.playwright-cache.outputs.path }}
-          key: ${{ runner.os }}-playwright-1.40.0
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
 
       - name: Install dependencies
         run: |
-          pip install playwright beautifulsoup4
-          # Chỉ cài lại trình duyệt nếu cache bị hỏng/thiếu
-          playwright install chromium
+          pip install playwright requests Pillow
+          # Chỉ cài đặt trình duyệt nếu cache chưa có (giúp tiết kiệm ~30-60s)
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
+            playwright install chromium
+          fi
 
       - name: Run script
         run: python crawl_thiendinh2.py
 
       - name: Commit and Push results
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt
-          if git diff --staged --quiet; then
-            echo "Không có thay đổi."
-          else
-            git commit -m "Auto-update $(date +'%Y-%m-%d %H:%M:%S')"
-            git push origin main
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update ${{ github.event.repository.updated_at }}"
+          file_pattern: 'thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt'
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
