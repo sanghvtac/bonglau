@@ -2,10 +2,9 @@ name: Crawl ThienDinh
 
 on:
   schedule:
-    # Chạy mỗi giờ từ 17h chiều đến 5h sáng hôm sau (Giờ UTC)
-    # Lưu ý: GitHub Actions dùng giờ UTC, bạn nên trừ đi 7 tiếng nếu muốn theo giờ Việt Nam
+    # Chạy mỗi giờ từ 17h chiều đến 5h sáng VN (tương ứng 10h sáng - 22h đêm UTC)
     - cron: '0 10-22,0-2 * * *' 
-  workflow_dispatch:
+  workflow_dispatch: # Cho phép bấm nút "Run workflow" thủ công trên GitHub
 
 jobs:
   build:
@@ -20,7 +19,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          cache: 'pip' # Tự động cache các gói pip
 
       - name: Cache Playwright browsers
         id: playwright-cache
@@ -31,19 +29,20 @@ jobs:
 
       - name: Install dependencies
         run: |
+          # Cài đặt các thư viện cần thiết cho việc ghép ảnh và tải dữ liệu
           pip install playwright requests Pillow
-          # Chỉ cài đặt trình duyệt nếu cache chưa có (giúp tiết kiệm ~30-60s)
+          # Chỉ cài trình duyệt nếu chưa có trong bộ nhớ đệm (cache)
           if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
             playwright install chromium
           fi
 
       - name: Run script
-        run: python crawl_thiendinh2.py
+        run: python crawl_thiendinh2.py # Đảm bảo tên file này khớp với file .py của bạn
 
       - name: Commit and Push results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-update ${{ github.event.repository.updated_at }}"
+          commit_message: "Auto-update Base64 Images ${{ github.event.repository.updated_at }}"
           file_pattern: 'thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt'
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
