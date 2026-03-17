@@ -95,9 +95,14 @@ def adjust_time_str(time_str, offset_hours):
 # ──────────────────────────────────────────────
 # TIÊU ĐỀ: Làm sạch raw text → tên trận đấu
 # ──────────────────────────────────────────────
-def clean_title(text, time_offset=0):
-    # 1. Nhận diện Live TRƯỚC khi xóa chữ
-    # Dùng \b để chỉ bắt "LIVE" đứng độc lập, không bắt "Live" trong "Liverpool"
+def clean_title(text, time_offset=0, team_names_dom=None):
+    """
+    Làm sạch raw text → tiêu đề trận đấu chuẩn: "HH:MM DD/MM Đội A VS Đội B [BLV ...]"
+
+    team_names_dom: list [team_a, team_b] lấy trực tiếp từ DOM (chính xác hơn).
+                    Nếu không có (None hoặc rỗng), fallback về parse text.
+    """
+    # 1. Nhận diện Live — \b để không bắt "Live" trong "Liverpool"
     is_live_origin = bool(re.search(r'(?i)\bLive\b|●', text))
 
     # 2. Chuẩn hóa giờ/ngày dính nhau: "03:0019/03" → "03:00 19/03"
@@ -106,36 +111,57 @@ def clean_title(text, time_offset=0):
     raw_time_str = time_match.group(0) if time_match else ""
     time_str = adjust_time_str(raw_time_str, time_offset)
 
-    # 3. Tách BLV
-    blv_match = re.search(r'(BLV.*)', text, flags=re.IGNORECASE)
+    # 3. Tách BLV (từ raw text gốc trước khi xóa)
+    blv_match = re.search(r'(BLV\s+\S.*?)(?:\n|$)', text, flags=re.IGNORECASE)
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
 
-    # 4. Xóa "Live" độc lập, icon, trạng thái, và "null" (rác từ trận đang live)
-    # Dùng \b để KHÔNG xóa "Live" trong "Liverpool"
-    clean = re.sub(r'(?i)\bLive\b|\bnull\b|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
+    # ── Nhánh A: Dùng tên đội từ DOM (ưu tiên — chính xác nhất) ──
+    if team_names_dom and len(team_names_dom) == 2:
+        team_a, team_b = team_names_dom[0].strip(), team_names_dom[1].strip()
+        final_teams = f"{team_a} VS {team_b}"
+        return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
-    # 5. Xóa tên giải đấu (dài trước để tránh xóa nhầm chuỗi con)
+    # ── Nhánh B: Fallback — parse từ text ──
+    # 4. Xóa tất cả rác: Live, null, phút đang chơi (+10', 45+2'...), icon, trạng thái
+    clean = re.sub(
+        r"(?i)\bLive\b"           # từ "Live" đứng độc lập
+        r"|\bnull\b"              # chữ "null" rác
+        r"|\+\d+['']?"           # phút live: +10' +45'
+        r"|\d{1,3}['']"          # phút đơn: 10' 45'
+        r"|H\d\s*[-–]\s*\d+"    # hiệp: H1-0, H2-1
+        r"|\d+\s*[-–]\s*\d+"    # tỉ số: 2-1, 0-0
+        r"|●|Sắp diễn ra|Sắp bắt đầu"
+        r"|[''`]",               # dấu nháy lẻ rác
+        ' ', text
+    )
+
+    # 5. Xóa tên giải đấu (dài trước)
     for league in sorted(LEAGUE_BLACKLIST, key=len, reverse=True):
-        clean = re.sub(rf'(?i){re.escape(league)}', ' ', clean)
+        clean = re.sub(rf'(?i)\b{re.escape(league)}\b', ' ', clean)
 
-    # 6. Xóa giờ/ngày và BLV khỏi phần tên đội
+    # 6. Xóa giờ/ngày và BLV
     clean = clean.replace(raw_time_str, "").replace(blv_str.strip(), "")
 
-    # 7. Tách tên đội bị dính (CamelCase)
+    # 7. Tách tên đội dính (CamelCase): "SportingCPBodo" → "Sporting CP VS Bodo"
     clean = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', clean)
     clean = re.sub(r'(\d)([A-Z])', r'\1 VS \2', clean)
 
-    # 8. Xóa tỉ số, hiệp đấu, ký tự rác
-    clean = re.sub(r'(H\d\s*-\s*\d+\'?|\d-\d|-|VS)', ' ', clean, flags=re.IGNORECASE)
+    # 8. Chuẩn hóa dấu phân cách VS còn sót
+    clean = re.sub(r'\s+VS\s+', ' VS ', clean, flags=re.IGNORECASE)
+    clean = re.sub(r'\s{2,}', ' ', clean).strip()
 
-    # 9. Tách đội A / đội B
-    parts = [p.strip() for p in clean.split() if p.strip()]
-    if len(parts) >= 2:
-        mid = len(parts) // 2
-        final_teams = f"{' '.join(parts[:mid])} VS {' '.join(parts[mid:])}"
+    # 9. Tách đội A / đội B qua "VS" nếu có, không thì dùng mid
+    if re.search(r'\bVS\b', clean, re.IGNORECASE):
+        parts = re.split(r'\bVS\b', clean, maxsplit=1, flags=re.IGNORECASE)
+        team_a = parts[0].strip()
+        team_b = parts[1].strip() if len(parts) > 1 else ""
     else:
-        final_teams = " ".join(parts)
+        words = [w for w in clean.split() if w]
+        mid = len(words) // 2
+        team_a = " ".join(words[:mid])
+        team_b = " ".join(words[mid:])
 
+    final_teams = f"{team_a} VS {team_b}" if team_b else team_a
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
 # ──────────────────────────────────────────────
@@ -193,7 +219,29 @@ async def main():
                 url = await el.get_attribute("href")
                 full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
                 raw_text = (await el.text_content()).strip()
-                full_title, teams_only, is_live = clean_title(raw_text, time_offset=time_offset)
+
+                # Lấy tên 2 đội trực tiếp từ DOM để tránh lỗi tách đội bằng mid
+                # Tên đội thường nằm trong thẻ .team-name, span, hoặc p trong element
+                team_nodes = await el.query_selector_all(
+                    ".team-name, .name, [class*='team'] span, [class*='name']"
+                )
+                team_names_raw = []
+                for node in team_nodes:
+                    t = (await node.text_content()).strip()
+                    if t and len(t) > 1:
+                        team_names_raw.append(t)
+                # Lọc trùng, giữ tối đa 2 tên đội
+                seen = []
+                for t in team_names_raw:
+                    if t not in seen:
+                        seen.append(t)
+                team_names_dom = seen[:2]  # [team_a, team_b] nếu có
+
+                full_title, teams_only, is_live = clean_title(
+                    raw_text,
+                    time_offset=time_offset,
+                    team_names_dom=team_names_dom
+                )
 
                 imgs = await el.query_selector_all("img")
                 logos = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in imgs]
