@@ -479,6 +479,9 @@ async def main():
                 "image": {
                     "type": "cover",
                     "url":  COVER_IMAGE,
+                    "display": "contain",
+                    "padding": 1,
+                    "background_color": "#ececec"
                 },
                 "groups": [
                     {"id": "live",     "name": "🔴 Live",        "channels": []},
