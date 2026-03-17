@@ -43,56 +43,56 @@ def clean_title(text):
     # 1. Xác định trạng thái Live
     is_live_origin = any(word in text.upper() for word in ["LIVE", "●"])
     
-    # 2. Fix Ngày/Giờ (Đảm bảo khoảng cách)
+    # 2. Fix Ngày/Giờ (Đảm bảo khoảng cách 00:00 00/00)
     text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
     
-    # 3. Tách BLV
+    # 3. Tách BLV ra trước để bảo vệ
     blv_match = re.search(r'(BLV.*)', text, flags=re.IGNORECASE)
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
     text_clean = re.sub(r'(BLV.*)', '', text, flags=re.IGNORECASE).strip()
 
-    # --- BƯỚC BẢO VỆ LIVERPOOL ---
-    text_clean = re.sub(r'(?i)Liverpool', 'LVP_PROTECTED', text_clean)
+    # 4. Xóa chữ "Live" thừa thãi (đặc biệt là sau ngày giờ)
+    text_clean = re.sub(r'(?i)\bLive\b', ' ', text_clean)
 
-    # 4. LỌC GIẢI ĐẤU (Xóa không nương tay)
+    # 5. Xử lý dính chữ đặc biệt cho Liverpool (Trước khi xóa giải đấu)
+    # Ví dụ: LiverpoolGalatasaray -> Liverpool VS Galatasaray
+    text_clean = re.sub(r'(Liverpool)([A-Z])', r'\1 VS \2', text_clean, flags=re.IGNORECASE)
+
+    # 6. LỌC GIẢI ĐẤU (Blacklist)
     for league in LEAGUE_BLACKLIST:
         text_clean = re.sub(rf'(?i){re.escape(league)}', ' ', text_clean)
 
-    # 5. Lấy mốc thời gian bảo vệ
+    # 7. Lấy mốc thời gian bảo vệ
     time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text_clean)
     time_str = time_match.group(0) if time_match else ""
     
-    # 6. Xử lý nội dung core
-    # Xóa icon ●, chữ Live đứng lẻ, tỉ số, hiệp đấu
-    core = re.sub(r'(●|\bLive\b|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
+    # 8. Xử lý nội dung core (Xóa icon ●, tỉ số, hiệp đấu, dấu gạch ngang)
+    core = re.sub(r'(●|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
     core = core.replace(time_str, "").strip()
     
-    # 7. LOGIC TÁCH CHỮ DÍNH (CamelCase)
+    # 9. LOGIC TÁCH CHỮ DÍNH (CamelCase chung)
     core = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', core)
     core = re.sub(r'(\d)([A-Z])', r'\1 VS \2', core)
     if ' VS ' not in core:
         core = re.sub(r'([a-zA-Z])(\d)', r'\1 VS \2', core)
     
-    # --- PHỤC HỒI LIVERPOOL ---
-    core = core.replace('LVP_PROTECTED', 'Liverpool')
-
-    # 8. Làm sạch khoảng trắng và nối lại
+    # 10. Làm sạch khoảng trắng và nối lại Đội A VS Đội B
     teams = [t.strip() for t in core.split(' VS ') if t.strip()]
     if len(teams) >= 2:
         final_teams = f"{teams[0]} VS {teams[1]}"
     else:
         final_teams = core
 
-    # Kiểm tra lần cuối để xóa chữ VS thừa ở đầu (như ví dụ "UEFA VS Sporting" của bạn)
-    final_teams = re.sub(r'^VS\s+', '', final_teams).strip()
+    # Làm sạch lần cuối chữ VS hoặc dấu cách thừa ở đầu
+    final_teams = re.sub(r'^(VS|\s)+', '', final_teams).strip()
 
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
 async def main():
-    # Ép chuẩn múi giờ Việt Nam dù chạy trên GitHub hay Local
-    # GitHub Action mặc định chạy giờ UTC (GMT+0)
-    vn_timezone = timezone(timedelta(hours=7))
-    vn_now = datetime.now(vn_timezone)
+    # Fix giờ cho GitHub Action bằng cách dùng timedelta trực tiếp trên UTC
+    # Đảm bảo dù server ở đâu cũng cộng đúng 7 tiếng
+    utc_now = datetime.now(timezone.utc)
+    vn_now = utc_now + timedelta(hours=7)
     now_str = vn_now.strftime("%H:%M %d/%m/%Y")
 
     async with async_playwright() as p:
@@ -162,7 +162,7 @@ async def main():
             with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
             with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
             
-            print(f"Hoàn tất lúc: {now_str} (Giờ VN chuẩn)")
+            print(f"Hoàn thành lúc: {now_str} (Giờ VN)")
         finally:
             await browser.close()
 
