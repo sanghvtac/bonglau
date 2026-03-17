@@ -247,6 +247,10 @@ async def main():
             # ── Bước 5: Xuất file ──
             json_output = {
                 "name": f"Thiên Đỉnh TV ({now_str})",
+                "image": {
+    "type": "cover",
+    "url": "https://sv1.thiendinh.live/logo.png"
+  },
                 "groups": [
                     {"id": "live",     "name": "🔴 Live",         "channels": []},
                     {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}
