@@ -18,8 +18,10 @@ def get_base64_combined_image(logo_a_url, logo_b_url):
     """Tải logo, ghép lại và trả về chuỗi Base64"""
     headers = {'User-Agent': 'Mozilla/5.0'}
     try:
+        # Tạo khung ảnh 450x200 nền xám nhạt #ececec
         combined = Image.new("RGBA", (450, 200), (236, 236, 236, 255))
         
+        # Tải logo A
         if logo_a_url:
             try:
                 url_a = f"https://images.weserv.nl/?url={logo_a_url}&w=200&h=200&fit=contain&output=png"
@@ -28,6 +30,7 @@ def get_base64_combined_image(logo_a_url, logo_b_url):
                 combined.paste(img_a, (20, 0), img_a)
             except: pass
 
+        # Tải logo B
         if logo_b_url:
             try:
                 url_b = f"https://images.weserv.nl/?url={logo_b_url}&w=200&h=200&fit=contain&output=png"
@@ -57,28 +60,22 @@ def clean_title(text):
     
     # Xử lý nội dung chính
     text_clean = re.sub(r'(BLV.*)', '', text, flags=re.IGNORECASE).strip()
-    
-    # Tách lấy phần thời gian trước khi xóa sạch các ký tự đặc biệt
     time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text_clean)
     time_str = time_match.group(0) if time_match else ""
     
-    # Xóa các từ khóa rác và tên giải đấu (thường nằm sau dấu gạch ngang hoặc ký tự đặc biệt)
-    # Loại bỏ các ký tự đặc biệt để cô lập tên đội
-    core_content = re.sub(r'(●|Live|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
-    core_content = core_content.replace(time_str, "").strip()
+    # Xóa các từ khóa rác và tách tên đội
+    core = re.sub(r'(●|Live|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
+    core = core.replace(time_str, "").strip()
     
-    # Tách tên đội (Xử lý trường hợp dính chữ như TeamATeamB)
-    core_content = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', core_content)
-    core_content = re.sub(r'(\d)([A-Z])', r'\1 VS \2', core_content)
-    if ' VS ' not in core_content:
-        core_content = re.sub(r'([a-zA-Z])(\d)', r'\1 VS \2', core_content)
+    # Tách trường hợp dính chữ
+    core = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', core)
+    core = re.sub(r'(\d)([A-Z])', r'\1 VS \2', core)
+    if ' VS ' not in core:
+        core = re.sub(r'([a-zA-Z])(\d)', r'\1 VS \2', core)
     
-    # Chỉ lấy phần Tên Đội A VS Tên Đội B, bỏ qua các phần mô tả giải đấu phía sau nếu có
-    teams = [t.strip() for t in core_content.split(' VS ') if t.strip()]
-    if len(teams) >= 2:
-        final_teams = f"{teams[0]} VS {teams[1]}"
-    else:
-        final_teams = core_content
+    # Chỉ lấy Đội A VS Đội B (Bỏ qua tên giải đấu phía sau)
+    teams = [t.strip() for t in core.split(' VS ') if t.strip()]
+    final_teams = f"{teams[0]} VS {teams[1]}" if len(teams) >= 2 else core
 
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
@@ -104,7 +101,7 @@ async def main():
         elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
         match_data = []
 
-        print(f"Xử lý {len(elements)} trận đấu...")
+        print(f"Tìm thấy {len(elements)} trận. Đang xử lý...")
         for el in elements:
             url = await el.get_attribute("href")
             full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
@@ -122,11 +119,9 @@ async def main():
             logo_b = logos[1] if len(logos) >= 2 else ""
             combined_img = get_base64_combined_image(logo_a, logo_b)
 
-            t_split = teams_only.split(" VS ")
             match_data.append({
                 "title": full_title,
-                "team_a": t_split[0].strip() if len(t_split) > 0 else "",
-                "team_b": t_split[1].strip() if len(t_split) > 1 else "",
+                "team_a": teams_only.split(" VS ")[0].strip() if " VS " in teams_only else teams_only,
                 "url": full_url,
                 "logo_a": logo_a,
                 "logo_b": logo_b,
@@ -135,7 +130,7 @@ async def main():
                 "stream": ""
             })
 
-        print("Đang đào link stream...")
+        print("Đang lấy link stream...")
         for item in match_data:
             if item['is_live']:
                 m3u8_list = []
@@ -149,16 +144,14 @@ async def main():
                 except: pass
                 page.remove_listener("response", handle_response)
 
-        # 1. XUẤT FILE JSON
+        # KHỞI TẠO CÁC BIẾN XUẤT FILE
         json_output = {"name": "Thiên Đỉnh TV", "groups": [{"id": "live", "name": "🔴 Live", "channels": []}, {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}]}
-        
-        # 2. XUẤT FILE IPTV (M3U) & VLC (TXT)
         m3u_content = "#EXTM3U\n"
         vlc_content = ""
 
         for ch in match_data:
             match_id = generate_id(ch['url'])
-            # JSON Structure
+            # Cấu trúc JSON cho App TV
             channel = {
                 "id": f"ch-{match_id}",
                 "name": f"⚽ {ch['title']}",
@@ -174,14 +167,14 @@ async def main():
             if ch['stream'] or ch['is_live']:
                 json_output["groups"][0]["channels"].append(channel)
                 if ch['stream']:
-                    # IPTV M3U
-                    m3u_content += f'#EXTINF:-1 tvg-logo="{ch['logo_a']}" group-title="LIVE", {ch["title"]}\n{ch["stream"]}\n'
-                    # VLC TXT
-                    vlc_content += f'{ch["title"]}, {ch["stream"]}\n'
+                    # File M3U cho IPTV (Dùng dấu nháy kép bao ngoài f-string để tránh lỗi cú pháp)
+                    m3u_content += f"#EXTINF:-1 tvg-logo='{ch['logo_a']}' group-title='LIVE', {ch['title']}\n{ch['stream']}\n"
+                    # File TXT cho VLC
+                    vlc_content += f"{ch['title']}, {ch['stream']}\n"
             else:
                 json_output["groups"][1]["channels"].append(channel)
 
-        # Ghi các file
+        # GHI CÁC FILE RA THƯ MỤC
         with open("thiendinh.json", "w", encoding="utf-8") as f:
             json.dump(json_output, f, ensure_ascii=False, indent=4)
             
@@ -191,7 +184,7 @@ async def main():
         with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
             f.write(vlc_content)
         
-        print("Đã xuất xong: JSON, IPTV, VLC.")
+        print("Hoàn tất xuất file: JSON, IPTV (txt), VLC (txt).")
         await browser.close()
 
 if __name__ == "__main__":
