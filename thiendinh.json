@@ -2,22 +2,24 @@
     "name": "Thiên Đỉnh TV",
     "groups": [
         {
-            "id": "live_group",
+            "id": "live",
             "name": "🔴 Live",
             "channels": [
                 {
                     "id": "ch-218ce297e43e",
-                    "name": "22:00 17/03 null' Villarreal U19 VS PSG U19 BLV Táo Văn Nghệ",
+                    "name": "⚽ 22:00 17/03 UEFA Youth League null' Villarreal U19 VS PSG U19 BLV Táo Văn Nghệ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
                         "url": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
-                        "display": "contain"
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-218ce297e43e",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-218ce297e43e",
@@ -27,7 +29,8 @@
                                             "stream_links": [
                                                 {
                                                     "id": "lnk-218ce297e43e",
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
+                                                    "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -47,32 +50,34 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "null' Villarreal U19",
+                        "team_a": "UEFA Youth League null' Villarreal U19",
                         "team_b": "PSG U19",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
-                        "logo_b": "https://upload.wikimedia.org/wikipedia/vi/a/a7/Paris_Saint-Germain_F.C..svg",
+                        "logo_b": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/a/a7/Paris_Saint-Germain_F.C..svg&output=png",
                         "thumb": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png"
                     }
                 }
             ]
         },
         {
-            "id": "upcoming_group",
+            "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-b14b0b2ba97e",
-                    "name": "23:00 17/03 Lokomotiv Sofia VS Septemvri Sofia BLV Ngọc Hoàng(A Cháo)",
+                    "name": "⚽ 23:00 17/03 First League Lokomotiv Sofia VS Septemvri Sofia BLV Ngọc Hoàng(A Cháo)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
                         "url": "https://media.api-sports.io/football/teams/1416.png",
-                        "display": "contain"
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-b14b0b2ba97e",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-b14b0b2ba97e",
@@ -83,6 +88,7 @@
                                                 {
                                                     "id": "lnk-b14b0b2ba97e",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -102,7 +108,7 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Lokomotiv Sofia",
+                        "team_a": "First League Lokomotiv Sofia",
                         "team_b": "Septemvri Sofia",
                         "logo_a": "https://media.api-sports.io/football/teams/1416.png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/en/a/a9/PFCSeptemvriSofia.png",
@@ -111,17 +117,19 @@
                 },
                 {
                     "id": "ch-5f22da816c68",
-                    "name": "00:45 18/03 Sporting CPBodo/Glimt BLV Táo Chè",
+                    "name": "⚽ 00:45 18/03 UEFA Champions League Sporting CPBodo/Glimt BLV Táo Chè",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
                         "url": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
-                        "display": "contain"
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-5f22da816c68",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-5f22da816c68",
@@ -132,6 +140,7 @@
                                                 {
                                                     "id": "lnk-5f22da816c68",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -151,7 +160,7 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Sporting CPBodo/Glimt",
+                        "team_a": "UEFA Champions League Sporting CPBodo/Glimt",
                         "team_b": "",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
                         "logo_b": "https://media.api-sports.io/football/teams/327.png",
@@ -160,17 +169,19 @@
                 },
                 {
                     "id": "ch-4c7fa154287c",
-                    "name": "03:00 18/03 Arsenal VS Bayer Leverkusen BLV Ngọc Hoàng(A Cháo)",
+                    "name": "⚽ 03:00 18/03 UEFA Champions League Arsenal VS Bayer Leverkusen BLV Ngọc Hoàng(A Cháo)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                        "display": "contain"
+                        "url": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-4c7fa154287c",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-4c7fa154287c",
@@ -181,6 +192,7 @@
                                                 {
                                                     "id": "lnk-4c7fa154287c",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -200,26 +212,28 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Arsenal",
+                        "team_a": "UEFA Champions League Arsenal",
                         "team_b": "Bayer Leverkusen",
-                        "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                        "logo_a": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
+                        "thumb": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png"
                     }
                 },
                 {
                     "id": "ch-702418b7fab8",
-                    "name": "03:00 18/03 Arsenal VS Bayer Leverkusen BLV Táo Văn Hóa(A Bí)",
+                    "name": "⚽ 03:00 18/03 UEFA Champions League Arsenal VS Bayer Leverkusen BLV Táo Văn Hóa(A Bí)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                        "display": "contain"
+                        "url": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-702418b7fab8",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-702418b7fab8",
@@ -230,6 +244,7 @@
                                                 {
                                                     "id": "lnk-702418b7fab8",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -249,26 +264,28 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Arsenal",
+                        "team_a": "UEFA Champions League Arsenal",
                         "team_b": "Bayer Leverkusen",
-                        "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                        "logo_a": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
+                        "thumb": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg&output=png"
                     }
                 },
                 {
                     "id": "ch-8a951b899809",
-                    "name": "03:00 18/03 Chelsea VS Paris Saint Germain BLV Táo Chè",
+                    "name": "⚽ 03:00 18/03 UEFA Champions League Chelsea VS Paris Saint Germain BLV Táo Chè",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
                         "url": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
-                        "display": "contain"
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-8a951b899809",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-8a951b899809",
@@ -279,6 +296,7 @@
                                                 {
                                                     "id": "lnk-8a951b899809",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -298,7 +316,7 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Chelsea",
+                        "team_a": "UEFA Champions League Chelsea",
                         "team_b": "Paris Saint Germain",
                         "logo_a": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",
@@ -307,17 +325,19 @@
                 },
                 {
                     "id": "ch-1436900cc27b",
-                    "name": "03:00 18/03 Manchester City VS Real Madrid BLV Táo Mèo",
+                    "name": "⚽ 03:00 18/03 UEFA Champions League Manchester City VS Real Madrid BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                        "display": "contain"
+                        "url": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-1436900cc27b",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-1436900cc27b",
@@ -328,6 +348,7 @@
                                                 {
                                                     "id": "lnk-1436900cc27b",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -347,26 +368,28 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Manchester City",
+                        "team_a": "UEFA Champions League Manchester City",
                         "team_b": "Real Madrid",
-                        "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                        "logo_a": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
+                        "thumb": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png"
                     }
                 },
                 {
                     "id": "ch-a3882b38908e",
-                    "name": "03:00 18/03 Manchester City VS Real Madrid BLV Táo Văn Nghệ",
+                    "name": "⚽ 03:00 18/03 UEFA Champions League Manchester City VS Real Madrid BLV Táo Văn Nghệ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                        "display": "contain"
+                        "url": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-a3882b38908e",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-a3882b38908e",
@@ -377,6 +400,7 @@
                                                 {
                                                     "id": "lnk-a3882b38908e",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
@@ -396,26 +420,28 @@
                         }
                     ],
                     "org_metadata": {
-                        "team_a": "Manchester City",
+                        "team_a": "UEFA Champions League Manchester City",
                         "team_b": "Real Madrid",
-                        "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                        "logo_a": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
+                        "thumb": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg&output=png"
                     }
                 },
                 {
                     "id": "ch-218ce297e43e",
-                    "name": "  BLV Táo Văn Nghệ22:00 17/03UEFA Youth LeagueVillarreal U19KXD0-0---'PSG U19 BLV Táo Văn NghệTrực tiếp",
+                    "name": "⚽   BLV Táo Văn Nghệ22:00 17/03UEFA Youth LeagueVillarreal U19KXD0-0---'PSG U19 BLV Táo Văn NghệTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
                         "url": "https://i.postimg.cc/28gYpktt/signal-2026-02-26-134325.jpg",
-                        "display": "contain"
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
                     },
                     "sources": [
                         {
                             "id": "src-218ce297e43e",
-                            "name": "Server Chính",
+                            "name": "Thiên Đỉnh Server",
                             "contents": [
                                 {
                                     "id": "ct-218ce297e43e",
@@ -426,6 +452,7 @@
                                                 {
                                                     "id": "lnk-218ce297e43e",
                                                     "url": "",
+                                                    "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
