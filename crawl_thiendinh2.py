@@ -4,7 +4,7 @@ import re
 import hashlib
 import base64
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
@@ -16,7 +16,7 @@ LEAGUE_BLACKLIST = [
     "UEFA Champions League", "UEFA Youth League", "UEFA Europa League", "UEFA Conference League",
     "Champions League", "Youth League", "Europa League", "Conference League", "UEFA",
     "AFC Champions League", "AFC Cup", "Premier League", "Ngoại Hạng Anh", "La Liga", "Serie A", 
-    "Bundesliga", "Ligue 1", "V-League", "Cúp C1", "Cúp C2", "Cúp C3", "Vòng loại", "Giao hữu"
+    "Bundesliga", "Ligue 1", "V-League", "K League 1", "Asian Cup Women", "Cup", "Vòng loại", "Giao hữu"
 ]
 
 def generate_id(text):
@@ -40,10 +40,10 @@ def get_base64_combined_image(logo_a_url, logo_b_url):
     except: return ""
 
 def clean_title(text):
-    # 1. Trạng thái Live
+    # 1. Xác định trạng thái Live
     is_live_origin = any(word in text.upper() for word in ["LIVE", "●"])
     
-    # 2. Fix Ngày/Giờ (Đảm bảo khoảng cách 22:00 17/03)
+    # 2. Fix Ngày/Giờ (Đảm bảo khoảng cách)
     text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
     
     # 3. Tách BLV
@@ -51,19 +51,19 @@ def clean_title(text):
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
     text_clean = re.sub(r'(BLV.*)', '', text, flags=re.IGNORECASE).strip()
 
-    # 4. LỌC GIẢI ĐẤU (Xóa sạch UEFA Champions League, Youth League...)
+    # 4. LỌC GIẢI ĐẤU
     for league in LEAGUE_BLACKLIST:
-        text_clean = re.sub(rf'(?i){re.escape(league)}', ' ', text_clean)
+        text_clean = re.sub(rf'(?i)\b{re.escape(league)}\b', ' ', text_clean) # Dùng \b để không cắt nhầm Liverpool
 
-    # 5. Lấy mốc thời gian để bảo vệ
+    # 5. Lấy mốc thời gian bảo vệ
     time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text_clean)
     time_str = time_match.group(0) if time_match else ""
     
-    # 6. Xử lý nội dung core (Xóa tỷ số 0-1, icon, từ khóa Live/Sắp đá)
-    core = re.sub(r'(●|Live|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
+    # 6. Xử lý nội dung core (Xóa tỷ số, icon, từ khóa Live - dùng \b để bảo vệ Liverpool)
+    core = re.sub(r'(●|\bLive\b|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
     core = core.replace(time_str, "").strip()
     
-    # 7. LOGIC TÁCH CHỮ DÍNH (Ví dụ: Villarreal U19PSG U19 -> Villarreal U19 VS PSG U19)
+    # 7. LOGIC TÁCH CHỮ DÍNH (CamelCase)
     core = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', core)
     core = re.sub(r'(\d)([A-Z])', r'\1 VS \2', core)
     if ' VS ' not in core:
@@ -79,7 +79,8 @@ def clean_title(text):
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
 async def main():
-    vn_now = datetime.utcnow() + timedelta(hours=7)
+    # Sử dụng chuẩn timezone-aware mới nhất để tránh DeprecationWarning
+    vn_now = datetime.now(timezone.utc) + timedelta(hours=7)
     now_str = vn_now.strftime("%H:%M %d/%m/%Y")
 
     async with async_playwright() as p:
@@ -123,7 +124,7 @@ async def main():
                         if m3u8_list: item['stream'] = max(m3u8_list, key=len)
                     except: pass
 
-            # XUẤT FILE
+            # --- XUẤT FILE ---
             json_output = {"name": f"Thiên Đỉnh TV ({now_str})", "groups": [{"id": "live", "name": "🔴 Live", "channels": []}, {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}]}
             m3u_content = f"#EXTM3U\n#PLAYLIST: Thiên Đỉnh TV ({now_str})\n"
 
@@ -140,7 +141,6 @@ async def main():
                 if ch['is_live']: json_output["groups"][0]["channels"].append(channel_json)
                 else: json_output["groups"][1]["channels"].append(channel_json)
 
-                # M3U (Định dạng chuẩn cho cả IPTV và VLC)
                 m3u_content += f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{ch["logo_a"]}" group-title="{group}", {ch["title"]}\n'
                 m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
                 m3u_content += f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
