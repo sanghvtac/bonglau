@@ -2,15 +2,17 @@ name: Crawl ThienDinh
 
 on:
   schedule:
-    # Chạy mỗi giờ từ 17h chiều đến 5h sáng VN (tương ứng 10h sáng - 22h đêm UTC)
-    - cron: '0 10-22,0-2 * * *' 
-  workflow_dispatch: # Cho phép bấm nút "Run workflow" thủ công trên GitHub
+    # Chạy mỗi giờ từ 17:00 đến 05:00 VN hôm sau
+    # = 10:00 UTC đến 22:00 UTC (17 lần/ngày)
+    - cron: '0 10-22 * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  crawl:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,31 +20,39 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
+      # Cache pip packages — tránh cài lại mỗi lần chạy
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-playwright-pillow
+          restore-keys: ${{ runner.os }}-pip-
+
+      # Cache Playwright browser — key có version để tự invalidate khi Playwright update
       - name: Cache Playwright browsers
         id: playwright-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-chromium
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}-chromium
+          restore-keys: ${{ runner.os }}-playwright-
 
       - name: Install dependencies
         run: |
-          # Cài đặt các thư viện cần thiết cho việc ghép ảnh và tải dữ liệu
-          pip install playwright requests Pillow
-          # Chỉ cài trình duyệt nếu chưa có trong bộ nhớ đệm (cache)
+          pip install playwright requests Pillow --quiet
           if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
-            playwright install chromium
+            playwright install chromium --with-deps
           fi
 
       - name: Run script
-        run: python crawl_thiendinh.py # Đảm bảo tên file này khớp với file .py của bạn
+        run: python crawl_thiendinh.py
 
-      - name: Commit and Push results
+      - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-update Base64 Images ${{ github.event.repository.updated_at }}"
-          file_pattern: 'thiendinh.json thiendinh_vlc.txt thiendinh_iptv.txt'
+          commit_message: "chore: auto-update ${{ github.run_id }}"
+          file_pattern: 'thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt'
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
