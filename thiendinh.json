@@ -2,75 +2,40 @@
     "name": "Thiên Đỉnh TV",
     "groups": [
         {
+            "id": "live_group",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "name": "17:00 17/03 China WAustralia W BLV Táo Tàu",
-                    "logo": "https://media.api-sports.io/football/teams/1723.png",
-                    "logo_a": "https://media.api-sports.io/football/teams/1723.png",
-                    "logo_b": "https://media.api-sports.io/football/teams/1722.png",
-                    "icon": "https://media.api-sports.io/football/teams/1723.png",
-                    "image": {
-                        "url": "https://media.api-sports.io/football/teams/1723.png"
-                    },
-                    "sources": [
-                        {
-                            "contents": [
-                                {
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-women.NOPb57w_wj/china-w-vs-australia-w.nSnWzT4-zB"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "org_metadata": {
-                        "team_a": "China WAustralia W",
-                        "team_b": "",
-                        "logo_a": "https://media.api-sports.io/football/teams/1723.png",
-                        "logo_b": "https://media.api-sports.io/football/teams/1722.png",
-                        "logo_home": "https://media.api-sports.io/football/teams/1723.png",
-                        "logo_away": "https://media.api-sports.io/football/teams/1722.png"
-                    }
-                },
-                {
+                    "id": "ch-26d80527241f",
                     "name": "17:30 17/03 Gimcheon Sangmu FCGwangju FC BLV Táo Văn Hóa(A Bí)",
-                    "logo": "https://media.api-sports.io/football/teams/2768.png",
-                    "logo_a": "https://media.api-sports.io/football/teams/2768.png",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/en/6/65/Gwangju_FC.svg",
-                    "icon": "https://media.api-sports.io/football/teams/2768.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://media.api-sports.io/football/teams/2768.png"
+                        "url": "https://media.api-sports.io/football/teams/2768.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-26d80527241f",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-26d80527241f",
                                     "streams": [
                                         {
+                                            "id": "st-26d80527241f",
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "id": "lnk-26d80527241f",
+                                                    "url": "https://tfu94gr4nhct1gwzdepjqgr5dkmmwctsg17uff37ga6mcpf5gkmudp7so.100ycdn.com/tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8?wsSession=ea18ec9a4ea09d895fb6dfbf-177374861697270&wsIPSercert=3dab63cdc620e2d9e0b239d26ab121fc&wsiphost=local&wsBindIP=1",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/k-league-1-1758630323713/gimcheon-sangmu-fc-vs-gwangju-fc.0_OrqGkXRN"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -86,32 +51,46 @@
                         "team_b": "",
                         "logo_a": "https://media.api-sports.io/football/teams/2768.png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/en/6/65/Gwangju_FC.svg",
-                        "logo_home": "https://media.api-sports.io/football/teams/2768.png",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/en/6/65/Gwangju_FC.svg"
+                        "thumb": "https://media.api-sports.io/football/teams/2768.png"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming_group",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
+                    "id": "ch-5b0de6bae0c3",
                     "name": "20:00 17/03 Atlético Madrid U19 VS Club Brugge U19 BLV Táo Văn Nghệ",
-                    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png"
+                        "url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-5b0de6bae0c3",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-5b0de6bae0c3",
                                     "streams": [
                                         {
+                                            "id": "st-5b0de6bae0c3",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-5b0de6bae0c3",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-youth-league-1758632823554/atletico-madrid-u19-vs-club-brugge-u19.isaGjGSODR"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -127,32 +106,40 @@
                         "team_b": "Club Brugge U19",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Club_Brugge_KV_logo.svg/250px-Club_Brugge_KV_logo.svg.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/960px-Atletico_Madrid_Logo_2024.svg.png"
                     }
                 },
                 {
+                    "id": "ch-218ce297e43e",
                     "name": "22:00 17/03 Villarreal U19 VS PSG U19 BLV Táo Văn Nghệ",
-                    "logo": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/vi/a/a7/Paris_Saint-Germain_F.C..svg",
-                    "icon": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png"
+                        "url": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-218ce297e43e",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-218ce297e43e",
                                     "streams": [
                                         {
+                                            "id": "st-218ce297e43e",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-218ce297e43e",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-youth-league-1758632823554/villarreal-u19-vs-psg-u19.v1MFU3O8PD"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -168,32 +155,40 @@
                         "team_b": "PSG U19",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/vi/a/a7/Paris_Saint-Germain_F.C..svg",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/vi/a/a7/Paris_Saint-Germain_F.C..svg"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/tr/f/fc/Villarreal_CF_logo.png"
                     }
                 },
                 {
+                    "id": "ch-b14b0b2ba97e",
                     "name": "23:00 17/03 Lokomotiv Sofia VS Septemvri Sofia BLV Ngọc Hoàng(A Cháo)",
-                    "logo": "https://media.api-sports.io/football/teams/1416.png",
-                    "logo_a": "https://media.api-sports.io/football/teams/1416.png",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/en/a/a9/PFCSeptemvriSofia.png",
-                    "icon": "https://media.api-sports.io/football/teams/1416.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://media.api-sports.io/football/teams/1416.png"
+                        "url": "https://media.api-sports.io/football/teams/1416.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-b14b0b2ba97e",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-b14b0b2ba97e",
                                     "streams": [
                                         {
+                                            "id": "st-b14b0b2ba97e",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-b14b0b2ba97e",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/first-league-1763539896569/lokomotiv-sofia-vs-septemvri-sofia.KA5mGjHGWh"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -209,32 +204,40 @@
                         "team_b": "Septemvri Sofia",
                         "logo_a": "https://media.api-sports.io/football/teams/1416.png",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/en/a/a9/PFCSeptemvriSofia.png",
-                        "logo_home": "https://media.api-sports.io/football/teams/1416.png",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/en/a/a9/PFCSeptemvriSofia.png"
+                        "thumb": "https://media.api-sports.io/football/teams/1416.png"
                     }
                 },
                 {
+                    "id": "ch-5f22da816c68",
                     "name": "00:45 18/03 Sporting CPBodo/Glimt BLV Táo Chè",
-                    "logo": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
-                    "logo_b": "https://media.api-sports.io/football/teams/327.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png"
+                        "url": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-5f22da816c68",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-5f22da816c68",
                                     "streams": [
                                         {
+                                            "id": "st-5f22da816c68",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-5f22da816c68",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/sporting-cp-vs-bodoglimt.XW40SzGBUT"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -250,32 +253,40 @@
                         "team_b": "",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
                         "logo_b": "https://media.api-sports.io/football/teams/327.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png",
-                        "logo_away": "https://media.api-sports.io/football/teams/327.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/3/3e/Sporting_Clube_de_Portugal.png"
                     }
                 },
                 {
+                    "id": "ch-4c7fa154287c",
                     "name": "03:00 18/03 Arsenal VS Bayer Leverkusen BLV Ngọc Hoàng(A Cháo)",
-                    "logo": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
+                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-4c7fa154287c",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-4c7fa154287c",
                                     "streams": [
                                         {
+                                            "id": "st-4c7fa154287c",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-4c7fa154287c",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/arsenal-vs-bayer-leverkusen.REcK-lm07z"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -291,32 +302,40 @@
                         "team_b": "Bayer Leverkusen",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
                     }
                 },
                 {
+                    "id": "ch-702418b7fab8",
                     "name": "03:00 18/03 Arsenal VS Bayer Leverkusen BLV Táo Văn Hóa(A Bí)",
-                    "logo": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                    "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
+                        "url": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-702418b7fab8",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-702418b7fab8",
                                     "streams": [
                                         {
+                                            "id": "st-702418b7fab8",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-702418b7fab8",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/arsenal-vs-bayer-leverkusen.V6KXjetuC2"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -332,32 +351,40 @@
                         "team_b": "Bayer Leverkusen",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
                         "logo_b": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",
-                        "logo_away": "https://upload.wikimedia.org/wikipedia/vi/0/0e/Bayer_04_Leverkusen_logo.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg"
                     }
                 },
                 {
+                    "id": "ch-8a951b899809",
                     "name": "03:00 18/03 Chelsea VS Paris Saint Germain BLV Táo Chè",
-                    "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
-                    "logo_a": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
-                    "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",
-                    "icon": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png"
+                        "url": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-8a951b899809",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-8a951b899809",
                                     "streams": [
                                         {
+                                            "id": "st-8a951b899809",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-8a951b899809",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/chelsea-vs-paris-saint-germain.jcVkYkflPv"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -373,32 +400,40 @@
                         "team_b": "Paris Saint Germain",
                         "logo_a": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",
-                        "logo_home": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
-                        "logo_away": "https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png"
+                        "thumb": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png"
                     }
                 },
                 {
+                    "id": "ch-1436900cc27b",
                     "name": "03:00 18/03 Manchester City VS Real Madrid BLV Táo Mèo",
-                    "logo": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                    "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
+                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-1436900cc27b",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-1436900cc27b",
                                     "streams": [
                                         {
+                                            "id": "st-1436900cc27b",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-1436900cc27b",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/manchester-city-vs-real-madrid.63q9Nt5HSw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -414,32 +449,40 @@
                         "team_b": "Real Madrid",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                        "logo_away": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
                     }
                 },
                 {
+                    "id": "ch-a3882b38908e",
                     "name": "03:00 18/03 Manchester City VS Real Madrid BLV Táo Văn Nghệ",
-                    "logo": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                    "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                    "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                    "icon": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
+                        "url": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-a3882b38908e",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-a3882b38908e",
                                     "streams": [
                                         {
+                                            "id": "st-a3882b38908e",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-a3882b38908e",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/manchester-city-vs-real-madrid.fWmwX1cx_I"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -455,32 +498,40 @@
                         "team_b": "Real Madrid",
                         "logo_a": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
                         "logo_b": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",
-                        "logo_home": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
-                        "logo_away": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png"
+                        "thumb": "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg"
                     }
                 },
                 {
+                    "id": "ch-26d80527241f",
                     "name": "  BLV Táo Văn Hóa(A Bí)17:30 17/03K League 1Gimcheon Sangmu FCKXD0-0---'Gwangju FCBLV Táo Văn Hóa(A Bí)Trực tiếp",
-                    "logo": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
-                    "logo_a": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
-                    "logo_b": "https://media.api-sports.io/football/teams/2768.png",
-                    "icon": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
+                    "type": "single",
+                    "display": "thumbnail-only",
                     "image": {
-                        "url": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg"
+                        "url": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
+                        "display": "contain"
                     },
                     "sources": [
                         {
+                            "id": "src-26d80527241f",
+                            "name": "Server Chính",
                             "contents": [
                                 {
+                                    "id": "ct-26d80527241f",
                                     "streams": [
                                         {
+                                            "id": "st-26d80527241f",
                                             "stream_links": [
                                                 {
+                                                    "id": "lnk-26d80527241f",
                                                     "url": "",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/k-league-1-1758630323713/gimcheon-sangmu-fc-vs-gwangju-fc.0_OrqGkXRN"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
                                                         }
                                                     ]
                                                 }
@@ -496,49 +547,7 @@
                         "team_b": "",
                         "logo_a": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
                         "logo_b": "https://media.api-sports.io/football/teams/2768.png",
-                        "logo_home": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg",
-                        "logo_away": "https://media.api-sports.io/football/teams/2768.png"
-                    }
-                },
-                {
-                    "name": "  BLV Táo Tàu17:00 17/03Asian Cup WomenChina WKXD0-0---'Australia WBLV Táo TàuTrực tiếp",
-                    "logo": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg",
-                    "logo_a": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg",
-                    "logo_b": "https://media.api-sports.io/football/teams/1723.png",
-                    "icon": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg",
-                    "image": {
-                        "url": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg"
-                    },
-                    "sources": [
-                        {
-                            "contents": [
-                                {
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-women.NOPb57w_wj/china-w-vs-australia-w.nSnWzT4-zB"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "org_metadata": {
-                        "team_a": "",
-                        "team_b": "",
-                        "logo_a": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg",
-                        "logo_b": "https://media.api-sports.io/football/teams/1723.png",
-                        "logo_home": "https://i.postimg.cc/ZK3qpM9B/signal-2026-02-28-214631.jpg",
-                        "logo_away": "https://media.api-sports.io/football/teams/1723.png"
+                        "thumb": "https://i.postimg.cc/tRVJS5Xz/signal-2026-03-03-165108-002.jpg"
                     }
                 }
             ]
