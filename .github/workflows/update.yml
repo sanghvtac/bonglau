@@ -37,7 +37,7 @@ jobs:
           fi
 
       - name: Run script
-        run: python crawl_thiendinh2.py # Đảm bảo tên file này khớp với file .py của bạn
+        run: python crawl_thiendinh.py # Đảm bảo tên file này khớp với file .py của bạn
 
       - name: Commit and Push results
         uses: stefanzweifel/git-auto-commit-action@v5
