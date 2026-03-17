@@ -97,7 +97,8 @@ def adjust_time_str(time_str, offset_hours):
 # ──────────────────────────────────────────────
 def clean_title(text, time_offset=0):
     # 1. Nhận diện Live TRƯỚC khi xóa chữ
-    is_live_origin = any(word in text.upper() for word in ["LIVE", "●"])
+    # Dùng \b để chỉ bắt "LIVE" đứng độc lập, không bắt "Live" trong "Liverpool"
+    is_live_origin = bool(re.search(r'(?i)\bLive\b|●', text))
 
     # 2. Chuẩn hóa giờ/ngày dính nhau: "03:0019/03" → "03:00 19/03"
     text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
@@ -109,8 +110,9 @@ def clean_title(text, time_offset=0):
     blv_match = re.search(r'(BLV.*)', text, flags=re.IGNORECASE)
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
 
-    # 4. Xóa "Live" độc lập — dùng \b để KHÔNG xóa trong "Liverpool"
-    clean = re.sub(r'(?i)\bLive\b|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
+    # 4. Xóa "Live" độc lập, icon, trạng thái, và "null" (rác từ trận đang live)
+    # Dùng \b để KHÔNG xóa "Live" trong "Liverpool"
+    clean = re.sub(r'(?i)\bLive\b|\bnull\b|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
 
     # 5. Xóa tên giải đấu (dài trước để tránh xóa nhầm chuỗi con)
     for league in sorted(LEAGUE_BLACKLIST, key=len, reverse=True):
@@ -280,18 +282,18 @@ async def main():
                 else:
                     json_output["groups"][1]["channels"].append(channel_json)
 
-                # IPTV M3U (TiviMate, GSE Smart IPTV...)
+                # IPTV M3U (TiviMate, GSE Smart IPTV...) — không cần tvg-logo
                 m3u_content += (
-                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{img_url}" '
+                    f'#EXTINF:-1 tvg-id="{match_id}" '
                     f'group-title="{group}", {ch["title"]}\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
                     f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
                     f'{stream}\n'
                 )
 
-                # VLC M3U
+                # VLC M3U — không cần tvg-logo
                 vlc_content += (
-                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{img_url}" '
+                    f'#EXTINF:-1 tvg-id="{match_id}" '
                     f'group-title="{group}", ⚽ {ch["title"]}\n'
                     f'#EXTVLCOPT:network-caching=1000\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
