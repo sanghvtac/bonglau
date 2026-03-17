@@ -1,4 +1,4 @@
-name: Crawl ThienDinh
+name: Crawl ThienDinh & ChuoiChien
 
 on:
   schedule:
@@ -46,13 +46,18 @@ jobs:
             playwright install chromium --with-deps
           fi
 
-      - name: Run script
+      - name: Run ThienDinh crawler
         run: python crawl_thiendinh.py
+
+      - name: Run ChuoiChien crawler
+        run: python crawl_chuoichien.py
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update ${{ github.run_id }}"
-          file_pattern: 'thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt'
+          file_pattern: >-
+            thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt
+            chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
