@@ -11,7 +11,7 @@ from playwright.async_api import async_playwright
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 
-# Danh sách các cụm từ giải đấu cần loại bỏ hoàn toàn
+# Danh sách giải đấu cần xóa
 LEAGUE_BLACKLIST = [
     "UEFA Champions League", "UEFA Youth League", "UEFA Europa League", "UEFA Conference League",
     "Champions League", "Youth League", "Europa League", "Conference League", "UEFA",
@@ -40,70 +40,65 @@ def get_base64_combined_image(logo_a_url, logo_b_url):
     except: return ""
 
 def clean_title(text):
-    # 1. Xác định trạng thái Live
+    # 1. Nhận diện Live (trước khi xóa chữ)
     is_live_origin = any(word in text.upper() for word in ["LIVE", "●"])
     
-    # 2. Fix Ngày/Giờ (Đảm bảo khoảng cách 00:00 00/00)
+    # 2. Chuẩn hóa Ngày/Giờ: Xử lý dính chữ và đảm bảo format HH:MM DD/MM
     text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
-    
-    # 3. Tách BLV ra trước để bảo vệ
+    time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text)
+    time_str = time_match.group(0) if time_match else ""
+
+    # 3. Tách BLV
     blv_match = re.search(r'(BLV.*)', text, flags=re.IGNORECASE)
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
-    text_clean = re.sub(r'(BLV.*)', '', text, flags=re.IGNORECASE).strip()
-
-    # 4. Xóa chữ "Live" thừa thãi (đặc biệt là sau ngày giờ)
-    text_clean = re.sub(r'(?i)\bLive\b', ' ', text_clean)
-
-    # 5. Xử lý dính chữ đặc biệt cho Liverpool (Trước khi xóa giải đấu)
-    # Ví dụ: LiverpoolGalatasaray -> Liverpool VS Galatasaray
-    text_clean = re.sub(r'(Liverpool)([A-Z])', r'\1 VS \2', text_clean, flags=re.IGNORECASE)
-
-    # 6. LỌC GIẢI ĐẤU (Blacklist)
+    
+    # 4. LÀM SẠCH TIÊU ĐỀ (Xóa Live, icon, giải đấu)
+    # Xóa chữ Live và các khoảng trắng lạ xung quanh nó
+    clean = re.sub(r'(?i)Live|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
+    
+    # Xóa các giải đấu trong Blacklist
     for league in LEAGUE_BLACKLIST:
-        text_clean = re.sub(rf'(?i){re.escape(league)}', ' ', text_clean)
+        clean = re.sub(rf'(?i){re.escape(league)}', ' ', clean)
 
-    # 7. Lấy mốc thời gian bảo vệ
-    time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text_clean)
-    time_str = time_match.group(0) if time_match else ""
+    # 5. Xử lý dính chữ đặc biệt cho Liverpool (tránh Liverpool VS Galatasaray dính nhau)
+    clean = re.sub(r'(Liverpool)([A-Z])', r'\1 VS \2', clean, flags=re.IGNORECASE)
+
+    # 6. Xử lý CamelCase chung và cô lập tên đội
+    clean = clean.replace(time_str, "").replace(blv_str.strip(), "")
+    clean = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', clean)
+    clean = re.sub(r'(\d)([A-Z])', r'\1 VS \2', clean)
     
-    # 8. Xử lý nội dung core (Xóa icon ●, tỉ số, hiệp đấu, dấu gạch ngang)
-    core = re.sub(r'(●|Sắp diễn ra|Sắp bắt đầu|VS|H\d\s*-\s*\d+\'?|\d-\d|-)', ' ', text_clean, flags=re.IGNORECASE)
-    core = core.replace(time_str, "").strip()
+    # Xóa tỉ số, hiệp đấu, dấu gạch ngang rác
+    clean = re.sub(r'(H\d\s*-\s*\d+\'?|\d-\d|-|VS)', ' ', clean, flags=re.IGNORECASE)
     
-    # 9. LOGIC TÁCH CHỮ DÍNH (CamelCase chung)
-    core = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', core)
-    core = re.sub(r'(\d)([A-Z])', r'\1 VS \2', core)
-    if ' VS ' not in core:
-        core = re.sub(r'([a-zA-Z])(\d)', r'\1 VS \2', core)
-    
-    # 10. Làm sạch khoảng trắng và nối lại Đội A VS Đội B
-    teams = [t.strip() for t in core.split(' VS ') if t.strip()]
-    if len(teams) >= 2:
-        final_teams = f"{teams[0]} VS {teams[1]}"
+    # 7. Tách vế để lấy Đội A VS Đội B
+    parts = [p.strip() for p in clean.split() if p.strip()]
+    if len(parts) >= 2:
+        # Nếu có từ 2 cụm trở lên, ta coi cụm đầu là Đội A, phần còn lại là Đội B (sau khi đã lọc sạch giải)
+        # Tuy nhiên để an toàn và giống sáng nay:
+        mid = len(parts) // 2
+        team_a = " ".join(parts[:mid])
+        team_b = " ".join(parts[mid:])
+        final_teams = f"{team_a} VS {team_b}"
     else:
-        final_teams = core
-
-    # Làm sạch lần cuối chữ VS hoặc dấu cách thừa ở đầu
-    final_teams = re.sub(r'^(VS|\s)+', '', final_teams).strip()
+        final_teams = " ".join(parts)
 
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
 async def main():
-    # Fix giờ cho GitHub Action bằng cách dùng timedelta trực tiếp trên UTC
-    # Đảm bảo dù server ở đâu cũng cộng đúng 7 tiếng
-    utc_now = datetime.now(timezone.utc)
-    vn_now = utc_now + timedelta(hours=7)
-    now_str = vn_now.strftime("%H:%M %d/%m/%Y")
+    # CÁCH ĐƠN GIẢN NHẤT CHO GITHUB: Lấy giờ UTC hiện tại và +7
+    now_utc = datetime.now(timezone.utc)
+    vn_time = now_utc + timedelta(hours=7)
+    now_str = vn_time.strftime("%H:%M %d/%m/%Y")
 
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         context = await browser.new_context(user_agent="Mozilla/5.0")
         page = await context.new_page()
-        page.set_default_timeout(60000)
         
         try:
             await page.goto(TARGET_URL, wait_until="domcontentloaded")
-            for _ in range(5): 
+            for _ in range(3): 
                 await page.mouse.wheel(0, 2000)
                 await asyncio.sleep(1)
             
@@ -131,12 +126,12 @@ async def main():
                     m3u8_list = []
                     page.on("response", lambda res: m3u8_list.append(res.url) if ".m3u8" in res.url else None)
                     try:
-                        await page.goto(item['url'], wait_until="domcontentloaded", timeout=15000)
+                        await page.goto(item['url'], wait_until="domcontentloaded", timeout=10000)
                         await asyncio.sleep(4)
                         if m3u8_list: item['stream'] = max(m3u8_list, key=len)
                     except: pass
 
-            # --- XUẤT FILE ---
+            # XUẤT FILE
             json_output = {"name": f"Thiên Đỉnh TV ({now_str})", "groups": [{"id": "live", "name": "🔴 Live", "channels": []}, {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}]}
             m3u_content = f"#EXTM3U\n#PLAYLIST: Thiên Đỉnh TV ({now_str})\n"
 
@@ -153,14 +148,10 @@ async def main():
                 if ch['is_live']: json_output["groups"][0]["channels"].append(channel_json)
                 else: json_output["groups"][1]["channels"].append(channel_json)
 
-                m3u_content += f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{ch["logo_a"]}" group-title="{group}", {ch["title"]}\n'
-                m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
-                m3u_content += f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
-                m3u_content += f'{stream}\n'
+                m3u_content += f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{ch["logo_a"]}" group-title="{group}", {ch["title"]}\n{stream}\n'
 
             with open("thiendinh.json", "w", encoding="utf-8") as f: json.dump(json_output, f, ensure_ascii=False, indent=4)
             with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
-            with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f: f.write(m3u_content)
             
             print(f"Hoàn thành lúc: {now_str} (Giờ VN)")
         finally:
