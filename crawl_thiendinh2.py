@@ -2,7 +2,12 @@ import json
 import asyncio
 import re
 import hashlib
+import base64
+import requests
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from io import BytesIO
+from PIL import Image
 from playwright.async_api import async_playwright
 
 TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
@@ -18,119 +23,126 @@ LEAGUE_BLACKLIST = [
 def generate_id(text):
     return hashlib.md5(text.encode()).hexdigest()[:12]
 
-def make_combined_image_url(logo_a_url, logo_b_url):
-    """
-    Thay vì tải + encode ảnh về base64 (nặng, chậm), dùng images.weserv.nl
-    để trả về 1 URL proxy — client tự fetch khi cần hiển thị, script không
-    tốn thêm RAM hay thời gian crawl.
-
-    wsrv.nl hỗ trợ tham số 'af' (append filename) để ghép overlay,
-    nhưng cách đơn giản nhất là trả về URL ảnh đôi qua canvas phía client.
-    Ở đây ta trả về URL logo_a được proxy (chuẩn hóa kích thước), và lưu
-    logo_b riêng — app JSON tự render 2 ảnh cạnh nhau.
-    """
-    def proxy(url):
-        return f"https://images.weserv.nl/?url={url}&w=100&h=100&fit=contain&output=webp" if url else ""
-    return proxy(logo_a_url), proxy(logo_b_url)
-
-def adjust_time_str(time_str, offset_hours=7):
-    """
-    FIX BUG GIỜ GITHUB:
-    Trang web trả về giờ theo UTC+0 khi chạy trên GitHub Actions (UTC).
-    Hàm này cộng thêm offset_hours (mặc định +7) để chuyển sang giờ VN (UTC+7).
-    Trên máy cá nhân (UTC+7), thời gian đã đúng nhưng hàm này vẫn an toàn vì
-    chúng ta sẽ dùng TZ_OFFSET được tính tự động từ môi trường.
-    """
-    if not time_str:
-        return ""
+# ──────────────────────────────────────────────
+# ẢNH: Ghép 2 logo thành 1 ảnh base64
+# Dùng ThreadPoolExecutor để chạy song song,
+# không block asyncio event loop khi crawl stream.
+# ──────────────────────────────────────────────
+def _fetch_logo(url):
+    """Tải 1 logo về dạng PIL Image. Dùng wsrv.nl để chuẩn hóa kích thước."""
     try:
-        # time_str có dạng "HH:MM DD/MM"
-        time_str = time_str.strip()
-        dt = datetime.strptime(time_str, "%H:%M %d/%m")
-        # Dùng năm hiện tại (UTC) để tránh lỗi năm
-        now_utc = datetime.now(timezone.utc)
-        dt = dt.replace(year=now_utc.year)
-        dt_adjusted = dt + timedelta(hours=offset_hours)
-        return dt_adjusted.strftime("%H:%M %d/%m")
+        proxy = f"https://images.weserv.nl/?url={url}&w=100&h=100&fit=contain&output=png&bg=ececec"
+        res = requests.get(proxy, headers={'User-Agent': 'Mozilla/5.0'}, timeout=8)
+        return Image.open(BytesIO(res.content)).convert("RGBA")
     except:
-        return time_str  # Nếu parse lỗi, trả về nguyên bản
+        return None
 
+def _build_combined_image(logo_a_url, logo_b_url):
+    """
+    Ghép logo A (trái) và logo B (phải) thành 1 ảnh PNG 220x100,
+    trả về chuỗi base64 data URI sẵn dùng làm "url" trong JSON.
+    Hàm này chạy trong thread riêng nên không block event loop.
+    """
+    try:
+        canvas = Image.new("RGBA", (220, 100), (236, 236, 236, 255))
+        img_a = _fetch_logo(logo_a_url) if logo_a_url else None
+        img_b = _fetch_logo(logo_b_url) if logo_b_url else None
+        if img_a:
+            canvas.paste(img_a, (0, 0), img_a)
+        if img_b:
+            canvas.paste(img_b, (110, 0), img_b)
+        buf = BytesIO()
+        canvas.save(buf, format="PNG", optimize=True)
+        return f"data:image/png;base64,{base64.b64encode(buf.getvalue()).decode()}"
+    except:
+        # Fallback: nếu lỗi thì trả URL proxy đơn của logo_a
+        if logo_a_url:
+            return f"https://images.weserv.nl/?url={logo_a_url}&w=100&h=100&fit=contain&output=png"
+        return ""
+
+async def make_combined_image_async(logo_a_url, logo_b_url, executor):
+    """Wrapper async: chạy _build_combined_image trong thread pool."""
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(executor, _build_combined_image, logo_a_url, logo_b_url)
+
+# ──────────────────────────────────────────────
+# GIỜ: Tự động phát hiện timezone offset
+# ──────────────────────────────────────────────
+def detect_time_offset():
+    """
+    So sánh local time vs UTC để tự tính số giờ cần cộng vào giờ trận đấu.
+    - GitHub Actions (UTC+0): cộng +7
+    - Máy VN (UTC+7): cộng +0
+    """
+    local_now = datetime.now()
+    utc_now = datetime.now(timezone.utc).replace(tzinfo=None)
+    diff_hours = round((local_now - utc_now).total_seconds() / 3600)
+    needed_offset = 7 - diff_hours
+    print(f"[INFO] Local timezone: UTC+{diff_hours} → Cộng {needed_offset}h vào giờ trận")
+    return needed_offset
+
+def adjust_time_str(time_str, offset_hours):
+    """Cộng offset_hours vào time_str dạng 'HH:MM DD/MM'."""
+    if not time_str or offset_hours == 0:
+        return time_str
+    try:
+        dt = datetime.strptime(time_str.strip(), "%H:%M %d/%m")
+        dt = dt.replace(year=datetime.now(timezone.utc).year)
+        return (dt + timedelta(hours=offset_hours)).strftime("%H:%M %d/%m")
+    except:
+        return time_str
+
+# ──────────────────────────────────────────────
+# TIÊU ĐỀ: Làm sạch raw text → tên trận đấu
+# ──────────────────────────────────────────────
 def clean_title(text, time_offset=0):
-    """
-    Làm sạch tiêu đề trận đấu từ raw text của trang web.
-    time_offset: số giờ cần cộng thêm vào giờ trận đấu (0 = không đổi, 7 = cộng 7 tiếng)
-    """
-    # 1. Nhận diện Live (trước khi xóa chữ)
+    # 1. Nhận diện Live TRƯỚC khi xóa chữ
     is_live_origin = any(word in text.upper() for word in ["LIVE", "●"])
 
-    # 2. Chuẩn hóa Ngày/Giờ: Xử lý dính chữ và đảm bảo format HH:MM DD/MM
+    # 2. Chuẩn hóa giờ/ngày dính nhau: "03:0019/03" → "03:00 19/03"
     text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
-    time_match = re.search(r'\d{2}:\d{2}\s*\d{2}/\d{2}', text)
-    raw_time_str = time_match.group(0).strip() if time_match else ""
-
-    # FIX: Cộng offset giờ vào time_str lấy từ trang web
-    time_str = adjust_time_str(raw_time_str, offset_hours=time_offset) if raw_time_str else ""
+    time_match = re.search(r'\d{2}:\d{2} \d{2}/\d{2}', text)
+    raw_time_str = time_match.group(0) if time_match else ""
+    time_str = adjust_time_str(raw_time_str, time_offset)
 
     # 3. Tách BLV
     blv_match = re.search(r'(BLV.*)', text, flags=re.IGNORECASE)
     blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
 
-    # 4. Làm sạch tiêu đề (Xóa Live, icon, giải đấu)
-    # Dùng \b (word boundary) để chỉ xóa từ "Live" đứng độc lập,
-    # KHÔNG xóa "Live" bên trong tên đội như "Liverpool"
+    # 4. Xóa "Live" độc lập — dùng \b để KHÔNG xóa trong "Liverpool"
     clean = re.sub(r'(?i)\bLive\b|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
 
-    # Xóa các giải đấu trong Blacklist (sắp xếp dài trước để tránh xóa nhầm chuỗi con)
+    # 5. Xóa tên giải đấu (dài trước để tránh xóa nhầm chuỗi con)
     for league in sorted(LEAGUE_BLACKLIST, key=len, reverse=True):
         clean = re.sub(rf'(?i){re.escape(league)}', ' ', clean)
 
-    # 5. Xử lý dính chữ đặc biệt cho Liverpool
-    clean = re.sub(r'(Liverpool)([A-Z])', r'\1 VS \2', clean, flags=re.IGNORECASE)
-
-    # 6. Xóa ngày giờ và BLV khỏi phần tên đội
+    # 6. Xóa giờ/ngày và BLV khỏi phần tên đội
     clean = clean.replace(raw_time_str, "").replace(blv_str.strip(), "")
 
-    # 7. Xử lý CamelCase chung (tên đội dính nhau)
+    # 7. Tách tên đội bị dính (CamelCase)
     clean = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', clean)
     clean = re.sub(r'(\d)([A-Z])', r'\1 VS \2', clean)
 
-    # 8. Xóa tỉ số, hiệp đấu, dấu gạch ngang rác
+    # 8. Xóa tỉ số, hiệp đấu, ký tự rác
     clean = re.sub(r'(H\d\s*-\s*\d+\'?|\d-\d|-|VS)', ' ', clean, flags=re.IGNORECASE)
 
-    # 9. Tách vế để lấy Đội A VS Đội B
+    # 9. Tách đội A / đội B
     parts = [p.strip() for p in clean.split() if p.strip()]
     if len(parts) >= 2:
         mid = len(parts) // 2
-        team_a = " ".join(parts[:mid])
-        team_b = " ".join(parts[mid:])
-        final_teams = f"{team_a} VS {team_b}"
+        final_teams = f"{' '.join(parts[:mid])} VS {' '.join(parts[mid:])}"
     else:
         final_teams = " ".join(parts)
 
     return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
-def detect_time_offset():
-    """
-    Tự động phát hiện offset cần cộng vào giờ của trang web.
-    - Nếu chạy trên GitHub Actions (UTC+0): cần cộng +7
-    - Nếu chạy trên máy tính VN (UTC+7): cộng +0
-    Cách phát hiện: so sánh local time với UTC time.
-    """
-    local_now = datetime.now()
-    utc_now = datetime.now(timezone.utc).replace(tzinfo=None)
-    diff_hours = round((local_now - utc_now).total_seconds() / 3600)
-    # Trang web luôn trả về UTC+0 → ta cần bù thêm để ra giờ VN (UTC+7)
-    # local là UTC+7 → diff_hours = 7 → offset cần thêm = 7 - 7 = 0 (đã đúng)
-    # local là UTC+0 (GitHub) → diff_hours = 0 → offset cần thêm = 7 - 0 = 7 (cần cộng)
-    needed_offset = 7 - diff_hours
-    print(f"[INFO] Local timezone offset: UTC+{diff_hours} → Cần cộng {needed_offset} giờ vào giờ trang web")
-    return needed_offset
-
+# ──────────────────────────────────────────────
+# STREAM: Lấy URL m3u8 cho từng trận live
+# ──────────────────────────────────────────────
 async def fetch_stream_url(page, item_url):
     """
-    FIX RACE CONDITION:
-    Tạo page mới riêng cho mỗi trận để tránh listener chồng chất.
-    Trả về URL m3u8 dài nhất tìm được, hoặc "" nếu không có.
+    Mở page mới riêng, lắng nghe response để bắt URL .m3u8.
+    Luôn remove_listener sau khi xong để tránh chồng chất.
     """
     m3u8_list = []
 
@@ -142,22 +154,23 @@ async def fetch_stream_url(page, item_url):
     try:
         await page.goto(item_url, wait_until="domcontentloaded", timeout=15000)
         await asyncio.sleep(4)
-        result = max(m3u8_list, key=len) if m3u8_list else ""
+        return max(m3u8_list, key=len) if m3u8_list else ""
     except:
-        result = ""
+        return ""
     finally:
-        # Luôn gỡ listener sau khi dùng xong để tránh chồng chất
         page.remove_listener("response", on_response)
-    return result
 
+# ──────────────────────────────────────────────
+# MAIN
+# ──────────────────────────────────────────────
 async def main():
-    # Tính giờ VN hiện tại (dùng UTC + 7)
     now_utc = datetime.now(timezone.utc)
     vn_time = now_utc + timedelta(hours=7)
     now_str = vn_time.strftime("%H:%M %d/%m/%Y")
-
-    # Phát hiện offset giờ cần cộng vào giờ trận đấu từ trang web
     time_offset = detect_time_offset()
+
+    # ThreadPoolExecutor cho việc tải & ghép ảnh song song
+    executor = ThreadPoolExecutor(max_workers=8)
 
     async with async_playwright() as p:
         browser = await p.chromium.launch()
@@ -165,6 +178,7 @@ async def main():
         page = await context.new_page()
 
         try:
+            # ── Bước 1: Lấy danh sách trận ──
             await page.goto(TARGET_URL, wait_until="domcontentloaded")
             for _ in range(3):
                 await page.mouse.wheel(0, 2000)
@@ -177,29 +191,29 @@ async def main():
                 url = await el.get_attribute("href")
                 full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
                 raw_text = (await el.text_content()).strip()
-
-                # Truyền time_offset vào clean_title để fix giờ
                 full_title, teams_only, is_live = clean_title(raw_text, time_offset=time_offset)
 
                 imgs = await el.query_selector_all("img")
                 logos = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in imgs]
                 logos = [l for l in logos if l and "http" in l and "30aaqin.png" not in l]
 
-                logo_a_px, logo_b_px = make_combined_image_url(
-                    logos[0] if len(logos) >= 1 else "",
-                    logos[1] if len(logos) >= 2 else ""
-                )
                 match_data.append({
-                    "title": full_title,
-                    "url": full_url,
-                    "logo_a": logo_a_px,
-                    "logo_b": logo_b_px,
-                    "is_live": is_live,
-                    "stream": ""
+                    "title":        full_title,
+                    "url":          full_url,
+                    "logo_a":       logos[0] if len(logos) >= 1 else "",
+                    "logo_b":       logos[1] if len(logos) >= 2 else "",
+                    "combined_img": "",   # điền sau
+                    "is_live":      is_live,
+                    "stream":       ""    # điền sau
                 })
 
-            # FIX RACE CONDITION: Dùng page riêng cho mỗi trận live
-            # và chạy tuần tự (tránh quá tải server)
+            # ── Bước 2: Khởi động tất cả image tasks NGAY (chạy song song trong threads) ──
+            image_tasks = [
+                make_combined_image_async(ch["logo_a"], ch["logo_b"], executor)
+                for ch in match_data
+            ]
+
+            # ── Bước 3: Trong khi ảnh đang tải, crawl stream song song ──
             for item in match_data:
                 if item['is_live']:
                     stream_page = await context.new_page()
@@ -208,11 +222,18 @@ async def main():
                     finally:
                         await stream_page.close()
 
-            # === XUẤT FILE ===
+            # ── Bước 4: Thu kết quả ảnh (đã chạy song song lúc crawl stream) ──
+            image_results = await asyncio.gather(*image_tasks)
+            for ch, img in zip(match_data, image_results):
+                ch['combined_img'] = img
+
+            executor.shutdown(wait=False)
+
+            # ── Bước 5: Xuất file ──
             json_output = {
                 "name": f"Thiên Đỉnh TV ({now_str})",
                 "groups": [
-                    {"id": "live", "name": "🔴 Live", "channels": []},
+                    {"id": "live",     "name": "🔴 Live",         "channels": []},
                     {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}
                 ]
             }
@@ -221,21 +242,20 @@ async def main():
 
             for ch in match_data:
                 match_id = generate_id(ch['url'])
-                stream = ch['stream'] if ch['stream'] else "http://0.0.0.0/not-live"
-                group = "LIVE" if ch['is_live'] else "UPCOMING"
+                stream   = ch['stream'] if ch['stream'] else "http://0.0.0.0/not-live"
+                group    = "LIVE" if ch['is_live'] else "UPCOMING"
+                img_url  = ch['combined_img'] or ch['logo_a']
 
-                # --- JSON (cho app có hỗ trợ JSON playlist) ---
+                # JSON cho app TV (SportTV, MonPlayer...)
                 channel_json = {
-                    "id": f"ch-{match_id}",
-                    "name": f"⚽ {ch['title']}",
-                    "type": "single",
+                    "id":      f"ch-{match_id}",
+                    "name":    f"⚽ {ch['title']}",
+                    "type":    "single",
                     "display": "thumbnail-only",
                     "image": {
-                        # Lưu cả 2 URL proxy — app tự render 2 logo cạnh nhau, không cần base64
-                        "logo_a": ch['logo_a'],
-                        "logo_b": ch['logo_b'],
-                        "display": "contain",
-                        "padding": 1,
+                        "url":              img_url,   # 1 URL duy nhất chứa cả 2 logo ghép
+                        "display":          "contain",
+                        "padding":          1,
                         "background_color": "#ececec"
                     },
                     "sources": [{
@@ -244,10 +264,10 @@ async def main():
                             "id": f"ct-{match_id}",
                             "streams": [{
                                 "stream_links": [{
-                                    "url": ch['stream'] if ch['stream'] else "",
+                                    "url":  ch['stream'] if ch['stream'] else "",
                                     "type": "hls",
                                     "request_headers": [
-                                        {"key": "Referer", "value": ch['url']},
+                                        {"key": "Referer",    "value": ch['url']},
                                         {"key": "User-Agent", "value": "Mozilla/5.0"}
                                     ]
                                 }]
@@ -260,18 +280,18 @@ async def main():
                 else:
                     json_output["groups"][1]["channels"].append(channel_json)
 
-                # --- IPTV M3U (cho các app IPTV như TiviMate, GSE) ---
+                # IPTV M3U (TiviMate, GSE Smart IPTV...)
                 m3u_content += (
-                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{ch["logo_a"]}" '
+                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{img_url}" '
                     f'group-title="{group}", {ch["title"]}\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
                     f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
                     f'{stream}\n'
                 )
 
-                # --- VLC M3U (cho VLC Media Player) ---
+                # VLC M3U
                 vlc_content += (
-                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{ch["logo_a"]}" '
+                    f'#EXTINF:-1 tvg-id="{match_id}" tvg-logo="{img_url}" '
                     f'group-title="{group}", ⚽ {ch["title"]}\n'
                     f'#EXTVLCOPT:network-caching=1000\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
@@ -279,17 +299,17 @@ async def main():
                     f'{stream}\n'
                 )
 
-            with open("thiendinh.json", "w", encoding="utf-8") as f:
+            with open("thiendinh.json",     "w", encoding="utf-8") as f:
                 json.dump(json_output, f, ensure_ascii=False, indent=4)
             with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
                 f.write(m3u_content)
-            with open("thiendinh_vlc.txt", "w", encoding="utf-8") as f:
+            with open("thiendinh_vlc.txt",  "w", encoding="utf-8") as f:
                 f.write(vlc_content)
 
-            live_count = sum(1 for ch in match_data if ch['is_live'])
+            live_count     = sum(1 for ch in match_data if ch['is_live'])
             upcoming_count = sum(1 for ch in match_data if not ch['is_live'])
             print(f"✅ Hoàn thành lúc: {now_str} (Giờ VN)")
-            print(f"   🔴 Live: {live_count} trận | 🗓 Sắp diễn ra: {upcoming_count} trận")
+            print(f"   🔴 Live: {live_count} trận  |  🗓 Sắp diễn ra: {upcoming_count} trận")
 
         finally:
             await browser.close()
