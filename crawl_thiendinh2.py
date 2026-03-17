@@ -122,36 +122,43 @@ def clean_title(text, time_offset=0, team_names_dom=None):
         return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
 
     # ── Nhánh B: Fallback — parse từ text ──
-    # 4. Xóa tất cả rác: Live, null, phút đang chơi (+10', 45+2'...), icon, trạng thái
-    clean = re.sub(
-        r"(?i)\bLive\b"           # từ "Live" đứng độc lập
-        r"|\bnull\b"              # chữ "null" rác
-        r"|\+\d+['']?"           # phút live: +10' +45'
-        r"|\d{1,3}['']"          # phút đơn: 10' 45'
-        r"|H\d\s*[-–]\s*\d+"    # hiệp: H1-0, H2-1
-        r"|\d+\s*[-–]\s*\d+"    # tỉ số: 2-1, 0-0
-        r"|●|Sắp diễn ra|Sắp bắt đầu"
-        r"|[''`]",               # dấu nháy lẻ rác
-        ' ', text
-    )
+    # 4. Xóa giờ/ngày và BLV trước để không ảnh hưởng các bước sau
+    clean = text
+    clean = clean.replace(raw_time_str, "").replace(blv_str.strip(), "")
 
-    # 5. Xóa tên giải đấu (dài trước)
+    # 5. Xóa tên giải đấu TRƯỚC (dài trước để tránh xóa nhầm chuỗi con)
     for league in sorted(LEAGUE_BLACKLIST, key=len, reverse=True):
         clean = re.sub(rf'(?i)\b{re.escape(league)}\b', ' ', clean)
 
-    # 6. Xóa giờ/ngày và BLV
-    clean = clean.replace(raw_time_str, "").replace(blv_str.strip(), "")
+    # 6. Xóa rác: Live, null, phút đang chơi, tỉ số, icon, trạng thái
+    #    Làm SAU khi đã xóa giải đấu để tránh "LiveUEFA" → "Live VS UEFA"
+    clean = re.sub(
+        r"(?i)\bLive\b"            # từ "Live" đứng độc lập
+        r"|\bnull\b"               # chữ "null" rác
+        r"|\+\d+[''']?"            # phút live: +10' +45'
+        r"|\d{1,3}[''']"           # phút đơn: 10' 45'
+        r"|H\d\s*[-–]\s*\d+"      # hiệp: H1-0, H2-1
+        r"|\d+\s*[-–]\s*\d+"      # tỉ số: 2-1, 0-0
+        r"|●|Sắp diễn ra|Sắp bắt đầu"
+        r"|[''`'']",               # dấu nháy lẻ rác
+        ' ', clean
+    )
 
-    # 7. Tách tên đội dính (CamelCase): "SportingCPBodo" → "Sporting CP VS Bodo"
-    clean = re.sub(r'([a-z])([A-Z])', r'\1 VS \2', clean)
-    clean = re.sub(r'(\d)([A-Z])', r'\1 VS \2', clean)
+    # 7. Tách tên đội dính (CamelCase): "SportingCPBodo" → "Sporting CP|Bodo"
+    #    Dùng ký tự tạm | thay VS để không bị lẫn với VS thật
+    clean = re.sub(r'([a-z])([A-Z])', r'\1|\2', clean)
+    clean = re.sub(r'(\d)([A-Z])', r'\1|\2', clean)
 
-    # 8. Chuẩn hóa dấu phân cách VS còn sót
-    clean = re.sub(r'\s+VS\s+', ' VS ', clean, flags=re.IGNORECASE)
+    # 8. Dọn khoảng trắng thừa
     clean = re.sub(r'\s{2,}', ' ', clean).strip()
 
-    # 9. Tách đội A / đội B qua "VS" nếu có, không thì dùng mid
-    if re.search(r'\bVS\b', clean, re.IGNORECASE):
+    # 9. Tách đội A / đội B
+    #    Ưu tiên dấu | (từ CamelCase detect), sau đó thử VS còn sót, cuối cùng dùng mid
+    if '|' in clean:
+        parts = clean.split('|', 1)
+        team_a = parts[0].strip()
+        team_b = parts[1].strip()
+    elif re.search(r'\bVS\b', clean, re.IGNORECASE):
         parts = re.split(r'\bVS\b', clean, maxsplit=1, flags=re.IGNORECASE)
         team_a = parts[0].strip()
         team_b = parts[1].strip() if len(parts) > 1 else ""
