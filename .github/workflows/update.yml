@@ -2,8 +2,7 @@ name: Crawl ThienDinh & ChuoiChien
 
 on:
   schedule:
-    # Chạy mỗi giờ từ 17:00 đến 05:00 VN hôm sau
-    # = 10:00 UTC đến 22:00 UTC (17 lần/ngày)
+    # Chạy vào 18:00, 19:00 và 24:00 giờ VN
     - cron: '0 11,14,17 * * *'
   workflow_dispatch:
 
