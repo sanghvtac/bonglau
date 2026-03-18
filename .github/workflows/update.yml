@@ -4,7 +4,7 @@ on:
   schedule:
     # Chạy mỗi giờ từ 17:00 đến 05:00 VN hôm sau
     # = 10:00 UTC đến 22:00 UTC (17 lần/ngày)
-    - cron: '0 10-22 * * *'
+    - cron: '0 11,14,17 * * *'
   workflow_dispatch:
 
 jobs:
