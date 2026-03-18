@@ -476,4 +476,146 @@ async def main():
                 mi = ch.get("match_info", {})
                 image_tasks.append(
                     make_combined_image_async(
-  
+                        mi.get("logo_home", ""),
+                        mi.get("logo_away", ""),
+                        executor
+                    )
+                )
+            image_results = await asyncio.gather(*image_tasks)
+            for ch, img in zip(match_data, image_results):
+                ch["combined_img"] = img
+            executor.shutdown(wait=False)
+
+            # Buoc 5: Xuat file
+            json_output = {
+                "name": f"Chuoi Chien TV ({now_str})",
+                "image": {
+                    "url": COVER_IMAGE,
+                },
+                "groups": [
+                    {"id": "live",     "name": "🔴 Live",        "channels": []},
+                    {"id": "upcoming", "name": "🗓 Sap dien ra", "channels": []}
+                ]
+            }
+            m3u_content = f"#EXTM3U\n#PLAYLIST: Chuoi Chien TV ({now_str})\n"
+            vlc_content = f"#EXTM3U\n#PLAYLIST: Chuoi Chien TV ({now_str})\n"
+
+            def make_entry(ch: dict, stream_url: str, blv_name: str,
+                           quality_label: str, img_url: str):
+                mi       = ch.get("match_info", {})
+                home     = mi.get("home", "")
+                away     = mi.get("away", "")
+                time_str = iso_to_vn_time(mi.get("start_time_iso", ""))
+
+                blv_qual = f"{blv_name} - {quality_label}" if blv_name else ""
+                title    = build_title(time_str, home, away, blv_qual)
+
+                entry_id  = generate_id(ch["url"] + blv_qual)
+                group     = "LIVE" if ch["is_live"] else "UPCOMING"
+                stream    = stream_url or "http://0.0.0.0/not-live"
+                referer   = ("https://live.chuoichien.tv/"
+                             if stream_url and "chuoichien" not in stream_url
+                             else ch["url"])
+                # Anh channel: dung anh ghep 2 logo (combined_img), fallback COVER_IMAGE
+                channel_img = img_url or COVER_IMAGE
+
+                ch_json = {
+                    "id":      f"ch-{entry_id}",
+                    "name":    f"⚽ {title}",
+                    "type":    "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url":              channel_img,
+                        "display":          "contain",
+                        "padding":          1,
+                        "background_color": "#ececec",
+                    },
+                    "sources": [{
+                        "id": f"src-{entry_id}",
+                        "contents": [{
+                            "id": f"ct-{entry_id}",
+                            "streams": [{
+                                "stream_links": [{
+                                    "url":  stream_url or "",
+                                    "type": "hls",
+                                    "request_headers": [
+                                        {"key": "Referer",    "value": referer},
+                                        {"key": "User-Agent", "value": "Mozilla/5.0"},
+                                    ]
+                                }]
+                            }]
+                        }]
+                    }]
+                }
+                m3u = (
+                    f'#EXTINF:-1 tvg-id="{entry_id}" '
+                    f'group-title="{group}", {title}\n'
+                    f'#EXTVLCOPT:http-referrer={referer}\n'
+                    f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
+                    f'{stream}\n'
+                )
+                # VLC title: bo cac ky tu [, ], - vi VLC khong hien thi duoc
+                vlc_title = title.replace("[", " ").replace("]", " ").replace(" - ", " ")
+                # Don dep khoang trang thua
+                import re as _re
+                vlc_title = _re.sub(r' {2,}', ' ', vlc_title).strip()
+
+                vlc = (
+                    f'#EXTINF:-1 tvg-id="{entry_id}" '
+                    f'group-title="{group}", ⚽ {vlc_title}\n'
+                    f'#EXTVLCOPT:network-caching=1000\n'
+                    f'#EXTVLCOPT:http-referrer={referer}\n'
+                    f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\n'
+                    f'{stream}\n'
+                )
+                return ch_json, m3u, vlc
+
+            total_entries = 0
+            for ch in match_data:
+                img_url   = ch.get("combined_img", "")
+                group_idx = 0 if ch["is_live"] else 1
+
+                if ch["is_live"] and ch.get("streams"):
+                    for s in ch["streams"]:
+                        blv = s["blv_name"] or s["blv_id"]
+                        # Neu co FHD1 thi chi xuat FHD1, bo HD1
+                        # Neu chi co HD1 thi xuat HD1
+                        if s["stream_fhd"]:
+                            pairs = [("FHD1", s["stream_fhd"])]
+                        else:
+                            pairs = [("HD1",  s["stream_hd"])] if s["stream_hd"] else []
+                        for qual, url in pairs:
+                            cj, ml, vl = make_entry(ch, url, blv, qual, img_url)
+                            json_output["groups"][group_idx]["channels"].append(cj)
+                            m3u_content += ml
+                            vlc_content += vl
+                            total_entries += 1
+                else:
+                    cj, ml, vl = make_entry(ch, "", "", "", img_url)
+                    json_output["groups"][group_idx]["channels"].append(cj)
+                    m3u_content += ml
+                    vlc_content += vl
+                    total_entries += 1
+
+            with open("chuoichien.json",     "w", encoding="utf-8") as f:
+                json.dump(json_output, f, ensure_ascii=False, indent=4)
+            with open("chuoichien_iptv.txt", "w", encoding="utf-8") as f:
+                f.write(m3u_content)
+            with open("chuoichien_vlc.txt",  "w", encoding="utf-8") as f:
+                f.write(vlc_content)
+
+            live_count     = sum(1 for ch in match_data if ch["is_live"])
+            upcoming_count = sum(1 for ch in match_data if not ch["is_live"])
+            print(f"\n✅ Hoan thanh luc: {now_str} (Gio VN)")
+            print(f"   🔴 Live: {live_count} tran  |  🗓 Sap dien ra: {upcoming_count} tran")
+            print(f"   📺 Tong entries (BLV x chat luong): {total_entries}")
+            print(f"   📄 Da xuat: chuoichien.json | chuoichien_iptv.txt | chuoichien_vlc.txt")
+
+        except Exception as e:
+            print(f"[ERROR] {e}")
+            raise
+        finally:
+            await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())
