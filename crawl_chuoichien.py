@@ -296,7 +296,9 @@ SKIP_HREFS = ["#", "javascript", "mailto", "/login", "/register",
               "/home", "/about", "/contact", "/tin-tuc", "/news",
               "/lich-thi-dau", "/ket-qua", "/highlights"]
 
-LIVE_PATTERNS = re.compile(r'Live|LIVE|●', re.IGNORECASE)
+# Dung look-around de tranh match 'Live' ben trong ten doi (Liverpool, Oliverpool...)
+# (?<![A-Za-z])Live(?![a-z]) : 'Live' khong bi bao quanh boi chu cai
+LIVE_PATTERNS = re.compile(r'(?<![A-Za-z])Live(?![a-z])|LIVE|●')
 
 async def find_match_links(page) -> list[dict]:
     matches   = []
@@ -466,7 +468,7 @@ async def main():
                 return results
 
             live_results     = await crawl_batch(live_links,     True,  "LIVE")
-            upcoming_results = await crawl_batch(upcoming_links, False, "Sap dien ra")
+            upcoming_results = await crawl_batch(upcoming_links, False, "Sắp diễn ra")
             # Giu nguyen thu tu: live truoc, upcoming sau
             match_data = live_results + upcoming_results
 
@@ -494,7 +496,7 @@ async def main():
                 },
                 "groups": [
                     {"id": "live",     "name": "🔴 Live",        "channels": []},
-                    {"id": "upcoming", "name": "🗓 Sap dien ra", "channels": []}
+                    {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}
                 ]
             }
             m3u_content = f"#EXTM3U\n#PLAYLIST: Chuoi Chien TV ({now_str})\n"
@@ -607,7 +609,7 @@ async def main():
             live_count     = sum(1 for ch in match_data if ch["is_live"])
             upcoming_count = sum(1 for ch in match_data if not ch["is_live"])
             print(f"\n✅ Hoan thanh luc: {now_str} (Gio VN)")
-            print(f"   🔴 Live: {live_count} tran  |  🗓 Sap dien ra: {upcoming_count} tran")
+            print(f"   🔴 Live: {live_count} tran  |  🗓 Sắp diễn ra: {upcoming_count} tran")
             print(f"   📺 Tong entries (BLV x chat luong): {total_entries}")
             print(f"   📄 Da xuat: chuoichien.json | chuoichien_iptv.txt | chuoichien_vlc.txt")
 
