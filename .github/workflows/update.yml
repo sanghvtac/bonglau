@@ -2,7 +2,8 @@ name: Crawl ThienDinh & ChuoiChien
 
 on:
   schedule:
-    # Chạy vào 18:00, 19:00 và 24:00 giờ VN
+    # Chạy 3 lần/ngày vào 18:00, 21:00, 00:00 giờ VN
+    # Giờ VN (UTC+7) -> UTC: 18h=11h, 21h=14h, 00h=17h
     - cron: '0 11,14,17 * * *'
   workflow_dispatch:
 
@@ -21,7 +22,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Cache pip packages — tránh cài lại mỗi lần chạy
       - name: Cache pip
         uses: actions/cache@v4
         with:
@@ -29,7 +29,6 @@ jobs:
           key: ${{ runner.os }}-pip-playwright-pillow
           restore-keys: ${{ runner.os }}-pip-
 
-      # Cache Playwright browser — key có version để tự invalidate khi Playwright update
       - name: Cache Playwright browsers
         id: playwright-cache
         uses: actions/cache@v4
@@ -45,10 +44,13 @@ jobs:
             playwright install chromium --with-deps
           fi
 
+      # continue-on-error: nếu thiendinh lỗi/timeout thì vẫn tiếp tục chạy chuoichien
       - name: Run ThienDinh crawler
+        continue-on-error: true
         run: python crawl_thiendinh.py
 
       - name: Run ChuoiChien crawler
+        continue-on-error: true
         run: python crawl_chuoichien.py
 
       - name: Commit and push results
