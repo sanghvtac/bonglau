@@ -4,7 +4,7 @@ on:
   schedule:
     # Chạy 3 lần/ngày vào 18:00, 21:00, 00:00 giờ VN
     # Giờ VN (UTC+7) -> UTC: 18h=11h, 21h=14h, 00h=17h
-    - cron: '0 10,11,15 * * *'
+    - cron: '0 11,14,17 * * *'
   workflow_dispatch:
 
 jobs:
@@ -60,5 +60,6 @@ jobs:
           file_pattern: >-
             thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt
             chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt
+            thumbs/*.png
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
