@@ -10,7 +10,7 @@ from io import BytesIO
 from PIL import Image
 
 BASE_DOMAIN   = "https://live20.chuoichientv.com"
-COVER_IMAGE   = "https://live20.chuoichientv.com/_nuxt/img/09caa87.png"
+COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR    = "thumbs"
