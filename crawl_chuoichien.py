@@ -212,7 +212,7 @@ async def main():
         entry_id = generate_id(m["url"] + blv_qual)
         group    = "LIVE" if m["is_live"] else "UPCOMING"
         stream   = stream_url or "http://0.0.0.0/not-live"
-        referer  = ("https://ld.chuoichien.tv/"
+        referer  = ("https://live.chuoichien.tv/"
                     if stream_url and "chuoichien" not in stream_url
                     else m["url"])
         ch_json = {
