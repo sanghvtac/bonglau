@@ -20,7 +20,7 @@ API_HEADERS = {
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/122.0.0.0 Safari/537.36",
     "Origin":  "https://live20.chuoichientv.com",
-    "Referer": "https://ld.chuoichientv.com/",
+    "Referer": "https://live20.chuoichientv.com/",
 }
 
 # status field trong API: Live vs Upcoming
