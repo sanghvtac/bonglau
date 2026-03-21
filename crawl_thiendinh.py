@@ -2,7 +2,7 @@ import json
 import asyncio
 import re
 import hashlib
-import base64
+import os
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -10,7 +10,10 @@ from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
 
-TARGET_URL = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
+TARGET_URL    = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
+GITHUB_REPO   = "sanghvtac/bonglau"
+GITHUB_BRANCH = "main"
+THUMBS_DIR    = "thumbs"
 
 # Danh sách giải đấu cần xóa
 LEAGUE_BLACKLIST = [
@@ -24,25 +27,20 @@ def generate_id(text):
     return hashlib.md5(text.encode()).hexdigest()[:12]
 
 # ──────────────────────────────────────────────
-# ẢNH: Ghép 2 logo thành 1 ảnh base64
-# Dùng ThreadPoolExecutor để chạy song song,
-# không block asyncio event loop khi crawl stream.
+# ẢNH: Ghép 2 logo -> lưu file PNG -> trả URL
 # ──────────────────────────────────────────────
 def _fetch_logo(url):
-    """Tải 1 logo về dạng PIL Image. Dùng wsrv.nl để chuẩn hóa kích thước."""
     try:
         proxy = f"https://images.weserv.nl/?url={url}&w=100&h=100&fit=contain&output=png&bg=ececec"
-        res = requests.get(proxy, headers={'User-Agent': 'Mozilla/5.0'}, timeout=8)
+        res = requests.get(proxy, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
         return Image.open(BytesIO(res.content)).convert("RGBA")
     except:
         return None
 
-def _build_combined_image(logo_a_url, logo_b_url):
-    """
-    Ghép logo A (trái) và logo B (phải) thành 1 ảnh PNG 220x100,
-    trả về chuỗi base64 data URI sẵn dùng làm "url" trong JSON.
-    Hàm này chạy trong thread riêng nên không block event loop.
-    """
+def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
+    """Ghép 2 logo -> lưu thumbs/<match_id>.png -> trả URL GitHub raw."""
+    os.makedirs(THUMBS_DIR, exist_ok=True)
+    path = os.path.join(THUMBS_DIR, f"{match_id}.png")
     try:
         canvas = Image.new("RGBA", (220, 100), (236, 236, 236, 255))
         img_a = _fetch_logo(logo_a_url) if logo_a_url else None
@@ -51,19 +49,17 @@ def _build_combined_image(logo_a_url, logo_b_url):
             canvas.paste(img_a, (0, 0), img_a)
         if img_b:
             canvas.paste(img_b, (110, 0), img_b)
-        buf = BytesIO()
-        canvas.save(buf, format="PNG", optimize=True)
-        return f"data:image/png;base64,{base64.b64encode(buf.getvalue()).decode()}"
+        canvas.save(path, format="PNG", optimize=True)
     except:
-        # Fallback: nếu lỗi thì trả URL proxy đơn của logo_a
-        if logo_a_url:
-            return f"https://images.weserv.nl/?url={logo_a_url}&w=100&h=100&fit=contain&output=png"
-        return ""
+        if not os.path.exists(path):
+            Image.new("RGBA", (220, 100), (236, 236, 236, 255)).save(path, format="PNG")
+    return f"https://raw.githubusercontent.com/{GITHUB_REPO}/refs/heads/{GITHUB_BRANCH}/{path}"
 
-async def make_combined_image_async(logo_a_url, logo_b_url, executor):
-    """Wrapper async: chạy _build_combined_image trong thread pool."""
+async def make_thumb_async(logo_a_url, logo_b_url, match_id, executor):
     loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(executor, _build_combined_image, logo_a_url, logo_b_url)
+    return await loop.run_in_executor(
+        executor, _build_and_save_thumb, logo_a_url, logo_b_url, match_id
+    )
 
 # ──────────────────────────────────────────────
 # GIỜ: Tự động phát hiện timezone offset
@@ -165,8 +161,6 @@ async def main():
     vn_time = now_utc + timedelta(hours=7)
     now_str = vn_time.strftime("%H:%M %d/%m/%Y")
     time_offset = detect_time_offset()
-
-    # ThreadPoolExecutor cho việc tải & ghép ảnh song song
     executor = ThreadPoolExecutor(max_workers=8)
 
     async with async_playwright() as p:
@@ -222,25 +216,35 @@ async def main():
                     "stream":       ""    # điền sau
                 })
 
-            # ── Bước 2: Khởi động tất cả image tasks NGAY (chạy song song trong threads) ──
-            image_tasks = [
-                make_combined_image_async(ch["logo_a"], ch["logo_b"], executor)
+            # ── Bước 2: Khởi động tạo thumbnail song song (PIL -> thumbs/) ──
+            thumb_tasks = [
+                make_thumb_async(
+                    ch["logo_a"], ch["logo_b"],
+                    generate_id(ch["url"]),
+                    executor
+                )
                 for ch in match_data
             ]
 
-            # ── Bước 3: Trong khi ảnh đang tải, crawl stream song song ──
-            for item in match_data:
-                if item['is_live']:
-                    stream_page = await context.new_page()
-                    try:
-                        item['stream'] = await fetch_stream_url(stream_page, item['url'])
-                    finally:
-                        await stream_page.close()
+            # ── Bước 3: Crawl stream song song (MAX 4 tab cung luc) ──
+            MAX_CONCURRENT = 4
+            live_items = [ch for ch in match_data if ch['is_live']]
 
-            # ── Bước 4: Thu kết quả ảnh (đã chạy song song lúc crawl stream) ──
-            image_results = await asyncio.gather(*image_tasks)
-            for ch, img in zip(match_data, image_results):
-                ch['combined_img'] = img
+            async def fetch_one(item):
+                stream_page = await context.new_page()
+                try:
+                    item['stream'] = await fetch_stream_url(stream_page, item['url'])
+                finally:
+                    await stream_page.close()
+
+            for i in range(0, len(live_items), MAX_CONCURRENT):
+                batch = live_items[i : i + MAX_CONCURRENT]
+                await asyncio.gather(*[fetch_one(item) for item in batch])
+
+            # ── Bước 4: Thu kết quả thumbnail ──
+            thumb_results = await asyncio.gather(*thumb_tasks)
+            for ch, img_url in zip(match_data, thumb_results):
+                ch["combined_img"] = img_url or ch.get("logo_a", "")
 
             executor.shutdown(wait=False)
 
@@ -248,9 +252,8 @@ async def main():
             json_output = {
                 "name": f"Thiên Đỉnh TV ({now_str})",
                 "image": {
-    "type": "cover",
-    "url": "https://sv1.thiendinh.live/logo.png"
-  },
+                        "type": "cover",
+                        "url": "https://sv1.thiendinh.live/logo.png"
                 "groups": [
                     {"id": "live",     "name": "🔴 Live",         "channels": []},
                     {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}
