@@ -20,7 +20,7 @@ API_HEADERS = {
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
                   "Chrome/122.0.0.0 Safari/537.36",
     "Origin":  "https://live20.chuoichientv.com",
-    "Referer": "https://live20.chuoichientv.com/",
+    "Referer": "https://ld.chuoichientv.com/",
 }
 
 # status field trong API: Live vs Upcoming
@@ -212,7 +212,7 @@ async def main():
         entry_id = generate_id(m["url"] + blv_qual)
         group    = "LIVE" if m["is_live"] else "UPCOMING"
         stream   = stream_url or "http://0.0.0.0/not-live"
-        referer  = ("https://live.chuoichien.tv/"
+        referer  = ("https://ld.chuoichien.tv/"
                     if stream_url and "chuoichien" not in stream_url
                     else m["url"])
         ch_json = {
