@@ -16,9 +16,9 @@ from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
 
-TARGET_URL  = "https://live19.chuoichientv.com/lich-thi-dau"
-BASE_DOMAIN = "https://live19.chuoichientv.com"
-COVER_IMAGE  = "https://live19.chuoichientv.com/_nuxt/img/09caa87.png"
+TARGET_URL  = "https://live20.chuoichientv.com/lich-thi-dau"
+BASE_DOMAIN = "https://live20.chuoichientv.com"
+COVER_IMAGE  = "https://live20.chuoichientv.com/_nuxt/img/09caa87.png"
 GITHUB_REPO  = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR   = "thumbs"  # thu muc luu anh trong repo
