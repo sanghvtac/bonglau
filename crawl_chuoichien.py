@@ -6,6 +6,11 @@ import base64
 import requests
 from urllib.parse import urlparse, parse_qs, unquote
 from concurrent.futures import ThreadPoolExecutor
+import base64
+import hashlib as _hashlib
+import os
+import requests
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from io import BytesIO
 from PIL import Image
@@ -13,13 +18,55 @@ from playwright.async_api import async_playwright
 
 TARGET_URL  = "https://live19.chuoichientv.com/lich-thi-dau"
 BASE_DOMAIN = "https://live19.chuoichientv.com"
-COVER_IMAGE = "https://live19.chuoichientv.com/_nuxt/img/09caa87.png"
+COVER_IMAGE  = "https://live19.chuoichientv.com/_nuxt/img/09caa87.png"
+GITHUB_REPO  = "sanghvtac/bonglau"
+GITHUB_BRANCH = "main"
+THUMBS_DIR   = "thumbs"  # thu muc luu anh trong repo
 
 # ──────────────────────────────────────────────
 # ID
 # ──────────────────────────────────────────────
 def generate_id(text):
     return hashlib.md5(text.encode()).hexdigest()[:12]
+
+# ──────────────────────────────────────────────
+# ẢNH: Ghép 2 logo -> luu file PNG -> tra URL
+# ──────────────────────────────────────────────
+def _fetch_logo(url):
+    try:
+        proxy = f"https://images.weserv.nl/?url={url}&w=100&h=100&fit=contain&output=png&bg=ececec"
+        res = requests.get(proxy, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
+        return Image.open(BytesIO(res.content)).convert("RGBA")
+    except:
+        return None
+
+def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
+    """
+    Ghep 2 logo thanh PNG 220x100, luu vao thumbs/<match_id>.png.
+    Tra ve URL tro den file do tren GitHub raw.
+    """
+    os.makedirs(THUMBS_DIR, exist_ok=True)
+    path = os.path.join(THUMBS_DIR, f"{match_id}.png")
+    try:
+        canvas = Image.new("RGBA", (220, 100), (236, 236, 236, 255))
+        img_a = _fetch_logo(logo_a_url) if logo_a_url else None
+        img_b = _fetch_logo(logo_b_url) if logo_b_url else None
+        if img_a:
+            canvas.paste(img_a, (0, 0), img_a)
+        if img_b:
+            canvas.paste(img_b, (110, 0), img_b)
+        canvas.save(path, format="PNG", optimize=True)
+    except:
+        # Fallback: tao anh trang neu loi
+        if not os.path.exists(path):
+            Image.new("RGBA", (220, 100), (236, 236, 236, 255)).save(path, format="PNG")
+    return f"https://raw.githubusercontent.com/{GITHUB_REPO}/refs/heads/{GITHUB_BRANCH}/{path}"
+
+async def make_thumb_async(logo_a_url, logo_b_url, match_id, executor):
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(
+        executor, _build_and_save_thumb, logo_a_url, logo_b_url, match_id
+    )
 
 # ──────────────────────────────────────────────
 # ẢNH: Ghép 2 logo thành 1 ảnh base64
@@ -472,20 +519,24 @@ async def main():
             # Giu nguyen thu tu: live truoc, upcoming sau
             match_data = live_results + upcoming_results
 
-            # Buoc 4: Ghep anh song song
-            image_tasks = []
+            # Buoc 4: Tao anh ghep 2 logo song song -> luu vao thumbs/
+            # JSON chi chua URL tro den file PNG (nhe, khong base64)
+            thumb_tasks = []
             for ch in match_data:
                 mi = ch.get("match_info", {})
-                image_tasks.append(
-                    make_combined_image_async(
+                # Dung match_id lam ten file de tranh trung
+                mid_str = ch.get("match_id") or generate_id(ch["url"])
+                thumb_tasks.append(
+                    make_thumb_async(
                         mi.get("logo_home", ""),
                         mi.get("logo_away", ""),
+                        mid_str,
                         executor
                     )
                 )
-            image_results = await asyncio.gather(*image_tasks)
-            for ch, img in zip(match_data, image_results):
-                ch["combined_img"] = img
+            thumb_results = await asyncio.gather(*thumb_tasks)
+            for ch, url in zip(match_data, thumb_results):
+                ch["img_url"] = url or COVER_IMAGE
             executor.shutdown(wait=False)
 
             # Buoc 5: Xuat file
@@ -503,7 +554,7 @@ async def main():
             vlc_content = f"#EXTM3U\n#PLAYLIST: Chuoi Chien TV ({now_str})\n"
 
             def make_entry(ch: dict, stream_url: str, blv_name: str,
-                           quality_label: str, img_url: str):
+                           quality_label: str):
                 mi       = ch.get("match_info", {})
                 home     = mi.get("home", "")
                 away     = mi.get("away", "")
@@ -518,8 +569,8 @@ async def main():
                 referer   = ("https://live.chuoichien.tv/"
                              if stream_url and "chuoichien" not in stream_url
                              else ch["url"])
-                # Anh channel: dung anh ghep 2 logo (combined_img), fallback COVER_IMAGE
-                channel_img = img_url or COVER_IMAGE
+                # Anh channel: URL truc tiep tu API, fallback COVER_IMAGE
+                channel_img = ch.get("img_url") or COVER_IMAGE
 
                 ch_json = {
                     "id":      f"ch-{entry_id}",
@@ -574,7 +625,6 @@ async def main():
 
             total_entries = 0
             for ch in match_data:
-                img_url   = ch.get("combined_img", "")
                 group_idx = 0 if ch["is_live"] else 1
 
                 if ch["is_live"] and ch.get("streams"):
@@ -587,13 +637,13 @@ async def main():
                         else:
                             pairs = [("HD1",  s["stream_hd"])] if s["stream_hd"] else []
                         for qual, url in pairs:
-                            cj, ml, vl = make_entry(ch, url, blv, qual, img_url)
+                            cj, ml, vl = make_entry(ch, url, blv, qual)
                             json_output["groups"][group_idx]["channels"].append(cj)
                             m3u_content += ml
                             vlc_content += vl
                             total_entries += 1
                 else:
-                    cj, ml, vl = make_entry(ch, "", "", "", img_url)
+                    cj, ml, vl = make_entry(ch, "", "", "")
                     json_output["groups"][group_idx]["channels"].append(cj)
                     m3u_content += ml
                     vlc_content += vl
