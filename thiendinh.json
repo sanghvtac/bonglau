@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (23:58 21/03/2026)",
+    "name": "Thiên Đỉnh TV (00:22 22/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-e872decd8fe1",
-                    "name": "⚽ 22:00 21/03 Fulham VS Burnley BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e872decd8fe1.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e872decd8fe1",
-                            "contents": [
-                                {
-                                    "id": "ct-e872decd8fe1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fulham-vs-burnley.DO4X2fRvCb"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-49cbf23be66e",
-                    "name": "⚽ 22:00 21/03 Watford VS Leicester BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/49cbf23be66e.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-49cbf23be66e",
-                            "contents": [
-                                {
-                                    "id": "ct-49cbf23be66e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/watford-vs-leicester.-6mBYBlW1z"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-a75aeac68eaa",
                     "name": "⚽ 22:15 21/03 Espanyol VS Getafe BLV Táo Văn Nghệ",
@@ -177,6 +93,48 @@
                     ]
                 },
                 {
+                    "id": "ch-0e119dc12bca",
+                    "name": "⚽ 00:30 22/03 Borussia Dortmund VS Hamburger SV BLV Táo Tàu",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0e119dc12bca.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0e119dc12bca",
+                            "contents": [
+                                {
+                                    "id": "ct-0e119dc12bca",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/borussia-dortmund-vs-hamburger-sv.VwjWMtu1EX"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-b4806880c19f",
                     "name": "⚽ 00:30 22/03 Everton VS Chelsea BLV Táo Chè",
                     "type": "single",
@@ -224,48 +182,6 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
-                {
-                    "id": "ch-0e119dc12bca",
-                    "name": "⚽ 00:30 22/03 Borussia Dortmund VS Hamburger SV BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0e119dc12bca.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-0e119dc12bca",
-                            "contents": [
-                                {
-                                    "id": "ct-0e119dc12bca",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/borussia-dortmund-vs-hamburger-sv.VwjWMtu1EX"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-343226075489",
                     "name": "⚽ 02:45 22/03 Juventus VS Sassuolo BLV Táo Văn Hóa(A Bí)",
@@ -1191,48 +1107,6 @@
                     ]
                 },
                 {
-                    "id": "ch-e872decd8fe1",
-                    "name": "⚽ 22:00 21/03 BLV Ngọc Hoàng(A Cháo) VS FulhamKXD0-0---'BurnleyBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)15:00 21/03Premier LeagueFulhamKXD0-0---'BurnleyBLV Ngọc Hoàng(A Cháo)Trực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e872decd8fe1.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e872decd8fe1",
-                            "contents": [
-                                {
-                                    "id": "ct-e872decd8fe1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fulham-vs-burnley.DO4X2fRvCb"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-b4806880c19f",
                     "name": "⚽ 00:30 22/03 BLV Táo Chè VS EvertonKXD0-0---'ChelseaBLV Táo ChèTrực tiếp BLV Táo Chè17:30 21/03Premier LeagueEvertonKXD0-0---'ChelseaBLV Táo ChèTrực tiếp",
                     "type": "single",
@@ -1317,22 +1191,22 @@
                     ]
                 },
                 {
-                    "id": "ch-49cbf23be66e",
-                    "name": "⚽ 22:00 21/03 BLV Táo TàuChampionshipWatfordKXD0-0---'LeicesterBLV VS Táo TàuTrực tiếp BLV Táo Tàu15:00 21/03ChampionshipWatfordKXD0-0---'LeicesterBLV Táo TàuTrực tiếp",
+                    "id": "ch-0e119dc12bca",
+                    "name": "⚽ 00:30 22/03 BLV Táo Tàu Borussia Dortmund VS KXD0-0---'Hamburger SVBLV Táo TàuTrực tiếp BLV Táo Tàu17:30 21/03BundesligaBorussia Dortmund KXD0-0---'Hamburger SVBLV Táo TàuTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/49cbf23be66e.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0e119dc12bca.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-49cbf23be66e",
+                            "id": "src-0e119dc12bca",
                             "contents": [
                                 {
-                                    "id": "ct-49cbf23be66e",
+                                    "id": "ct-0e119dc12bca",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1342,7 +1216,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/watford-vs-leicester.-6mBYBlW1z"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/borussia-dortmund-vs-hamburger-sv.VwjWMtu1EX"
                                                         },
                                                         {
                                                             "key": "User-Agent",
