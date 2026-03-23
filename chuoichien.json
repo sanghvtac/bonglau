@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (02:01 24/03/2026)",
+    "name": "Chuoi Chien TV (03:01 24/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-54629ca7f5f9",
-                    "name": "⚽ 02:30 24/03 Castellón VS Cultural Leonesa",
+                    "id": "ch-7c967bfacc6e",
+                    "name": "⚽ 02:30 24/03 Castellón VS Cultural Leonesa [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-54629ca7f5f9",
+                            "id": "src-7c967bfacc6e",
                             "contents": [
                                 {
-                                    "id": "ct-54629ca7f5f9",
+                                    "id": "ct-7c967bfacc6e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1392098/1392098"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6aa24048d9b6",
                     "name": "⚽ 04:10 24/03 Santa Fe VS Independiente Medellin",

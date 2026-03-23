@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (02:00 24/03/2026)",
+    "name": "Thiên Đỉnh TV (03:00 24/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-f2ee9da45991",
                     "name": "⚽ 02:30 24/03 Castellón VS Cultural Leonesa BLV Ngọc Hoàng(A Cháo)",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7160d5f41261",
                     "name": "⚽ 17:45 24/03 Bangladesh VS Pakistan BLV Táo Chè",
@@ -419,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-i.iPDy44lmq7/unirea-slobozia-vs-otelul.uQa3y9is-e"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f2ee9da45991",
+                    "name": "⚽ 02:30 24/03 BLV Ngọc Hoàng(A Cháo)Segunda DivisiónCastellónKXD0-0---'Cultural VS LeonesaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:30 23/03Segunda DivisiónCastellónKXD0-0---'Cultural LeonesaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f2ee9da45991.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f2ee9da45991",
+                            "contents": [
+                                {
+                                    "id": "ct-f2ee9da45991",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/castellon-vs-cultural-leonesa.e4CeiwCFvM"
                                                         },
                                                         {
                                                             "key": "User-Agent",
