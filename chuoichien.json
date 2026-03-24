@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:01 24/03/2026)",
+    "name": "Chuoi Chien TV (00:01 25/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-02088a9bf20a",
-                    "name": "⚽ 22:00 24/03 Uniao Leiria U23 VS Farense U23 [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1498035.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-02088a9bf20a",
-                            "contents": [
-                                {
-                                    "id": "ct-02088a9bf20a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-28bece8cb8f7",
                     "name": "⚽ 22:15 24/03 Al-Rayyan SC VS Al Shahaniya [BLV Chuối Hột - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-51b66598401e",
-                    "name": "⚽ 00:15 25/03 UMM Salal VS Al Bidda SC",
+                    "id": "ch-d7acd21d4f01",
+                    "name": "⚽ 00:15 25/03 UMM Salal VS Al Bidda SC [Quan Vũ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-51b66598401e",
+                            "id": "src-d7acd21d4f01",
                             "contents": [
                                 {
-                                    "id": "ct-51b66598401e",
+                                    "id": "ct-d7acd21d4f01",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/quanvuhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-3e8ab99a6381",
+                    "name": "⚽ 22:00 24/03 Uniao Leiria U23 VS Farense U23",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1498035.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3e8ab99a6381",
+                            "contents": [
+                                {
+                                    "id": "ct-3e8ab99a6381",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1514892/1514892"
+                                                            "value": "https://live20.chuoichientv.com/live/1498035/1498035"
                                                         },
                                                         {
                                                             "key": "User-Agent",

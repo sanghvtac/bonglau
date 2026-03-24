@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (23:01 24/03/2026)",
+    "name": "Thiên Đỉnh TV (00:01 25/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-81947477bdb4",
-                    "name": "⚽ 21:05 24/03 Al Sahel VS Jubbah BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/81947477bdb4.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-81947477bdb4",
-                            "contents": [
-                                {
-                                    "id": "ct-81947477bdb4",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/division-2.D6x2_Lu8WC/al-sahel-vs-jubbah.zW_giem0HH"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-453a43aaa201",
                     "name": "⚽ 22:15 24/03 Al-Rayyan SC VS Al Shahaniya BLV Táo Tàu",
@@ -71,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-2aa6474ba318",
                     "name": "⚽ 00:15 25/03 UMM Salal VS Al Bidda SC BLV Táo Văn Nghệ",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0615bed9f37a",
                     "name": "⚽ 00:45 25/03 VfL Wolfsburg W VS Lyon W BLV Táo Văn Hóa(A Bí)",
@@ -561,48 +519,6 @@
                     ]
                 },
                 {
-                    "id": "ch-81947477bdb4",
-                    "name": "⚽ 21:05 24/03 BLV Táo MèoDivision 2Al VS SahelKXD0-0---'JubbahBLV Táo MèoTrực tiếp BLV Táo Mèo14:05 24/03Division 2Al SahelKXD0-0---'JubbahBLV Táo MèoTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/81947477bdb4.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-81947477bdb4",
-                            "contents": [
-                                {
-                                    "id": "ct-81947477bdb4",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/division-2.D6x2_Lu8WC/al-sahel-vs-jubbah.zW_giem0HH"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-453a43aaa201",
                     "name": "⚽ 22:15 24/03 BLV Táo TàuQSL Al-Rayyan VS SCKXD0-0---'Al ShahaniyaBLV Táo TàuTrực tiếp BLV Táo Tàu15:15 24/03QSL CupAl-Rayyan SCKXD0-0---'Al ShahaniyaBLV Táo TàuTrực tiếp",
                     "type": "single",
@@ -629,6 +545,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/qsl-cup.Z-09ommwg_/al-rayyan-sc-vs-al-shahaniya.4S4L6wOYjo"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-2aa6474ba318",
+                    "name": "⚽ 00:15 25/03 BLV Táo Văn NghệQSL UMM SalalKXD0-0---'Al VS Bidda SCBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ17:15 24/03QSL CupUMM SalalKXD0-0---'Al Bidda SCBLV Táo Văn NghệTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2aa6474ba318.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-2aa6474ba318",
+                            "contents": [
+                                {
+                                    "id": "ct-2aa6474ba318",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/qsl-cup.Z-09ommwg_/umm-salal-vs-al-bidda-sc.XMCYOx3dK2"
                                                         },
                                                         {
                                                             "key": "User-Agent",
