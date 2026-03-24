@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:01 24/03/2026)",
+    "name": "Chuoi Chien TV (11:01 24/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-eeab64ef2e7f",
-                    "name": "⚽ 09:00 24/03 Portland Timbers II VS LA Galaxy II [Nhà Đài - HD1]",
+                    "id": "ch-bc82c16768b2",
+                    "name": "⚽ 09:00 24/03 Portland Timbers II VS LA Galaxy II",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-eeab64ef2e7f",
+                            "id": "src-bc82c16768b2",
                             "contents": [
                                 {
-                                    "id": "ct-eeab64ef2e7f",
+                                    "id": "ct-bc82c16768b2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1513017/1513017"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-559ce819c8c5",
                     "name": "⚽ 16:00 24/03 Malta U17 VS Lithuania U17",
