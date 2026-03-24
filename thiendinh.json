@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:01 25/03/2026)",
+    "name": "Thiên Đỉnh TV (01:01 25/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-453a43aaa201",
-                    "name": "⚽ 22:15 24/03 Al-Rayyan SC VS Al Shahaniya BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/453a43aaa201.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-453a43aaa201",
-                            "contents": [
-                                {
-                                    "id": "ct-453a43aaa201",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/qsl-cup.Z-09ommwg_/al-rayyan-sc-vs-al-shahaniya.4S4L6wOYjo"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-2aa6474ba318",
                     "name": "⚽ 00:15 25/03 UMM Salal VS Al Bidda SC BLV Táo Văn Nghệ",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-0615bed9f37a",
                     "name": "⚽ 00:45 25/03 VfL Wolfsburg W VS Lyon W BLV Táo Văn Hóa(A Bí)",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c3042ed49adb",
                     "name": "⚽ 03:00 25/03 Arsenal W VS Chelsea W BLV Ngọc Hoàng(A Cháo)",
@@ -225,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-dad3e814a40a",
-                    "name": "⚽ 17:00 25/03 Kazakhstan VS Comoros BLV Táo Thiên Vương",
+                    "id": "ch-a658a53c37ec",
+                    "name": "⚽ 17:00 25/03 Kazakhstan VS Comoros BLV Táo Văn Hóa(A Bí)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/dad3e814a40a.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a658a53c37ec.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-dad3e814a40a",
+                            "id": "src-a658a53c37ec",
                             "contents": [
                                 {
-                                    "id": "ct-dad3e814a40a",
+                                    "id": "ct-a658a53c37ec",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -250,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/kazakhstan-vs-comoros.OxPCi2V1Ha"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/kazakhstan-vs-comoros.euaY_fm9AW"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -519,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-453a43aaa201",
-                    "name": "⚽ 22:15 24/03 BLV Táo TàuQSL Al-Rayyan VS SCKXD0-0---'Al ShahaniyaBLV Táo TàuTrực tiếp BLV Táo Tàu15:15 24/03QSL CupAl-Rayyan SCKXD0-0---'Al ShahaniyaBLV Táo TàuTrực tiếp",
+                    "id": "ch-0615bed9f37a",
+                    "name": "⚽ 00:45 25/03 BLV Táo Văn Hóa(A Bí) WomenVfL Wolfsburg VS WKXD0-0---'Lyon WBLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)17:45 24/03UEFA Champions League WomenVfL Wolfsburg WKXD0-0---'Lyon WBLV Táo Văn Hóa(A Bí)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/453a43aaa201.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0615bed9f37a.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-453a43aaa201",
+                            "id": "src-0615bed9f37a",
                             "contents": [
                                 {
-                                    "id": "ct-453a43aaa201",
+                                    "id": "ct-0615bed9f37a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/qsl-cup.Z-09ommwg_/al-rayyan-sc-vs-al-shahaniya.4S4L6wOYjo"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/vfl-wolfsburg-w-vs-lyon-w.J3x4Pt-9DJ"
                                                         },
                                                         {
                                                             "key": "User-Agent",
