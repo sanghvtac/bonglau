@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:01 25/03/2026)",
+    "name": "Chuoi Chien TV (11:01 25/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,97 +7,12 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-be080d553d79",
-                    "name": "⚽ 09:00 25/03 Sporting San Jose VS Puntarenas FC [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1522296.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-be080d553d79",
-                            "contents": [
-                                {
-                                    "id": "ct-be080d553d79",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "channels": []
         },
         {
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
-                {
-                    "id": "ch-5e8127bd66bd",
-                    "name": "⚽ 08:00 25/03 Fortaleza FC VS Deportivo Pasto",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1506055.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5e8127bd66bd",
-                            "contents": [
-                                {
-                                    "id": "ct-5e8127bd66bd",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506055/1506055"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-ac0ef72892be",
                     "name": "⚽ 15:00 25/03 Central Coast Mariners W VS Wellington Phoenix W",
@@ -839,6 +754,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1522298/1522298"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3df73105a73b",
+                    "name": "⚽ 17:30 26/03 Nepal VS Singapore",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1321350.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3df73105a73b",
+                            "contents": [
+                                {
+                                    "id": "ct-3df73105a73b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1321350/1321350"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-052c4180a2f5",
+                    "name": "⚽ 17:30 26/03 Rajasthan United VS Diamond Harbour",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1527469.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-052c4180a2f5",
+                            "contents": [
+                                {
+                                    "id": "ct-052c4180a2f5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1527469/1527469"
                                                         },
                                                         {
                                                             "key": "User-Agent",
