@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:00 25/03/2026)",
+    "name": "Thiên Đỉnh TV (18:01 25/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-ffc2b0ba1862",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -76,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e43cd66c93e5",
                     "name": "⚽ 21:00 25/03 Italy U17 VS Portugal U17 BLV Táo Văn Nghệ",
@@ -250,6 +251,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/manchester-united-w-vs-bayern-munich-w.sMPxDuft0x"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4876d2b5ed83",
+                    "name": "⚽ 18:35 25/03 BLV Táo Văn NghệFriendliesChina PR VS U23KXD0-0---'Thailand U23BLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ11:35 25/03FriendliesChina PR U23KXD0-0---'Thailand U23BLV Táo Văn NghệTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4876d2b5ed83.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4876d2b5ed83",
+                            "contents": [
+                                {
+                                    "id": "ct-4876d2b5ed83",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/china-pr-u23-vs-thailand-u23.QD9gB-_pv_"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ffc2b0ba1862",
+                    "name": "⚽ 18:00 25/03 BLV Táo Tàu U19 Championship - VS QualificationCroatia U19KXD0-0---'Switzerland U19BLV Táo TàuTrực tiếp BLV Táo Tàu11:00 25/03UEFA U19 Championship - QualificationCroatia U19KXD0-0---'Switzerland U19BLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ffc2b0ba1862.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ffc2b0ba1862",
+                            "contents": [
+                                {
+                                    "id": "ct-ffc2b0ba1862",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-u19-championship-qualification.C2XVDntDcH/croatia-u19-vs-switzerland-u19.pv4e7WGiVa"
                                                         },
                                                         {
                                                             "key": "User-Agent",
