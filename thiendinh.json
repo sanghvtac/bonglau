@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (02:00 26/03/2026)",
+    "name": "Thiên Đỉnh TV (03:00 26/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-2fab5ed1c9bf",
-                    "name": "⚽ 00:45 26/03 Real Madrid W VS Barcelona W BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2fab5ed1c9bf.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2fab5ed1c9bf",
-                            "contents": [
-                                {
-                                    "id": "ct-2fab5ed1c9bf",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/real-madrid-w-vs-barcelona-w.mGjH5MJd_C"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-48c36d49d49e",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ef1addb71992",
                     "name": "⚽ 17:30 26/03 Afghanistan VS Myanmar BLV Táo Chè",
@@ -687,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-2fab5ed1c9bf",
-                    "name": "⚽ 00:45 26/03 BLV Táo Mèo WomenReal Madrid VS WKXD0-0---'Barcelona WBLV Táo MèoTrực tiếp BLV Táo Mèo17:45 25/03UEFA Champions League WomenReal Madrid WKXD0-0---'Barcelona WBLV Táo MèoTrực tiếp",
+                    "id": "ch-48c36d49d49e",
+                    "name": "⚽ 03:00 26/03 BLV Táo Mèo WomenManchester United VS WKXD0-0---'Bayern Munich WBLV Táo MèoTrực tiếp BLV Táo Mèo20:00 25/03UEFA Champions League WomenManchester United WKXD0-0---'Bayern Munich WBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2fab5ed1c9bf.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/48c36d49d49e.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2fab5ed1c9bf",
+                            "id": "src-48c36d49d49e",
                             "contents": [
                                 {
-                                    "id": "ct-2fab5ed1c9bf",
+                                    "id": "ct-48c36d49d49e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -712,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/real-madrid-w-vs-barcelona-w.mGjH5MJd_C"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/manchester-united-w-vs-bayern-munich-w.sMPxDuft0x"
                                                         },
                                                         {
                                                             "key": "User-Agent",
