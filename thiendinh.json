@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (02:00 27/03/2026)",
+    "name": "Thiên Đỉnh TV (03:01 27/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -9,32 +9,32 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-99e5282d8f73",
-                    "name": "⚽ 00:00 27/03 Malta VS Luxembourg BLV Táo Văn Nghệ",
+                    "id": "ch-d1b064861665",
+                    "name": "⚽ 02:45 27/03 Czech Republic VS Rep. Of Ireland BLV Táo Tàu",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/99e5282d8f73.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d1b064861665.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-99e5282d8f73",
+                            "id": "src-d1b064861665",
                             "contents": [
                                 {
-                                    "id": "ct-99e5282d8f73",
+                                    "id": "ct-d1b064861665",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-nations-league-1764651191437/malta-vs-luxembourg.CYd0KaYcfQ"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/czech-republic-vs-rep-of-ireland.1RRyyUA4h3"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -77,54 +77,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/denmark-vs-fyr-macedonia.62luY92hnV"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-d1b064861665",
-                    "name": "⚽ 02:45 27/03 Czech Republic VS Rep. Of Ireland BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d1b064861665.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d1b064861665",
-                            "contents": [
-                                {
-                                    "id": "ct-d1b064861665",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/czech-republic-vs-rep-of-ireland.1RRyyUA4h3"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -287,7 +239,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2e2868a786a4",
                     "name": "⚽ 16:10 27/03 Australia VS Cameroon BLV Táo Văn Nghệ",
@@ -855,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-99e5282d8f73",
-                    "name": "⚽ 00:00 27/03 BLV Táo Văn Nghệ Nations VS LeagueMaltaKXD0-0---'LuxembourgBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ17:00 26/03UEFA Nations LeagueMaltaKXD0-0---'LuxembourgBLV Táo Văn NghệTrực tiếp",
+                    "id": "ch-3c86ef77d552",
+                    "name": "⚽ 03:00 27/03 BLV Táo Văn NghệFriendliesBrazilKXD0-0---'FranceBLV VS Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ20:00 26/03FriendliesBrazilKXD0-0---'FranceBLV Táo Văn NghệTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/99e5282d8f73.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3c86ef77d552.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-99e5282d8f73",
+                            "id": "src-3c86ef77d552",
                             "contents": [
                                 {
-                                    "id": "ct-99e5282d8f73",
+                                    "id": "ct-3c86ef77d552",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -880,7 +838,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-nations-league-1764651191437/malta-vs-luxembourg.CYd0KaYcfQ"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/brazil-vs-france.wMsYa3wOQv"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d1b064861665",
+                    "name": "⚽ 02:45 27/03 BLV Táo TàuWorld - Qualification EuropeCzech VS RepublicKXD0-0---'Rep. Of IrelandBLV Táo TàuTrực tiếp BLV Táo Tàu19:45 26/03World Cup - Qualification EuropeCzech RepublicKXD0-0---'Rep. Of IrelandBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d1b064861665.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d1b064861665",
+                            "contents": [
+                                {
+                                    "id": "ct-d1b064861665",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/czech-republic-vs-rep-of-ireland.1RRyyUA4h3"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -923,6 +923,132 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/denmark-vs-fyr-macedonia.62luY92hnV"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-2835fa4ac522",
+                    "name": "⚽ 02:45 27/03 BLV Ngọc Hoàng(A Cháo)World - Qualification VS EuropeItalyKXD0-0---'Northern IrelandBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:45 26/03World Cup - Qualification EuropeItalyKXD0-0---'Northern IrelandBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2835fa4ac522.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-2835fa4ac522",
+                            "contents": [
+                                {
+                                    "id": "ct-2835fa4ac522",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/italy-vs-northern-ireland.sPXyhGdRAd"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-72c9cf7c3d9a",
+                    "name": "⚽ 02:45 27/03 BLV Táo Văn Hóa(A Bí)World - VS Qualification EuropePolandKXD0-0---'AlbaniaBLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)19:45 26/03World Cup - Qualification EuropePolandKXD0-0---'AlbaniaBLV Táo Văn Hóa(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/72c9cf7c3d9a.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-72c9cf7c3d9a",
+                            "contents": [
+                                {
+                                    "id": "ct-72c9cf7c3d9a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/poland-vs-albania.rXTM42BafU"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ca95fa56c30f",
+                    "name": "⚽ 02:45 27/03 BLV Táo Thiên VươngWorld - VS Qualification EuropeUkraineKXD0-0---'SwedenBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:45 26/03World Cup - Qualification EuropeUkraineKXD0-0---'SwedenBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ca95fa56c30f.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ca95fa56c30f",
+                            "contents": [
+                                {
+                                    "id": "ct-ca95fa56c30f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/world-cup-qualification-europe.Yj2rkxo5_t/ukraine-vs-sweden.fxLUvlUnvk"
                                                         },
                                                         {
                                                             "key": "User-Agent",
