@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:01 26/03/2026)",
+    "name": "Thiên Đỉnh TV (23:01 26/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-e9872433ac4b",
-                    "name": "⚽ 21:00 26/03 Famalicão U23 VS Sporting CP U23 BLV Táo Văn Hóa(A Bí)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e9872433ac4b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e9872433ac4b",
-                            "contents": [
-                                {
-                                    "id": "ct-e9872433ac4b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-revelacao-u23.MvppmD0g0z/famalicao-u23-vs-sporting-cp-u23.hEhKarIqPC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-fc75d14aaedc",
                     "name": "⚽ 21:30 26/03 Tanzania VS Liechtenstein BLV Táo Mèo",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-911be029352e",
                     "name": "⚽ 22:45 26/03 Germany U20 VS Czech Republic BLV Táo Thiên Vương",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-99e5282d8f73",
                     "name": "⚽ 00:00 27/03 Malta VS Luxembourg BLV Táo Văn Nghệ",
@@ -1065,48 +1023,6 @@
                     ]
                 },
                 {
-                    "id": "ch-e9872433ac4b",
-                    "name": "⚽ 21:00 26/03 BLV Táo Văn Hóa(A Bí)Liga Revelação U23Famalicão VS U23KXD0-0---'Sporting CP U23BLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)14:00 26/03Liga Revelação U23Famalicão U23KXD0-0---'Sporting CP U23BLV Táo Văn Hóa(A Bí)Trực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e9872433ac4b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e9872433ac4b",
-                            "contents": [
-                                {
-                                    "id": "ct-e9872433ac4b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-revelacao-u23.MvppmD0g0z/famalicao-u23-vs-sporting-cp-u23.hEhKarIqPC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-af2f96f0ade7",
                     "name": "⚽ 22:00 26/03 BLV Táo TàuFriendliesMoldovaKXD0-0---'LithuaniaBLV VS Táo TàuTrực tiếp BLV Táo Tàu15:00 26/03FriendliesMoldovaKXD0-0---'LithuaniaBLV Táo TàuTrực tiếp",
                     "type": "single",
@@ -1175,6 +1091,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/tanzania-vs-liechtenstein.HQrtMyugei"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-911be029352e",
+                    "name": "⚽ 22:45 26/03 BLV Táo Thiên VươngU20 Elite LeagueGermany VS U20KXD0-0---'Czech RepublicBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương15:45 26/03U20 Elite LeagueGermany U20KXD0-0---'Czech RepublicBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/911be029352e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-911be029352e",
+                            "contents": [
+                                {
+                                    "id": "ct-911be029352e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/u20-elite-league.FUqeFnSMnm/germany-u20-vs-czech-republic-u20.aIGCJTrfeH"
                                                         },
                                                         {
                                                             "key": "User-Agent",
