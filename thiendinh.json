@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:01 28/03/2026)",
+    "name": "Thiên Đỉnh TV (01:01 28/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-6ab4e227f4e8",
-                    "name": "⚽ 22:00 27/03 Azerbaijan VS St. Lucia BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6ab4e227f4e8.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6ab4e227f4e8",
-                            "contents": [
-                                {
-                                    "id": "ct-6ab4e227f4e8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/azerbaijan-vs-st-lucia.vPaSWOk-Iw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-0952844415df",
                     "name": "⚽ 23:00 27/03 Kenya VS Estonia BLV Táo Mèo",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-e08551430642",
                     "name": "⚽ 00:30 28/03 Saudi Arabia VS Egypt BLV Táo Thiên Vương",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9c66cb66ccb5",
                     "name": "⚽ 02:45 28/03 Switzerland VS Germany BLV Táo Mèo",
@@ -855,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-6ab4e227f4e8",
-                    "name": "⚽ 22:00 27/03 BLV Táo Thiên VươngFIFA SeriesAzerbaijanKXD0-0---'St. VS LuciaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương15:00 27/03FIFA SeriesAzerbaijanKXD0-0---'St. LuciaBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-e08551430642",
+                    "name": "⚽ 00:30 28/03 BLV Táo Thiên VươngFriendliesSaudi VS ArabiaKXD0-0---'EgyptBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương17:30 27/03FriendliesSaudi ArabiaKXD0-0---'EgyptBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6ab4e227f4e8.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e08551430642.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-6ab4e227f4e8",
+                            "id": "src-e08551430642",
                             "contents": [
                                 {
-                                    "id": "ct-6ab4e227f4e8",
+                                    "id": "ct-e08551430642",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -880,7 +838,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/azerbaijan-vs-st-lucia.vPaSWOk-Iw"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/saudi-arabia-vs-egypt.qBnITY6IL8"
                                                         },
                                                         {
                                                             "key": "User-Agent",
