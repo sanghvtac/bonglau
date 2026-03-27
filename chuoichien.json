@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:01 27/03/2026)",
+    "name": "Chuoi Chien TV (10:01 27/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-1f70b157b514",
-                    "name": "⚽ 10:00 27/03 New Caledonia VS Jamaica",
+                    "id": "ch-e80ea25b3c12",
+                    "name": "⚽ 10:00 27/03 New Caledonia VS Jamaica [Quan Vũ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1f70b157b514",
+                            "id": "src-e80ea25b3c12",
                             "contents": [
                                 {
-                                    "id": "ct-1f70b157b514",
+                                    "id": "ct-e80ea25b3c12",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/quanvuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1530487/1530487"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-d1d5c6a447b9",
-                    "name": "⚽ 10:00 27/03 Chile VS Cape Verde Islands",
+                    "id": "ch-3151996027c4",
+                    "name": "⚽ 10:00 27/03 Chile VS Cape Verde Islands [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d1d5c6a447b9",
+                            "id": "src-3151996027c4",
                             "contents": [
                                 {
-                                    "id": "ct-d1d5c6a447b9",
+                                    "id": "ct-3151996027c4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1537246/1537246"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7547682fc9d7",
                     "name": "⚽ 13:00 27/03 China VS Curaçao",
