@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (05:01 28/03/2026)",
+    "name": "Thiên Đỉnh TV (06:00 28/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-e0d092d0b8b8",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a115ff28f1d9",
                     "name": "⚽ 16:00 28/03 Logan Lightning VS Brisbane Strikers BLV Táo Thiên Vương",
@@ -460,6 +461,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/mexico-vs-portugal.E_HY5CKRg4"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e0d092d0b8b8",
+                    "name": "⚽ 06:15 28/03 BLV Táo Văn Hóa(A Bí)FriendliesArgentinaKXD0-0---'MauritaniaBLV VS Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)23:15 27/03FriendliesArgentinaKXD0-0---'MauritaniaBLV Táo Văn Hóa(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e0d092d0b8b8.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e0d092d0b8b8",
+                            "contents": [
+                                {
+                                    "id": "ct-e0d092d0b8b8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/argentina-vs-mauritania.TNQcU-k-tu"
                                                         },
                                                         {
                                                             "key": "User-Agent",
