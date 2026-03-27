@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:00 27/03/2026)",
+    "name": "Thiên Đỉnh TV (23:01 27/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-c0f396d376c0",
-                    "name": "⚽ 21:00 27/03 Uzbekistan VS Gabon BLV Táo Chè",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c0f396d376c0.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c0f396d376c0",
-                            "contents": [
-                                {
-                                    "id": "ct-c0f396d376c0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/uzbekistan-vs-gabon.CoY0CBQZSH"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6ab4e227f4e8",
                     "name": "⚽ 22:00 27/03 Azerbaijan VS St. Lucia BLV Táo Thiên Vương",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-0952844415df",
                     "name": "⚽ 23:00 27/03 Kenya VS Estonia BLV Táo Mèo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0db0687d7c75",
                     "name": "⚽ 00:00 28/03 Austria VS Ghana BLV Táo Tàu",
@@ -855,48 +813,6 @@
                     ]
                 },
                 {
-                    "id": "ch-c0f396d376c0",
-                    "name": "⚽ 21:00 27/03 BLV Táo ChèFIFA Series VS UzbekistanKXD0-0---'GabonBLV Táo ChèTrực tiếp BLV Táo Chè14:00 27/03FIFA Series UzbekistanKXD0-0---'GabonBLV Táo ChèTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c0f396d376c0.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c0f396d376c0",
-                            "contents": [
-                                {
-                                    "id": "ct-c0f396d376c0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/uzbekistan-vs-gabon.CoY0CBQZSH"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-6ab4e227f4e8",
                     "name": "⚽ 22:00 27/03 BLV Táo Thiên VươngFIFA SeriesAzerbaijanKXD0-0---'St. VS LuciaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương15:00 27/03FIFA SeriesAzerbaijanKXD0-0---'St. LuciaBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
@@ -923,6 +839,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/azerbaijan-vs-st-lucia.vPaSWOk-Iw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0952844415df",
+                    "name": "⚽ 23:00 27/03 BLV Táo MèoFIFA VS SeriesKenyaKXD0-0---'EstoniaBLV Táo MèoTrực tiếp BLV Táo Mèo16:00 27/03FIFA SeriesKenyaKXD0-0---'EstoniaBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0952844415df.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0952844415df",
+                            "contents": [
+                                {
+                                    "id": "ct-0952844415df",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/kenya-vs-estonia.Uiw7fvNnLT"
                                                         },
                                                         {
                                                             "key": "User-Agent",
