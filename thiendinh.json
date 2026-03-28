@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:02 28/03/2026)",
+    "name": "Thiên Đỉnh TV (19:01 28/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-27f7fde4293f",
-                    "name": "⚽ 16:30 28/03 Lions VS Brisbane City BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/27f7fde4293f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-27f7fde4293f",
-                            "contents": [
-                                {
-                                    "id": "ct-27f7fde4293f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/queensland-npl.SAdYZaDM_L/lions-vs-brisbane-city.j6Ki6MeRke"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-4a22aa080408",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c56fc1f8c3bc",
                     "name": "⚽ 20:00 28/03 AD Ceuta FC VS Cadiz BLV Táo Tàu",
@@ -435,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-27f7fde4293f",
-                    "name": "⚽ 16:30 28/03 BLV Táo Thiên VươngQueensland NPLLionsKXD0-0---'Brisbane VS CityBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:30 28/03Queensland NPLLionsKXD0-0---'Brisbane CityBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-4a22aa080408",
+                    "name": "⚽ 18:35 28/03 BLV Ngọc Hoàng(A Cháo)FriendliesChina PR U23KXD0-0---'Korea VS DPR U23BLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)11:35 28/03FriendliesChina PR U23KXD0-0---'Korea DPR U23BLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/27f7fde4293f.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4a22aa080408.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-27f7fde4293f",
+                            "id": "src-4a22aa080408",
                             "contents": [
                                 {
-                                    "id": "ct-27f7fde4293f",
+                                    "id": "ct-4a22aa080408",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -460,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/queensland-npl.SAdYZaDM_L/lions-vs-brisbane-city.j6Ki6MeRke"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/china-pr-u23-vs-korea-dpr-u23.TZQZFKRt6K"
                                                         },
                                                         {
                                                             "key": "User-Agent",
