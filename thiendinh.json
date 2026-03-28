@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:00 28/03/2026)",
+    "name": "Thiên Đỉnh TV (23:01 28/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-52b8439fb43f",
-                    "name": "⚽ 21:00 28/03 South Korea VS Ivory Coast BLV Táo Văn Hóa(A Bí)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/52b8439fb43f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-52b8439fb43f",
-                            "contents": [
-                                {
-                                    "id": "ct-52b8439fb43f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/south-korea-vs-ivory-coast.pbH4yE-DN8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-1b746afbd49c",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-31897c7cc291",
                     "name": "⚽ 00:00 29/03 Hungary VS Slovenia BLV Táo Văn Hóa(A Bí)",
@@ -603,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-52b8439fb43f",
-                    "name": "⚽ 21:00 28/03 BLV Táo Văn Hóa(A Bí)FriendliesSouth KoreaKXD0-0---'Ivory VS CoastBLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)14:00 28/03FriendliesSouth KoreaKXD0-0---'Ivory CoastBLV Táo Văn Hóa(A Bí)Trực tiếp",
+                    "id": "ch-1b746afbd49c",
+                    "name": "⚽ 23:00 28/03 BLV Táo Văn NghệFriendliesSenegalKXD0-0---'PeruBLV VS Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ16:00 28/03FriendliesSenegalKXD0-0---'PeruBLV Táo Văn NghệTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/52b8439fb43f.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1b746afbd49c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-52b8439fb43f",
+                            "id": "src-1b746afbd49c",
                             "contents": [
                                 {
-                                    "id": "ct-52b8439fb43f",
+                                    "id": "ct-1b746afbd49c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -628,7 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/south-korea-vs-ivory-coast.pbH4yE-DN8"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/senegal-vs-peru.lwij695272"
                                                         },
                                                         {
                                                             "key": "User-Agent",
