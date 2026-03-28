@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 28/03/2026)",
+    "name": "Thiên Đỉnh TV (16:00 28/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-a115ff28f1d9",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4a22aa080408",
                     "name": "⚽ 18:35 28/03 China PR U23 VS Korea DPR U23 BLV Ngọc Hoàng(A Cháo)",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/mexico-vs-portugal.E_HY5CKRg4"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a115ff28f1d9",
+                    "name": "⚽ 16:00 28/03 BLV Táo Thiên VươngQueensland Logan VS LightningKXD0-0---'Brisbane StrikersBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:00 28/03Queensland Premier LeagueLogan LightningKXD0-0---'Brisbane StrikersBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a115ff28f1d9.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a115ff28f1d9",
+                            "contents": [
+                                {
+                                    "id": "ct-a115ff28f1d9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/queensland-premier-league.NAoz84y3x5/logan-lightning-vs-brisbane-strikers.nKKDKxnCbt"
                                                         },
                                                         {
                                                             "key": "User-Agent",
