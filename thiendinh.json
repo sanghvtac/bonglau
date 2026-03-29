@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:02 30/03/2026)",
+    "name": "Thiên Đỉnh TV (02:02 30/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-87d0533c3bb5",
-                    "name": "⚽ 23:30 29/03 Zaragoza VS Racing Santander BLV Táo Văn Nghệ",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/87d0533c3bb5.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-87d0533c3bb5",
-                            "contents": [
-                                {
-                                    "id": "ct-87d0533c3bb5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/zaragoza-vs-racing-santander.1aCj4Jwkrr"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-9d00fe60131c",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-36b58f47a381",
                     "name": "⚽ 13:00 30/03 New Zealand VS Chile BLV Táo Chè",
@@ -519,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-87d0533c3bb5",
-                    "name": "⚽ 23:30 29/03 BLV Táo Văn NghệSegunda DivisiónZaragozaKXD0-0---'Racing VS SantanderBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ16:30 29/03Segunda DivisiónZaragozaKXD0-0---'Racing SantanderBLV Táo Văn NghệTrực tiếp",
+                    "id": "ch-defab261fd46",
+                    "name": "⚽ 02:00 30/03 BLV Ngọc Hoàng(A Cháo)FriendliesColombiaKXD0-0---'FranceBLV VS Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 29/03FriendliesColombiaKXD0-0---'FranceBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/87d0533c3bb5.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/defab261fd46.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-87d0533c3bb5",
+                            "id": "src-defab261fd46",
                             "contents": [
                                 {
-                                    "id": "ct-87d0533c3bb5",
+                                    "id": "ct-defab261fd46",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +502,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/zaragoza-vs-racing-santander.1aCj4Jwkrr"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/colombia-vs-france.Kotl2cZckT"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9d00fe60131c",
+                    "name": "⚽ 02:00 30/03 BLV Táo MèoPrimera División FemeninaReal VS Madrid WKXD0-0---'Barcelona WBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 29/03Primera División FemeninaReal Madrid WKXD0-0---'Barcelona WBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9d00fe60131c.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9d00fe60131c",
+                            "contents": [
+                                {
+                                    "id": "ct-9d00fe60131c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/primera-division-femenina.19xFeOF9wV/real-madrid-w-vs-barcelona-w.4a4o5zTc6c"
                                                         },
                                                         {
                                                             "key": "User-Agent",
