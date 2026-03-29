@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 29/03/2026)",
+    "name": "Thiên Đỉnh TV (16:01 29/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-3944d5fb26aa",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-80af9944be06",
                     "name": "⚽ 19:00 29/03 Eibar VS Las Palmas BLV Táo Thiên Vương",
@@ -334,6 +335,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/colombia-vs-france.Kotl2cZckT"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3944d5fb26aa",
+                    "name": "⚽ 16:00 29/03 BLV Táo ChèPFLDynamic Herb VS CebuKXD0-0---'Garelli UnitedBLV Táo ChèTrực tiếp BLV Táo Chè09:00 29/03PFLDynamic Herb CebuKXD0-0---'Garelli UnitedBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3944d5fb26aa.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3944d5fb26aa",
+                            "contents": [
+                                {
+                                    "id": "ct-3944d5fb26aa",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pfl.KnFFwRuDSo/dynamic-herb-cebu-vs-garelli-united.loCCcgob5E"
                                                         },
                                                         {
                                                             "key": "User-Agent",
