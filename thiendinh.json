@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (07:01 29/03/2026)",
+    "name": "Thiên Đỉnh TV (08:01 29/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-ffe8d8f0dcc9",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3944d5fb26aa",
                     "name": "⚽ 16:00 29/03 Dynamic Herb Cebu VS Garelli United BLV Táo Chè",
@@ -376,6 +377,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/colombia-vs-france.Kotl2cZckT"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ffe8d8f0dcc9",
+                    "name": "⚽ 08:00 29/03 BLV Táo Văn NghệFriendliesMexicoKXD0-0---'PortugalBLV VS Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ01:00 29/03FriendliesMexicoKXD0-0---'PortugalBLV Táo Văn NghệTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ffe8d8f0dcc9.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ffe8d8f0dcc9",
+                            "contents": [
+                                {
+                                    "id": "ct-ffe8d8f0dcc9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/mexico-vs-portugal.E_HY5CKRg4"
                                                         },
                                                         {
                                                             "key": "User-Agent",
