@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (23:01 30/03/2026)",
+    "name": "Thiên Đỉnh TV (00:01 31/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-31e3f6869fe5",
-                    "name": "⚽ 21:00 30/03 Uzbekistan VS Venezuela BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/31e3f6869fe5.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-31e3f6869fe5",
-                            "contents": [
-                                {
-                                    "id": "ct-31e3f6869fe5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/uzbekistan-vs-venezuela.Vx752qRQcC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-18ff794287f7",
-                    "name": "⚽ 22:00 30/03 Azerbaijan VS Sierra Leone BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/18ff794287f7.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-18ff794287f7",
-                            "contents": [
-                                {
-                                    "id": "ct-18ff794287f7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/azerbaijan-vs-sierra-leone.8bVzjjB49I"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-dfe03a4b83b0",
                     "name": "⚽ 23:00 30/03 Cyprus VS Moldova BLV Táo Văn Nghệ",
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-0edf664ffbd4",
                     "name": "⚽ 00:00 31/03 France U21 VS Iceland U21 BLV Táo Mèo",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fce4fe40f075",
                     "name": "⚽ 01:45 31/03 Germany VS Ghana BLV Ngọc Hoàng(A Cháo)",
@@ -393,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-677082525af7",
-                    "name": "⚽ 18:35 31/03 China PR U23 VS Vietnam U23 BLV Táo Văn Hóa(A Bí)",
+                    "id": "ch-6def4e4c16ba",
+                    "name": "⚽ 18:35 31/03 China PR U23 VS Vietnam U23 BLV Táo Tàu",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/677082525af7.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6def4e4c16ba.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-677082525af7",
+                            "id": "src-6def4e4c16ba",
                             "contents": [
                                 {
-                                    "id": "ct-677082525af7",
+                                    "id": "ct-6def4e4c16ba",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -418,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/china-pr-u23-vs-vietnam-u23.SjVW7zg2fP"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/friendlies.lfpzLJ0DhW/china-pr-u23-vs-vietnam-u23.x-KY9-JX06"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -477,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-e1829b03ba3a",
-                    "name": "⚽ 19:00 31/03 Vietnam VS Malaysia BLV Táo Văn Nghệ",
+                    "id": "ch-eed66d204b74",
+                    "name": "⚽ 19:00 31/03 Vietnam VS Malaysia BLV Táo Văn Hóa(A Bí)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e1829b03ba3a.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/eed66d204b74.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e1829b03ba3a",
+                            "id": "src-eed66d204b74",
                             "contents": [
                                 {
-                                    "id": "ct-e1829b03ba3a",
+                                    "id": "ct-eed66d204b74",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -502,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/vietnam-vs-malaysia.oyQtAEWCSP"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/vietnam-vs-malaysia.69AWLH6LR8"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -519,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f3c504123494",
-                    "name": "⚽ 19:30 31/03 India VS Hong Kong BLV Táo Tàu",
+                    "id": "ch-e5379514e05a",
+                    "name": "⚽ 19:30 31/03 India VS Hong Kong BLV Táo Thiên Vương",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f3c504123494.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e5379514e05a.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f3c504123494",
+                            "id": "src-e5379514e05a",
                             "contents": [
                                 {
-                                    "id": "ct-f3c504123494",
+                                    "id": "ct-e5379514e05a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/india-vs-hong-kong.A4VfDCZK8s"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/india-vs-hong-kong.0pYYxcBPZ1"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-da75ff055436",
-                    "name": "⚽ 19:30 31/03 Thailand VS Turkmenistan BLV Táo Tàu",
+                    "id": "ch-4de317061dc5",
+                    "name": "⚽ 19:30 31/03 Thailand VS Turkmenistan BLV Táo Văn Nghệ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/da75ff055436.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4de317061dc5.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-da75ff055436",
+                            "id": "src-4de317061dc5",
                             "contents": [
                                 {
-                                    "id": "ct-da75ff055436",
+                                    "id": "ct-4de317061dc5",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/thailand-vs-turkmenistan.2Ssg5YymiF"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/thailand-vs-turkmenistan.bhpxK2AKww"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1191,22 +1107,22 @@
                     ]
                 },
                 {
-                    "id": "ch-31e3f6869fe5",
-                    "name": "⚽ 21:00 30/03 BLV Táo MèoFIFA Series VS UzbekistanKXD0-0---'VenezuelaBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 30/03FIFA Series UzbekistanKXD0-0---'VenezuelaBLV Táo MèoTrực tiếp",
+                    "id": "ch-0edf664ffbd4",
+                    "name": "⚽ 00:00 31/03 BLV Táo Mèo U21 Championship - VS QualificationFrance U21KXD0-0---'Iceland U21BLV Táo MèoTrực tiếp BLV Táo Mèo17:00 30/03UEFA U21 Championship - QualificationFrance U21KXD0-0---'Iceland U21BLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/31e3f6869fe5.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0edf664ffbd4.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-31e3f6869fe5",
+                            "id": "src-0edf664ffbd4",
                             "contents": [
                                 {
-                                    "id": "ct-31e3f6869fe5",
+                                    "id": "ct-0edf664ffbd4",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1216,49 +1132,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/uzbekistan-vs-venezuela.Vx752qRQcC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-18ff794287f7",
-                    "name": "⚽ 22:00 30/03 BLV Táo TàuFIFA SeriesAzerbaijanKXD0-0---'Sierra VS LeoneBLV Táo TàuTrực tiếp BLV Táo Tàu15:00 30/03FIFA SeriesAzerbaijanKXD0-0---'Sierra LeoneBLV Táo TàuTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/18ff794287f7.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-18ff794287f7",
-                            "contents": [
-                                {
-                                    "id": "ct-18ff794287f7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/azerbaijan-vs-sierra-leone.8bVzjjB49I"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-u21-championship-qualification.8kOcJkBAbx/france-u21-vs-iceland-u21.PdhdWj41HF"
                                                         },
                                                         {
                                                             "key": "User-Agent",
