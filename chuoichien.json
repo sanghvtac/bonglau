@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:01 31/03/2026)",
+    "name": "Chuoi Chien TV (02:01 31/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d7bff418abb2",
-                    "name": "⚽ 01:45 31/03 Germany VS Ghana",
+                    "id": "ch-8aa554da2afe",
+                    "name": "⚽ 01:45 31/03 Germany VS Ghana [A Tích - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d7bff418abb2",
+                            "id": "src-8aa554da2afe",
                             "contents": [
                                 {
-                                    "id": "ct-d7bff418abb2",
+                                    "id": "ct-8aa554da2afe",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/atichhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1501816/1501816"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-9025b651d696",
-                    "name": "⚽ 02:00 31/03 Guyana VS Belize",
+                    "id": "ch-96700b14488f",
+                    "name": "⚽ 02:00 31/03 Guyana VS Belize [Quan Vũ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9025b651d696",
+                            "id": "src-96700b14488f",
                             "contents": [
                                 {
-                                    "id": "ct-9025b651d696",
+                                    "id": "ct-96700b14488f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/quanvuhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-e805937fd9f2",
+                    "name": "⚽ 02:00 31/03 Defensores De Belgrano VS Atletico DE Rafaela",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1498405.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e805937fd9f2",
+                            "contents": [
+                                {
+                                    "id": "ct-e805937fd9f2",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1525687/1525687"
+                                                            "value": "https://live20.chuoichientv.com/live/1498405/1498405"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -797,48 +839,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1537255/1537255"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-5d677a274db8",
-                    "name": "⚽ 19:30 31/03 Bhutan VS Brunei",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1321354.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5d677a274db8",
-                            "contents": [
-                                {
-                                    "id": "ct-5d677a274db8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1321354/1321354"
                                                         },
                                                         {
                                                             "key": "User-Agent",
