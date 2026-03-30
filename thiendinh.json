@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:01 30/03/2026)",
+    "name": "Thiên Đỉnh TV (20:01 30/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-d7057d63982f",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-31e3f6869fe5",
                     "name": "⚽ 21:00 30/03 Uzbekistan VS Venezuela BLV Táo Mèo",
@@ -292,6 +293,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/rwanda-vs-estonia.YEM2Qn0o5F"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d7057d63982f",
+                    "name": "⚽ 20:00 30/03 BLV Táo Văn NghệFIFA VS SeriesIndonesiaKXD0-0---'BulgariaBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ13:00 30/03FIFA SeriesIndonesiaKXD0-0---'BulgariaBLV Táo Văn NghệTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d7057d63982f.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d7057d63982f",
+                            "contents": [
+                                {
+                                    "id": "ct-d7057d63982f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fifa-series.bbsXDeu2QO/indonesia-vs-bulgaria.BvHv-sQ83W"
                                                         },
                                                         {
                                                             "key": "User-Agent",
