@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:01 31/03/2026)",
+    "name": "Chuoi Chien TV (13:01 31/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-0d90078f0f5f",
-                    "name": "⚽ 13:00 31/03 China VS Cameroon",
+                    "id": "ch-14c2c8a6f2a5",
+                    "name": "⚽ 13:00 31/03 China VS Cameroon [Chuối Tiêu - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0d90078f0f5f",
+                            "id": "src-14c2c8a6f2a5",
                             "contents": [
                                 {
-                                    "id": "ct-0d90078f0f5f",
+                                    "id": "ct-14c2c8a6f2a5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1537257/1537257"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0eddec95d887",
                     "name": "⚽ 14:00 31/03 Korea DPR U23 VS U23 Thailand ",
