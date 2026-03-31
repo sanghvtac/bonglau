@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:01 31/03/2026)",
+    "name": "Thiên Đỉnh TV (20:01 31/03/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-a4a3bc9abe92",
-                    "name": "⚽ 17:30 31/03 Maldives VS Timor-Leste BLV Táo Chè",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4a3bc9abe92.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a4a3bc9abe92",
-                            "contents": [
-                                {
-                                    "id": "ct-a4a3bc9abe92",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/maldives-vs-timor-leste.8FtlCCCTeX"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6def4e4c16ba",
                     "name": "⚽ 18:35 31/03 China PR U23 VS Vietnam U23 BLV Táo Tàu",
@@ -175,54 +133,6 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-e5379514e05a",
-                    "name": "⚽ 19:30 31/03 India VS Hong Kong BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e5379514e05a.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e5379514e05a",
-                            "contents": [
-                                {
-                                    "id": "ct-e5379514e05a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/india-vs-hong-kong.0pYYxcBPZ1"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
                     "id": "ch-4de317061dc5",
@@ -245,12 +155,60 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/thailand-vs-turkmenistan.bhpxK2AKww"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-fcfff6d12ceb",
+                    "name": "⚽ 20:30 31/03 India VS Hong Kong BLV Táo Thiên Vương",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fcfff6d12ceb.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fcfff6d12ceb",
+                            "contents": [
+                                {
+                                    "id": "ct-fcfff6d12ceb",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/india-vs-hong-kong.rznWv4Fadi"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -855,48 +813,6 @@
                     ]
                 },
                 {
-                    "id": "ch-a4a3bc9abe92",
-                    "name": "⚽ 17:30 31/03 BLV Táo ChèAsian - VS QualificationMaldivesKXD0-0---'Timor-LesteBLV Táo ChèTrực tiếp BLV Táo Chè10:30 31/03Asian Cup - QualificationMaldivesKXD0-0---'Timor-LesteBLV Táo ChèTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4a3bc9abe92.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a4a3bc9abe92",
-                            "contents": [
-                                {
-                                    "id": "ct-a4a3bc9abe92",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/maldives-vs-timor-leste.8FtlCCCTeX"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-10913989b43e",
                     "name": "⚽ 19:00 31/03 BLV Ngọc Hoàng(A Cháo)Asian - VS QualificationVietnamKXD0-0---'MalaysiaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)12:00 31/03Asian Cup - QualificationVietnamKXD0-0---'MalaysiaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
@@ -965,6 +881,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/vietnam-vs-malaysia.69AWLH6LR8"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4de317061dc5",
+                    "name": "⚽ 19:30 31/03 BLV Táo Văn NghệAsian - VS QualificationThailandKXD0-0---'TurkmenistanBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ12:30 31/03Asian Cup - QualificationThailandKXD0-0---'TurkmenistanBLV Táo Văn NghệTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4de317061dc5.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4de317061dc5",
+                            "contents": [
+                                {
+                                    "id": "ct-4de317061dc5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/asian-cup-qualification.yDCAoP1m8s/thailand-vs-turkmenistan.bhpxK2AKww"
                                                         },
                                                         {
                                                             "key": "User-Agent",
