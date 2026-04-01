@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:00 01/04/2026)",
+    "name": "Thiên Đỉnh TV (20:01 01/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-c5de9e9fc9bc",
                     "name": "⚽ 20:00 01/04 Thailand U20 W VS Bangladesh U20 W BLV Táo Văn Hóa(A Bí)",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c7831349d6c7",
                     "name": "⚽ 22:00 01/04 FC Urartu VS Ararat BLV Táo Văn Nghệ",
@@ -293,6 +293,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/cup.V4MxeGjilx/fc-noah-vs-pyunik-yerevan.uTpVJEdGHw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-c5de9e9fc9bc",
+                    "name": "⚽ 20:00 01/04 BLV Táo Văn Hóa(A Bí)AFC U20 Asian - WomenThailand VS U20 WKXD0-0---'Bangladesh U20 WBLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)13:00 01/04AFC U20 Asian Cup - WomenThailand U20 WKXD0-0---'Bangladesh U20 WBLV Táo Văn Hóa(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c5de9e9fc9bc.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-c5de9e9fc9bc",
+                            "contents": [
+                                {
+                                    "id": "ct-c5de9e9fc9bc",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/thailand-u20-w-vs-bangladesh-u20-w._fv5W8vK8q"
                                                         },
                                                         {
                                                             "key": "User-Agent",
