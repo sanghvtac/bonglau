@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 01/04/2026)",
+    "name": "Thiên Đỉnh TV (17:01 01/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-92e8858e82f4",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -76,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-55cda3aed3f4",
                     "name": "⚽ 19:00 01/04 FC Noah VS Pyunik Yerevan BLV Táo Tàu",
@@ -334,6 +335,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/chelsea-w-vs-arsenal-w.Kl6r3sxx_7"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-7a91085adb63",
+                    "name": "⚽ 17:00 01/04 BLV Táo TàuJ1 LeagueMachida VS ZelviaKXD0-0---'FC TokyoBLV Táo TàuTrực tiếp BLV Táo Tàu10:00 01/04J1 LeagueMachida ZelviaKXD0-0---'FC TokyoBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7a91085adb63.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-7a91085adb63",
+                            "contents": [
+                                {
+                                    "id": "ct-7a91085adb63",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/j1-league-1758631930094/machida-zelvia-vs-fc-tokyo.JTKk8gEJnk"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-92e8858e82f4",
+                    "name": "⚽ 16:00 01/04 BLV Táo ChèAFC U20 Asian - WomenChina VS PR U20 WKXD0-0---'Vietnam U20 WBLV Táo ChèTrực tiếp BLV Táo Chè09:00 01/04AFC U20 Asian Cup - WomenChina PR U20 WKXD0-0---'Vietnam U20 WBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/92e8858e82f4.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-92e8858e82f4",
+                            "contents": [
+                                {
+                                    "id": "ct-92e8858e82f4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/china-pr-u20-w-vs-vietnam-u20-w.KuXNasWMor"
                                                         },
                                                         {
                                                             "key": "User-Agent",
