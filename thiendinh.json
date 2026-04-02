@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:00 03/04/2026)",
+    "name": "Thiên Đỉnh TV (02:00 03/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-75220a204e7c",
-                    "name": "⚽ 23:45 02/04 Barcelona W VS Real Madrid W BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/75220a204e7c.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-75220a204e7c",
-                            "contents": [
-                                {
-                                    "id": "ct-75220a204e7c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/barcelona-w-vs-real-madrid-w.m-bcN5Be85"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-1c247f3c8ec8",
-                    "name": "⚽ 00:00 03/04 Las Palmas VS Granada CF BLV Táo Văn Nghệ",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1c247f3c8ec8.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1c247f3c8ec8",
-                            "contents": [
-                                {
-                                    "id": "ct-1c247f3c8ec8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/las-palmas-vs-granada-cf.8RoMUrLfFL"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-a989f35d53df",
                     "name": "⚽ 01:00 03/04 Castellón VS Almeria BLV Táo Tàu",
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-fb737f43d492",
                     "name": "⚽ 02:00 03/04 Lyon W VS VfL Wolfsburg W BLV Táo Văn Hóa(A Bí)",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-80b5f50f5dca",
                     "name": "⚽ 15:35 03/04 Adelaide United VS Auckland BLV Táo Chè",
@@ -771,48 +687,6 @@
                     ]
                 },
                 {
-                    "id": "ch-1c247f3c8ec8",
-                    "name": "⚽ 00:00 03/04 BLV Táo Văn NghệSegunda DivisiónLas VS PalmasKXD0-0---'Granada CFBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ17:00 02/04Segunda DivisiónLas PalmasKXD0-0---'Granada CFBLV Táo Văn NghệTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1c247f3c8ec8.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1c247f3c8ec8",
-                            "contents": [
-                                {
-                                    "id": "ct-1c247f3c8ec8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/las-palmas-vs-granada-cf.8RoMUrLfFL"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-a989f35d53df",
                     "name": "⚽ 01:00 03/04 BLV Táo TàuSegunda VS DivisiónCastellónKXD0-0---'AlmeriaBLV Táo TàuTrực tiếp BLV Táo Tàu18:00 02/04Segunda DivisiónCastellónKXD0-0---'AlmeriaBLV Táo TàuTrực tiếp",
                     "type": "single",
@@ -855,22 +729,22 @@
                     ]
                 },
                 {
-                    "id": "ch-75220a204e7c",
-                    "name": "⚽ 23:45 02/04 BLV Ngọc Hoàng(A Cháo) WomenBarcelona WKXD0-0---'Real VS Madrid WBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:45 02/04UEFA Champions League WomenBarcelona WKXD0-0---'Real Madrid WBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "id": "ch-a8a19f58301c",
+                    "name": "⚽ 02:30 03/04 BLV Táo Văn NghệSegunda VS DivisiónLeganesKXD0-0---'ZaragozaBLV Táo Văn NghệTrực tiếp BLV Táo Văn Nghệ19:30 02/04Segunda DivisiónLeganesKXD0-0---'ZaragozaBLV Táo Văn NghệTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/75220a204e7c.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a8a19f58301c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-75220a204e7c",
+                            "id": "src-a8a19f58301c",
                             "contents": [
                                 {
-                                    "id": "ct-75220a204e7c",
+                                    "id": "ct-a8a19f58301c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -880,7 +754,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/barcelona-w-vs-real-madrid-w.m-bcN5Be85"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/leganes-vs-zaragoza.DDFxhuk73C"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-fb737f43d492",
+                    "name": "⚽ 02:00 03/04 BLV Táo Văn Hóa(A Bí) WomenLyon WKXD0-0---'VfL VS Wolfsburg WBLV Táo Văn Hóa(A Bí)Trực tiếp BLV Táo Văn Hóa(A Bí)19:00 02/04UEFA Champions League WomenLyon WKXD0-0---'VfL Wolfsburg WBLV Táo Văn Hóa(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fb737f43d492.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fb737f43d492",
+                            "contents": [
+                                {
+                                    "id": "ct-fb737f43d492",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-women.Ww5XcYVKPu/lyon-w-vs-vfl-wolfsburg-w.8E2CHmXqYO"
                                                         },
                                                         {
                                                             "key": "User-Agent",
