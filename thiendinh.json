@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 02/04/2026)",
+    "name": "Thiên Đỉnh TV (16:01 02/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-107b29e3d49e",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -76,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ce9be511ee34",
                     "name": "⚽ 17:00 02/04 Brisbane Roar VS Sydney BLV Táo Chè",
@@ -418,6 +419,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/segunda-division._genHW3jQx/leganes-vs-zaragoza.DDFxhuk73C"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-107b29e3d49e",
+                    "name": "⚽ 15:35 02/04 BLV Táo TàuA-LeagueMacarthurKXD0-0---'Newcastle VS JetsBLV Táo TàuTrực tiếp BLV Táo Tàu08:35 02/04A-LeagueMacarthurKXD0-0---'Newcastle JetsBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/107b29e3d49e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-107b29e3d49e",
+                            "contents": [
+                                {
+                                    "id": "ct-107b29e3d49e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/macarthur-vs-newcastle-jets.qG39CcTa06"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4412200d3e7d",
+                    "name": "⚽ 16:00 02/04 BLV Táo Thiên VươngAFC U20 Asian - WomenKorea VS Republic U20 WKXD0-0---'Uzbekistan U20 WBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:00 02/04AFC U20 Asian Cup - WomenKorea Republic U20 WKXD0-0---'Uzbekistan U20 WBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4412200d3e7d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4412200d3e7d",
+                            "contents": [
+                                {
+                                    "id": "ct-4412200d3e7d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/korea-republic-u20-w-vs-uzbekistan-u20-w.fuCmb5lMEh"
                                                         },
                                                         {
                                                             "key": "User-Agent",
