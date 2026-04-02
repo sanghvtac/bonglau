@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:01 02/04/2026)",
+    "name": "Thiên Đỉnh TV (21:01 02/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-bf3159a3597d",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-75220a204e7c",
                     "name": "⚽ 23:45 02/04 Barcelona W VS Real Madrid W BLV Ngọc Hoàng(A Cháo)",
@@ -796,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/coventry-vs-derby.E3eJAJas-M"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-bf3159a3597d",
+                    "name": "⚽ 21:00 02/04 BLV Táo TàuSuper VS LeagueBunyodkorKXD0-0---'LokomotivBLV Táo TàuTrực tiếp BLV Táo Tàu14:00 02/04Super LeagueBunyodkorKXD0-0---'LokomotivBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bf3159a3597d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-bf3159a3597d",
+                            "contents": [
+                                {
+                                    "id": "ct-bf3159a3597d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/bunyodkor-vs-lokomotiv.191e1YHKVu"
                                                         },
                                                         {
                                                             "key": "User-Agent",
