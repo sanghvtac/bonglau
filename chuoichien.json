@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:01 03/04/2026)",
+    "name": "Chuoi Chien TV (19:01 03/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,6 +8,48 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
+                {
+                    "id": "ch-5769f0729898",
+                    "name": "⚽ 18:00 03/04 Bangkok United VS Sukhothai FC [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1491280.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5769f0729898",
+                            "contents": [
+                                {
+                                    "id": "ct-5769f0729898",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-531000290171",
                     "name": "⚽ 18:00 03/04 Xuan Thien Phu Tho VS Quy Nhơn FC [Quan Vũ - FHD1]",
@@ -49,58 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-c8b1ac3f1459",
-                    "name": "⚽ 18:00 03/04 Bangkok United VS Sukhothai FC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1491280.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c8b1ac3f1459",
-                            "contents": [
-                                {
-                                    "id": "ct-c8b1ac3f1459",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1491280/1491280"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-01c9ab418810",
-                    "name": "⚽ 18:30 03/04 Middlesbrough VS Millwall",
+                    "id": "ch-4efbbf37bf90",
+                    "name": "⚽ 18:30 03/04 Middlesbrough VS Millwall [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-01c9ab418810",
+                            "id": "src-4efbbf37bf90",
                             "contents": [
                                 {
-                                    "id": "ct-01c9ab418810",
+                                    "id": "ct-4efbbf37bf90",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1387026/1387026"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1ab3cb251a1c",
-                    "name": "⚽ 18:30 03/04 Adana Demirspor VS Manisa BBSK",
+                    "id": "ch-8cd176c31421",
+                    "name": "⚽ 18:30 03/04 Adana Demirspor VS Manisa BBSK [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1ab3cb251a1c",
+                            "id": "src-8cd176c31421",
                             "contents": [
                                 {
-                                    "id": "ct-1ab3cb251a1c",
+                                    "id": "ct-8cd176c31421",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1398635/1398635"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-e4d74ce87419",
-                    "name": "⚽ 18:35 03/04 Chengdu Better City VS Qingdao Youth Island",
+                    "id": "ch-f4136728f899",
+                    "name": "⚽ 18:35 03/04 Chengdu Better City VS Qingdao Youth Island [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e4d74ce87419",
+                            "id": "src-f4136728f899",
                             "contents": [
                                 {
-                                    "id": "ct-e4d74ce87419",
+                                    "id": "ct-f4136728f899",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1523083/1523083"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-b982a31ba5b9",
-                    "name": "⚽ 19:00 03/04 Dewa United VS PSIM Yogyakarta",
+                    "id": "ch-602207470e83",
+                    "name": "⚽ 19:00 03/04 Dewa United VS PSIM Yogyakarta [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b982a31ba5b9",
+                            "id": "src-602207470e83",
                             "contents": [
                                 {
-                                    "id": "ct-b982a31ba5b9",
+                                    "id": "ct-602207470e83",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403788/1403788"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -265,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-194be5450cce",
                     "name": "⚽ 19:15 03/04 Kuala Lumpur FA VS Johor Darul Takzim FC",
