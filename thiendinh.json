@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:00 03/04/2026)",
+    "name": "Thiên Đỉnh TV (21:01 03/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-80117fd53e85",
-                    "name": "⚽ 18:00 03/04 Xuan Thien Phu Tho VS Binh Dinh BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/80117fd53e85.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-80117fd53e85",
-                            "contents": [
-                                {
-                                    "id": "ct-80117fd53e85",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-2.lXMTqsmfiU/xuan-thien-phu-tho-vs-binh-dinh.UtpvptM1oA"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-2b67f5722465",
-                    "name": "⚽ 18:30 03/04 Middlesbrough VS Millwall BLV Nam Tào(A Bí)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2b67f5722465.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2b67f5722465",
-                            "contents": [
-                                {
-                                    "id": "ct-2b67f5722465",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/middlesbrough-vs-millwall.kiXKgp21R2"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-51a471d07df4",
@@ -119,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-547f806e4fc0",
                     "name": "⚽ 23:00 03/04 Al Kholood VS Al Khaleej Saihat BLV Táo Mèo",
@@ -1233,22 +1149,22 @@
                     ]
                 },
                 {
-                    "id": "ch-2b67f5722465",
-                    "name": "⚽ 18:30 03/04 BLV Nam Tào(A Bí)ChampionshipMiddlesbroughKXD0-0---'MillwallBLV VS Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)11:30 03/04ChampionshipMiddlesbroughKXD0-0---'MillwallBLV Nam Tào(A Bí)Trực tiếp",
+                    "id": "ch-51a471d07df4",
+                    "name": "⚽ 21:00 03/04 BLV Táo MèoChampionshipLeicesterKXD0-0---'PrestonBLV VS Táo MèoTrực tiếp BLV Táo Mèo14:00 03/04ChampionshipLeicesterKXD0-0---'PrestonBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2b67f5722465.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/51a471d07df4.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2b67f5722465",
+                            "id": "src-51a471d07df4",
                             "contents": [
                                 {
-                                    "id": "ct-2b67f5722465",
+                                    "id": "ct-51a471d07df4",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1258,7 +1174,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/middlesbrough-vs-millwall.kiXKgp21R2"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/leicester-vs-preston.oSp7DyKeo-"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1275,22 +1191,22 @@
                     ]
                 },
                 {
-                    "id": "ch-80117fd53e85",
-                    "name": "⚽ 18:00 03/04 BLV Táo TàuV.League 2Xuan Thien VS Phu ThoKXD0-0---'Binh DinhBLV Táo TàuTrực tiếp BLV Táo Tàu11:00 03/04V.League 2Xuan Thien Phu ThoKXD0-0---'Binh DinhBLV Táo TàuTrực tiếp",
+                    "id": "ch-cfb18a12716c",
+                    "name": "⚽ 21:00 03/04 BLV Nam Tào(A Bí)ChampionshipNorwichKXD0-0---'PortsmouthBLV VS Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)14:00 03/04ChampionshipNorwichKXD0-0---'PortsmouthBLV Nam Tào(A Bí)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/80117fd53e85.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/cfb18a12716c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-80117fd53e85",
+                            "id": "src-cfb18a12716c",
                             "contents": [
                                 {
-                                    "id": "ct-80117fd53e85",
+                                    "id": "ct-cfb18a12716c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1300,7 +1216,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-2.lXMTqsmfiU/xuan-thien-phu-tho-vs-binh-dinh.UtpvptM1oA"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/norwich-vs-portsmouth.RvXjTqBezt"
                                                         },
                                                         {
                                                             "key": "User-Agent",
