@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:01 03/04/2026)",
+    "name": "Chuoi Chien TV (00:01 04/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,6 +8,48 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
+                {
+                    "id": "ch-60a7387a6271",
+                    "name": "⚽ 23:00 03/04 Al Kholood VS Al Khaleej Saihat [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1436151.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-60a7387a6271",
+                            "contents": [
+                                {
+                                    "id": "ct-60a7387a6271",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-fdf5636b937c",
                     "name": "⚽ 23:15 03/04 Al-Ittihad FC VS Al-Hazm [Zeman - FHD1]",
@@ -49,58 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-66ffe1a725df",
-                    "name": "⚽ 23:00 03/04 Al Kholood VS Al Khaleej Saihat",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1436151.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-66ffe1a725df",
-                            "contents": [
-                                {
-                                    "id": "ct-66ffe1a725df",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1436151/1436151"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-27aa24c9e497",
-                    "name": "⚽ 23:30 03/04 Al Ramtha VS Al Ahli",
+                    "id": "ch-9ec741c73631",
+                    "name": "⚽ 23:30 03/04 Al Ramtha VS Al Ahli [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-27aa24c9e497",
+                            "id": "src-9ec741c73631",
                             "contents": [
                                 {
-                                    "id": "ct-27aa24c9e497",
+                                    "id": "ct-9ec741c73631",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1537586/1537586"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-5f9c6612e1a0",
-                    "name": "⚽ 23:45 03/04 Lokomotiv Plovdiv VS Lokomotiv Sofia",
+                    "id": "ch-22685adf4176",
+                    "name": "⚽ 23:45 03/04 Lokomotiv Plovdiv VS Lokomotiv Sofia [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5f9c6612e1a0",
+                            "id": "src-22685adf4176",
                             "contents": [
                                 {
-                                    "id": "ct-5f9c6612e1a0",
+                                    "id": "ct-22685adf4176",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1451606/1451606"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ea44b9ab354a",
                     "name": "⚽ 00:00 04/04 Guimaraes VS Tondela",
