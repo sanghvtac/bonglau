@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (16:01 04/04/2026)",
+    "name": "Thiên Đỉnh TV (17:01 04/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-b94042dbe56e",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b9bb4ad09df8",
                     "name": "⚽ 18:00 04/04 Hai Phong VS Ha Noi BLV Táo Mèo",
@@ -796,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/major-league-soccer.-Wfz8cev32/inter-miami-vs-austin.B0j79r8zMN"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-b94042dbe56e",
+                    "name": "⚽ 17:00 04/04 BLV Táo Tàu AkronKXD0-0---'CSKA VS MoscowBLV Táo TàuTrực tiếp BLV Táo Tàu10:00 04/04Premier LeagueAkronKXD0-0---'CSKA MoscowBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b94042dbe56e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-b94042dbe56e",
+                            "contents": [
+                                {
+                                    "id": "ct-b94042dbe56e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/akron-vs-cska-moscow.E6F8mk26Op"
                                                         },
                                                         {
                                                             "key": "User-Agent",
