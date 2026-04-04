@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:00 04/04/2026)",
+    "name": "Thiên Đỉnh TV (19:00 04/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b94042dbe56e",
-                    "name": "⚽ 17:00 04/04 Akron VS CSKA Moscow BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b94042dbe56e.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b94042dbe56e",
-                            "contents": [
-                                {
-                                    "id": "ct-b94042dbe56e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/akron-vs-cska-moscow.E6F8mk26Op"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-b9bb4ad09df8",
                     "name": "⚽ 18:00 04/04 Hai Phong VS Ha Noi BLV Táo Mèo",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-44077d12a5be",
                     "name": "⚽ 18:45 04/04 Manchester City VS Liverpool BLV Ngọc Hoàng(A Cháo)",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-891332ce8ec1",
                     "name": "⚽ 20:00 04/04 Vietnam U20 W VS Thailand U20 W BLV Táo Thiên Vương",
@@ -813,22 +771,22 @@
                     ]
                 },
                 {
-                    "id": "ch-b94042dbe56e",
-                    "name": "⚽ 17:00 04/04 BLV Táo Tàu AkronKXD0-0---'CSKA VS MoscowBLV Táo TàuTrực tiếp BLV Táo Tàu10:00 04/04Premier LeagueAkronKXD0-0---'CSKA MoscowBLV Táo TàuTrực tiếp",
+                    "id": "ch-44077d12a5be",
+                    "name": "⚽ 18:45 04/04 BLV Ngọc Hoàng(A Cháo)FA Manchester VS CityKXD0-0---'LiverpoolBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)11:45 04/04FA CupManchester CityKXD0-0---'LiverpoolBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b94042dbe56e.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/44077d12a5be.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b94042dbe56e",
+                            "id": "src-44077d12a5be",
                             "contents": [
                                 {
-                                    "id": "ct-b94042dbe56e",
+                                    "id": "ct-44077d12a5be",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -838,7 +796,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/akron-vs-cska-moscow.E6F8mk26Op"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/manchester-city-vs-liverpool.0aydEg3S-B"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-6db42002522f",
+                    "name": "⚽ 18:45 04/04 BLV Thần ThôngFA Manchester VS CityKXD0-0---'LiverpoolBLV Thần ThôngTrực tiếp BLV Thần Thông11:45 04/04FA CupManchester CityKXD0-0---'LiverpoolBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6db42002522f.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-6db42002522f",
+                            "contents": [
+                                {
+                                    "id": "ct-6db42002522f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/manchester-city-vs-liverpool.4kPHZtMTYQ"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-562d4a86ced6",
+                    "name": "⚽ 19:00 04/04 BLV Nam Tào(A Bí) Real VS SociedadKXD0-0---'LevanteBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)12:00 04/04La LigaReal SociedadKXD0-0---'LevanteBLV Nam Tào(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/562d4a86ced6.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-562d4a86ced6",
+                            "contents": [
+                                {
+                                    "id": "ct-562d4a86ced6",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-sociedad-vs-levante.epnzhPWlE1"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -881,6 +923,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/hai-phong-vs-ha-noi.ekuna_E_pZ"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4454a42a462d",
+                    "name": "⚽ 19:15 04/04 BLV Táo ChèV.League 1Công An VS Nhân DânKXD0-0---'Da NangBLV Táo ChèTrực tiếp BLV Táo Chè12:15 04/04V.League 1Công An Nhân DânKXD0-0---'Da NangBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4454a42a462d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4454a42a462d",
+                            "contents": [
+                                {
+                                    "id": "ct-4454a42a462d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/cong-an-nhan-dan-vs-da-nang.kBrPpdNRCV"
                                                         },
                                                         {
                                                             "key": "User-Agent",
