@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:01 05/04/2026)",
+    "name": "Chuoi Chien TV (01:01 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-d562c50cd74a",
-                    "name": "⚽ 23:00 04/04 Verona VS Fiorentina [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378173.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d562c50cd74a",
-                            "contents": [
-                                {
-                                    "id": "ct-d562c50cd74a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-3d65c1822306",
                     "name": "⚽ 23:15 04/04 Chelsea VS Port Vale [Quan Vũ - FHD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b0835a28c6bc",
-                    "name": "⚽ 00:00 05/04 Stade Brestois 29 VS Rennes",
+                    "id": "ch-e919b1fb6f85",
+                    "name": "⚽ 00:00 05/04 Stade Brestois 29 VS Rennes [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,10 +147,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b0835a28c6bc",
+                            "id": "src-e919b1fb6f85",
                             "contents": [
                                 {
-                                    "id": "ct-b0835a28c6bc",
+                                    "id": "ct-e919b1fb6f85",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-75c3df29b210",
+                    "name": "⚽ 23:00 04/04 Verona VS Fiorentina",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378173.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-75c3df29b210",
+                            "contents": [
+                                {
+                                    "id": "ct-75c3df29b210",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1387942/1387942"
+                                                            "value": "https://live20.chuoichientv.com/live/1378173/1378173"
                                                         },
                                                         {
                                                             "key": "User-Agent",

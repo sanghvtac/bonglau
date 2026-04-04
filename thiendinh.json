@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:01 05/04/2026)",
+    "name": "Thiên Đỉnh TV (01:00 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -29,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tfur1gr4uqmtt8y41hcjzghzdrc3afi4ge5djq311h6ucxfsg17uff3ts65e.100ycdn.com/tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8?wsSession=b988d3b14abb9ea1129d21db-177532206961230&wsIPSercert=b042f7f9d84db089ba1a5f9edc051354&wsiphost=local&wsBindIP=1",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-bb4a0cc30a37",
                     "name": "⚽ 01:00 05/04 Al-Hilal Saudi FC VS Al Taawon BLV Táo Tàu",
@@ -119,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9082b018feb1",
                     "name": "⚽ 01:45 05/04 Lazio VS Parma BLV Táo Mèo",
@@ -1133,6 +1133,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/chelsea-vs-port-vale.U5R1tvlXRw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-bb4a0cc30a37",
+                    "name": "⚽ 01:00 05/04 BLV Táo TàuPro LeagueAl-Hilal Saudi VS FCKXD0-0---'Al TaawonBLV Táo TàuTrực tiếp BLV Táo Tàu18:00 04/04Pro LeagueAl-Hilal Saudi FCKXD0-0---'Al TaawonBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bb4a0cc30a37.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-bb4a0cc30a37",
+                            "contents": [
+                                {
+                                    "id": "ct-bb4a0cc30a37",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-hilal-saudi-fc-vs-al-taawon.g0ns3seqNo"
                                                         },
                                                         {
                                                             "key": "User-Agent",
