@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:00 05/04/2026)",
+    "name": "Thiên Đỉnh TV (02:00 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-44f2a302be0b",
-                    "name": "⚽ 23:15 04/04 Chelsea VS Port Vale BLV Táo Chè",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/44f2a302be0b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-44f2a302be0b",
-                            "contents": [
-                                {
-                                    "id": "ct-44f2a302be0b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/chelsea-vs-port-vale.U5R1tvlXRw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-e48add877f97",
-                    "name": "⚽ 23:30 04/04 VfB Stuttgart VS Borussia Dortmund BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e48add877f97.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e48add877f97",
-                            "contents": [
-                                {
-                                    "id": "ct-e48add877f97",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/vfb-stuttgart-vs-borussia-dortmund.0g6eaSRMTQ"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-bb4a0cc30a37",
                     "name": "⚽ 01:00 05/04 Al-Hilal Saudi FC VS Al Taawon BLV Táo Tàu",
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-9082b018feb1",
                     "name": "⚽ 01:45 05/04 Lazio VS Parma BLV Táo Mèo",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -287,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -307,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a51790f06e63",
                     "name": "⚽ 06:30 05/04 Inter Miami VS Austin BLV Nam Tào(A Bí)",
@@ -645,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-db6437047668",
-                    "name": "⚽ 20:00 05/04 Angers VS Lyon BLV Táo Thiên Vương",
+                    "id": "ch-ce1e20057b96",
+                    "name": "⚽ 20:00 05/04 Angers VS Lyon BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/db6437047668.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ce1e20057b96.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-db6437047668",
+                            "id": "src-ce1e20057b96",
                             "contents": [
                                 {
-                                    "id": "ct-db6437047668",
+                                    "id": "ct-ce1e20057b96",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/angers-vs-lyon.gbWn4vHeN5"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/angers-vs-lyon.fHB0o7POfE"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1023,22 +939,22 @@
                     ]
                 },
                 {
-                    "id": "ch-7b62718ed141",
-                    "name": "⚽ 02:00 06/04 Alaves VS Osasuna BLV Táo Mèo",
+                    "id": "ch-34a8fcaa9068",
+                    "name": "⚽ 02:00 06/04 Alaves VS Osasuna BLV Táo Thiên Vương",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7b62718ed141.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/34a8fcaa9068.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-7b62718ed141",
+                            "id": "src-34a8fcaa9068",
                             "contents": [
                                 {
-                                    "id": "ct-7b62718ed141",
+                                    "id": "ct-34a8fcaa9068",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1048,7 +964,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/alaves-vs-osasuna.2gVUHo1m-l"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/alaves-vs-osasuna.Ih4hLDfsFA"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1065,22 +981,22 @@
                     ]
                 },
                 {
-                    "id": "ch-e48add877f97",
-                    "name": "⚽ 23:30 04/04 BLV Táo Mèo VfB StuttgartKXD0-0---'Borussia VS Dortmund BLV Táo MèoTrực tiếp BLV Táo Mèo16:30 04/04BundesligaVfB StuttgartKXD0-0---'Borussia Dortmund BLV Táo MèoTrực tiếp",
+                    "id": "ch-9082b018feb1",
+                    "name": "⚽ 01:45 05/04 BLV Táo Mèo VS LazioKXD0-0---'ParmaBLV Táo MèoTrực tiếp BLV Táo Mèo18:45 04/04Serie ALazioKXD0-0---'ParmaBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e48add877f97.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9082b018feb1.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e48add877f97",
+                            "id": "src-9082b018feb1",
                             "contents": [
                                 {
-                                    "id": "ct-e48add877f97",
+                                    "id": "ct-9082b018feb1",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1090,7 +1006,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/vfb-stuttgart-vs-borussia-dortmund.0g6eaSRMTQ"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/lazio-vs-parma.2igtKkuXMx"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1107,22 +1023,22 @@
                     ]
                 },
                 {
-                    "id": "ch-44f2a302be0b",
-                    "name": "⚽ 23:15 04/04 BLV Táo ChèFA ChelseaKXD0-0---'Port VS ValeBLV Táo ChèTrực tiếp BLV Táo Chè16:15 04/04FA CupChelseaKXD0-0---'Port ValeBLV Táo ChèTrực tiếp",
+                    "id": "ch-418be451b0bd",
+                    "name": "⚽ 02:00 05/04 BLV Thần ThôngFA VS SouthamptonKXD0-0---'ArsenalBLV Thần ThôngTrực tiếp BLV Thần Thông19:00 04/04FA CupSouthamptonKXD0-0---'ArsenalBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/44f2a302be0b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/418be451b0bd.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-44f2a302be0b",
+                            "id": "src-418be451b0bd",
                             "contents": [
                                 {
-                                    "id": "ct-44f2a302be0b",
+                                    "id": "ct-418be451b0bd",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1132,7 +1048,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/chelsea-vs-port-vale.U5R1tvlXRw"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/southampton-vs-arsenal.NLFOPWvWfN"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f4c7e4964d9e",
+                    "name": "⚽ 02:00 05/04 BLV Nam Tào(A Bí) Atletico VS MadridKXD0-0---'BarcelonaBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)19:00 04/04La LigaAtletico MadridKXD0-0---'BarcelonaBLV Nam Tào(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f4c7e4964d9e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f4c7e4964d9e",
+                            "contents": [
+                                {
+                                    "id": "ct-f4c7e4964d9e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/atletico-madrid-vs-barcelona.o-jwhL8NlC"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-7988e5e2f5b2",
+                    "name": "⚽ 02:00 05/04 BLV Ngọc Hoàng(A Cháo) Atletico VS MadridKXD0-0---'BarcelonaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 04/04La LigaAtletico MadridKXD0-0---'BarcelonaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7988e5e2f5b2.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-7988e5e2f5b2",
+                            "contents": [
+                                {
+                                    "id": "ct-7988e5e2f5b2",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/atletico-madrid-vs-barcelona.ZYR7lF-m2L"
                                                         },
                                                         {
                                                             "key": "User-Agent",
