@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:01 06/04/2026)",
+    "name": "Thiên Đỉnh TV (02:00 06/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-6245b083dede",
-                    "name": "⚽ 22:30 05/04 West Ham VS Leeds BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6245b083dede.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6245b083dede",
-                            "contents": [
-                                {
-                                    "id": "ct-6245b083dede",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/west-ham-vs-leeds.As2LvxLizc"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-27523092489b",
-                    "name": "⚽ 23:30 05/04 Oviedo VS Sevilla BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/27523092489b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-27523092489b",
-                            "contents": [
-                                {
-                                    "id": "ct-27523092489b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/oviedo-vs-sevilla.K5eVk1MeLx"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-fc743eca4a6b",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-29c36190924b",
                     "name": "⚽ 15:30 06/04 Persik Kediri VS Persijap BLV Táo Thiên Vương",
@@ -603,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-6245b083dede",
-                    "name": "⚽ 22:30 05/04 BLV Ngọc Hoàng(A Cháo)FA West VS HamKXD0-0---'LeedsBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)15:30 05/04FA CupWest HamKXD0-0---'LeedsBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "id": "ch-fc743eca4a6b",
+                    "name": "⚽ 01:45 06/04 BLV Ngọc Hoàng(A Cháo) InterKXD0-0---'AS VS RomaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)18:45 05/04Serie AInterKXD0-0---'AS RomaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6245b083dede.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fc743eca4a6b.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-6245b083dede",
+                            "id": "src-fc743eca4a6b",
                             "contents": [
                                 {
-                                    "id": "ct-6245b083dede",
+                                    "id": "ct-fc743eca4a6b",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -628,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/fa-cup.piCcvYeRad/west-ham-vs-leeds.As2LvxLizc"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/inter-vs-as-roma.U_ovtlkiqk"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -645,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-27523092489b",
-                    "name": "⚽ 23:30 05/04 BLV Thần Thông VS OviedoKXD0-0---'SevillaBLV Thần ThôngTrực tiếp BLV Thần Thông16:30 05/04La LigaOviedoKXD0-0---'SevillaBLV Thần ThôngTrực tiếp",
+                    "id": "ch-235102ea7972",
+                    "name": "⚽ 01:45 06/04 BLV Thần Thông VS MonacoKXD0-0---'MarseilleBLV Thần ThôngTrực tiếp BLV Thần Thông18:45 05/04Ligue 1MonacoKXD0-0---'MarseilleBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/27523092489b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/235102ea7972.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-27523092489b",
+                            "id": "src-235102ea7972",
                             "contents": [
                                 {
-                                    "id": "ct-27523092489b",
+                                    "id": "ct-235102ea7972",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +586,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/oviedo-vs-sevilla.K5eVk1MeLx"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/monaco-vs-marseille.Hrz5gBcqGT"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-34a8fcaa9068",
+                    "name": "⚽ 02:00 06/04 BLV Táo Thiên Vương VS AlavesKXD0-0---'OsasunaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 05/04La LigaAlavesKXD0-0---'OsasunaBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/34a8fcaa9068.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-34a8fcaa9068",
+                            "contents": [
+                                {
+                                    "id": "ct-34a8fcaa9068",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/alaves-vs-osasuna.Ih4hLDfsFA"
                                                         },
                                                         {
                                                             "key": "User-Agent",
