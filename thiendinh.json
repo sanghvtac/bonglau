@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (23:00 05/04/2026)",
+    "name": "Thiên Đỉnh TV (00:01 06/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-3656c52b33c7",
-                    "name": "⚽ 20:30 05/04 Union Berlin VS FC St. Pauli BLV Táo Chè",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3656c52b33c7.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-3656c52b33c7",
-                            "contents": [
-                                {
-                                    "id": "ct-3656c52b33c7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/union-berlin-vs-fc-st-pauli.xTYttnllgw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-90816005e74d",
-                    "name": "⚽ 21:15 05/04 Valencia VS Celta Vigo BLV Nam Tào(A Bí)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/90816005e74d.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-90816005e74d",
-                            "contents": [
-                                {
-                                    "id": "ct-90816005e74d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/valencia-vs-celta-vigo.bswnHgrqPz"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-1d3890ad6ff7",
                     "name": "⚽ 22:30 05/04 Eintracht Frankfurt VS FC Cologne BLV Táo Chè",
@@ -155,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tfus1gr4uqmtt8y41hcjsgczdgqbpqhhsa7btge3dkmufctusk5mbxbtse5o.100ycdn.com/w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8?wsSession=ce97d71ced03825d712ec926-177540486957027&wsIPSercert=4d0d67a30f5135b85e568f1bcd5d7b77&wsiphost=local&wsBindIP=1",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -217,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-27523092489b",
                     "name": "⚽ 23:30 05/04 Oviedo VS Sevilla BLV Thần Thông",
@@ -245,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fc743eca4a6b",
                     "name": "⚽ 01:45 06/04 Inter VS AS Roma BLV Ngọc Hoàng(A Cháo)",
@@ -813,48 +729,6 @@
                     ]
                 },
                 {
-                    "id": "ch-3656c52b33c7",
-                    "name": "⚽ 20:30 05/04 BLV Táo Chè Union BerlinKXD0-0---'FC VS St. PauliBLV Táo ChèTrực tiếp BLV Táo Chè13:30 05/04BundesligaUnion BerlinKXD0-0---'FC St. PauliBLV Táo ChèTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3656c52b33c7.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-3656c52b33c7",
-                            "contents": [
-                                {
-                                    "id": "ct-3656c52b33c7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/union-berlin-vs-fc-st-pauli.xTYttnllgw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-1d3890ad6ff7",
                     "name": "⚽ 22:30 05/04 BLV Táo Chè Eintracht VS FrankfurtKXD0-0---'FC CologneBLV Táo ChèTrực tiếp BLV Táo Chè15:30 05/04BundesligaEintracht FrankfurtKXD0-0---'FC CologneBLV Táo ChèTrực tiếp",
                     "type": "single",
@@ -939,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-90816005e74d",
-                    "name": "⚽ 21:15 05/04 BLV Nam Tào(A Bí) ValenciaKXD0-0---'Celta VS VigoBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)14:15 05/04La LigaValenciaKXD0-0---'Celta VigoBLV Nam Tào(A Bí)Trực tiếp",
+                    "id": "ch-27523092489b",
+                    "name": "⚽ 23:30 05/04 BLV Thần Thông VS OviedoKXD0-0---'SevillaBLV Thần ThôngTrực tiếp BLV Thần Thông16:30 05/04La LigaOviedoKXD0-0---'SevillaBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/90816005e74d.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/27523092489b.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-90816005e74d",
+                            "id": "src-27523092489b",
                             "contents": [
                                 {
-                                    "id": "ct-90816005e74d",
+                                    "id": "ct-27523092489b",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -964,7 +838,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/valencia-vs-celta-vigo.bswnHgrqPz"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/oviedo-vs-sevilla.K5eVk1MeLx"
                                                         },
                                                         {
                                                             "key": "User-Agent",
