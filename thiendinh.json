@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 05/04/2026)",
+    "name": "Thiên Đỉnh TV (16:01 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-528e8b36a5c3",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -76,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4fdad9970647",
                     "name": "⚽ 17:00 05/04 Hoang Anh Gia Lai VS Phu Dong BLV Nam Tào(A Bí)",
@@ -266,22 +267,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f022e563e24a",
-                    "name": "⚽ 20:00 05/04 Cremonese VS Bologna BLV Táo Tàu",
+                    "id": "ch-e04aa9e9df42",
+                    "name": "⚽ 20:00 05/04 Cremonese VS Bologna BLV Thần Thông",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f022e563e24a.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e04aa9e9df42.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f022e563e24a",
+                            "id": "src-e04aa9e9df42",
                             "contents": [
                                 {
-                                    "id": "ct-f022e563e24a",
+                                    "id": "ct-e04aa9e9df42",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -291,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cremonese-vs-bologna.fpCKZ7Hyrj"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cremonese-vs-bologna.hGLlPbiaMk"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -518,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-83dca0be7326",
-                    "name": "⚽ 23:00 05/04 Pisa VS Torino BLV Thần Thông",
+                    "id": "ch-757c1eb7ad27",
+                    "name": "⚽ 23:00 05/04 Pisa VS Torino BLV Táo Tàu",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/83dca0be7326.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/757c1eb7ad27.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-83dca0be7326",
+                            "id": "src-757c1eb7ad27",
                             "contents": [
                                 {
-                                    "id": "ct-83dca0be7326",
+                                    "id": "ct-757c1eb7ad27",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -543,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/pisa-vs-torino.vvUeNzENZq"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/pisa-vs-torino.0P0geEgia-"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -712,6 +713,258 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/alaves-vs-osasuna.Ih4hLDfsFA"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-29c36190924b",
+                    "name": "⚽ 15:30 06/04 Persik Kediri VS Persijap BLV Táo Thiên Vương",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/29c36190924b.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-29c36190924b",
+                            "contents": [
+                                {
+                                    "id": "ct-29c36190924b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.0QgwkOUw1e"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d12a0418dc0c",
+                    "name": "⚽ 17:30 06/04 Udinese VS Como BLV Nam Tào(A Bí)",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d12a0418dc0c.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d12a0418dc0c",
+                            "contents": [
+                                {
+                                    "id": "ct-d12a0418dc0c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/udinese-vs-como.p1JIOjr6DV"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-405e01a9bae8",
+                    "name": "⚽ 19:00 06/04 Millwall VS Norwich BLV Táo Tàu",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/405e01a9bae8.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-405e01a9bae8",
+                            "contents": [
+                                {
+                                    "id": "ct-405e01a9bae8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/millwall-vs-norwich.KrQ6D4RQWu"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-545ad953c10c",
+                    "name": "⚽ 20:00 06/04 Lecce VS Atalanta BLV Thần Thông",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/545ad953c10c.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-545ad953c10c",
+                            "contents": [
+                                {
+                                    "id": "ct-545ad953c10c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/lecce-vs-atalanta.XTRxsqDZkq"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-528e8b36a5c3",
+                    "name": "⚽ 15:30 05/04 BLV Táo Thiên VươngLiga 1Bhayangkara VS FCKXD0-0---'PersijaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương08:30 05/04Liga 1Bhayangkara FCKXD0-0---'PersijaBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/528e8b36a5c3.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-528e8b36a5c3",
+                            "contents": [
+                                {
+                                    "id": "ct-528e8b36a5c3",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persija.b2u_5unchK"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f7d13eb4d914",
+                    "name": "⚽ 16:00 05/04 BLV Táo TàuAFC U20 Asian - WomenJordan VS U20 WKXD0-0---'Korea Republic U20 WBLV Táo TàuTrực tiếp BLV Táo Tàu09:00 05/04AFC U20 Asian Cup - WomenJordan U20 WKXD0-0---'Korea Republic U20 WBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f7d13eb4d914.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f7d13eb4d914",
+                            "contents": [
+                                {
+                                    "id": "ct-f7d13eb4d914",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/jordan-u20-w-vs-korea-republic-u20-w.lRIrPOHBne"
                                                         },
                                                         {
                                                             "key": "User-Agent",
