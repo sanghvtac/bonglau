@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:01 05/04/2026)",
+    "name": "Thiên Đỉnh TV (18:00 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-528e8b36a5c3",
-                    "name": "⚽ 15:30 05/04 Bhayangkara FC VS Persija BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/528e8b36a5c3.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-528e8b36a5c3",
-                            "contents": [
-                                {
-                                    "id": "ct-528e8b36a5c3",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persija.b2u_5unchK"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-f7d13eb4d914",
-                    "name": "⚽ 16:00 05/04 Jordan U20 W VS Korea Republic U20 W BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f7d13eb4d914.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f7d13eb4d914",
-                            "contents": [
-                                {
-                                    "id": "ct-f7d13eb4d914",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/jordan-u20-w-vs-korea-republic-u20-w.lRIrPOHBne"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-4fdad9970647",
                     "name": "⚽ 17:00 05/04 Hoang Anh Gia Lai VS Phu Dong BLV Nam Tào(A Bí)",
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-6c1b28d695c0",
                     "name": "⚽ 18:00 05/04 Hồng Lĩnh Hà Tĩnh VS Nam Dinh BLV Táo Mèo",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d1d3b9100abd",
                     "name": "⚽ 19:00 05/04 Getafe VS Athletic Club BLV Ngọc Hoàng(A Cháo)",
@@ -1107,48 +1023,6 @@
                     ]
                 },
                 {
-                    "id": "ch-528e8b36a5c3",
-                    "name": "⚽ 15:30 05/04 BLV Táo Thiên VươngLiga 1Bhayangkara VS FCKXD0-0---'PersijaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương08:30 05/04Liga 1Bhayangkara FCKXD0-0---'PersijaBLV Táo Thiên VươngTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/528e8b36a5c3.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-528e8b36a5c3",
-                            "contents": [
-                                {
-                                    "id": "ct-528e8b36a5c3",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persija.b2u_5unchK"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-4fdad9970647",
                     "name": "⚽ 17:00 05/04 BLV Nam Tào(A Bí)V.League 1Hoang Anh VS Gia LaiKXD0-0---'Phu DongBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)10:00 05/04V.League 1Hoang Anh Gia LaiKXD0-0---'Phu DongBLV Nam Tào(A Bí)Trực tiếp",
                     "type": "single",
@@ -1191,22 +1065,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f7d13eb4d914",
-                    "name": "⚽ 16:00 05/04 BLV Táo TàuAFC U20 Asian - WomenJordan VS U20 WKXD0-0---'Korea Republic U20 WBLV Táo TàuTrực tiếp BLV Táo Tàu09:00 05/04AFC U20 Asian Cup - WomenJordan U20 WKXD0-0---'Korea Republic U20 WBLV Táo TàuTrực tiếp",
+                    "id": "ch-6c1b28d695c0",
+                    "name": "⚽ 18:00 05/04 BLV Táo MèoV.League 1Hồng Lĩnh VS Hà TĩnhKXD0-0---'Nam DinhBLV Táo MèoTrực tiếp BLV Táo Mèo11:00 05/04V.League 1Hồng Lĩnh Hà TĩnhKXD0-0---'Nam DinhBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f7d13eb4d914.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6c1b28d695c0.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f7d13eb4d914",
+                            "id": "src-6c1b28d695c0",
                             "contents": [
                                 {
-                                    "id": "ct-f7d13eb4d914",
+                                    "id": "ct-6c1b28d695c0",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1216,7 +1090,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/jordan-u20-w-vs-korea-republic-u20-w.lRIrPOHBne"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/hong-linh-ha-tinh-vs-nam-dinh.okjG3xwaCt"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a4d06988023b",
+                    "name": "⚽ 18:00 05/04 BLV Thần ThôngV.League 1Song Lam VS Nghe AnKXD0-0---'ViettelBLV Thần ThôngTrực tiếp BLV Thần Thông11:00 05/04V.League 1Song Lam Nghe AnKXD0-0---'ViettelBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4d06988023b.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a4d06988023b",
+                            "contents": [
+                                {
+                                    "id": "ct-a4d06988023b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/song-lam-nghe-an-vs-viettel.y9eqdfn-yY"
                                                         },
                                                         {
                                                             "key": "User-Agent",
