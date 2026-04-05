@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:00 05/04/2026)",
+    "name": "Thiên Đỉnh TV (21:00 05/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-a4d06988023b",
-                    "name": "⚽ 18:00 05/04 Song Lam Nghe An VS Viettel BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4d06988023b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a4d06988023b",
-                            "contents": [
-                                {
-                                    "id": "ct-a4d06988023b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/song-lam-nghe-an-vs-viettel.y9eqdfn-yY"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-e04aa9e9df42",
                     "name": "⚽ 20:00 05/04 Cremonese VS Bologna BLV Thần Thông",
@@ -175,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-90816005e74d",
                     "name": "⚽ 21:15 05/04 Valencia VS Celta Vigo BLV Nam Tào(A Bí)",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-496d73d19e2b",
                     "name": "⚽ 22:30 05/04 Eintracht Frankfurt VS 1. FC Köln BLV Nam Tào(A Bí)",
@@ -1023,22 +981,22 @@
                     ]
                 },
                 {
-                    "id": "ch-a4d06988023b",
-                    "name": "⚽ 18:00 05/04 BLV Thần ThôngV.League 1Song Lam VS Nghe AnKXD0-0---'ViettelBLV Thần ThôngTrực tiếp BLV Thần Thông11:00 05/04V.League 1Song Lam Nghe AnKXD0-0---'ViettelBLV Thần ThôngTrực tiếp",
+                    "id": "ch-90816005e74d",
+                    "name": "⚽ 21:15 05/04 BLV Nam Tào(A Bí) ValenciaKXD0-0---'Celta VS VigoBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)14:15 05/04La LigaValenciaKXD0-0---'Celta VigoBLV Nam Tào(A Bí)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4d06988023b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/90816005e74d.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-a4d06988023b",
+                            "id": "src-90816005e74d",
                             "contents": [
                                 {
-                                    "id": "ct-a4d06988023b",
+                                    "id": "ct-90816005e74d",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1048,7 +1006,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/song-lam-nghe-an-vs-viettel.y9eqdfn-yY"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/valencia-vs-celta-vigo.bswnHgrqPz"
                                                         },
                                                         {
                                                             "key": "User-Agent",
