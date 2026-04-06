@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:01 06/04/2026)",
+    "name": "Thiên Đỉnh TV (18:00 06/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-f649945b28ad",
-                    "name": "⚽ 15:30 06/04 Persik Kediri VS Persijap BLV Táo Chè",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f649945b28ad.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f649945b28ad",
-                            "contents": [
-                                {
-                                    "id": "ct-f649945b28ad",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.fbbXZBuO1i"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-d12a0418dc0c",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-405e01a9bae8",
                     "name": "⚽ 19:00 06/04 Millwall VS Norwich BLV Táo Tàu",
@@ -435,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f649945b28ad",
-                    "name": "⚽ 15:30 06/04 BLV Táo ChèLiga 1Persik VS KediriKXD0-0---'PersijapBLV Táo ChèTrực tiếp BLV Táo Chè08:30 06/04Liga 1Persik KediriKXD0-0---'PersijapBLV Táo ChèTrực tiếp",
+                    "id": "ch-d12a0418dc0c",
+                    "name": "⚽ 17:30 06/04 BLV Nam Tào(A Bí) VS UdineseKXD0-0---'ComoBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)10:30 06/04Serie AUdineseKXD0-0---'ComoBLV Nam Tào(A Bí)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f649945b28ad.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d12a0418dc0c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f649945b28ad",
+                            "id": "src-d12a0418dc0c",
                             "contents": [
                                 {
-                                    "id": "ct-f649945b28ad",
+                                    "id": "ct-d12a0418dc0c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -460,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.fbbXZBuO1i"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/udinese-vs-como.p1JIOjr6DV"
                                                         },
                                                         {
                                                             "key": "User-Agent",
