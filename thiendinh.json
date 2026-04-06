@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:01 06/04/2026)",
+    "name": "Thiên Đỉnh TV (21:00 06/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-405e01a9bae8",
-                    "name": "⚽ 19:00 06/04 Millwall VS Norwich BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/405e01a9bae8.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-405e01a9bae8",
-                            "contents": [
-                                {
-                                    "id": "ct-405e01a9bae8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/millwall-vs-norwich.KrQ6D4RQWu"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-545ad953c10c",
                     "name": "⚽ 20:00 06/04 Lecce VS Atalanta BLV Thần Thông",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-bad62613b135",
                     "name": "⚽ 21:00 06/04 Sheffield Wednesday VS Leicester BLV Táo Mèo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-40549e9c2d92",
                     "name": "⚽ 22:00 06/04 Kahraba Ismailia VS Petrojet BLV Táo Thiên Vương",
@@ -393,22 +351,22 @@
                     ]
                 },
                 {
-                    "id": "ch-405e01a9bae8",
-                    "name": "⚽ 19:00 06/04 BLV Táo TàuChampionshipMillwallKXD0-0---'NorwichBLV VS Táo TàuTrực tiếp BLV Táo Tàu12:00 06/04ChampionshipMillwallKXD0-0---'NorwichBLV Táo TàuTrực tiếp",
+                    "id": "ch-bad62613b135",
+                    "name": "⚽ 21:00 06/04 BLV Táo MèoChampionshipSheffield VS WednesdayKXD0-0---'LeicesterBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 06/04ChampionshipSheffield WednesdayKXD0-0---'LeicesterBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/405e01a9bae8.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bad62613b135.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-405e01a9bae8",
+                            "id": "src-bad62613b135",
                             "contents": [
                                 {
-                                    "id": "ct-405e01a9bae8",
+                                    "id": "ct-bad62613b135",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -418,7 +376,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/millwall-vs-norwich.KrQ6D4RQWu"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/sheffield-wednesday-vs-leicester.Q22DKAeOV2"
                                                         },
                                                         {
                                                             "key": "User-Agent",
