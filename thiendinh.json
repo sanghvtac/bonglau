@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:01 07/04/2026)",
+    "name": "Thiên Đỉnh TV (02:01 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-e2556418c71e",
-                    "name": "⚽ 23:00 06/04 Juventus VS Genoa BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e2556418c71e.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e2556418c71e",
-                            "contents": [
-                                {
-                                    "id": "ct-e2556418c71e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/juventus-vs-genoa.63uyEnejFs"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-b529b5f75c22",
-                    "name": "⚽ 23:30 06/04 Swansea VS Middlesbrough BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b529b5f75c22.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b529b5f75c22",
-                            "contents": [
-                                {
-                                    "id": "ct-b529b5f75c22",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/swansea-vs-middlesbrough.elL27NKh9l"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-a6b8fdf22e32",
@@ -119,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a77d59d926a0",
                     "name": "⚽ 16:00 07/04 Melbourne City VS Central Coast Mariners BLV Táo Thiên Vương",
@@ -687,22 +603,22 @@
                     ]
                 },
                 {
-                    "id": "ch-e2556418c71e",
-                    "name": "⚽ 23:00 06/04 BLV Ngọc Hoàng(A Cháo) VS JuventusKXD0-0---'GenoaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:00 06/04Serie A JuventusKXD0-0---'GenoaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "id": "ch-a6b8fdf22e32",
+                    "name": "⚽ 01:45 07/04 BLV Ngọc Hoàng(A Cháo) NapoliKXD0-0---'AC VS MilanBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)18:45 06/04Serie ANapoliKXD0-0---'AC MilanBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e2556418c71e.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a6b8fdf22e32.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e2556418c71e",
+                            "id": "src-a6b8fdf22e32",
                             "contents": [
                                 {
-                                    "id": "ct-e2556418c71e",
+                                    "id": "ct-a6b8fdf22e32",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -712,7 +628,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/juventus-vs-genoa.63uyEnejFs"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/napoli-vs-ac-milan._cjHEIuA5T"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -729,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-b529b5f75c22",
-                    "name": "⚽ 23:30 06/04 BLV Thần ThôngChampionshipSwansea VS KXD0-0---'MiddlesbroughBLV Thần ThôngTrực tiếp BLV Thần Thông16:30 06/04ChampionshipSwansea KXD0-0---'MiddlesbroughBLV Thần ThôngTrực tiếp",
+                    "id": "ch-fabc92b08cbd",
+                    "name": "⚽ 02:00 07/04 BLV Táo Mèo VS GironaKXD0-0---'VillarrealBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 06/04La LigaGironaKXD0-0---'VillarrealBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b529b5f75c22.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fabc92b08cbd.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b529b5f75c22",
+                            "id": "src-fabc92b08cbd",
                             "contents": [
                                 {
-                                    "id": "ct-b529b5f75c22",
+                                    "id": "ct-fabc92b08cbd",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -754,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/championship-1758631572173/swansea-vs-middlesbrough.elL27NKh9l"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/girona-vs-villarreal.offNaSQlat"
                                                         },
                                                         {
                                                             "key": "User-Agent",
