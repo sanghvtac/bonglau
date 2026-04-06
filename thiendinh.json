@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 06/04/2026)",
+    "name": "Thiên Đỉnh TV (16:01 06/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,39 +7,34 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-96c4767faa0a",
-                    "name": "⚽ 15:30 06/04 Persik Kediri VS Persijap BLV Táo Thiên Vương",
+                    "id": "ch-f649945b28ad",
+                    "name": "⚽ 15:30 06/04 Persik Kediri VS Persijap BLV Táo Chè",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/96c4767faa0a.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f649945b28ad.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-96c4767faa0a",
+                            "id": "src-f649945b28ad",
                             "contents": [
                                 {
-                                    "id": "ct-96c4767faa0a",
+                                    "id": "ct-f649945b28ad",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.0RsDp9KnbD"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.fbbXZBuO1i"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d12a0418dc0c",
                     "name": "⚽ 17:30 06/04 Udinese VS Como BLV Nam Tào(A Bí)",
@@ -224,22 +225,22 @@
                     ]
                 },
                 {
-                    "id": "ch-2bdaaad70e41",
-                    "name": "⚽ 22:00 06/04 Kahraba Ismailia VS Petrojet BLV Táo Chè",
+                    "id": "ch-40549e9c2d92",
+                    "name": "⚽ 22:00 06/04 Kahraba Ismailia VS Petrojet BLV Táo Thiên Vương",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2bdaaad70e41.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/40549e9c2d92.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2bdaaad70e41",
+                            "id": "src-40549e9c2d92",
                             "contents": [
                                 {
-                                    "id": "ct-2bdaaad70e41",
+                                    "id": "ct-40549e9c2d92",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -249,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/kahraba-ismailia-vs-petrojet.J4V2iPfOxw"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/premier-league-1758631271470/kahraba-ismailia-vs-petrojet.HJWMLTVsJl"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/girona-vs-villarreal.offNaSQlat"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f649945b28ad",
+                    "name": "⚽ 15:30 06/04 BLV Táo ChèLiga 1Persik VS KediriKXD0-0---'PersijapBLV Táo ChèTrực tiếp BLV Táo Chè08:30 06/04Liga 1Persik KediriKXD0-0---'PersijapBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f649945b28ad.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f649945b28ad",
+                            "contents": [
+                                {
+                                    "id": "ct-f649945b28ad",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/persik-kediri-vs-persijap.fbbXZBuO1i"
                                                         },
                                                         {
                                                             "key": "User-Agent",
