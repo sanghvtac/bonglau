@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:01 07/04/2026)",
+    "name": "Chuoi Chien TV (08:01 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a444cc2a4a10",
-                    "name": "⚽ 08:10 07/04 Atletico Nacional VS Jaguares",
+                    "id": "ch-a76b57c5652e",
+                    "name": "⚽ 08:10 07/04 Atletico Nacional VS Jaguares [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a444cc2a4a10",
+                            "id": "src-a76b57c5652e",
                             "contents": [
                                 {
-                                    "id": "ct-a444cc2a4a10",
+                                    "id": "ct-a76b57c5652e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1505946/1505946"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-872439998f46",
                     "name": "⚽ 09:00 07/04 Municipal Liberia VS San Carlos",
