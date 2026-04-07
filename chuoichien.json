@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:01 07/04/2026)",
+    "name": "Chuoi Chien TV (16:02 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b7c1fff6e97a",
-                    "name": "⚽ 14:00 07/04 Kitchee VS Warriors [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534928.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b7c1fff6e97a",
-                            "contents": [
-                                {
-                                    "id": "ct-b7c1fff6e97a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-d2060ed2b3e1",
                     "name": "⚽ 14:30 07/04 Biên Phòng MB VS Đà Nẵng [Nhà Đài - HD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7a4a2fbcfa7f",
-                    "name": "⚽ 16:00 07/04 Melbourne City VS Central Coast Mariners",
+                    "id": "ch-012bcd612913",
+                    "name": "⚽ 16:00 07/04 Melbourne City VS Central Coast Mariners [Chuối Tiêu - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7a4a2fbcfa7f",
+                            "id": "src-012bcd612913",
                             "contents": [
                                 {
-                                    "id": "ct-7a4a2fbcfa7f",
+                                    "id": "ct-012bcd612913",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1469654/1469654"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-494d1dfeb967",
                     "name": "⚽ 17:00 07/04 Vizela U23 VS Estoril U23",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1387037/1387037"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3c8ff4fe48cd",
+                    "name": "⚽ 02:00 08/04 Sporting CP VS Arsenal",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534570.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3c8ff4fe48cd",
+                            "contents": [
+                                {
+                                    "id": "ct-3c8ff4fe48cd",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1534570/1534570"
                                                         },
                                                         {
                                                             "key": "User-Agent",

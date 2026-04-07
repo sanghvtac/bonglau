@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:01 07/04/2026)",
+    "name": "Thiên Đỉnh TV (16:02 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-a77d59d926a0",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3efcee52d541",
                     "name": "⚽ 17:30 07/04 Rajasthan United VS Gokulam BLV Nam Tào(A Bí)",
@@ -502,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/real-madrid-vs-bayern-munchen.Zl0dwx7UXO"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a77d59d926a0",
+                    "name": "⚽ 16:00 07/04 BLV Táo Thiên VươngA-LeagueMelbourne CityKXD0-0---'Central VS Coast MarinersBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:00 07/04A-LeagueMelbourne CityKXD0-0---'Central Coast MarinersBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a77d59d926a0.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a77d59d926a0",
+                            "contents": [
+                                {
+                                    "id": "ct-a77d59d926a0",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/melbourne-city-vs-central-coast-mariners.voQCMNxVcL"
                                                         },
                                                         {
                                                             "key": "User-Agent",
