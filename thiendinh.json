@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:01 07/04/2026)",
+    "name": "Thiên Đỉnh TV (18:01 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -29,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-3efcee52d541",
                     "name": "⚽ 17:30 07/04 Rajasthan United VS Gokulam BLV Nam Tào(A Bí)",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-06958d14ba0f",
                     "name": "⚽ 18:30 07/04 Bandırmaspor VS Sarıyer BLV Thần Thông",
@@ -545,6 +545,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/melbourne-city-vs-central-coast-mariners.voQCMNxVcL"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3efcee52d541",
+                    "name": "⚽ 17:30 07/04 BLV Nam Tào(A Bí)I-LeagueRajasthan VS UnitedKXD0-0---'GokulamBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)10:30 07/04I-LeagueRajasthan UnitedKXD0-0---'GokulamBLV Nam Tào(A Bí)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3efcee52d541.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3efcee52d541",
+                            "contents": [
+                                {
+                                    "id": "ct-3efcee52d541",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/i-league.02zf72pTLV/rajasthan-united-vs-gokulam.NBypVE4Sbc"
                                                         },
                                                         {
                                                             "key": "User-Agent",
