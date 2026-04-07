@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:02 07/04/2026)",
+    "name": "Chuoi Chien TV (17:01 07/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-d2060ed2b3e1",
-                    "name": "⚽ 14:30 07/04 Biên Phòng MB VS Đà Nẵng [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/998347.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d2060ed2b3e1",
-                            "contents": [
-                                {
-                                    "id": "ct-d2060ed2b3e1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-7c29e151afa3",
                     "name": "⚽ 15:00 07/04 Malaysia VS Indonesia [Chuối Tây - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-494d1dfeb967",
-                    "name": "⚽ 17:00 07/04 Vizela U23 VS Estoril U23",
+                    "id": "ch-b395ab9caae8",
+                    "name": "⚽ 17:00 07/04 Vizela U23 VS Estoril U23 [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-494d1dfeb967",
+                            "id": "src-b395ab9caae8",
                             "contents": [
                                 {
-                                    "id": "ct-494d1dfeb967",
+                                    "id": "ct-b395ab9caae8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1498093/1498093"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-365ba7361cd0",
-                    "name": "⚽ 17:30 07/04 Timor-Leste VS Việt Nam",
+                    "id": "ch-4bf55c75dc68",
+                    "name": "⚽ 17:30 07/04 Timor-Leste VS Việt Nam [Chuối Đồng - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-365ba7361cd0",
+                            "id": "src-4bf55c75dc68",
                             "contents": [
                                 {
-                                    "id": "ct-365ba7361cd0",
+                                    "id": "ct-4bf55c75dc68",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991579/991579"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7fc2f807d7a5",
                     "name": "⚽ 17:30 07/04 XMLS Thanh Hóa VS LPBank Ninh Bình",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1534570/1534570"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-90f12b0bf4b5",
+                    "name": "⚽ 02:00 08/04 Real Madrid VS Bayern München",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534909.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-90f12b0bf4b5",
+                            "contents": [
+                                {
+                                    "id": "ct-90f12b0bf4b5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1534909/1534909"
                                                         },
                                                         {
                                                             "key": "User-Agent",
