@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:01 08/04/2026)",
+    "name": "Thiên Đỉnh TV (19:01 08/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-6cc47d34537d",
-                    "name": "⚽ 17:00 08/04 Gamba Osaka VS Bangkok United BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6cc47d34537d.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6cc47d34537d",
-                            "contents": [
-                                {
-                                    "id": "ct-6cc47d34537d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-cup.AWxWlzSR3Q/gamba-osaka-vs-bangkok-united.utFpy3jHNH"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-5a51e964cf6b",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovanhoa/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-32b32d32083b",
                     "name": "⚽ 20:00 08/04 Korea DPR U20 VS Korea Republic U20 W BLV Thần Thông",
@@ -519,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-6cc47d34537d",
-                    "name": "⚽ 17:00 08/04 BLV Táo Thiên Vương Gamba VS OsakaKXD0-0---'Bangkok UnitedBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương10:00 08/04AFC CupGamba OsakaKXD0-0---'Bangkok UnitedBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-5a51e964cf6b",
+                    "name": "⚽ 19:00 08/04 BLV Nam Tào(A Bí)League Buriram UnitedKXD0-0---'BG VS Pathum UnitedBLV Nam Tào(A Bí)Trực tiếp BLV Nam Tào(A Bí)12:00 08/04League CupBuriram UnitedKXD0-0---'BG Pathum UnitedBLV Nam Tào(A Bí)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6cc47d34537d.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5a51e964cf6b.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-6cc47d34537d",
+                            "id": "src-5a51e964cf6b",
                             "contents": [
                                 {
-                                    "id": "ct-6cc47d34537d",
+                                    "id": "ct-5a51e964cf6b",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-cup.AWxWlzSR3Q/gamba-osaka-vs-bangkok-united.utFpy3jHNH"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/league-cup-1761707760866/buriram-united-vs-bg-pathum-united.ix6Sgc7gB-"
                                                         },
                                                         {
                                                             "key": "User-Agent",
