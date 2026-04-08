@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:01 09/04/2026)",
+    "name": "Thiên Đỉnh TV (01:01 09/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-52c6b726b3f2",
-                    "name": "⚽ 22:15 08/04 Dynamo VS FC Krasnodar BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/52c6b726b3f2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-52c6b726b3f2",
-                            "contents": [
-                                {
-                                    "id": "ct-52c6b726b3f2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/cup.V4MxeGjilx/dynamo-vs-fc-krasnodar.bk4WIRdHBF"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-b1906f57fec8",
-                    "name": "⚽ 22:55 08/04 Al-Fayha VS Al-Ahli Jeddah BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b1906f57fec8.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b1906f57fec8",
-                            "contents": [
-                                {
-                                    "id": "ct-b1906f57fec8",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-fayha-vs-al-ahli-jeddah.q2aU5xPtGB"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-912f2d6a3c22",
                     "name": "⚽ 23:45 08/04 SC Braga VS Real Betis BLV Ngọc Hoàng(A Cháo)",
@@ -113,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-626738aa13f5",
                     "name": "⚽ 01:00 09/04 Al-Hilal Saudi FC VS Al Kholood BLV Táo Chè",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9f7f3230e0f5",
                     "name": "⚽ 02:00 09/04 Barcelona VS Atletico Madrid BLV Nam Tào(A Bí)",
@@ -897,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-b1906f57fec8",
-                    "name": "⚽ 22:55 08/04 BLV Thần ThôngPro LeagueAl-FayhaKXD0-0---'Al-Ahli VS JeddahBLV Thần ThôngTrực tiếp BLV Thần Thông15:55 08/04Pro LeagueAl-FayhaKXD0-0---'Al-Ahli JeddahBLV Thần ThôngTrực tiếp",
+                    "id": "ch-626738aa13f5",
+                    "name": "⚽ 01:00 09/04 BLV Táo ChèPro LeagueAl-Hilal Saudi VS FCKXD0-0---'Al KholoodBLV Táo ChèTrực tiếp BLV Táo Chè18:00 08/04Pro LeagueAl-Hilal Saudi FCKXD0-0---'Al KholoodBLV Táo ChèTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b1906f57fec8.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/626738aa13f5.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b1906f57fec8",
+                            "id": "src-626738aa13f5",
                             "contents": [
                                 {
-                                    "id": "ct-b1906f57fec8",
+                                    "id": "ct-626738aa13f5",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -922,49 +838,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-fayha-vs-al-ahli-jeddah.q2aU5xPtGB"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-52c6b726b3f2",
-                    "name": "⚽ 22:15 08/04 BLV Táo Mèo DynamoKXD0-0---'FC VS KrasnodarBLV Táo MèoTrực tiếp BLV Táo Mèo15:15 08/04CupDynamoKXD0-0---'FC KrasnodarBLV Táo MèoTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/52c6b726b3f2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-52c6b726b3f2",
-                            "contents": [
-                                {
-                                    "id": "ct-52c6b726b3f2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/cup.V4MxeGjilx/dynamo-vs-fc-krasnodar.bk4WIRdHBF"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-hilal-saudi-fc-vs-al-kholood.hNtGa2xd_S"
                                                         },
                                                         {
                                                             "key": "User-Agent",
