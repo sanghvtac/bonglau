@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:00 09/04/2026)",
+    "name": "Thiên Đỉnh TV (18:01 09/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-3f9b60c98e83",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-98dae24e79af",
                     "name": "⚽ 19:00 09/04 Svay Rieng VS Manila Digger BLV Táo Tàu",
@@ -502,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/fsv-mainz-05-vs-strasbourg.Fh6bmbd1Rj"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3f9b60c98e83",
+                    "name": "⚽ 18:00 09/04 BLV Táo Thiên VươngBirinci DastaSafa VS BakuKXD0-0---'SəbailBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương11:00 09/04Birinci DastaSafa BakuKXD0-0---'SəbailBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3f9b60c98e83.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3f9b60c98e83",
+                            "contents": [
+                                {
+                                    "id": "ct-3f9b60c98e83",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/birinci-dasta.wKgkGR0qAR/safa-baku-vs-sebail.34_PK7A__8"
                                                         },
                                                         {
                                                             "key": "User-Agent",
