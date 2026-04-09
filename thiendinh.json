@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:01 09/04/2026)",
+    "name": "Thiên Đỉnh TV (21:01 09/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-3f9b60c98e83",
-                    "name": "⚽ 18:00 09/04 Safa Baku VS Səbail BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3f9b60c98e83.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-3f9b60c98e83",
-                            "contents": [
-                                {
-                                    "id": "ct-3f9b60c98e83",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/birinci-dasta.wKgkGR0qAR/safa-baku-vs-sebail.34_PK7A__8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-98dae24e79af",
-                    "name": "⚽ 19:00 09/04 Svay Rieng VS Manila Digger BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/98dae24e79af.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-98dae24e79af",
-                            "contents": [
-                                {
-                                    "id": "ct-98dae24e79af",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-challenge-league-1761619419550/svay-rieng-vs-manila-digger.PlFbhdvXHJ"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-f9b9271fe444",
@@ -119,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d7eddc478f82",
                     "name": "⚽ 22:00 09/04 El Geish VS National Bank of Egypt BLV Táo Tàu",
@@ -519,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-98dae24e79af",
-                    "name": "⚽ 19:00 09/04 BLV Táo TàuAFC Challenge LeagueSvay VS RiengKXD0-0---'Manila DiggerBLV Táo TàuTrực tiếp BLV Táo Tàu12:00 09/04AFC Challenge LeagueSvay RiengKXD0-0---'Manila DiggerBLV Táo TàuTrực tiếp",
+                    "id": "ch-f9b9271fe444",
+                    "name": "⚽ 20:55 09/04 BLV Táo Thiên VươngPro LeagueAl Wahda VS FCKXD0-0---'Al-Ittihad KalbaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương13:55 09/04Pro LeagueAl Wahda FCKXD0-0---'Al-Ittihad KalbaBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/98dae24e79af.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f9b9271fe444.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-98dae24e79af",
+                            "id": "src-f9b9271fe444",
                             "contents": [
                                 {
-                                    "id": "ct-98dae24e79af",
+                                    "id": "ct-f9b9271fe444",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-challenge-league-1761619419550/svay-rieng-vs-manila-digger.PlFbhdvXHJ"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-wahda-fc-vs-al-ittihad-kalba.9hJP5HgyUX"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-3f9b60c98e83",
-                    "name": "⚽ 18:00 09/04 BLV Táo Thiên VươngBirinci DastaSafa VS BakuKXD0-0---'SəbailBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương11:00 09/04Birinci DastaSafa BakuKXD0-0---'SəbailBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-b145a06daf8f",
+                    "name": "⚽ 21:00 09/04 BLV Thần ThôngIndian Super VS LeagueJamshedpurKXD0-0---'Mumbai CityBLV Thần ThôngTrực tiếp BLV Thần Thông14:00 09/04Indian Super LeagueJamshedpurKXD0-0---'Mumbai CityBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3f9b60c98e83.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b145a06daf8f.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-3f9b60c98e83",
+                            "id": "src-b145a06daf8f",
                             "contents": [
                                 {
-                                    "id": "ct-3f9b60c98e83",
+                                    "id": "ct-b145a06daf8f",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/birinci-dasta.wKgkGR0qAR/safa-baku-vs-sebail.34_PK7A__8"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/indian-super-league.PiwjcBrg68/jamshedpur-vs-mumbai-city.wgWJG_tMiD"
                                                         },
                                                         {
                                                             "key": "User-Agent",
