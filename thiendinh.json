@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (16:01 10/04/2026)",
+    "name": "Thiên Đỉnh TV (17:01 10/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-cedbe5cdb842",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d657e20c51f6",
                     "name": "⚽ 17:00 10/04 Hồ Chí Minh II VS PVF-CAND BLV Táo Tàu",
@@ -182,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-a4d4e40cd5c0",
-                    "name": "⚽ 20:00 10/04 Kelantan United VS Kuala Lumpur FA BLV Táo Chè",
+                    "id": "ch-2dad7ab3492f",
+                    "name": "⚽ 20:00 10/04 Kelantan United VS Kuala Lumpur FA BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a4d4e40cd5c0.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2dad7ab3492f.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-a4d4e40cd5c0",
+                            "id": "src-2dad7ab3492f",
                             "contents": [
                                 {
-                                    "id": "ct-a4d4e40cd5c0",
+                                    "id": "ct-2dad7ab3492f",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -207,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/kelantan-united-vs-kuala-lumpur-fa.il1Rl9_dm_"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/kelantan-united-vs-kuala-lumpur-fa.Wej_OvxEqu"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -502,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-madrid-vs-girona.73GO7RZs23"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-cedbe5cdb842",
+                    "name": "⚽ 16:35 10/04 BLV Táo Thiên VươngA-LeagueCentral Coast VS MarinersKXD0-0---'Brisbane RoarBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:35 10/04A-LeagueCentral Coast MarinersKXD0-0---'Brisbane RoarBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/cedbe5cdb842.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-cedbe5cdb842",
+                            "contents": [
+                                {
+                                    "id": "ct-cedbe5cdb842",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/central-coast-mariners-vs-brisbane-roar.S9UuPCFAk0"
                                                         },
                                                         {
                                                             "key": "User-Agent",
