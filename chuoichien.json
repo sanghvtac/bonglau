@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (02:01 11/04/2026)",
+    "name": "Chuoi Chien TV (03:01 11/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-85f918872333",
-                    "name": "⚽ 00:30 11/04 Red Bull Salzburg VS Lask Linz [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1531239.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-85f918872333",
-                            "contents": [
-                                {
-                                    "id": "ct-85f918872333",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-fb40c3d25197",
                     "name": "⚽ 01:30 11/04 FC Augsburg VS 1899 Hoffenheim [Nhà Đài - HD1]",
@@ -259,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b4c40b6c86b0",
-                    "name": "⚽ 02:05 11/04 Marseille VS Metz",
+                    "id": "ch-327eb2d96328",
+                    "name": "⚽ 02:05 11/04 Marseille VS Metz [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b4c40b6c86b0",
+                            "id": "src-327eb2d96328",
                             "contents": [
                                 {
-                                    "id": "ct-b4c40b6c86b0",
+                                    "id": "ct-327eb2d96328",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1387954/1387954"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,8 +261,8 @@
                     ]
                 },
                 {
-                    "id": "ch-4350a23e71fa",
-                    "name": "⚽ 02:45 11/04 Famalicao VS Moreirense",
+                    "id": "ch-cda0e4f5748f",
+                    "name": "⚽ 02:45 11/04 Famalicao VS Moreirense [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +273,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4350a23e71fa",
+                            "id": "src-cda0e4f5748f",
                             "contents": [
                                 {
-                                    "id": "ct-4350a23e71fa",
+                                    "id": "ct-cda0e4f5748f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1396495/1396495"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -349,7 +301,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3d1de72433ae",
                     "name": "⚽ 03:30 11/04 Deportivo Pereira VS Once Caldas",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1506080/1506080"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-064418aa8dec",
+                    "name": "⚽ 09:00 11/04 CS Cartagines VS CS Herediano",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1489164.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-064418aa8dec",
+                            "contents": [
+                                {
+                                    "id": "ct-064418aa8dec",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1489164/1489164"
                                                         },
                                                         {
                                                             "key": "User-Agent",
