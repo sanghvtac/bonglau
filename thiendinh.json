@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (23:01 10/04/2026)",
+    "name": "Thiên Đỉnh TV (00:01 11/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-9dc029fbc2f6",
-                    "name": "⚽ 22:00 10/04 Turku PS VS Lahti BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9dc029fbc2f6.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9dc029fbc2f6",
-                            "contents": [
-                                {
-                                    "id": "ct-9dc029fbc2f6",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/veikkausliiga.QCK_AA41ul/turku-ps-vs-lahti.lGrgSe4Ex8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-9cac641c6478",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1edd8c09778e",
                     "name": "⚽ 01:45 11/04 AS Roma VS Pisa BLV Táo Tàu",
@@ -1065,22 +1023,22 @@
                     ]
                 },
                 {
-                    "id": "ch-9dc029fbc2f6",
-                    "name": "⚽ 22:00 10/04 BLV Táo Thiên VươngVeikkausliigaTurku VS PSKXD0-0---'LahtiBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương15:00 10/04VeikkausliigaTurku PSKXD0-0---'LahtiBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-9345bddc60fc",
+                    "name": "⚽ 00:00 11/04 BLV Táo Chè Paris VS FCKXD0-0---'MonacoBLV Táo ChèTrực tiếp BLV Táo Chè17:00 10/04Ligue 1Paris FCKXD0-0---'MonacoBLV Táo ChèTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9dc029fbc2f6.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9345bddc60fc.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-9dc029fbc2f6",
+                            "id": "src-9345bddc60fc",
                             "contents": [
                                 {
-                                    "id": "ct-9dc029fbc2f6",
+                                    "id": "ct-9345bddc60fc",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1090,7 +1048,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/veikkausliiga.QCK_AA41ul/turku-ps-vs-lahti.lGrgSe4Ex8"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/paris-fc-vs-monaco.d3e0X8Su2Y"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9cac641c6478",
+                    "name": "⚽ 23:30 10/04 BLV Táo Tàu2. Karlsruher VS SCKXD0-0---'Arminia BielefeldBLV Táo TàuTrực tiếp BLV Táo Tàu16:30 10/042. BundesligaKarlsruher SCKXD0-0---'Arminia BielefeldBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9cac641c6478.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9cac641c6478",
+                            "contents": [
+                                {
+                                    "id": "ct-9cac641c6478",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/2-bundesliga.wYIewxAnnZ/karlsruher-sc-vs-arminia-bielefeld.FkDpxOEICf"
                                                         },
                                                         {
                                                             "key": "User-Agent",
