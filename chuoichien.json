@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:01 11/04/2026)",
+    "name": "Chuoi Chien TV (13:01 11/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-74bed5f6d967",
-                    "name": "⚽ 10:06 11/04 FC Juarez VS Club Tijuana [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492581.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-74bed5f6d967",
-                            "contents": [
-                                {
-                                    "id": "ct-74bed5f6d967",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6b2c024741bd",
                     "name": "⚽ 11:00 11/04 JEF United Chiba VS Mito Hollyhock [Nhà Đài - HD1]",
@@ -511,16 +469,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-3eb655f0a97b",
-                    "name": "⚽ 13:00 11/04 Vissel Kobe VS Nagoya Grampus",
+                    "id": "ch-3924a07a709b",
+                    "name": "⚽ 13:00 11/04 Vissel Kobe VS Nagoya Grampus [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -531,20 +483,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3eb655f0a97b",
+                            "id": "src-3924a07a709b",
                             "contents": [
                                 {
-                                    "id": "ct-3eb655f0a97b",
+                                    "id": "ct-3924a07a709b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1504743/1504743"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,8 +513,8 @@
                     ]
                 },
                 {
-                    "id": "ch-c6ac2ebcb1c7",
-                    "name": "⚽ 13:00 11/04 Yokohama F. Marinos VS FC Tokyo",
+                    "id": "ch-a36bbfa1022b",
+                    "name": "⚽ 13:00 11/04 Yokohama F. Marinos VS FC Tokyo [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -573,20 +525,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c6ac2ebcb1c7",
+                            "id": "src-a36bbfa1022b",
                             "contents": [
                                 {
-                                    "id": "ct-c6ac2ebcb1c7",
+                                    "id": "ct-a36bbfa1022b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1504744/1504744"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -601,7 +553,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-033a4510c37f",
                     "name": "⚽ 14:00 11/04 Newcastle Jets VS Adelaide United",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1506935/1506935"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-c77745c3f293",
+                    "name": "⚽ 14:30 11/04 LPBank Ninh Bình VS TP Hồ Chí Minh ",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/998814.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-c77745c3f293",
+                            "contents": [
+                                {
+                                    "id": "ct-c77745c3f293",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/998814/998814"
                                                         },
                                                         {
                                                             "key": "User-Agent",
