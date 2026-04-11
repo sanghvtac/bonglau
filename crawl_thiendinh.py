@@ -10,7 +10,7 @@ from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
 
-TARGET_URL    = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
+TARGET_URL    = "https://sv2.thiendinh1.live/lich-thi-dau/bong-da?by=state&value=live"
 COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
