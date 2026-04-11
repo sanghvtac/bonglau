@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:00 11/04/2026)",
+    "name": "Thiên Đỉnh TV (16:01 11/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-9878bcb7d82c",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7ef661f189c1",
                     "name": "⚽ 18:00 11/04 Nam Dinh VS Hoang Anh Gia Lai BLV Táo Tàu",
@@ -224,22 +225,22 @@
                     ]
                 },
                 {
-                    "id": "ch-20d0b4c4dd1d",
-                    "name": "⚽ 20:00 11/04 Cagliari VS Cremonese BLV Táo Thiên Vương",
+                    "id": "ch-29cbc1aa4e85",
+                    "name": "⚽ 20:00 11/04 Cagliari VS Cremonese BLV Táo Chè",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/20d0b4c4dd1d.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/29cbc1aa4e85.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-20d0b4c4dd1d",
+                            "id": "src-29cbc1aa4e85",
                             "contents": [
                                 {
-                                    "id": "ct-20d0b4c4dd1d",
+                                    "id": "ct-29cbc1aa4e85",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -249,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cagliari-vs-cremonese.S8iQaDxhFx"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cagliari-vs-cremonese.DYNODF3Im8"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -434,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-a3596323a435",
-                    "name": "⚽ 21:15 11/04 Elche VS Valencia BLV Táo Chè",
+                    "id": "ch-3cf15690cc44",
+                    "name": "⚽ 21:15 11/04 Elche VS Valencia BLV Táo Thiên Vương",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a3596323a435.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/3cf15690cc44.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-a3596323a435",
+                            "id": "src-3cf15690cc44",
                             "contents": [
                                 {
-                                    "id": "ct-a3596323a435",
+                                    "id": "ct-3cf15690cc44",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -459,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/elche-vs-valencia.IM26yG2wUx"
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/elche-vs-valencia.H8cIR-Ok4A"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -754,6 +755,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/major-league-soccer.-Wfz8cev32/inter-miami-vs-new-york-red-bulls.G19hcStq_s"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9878bcb7d82c",
+                    "name": "⚽ 16:00 11/04 BLV Táo ChèAFC U20 Asian - WomenJapan VS U20 WKXD0-0---'Vietnam U20 WBLV Táo ChèTrực tiếp BLV Táo Chè09:00 11/04AFC U20 Asian Cup - WomenJapan U20 WKXD0-0---'Vietnam U20 WBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9878bcb7d82c.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9878bcb7d82c",
+                            "contents": [
+                                {
+                                    "id": "ct-9878bcb7d82c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv1.thiendinh.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/japan-u20-w-vs-vietnam-u20-w.uPE1mFVkNC"
                                                         },
                                                         {
                                                             "key": "User-Agent",
