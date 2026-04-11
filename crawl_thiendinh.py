@@ -181,7 +181,7 @@ async def main():
 
             for el in elements:
                 url = await el.get_attribute("href")
-                full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
+                full_url = "https://sv2.thiendinh1.live" + url if url.startswith('/') else url
                 raw_text = (await el.text_content()).strip()
 
                 # Lấy tên 2 đội từ span.truncate — đây là thẻ chứa tên đội theo HTML thực tế
