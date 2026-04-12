@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:55 12/04/2026)",
+    "name": "Chuoi Chien TV (09:25 12/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-136bdb8418ec",
-                    "name": "⚽ 09:30 12/04 San Diego VS Minnesota United FC",
+                    "id": "ch-aded19e9f82c",
+                    "name": "⚽ 09:30 12/04 San Diego VS Minnesota United FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-136bdb8418ec",
+                            "id": "src-aded19e9f82c",
                             "contents": [
                                 {
-                                    "id": "ct-136bdb8418ec",
+                                    "id": "ct-aded19e9f82c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490207/1490207"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ed67d628a8c3",
                     "name": "⚽ 10:05 12/04 Club America VS Cruz Azul",
