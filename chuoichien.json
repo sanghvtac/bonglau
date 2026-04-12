@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 12/04/2026)",
+    "name": "Chuoi Chien TV (16:55 12/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-fe27d18888c7",
-                    "name": "⚽ 14:30 12/04 Gimcheon Sangmu FC VS FC Anyang [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1506937.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-fe27d18888c7",
-                            "contents": [
-                                {
-                                    "id": "ct-fe27d18888c7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-e90dba4f0262",
                     "name": "⚽ 14:30 12/04 Thể Công Tân Cảng VS Công An TP. Hồ Chí Minh [Nhà Đài - HD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d54f0009c87b",
-                    "name": "⚽ 17:00 12/04 Than Quang Ninh VS Bắc Ninh",
+                    "id": "ch-04be1b43a43d",
+                    "name": "⚽ 17:00 12/04 Than Quang Ninh VS Bắc Ninh [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d54f0009c87b",
+                            "id": "src-04be1b43a43d",
                             "contents": [
                                 {
-                                    "id": "ct-d54f0009c87b",
+                                    "id": "ct-04be1b43a43d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518127/1518127"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-c8bc6aad90e8",
-                    "name": "⚽ 17:00 12/04 Việt Nam VS Australia",
+                    "id": "ch-83cf63a7dba4",
+                    "name": "⚽ 17:00 12/04 Việt Nam VS Australia [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c8bc6aad90e8",
+                            "id": "src-83cf63a7dba4",
                             "contents": [
                                 {
-                                    "id": "ct-c8bc6aad90e8",
+                                    "id": "ct-83cf63a7dba4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991504/991504"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-f0c476abe669",
-                    "name": "⚽ 17:00 12/04 Vietinbank VS XMLS Thanh Hóa",
+                    "id": "ch-81448b3534be",
+                    "name": "⚽ 17:00 12/04 Vietinbank VS XMLS Thanh Hóa [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f0c476abe669",
+                            "id": "src-81448b3534be",
                             "contents": [
                                 {
-                                    "id": "ct-f0c476abe669",
+                                    "id": "ct-81448b3534be",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994313/994313"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ac2c651149ac",
                     "name": "⚽ 17:30 12/04 Genoa VS Sassuolo",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1403803/1403803"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-6ec30afe495f",
+                    "name": "⚽ 19:00 12/04 Persib Bandung VS Bali United",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403804.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-6ec30afe495f",
+                            "contents": [
+                                {
+                                    "id": "ct-6ec30afe495f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1403804/1403804"
                                                         },
                                                         {
                                                             "key": "User-Agent",
