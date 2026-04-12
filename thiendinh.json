@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:25 12/04/2026)",
+    "name": "Thiên Đỉnh TV (19:55 12/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-8e6133485b78",
-                    "name": "⚽ 17:30 12/04 Genoa VS Sassuolo BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8e6133485b78.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-8e6133485b78",
-                            "contents": [
-                                {
-                                    "id": "ct-8e6133485b78",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/genoa-vs-sassuolo.QyQaY5iBgi"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6ccbe47c350e",
                     "name": "⚽ 18:00 12/04 Pho Hien VS Công An Nhân Dân BLV Táo Thiên Vương",
@@ -113,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-79ffdabe680c",
                     "name": "⚽ 20:00 12/04 Crystal Palace VS Newcastle BLV Táo Thiên Vương",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c71804930c3a",
                     "name": "⚽ 22:30 12/04 Chelsea VS Manchester City BLV Ngọc Hoàng(A Cháo)",
@@ -561,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-8e6133485b78",
-                    "name": "⚽ 17:30 12/04 BLV Thần Thông VS GenoaKXD0-0---'SassuoloBLV Thần ThôngTrực tiếp BLV Thần Thông10:30 12/04Serie AGenoaKXD0-0---'SassuoloBLV Thần ThôngTrực tiếp",
+                    "id": "ch-79ffdabe680c",
+                    "name": "⚽ 20:00 12/04 BLV Táo Thiên Vương Crystal VS PalaceKXD0-0---'NewcastleBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương13:00 12/04Premier LeagueCrystal PalaceKXD0-0---'NewcastleBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8e6133485b78.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/79ffdabe680c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-8e6133485b78",
+                            "id": "src-79ffdabe680c",
                             "contents": [
                                 {
-                                    "id": "ct-8e6133485b78",
+                                    "id": "ct-79ffdabe680c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +544,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/genoa-vs-sassuolo.QyQaY5iBgi"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/crystal-palace-vs-newcastle.lTktOc99GB"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a8845ae23fc0",
+                    "name": "⚽ 20:00 12/04 BLV Táo Chè Nottingham VS ForestKXD0-0---'Aston VillaBLV Táo ChèTrực tiếp BLV Táo Chè13:00 12/04Premier LeagueNottingham ForestKXD0-0---'Aston VillaBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a8845ae23fc0.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a8845ae23fc0",
+                            "contents": [
+                                {
+                                    "id": "ct-a8845ae23fc0",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/nottingham-forest-vs-aston-villa.2rMiisFol9"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-84af30ba935e",
+                    "name": "⚽ 20:00 12/04 BLV Thần Thông VS SunderlandKXD0-0---'TottenhamBLV Thần ThôngTrực tiếp BLV Thần Thông13:00 12/04Premier LeagueSunderlandKXD0-0---'TottenhamBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/84af30ba935e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-84af30ba935e",
+                            "contents": [
+                                {
+                                    "id": "ct-84af30ba935e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/sunderland-vs-tottenham.MtBDr_UPXe"
                                                         },
                                                         {
                                                             "key": "User-Agent",
