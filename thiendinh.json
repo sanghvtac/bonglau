@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 14/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 14/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-5fa97cad8814",
-                    "name": "⚽ 23:30 13/04 Al-Arabi SC VS Al-Sailiya BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5fa97cad8814.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5fa97cad8814",
-                            "contents": [
-                                {
-                                    "id": "ct-5fa97cad8814",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/stars-league.d39BomLy84/al-arabi-sc-vs-al-sailiya.fufKDSjImg"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-d33919a2e200",
                     "name": "⚽ 01:00 14/04 Al-Hilal Saudi FC VS Al Sadd BLV Táo Chè",
@@ -77,6 +35,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-champions-league-elite-1759044492775/al-hilal-saudi-fc-vs-al-sadd.gkJyl813Fz"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-00452a83828d",
+                    "name": "⚽ 02:00 14/04 Manchester United VS Leeds BLV Ngọc Hoàng(A Cháo)",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/00452a83828d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-00452a83828d",
+                            "contents": [
+                                {
+                                    "id": "ct-00452a83828d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-leeds.PFhfc_0aH8"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -133,54 +133,6 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-00452a83828d",
-                    "name": "⚽ 02:00 14/04 Manchester United VS Leeds BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/00452a83828d.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-00452a83828d",
-                            "contents": [
-                                {
-                                    "id": "ct-00452a83828d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-leeds.PFhfc_0aH8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
                     "id": "ch-cd63b1df919f",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f2a1faac8648",
                     "name": "⚽ 16:30 14/04 Monaro Panthers VS Queanbeyan City BLV Táo Tàu",
@@ -687,6 +645,48 @@
                     ]
                 },
                 {
+                    "id": "ch-00452a83828d",
+                    "name": "⚽ 02:00 14/04 BLV Ngọc Hoàng(A Cháo) Manchester VS UnitedKXD0-0---'LeedsBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 13/04Premier LeagueManchester UnitedKXD0-0---'LeedsBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/00452a83828d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-00452a83828d",
+                            "contents": [
+                                {
+                                    "id": "ct-00452a83828d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-leeds.PFhfc_0aH8"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-e2cbbb7da973",
                     "name": "⚽ 02:00 14/04 BLV Thần Thông Manchester VS UnitedKXD0-0---'LeedsBLV Thần ThôngTrực tiếp BLV Thần Thông19:00 13/04Premier LeagueManchester UnitedKXD0-0---'LeedsBLV Thần ThôngTrực tiếp",
                     "type": "single",
@@ -713,6 +713,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-leeds.s0OCVA-u6m"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-cd63b1df919f",
+                    "name": "⚽ 02:00 14/04 BLV Táo Tàu Manchester VS UnitedKXD0-0---'LeedsBLV Táo TàuTrực tiếp BLV Táo Tàu19:00 13/04Premier LeagueManchester UnitedKXD0-0---'LeedsBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/cd63b1df919f.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-cd63b1df919f",
+                            "contents": [
+                                {
+                                    "id": "ct-cd63b1df919f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-leeds.qCOtOSJXXe"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -771,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-5fa97cad8814",
-                    "name": "⚽ 23:30 13/04 BLV Táo TàuStars LeagueAl-Arabi VS SCKXD0-0---'Al-SailiyaBLV Táo TàuTrực tiếp BLV Táo Tàu16:30 13/04Stars LeagueAl-Arabi SCKXD0-0---'Al-SailiyaBLV Táo TàuTrực tiếp",
+                    "id": "ch-e9239ec41bd1",
+                    "name": "⚽ 02:00 14/04 BLV Táo Thiên Vương VS LevanteKXD0-0---'GetafeBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 13/04La LigaLevanteKXD0-0---'GetafeBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5fa97cad8814.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e9239ec41bd1.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-5fa97cad8814",
+                            "id": "src-e9239ec41bd1",
                             "contents": [
                                 {
-                                    "id": "ct-5fa97cad8814",
+                                    "id": "ct-e9239ec41bd1",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -796,7 +838,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/stars-league.d39BomLy84/al-arabi-sc-vs-al-sailiya.fufKDSjImg"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/levante-vs-getafe._aYq8DafQt"
                                                         },
                                                         {
                                                             "key": "User-Agent",
