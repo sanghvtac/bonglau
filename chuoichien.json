@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 13/04/2026)",
+    "name": "Chuoi Chien TV (07:55 13/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -217,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d72b16b952a1",
-                    "name": "⚽ 08:00 13/04 Toluca VS Atletico San Luis",
+                    "id": "ch-e287ab522a26",
+                    "name": "⚽ 08:00 13/04 Toluca VS Atletico San Luis [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d72b16b952a1",
+                            "id": "src-e287ab522a26",
                             "contents": [
                                 {
-                                    "id": "ct-d72b16b952a1",
+                                    "id": "ct-e287ab522a26",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x6/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492588/1492588"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -265,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-68cd8fe04714",
                     "name": "⚽ 15:30 13/04 Vietnam U17 VS Malaysia U17",
