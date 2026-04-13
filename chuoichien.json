@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 13/04/2026)",
+    "name": "Chuoi Chien TV (18:55 13/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,6 +8,48 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
+                {
+                    "id": "ch-7c40a6de750f",
+                    "name": "⚽ 17:00 13/04 LNZ Cherkasy VS Shakhtar Donetsk [Anh Vũ - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1396796.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-7c40a6de750f",
+                            "contents": [
+                                {
+                                    "id": "ct-7c40a6de750f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhvuhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-1821a0eb7f69",
                     "name": "⚽ 17:00 13/04 Binh chủng Thông tin VS Geleximco Hưng Yên [Nhà Đài - HD1]",
@@ -91,58 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-f270248084b7",
-                    "name": "⚽ 17:00 13/04 LNZ Cherkasy VS Shakhtar Donetsk",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1396796.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f270248084b7",
-                            "contents": [
-                                {
-                                    "id": "ct-f270248084b7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1396796/1396796"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-1b6e0cf60ab4",
-                    "name": "⚽ 19:00 13/04 LPBank Ninh Bình VS Sanest Khánh Hòa",
+                    "id": "ch-6a19b645219d",
+                    "name": "⚽ 19:00 13/04 LPBank Ninh Bình VS Sanest Khánh Hòa [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1b6e0cf60ab4",
+                            "id": "src-6a19b645219d",
                             "contents": [
                                 {
-                                    "id": "ct-1b6e0cf60ab4",
+                                    "id": "ct-6a19b645219d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993533/993533"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ade8919f559c",
                     "name": "⚽ 19:30 13/04 Indonesia U17 VS Timor-Leste U17",
