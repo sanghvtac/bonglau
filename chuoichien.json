@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 15/04/2026)",
+    "name": "Chuoi Chien TV (05:55 15/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7d46ba3bfd0f",
-                    "name": "⚽ 06:00 15/04 Venezuela W VS Argentina W",
+                    "id": "ch-69c81aebf28c",
+                    "name": "⚽ 06:00 15/04 Venezuela W VS Argentina W [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7d46ba3bfd0f",
+                            "id": "src-69c81aebf28c",
                             "contents": [
                                 {
-                                    "id": "ct-7d46ba3bfd0f",
+                                    "id": "ct-69c81aebf28c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1483036/1483036"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2a0dd31e6d6d",
                     "name": "⚽ 07:00 15/04 Vasco DA Gama VS A. Italiano",
