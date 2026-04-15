@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:25 15/04/2026)",
+    "name": "Chuoi Chien TV (11:55 15/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-df75ea540cbe",
-                    "name": "⚽ 12:00 15/04 Vietinbank VS Geleximco Hưng Yên",
+                    "id": "ch-fe53f3cdeb41",
+                    "name": "⚽ 12:00 15/04 Vietinbank VS Geleximco Hưng Yên [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-df75ea540cbe",
+                            "id": "src-fe53f3cdeb41",
                             "contents": [
                                 {
-                                    "id": "ct-df75ea540cbe",
+                                    "id": "ct-fe53f3cdeb41",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995510/995510"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ae789b0bc086",
                     "name": "⚽ 14:00 15/04 South Melbourne VS Bula",
