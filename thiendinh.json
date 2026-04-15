@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (21:25 15/04/2026)",
+    "name": "Thiên Đỉnh TV (21:55 15/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-e20c5abcb98d",
-                    "name": "⚽ 20:00 15/04 China PR U20 W VS Japan U20 W BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e20c5abcb98d.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e20c5abcb98d",
-                            "contents": [
-                                {
-                                    "id": "ct-e20c5abcb98d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/china-pr-u20-w-vs-japan-u20-w.i1Jb9tK6LD"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-02e8dc16ced9",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c7792dbc6a5e",
                     "name": "⚽ 23:00 15/04 Al-Faisaly FC VS Al Taee BLV Táo Mèo",
@@ -351,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-e20c5abcb98d",
-                    "name": "⚽ 20:00 15/04 BLV Táo MèoAFC U20 Asian - WomenChina VS PR U20 WKXD0-0---'Japan U20 WBLV Táo MèoTrực tiếp BLV Táo Mèo13:00 15/04AFC U20 Asian Cup - WomenChina PR U20 WKXD0-0---'Japan U20 WBLV Táo MèoTrực tiếp",
+                    "id": "ch-02e8dc16ced9",
+                    "name": "⚽ 22:00 15/04 BLV Táo TàuFirst LeagueCherno More VS VarnaKXD0-0---'CSKA 1948BLV Táo TàuTrực tiếp BLV Táo Tàu15:00 15/04First LeagueCherno More VarnaKXD0-0---'CSKA 1948BLV Táo TàuTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e20c5abcb98d.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/02e8dc16ced9.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e20c5abcb98d",
+                            "id": "src-02e8dc16ced9",
                             "contents": [
                                 {
-                                    "id": "ct-e20c5abcb98d",
+                                    "id": "ct-02e8dc16ced9",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -376,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/china-pr-u20-w-vs-japan-u20-w.i1Jb9tK6LD"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/first-league-1763539896569/cherno-more-varna-vs-cska-1948.0TdY_Nlj-0"
                                                         },
                                                         {
                                                             "key": "User-Agent",
