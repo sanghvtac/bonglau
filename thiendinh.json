@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:25 15/04/2026)",
+    "name": "Thiên Đỉnh TV (19:55 15/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-ad1053ddd490",
-                    "name": "⚽ 17:30 15/04 Ulsan Hyundai FC VS FC Seoul BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ad1053ddd490.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ad1053ddd490",
-                            "contents": [
-                                {
-                                    "id": "ct-ad1053ddd490",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/k-league-1-1758630323713/ulsan-hyundai-fc-vs-fc-seoul.xW__yKB-U0"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-0c5403ba000b",
                     "name": "⚽ 19:15 15/04 Bangkok United VS Gamba Osaka BLV Thần Thông",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-e20c5abcb98d",
                     "name": "⚽ 20:00 15/04 China PR U20 W VS Japan U20 W BLV Táo Mèo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-02e8dc16ced9",
                     "name": "⚽ 22:00 15/04 Cherno More Varna VS CSKA 1948 BLV Táo Tàu",
@@ -435,48 +393,6 @@
                     ]
                 },
                 {
-                    "id": "ch-ad1053ddd490",
-                    "name": "⚽ 17:30 15/04 BLV Táo Thiên Vương Ulsan Hyundai VS FCKXD0-0---'FC SeoulBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương10:30 15/04K League 1Ulsan Hyundai FCKXD0-0---'FC SeoulBLV Táo Thiên VươngTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ad1053ddd490.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ad1053ddd490",
-                            "contents": [
-                                {
-                                    "id": "ct-ad1053ddd490",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/k-league-1-1758630323713/ulsan-hyundai-fc-vs-fc-seoul.xW__yKB-U0"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-0c5403ba000b",
                     "name": "⚽ 19:15 15/04 BLV Thần Thông TwoBangkok VS UnitedKXD0-0---'Gamba OsakaBLV Thần ThôngTrực tiếp BLV Thần Thông12:15 15/04AFC Champions League TwoBangkok UnitedKXD0-0---'Gamba OsakaBLV Thần ThôngTrực tiếp",
                     "type": "single",
@@ -503,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-champions-league-two-1758632835955/bangkok-united-vs-gamba-osaka.anGCkTBRCn"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e20c5abcb98d",
+                    "name": "⚽ 20:00 15/04 BLV Táo MèoAFC U20 Asian - WomenChina VS PR U20 WKXD0-0---'Japan U20 WBLV Táo MèoTrực tiếp BLV Táo Mèo13:00 15/04AFC U20 Asian Cup - WomenChina PR U20 WKXD0-0---'Japan U20 WBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e20c5abcb98d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e20c5abcb98d",
+                            "contents": [
+                                {
+                                    "id": "ct-e20c5abcb98d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u20-asian-cup-women.J-UDoGISCO/china-pr-u20-w-vs-japan-u20-w.i1Jb9tK6LD"
                                                         },
                                                         {
                                                             "key": "User-Agent",
