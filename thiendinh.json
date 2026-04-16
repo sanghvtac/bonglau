@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 17/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 17/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-7bd2a10cbd64",
-                    "name": "⚽ 23:45 16/04 Celta Vigo VS SC Freiburg BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7bd2a10cbd64.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-7bd2a10cbd64",
-                            "contents": [
-                                {
-                                    "id": "ct-7bd2a10cbd64",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/celta-vigo-vs-sc-freiburg.9C93Plzlaw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-15447bd2ee00",
-                    "name": "⚽ 23:45 16/04 AZ Alkmaar VS Shakhtar Donetsk BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/15447bd2ee00.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-15447bd2ee00",
-                            "contents": [
-                                {
-                                    "id": "ct-15447bd2ee00",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tfv31gr4uqmtt8y41hcjsgyzdnpb3fi4ge5djq311h6ucxfsg17uff3ts65e.100ycdn.com/tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8?wsSession=143c36a27492c63f97133968-177636393778813&wsIPSercert=ddafe06f733f4b3493e934cbd05caf38&wsBindIP=2&wsserid=1168283436454933174",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/az-alkmaar-vs-shakhtar-donetsk.NwIRqUIT8H"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-498a973bd90b",
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-251901319abf",
                     "name": "⚽ 16:35 17/04 Melbourne Victory VS Newcastle Jets BLV Táo Tàu",
@@ -645,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-7bd2a10cbd64",
-                    "name": "⚽ 23:45 16/04 BLV Ngọc Hoàng(A Cháo) Celta VS VigoKXD0-0---'SC FreiburgBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:45 16/04UEFA Europa LeagueCelta VigoKXD0-0---'SC FreiburgBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "id": "ch-498a973bd90b",
+                    "name": "⚽ 02:00 17/04 BLV Ngọc Hoàng(A Cháo) Aston VS VillaKXD0-0---'BolognaBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 16/04UEFA Europa LeagueAston VillaKXD0-0---'BolognaBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7bd2a10cbd64.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/498a973bd90b.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-7bd2a10cbd64",
+                            "id": "src-498a973bd90b",
                             "contents": [
                                 {
-                                    "id": "ct-7bd2a10cbd64",
+                                    "id": "ct-498a973bd90b",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/celta-vigo-vs-sc-freiburg.9C93Plzlaw"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/aston-villa-vs-bologna.DxidOIzIZJ"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -687,22 +603,22 @@
                     ]
                 },
                 {
-                    "id": "ch-15447bd2ee00",
-                    "name": "⚽ 23:45 16/04 BLV Thần Thông Europa AZ VS AlkmaarKXD0-0---'Shakhtar DonetskBLV Thần ThôngTrực tiếp BLV Thần Thông16:45 16/04UEFA Europa Conference LeagueAZ AlkmaarKXD0-0---'Shakhtar DonetskBLV Thần ThôngTrực tiếp",
+                    "id": "ch-f9c31e142f08",
+                    "name": "⚽ 02:00 17/04 BLV Thần Thông Nottingham VS ForestKXD0-0---'FC PortoBLV Thần ThôngTrực tiếp BLV Thần Thông19:00 16/04UEFA Europa LeagueNottingham ForestKXD0-0---'FC PortoBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/15447bd2ee00.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f9c31e142f08.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-15447bd2ee00",
+                            "id": "src-f9c31e142f08",
                             "contents": [
                                 {
-                                    "id": "ct-15447bd2ee00",
+                                    "id": "ct-f9c31e142f08",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -712,7 +628,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/az-alkmaar-vs-shakhtar-donetsk.NwIRqUIT8H"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/nottingham-forest-vs-fc-porto.S51b0kqawM"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0b988b8d43a0",
+                    "name": "⚽ 02:00 17/04 BLV Táo Mèo Real VS BetisKXD0-0---'SC BragaBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 16/04UEFA Europa LeagueReal BetisKXD0-0---'SC BragaBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0b988b8d43a0.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0b988b8d43a0",
+                            "contents": [
+                                {
+                                    "id": "ct-0b988b8d43a0",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/real-betis-vs-sc-braga.dsVJGtbITU"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0770ed823a04",
+                    "name": "⚽ 02:00 17/04 BLV Táo Tàu Europa VS FiorentinaKXD0-0---'Crystal PalaceBLV Táo TàuTrực tiếp BLV Táo Tàu19:00 16/04UEFA Europa Conference LeagueFiorentinaKXD0-0---'Crystal PalaceBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0770ed823a04.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0770ed823a04",
+                            "contents": [
+                                {
+                                    "id": "ct-0770ed823a04",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/fiorentina-vs-crystal-palace.qMGpzvZ55U"
                                                         },
                                                         {
                                                             "key": "User-Agent",
