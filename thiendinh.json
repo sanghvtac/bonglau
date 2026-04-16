@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:25 16/04/2026)",
+    "name": "Thiên Đỉnh TV (20:55 16/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-a744d4418085",
-                    "name": "⚽ 19:00 16/04 Manila Digger VS Svay Rieng BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a744d4418085.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a744d4418085",
-                            "contents": [
-                                {
-                                    "id": "ct-a744d4418085",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-challenge-league-1761619419550/manila-digger-vs-svay-rieng.s901SAhzTE"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-db7471f3a211",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a7617cbd17d7",
                     "name": "⚽ 21:30 16/04 Ararat-Armenia VS FC Noah BLV Táo Mèo",
@@ -167,90 +125,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/celta-vigo-vs-sc-freiburg.9C93Plzlaw"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-e228171b763f",
-                    "name": "⚽ 23:45 16/04 AZ Alkmaar VS Shakhtar Donetsk BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e228171b763f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e228171b763f",
-                            "contents": [
-                                {
-                                    "id": "ct-e228171b763f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/az-alkmaar-vs-shakhtar-donetsk.ulZeKe96Vr"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-bc57e33377d2",
-                    "name": "⚽ 23:45 16/04 Celta Vigo VS SC Freiburg BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bc57e33377d2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-bc57e33377d2",
-                            "contents": [
-                                {
-                                    "id": "ct-bc57e33377d2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-league-1758631216599/celta-vigo-vs-sc-freiburg.NdGgv8WOk6"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -855,22 +729,22 @@
                     ]
                 },
                 {
-                    "id": "ch-a744d4418085",
-                    "name": "⚽ 19:00 16/04 BLV Táo TàuAFC Challenge LeagueManila VS DiggerKXD0-0---'Svay RiengBLV Táo TàuTrực tiếp BLV Táo Tàu12:00 16/04AFC Challenge LeagueManila DiggerKXD0-0---'Svay RiengBLV Táo TàuTrực tiếp",
+                    "id": "ch-db7471f3a211",
+                    "name": "⚽ 21:00 16/04 BLV Táo TàuFirst LeagueSeptemvri VS SofiaKXD0-0---'Spartak VarnaBLV Táo TàuTrực tiếp BLV Táo Tàu14:00 16/04First LeagueSeptemvri SofiaKXD0-0---'Spartak VarnaBLV Táo TàuTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a744d4418085.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/db7471f3a211.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-a744d4418085",
+                            "id": "src-db7471f3a211",
                             "contents": [
                                 {
-                                    "id": "ct-a744d4418085",
+                                    "id": "ct-db7471f3a211",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -880,7 +754,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-challenge-league-1761619419550/manila-digger-vs-svay-rieng.s901SAhzTE"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/first-league-1763539896569/septemvri-sofia-vs-spartak-varna.2Jls-VIivE"
                                                         },
                                                         {
                                                             "key": "User-Agent",
