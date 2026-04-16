@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 16/04/2026)",
+    "name": "Chuoi Chien TV (15:25 16/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-06a49df9f5f1",
-                    "name": "⚽ 12:00 16/04 Hà Nội - Tasco Auto VS VTV Bình Điền Long An [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/991809.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-06a49df9f5f1",
-                            "contents": [
-                                {
-                                    "id": "ct-06a49df9f5f1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-a79a4e8cff5f",
                     "name": "⚽ 14:30 16/04 Thể Công Tân Cảng VS Biên Phòng MB [Nhà Đài - HD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d2e013652da4",
-                    "name": "⚽ 15:30 16/04 Việt Nam VS Timor-Leste",
+                    "id": "ch-21157dd33162",
+                    "name": "⚽ 15:30 16/04 Việt Nam VS Timor-Leste [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d2e013652da4",
+                            "id": "src-21157dd33162",
                             "contents": [
                                 {
-                                    "id": "ct-d2e013652da4",
+                                    "id": "ct-21157dd33162",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991434/991434"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1833dad5222c",
                     "name": "⚽ 17:00 16/04 Vietinbank VS Hóa Chất Đức Giang Lào Cai",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1535155/1535155"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f4a32bef95fc",
+                    "name": "⚽ 05:00 17/04 Tigre VS Macara",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535168.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f4a32bef95fc",
+                            "contents": [
+                                {
+                                    "id": "ct-f4a32bef95fc",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1535168/1535168"
                                                         },
                                                         {
                                                             "key": "User-Agent",

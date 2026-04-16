@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (14:55 16/04/2026)",
+    "name": "Thiên Đỉnh TV (15:25 16/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-5896835e6d63",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b55bdb88a721",
                     "name": "⚽ 19:00 16/04 Manila Digger VS Svay Rieng BLV Táo Thiên Vương",
@@ -502,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-europa-conference-league-1758632175125/fiorentina-vs-crystal-palace.qMGpzvZ55U"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5896835e6d63",
+                    "name": "⚽ 15:30 16/04 BLV Táo ChèU17 Đông Nam ÁU17 TimorKXD0-0---' VS U17 Việt Nam BLV Táo ChèTrực tiếp BLV Táo Chè08:30 16/04U17 Đông Nam ÁU17 TimorKXD0-0---' U17 Việt Nam BLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5896835e6d63.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5896835e6d63",
+                            "contents": [
+                                {
+                                    "id": "ct-5896835e6d63",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/u17-dong-nam-a.rpLyAskBon/u17-timor-leste-vs-u17-viet-nam.6qY--IzsdT"
                                                         },
                                                         {
                                                             "key": "User-Agent",
