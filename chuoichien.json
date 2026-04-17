@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 17/04/2026)",
+    "name": "Chuoi Chien TV (15:55 17/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-800ceb83a465",
-                    "name": "⚽ 16:00 17/04 Văn Hiến VS Công An TP. Hồ Chí Minh",
+                    "id": "ch-525a476048a1",
+                    "name": "⚽ 16:00 17/04 Văn Hiến VS Công An TP. Hồ Chí Minh [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-800ceb83a465",
+                            "id": "src-525a476048a1",
                             "contents": [
                                 {
-                                    "id": "ct-800ceb83a465",
+                                    "id": "ct-525a476048a1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518128/1518128"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1ea9a4f99aa9",
                     "name": "⚽ 16:35 17/04 Melbourne Victory VS Newcastle Jets",
