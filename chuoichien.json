@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 17/04/2026)",
+    "name": "Chuoi Chien TV (23:25 17/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -259,40 +259,34 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e08e0275361d",
-                    "name": "⚽ 21:00 17/04 Odisha VS Mohammedan",
+                    "id": "ch-74ee33552554",
+                    "name": "⚽ 23:00 17/04 GKS Katowice VS Motor Lublin [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1521331.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1380637.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e08e0275361d",
+                            "id": "src-74ee33552554",
                             "contents": [
                                 {
-                                    "id": "ct-e08e0275361d",
+                                    "id": "ct-74ee33552554",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1521331/1521331"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,8 +303,50 @@
                     ]
                 },
                 {
-                    "id": "ch-acc3aa8cf0f9",
-                    "name": "⚽ 23:30 17/04 Sassuolo VS Como",
+                    "id": "ch-e52c31d48f8a",
+                    "name": "⚽ 23:00 17/04 Ogre United VS Auda [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1515806.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e52c31d48f8a",
+                            "contents": [
+                                {
+                                    "id": "ct-e52c31d48f8a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x4/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1380ac074f3a",
+                    "name": "⚽ 23:30 17/04 Sassuolo VS Como [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +357,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-acc3aa8cf0f9",
+                            "id": "src-1380ac074f3a",
                             "contents": [
                                 {
-                                    "id": "ct-acc3aa8cf0f9",
+                                    "id": "ct-1380ac074f3a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1378191/1378191"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -349,7 +385,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-df7bb98a8460",
                     "name": "⚽ 23:30 17/04 SV Elversberg VS Karlsruher SC",
@@ -797,48 +839,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1380352/1380352"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-499e7a9b9f10",
-                    "name": "⚽ 01:00 18/04 Manchester United U18 VS Crystal Palace U18",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534933.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-499e7a9b9f10",
-                            "contents": [
-                                {
-                                    "id": "ct-499e7a9b9f10",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1534933/1534933"
                                                         },
                                                         {
                                                             "key": "User-Agent",
