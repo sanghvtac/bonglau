@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 19/04/2026)",
+    "name": "Chuoi Chien TV (01:25 19/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-252c81d3a853",
-                    "name": "⚽ 23:00 18/04 Napoli VS Lazio [Anh Hột - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378188.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-252c81d3a853",
-                            "contents": [
-                                {
-                                    "id": "ct-252c81d3a853",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-34ffdd03a43f",
                     "name": "⚽ 23:30 18/04 Tottenham VS Brighton [Anh Quất - FHD1]",
@@ -259,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-26a34a47a205",
-                    "name": "⚽ 01:00 19/04 Dinamo Bucuresti VS Universitatea Cluj",
+                    "id": "ch-5426bbd91d52",
+                    "name": "⚽ 01:00 19/04 Dinamo Bucuresti VS Universitatea Cluj [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-26a34a47a205",
+                            "id": "src-5426bbd91d52",
                             "contents": [
                                 {
-                                    "id": "ct-26a34a47a205",
+                                    "id": "ct-5426bbd91d52",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1531632/1531632"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,8 +261,8 @@
                     ]
                 },
                 {
-                    "id": "ch-0a2ad8ad4117",
-                    "name": "⚽ 01:15 19/04 Pogon Szczecin VS Lech Poznan",
+                    "id": "ch-bb73527a2789",
+                    "name": "⚽ 01:15 19/04 Pogon Szczecin VS Lech Poznan [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +273,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0a2ad8ad4117",
+                            "id": "src-bb73527a2789",
                             "contents": [
                                 {
-                                    "id": "ct-0a2ad8ad4117",
+                                    "id": "ct-bb73527a2789",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x6/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1380641/1380641"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -349,7 +301,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e298f147eb15",
                     "name": "⚽ 01:30 19/04 CF Montreal VS New York Red Bulls",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1492221/1492221"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-cfb8a6dc430d",
+                    "name": "⚽ 04:30 19/04 Vasco DA Gama VS Sao Paulo",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492228.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-cfb8a6dc430d",
+                            "contents": [
+                                {
+                                    "id": "ct-cfb8a6dc430d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1492228/1492228"
                                                         },
                                                         {
                                                             "key": "User-Agent",
