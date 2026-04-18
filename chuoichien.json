@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:55 18/04/2026)",
+    "name": "Chuoi Chien TV (18:25 18/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-fa937339f3df",
-                    "name": "⚽ 16:00 18/04 Bắc Ninh VS Đồng Tháp [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518130.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-fa937339f3df",
-                            "contents": [
-                                {
-                                    "id": "ct-fa937339f3df",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-ba7347ad2ddd",
                     "name": "⚽ 16:35 18/04 Sydney VS Perth Glory [Nhà Đài - HD1]",
@@ -387,6 +345,48 @@
                     ]
                 },
                 {
+                    "id": "ch-d1a0518bf31b",
+                    "name": "⚽ 18:00 18/04 Dynamo Dresden VS VfL Bochum [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1388883.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d1a0518bf31b",
+                            "contents": [
+                                {
+                                    "id": "ct-d1a0518bf31b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x4/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-1033f4d53da3",
                     "name": "⚽ 18:30 18/04 Brentford VS Fulham [Anh Sói - FHD1]",
                     "type": "single",
@@ -427,58 +427,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-1ea5f600c09f",
-                    "name": "⚽ 18:00 18/04 Dynamo Dresden VS VfL Bochum",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1388883.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1ea5f600c09f",
-                            "contents": [
-                                {
-                                    "id": "ct-1ea5f600c09f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1388883/1388883"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-4b751734937a",
-                    "name": "⚽ 18:30 18/04 Portsmouth VS Leicester",
+                    "id": "ch-e88596f3f179",
+                    "name": "⚽ 18:30 18/04 Portsmouth VS Leicester [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -489,20 +441,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4b751734937a",
+                            "id": "src-e88596f3f179",
                             "contents": [
                                 {
-                                    "id": "ct-4b751734937a",
+                                    "id": "ct-e88596f3f179",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1387065/1387065"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -519,50 +471,8 @@
                     ]
                 },
                 {
-                    "id": "ch-5f48f1131b1a",
-                    "name": "⚽ 18:30 18/04 Fatih Karagümrük VS Eyüpspor",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1394698.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5f48f1131b1a",
-                            "contents": [
-                                {
-                                    "id": "ct-5f48f1131b1a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1394698/1394698"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-3f4105da4a6e",
-                    "name": "⚽ 18:30 18/04 Krylia Sovetov VS CSKA Moscow",
+                    "id": "ch-f463c5eae4ed",
+                    "name": "⚽ 18:30 18/04 Krylia Sovetov VS CSKA Moscow [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -573,20 +483,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3f4105da4a6e",
+                            "id": "src-f463c5eae4ed",
                             "contents": [
                                 {
-                                    "id": "ct-3f4105da4a6e",
+                                    "id": "ct-f463c5eae4ed",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1400226/1400226"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -603,8 +513,8 @@
                     ]
                 },
                 {
-                    "id": "ch-970b087883d4",
-                    "name": "⚽ 18:30 18/04 Hougang United VS Albirex Niigata S",
+                    "id": "ch-e2bf5467e521",
+                    "name": "⚽ 18:30 18/04 Hougang United VS Albirex Niigata S [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -615,20 +525,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-970b087883d4",
+                            "id": "src-e2bf5467e521",
                             "contents": [
                                 {
-                                    "id": "ct-970b087883d4",
+                                    "id": "ct-e2bf5467e521",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1421862/1421862"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -645,50 +555,8 @@
                     ]
                 },
                 {
-                    "id": "ch-9152522f1a9b",
-                    "name": "⚽ 18:30 18/04 Muangthong United VS Nakhon Ratchasima FC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1491226.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9152522f1a9b",
-                            "contents": [
-                                {
-                                    "id": "ct-9152522f1a9b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1491226/1491226"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-350bc5616d2f",
-                    "name": "⚽ 18:30 18/04 Kerala Blasters VS Jamshedpur",
+                    "id": "ch-32138dba735d",
+                    "name": "⚽ 18:30 18/04 Kerala Blasters VS Jamshedpur [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -699,20 +567,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-350bc5616d2f",
+                            "id": "src-32138dba735d",
                             "contents": [
                                 {
-                                    "id": "ct-350bc5616d2f",
+                                    "id": "ct-32138dba735d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x4/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1521332/1521332"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -729,8 +597,8 @@
                     ]
                 },
                 {
-                    "id": "ch-fbc054454c11",
-                    "name": "⚽ 18:30 18/04 Csikszereda VS Unirea Slobozia",
+                    "id": "ch-0e641fd1a763",
+                    "name": "⚽ 18:30 18/04 Csikszereda VS Unirea Slobozia [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -741,20 +609,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fbc054454c11",
+                            "id": "src-0e641fd1a763",
                             "contents": [
                                 {
-                                    "id": "ct-fbc054454c11",
+                                    "id": "ct-0e641fd1a763",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x5/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1531522/1531522"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -769,7 +637,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-328c3fce4760",
                     "name": "⚽ 19:00 18/04 PSBS Biak Numfor VS Persija",
@@ -839,6 +713,132 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1403809/1403809"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ee99b0d2b7ea",
+                    "name": "⚽ 19:00 18/04 Shanghai Shenhua VS Shenyang Urban",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1523106.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ee99b0d2b7ea",
+                            "contents": [
+                                {
+                                    "id": "ct-ee99b0d2b7ea",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1523106/1523106"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a300010591f5",
+                    "name": "⚽ 19:00 18/04 Belarus W VS Kazakhstan W",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1523909.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a300010591f5",
+                            "contents": [
+                                {
+                                    "id": "ct-a300010591f5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1523909/1523909"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e67664ea054a",
+                    "name": "⚽ 19:30 18/04 Biên Phòng MB VS LPBank Ninh Bình",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/998547.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e67664ea054a",
+                            "contents": [
+                                {
+                                    "id": "ct-e67664ea054a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/998547/998547"
                                                         },
                                                         {
                                                             "key": "User-Agent",
