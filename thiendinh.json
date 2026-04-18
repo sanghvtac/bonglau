@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:55 18/04/2026)",
+    "name": "Thiên Đỉnh TV (23:25 18/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-f9b04913b94f",
-                    "name": "⚽ 21:00 18/04 Leeds VS Wolves BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f9b04913b94f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f9b04913b94f",
-                            "contents": [
-                                {
-                                    "id": "ct-f9b04913b94f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/leeds-vs-wolves.UlcCk9HnEC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-9555b969ae1f",
-                    "name": "⚽ 21:00 18/04 Newcastle VS Bournemouth BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9555b969ae1f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9555b969ae1f",
-                            "contents": [
-                                {
-                                    "id": "ct-9555b969ae1f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/newcastle-vs-bournemouth.yXzOWJyaFK"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-98576ef2783d",
                     "name": "⚽ 22:00 18/04 Lorient VS Marseille BLV Táo Chè",
@@ -175,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-d0fb4bdee08e",
                     "name": "⚽ 23:30 18/04 Tottenham VS Brighton BLV Ngọc Hoàng(A Cháo)",
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-445f62a421cf",
                     "name": "⚽ 00:00 19/04 Angers VS Le Havre BLV Táo Tàu",
@@ -981,48 +897,6 @@
                     ]
                 },
                 {
-                    "id": "ch-ab9dc4de2143",
-                    "name": "⚽ 22:15 19/04 Strasbourg VS Rennes BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ab9dc4de2143.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ab9dc4de2143",
-                            "contents": [
-                                {
-                                    "id": "ct-ab9dc4de2143",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/strasbourg-vs-rennes.xf8gXJR9QQ"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-74d4f8422457",
                     "name": "⚽ 22:30 19/04 Manchester City VS Arsenal BLV Ngọc Hoàng(A Cháo)",
                     "type": "single",
@@ -1091,6 +965,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-city-vs-arsenal.2WHP7qGpgP"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-dded305509d2",
+                    "name": "⚽ 22:30 19/04 Bayern München VS VfB Stuttgart BLV Táo Tàu",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/dded305509d2.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-dded305509d2",
+                            "contents": [
+                                {
+                                    "id": "ct-dded305509d2",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/bayern-munchen-vs-vfb-stuttgart.3SvoBxzrsi"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1275,22 +1191,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f9b04913b94f",
-                    "name": "⚽ 21:00 18/04 BLV Táo Mèo VS LeedsKXD0-0---'WolvesBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 18/04Premier LeagueLeedsKXD0-0---'WolvesBLV Táo MèoTrực tiếp",
+                    "id": "ch-d0fb4bdee08e",
+                    "name": "⚽ 23:30 18/04 BLV Ngọc Hoàng(A Cháo) VS TottenhamKXD0-0---'BrightonBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:30 18/04Premier LeagueTottenhamKXD0-0---'BrightonBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f9b04913b94f.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d0fb4bdee08e.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f9b04913b94f",
+                            "id": "src-d0fb4bdee08e",
                             "contents": [
                                 {
-                                    "id": "ct-f9b04913b94f",
+                                    "id": "ct-d0fb4bdee08e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1300,49 +1216,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/leeds-vs-wolves.UlcCk9HnEC"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-9555b969ae1f",
-                    "name": "⚽ 21:00 18/04 BLV Ngọc Hoàng(A Cháo) VS NewcastleKXD0-0---'BournemouthBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)14:00 18/04Premier LeagueNewcastleKXD0-0---'BournemouthBLV Ngọc Hoàng(A Cháo)Trực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9555b969ae1f.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9555b969ae1f",
-                            "contents": [
-                                {
-                                    "id": "ct-9555b969ae1f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/newcastle-vs-bournemouth.yXzOWJyaFK"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/tottenham-vs-brighton.IUfAZKl4L2"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1385,6 +1259,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/napoli-vs-lazio.S58sr0WNUj"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-60462aeb31dd",
+                    "name": "⚽ 23:30 18/04 BLV Táo Mèo Eintracht VS FrankfurtKXD0-0---'RB LeipzigBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 18/04BundesligaEintracht FrankfurtKXD0-0---'RB LeipzigBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/60462aeb31dd.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-60462aeb31dd",
+                            "contents": [
+                                {
+                                    "id": "ct-60462aeb31dd",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/eintracht-frankfurt-vs-rb-leipzig.G3DHxv6KMJ"
                                                         },
                                                         {
                                                             "key": "User-Agent",
