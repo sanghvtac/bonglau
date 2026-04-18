@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:55 18/04/2026)",
+    "name": "Thiên Đỉnh TV (20:25 18/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-fbc412cc7ae5",
-                    "name": "⚽ 18:00 18/04 Phu Dong VS Pho Hien BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fbc412cc7ae5.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-fbc412cc7ae5",
-                            "contents": [
-                                {
-                                    "id": "ct-fbc412cc7ae5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/phu-dong-vs-pho-hien.xH07Hfnru1"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9f3e85df1b87",
                     "name": "⚽ 18:30 18/04 Brentford VS Fulham BLV Ngọc Hoàng(A Cháo)",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-dfef333680fe",
                     "name": "⚽ 20:30 18/04 1899 Hoffenheim VS Borussia Dortmund BLV Táo Thiên Vương",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -265,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9555b969ae1f",
                     "name": "⚽ 21:00 18/04 Newcastle VS Bournemouth BLV Ngọc Hoàng(A Cháo)",
@@ -813,6 +771,48 @@
                     ]
                 },
                 {
+                    "id": "ch-f9b04913b94f",
+                    "name": "⚽ 21:00 18/04 BLV Táo Mèo VS LeedsKXD0-0---'WolvesBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 18/04Premier LeagueLeedsKXD0-0---'WolvesBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f9b04913b94f.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f9b04913b94f",
+                            "contents": [
+                                {
+                                    "id": "ct-f9b04913b94f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/leeds-vs-wolves.UlcCk9HnEC"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-788eb2ca2bd9",
                     "name": "⚽ 20:00 18/04 BLV Táo Tàu VS UdineseKXD0-0---'ParmaBLV Táo TàuTrực tiếp BLV Táo Tàu13:00 18/04Serie AUdineseKXD0-0---'ParmaBLV Táo TàuTrực tiếp",
                     "type": "single",
@@ -855,22 +855,22 @@
                     ]
                 },
                 {
-                    "id": "ch-fbc412cc7ae5",
-                    "name": "⚽ 18:00 18/04 BLV Táo MèoV.League 1Phu VS DongKXD0-0---'Pho HienBLV Táo MèoTrực tiếp BLV Táo Mèo11:00 18/04V.League 1Phu DongKXD0-0---'Pho HienBLV Táo MèoTrực tiếp",
+                    "id": "ch-dfef333680fe",
+                    "name": "⚽ 20:30 18/04 BLV Táo Thiên Vương 1899 HoffenheimKXD0-0---'Borussia VS Dortmund BLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương13:30 18/04Bundesliga1899 HoffenheimKXD0-0---'Borussia Dortmund BLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fbc412cc7ae5.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/dfef333680fe.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-fbc412cc7ae5",
+                            "id": "src-dfef333680fe",
                             "contents": [
                                 {
-                                    "id": "ct-fbc412cc7ae5",
+                                    "id": "ct-dfef333680fe",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -880,7 +880,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/phu-dong-vs-pho-hien.xH07Hfnru1"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/1899-hoffenheim-vs-borussia-dortmund.s_zRW8Wj3F"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d47662c316fe",
+                    "name": "⚽ 20:30 18/04 BLV Thần Thông Bayer VS LeverkusenKXD0-0---'FC AugsburgBLV Thần ThôngTrực tiếp BLV Thần Thông13:30 18/04BundesligaBayer LeverkusenKXD0-0---'FC AugsburgBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d47662c316fe.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d47662c316fe",
+                            "contents": [
+                                {
+                                    "id": "ct-d47662c316fe",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/bayer-leverkusen-vs-fc-augsburg.wP6qxGsc2E"
                                                         },
                                                         {
                                                             "key": "User-Agent",
