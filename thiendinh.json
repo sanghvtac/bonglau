@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 19/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 19/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-d0fb4bdee08e",
-                    "name": "⚽ 23:30 18/04 Tottenham VS Brighton BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d0fb4bdee08e.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d0fb4bdee08e",
-                            "contents": [
-                                {
-                                    "id": "ct-d0fb4bdee08e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/tottenham-vs-brighton.IUfAZKl4L2"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-445f62a421cf",
                     "name": "⚽ 00:00 19/04 Angers VS Le Havre BLV Táo Tàu",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-1bed1dd925b3",
                     "name": "⚽ 02:00 19/04 Chelsea VS Manchester United BLV Ngọc Hoàng(A Cháo)",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taoche/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tfv51gr3uomttgr31hcj18yzdncbifi4ge5djq311h6ucxfsg17uff3ts65e.100ycdn.com/tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8?wsSession=0b5ef5eff58514998a99cf6a-177653854083549&wsIPSercert=1d09f8de28a99cb5694a0ef5850771cb&wsBindIP=2&wsserid=1168243256673555874",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -287,7 +239,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-66defc0a2751",
                     "name": "⚽ 15:30 19/04 Persik Kediri VS Persita BLV Táo Thiên Vương",
@@ -1023,22 +981,22 @@
                     ]
                 },
                 {
-                    "id": "ch-d0fb4bdee08e",
-                    "name": "⚽ 23:30 18/04 BLV Ngọc Hoàng(A Cháo) VS TottenhamKXD0-0---'BrightonBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:30 18/04Premier LeagueTottenhamKXD0-0---'BrightonBLV Ngọc Hoàng(A Cháo)Trực tiếp",
+                    "id": "ch-1bed1dd925b3",
+                    "name": "⚽ 02:00 19/04 BLV Ngọc Hoàng(A Cháo) ChelseaKXD0-0---'Manchester VS UnitedBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 18/04Premier LeagueChelseaKXD0-0---'Manchester UnitedBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d0fb4bdee08e.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1bed1dd925b3.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-d0fb4bdee08e",
+                            "id": "src-1bed1dd925b3",
                             "contents": [
                                 {
-                                    "id": "ct-d0fb4bdee08e",
+                                    "id": "ct-1bed1dd925b3",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1048,7 +1006,133 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/tottenham-vs-brighton.IUfAZKl4L2"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-manchester-united.vL2ydmvL6f"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-fad8f5aa61f5",
+                    "name": "⚽ 02:00 19/04 BLV Thần Thông ChelseaKXD0-0---'Manchester VS UnitedBLV Thần ThôngTrực tiếp BLV Thần Thông19:00 18/04Premier LeagueChelseaKXD0-0---'Manchester UnitedBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fad8f5aa61f5.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fad8f5aa61f5",
+                            "contents": [
+                                {
+                                    "id": "ct-fad8f5aa61f5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-manchester-united.on78c8AH2o"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-de62effcdc47",
+                    "name": "⚽ 02:00 19/04 BLV Táo Chè ChelseaKXD0-0---'Manchester VS UnitedBLV Táo ChèTrực tiếp BLV Táo Chè19:00 18/04Premier LeagueChelseaKXD0-0---'Manchester UnitedBLV Táo ChèTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/de62effcdc47.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-de62effcdc47",
+                            "contents": [
+                                {
+                                    "id": "ct-de62effcdc47",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-manchester-united.XSJMn-g-us"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e6fd54933f4a",
+                    "name": "⚽ 02:00 19/04 BLV Táo Tàu ChelseaKXD0-0---'Manchester VS UnitedBLV Táo TàuTrực tiếp BLV Táo Tàu19:00 18/04Premier LeagueChelseaKXD0-0---'Manchester UnitedBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e6fd54933f4a.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e6fd54933f4a",
+                            "contents": [
+                                {
+                                    "id": "ct-e6fd54933f4a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-manchester-united.Cq9oUGfE_W"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -1091,6 +1175,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/angers-vs-le-havre.RUB_QAk2rO"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e4713fcdf6ec",
+                    "name": "⚽ 02:00 19/04 BLV Táo Thiên VươngCopa del ReyAtletico VS MadridKXD0-0---'Real SociedadBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 18/04Copa del ReyAtletico MadridKXD0-0---'Real SociedadBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e4713fcdf6ec.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e4713fcdf6ec",
+                            "contents": [
+                                {
+                                    "id": "ct-e4713fcdf6ec",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/copa-del-rey.AYYT0l8neD/atletico-madrid-vs-real-sociedad.FvzgyLkKaY"
                                                         },
                                                         {
                                                             "key": "User-Agent",
