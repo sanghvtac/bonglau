@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (15:55 18/04/2026)",
+    "name": "Thiên Đỉnh TV (16:25 18/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-5d8ca49b53c8",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-46372fd4de35",
                     "name": "⚽ 18:00 18/04 Hồng Lĩnh Hà Tĩnh VS Hai Phong BLV Táo Chè",
@@ -838,6 +839,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/copa-del-rey.AYYT0l8neD/atletico-madrid-vs-real-sociedad.FvzgyLkKaY"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5d8ca49b53c8",
+                    "name": "⚽ 16:35 18/04 BLV Táo Thiên VươngA-LeagueSydneyKXD0-0---'Perth VS GloryBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương09:35 18/04A-LeagueSydneyKXD0-0---'Perth GloryBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5d8ca49b53c8.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5d8ca49b53c8",
+                            "contents": [
+                                {
+                                    "id": "ct-5d8ca49b53c8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/sydney-vs-perth-glory.HIzEHM45_d"
                                                         },
                                                         {
                                                             "key": "User-Agent",
