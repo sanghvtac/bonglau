@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:25 18/04/2026)",
+    "name": "Chuoi Chien TV (12:55 18/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -343,16 +343,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-8e191d56e329",
-                    "name": "⚽ 13:00 18/04 Tokyo Verdy VS JEF United Chiba",
+                    "id": "ch-c385c13777cc",
+                    "name": "⚽ 13:00 18/04 Tokyo Verdy VS JEF United Chiba [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -363,20 +357,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8e191d56e329",
+                            "id": "src-c385c13777cc",
                             "contents": [
                                 {
-                                    "id": "ct-8e191d56e329",
+                                    "id": "ct-c385c13777cc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1504753/1504753"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -391,7 +385,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-40e20d1cc26f",
                     "name": "⚽ 14:00 18/04 Brisbane Roar VS Melbourne City",
