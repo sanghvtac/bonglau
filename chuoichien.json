@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 19/04/2026)",
+    "name": "Chuoi Chien TV (15:55 19/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-02aa78218692",
-                    "name": "⚽ 16:00 19/04 Al-Shabab VS Al Kuwait",
+                    "id": "ch-afc08ca803ab",
+                    "name": "⚽ 16:00 19/04 Al-Shabab VS Al Kuwait [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-02aa78218692",
+                            "id": "src-afc08ca803ab",
                             "contents": [
                                 {
-                                    "id": "ct-02aa78218692",
+                                    "id": "ct-afc08ca803ab",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1485220/1485220"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-57f65989d41c",
                     "name": "⚽ 17:00 19/04 LPBank Ninh Bình VS Vietinbank",
