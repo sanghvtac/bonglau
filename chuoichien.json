@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 20/04/2026)",
+    "name": "Chuoi Chien TV (15:25 20/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-2e65fbdf42d0",
-                    "name": "⚽ 15:30 20/04 Semen Padang VS Persijap",
+                    "id": "ch-25ca6e54a86c",
+                    "name": "⚽ 15:30 20/04 Semen Padang VS Persijap [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-2e65fbdf42d0",
+                            "id": "src-25ca6e54a86c",
                             "contents": [
                                 {
-                                    "id": "ct-2e65fbdf42d0",
+                                    "id": "ct-25ca6e54a86c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403812/1403812"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d5006381fe0c",
                     "name": "⚽ 17:00 20/04 Oleksandria VS Veres Rivne",
