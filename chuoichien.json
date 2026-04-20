@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (03:25 21/04/2026)",
+    "name": "Chuoi Chien TV (03:55 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-d65ff506b8ac",
-                    "name": "⚽ 01:45 21/04 Lecce VS Fiorentina [Anh Sói - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378187.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d65ff506b8ac",
-                            "contents": [
-                                {
-                                    "id": "ct-d65ff506b8ac",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-0fbfd60ededb",
                     "name": "⚽ 02:00 21/04 Crystal Palace VS West Ham [Anh Quất - FHD1]",
@@ -93,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-243f4bdaf92e",
-                    "name": "⚽ 03:15 21/04 Central Cordoba de Santiago VS Platense [Chuối Tây - FHD1]",
+                    "id": "ch-120377f08255",
+                    "name": "⚽ 03:15 21/04 Central Cordoba de Santiago VS Platense [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -105,15 +63,15 @@
                     },
                     "sources": [
                         {
-                            "id": "src-243f4bdaf92e",
+                            "id": "src-120377f08255",
                             "contents": [
                                 {
-                                    "id": "ct-243f4bdaf92e",
+                                    "id": "ct-120377f08255",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -771,6 +729,90 @@
                     ]
                 },
                 {
+                    "id": "ch-13585408b44f",
+                    "name": "⚽ 22:00 21/04 Tukums VS BFC Daugavpils",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1515809.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-13585408b44f",
+                            "contents": [
+                                {
+                                    "id": "ct-13585408b44f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1515809/1515809"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1945a2dff8b7",
+                    "name": "⚽ 22:00 21/04 Bukovyna VS Dynamo Kyiv",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535366.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1945a2dff8b7",
+                            "contents": [
+                                {
+                                    "id": "ct-1945a2dff8b7",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1535366/1535366"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-4252211a7a1d",
                     "name": "⚽ 22:55 21/04 Al Diriyah VS Al-Raed",
                     "type": "single",
@@ -797,48 +839,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1499078/1499078"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-e40c35610ac0",
-                    "name": "⚽ 23:00 21/04 AC Horsens VS Esbjerg",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1538244.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e40c35610ac0",
-                            "contents": [
-                                {
-                                    "id": "ct-e40c35610ac0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1538244/1538244"
                                                         },
                                                         {
                                                             "key": "User-Agent",
