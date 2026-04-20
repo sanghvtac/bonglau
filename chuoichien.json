@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 20/04/2026)",
+    "name": "Chuoi Chien TV (18:55 20/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-8e0497d38c8b",
-                    "name": "⚽ 19:00 20/04 Dewa United VS Persib Bandung",
+                    "id": "ch-436bee9aeb3d",
+                    "name": "⚽ 19:00 20/04 Dewa United VS Persib Bandung [Anh Vũ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8e0497d38c8b",
+                            "id": "src-436bee9aeb3d",
                             "contents": [
                                 {
-                                    "id": "ct-8e0497d38c8b",
+                                    "id": "ct-436bee9aeb3d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhvuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403813/1403813"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6604046085ec",
                     "name": "⚽ 21:00 20/04 Minerva Punjab VS Inter Kashi",
