@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 20/04/2026)",
+    "name": "Chuoi Chien TV (16:55 20/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d5006381fe0c",
-                    "name": "⚽ 17:00 20/04 Oleksandria VS Veres Rivne",
+                    "id": "ch-c44b5e825938",
+                    "name": "⚽ 17:00 20/04 Oleksandria VS Veres Rivne [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d5006381fe0c",
+                            "id": "src-c44b5e825938",
                             "contents": [
                                 {
-                                    "id": "ct-d5006381fe0c",
+                                    "id": "ct-c44b5e825938",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1396801/1396801"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-8e0497d38c8b",
                     "name": "⚽ 19:00 20/04 Dewa United VS Persib Bandung",
