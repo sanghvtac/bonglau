@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:55 21/04/2026)",
+    "name": "Thiên Đỉnh TV (01:25 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-fc3cf24262e1",
-                    "name": "⚽ 23:15 20/04 Vissel Kobe VS Al-Ahli Jeddah BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fc3cf24262e1.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-fc3cf24262e1",
-                            "contents": [
-                                {
-                                    "id": "ct-fc3cf24262e1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-champions-league-elite-1759044492775/vissel-kobe-vs-al-ahli-jeddah.Eint_6oH4U"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-69e48a1dcd0a",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-64310b3ce228",
                     "name": "⚽ 02:00 21/04 Crystal Palace VS West Ham BLV Ngọc Hoàng(A Cháo)",
@@ -561,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-fc3cf24262e1",
-                    "name": "⚽ 23:15 20/04 BLV Thần Thông EliteVissel VS KobeKXD0-0---'Al-Ahli JeddahBLV Thần ThôngTrực tiếp BLV Thần Thông16:15 20/04AFC Champions League EliteVissel KobeKXD0-0---'Al-Ahli JeddahBLV Thần ThôngTrực tiếp",
+                    "id": "ch-69e48a1dcd0a",
+                    "name": "⚽ 01:45 21/04 BLV Thần Thông VS LecceKXD0-0---'FiorentinaBLV Thần ThôngTrực tiếp BLV Thần Thông18:45 20/04Serie ALecceKXD0-0---'FiorentinaBLV Thần ThôngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fc3cf24262e1.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/69e48a1dcd0a.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-fc3cf24262e1",
+                            "id": "src-69e48a1dcd0a",
                             "contents": [
                                 {
-                                    "id": "ct-fc3cf24262e1",
+                                    "id": "ct-69e48a1dcd0a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-champions-league-elite-1759044492775/vissel-kobe-vs-al-ahli-jeddah.Eint_6oH4U"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/lecce-vs-fiorentina.r0Rx7nbtmI"
                                                         },
                                                         {
                                                             "key": "User-Agent",
