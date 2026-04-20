@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:25 20/04/2026)",
+    "name": "Thiên Đỉnh TV (20:55 20/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -29,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-d4f0b984a12e",
                     "name": "⚽ 21:00 20/04 Minerva Punjab VS Inter Kashi BLV Táo Mèo",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-cf4603fc2120",
                     "name": "⚽ 22:00 20/04 Shakhtar Donetsk VS Polessya BLV Thần Thông",
@@ -713,6 +713,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fc-noah-vs-van.cX6Vaxa1Pv"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d4f0b984a12e",
+                    "name": "⚽ 21:00 20/04 BLV Táo MèoIndian Super LeagueMinerva VS PunjabKXD0-0---'Inter KashiBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 20/04Indian Super LeagueMinerva PunjabKXD0-0---'Inter KashiBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d4f0b984a12e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d4f0b984a12e",
+                            "contents": [
+                                {
+                                    "id": "ct-d4f0b984a12e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/indian-super-league.PiwjcBrg68/minerva-punjab-vs-inter-kashi.LLUxSagbeb"
                                                         },
                                                         {
                                                             "key": "User-Agent",
