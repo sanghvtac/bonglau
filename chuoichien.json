@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 21/04/2026)",
+    "name": "Chuoi Chien TV (01:55 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-685ca4082b3b",
-                    "name": "⚽ 02:00 21/04 Crystal Palace VS West Ham",
+                    "id": "ch-0fbfd60ededb",
+                    "name": "⚽ 02:00 21/04 Crystal Palace VS West Ham [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-685ca4082b3b",
+                            "id": "src-0fbfd60ededb",
                             "contents": [
                                 {
-                                    "id": "ct-685ca4082b3b",
+                                    "id": "ct-0fbfd60ededb",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379292/1379292"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bb3c5423a4e0",
                     "name": "⚽ 02:15 21/04 Moreirense VS Estoril",
