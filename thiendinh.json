@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (16:55 21/04/2026)",
+    "name": "Thiên Đỉnh TV (17:25 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-7fe6745931a6",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fcc0fbf10fe4",
                     "name": "⚽ 19:00 21/04 SHANGHAI SIPG VS Chongqing Tongliang Long BLV Táo Tàu",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/girona-vs-real-betis.fB7WENQz0b"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-7fe6745931a6",
+                    "name": "⚽ 17:30 21/04 BLV Táo Thiên Vương FC SeoulKXD0-0---'Bucheon VS FC 1995BLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương10:30 21/04K League 1FC SeoulKXD0-0---'Bucheon FC 1995BLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7fe6745931a6.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-7fe6745931a6",
+                            "contents": [
+                                {
+                                    "id": "ct-7fe6745931a6",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/k-league-1-1758630323713/fc-seoul-vs-bucheon-fc-1995.i12eRKpY_2"
                                                         },
                                                         {
                                                             "key": "User-Agent",

@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 21/04/2026)",
+    "name": "Chuoi Chien TV (17:25 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-135ee4984f5c",
-                    "name": "⚽ 17:30 21/04 Gimcheon Sangmu FC VS Gangwon FC",
+                    "id": "ch-b69dfb9466b0",
+                    "name": "⚽ 17:30 21/04 Gimcheon Sangmu FC VS Gangwon FC [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-135ee4984f5c",
+                            "id": "src-b69dfb9466b0",
                             "contents": [
                                 {
-                                    "id": "ct-135ee4984f5c",
+                                    "id": "ct-b69dfb9466b0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506944/1506944"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-726788eebee6",
-                    "name": "⚽ 17:30 21/04 Jeonbuk Motors VS Incheon United",
+                    "id": "ch-af4c7c7cf568",
+                    "name": "⚽ 17:30 21/04 Jeonbuk Motors VS Incheon United [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-726788eebee6",
+                            "id": "src-af4c7c7cf568",
                             "contents": [
                                 {
-                                    "id": "ct-726788eebee6",
+                                    "id": "ct-af4c7c7cf568",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506945/1506945"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -98,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1c90fe793783",
-                    "name": "⚽ 17:30 21/04 FC Seoul VS Bucheon FC 1995",
+                    "id": "ch-26fc83cfc742",
+                    "name": "⚽ 17:30 21/04 FC Seoul VS Bucheon FC 1995 [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -110,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1c90fe793783",
+                            "id": "src-26fc83cfc742",
                             "contents": [
                                 {
-                                    "id": "ct-1c90fe793783",
+                                    "id": "ct-26fc83cfc742",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506946/1506946"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -138,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-48abdff78a89",
                     "name": "⚽ 18:00 21/04 Sichuan Jiuniu VS Beijing Guoan",
@@ -728,6 +729,48 @@
                     ]
                 },
                 {
+                    "id": "ch-0c4f954a4482",
+                    "name": "⚽ 23:15 21/04 Machida Zelvia VS Shabab Al Ahli Dubai",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1541764.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0c4f954a4482",
+                            "contents": [
+                                {
+                                    "id": "ct-0c4f954a4482",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1541764/1541764"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-edd124c3b6da",
                     "name": "⚽ 23:45 21/04 CSKA Moscow VS FC Rostov",
                     "type": "single",
@@ -796,48 +839,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1391139/1391139"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-05093a0f6a90",
-                    "name": "⚽ 00:00 22/04 Mallorca VS Valencia",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1391144.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-05093a0f6a90",
-                            "contents": [
-                                {
-                                    "id": "ct-05093a0f6a90",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1391144/1391144"
                                                         },
                                                         {
                                                             "key": "User-Agent",
