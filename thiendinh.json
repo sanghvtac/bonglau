@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 22/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-488ac46c3c47",
-                    "name": "⚽ 21:30 21/04 FC Sochi VS Krylia Sovetov BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/488ac46c3c47.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-488ac46c3c47",
-                            "contents": [
-                                {
-                                    "id": "ct-488ac46c3c47",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fc-sochi-vs-krylia-sovetov.ZgzuOyQLu4"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-b9ad8ea418bb",
                     "name": "⚽ 23:45 21/04 CSKA Moscow VS FC Rostov BLV Thần Thông",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-4246e97d8945",
                     "name": "⚽ 02:00 22/04 Brighton VS Chelsea BLV Thần Thông",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6026efebb1a8",
                     "name": "⚽ 02:30 22/04 Real Madrid VS Alaves BLV Táo Mèo",
@@ -855,48 +813,6 @@
                     ]
                 },
                 {
-                    "id": "ch-488ac46c3c47",
-                    "name": "⚽ 21:30 21/04 BLV Táo Mèo FC VS SochiKXD0-0---'Krylia SovetovBLV Táo MèoTrực tiếp BLV Táo Mèo14:30 21/04Premier LeagueFC SochiKXD0-0---'Krylia SovetovBLV Táo MèoTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/488ac46c3c47.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-488ac46c3c47",
-                            "contents": [
-                                {
-                                    "id": "ct-488ac46c3c47",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fc-sochi-vs-krylia-sovetov.ZgzuOyQLu4"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-b9ad8ea418bb",
                     "name": "⚽ 23:45 21/04 BLV Thần Thông CSKA VS MoscowKXD0-0---'FC RostovBLV Thần ThôngTrực tiếp BLV Thần Thông16:45 21/04Premier LeagueCSKA MoscowKXD0-0---'FC RostovBLV Thần ThôngTrực tiếp",
                     "type": "single",
@@ -923,6 +839,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/cska-moscow-vs-fc-rostov.cB9x7SGNch"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4246e97d8945",
+                    "name": "⚽ 02:00 22/04 BLV Thần Thông VS BrightonKXD0-0---'ChelseaBLV Thần ThôngTrực tiếp BLV Thần Thông19:00 21/04Premier LeagueBrightonKXD0-0---'ChelseaBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4246e97d8945.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4246e97d8945",
+                            "contents": [
+                                {
+                                    "id": "ct-4246e97d8945",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/brighton-vs-chelsea.nhGOyRFHlL"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4c5d1a70a66d",
+                    "name": "⚽ 02:00 22/04 BLV Táo Thiên VươngCoppa VS ItaliaInterKXD0-0---'ComoBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 21/04Coppa ItaliaInterKXD0-0---'ComoBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4c5d1a70a66d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4c5d1a70a66d",
+                            "contents": [
+                                {
+                                    "id": "ct-4c5d1a70a66d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/coppa-italia-1758632372802/inter-vs-como.yxL9GbtHHb"
                                                         },
                                                         {
                                                             "key": "User-Agent",
