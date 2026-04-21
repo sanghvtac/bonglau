@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:25 21/04/2026)",
+    "name": "Thiên Đỉnh TV (20:55 21/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-488ac46c3c47",
                     "name": "⚽ 21:30 21/04 FC Sochi VS Krylia Sovetov BLV Táo Mèo",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b9ad8ea418bb",
                     "name": "⚽ 23:45 21/04 CSKA Moscow VS FC Rostov BLV Thần Thông",
@@ -881,6 +881,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/barcelona-vs-celta-vigo.J4uj5bUIqz"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-488ac46c3c47",
+                    "name": "⚽ 21:30 21/04 BLV Táo Mèo FC VS SochiKXD0-0---'Krylia SovetovBLV Táo MèoTrực tiếp BLV Táo Mèo14:30 21/04Premier LeagueFC SochiKXD0-0---'Krylia SovetovBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/488ac46c3c47.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-488ac46c3c47",
+                            "contents": [
+                                {
+                                    "id": "ct-488ac46c3c47",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/fc-sochi-vs-krylia-sovetov.ZgzuOyQLu4"
                                                         },
                                                         {
                                                             "key": "User-Agent",
