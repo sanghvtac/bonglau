@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 22/04/2026)",
+    "name": "Chuoi Chien TV (15:25 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-70b0ae954f21",
-                    "name": "⚽ 15:30 22/04 Persis Solo VS Bhayangkara FC",
+                    "id": "ch-1b7c996011b9",
+                    "name": "⚽ 15:30 22/04 Persis Solo VS Bhayangkara FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-70b0ae954f21",
+                            "id": "src-1b7c996011b9",
                             "contents": [
                                 {
-                                    "id": "ct-70b0ae954f21",
+                                    "id": "ct-1b7c996011b9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403814/1403814"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-cca7a924adb5",
-                    "name": "⚽ 15:30 22/04 PSIM Yogyakarta VS Persija",
+                    "id": "ch-5a288a0b6050",
+                    "name": "⚽ 15:30 22/04 PSIM Yogyakarta VS Persija [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-cca7a924adb5",
+                            "id": "src-5a288a0b6050",
                             "contents": [
                                 {
-                                    "id": "ct-cca7a924adb5",
+                                    "id": "ct-5a288a0b6050",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403815/1403815"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -98,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-804001e2cef1",
-                    "name": "⚽ 15:30 22/04 Laos U17 VS Malaysia U17",
+                    "id": "ch-fdb9cf9533b1",
+                    "name": "⚽ 15:30 22/04 Laos U17 VS Malaysia U17 [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -110,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-804001e2cef1",
+                            "id": "src-fdb9cf9533b1",
                             "contents": [
                                 {
-                                    "id": "ct-804001e2cef1",
+                                    "id": "ct-fdb9cf9533b1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994573/994573"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -138,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1c3c449510aa",
                     "name": "⚽ 17:00 22/04 Gamba Osaka VS Avispa Fukuoka",

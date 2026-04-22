@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (14:55 22/04/2026)",
+    "name": "Thiên Đỉnh TV (15:25 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-cf5eea448f80",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e1303af5d581",
                     "name": "⚽ 17:00 22/04 Gamba Osaka VS Avispa Fukuoka BLV Táo Tàu",
@@ -502,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/barcelona-vs-celta-vigo.HElpKu0QUt"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-cf5eea448f80",
+                    "name": "⚽ 15:30 22/04 BLV Táo Thiên VươngU17 Đông Nam VS ÁU17 LàoKXD0-0---'U17 MalaysiaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương08:30 22/04U17 Đông Nam ÁU17 LàoKXD0-0---'U17 MalaysiaBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/cf5eea448f80.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-cf5eea448f80",
+                            "contents": [
+                                {
+                                    "id": "ct-cf5eea448f80",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/u17-dong-nam-a.rpLyAskBon/u17-lao-vs-u17-malaysia.8CODR3-jYy"
                                                         },
                                                         {
                                                             "key": "User-Agent",
