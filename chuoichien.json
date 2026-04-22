@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (02:25 23/04/2026)",
+    "name": "Chuoi Chien TV (02:55 23/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -219,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-06b4759e6454",
-                    "name": "⚽ 02:30 23/04 Barcelona VS Celta Vigo [Anh Sói - FHD1]",
+                    "id": "ch-6d36011a43bf",
+                    "name": "⚽ 02:30 23/04 Barcelona VS Celta Vigo [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -231,15 +231,57 @@
                     },
                     "sources": [
                         {
-                            "id": "src-06b4759e6454",
+                            "id": "src-6d36011a43bf",
                             "contents": [
                                 {
-                                    "id": "ct-06b4759e6454",
+                                    "id": "ct-6d36011a43bf",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-045cb591442b",
+                    "name": "⚽ 02:45 23/04 FC Porto VS Sporting CP [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1519499.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-045cb591442b",
+                            "contents": [
+                                {
+                                    "id": "ct-045cb591442b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -266,48 +308,6 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
-                {
-                    "id": "ch-5130dde7b0e0",
-                    "name": "⚽ 02:45 23/04 FC Porto VS Sporting CP",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1519499.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5130dde7b0e0",
-                            "contents": [
-                                {
-                                    "id": "ct-5130dde7b0e0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1519499/1519499"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-c59de5a28378",
                     "name": "⚽ 06:20 23/04 Independiente Medellin VS Chico",
