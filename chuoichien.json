@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:55 22/04/2026)",
+    "name": "Chuoi Chien TV (07:25 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-102eb341b98b",
-                    "name": "⚽ 07:30 22/04 Paysandu VS Vasco DA Gama",
+                    "id": "ch-ac5932170aa8",
+                    "name": "⚽ 07:30 22/04 Paysandu VS Vasco DA Gama [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-102eb341b98b",
+                            "id": "src-ac5932170aa8",
                             "contents": [
                                 {
-                                    "id": "ct-102eb341b98b",
+                                    "id": "ct-ac5932170aa8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1537026/1537026"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-02208701068b",
-                    "name": "⚽ 07:30 22/04 Barra VS Corinthians",
+                    "id": "ch-1f5fec2bf22f",
+                    "name": "⚽ 07:30 22/04 Barra VS Corinthians [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-02208701068b",
+                            "id": "src-1f5fec2bf22f",
                             "contents": [
                                 {
-                                    "id": "ct-02208701068b",
+                                    "id": "ct-1f5fec2bf22f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1537035/1537035"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4ad42403ba39",
                     "name": "⚽ 08:00 22/04 Club Queretaro VS Cruz Azul",
