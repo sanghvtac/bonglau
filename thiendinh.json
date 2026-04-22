@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (21:25 22/04/2026)",
+    "name": "Thiên Đỉnh TV (21:56 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-455b56c31983",
-                    "name": "⚽ 19:30 22/04 U17 Việt Nam VS U17 Australia BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/455b56c31983.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-455b56c31983",
-                            "contents": [
-                                {
-                                    "id": "ct-455b56c31983",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/u17-dong-nam-a.rpLyAskBon/u17-viet-nam-vs-u17-australia.mLjGyBg6V8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-ca7fa799263a",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5eff34094c67",
                     "name": "⚽ 23:45 22/04 Lokomotiv VS Zenit BLV Táo Thiên Vương",
@@ -771,22 +729,22 @@
                     ]
                 },
                 {
-                    "id": "ch-455b56c31983",
-                    "name": "⚽ 19:30 22/04 BLV Thần ThôngU17 Đông Nam Á U17 VS Việt Nam KXD0-0---'U17 AustraliaBLV Thần ThôngTrực tiếp BLV Thần Thông12:30 22/04U17 Đông Nam Á U17 Việt Nam KXD0-0---'U17 AustraliaBLV Thần ThôngTrực tiếp",
+                    "id": "ch-ca7fa799263a",
+                    "name": "⚽ 22:15 22/04 BLV Táo TàuSuper VS LeagueBuxoroKXD0-0---'PakhtakorBLV Táo TàuTrực tiếp BLV Táo Tàu15:15 22/04Super LeagueBuxoroKXD0-0---'PakhtakorBLV Táo TàuTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/455b56c31983.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ca7fa799263a.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-455b56c31983",
+                            "id": "src-ca7fa799263a",
                             "contents": [
                                 {
-                                    "id": "ct-455b56c31983",
+                                    "id": "ct-ca7fa799263a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -796,7 +754,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/u17-dong-nam-a.rpLyAskBon/u17-viet-nam-vs-u17-australia.mLjGyBg6V8"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/buxoro-vs-pakhtakor.w9tEHuRU6k"
                                                         },
                                                         {
                                                             "key": "User-Agent",
