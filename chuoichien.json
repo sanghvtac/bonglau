@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 22/04/2026)",
+    "name": "Chuoi Chien TV (22:55 22/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-05602b04803a",
-                    "name": "⚽ 23:00 22/04 Al-Nassr VS Al Ahli Doha",
+                    "id": "ch-70dcd85354ad",
+                    "name": "⚽ 23:00 22/04 Al-Nassr VS Al Ahli Doha [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-05602b04803a",
+                            "id": "src-70dcd85354ad",
                             "contents": [
                                 {
-                                    "id": "ct-05602b04803a",
+                                    "id": "ct-70dcd85354ad",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1541869/1541869"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6fbf8dce3b86",
                     "name": "⚽ 23:25 22/04 Al Orubah VS Al Zulfi",
