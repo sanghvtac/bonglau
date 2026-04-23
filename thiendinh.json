@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 23/04/2026)",
+    "name": "Thiên Đỉnh TV (22:55 23/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-579a3b292aa4",
-                    "name": "⚽ 21:00 23/04 Nasaf VS Lokomotiv BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/579a3b292aa4.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-579a3b292aa4",
-                            "contents": [
-                                {
-                                    "id": "ct-579a3b292aa4",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/nasaf-vs-lokomotiv.TGleElIyeL"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-77646e9e8f2a",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-63ab6d9ba0a3",
                     "name": "⚽ 00:00 24/04 Levante VS Sevilla BLV Ngọc Hoàng(A Cháo)",
@@ -729,22 +687,22 @@
                     ]
                 },
                 {
-                    "id": "ch-579a3b292aa4",
-                    "name": "⚽ 21:00 23/04 BLV Táo Thiên VươngSuper VS LeagueNasafKXD0-0---'LokomotivBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương14:00 23/04Super LeagueNasafKXD0-0---'LokomotivBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-77646e9e8f2a",
+                    "name": "⚽ 23:10 23/04 BLV Táo MèoPro LeagueAl VS NajmaKXD0-0---'Al TaawonBLV Táo MèoTrực tiếp BLV Táo Mèo16:10 23/04Pro LeagueAl NajmaKXD0-0---'Al TaawonBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/579a3b292aa4.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/77646e9e8f2a.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-579a3b292aa4",
+                            "id": "src-77646e9e8f2a",
                             "contents": [
                                 {
-                                    "id": "ct-579a3b292aa4",
+                                    "id": "ct-77646e9e8f2a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -754,7 +712,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/nasaf-vs-lokomotiv.TGleElIyeL"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-najma-vs-al-taawon.3z-6uJRbzD"
                                                         },
                                                         {
                                                             "key": "User-Agent",
