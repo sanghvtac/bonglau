@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:55 23/04/2026)",
+    "name": "Chuoi Chien TV (08:25 23/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-f528003898cc",
-                    "name": "⚽ 06:20 23/04 Independiente Medellin VS Chico [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1506023.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f528003898cc",
-                            "contents": [
-                                {
-                                    "id": "ct-f528003898cc",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-bcf4010f8d3f",
                     "name": "⚽ 06:30 23/04 New York City FC VS FC Cincinnati [Nhà Đài - HD1]",
@@ -511,16 +469,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-17b2f52a7ed2",
-                    "name": "⚽ 08:30 23/04 Real Salt Lake VS Inter Miami",
+                    "id": "ch-5f0443c79437",
+                    "name": "⚽ 08:30 23/04 Real Salt Lake VS Inter Miami [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -531,20 +483,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-17b2f52a7ed2",
+                            "id": "src-5f0443c79437",
                             "contents": [
                                 {
-                                    "id": "ct-17b2f52a7ed2",
+                                    "id": "ct-5f0443c79437",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490233/1490233"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,8 +513,8 @@
                     ]
                 },
                 {
-                    "id": "ch-54f053b90414",
-                    "name": "⚽ 08:30 23/04 Fortaleza FC VS America de Cali",
+                    "id": "ch-e95fc260a418",
+                    "name": "⚽ 08:30 23/04 Fortaleza FC VS America de Cali [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -573,20 +525,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-54f053b90414",
+                            "id": "src-e95fc260a418",
                             "contents": [
                                 {
-                                    "id": "ct-54f053b90414",
+                                    "id": "ct-e95fc260a418",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1505973/1505973"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -601,7 +553,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3cd0f418c145",
                     "name": "⚽ 09:30 23/04 Los Angeles FC VS Colorado Rapids",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1403817/1403817"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-95a2ce5d9422",
+                    "name": "⚽ 17:00 23/04 Arys VS Shakhter Karagandy",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534716.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-95a2ce5d9422",
+                            "contents": [
+                                {
+                                    "id": "ct-95a2ce5d9422",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1534716/1534716"
                                                         },
                                                         {
                                                             "key": "User-Agent",
