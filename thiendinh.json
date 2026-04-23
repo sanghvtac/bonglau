@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:55 24/04/2026)",
+    "name": "Thiên Đỉnh TV (01:25 24/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -29,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-272a9e72b98a",
                     "name": "⚽ 01:45 24/04 VfB Stuttgart VS SC Freiburg BLV Táo Thiên Vương",
@@ -161,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-efa38de4cfbc",
                     "name": "⚽ 02:30 24/04 Oviedo VS Villarreal BLV Táo Tàu",
@@ -755,6 +755,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-najma-vs-al-taawon.3z-6uJRbzD"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-272a9e72b98a",
+                    "name": "⚽ 01:45 24/04 BLV Táo Thiên VươngDFB PokalVfB VS StuttgartKXD0-0---'SC FreiburgBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương18:45 23/04DFB PokalVfB StuttgartKXD0-0---'SC FreiburgBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/272a9e72b98a.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-272a9e72b98a",
+                            "contents": [
+                                {
+                                    "id": "ct-272a9e72b98a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/dfb-pokal.0U84Tu5zpJ/vfb-stuttgart-vs-sc-freiburg.-CEjD9TWFQ"
                                                         },
                                                         {
                                                             "key": "User-Agent",
