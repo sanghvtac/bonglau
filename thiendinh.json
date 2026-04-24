@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (16:25 24/04/2026)",
+    "name": "Thiên Đỉnh TV (16:55 24/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-45f3790ce95e",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,24 +49,30 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-4db9ca194640",
-                    "name": "⚽ 18:00 24/04 Phu Dong VS Ha Noi BLV Táo Mèo",
+                    "id": "ch-332941bdb12e",
+                    "name": "⚽ 18:00 24/04 Phu Dong VS Ha Noi BLV Thần Thông",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4db9ca194640.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/332941bdb12e.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-4db9ca194640",
+                            "id": "src-332941bdb12e",
                             "contents": [
                                 {
-                                    "id": "ct-4db9ca194640",
+                                    "id": "ct-332941bdb12e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -81,7 +82,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/phu-dong-vs-ha-noi.CG6iWAifqb"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/phu-dong-vs-ha-noi.Z51F4YYxsM"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-betis-vs-real-madrid.rx6wMCfmC3"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-45f3790ce95e",
+                    "name": "⚽ 17:00 24/04 BLV Táo Thiên VươngV.League 1Hoang Anh VS Gia LaiKXD0-0---'Hai PhongBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương10:00 24/04V.League 1Hoang Anh Gia LaiKXD0-0---'Hai PhongBLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/45f3790ce95e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-45f3790ce95e",
+                            "contents": [
+                                {
+                                    "id": "ct-45f3790ce95e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/hoang-anh-gia-lai-vs-hai-phong.VCfAY7A0sD"
                                                         },
                                                         {
                                                             "key": "User-Agent",
