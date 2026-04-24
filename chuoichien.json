@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:55 24/04/2026)",
+    "name": "Chuoi Chien TV (16:25 24/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c5c485a2ff73",
-                    "name": "⚽ 16:35 24/04 Macarthur VS Wellington Phoenix",
+                    "id": "ch-a802ef92d0c2",
+                    "name": "⚽ 16:35 24/04 Macarthur VS Wellington Phoenix [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c5c485a2ff73",
+                            "id": "src-a802ef92d0c2",
                             "contents": [
                                 {
-                                    "id": "ct-c5c485a2ff73",
+                                    "id": "ct-a802ef92d0c2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1469706/1469706"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c44f00dde49d",
                     "name": "⚽ 17:00 24/04 FC Tokyo VS Mito Hollyhock",
