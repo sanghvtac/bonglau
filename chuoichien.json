@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 24/04/2026)",
+    "name": "Chuoi Chien TV (15:25 24/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-30f86e03dff1",
-                    "name": "⚽ 15:30 24/04 Laos U17 VS Australia U17",
+                    "id": "ch-bd0b25ba6770",
+                    "name": "⚽ 15:30 24/04 Laos U17 VS Australia U17 [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-30f86e03dff1",
+                            "id": "src-bd0b25ba6770",
                             "contents": [
                                 {
-                                    "id": "ct-30f86e03dff1",
+                                    "id": "ct-bd0b25ba6770",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/996037/996037"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-ad02e777f849",
-                    "name": "⚽ 15:30 24/04 Persijap VS PSBS Biak Numfor",
+                    "id": "ch-6a8f28785a4e",
+                    "name": "⚽ 15:30 24/04 Persijap VS PSBS Biak Numfor [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ad02e777f849",
+                            "id": "src-6a8f28785a4e",
                             "contents": [
                                 {
-                                    "id": "ct-ad02e777f849",
+                                    "id": "ct-6a8f28785a4e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403819/1403819"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-40c4dc34475f",
                     "name": "⚽ 16:00 24/04 Đồng Tháp VS Khatoco Khanh Hoa",
