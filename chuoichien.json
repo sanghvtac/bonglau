@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 24/04/2026)",
+    "name": "Chuoi Chien TV (22:55 24/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -114,48 +114,6 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-f9ed3a59971a",
-                    "name": "⚽ 21:00 24/04 Xorazm VS Neftchi [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516040.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f9ed3a59971a",
-                            "contents": [
-                                {
-                                    "id": "ct-f9ed3a59971a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -343,16 +301,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c1d6f44d6d5a",
-                    "name": "⚽ 23:10 24/04 Al-Hazm VS Al Riyadh",
+                    "id": "ch-efc56b474139",
+                    "name": "⚽ 23:10 24/04 Al-Hazm VS Al Riyadh [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -363,10 +315,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c1d6f44d6d5a",
+                            "id": "src-efc56b474139",
                             "contents": [
                                 {
-                                    "id": "ct-c1d6f44d6d5a",
+                                    "id": "ct-efc56b474139",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-96d5a0c83209",
+                    "name": "⚽ 21:00 24/04 Xorazm VS Neftchi",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516040.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-96d5a0c83209",
+                            "contents": [
+                                {
+                                    "id": "ct-96d5a0c83209",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -376,7 +376,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1436166/1436166"
+                                                            "value": "https://live20.chuoichientv.com/live/1516040/1516040"
                                                         },
                                                         {
                                                             "key": "User-Agent",
