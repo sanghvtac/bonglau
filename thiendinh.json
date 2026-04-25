@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 26/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 26/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-0865416d231b",
-                    "name": "⚽ 23:30 25/04 Arsenal VS Newcastle BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0865416d231b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-0865416d231b",
-                            "contents": [
-                                {
-                                    "id": "ct-0865416d231b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/arsenal-vs-newcastle.ny6-MKBS8p"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-f07b8230f2d1",
-                    "name": "⚽ 23:30 25/04 Arsenal VS Newcastle BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f07b8230f2d1.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f07b8230f2d1",
-                            "contents": [
-                                {
-                                    "id": "ct-f07b8230f2d1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/arsenal-vs-newcastle.30_qJsaZmg"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-027705bf894f",
                     "name": "⚽ 00:00 26/04 Angers VS Paris Saint Germain BLV Táo Tàu",
@@ -113,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -155,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -175,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-5119ee383d6b",
                     "name": "⚽ 02:00 26/04 Atletico Madrid VS Athletic Club BLV Táo Mèo",
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-73db608b0b9d",
                     "name": "⚽ 06:30 26/04 Inter Miami VS New England Revolution BLV Táo Thiên Vương",
@@ -771,90 +687,6 @@
                     ]
                 },
                 {
-                    "id": "ch-0865416d231b",
-                    "name": "⚽ 23:30 25/04 BLV Ngọc Hoàng(A Cháo) VS ArsenalKXD0-0---'NewcastleBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)16:30 25/04Premier LeagueArsenalKXD0-0---'NewcastleBLV Ngọc Hoàng(A Cháo)Trực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0865416d231b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-0865416d231b",
-                            "contents": [
-                                {
-                                    "id": "ct-0865416d231b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/arsenal-vs-newcastle.ny6-MKBS8p"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-f07b8230f2d1",
-                    "name": "⚽ 23:30 25/04 BLV Táo Mèo VS ArsenalKXD0-0---'NewcastleBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 25/04Premier LeagueArsenalKXD0-0---'NewcastleBLV Táo MèoTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f07b8230f2d1.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f07b8230f2d1",
-                            "contents": [
-                                {
-                                    "id": "ct-f07b8230f2d1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/arsenal-vs-newcastle.30_qJsaZmg"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-1a0d4fe88789",
                     "name": "⚽ 01:45 26/04 BLV Thần Thông Hellas VS VeronaKXD0-0---'LecceBLV Thần ThôngTrực tiếp BLV Thần Thông18:45 25/04Serie A Hellas VeronaKXD0-0---'LecceBLV Thần ThôngTrực tiếp",
                     "type": "single",
@@ -923,6 +755,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/angers-vs-paris-saint-germain.Iw4ZlLzJPL"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5119ee383d6b",
+                    "name": "⚽ 02:00 26/04 BLV Táo Mèo Atletico VS MadridKXD0-0---'Athletic ClubBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 25/04La LigaAtletico MadridKXD0-0---'Athletic ClubBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5119ee383d6b.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5119ee383d6b",
+                            "contents": [
+                                {
+                                    "id": "ct-5119ee383d6b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/atletico-madrid-vs-athletic-club.45mxHKVu9P"
                                                         },
                                                         {
                                                             "key": "User-Agent",
