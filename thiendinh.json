@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:25 25/04/2026)",
+    "name": "Thiên Đỉnh TV (18:55 25/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-30ba67a1709d",
-                    "name": "⚽ 16:35 25/04 Western Sydney Wanderers VS Melbourne Victory BLV Táo Tàu",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/30ba67a1709d.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-30ba67a1709d",
-                            "contents": [
-                                {
-                                    "id": "ct-30ba67a1709d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/western-sydney-wanderers-vs-melbourne-victory.KDBgafsMfO"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9e7ce777987c",
                     "name": "⚽ 18:00 25/04 Binh Duong VS Nam Dinh BLV Táo Thiên Vương",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-25b8cb2c8df3",
                     "name": "⚽ 19:00 25/04 Alaves VS Mallorca BLV Táo Mèo",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2ba961db9edc",
                     "name": "⚽ 20:30 25/04 FSV Mainz 05 VS Bayern München BLV Táo Tàu",
@@ -771,22 +729,22 @@
                     ]
                 },
                 {
-                    "id": "ch-30ba67a1709d",
-                    "name": "⚽ 16:35 25/04 BLV Táo TàuA-LeagueWestern Sydney VS WanderersKXD0-0---'Melbourne VictoryBLV Táo TàuTrực tiếp BLV Táo Tàu09:35 25/04A-LeagueWestern Sydney WanderersKXD0-0---'Melbourne VictoryBLV Táo TàuTrực tiếp",
+                    "id": "ch-25b8cb2c8df3",
+                    "name": "⚽ 19:00 25/04 BLV Táo Mèo VS AlavesKXD0-0---'MallorcaBLV Táo MèoTrực tiếp BLV Táo Mèo12:00 25/04La LigaAlavesKXD0-0---'MallorcaBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/30ba67a1709d.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/25b8cb2c8df3.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-30ba67a1709d",
+                            "id": "src-25b8cb2c8df3",
                             "contents": [
                                 {
-                                    "id": "ct-30ba67a1709d",
+                                    "id": "ct-25b8cb2c8df3",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -796,7 +754,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/a-league.0HAPBeym4k/western-sydney-wanderers-vs-melbourne-victory.KDBgafsMfO"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/alaves-vs-mallorca.Np1i2kRK6N"
                                                         },
                                                         {
                                                             "key": "User-Agent",
