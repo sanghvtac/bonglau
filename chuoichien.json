@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:55 26/04/2026)",
+    "name": "Chuoi Chien TV (09:25 26/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-44d248edf5d2",
-                    "name": "⚽ 07:00 26/04 Sao Paulo VS Mirassol [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492239.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-44d248edf5d2",
-                            "contents": [
-                                {
-                                    "id": "ct-44d248edf5d2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-f649c73b2f6a",
                     "name": "⚽ 07:30 26/04 Austin VS Houston Dynamo [Nhà Đài - HD1]",
@@ -301,16 +259,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7560627d0d2a",
-                    "name": "⚽ 09:30 26/04 Seattle Sounders VS FC Dallas",
+                    "id": "ch-35141aab107d",
+                    "name": "⚽ 09:30 26/04 Seattle Sounders VS FC Dallas [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +273,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7560627d0d2a",
+                            "id": "src-35141aab107d",
                             "contents": [
                                 {
-                                    "id": "ct-7560627d0d2a",
+                                    "id": "ct-35141aab107d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490248/1490248"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -351,8 +303,8 @@
                     ]
                 },
                 {
-                    "id": "ch-abb14d899f7d",
-                    "name": "⚽ 09:30 26/04 Vancouver Whitecaps VS Colorado Rapids",
+                    "id": "ch-cb2c39c84587",
+                    "name": "⚽ 09:30 26/04 Vancouver Whitecaps VS Colorado Rapids [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -363,20 +315,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-abb14d899f7d",
+                            "id": "src-cb2c39c84587",
                             "contents": [
                                 {
-                                    "id": "ct-abb14d899f7d",
+                                    "id": "ct-cb2c39c84587",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490249/1490249"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -391,7 +343,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ae6d55cfe368",
                     "name": "⚽ 10:00 26/04 Club America VS Atlas",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1381137/1381137"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-11b90efd696d",
+                    "name": "⚽ 17:30 26/04 Fiorentina VS Sassuolo",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378196.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-11b90efd696d",
+                            "contents": [
+                                {
+                                    "id": "ct-11b90efd696d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1378196/1378196"
                                                         },
                                                         {
                                                             "key": "User-Agent",
