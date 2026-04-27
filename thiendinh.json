@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 28/04/2026)",
+    "name": "Thiên Đỉnh TV (01:55 28/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-68d69cc0ab5b",
-                    "name": "⚽ 23:30 27/04 Cagliari VS Atalanta BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/68d69cc0ab5b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-68d69cc0ab5b",
-                            "contents": [
-                                {
-                                    "id": "ct-68d69cc0ab5b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cagliari-vs-atalanta.E0loVpQLhi"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-3902e8bb9d85",
                     "name": "⚽ 01:45 28/04 Lazio VS Udinese BLV Táo Thiên Vương",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-4eb097502ba1",
                     "name": "⚽ 02:00 28/04 Manchester United VS Brentford BLV Ngọc Hoàng(A Cháo)",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-985d15d41b18",
                     "name": "⚽ 15:30 28/04 Arema FC VS Persebaya Surabaya BLV Táo Tàu",
@@ -645,22 +603,22 @@
                     ]
                 },
                 {
-                    "id": "ch-68d69cc0ab5b",
-                    "name": "⚽ 23:30 27/04 BLV Táo Mèo VS CagliariKXD0-0---'AtalantaBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 27/04Serie ACagliariKXD0-0---'AtalantaBLV Táo MèoTrực tiếp",
+                    "id": "ch-4eb097502ba1",
+                    "name": "⚽ 02:00 28/04 BLV Ngọc Hoàng(A Cháo) Manchester VS UnitedKXD0-0---'Brentford BLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 27/04Premier LeagueManchester UnitedKXD0-0---'Brentford BLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/68d69cc0ab5b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4eb097502ba1.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-68d69cc0ab5b",
+                            "id": "src-4eb097502ba1",
                             "contents": [
                                 {
-                                    "id": "ct-68d69cc0ab5b",
+                                    "id": "ct-4eb097502ba1",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +628,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cagliari-vs-atalanta.E0loVpQLhi"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-brentford.30emc3RiOt"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f6d39db28123",
+                    "name": "⚽ 02:00 28/04 BLV Táo Tàu Manchester VS UnitedKXD0-0---'Brentford BLV Táo TàuTrực tiếp BLV Táo Tàu19:00 27/04Premier LeagueManchester UnitedKXD0-0---'Brentford BLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f6d39db28123.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f6d39db28123",
+                            "contents": [
+                                {
+                                    "id": "ct-f6d39db28123",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-brentford.iMnD2YFWER"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0dc6250c9eef",
+                    "name": "⚽ 02:00 28/04 BLV Thần Thông Manchester VS UnitedKXD0-0---'Brentford BLV Thần ThôngTrực tiếp BLV Thần Thông19:00 27/04Premier LeagueManchester UnitedKXD0-0---'Brentford BLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0dc6250c9eef.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0dc6250c9eef",
+                            "contents": [
+                                {
+                                    "id": "ct-0dc6250c9eef",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-brentford.-WYnF22taK"
                                                         },
                                                         {
                                                             "key": "User-Agent",
