@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:55 27/04/2026)",
+    "name": "Thiên Đỉnh TV (21:25 27/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-552581af72af",
                     "name": "⚽ 21:30 27/04 Metaloglobus VS Unirea Slobozia BLV Thần Thông",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-68d69cc0ab5b",
                     "name": "⚽ 23:30 27/04 Cagliari VS Atalanta BLV Táo Mèo",
@@ -755,6 +755,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-lig.MWn1F0gGtp/alanyaspor-vs-samsunspor.UF0aXcW54W"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-552581af72af",
+                    "name": "⚽ 21:30 27/04 BLV Thần ThôngLiga IMetaloglobusKXD0-0---'Unirea VS SloboziaBLV Thần ThôngTrực tiếp BLV Thần Thông14:30 27/04Liga IMetaloglobusKXD0-0---'Unirea SloboziaBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/552581af72af.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-552581af72af",
+                            "contents": [
+                                {
+                                    "id": "ct-552581af72af",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-i.iPDy44lmq7/metaloglobus-vs-unirea-slobozia.9oZQMzKWhJ"
                                                         },
                                                         {
                                                             "key": "User-Agent",
