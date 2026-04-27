@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 28/04/2026)",
+    "name": "Chuoi Chien TV (06:55 28/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-635b3a070ae5",
-                    "name": "⚽ 07:00 28/04 Huracan VS Argentinos JRS",
+                    "id": "ch-05f624f18deb",
+                    "name": "⚽ 07:00 28/04 Huracan VS Argentinos JRS [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-635b3a070ae5",
+                            "id": "src-05f624f18deb",
                             "contents": [
                                 {
-                                    "id": "ct-635b3a070ae5",
+                                    "id": "ct-05f624f18deb",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492049/1492049"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ba604eb6e558",
                     "name": "⚽ 15:30 28/04 Arema FC VS Persebaya Surabaya",
