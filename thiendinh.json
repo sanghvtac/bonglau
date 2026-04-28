@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (19:25 28/04/2026)",
+    "name": "Thiên Đỉnh TV (19:55 28/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-6aae04ef9604",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1b453dbfca4b",
                     "name": "⚽ 22:00 28/04 FK Liepaja VS Grobiņa BLV Táo Thiên Vương",
@@ -712,6 +713,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/atletico-madrid-vs-arsenal.f52Dtnv1nz"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-6aae04ef9604",
+                    "name": "⚽ 20:00 28/04 BLV Thần ThôngSuper LeagueMelakaKXD0-0---'Johor Darul VS Takzim FCBLV Thần ThôngTrực tiếp BLV Thần Thông13:00 28/04Super LeagueMelakaKXD0-0---'Johor Darul Takzim FCBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6aae04ef9604.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-6aae04ef9604",
+                            "contents": [
+                                {
+                                    "id": "ct-6aae04ef9604",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/melaka-vs-johor-darul-takzim-fc.Pmk8YPVDqt"
                                                         },
                                                         {
                                                             "key": "User-Agent",
