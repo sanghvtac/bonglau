@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 28/04/2026)",
+    "name": "Chuoi Chien TV (17:25 28/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-c864eea71f40",
-                    "name": "⚽ 15:30 28/04 Arema FC VS Persebaya Surabaya [Anh Hột - FHD1]",
+                    "id": "ch-ba604eb6e558",
+                    "name": "⚽ 15:30 28/04 Arema FC VS Persebaya Surabaya",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c864eea71f40",
+                            "id": "src-ba604eb6e558",
                             "contents": [
                                 {
-                                    "id": "ct-c864eea71f40",
+                                    "id": "ct-ba604eb6e558",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1403825/1403825"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-579d818c7841",
                     "name": "⚽ 19:00 28/04 PSBS Biak Numfor VS Malut United",
