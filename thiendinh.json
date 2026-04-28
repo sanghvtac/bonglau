@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (14:55 28/04/2026)",
+    "name": "Thiên Đỉnh TV (15:25 28/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-985d15d41b18",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotau/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-48ed1a533c71",
                     "name": "⚽ 19:00 28/04 Luxembourg U17 VS Hungary U17 BLV Táo Thiên Vương",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/paris-saint-germain-vs-bayern-munchen.Yuwea-J0bn"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-985d15d41b18",
+                    "name": "⚽ 15:30 28/04 BLV Táo TàuLiga 1Arema VS FCKXD0-0---'Persebaya SurabayaBLV Táo TàuTrực tiếp BLV Táo Tàu08:30 28/04Liga 1Arema FCKXD0-0---'Persebaya SurabayaBLV Táo TàuTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/985d15d41b18.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-985d15d41b18",
+                            "contents": [
+                                {
+                                    "id": "ct-985d15d41b18",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/arema-fc-vs-persebaya-surabaya.h5D_H2CgpW"
                                                         },
                                                         {
                                                             "key": "User-Agent",
