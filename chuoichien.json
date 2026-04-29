@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:55 30/04/2026)",
+    "name": "Chuoi Chien TV (02:25 30/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-909d63d029c4",
-                    "name": "⚽ 02:15 30/04 Sporting CP VS Tondela",
+                    "id": "ch-8399e0339886",
+                    "name": "⚽ 02:15 30/04 Sporting CP VS Tondela [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-909d63d029c4",
+                            "id": "src-8399e0339886",
                             "contents": [
                                 {
-                                    "id": "ct-909d63d029c4",
+                                    "id": "ct-8399e0339886",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1396469/1396469"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b02d7bfab706",
                     "name": "⚽ 05:00 30/04 Caracas FC VS Racing Club",
