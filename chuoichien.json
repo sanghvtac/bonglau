@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 29/04/2026)",
+    "name": "Chuoi Chien TV (20:55 29/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-fa2fee64de87",
-                    "name": "⚽ 21:00 29/04 Neftchi VS Kokand-1912",
+                    "id": "ch-32934794272b",
+                    "name": "⚽ 21:00 29/04 Neftchi VS Kokand-1912 [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fa2fee64de87",
+                            "id": "src-32934794272b",
                             "contents": [
                                 {
-                                    "id": "ct-fa2fee64de87",
+                                    "id": "ct-32934794272b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1516044/1516044"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-5ff2e8a4f399",
-                    "name": "⚽ 21:00 29/04 Qizilqum VS Xorazm",
+                    "id": "ch-f3ff2b6decd5",
+                    "name": "⚽ 21:00 29/04 Qizilqum VS Xorazm [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5ff2e8a4f399",
+                            "id": "src-f3ff2b6decd5",
                             "contents": [
                                 {
-                                    "id": "ct-5ff2e8a4f399",
+                                    "id": "ct-f3ff2b6decd5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1516047/1516047"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b649e0720267",
                     "name": "⚽ 22:00 29/04 Bunyodkor VS Navbahor",
