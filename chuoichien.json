@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 30/04/2026)",
+    "name": "Chuoi Chien TV (08:55 30/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-c05e2b812e68",
-                    "name": "⚽ 07:00 30/04 Barcelona SC VS U. Catolica [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535266.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c05e2b812e68",
-                            "contents": [
-                                {
-                                    "id": "ct-c05e2b812e68",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-164d74121d9e",
                     "name": "⚽ 07:30 30/04 Cienciano VS Atletico-MG [Nhà Đài - HD1]",
@@ -259,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-16b655d1ce1d",
-                    "name": "⚽ 09:00 30/04 Universitario VS Puerto Rico W",
+                    "id": "ch-dc43efbbdfb7",
+                    "name": "⚽ 09:00 30/04 Universitario VS Puerto Rico W [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,10 +231,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-16b655d1ce1d",
+                            "id": "src-dc43efbbdfb7",
                             "contents": [
                                 {
-                                    "id": "ct-16b655d1ce1d",
+                                    "id": "ct-dc43efbbdfb7",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-0a80000c4fbb",
+                    "name": "⚽ 07:00 30/04 Barcelona SC VS U. Catolica",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535266.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0a80000c4fbb",
+                            "contents": [
+                                {
+                                    "id": "ct-0a80000c4fbb",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -292,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1535280/1535280"
+                                                            "value": "https://live20.chuoichientv.com/live/1535266/1535266"
                                                         },
                                                         {
                                                             "key": "User-Agent",
