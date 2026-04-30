@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 30/04/2026)",
+    "name": "Chuoi Chien TV (15:25 30/04/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -29,7 +29,49 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x2/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a1858fcc6747",
+                    "name": "⚽ 15:30 30/04 PSIM Yogyakarta VS Persita [Anh Vũ - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403830.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a1858fcc6747",
+                            "contents": [
+                                {
+                                    "id": "ct-a1858fcc6747",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhvuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -56,48 +98,6 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
-                {
-                    "id": "ch-a84962c62faa",
-                    "name": "⚽ 15:30 30/04 PSIM Yogyakarta VS Persita",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403830.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a84962c62faa",
-                            "contents": [
-                                {
-                                    "id": "ct-a84962c62faa",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403830/1403830"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-0b82fb915f2a",
                     "name": "⚽ 17:00 30/04 Hadiya Hosaena VS Mekelle Kenema",
