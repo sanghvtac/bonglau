@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 01/05/2026)",
+    "name": "Chuoi Chien TV (08:55 01/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -30,48 +30,6 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-c9ae90a216e3",
-                    "name": "⚽ 07:00 01/05 Corinthians VS CA Penarol [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535269.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c9ae90a216e3",
-                            "contents": [
-                                {
-                                    "id": "ct-c9ae90a216e3",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-6824cf1f8cc8",
-                    "name": "⚽ 09:00 01/05 Alianza Atletico VS Macara",
+                    "id": "ch-84c2103b573d",
+                    "name": "⚽ 09:00 01/05 Alianza Atletico VS Macara [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-6824cf1f8cc8",
+                            "id": "src-84c2103b573d",
                             "contents": [
                                 {
-                                    "id": "ct-6824cf1f8cc8",
+                                    "id": "ct-84c2103b573d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1535170/1535170"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-da639f47fb34",
-                    "name": "⚽ 09:00 01/05 Independiente Medellin VS Cusco",
+                    "id": "ch-13bfb3cb7857",
+                    "name": "⚽ 09:00 01/05 Independiente Medellin VS Cusco [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,10 +189,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-da639f47fb34",
+                            "id": "src-13bfb3cb7857",
                             "contents": [
                                 {
-                                    "id": "ct-da639f47fb34",
+                                    "id": "ct-13bfb3cb7857",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x6/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-70003971f924",
+                    "name": "⚽ 07:00 01/05 Corinthians VS CA Penarol",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1535269.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-70003971f924",
+                            "contents": [
+                                {
+                                    "id": "ct-70003971f924",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -250,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1535273/1535273"
+                                                            "value": "https://live20.chuoichientv.com/live/1535269/1535269"
                                                         },
                                                         {
                                                             "key": "User-Agent",
