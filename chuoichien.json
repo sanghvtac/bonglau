@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 01/05/2026)",
+    "name": "Chuoi Chien TV (10:55 01/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-84c2103b573d",
-                    "name": "⚽ 09:00 01/05 Alianza Atletico VS Macara [Nhà Đài - HD1]",
+                    "id": "ch-6824cf1f8cc8",
+                    "name": "⚽ 09:00 01/05 Alianza Atletico VS Macara",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-84c2103b573d",
+                            "id": "src-6824cf1f8cc8",
                             "contents": [
                                 {
-                                    "id": "ct-84c2103b573d",
+                                    "id": "ct-6824cf1f8cc8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1535170/1535170"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -51,8 +56,8 @@
                     ]
                 },
                 {
-                    "id": "ch-13bfb3cb7857",
-                    "name": "⚽ 09:00 01/05 Independiente Medellin VS Cusco [Nhà Đài - HD1]",
+                    "id": "ch-da639f47fb34",
+                    "name": "⚽ 09:00 01/05 Independiente Medellin VS Cusco",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -63,20 +68,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-13bfb3cb7857",
+                            "id": "src-da639f47fb34",
                             "contents": [
                                 {
-                                    "id": "ct-13bfb3cb7857",
+                                    "id": "ct-da639f47fb34",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x6/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1535273/1535273"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -91,13 +96,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-8ca938acfccb",
                     "name": "⚽ 14:30 01/05 Thailand U17 VS Vietnam U17",
