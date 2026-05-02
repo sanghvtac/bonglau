@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 02/05/2026)",
+    "name": "Chuoi Chien TV (23:55 02/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-bc9a79e0371d",
-                    "name": "⚽ 22:00 02/05 Paris Saint Germain VS Lorient [Anh Hột - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1387984.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-bc9a79e0371d",
-                            "contents": [
-                                {
-                                    "id": "ct-bc9a79e0371d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-89122da4540f",
                     "name": "⚽ 23:00 02/05 Como VS Napoli [Nhà Đài - HD1]",
@@ -224,6 +182,48 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
+                {
+                    "id": "ch-a13a597b81a5",
+                    "name": "⚽ 22:00 02/05 Paris Saint Germain VS Lorient",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1387984.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a13a597b81a5",
+                            "contents": [
+                                {
+                                    "id": "ct-a13a597b81a5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1387984/1387984"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-5c172bb6a6f3",
                     "name": "⚽ 00:00 03/05 Metz VS Monaco",
