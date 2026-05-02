@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 03/05/2026)",
+    "name": "Chuoi Chien TV (01:25 03/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-89122da4540f",
-                    "name": "⚽ 23:00 02/05 Como VS Napoli [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378206.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-89122da4540f",
-                            "contents": [
-                                {
-                                    "id": "ct-89122da4540f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-fcbf77f5fe2f",
                     "name": "⚽ 23:30 02/05 Arsenal VS Fulham [Anh Quất - FHD1]",
@@ -72,48 +30,6 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-20708ef89dae",
-                    "name": "⚽ 23:30 02/05 Bayer Leverkusen VS RB Leipzig [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1388587.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-20708ef89dae",
-                            "contents": [
-                                {
-                                    "id": "ct-20708ef89dae",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -217,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1b70b49abeb9",
-                    "name": "⚽ 01:00 03/05 Al-Hazm VS Al-Hilal Saudi FC",
+                    "id": "ch-7a303393e454",
+                    "name": "⚽ 01:00 03/05 Al-Hazm VS Al-Hilal Saudi FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1b70b49abeb9",
+                            "id": "src-7a303393e454",
                             "contents": [
                                 {
-                                    "id": "ct-1b70b49abeb9",
+                                    "id": "ct-7a303393e454",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1452162/1452162"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-945c5c017094",
-                    "name": "⚽ 01:45 03/05 Atalanta VS Genoa",
+                    "id": "ch-7584a52118ef",
+                    "name": "⚽ 01:45 03/05 Atalanta VS Genoa [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,10 +189,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-945c5c017094",
+                            "id": "src-7584a52118ef",
                             "contents": [
                                 {
-                                    "id": "ct-945c5c017094",
+                                    "id": "ct-7584a52118ef",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-5bf4557d7f80",
+                    "name": "⚽ 23:30 02/05 Bayer Leverkusen VS RB Leipzig",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1388587.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5bf4557d7f80",
+                            "contents": [
+                                {
+                                    "id": "ct-5bf4557d7f80",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -292,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1378204/1378204"
+                                                            "value": "https://live20.chuoichientv.com/live/1388587/1388587"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1490256/1490256"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0870128f1a21",
+                    "name": "⚽ 06:30 03/05 Atlanta United FC VS CF Montreal",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490257.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0870128f1a21",
+                            "contents": [
+                                {
+                                    "id": "ct-0870128f1a21",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1490257/1490257"
                                                         },
                                                         {
                                                             "key": "User-Agent",
