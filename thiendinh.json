@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:25 04/05/2026)",
+    "name": "Thiên Đỉnh TV (00:55 04/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-e92b5f7c1976",
-                    "name": "⚽ 22:30 03/05 Borussia Mönchengladbach VS Borussia Dortmund BLV Táo Tỉnh Táo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e92b5f7c1976.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e92b5f7c1976",
-                            "contents": [
-                                {
-                                    "id": "ct-e92b5f7c1976",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotinhtao/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/borussia-monchengladbach-vs-borussia-dortmund.kp_XCDgfMq"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-bc3910a67576",
                     "name": "⚽ 23:00 03/05 Juventus VS Hellas Verona BLV Táo Kinh Tế",
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-9b57d95f3287",
                     "name": "⚽ 01:00 04/05 Aston Villa VS Tottenham BLV Táo Kinh Tế",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taokinhte/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-74d29a9491ea",
                     "name": "⚽ 01:45 04/05 Inter VS Parma BLV Táo Thiên Vương",
@@ -1527,6 +1485,174 @@
                     ]
                 },
                 {
+                    "id": "ch-06e5b492e7eb",
+                    "name": "⚽ 02:00 07/05 Bayern München VS Paris Saint Germain BLV Táo Mèo",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/06e5b492e7eb.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-06e5b492e7eb",
+                            "contents": [
+                                {
+                                    "id": "ct-06e5b492e7eb",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/bayern-munchen-vs-paris-saint-germain.or4HRYuvCO"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-52f19d46b51b",
+                    "name": "⚽ 02:00 07/05 Bayern München VS Paris Saint Germain BLV Thần Thông",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/52f19d46b51b.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-52f19d46b51b",
+                            "contents": [
+                                {
+                                    "id": "ct-52f19d46b51b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/bayern-munchen-vs-paris-saint-germain.DO5JKFNiHZ"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-369bfdc0cd74",
+                    "name": "⚽ 02:00 07/05 Bayern München VS Paris Saint Germain BLV Táo Kinh Tế",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/369bfdc0cd74.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-369bfdc0cd74",
+                            "contents": [
+                                {
+                                    "id": "ct-369bfdc0cd74",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/bayern-munchen-vs-paris-saint-germain.8F6SYK7RMg"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9b57d95f3287",
+                    "name": "⚽ 01:00 04/05 BLV Táo Kinh Tế Aston VS VillaKXD0-0---'TottenhamBLV Táo Kinh TếTrực tiếp BLV Táo Kinh Tế18:00 03/05Premier LeagueAston VillaKXD0-0---'TottenhamBLV Táo Kinh TếTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9b57d95f3287.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9b57d95f3287",
+                            "contents": [
+                                {
+                                    "id": "ct-9b57d95f3287",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/aston-villa-vs-tottenham.aImDSzoG3R"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-bc3910a67576",
                     "name": "⚽ 23:00 03/05 BLV Táo Kinh Tế JuventusKXD0-0---' VS Hellas VeronaBLV Táo Kinh TếTrực tiếp BLV Táo Kinh Tế16:00 03/05Serie A JuventusKXD0-0---' Hellas VeronaBLV Táo Kinh TếTrực tiếp",
                     "type": "single",
@@ -1569,48 +1695,6 @@
                     ]
                 },
                 {
-                    "id": "ch-e92b5f7c1976",
-                    "name": "⚽ 22:30 03/05 BLV Táo Tỉnh Táo Borussia MönchengladbachKXD0-0---'Borussia VS Dortmund BLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo15:30 03/05BundesligaBorussia MönchengladbachKXD0-0---'Borussia Dortmund BLV Táo Tỉnh TáoTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e92b5f7c1976.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e92b5f7c1976",
-                            "contents": [
-                                {
-                                    "id": "ct-e92b5f7c1976",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/borussia-monchengladbach-vs-borussia-dortmund.kp_XCDgfMq"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-f22ec0162723",
                     "name": "⚽ 23:30 03/05 BLV Táo Mèo Real VS BetisKXD0-0---'OviedoBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 03/05La LigaReal BetisKXD0-0---'OviedoBLV Táo MèoTrực tiếp",
                     "type": "single",
@@ -1637,6 +1721,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-betis-vs-oviedo.sUVR_gZ-CW"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8a4c38a41ed8",
+                    "name": "⚽ 01:00 04/05 BLV Thần ThôngPro LeagueAl-Qadisiyah VS FCKXD0-0---'Al-NassrBLV Thần ThôngTrực tiếp BLV Thần Thông18:00 03/05Pro LeagueAl-Qadisiyah FCKXD0-0---'Al-NassrBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8a4c38a41ed8.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-8a4c38a41ed8",
+                            "contents": [
+                                {
+                                    "id": "ct-8a4c38a41ed8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/al-qadisiyah-fc-vs-al-nassr.rEyPIFaoTg"
                                                         },
                                                         {
                                                             "key": "User-Agent",
