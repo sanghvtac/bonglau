@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 03/05/2026)",
+    "name": "Thiên Đỉnh TV (22:55 03/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b1c35080d194",
-                    "name": "⚽ 20:30 03/05 FC St. Pauli VS FSV Mainz 05 BLV Táo Tỉnh Táo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b1c35080d194.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b1c35080d194",
-                            "contents": [
-                                {
-                                    "id": "ct-b1c35080d194",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotinhtao/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/fc-st-pauli-vs-fsv-mainz-05.GZ1EIzcxsy"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-bd4f32cf8840",
                     "name": "⚽ 21:30 03/05 Manchester United VS Liverpool BLV Thần Thông",
@@ -175,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-bc3910a67576",
                     "name": "⚽ 23:00 03/05 Juventus VS Hellas Verona BLV Táo Kinh Tế",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taokinhte/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f22ec0162723",
                     "name": "⚽ 23:30 03/05 Real Betis VS Oviedo BLV Táo Mèo",
@@ -897,22 +855,22 @@
                     ]
                 },
                 {
-                    "id": "ch-b1c35080d194",
-                    "name": "⚽ 20:30 03/05 BLV Táo Tỉnh Táo FC St. VS PauliKXD0-0---'FSV Mainz 05BLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo13:30 03/05BundesligaFC St. PauliKXD0-0---'FSV Mainz 05BLV Táo Tỉnh TáoTrực tiếp",
+                    "id": "ch-bc3910a67576",
+                    "name": "⚽ 23:00 03/05 BLV Táo Kinh Tế JuventusKXD0-0---' VS Hellas VeronaBLV Táo Kinh TếTrực tiếp BLV Táo Kinh Tế16:00 03/05Serie A JuventusKXD0-0---' Hellas VeronaBLV Táo Kinh TếTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b1c35080d194.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bc3910a67576.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b1c35080d194",
+                            "id": "src-bc3910a67576",
                             "contents": [
                                 {
-                                    "id": "ct-b1c35080d194",
+                                    "id": "ct-bc3910a67576",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -922,7 +880,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/fc-st-pauli-vs-fsv-mainz-05.GZ1EIzcxsy"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/juventus-vs-hellas-verona.Y7IhF3p8b3"
                                                         },
                                                         {
                                                             "key": "User-Agent",
