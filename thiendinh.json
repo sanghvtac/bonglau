@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 04/05/2026)",
+    "name": "Thiên Đỉnh TV (01:55 04/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-f22ec0162723",
-                    "name": "⚽ 23:30 03/05 Real Betis VS Oviedo BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f22ec0162723.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f22ec0162723",
-                            "contents": [
-                                {
-                                    "id": "ct-f22ec0162723",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-betis-vs-oviedo.sUVR_gZ-CW"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9b57d95f3287",
                     "name": "⚽ 01:00 04/05 Aston Villa VS Tottenham BLV Táo Kinh Tế",
@@ -175,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-acecc897907f",
                     "name": "⚽ 02:00 04/05 Espanyol VS Real Madrid BLV Táo Mèo",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c295fc31e795",
                     "name": "⚽ 18:30 04/05 Vietnam U17 VS China PR U17 W BLV Táo Kinh Tế",
@@ -1653,22 +1611,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f22ec0162723",
-                    "name": "⚽ 23:30 03/05 BLV Táo Mèo Real VS BetisKXD0-0---'OviedoBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 03/05La LigaReal BetisKXD0-0---'OviedoBLV Táo MèoTrực tiếp",
+                    "id": "ch-acecc897907f",
+                    "name": "⚽ 02:00 04/05 BLV Táo Mèo EspanyolKXD0-0---'Real VS MadridBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 03/05La LigaEspanyolKXD0-0---'Real MadridBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f22ec0162723.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/acecc897907f.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f22ec0162723",
+                            "id": "src-acecc897907f",
                             "contents": [
                                 {
-                                    "id": "ct-f22ec0162723",
+                                    "id": "ct-acecc897907f",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1678,7 +1636,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-betis-vs-oviedo.sUVR_gZ-CW"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/espanyol-vs-real-madrid.t1_VImrssu"
                                                         },
                                                         {
                                                             "key": "User-Agent",
