@@ -29,15 +29,15 @@ jobs:
           key: ${{ runner.os }}-pip-playwright-pillow
           restore-keys: ${{ runner.os }}-pip-
 
+        
       # Cache key dùng string cố định thay vì hashFiles('requirements.txt')
       # vì repo không có file đó → hash luôn rỗng → không tự invalidate được.
-      # Khi muốn force cài lại browser mới: đổi "v1" thành "v2", "v3"...
       - name: Cache Playwright browsers
         id: playwright-cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-chromium-v1
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json', '**/poetry.lock') }}-chromium
           restore-keys: ${{ runner.os }}-playwright-chromium-
 
       - name: Install dependencies
