@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:55 03/05/2026)",
+    "name": "Chuoi Chien TV (08:25 03/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -511,16 +511,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-478f9cc8f1a6",
-                    "name": "⚽ 08:30 03/05 San Diego VS Los Angeles FC",
+                    "id": "ch-5510ba590464",
+                    "name": "⚽ 08:30 03/05 San Diego VS Los Angeles FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -531,20 +525,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-478f9cc8f1a6",
+                            "id": "src-5510ba590464",
                             "contents": [
                                 {
-                                    "id": "ct-478f9cc8f1a6",
+                                    "id": "ct-5510ba590464",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490262/1490262"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -559,7 +553,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1fca7d0b6252",
                     "name": "⚽ 09:30 03/05 Los Angeles Galaxy VS Vancouver Whitecaps",
