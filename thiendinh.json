@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 04/05/2026)",
+    "name": "Thiên Đỉnh TV (23:25 04/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-df0ee2c29750",
-                    "name": "⚽ 21:00 04/05 Chelsea VS Nottingham Forest BLV Ngọc Hoàng(A Cháo)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/df0ee2c29750.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-df0ee2c29750",
-                            "contents": [
-                                {
-                                    "id": "ct-df0ee2c29750",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-nottingham-forest.tFOTbgmMZq"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-c4954c9fb456",
                     "name": "⚽ 22:00 04/05 Ruh Lviv VS Zorya Luhansk BLV Táo Kinh Tế",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-60f6d648e3c8",
                     "name": "⚽ 23:30 04/05 Cremonese VS Lazio BLV Táo Tỉnh Táo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taotinhtao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-948cda48b342",
                     "name": "⚽ 01:45 05/05 AS Roma VS Fiorentina BLV Táo Thiên Vương",
@@ -1233,48 +1191,6 @@
                     ]
                 },
                 {
-                    "id": "ch-df0ee2c29750",
-                    "name": "⚽ 21:00 04/05 BLV Ngọc Hoàng(A Cháo) ChelseaKXD0-0---'Nottingham VS ForestBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)14:00 04/05Premier LeagueChelseaKXD0-0---'Nottingham ForestBLV Ngọc Hoàng(A Cháo)Trực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/df0ee2c29750.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-df0ee2c29750",
-                            "contents": [
-                                {
-                                    "id": "ct-df0ee2c29750",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-nottingham-forest.tFOTbgmMZq"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-c4954c9fb456",
                     "name": "⚽ 22:00 04/05 BLV Táo Kinh Tế Ruh VS LvivKXD0-0---'Zorya LuhanskBLV Táo Kinh TếTrực tiếp BLV Táo Kinh Tế15:00 04/05Premier LeagueRuh LvivKXD0-0---'Zorya LuhanskBLV Táo Kinh TếTrực tiếp",
                     "type": "single",
@@ -1301,6 +1217,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/ruh-lviv-vs-zorya-luhansk.FQ7J6sFBb2"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-60f6d648e3c8",
+                    "name": "⚽ 23:30 04/05 BLV Táo Tỉnh Táo VS CremoneseKXD0-0---'LazioBLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo16:30 04/05Serie ACremoneseKXD0-0---'LazioBLV Táo Tỉnh TáoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/60f6d648e3c8.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-60f6d648e3c8",
+                            "contents": [
+                                {
+                                    "id": "ct-60f6d648e3c8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cremonese-vs-lazio.nJufVaCAnY"
                                                         },
                                                         {
                                                             "key": "User-Agent",
