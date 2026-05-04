@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:55 04/05/2026)",
+    "name": "Chuoi Chien TV (18:25 04/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-1c9810fdff8f",
-                    "name": "⚽ 18:30 04/05 Albirex Niigata S VS Young Lions",
+                    "id": "ch-24dd906cf185",
+                    "name": "⚽ 18:30 04/05 Albirex Niigata S VS Young Lions [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1c9810fdff8f",
+                            "id": "src-24dd906cf185",
                             "contents": [
                                 {
-                                    "id": "ct-1c9810fdff8f",
+                                    "id": "ct-24dd906cf185",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1421871/1421871"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-64a05fba60b4",
-                    "name": "⚽ 18:30 04/05 Vietnam U17 VS China PR U17",
+                    "id": "ch-c79674c27f41",
+                    "name": "⚽ 18:30 04/05 Vietnam U17 VS China PR U17 [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-64a05fba60b4",
+                            "id": "src-c79674c27f41",
                             "contents": [
                                 {
-                                    "id": "ct-64a05fba60b4",
+                                    "id": "ct-c79674c27f41",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1543549/1543549"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e1341c1d360c",
                     "name": "⚽ 19:00 04/05 Persijap VS Persija",
