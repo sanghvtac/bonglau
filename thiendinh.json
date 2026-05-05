@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (00:55 06/05/2026)",
+    "name": "Thiên Đỉnh TV (01:25 06/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-05162396bcdb",
-                    "name": "⚽ 23:00 05/05 Japan U17 VS Qatar U17 BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/05162396bcdb.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-05162396bcdb",
-                            "contents": [
-                                {
-                                    "id": "ct-05162396bcdb",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/japan-u17-vs-qatar-u17.5M3rJNep9U"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-c094265e81dd",
                     "name": "⚽ 23:30 05/05 Indonesia U17 VS China PR U17 BLV Thần Thông",
@@ -175,13 +133,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-d4a990d64044",
                     "name": "⚽ 02:00 06/05 Arsenal VS Atletico Madrid BLV Ngọc Hoàng(A Cháo)",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://w9lt1225.edgemaxcdn.org/live/tdtv_blv_ngochoang/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-933968e2d4c3",
                     "name": "⚽ 02:00 06/05 Arsenal VS Atletico Madrid BLV Thần Thông",
@@ -813,22 +771,22 @@
                     ]
                 },
                 {
-                    "id": "ch-05162396bcdb",
-                    "name": "⚽ 23:00 05/05 BLV Táo MèoAFC U17 Asian VS Japan U17KXD0-0---'Qatar U17BLV Táo MèoTrực tiếp BLV Táo Mèo16:00 05/05AFC U17 Asian CupJapan U17KXD0-0---'Qatar U17BLV Táo MèoTrực tiếp",
+                    "id": "ch-d4a990d64044",
+                    "name": "⚽ 02:00 06/05 BLV Ngọc Hoàng(A Cháo) ArsenalKXD0-0---'Atletico VS MadridBLV Ngọc Hoàng(A Cháo)Trực tiếp BLV Ngọc Hoàng(A Cháo)19:00 05/05UEFA Champions LeagueArsenalKXD0-0---'Atletico MadridBLV Ngọc Hoàng(A Cháo)Trực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/05162396bcdb.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d4a990d64044.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-05162396bcdb",
+                            "id": "src-d4a990d64044",
                             "contents": [
                                 {
-                                    "id": "ct-05162396bcdb",
+                                    "id": "ct-d4a990d64044",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -838,7 +796,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/japan-u17-vs-qatar-u17.5M3rJNep9U"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/arsenal-vs-atletico-madrid.B0BGTa_wKe"
                                                         },
                                                         {
                                                             "key": "User-Agent",
