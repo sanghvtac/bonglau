@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 06/05/2026)",
+    "name": "Chuoi Chien TV (06:55 06/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7126c13e767f",
-                    "name": "⚽ 07:00 06/05 Barcelona SC VS Boca Juniors",
+                    "id": "ch-b6c60c8d9fda",
+                    "name": "⚽ 07:00 06/05 Barcelona SC VS Boca Juniors [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7126c13e767f",
+                            "id": "src-b6c60c8d9fda",
                             "contents": [
                                 {
-                                    "id": "ct-7126c13e767f",
+                                    "id": "ct-b6c60c8d9fda",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1535283/1535283"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-70e887ae2ce6",
-                    "name": "⚽ 07:00 06/05 UCV VS Independiente del Valle",
+                    "id": "ch-4c3329bcb2e4",
+                    "name": "⚽ 07:00 06/05 UCV VS Independiente del Valle [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-70e887ae2ce6",
+                            "id": "src-4c3329bcb2e4",
                             "contents": [
                                 {
-                                    "id": "ct-70e887ae2ce6",
+                                    "id": "ct-4c3329bcb2e4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1535297/1535297"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e948eec708f4",
                     "name": "⚽ 07:30 06/05 Puerto Cabello VS Cienciano",
