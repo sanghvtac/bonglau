@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (03:25 06/05/2026)",
+    "name": "Chuoi Chien TV (03:55 06/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-fd8ccf23d681",
-                    "name": "⚽ 02:00 06/05 Arsenal VS Atletico Madrid [Anh Sói - FHD1]",
+                    "id": "ch-047500190021",
+                    "name": "⚽ 02:00 06/05 Arsenal VS Atletico Madrid",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fd8ccf23d681",
+                            "id": "src-047500190021",
                             "contents": [
                                 {
-                                    "id": "ct-fd8ccf23d681",
+                                    "id": "ct-047500190021",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1540843/1540843"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-366bca443baa",
                     "name": "⚽ 05:00 06/05 Deportivo Riestra VS Gremio",
