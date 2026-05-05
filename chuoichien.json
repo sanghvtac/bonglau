@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 05/05/2026)",
+    "name": "Chuoi Chien TV (22:55 05/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-21295de2ecf6",
-                    "name": "⚽ 23:00 05/05 Japan U17 VS Qatar U17",
+                    "id": "ch-c48fe0805dc1",
+                    "name": "⚽ 23:00 05/05 Japan U17 VS Qatar U17 [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-21295de2ecf6",
+                            "id": "src-c48fe0805dc1",
                             "contents": [
                                 {
-                                    "id": "ct-21295de2ecf6",
+                                    "id": "ct-c48fe0805dc1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1523008/1523008"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-82e72a6694a4",
                     "name": "⚽ 23:30 05/05 Indonesia U17 VS China PR U17",

@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 05/05/2026)",
+    "name": "Thiên Đỉnh TV (22:55 05/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-05162396bcdb",
                     "name": "⚽ 23:00 05/05 Japan U17 VS Qatar U17 BLV Táo Mèo",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c094265e81dd",
                     "name": "⚽ 23:30 05/05 Indonesia U17 VS China PR U17 BLV Thần Thông",
@@ -839,6 +839,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/uefa-champions-league-1758631510260/bayern-munchen-vs-paris-saint-germain.8F6SYK7RMg"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-05162396bcdb",
+                    "name": "⚽ 23:00 05/05 BLV Táo MèoAFC U17 Asian VS Japan U17KXD0-0---'Qatar U17BLV Táo MèoTrực tiếp BLV Táo Mèo16:00 05/05AFC U17 Asian CupJapan U17KXD0-0---'Qatar U17BLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/05162396bcdb.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-05162396bcdb",
+                            "contents": [
+                                {
+                                    "id": "ct-05162396bcdb",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/japan-u17-vs-qatar-u17.5M3rJNep9U"
                                                         },
                                                         {
                                                             "key": "User-Agent",
