@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:25 05/05/2026)",
+    "name": "Chuoi Chien TV (11:55 05/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-a917425f0903",
-                    "name": "⚽ 12:00 05/05 Bucheon FC 1995 VS Jeju United FC",
+                    "id": "ch-8665291a6e7a",
+                    "name": "⚽ 12:00 05/05 Bucheon FC 1995 VS Jeju United FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a917425f0903",
+                            "id": "src-8665291a6e7a",
                             "contents": [
                                 {
-                                    "id": "ct-a917425f0903",
+                                    "id": "ct-8665291a6e7a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506962/1506962"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-959eb177ac25",
-                    "name": "⚽ 12:00 05/05 Jeonbuk Motors VS Gwangju FC",
+                    "id": "ch-65df4b4ac774",
+                    "name": "⚽ 12:00 05/05 Jeonbuk Motors VS Gwangju FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-959eb177ac25",
+                            "id": "src-65df4b4ac774",
                             "contents": [
                                 {
-                                    "id": "ct-959eb177ac25",
+                                    "id": "ct-65df4b4ac774",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m6x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506963/1506963"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ec2c88165fd9",
                     "name": "⚽ 14:30 05/05 Daejeon Citizen VS Incheon United",
