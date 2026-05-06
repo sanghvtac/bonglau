@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 06/05/2026)",
+    "name": "Thiên Đỉnh TV (22:55 06/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-0f693ba18edd",
                     "name": "⚽ 23:00 06/05 Australia U17 VS India U17 BLV Thần Thông",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.zlylive.com/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-de5bcfdcadcc",
                     "name": "⚽ 00:00 07/05 Yemen U17 VS Vietnam U17 BLV Táo Thiên Vương",
@@ -671,6 +671,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/league.i2AxlII1ay/al-hussein-vs-al-faisaly.7N69rMKDJt"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0f693ba18edd",
+                    "name": "⚽ 23:00 06/05 BLV Thần ThôngAFC U17 Asian VS Australia U17KXD0-0---'India U17BLV Thần ThôngTrực tiếp BLV Thần Thông16:00 06/05AFC U17 Asian CupAustralia U17KXD0-0---'India U17BLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0f693ba18edd.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0f693ba18edd",
+                            "contents": [
+                                {
+                                    "id": "ct-0f693ba18edd",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/australia-u17-vs-india-u17.cWO-po1zjL"
                                                         },
                                                         {
                                                             "key": "User-Agent",
