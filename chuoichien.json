@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:55 08/05/2026)",
+    "name": "Chuoi Chien TV (14:25 08/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-44df76a499cf",
-                    "name": "⚽ 14:30 08/05 Japan U17 W VS Australia U17 W",
+                    "id": "ch-acefd5d855f1",
+                    "name": "⚽ 14:30 08/05 Japan U17 W VS Australia U17 W [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-44df76a499cf",
+                            "id": "src-acefd5d855f1",
                             "contents": [
                                 {
-                                    "id": "ct-44df76a499cf",
+                                    "id": "ct-acefd5d855f1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1543541/1543541"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-6e8942ebbf22",
-                    "name": "⚽ 14:30 08/05 India U17 VS Lebanon U17",
+                    "id": "ch-2e087d714205",
+                    "name": "⚽ 14:30 08/05 India U17 VS Lebanon U17 [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-6e8942ebbf22",
+                            "id": "src-2e087d714205",
                             "contents": [
                                 {
-                                    "id": "ct-6e8942ebbf22",
+                                    "id": "ct-2e087d714205",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1543554/1543554"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-14ecef488c1e",
                     "name": "⚽ 15:30 08/05 Semen Padang VS Persik Kediri",
