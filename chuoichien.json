@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 08/05/2026)",
+    "name": "Chuoi Chien TV (18:55 08/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-c15ac7c5f69c",
-                    "name": "⚽ 17:00 08/05 Hồ Chí Minh II VS Quy Nhơn FC [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518147.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c15ac7c5f69c",
-                            "contents": [
-                                {
-                                    "id": "ct-c15ac7c5f69c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-644c6c75fb53",
                     "name": "⚽ 18:00 08/05 Da Nang VS Becamex Hồ Chí Minh [Anh Hột - FHD1]",
@@ -175,40 +133,34 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-72f5323e3cde",
-                    "name": "⚽ 18:30 08/05 SC Delhi VS Odisha",
+                    "id": "ch-bdd53ed39d36",
+                    "name": "⚽ 19:00 08/05 PSBS Biak Numfor VS Dewa United [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1521302.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403842.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-72f5323e3cde",
+                            "id": "src-bdd53ed39d36",
                             "contents": [
                                 {
-                                    "id": "ct-72f5323e3cde",
+                                    "id": "ct-bdd53ed39d36",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1521302/1521302"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,24 +175,30 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-23f64f2b76c1",
-                    "name": "⚽ 19:00 08/05 PSBS Biak Numfor VS Dewa United",
+                    "id": "ch-bd8b28fc96fc",
+                    "name": "⚽ 17:00 08/05 Hồ Chí Minh II VS Quy Nhơn FC",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403842.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518147.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-23f64f2b76c1",
+                            "id": "src-bd8b28fc96fc",
                             "contents": [
                                 {
-                                    "id": "ct-23f64f2b76c1",
+                                    "id": "ct-bd8b28fc96fc",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -250,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403842/1403842"
+                                                            "value": "https://live20.chuoichientv.com/live/1518147/1518147"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1531541/1531541"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-201313e7847c",
+                    "name": "⚽ 22:00 08/05 Chayka VS Chernomorets",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1542419.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-201313e7847c",
+                            "contents": [
+                                {
+                                    "id": "ct-201313e7847c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1542419/1542419"
                                                         },
                                                         {
                                                             "key": "User-Agent",
