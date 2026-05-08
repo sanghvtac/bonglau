@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (21:25 08/05/2026)",
+    "name": "Thiên Đỉnh TV (21:55 08/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -91,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-fb4e48f3618a",
                     "name": "⚽ 22:00 08/05 Ilves VS AC Oulu BLV Thần Thông",
@@ -119,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f7246da71183",
                     "name": "⚽ 23:30 08/05 SC Paderborn 07 VS Karlsruher SC BLV Táo Thiên Vương",
@@ -1217,6 +1217,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/super-league.LiecRmJhZc/pdrm-vs-penang.eHhsw3s50S"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-fb4e48f3618a",
+                    "name": "⚽ 22:00 08/05 BLV Thần ThôngVeikkausliigaIlvesKXD0-0---'AC VS OuluBLV Thần ThôngTrực tiếp BLV Thần Thông15:00 08/05VeikkausliigaIlvesKXD0-0---'AC OuluBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fb4e48f3618a.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fb4e48f3618a",
+                            "contents": [
+                                {
+                                    "id": "ct-fb4e48f3618a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/veikkausliiga.QCK_AA41ul/ilves-vs-ac-oulu.bCENlxiCVj"
                                                         },
                                                         {
                                                             "key": "User-Agent",
