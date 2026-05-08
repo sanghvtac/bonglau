@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (17:25 08/05/2026)",
+    "name": "Thiên Đỉnh TV (17:55 08/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-c2cdbc296243",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fbaf71f620f0",
                     "name": "⚽ 20:00 08/05 Pdrm VS Penang BLV Táo Kinh Tế(A Tích)",
@@ -418,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/levante-vs-osasuna.QfV3EcHnz6"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-c2cdbc296243",
+                    "name": "⚽ 18:00 08/05 BLV Táo MèoV.League 1Da VS NangKXD0-0---'Binh DuongBLV Táo MèoTrực tiếp BLV Táo Mèo11:00 08/05V.League 1Da NangKXD0-0---'Binh DuongBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c2cdbc296243.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-c2cdbc296243",
+                            "contents": [
+                                {
+                                    "id": "ct-c2cdbc296243",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/da-nang-vs-binh-duong.iLBA5WEGI1"
                                                         },
                                                         {
                                                             "key": "User-Agent",
