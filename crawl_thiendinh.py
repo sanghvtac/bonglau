@@ -171,12 +171,23 @@ async def main():
 
         try:
             # ── Bước 1: Lấy danh sách trận ──
-            await page.goto(TARGET_URL, wait_until="domcontentloaded")
-            for _ in range(3):
+            # Dùng networkidle thay domcontentloaded để chờ JS render xong
+            await page.goto(TARGET_URL, wait_until="networkidle", timeout=30000)
+
+            # Chờ thêm để JS render danh sách trận
+            await asyncio.sleep(3)
+
+            # Scroll để trigger lazy-load
+            for _ in range(5):
                 await page.mouse.wheel(0, 2000)
                 await asyncio.sleep(1)
 
+            # Scroll về đầu trang rồi chờ thêm
+            await page.mouse.wheel(0, -10000)
+            await asyncio.sleep(2)
+
             elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
+            print(f"[DEBUG] Tìm thấy {len(elements)} elements")
             match_data = []
 
             for el in elements:
