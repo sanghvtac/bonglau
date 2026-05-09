@@ -10,7 +10,7 @@ from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
 
-TARGET_URL    = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
+TARGET_URL    = "https://sv2.thiendinh2.live/lich-thi-dau/bong-da?by=state&value=live"
 COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
@@ -188,11 +188,15 @@ async def main():
 
             elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
             print(f"[DEBUG] Tìm thấy {len(elements)} elements")
+
+            # Debug: in 3000 ký tự đầu HTML trang để tìm selector đúng
+            html = await page.content()
+            print("[DEBUG HTML]", html[:3000])
             match_data = []
 
             for el in elements:
                 url = await el.get_attribute("href")
-                full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
+                full_url = "https://sv2.thiendinh2.live" + url if url.startswith('/') else url
                 raw_text = (await el.text_content()).strip()
 
                 # Lấy tên 2 đội từ span.truncate — đây là thẻ chứa tên đội theo HTML thực tế
