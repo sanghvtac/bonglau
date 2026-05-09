@@ -52,6 +52,10 @@ jobs:
         continue-on-error: true
         run: python crawl_thiendinh.py
 
+       - name: Run HoiQuan crawler
+        continue-on-error: true
+        run: python crawl_hoiquan.py
+        
       - name: Run ChuoiChien crawler
         continue-on-error: true
         run: python crawl_chuoichien.py
@@ -62,6 +66,7 @@ jobs:
           commit_message: "chore: auto-update ${{ github.run_id }}"
           file_pattern: >-
             thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt
+            hoiquan.json hoiquan_iptv.txt hoiquan_vlc.txt
             chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt
             thumbs/*.png
           commit_user_name: "github-actions[bot]"
