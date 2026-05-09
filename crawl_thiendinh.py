@@ -10,7 +10,7 @@ from io import BytesIO
 from PIL import Image
 from playwright.async_api import async_playwright
 
-TARGET_URL    = "https://sv2.thiendinh1.live/lich-thi-dau/bong-da?by=state&value=live"
+TARGET_URL    = "https://sv1.thiendinh.live/lich-thi-dau/bong-da?by=state&value=live"
 COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
@@ -181,7 +181,7 @@ async def main():
 
             for el in elements:
                 url = await el.get_attribute("href")
-                full_url = "https://sv2.thiendinh1.live" + url if url.startswith('/') else url
+                full_url = "https://sv1.thiendinh.live" + url if url.startswith('/') else url
                 raw_text = (await el.text_content()).strip()
 
                 # Lấy tên 2 đội từ span.truncate — đây là thẻ chứa tên đội theo HTML thực tế
@@ -204,8 +204,27 @@ async def main():
                 )
 
                 imgs = await el.query_selector_all("img")
-                logos = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in imgs]
-                logos = [l for l in logos if l and "http" in l and "30aaqin.png" not in l]
+                all_srcs = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in imgs]
+
+                # Chỉ giữ ảnh logo đội bóng thật — lọc theo domain nguồn
+                # Logo đội thường từ: media.api-sports.io, upload.wikimedia.org, cdn.*
+                # Loại bỏ: 30aaqin.png (placeholder), postimg (BLV), gstatic (Google icon),
+                #           imgur (icon rác), i.imgur, flagcdn (cờ), thiendinh domain chính nó
+                LOGO_BLACKLIST_DOMAINS = (
+                    "30aaqin.png", "postimg", "gstatic", "imgur",
+                    "flagcdn", "thiendinh", "i.postimg"
+                )
+                logos = [
+                    l for l in all_srcs
+                    if l and l.startswith("http")
+                    and not any(d in l for d in LOGO_BLACKLIST_DOMAINS)
+                ]
+
+                # DEBUG tạm: in khi trận Live để xác nhận logo đúng chưa
+                if is_live:
+                    print(f"[DEBUG LIVE] {full_title}")
+                    print(f"  → All srcs: {all_srcs}")
+                    print(f"  → Logos sau lọc: {logos}")
 
                 match_data.append({
                     "title":        full_title,
