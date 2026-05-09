@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:26 09/05/2026)",
+    "name": "Chuoi Chien TV (18:56 09/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-8aef239363be",
-                    "name": "⚽ 16:40 09/05 Sydney VS Newcastle Jets [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1543791.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-8aef239363be",
-                            "contents": [
-                                {
-                                    "id": "ct-8aef239363be",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-946f4f9cec13",
                     "name": "⚽ 17:00 09/05 Daejeon Citizen VS Pohang Steelers [Nhà Đài - HD1]",
@@ -301,16 +259,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ae377aae79a1",
-                    "name": "⚽ 18:30 09/05 Middlesbrough VS Southampton",
+                    "id": "ch-4c5dc723a249",
+                    "name": "⚽ 18:30 09/05 Middlesbrough VS Southampton [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +273,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ae377aae79a1",
+                            "id": "src-4c5dc723a249",
                             "contents": [
                                 {
-                                    "id": "ct-ae377aae79a1",
+                                    "id": "ct-4c5dc723a249",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x6/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1543787/1543787"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -351,8 +303,8 @@
                     ]
                 },
                 {
-                    "id": "ch-8828b3d8da62",
-                    "name": "⚽ 18:35 09/05 Shanghai Shenhua VS Chongqing Tongliang Long",
+                    "id": "ch-ebc2da8df8f2",
+                    "name": "⚽ 18:35 09/05 Shanghai Shenhua VS Chongqing Tongliang Long [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -363,20 +315,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8828b3d8da62",
+                            "id": "src-ebc2da8df8f2",
                             "contents": [
                                 {
-                                    "id": "ct-8828b3d8da62",
+                                    "id": "ct-ebc2da8df8f2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m4x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1523139/1523139"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -391,7 +343,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-72a391f2f305",
                     "name": "⚽ 19:00 09/05 Elche VS Alaves",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1379322/1379322"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-588de3229e12",
+                    "name": "⚽ 21:00 09/05 Sunderland VS Manchester United",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379326.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-588de3229e12",
+                            "contents": [
+                                {
+                                    "id": "ct-588de3229e12",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1379326/1379326"
                                                         },
                                                         {
                                                             "key": "User-Agent",
