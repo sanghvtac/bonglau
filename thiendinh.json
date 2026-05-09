@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 10/05/2026)",
+    "name": "Thiên Đỉnh TV (01:55 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-01d89c060876",
-                    "name": "⚽ 23:30 09/05 VfL Wolfsburg VS Bayern München BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/01d89c060876.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-01d89c060876",
-                            "contents": [
-                                {
-                                    "id": "ct-01d89c060876",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/vfl-wolfsburg-vs-bayern-munchen.CsI_GNOQl8"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-555c87a5382b",
                     "name": "⚽ 00:00 10/05 Toronto FC VS Inter Miami BLV Thần Thông",
@@ -113,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taokinhte/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-bdbea2edc34c",
                     "name": "⚽ 02:00 10/05 Real Sociedad VS Real Betis BLV Táo Thiên Vương",
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-164a608ef646",
                     "name": "⚽ 17:30 10/05 Hellas Verona VS Como BLV Táo Tỉnh Táo",
@@ -351,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-da5b13cc4033",
-                    "name": "⚽ 20:00 10/05 Burnley VS Aston Villa BLV Ngọc Hoàng(A Cháo)",
+                    "id": "ch-91eff7b38db8",
+                    "name": "⚽ 20:00 10/05 Burnley VS Aston Villa BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/da5b13cc4033.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/91eff7b38db8.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-da5b13cc4033",
+                            "id": "src-91eff7b38db8",
                             "contents": [
                                 {
-                                    "id": "ct-da5b13cc4033",
+                                    "id": "ct-91eff7b38db8",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -376,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/burnley-vs-aston-villa.eUkJrKlPG9"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/burnley-vs-aston-villa.uQBL-X5BpD"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -435,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-e38a6a631c7a",
-                    "name": "⚽ 20:00 10/05 Nottingham Forest VS Newcastle BLV Táo Mèo",
+                    "id": "ch-f648c6f14b07",
+                    "name": "⚽ 20:00 10/05 Nottingham Forest VS Newcastle BLV Táo Tỉnh Táo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/e38a6a631c7a.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f648c6f14b07.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e38a6a631c7a",
+                            "id": "src-f648c6f14b07",
                             "contents": [
                                 {
-                                    "id": "ct-e38a6a631c7a",
+                                    "id": "ct-f648c6f14b07",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -460,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/nottingham-forest-vs-newcastle.kKcAu-IRtH"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/nottingham-forest-vs-newcastle.zZwDdlQcKr"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -519,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-c2af784cc4e7",
-                    "name": "⚽ 22:30 10/05 West Ham VS Arsenal BLV Ngọc Hoàng(A Cháo)",
+                    "id": "ch-625321eda204",
+                    "name": "⚽ 22:30 10/05 West Ham VS Arsenal BLV Thần Thông",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c2af784cc4e7.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/625321eda204.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-c2af784cc4e7",
+                            "id": "src-625321eda204",
                             "contents": [
                                 {
-                                    "id": "ct-c2af784cc4e7",
+                                    "id": "ct-625321eda204",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/west-ham-vs-arsenal.4WCgkwYIJC"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/west-ham-vs-arsenal.Gwh4rTQZQY"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -645,90 +603,6 @@
                     ]
                 },
                 {
-                    "id": "ch-755f8e5902d2",
-                    "name": "⚽ 23:00 10/05 Parma VS AS Roma BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/755f8e5902d2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-755f8e5902d2",
-                            "contents": [
-                                {
-                                    "id": "ct-755f8e5902d2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/parma-vs-as-roma.6DPXHDp7ZM"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-54f7eb0ef0e2",
-                    "name": "⚽ 23:30 10/05 Oviedo VS Getafe BLV Táo Tỉnh Táo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/54f7eb0ef0e2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-54f7eb0ef0e2",
-                            "contents": [
-                                {
-                                    "id": "ct-54f7eb0ef0e2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/oviedo-vs-getafe.z9G_PkLYo5"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-34056711068f",
                     "name": "⚽ 01:45 11/05 AC Milan VS Atalanta BLV Táo Tỉnh Táo",
                     "type": "single",
@@ -771,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-5ed40e6256bd",
-                    "name": "⚽ 02:00 11/05 Barcelona VS Real Madrid BLV Ngọc Hoàng(A Cháo)",
+                    "id": "ch-1ece7be0514c",
+                    "name": "⚽ 02:00 11/05 Barcelona VS Real Madrid BLV Táo Kinh Tế(A Tích)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5ed40e6256bd.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1ece7be0514c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-5ed40e6256bd",
+                            "id": "src-1ece7be0514c",
                             "contents": [
                                 {
-                                    "id": "ct-5ed40e6256bd",
+                                    "id": "ct-1ece7be0514c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -796,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/barcelona-vs-real-madrid.NisWyrtcRW"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/barcelona-vs-real-madrid.ediABE1mv-"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -897,48 +771,6 @@
                     ]
                 },
                 {
-                    "id": "ch-aa3954a8cd9e",
-                    "name": "⚽ 02:00 11/05 Monaco VS Lille BLV Táo Kinh Tế(A Tích)",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/aa3954a8cd9e.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-aa3954a8cd9e",
-                            "contents": [
-                                {
-                                    "id": "ct-aa3954a8cd9e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/monaco-vs-lille.jUTHQZid3R"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-e3e9fae28092",
                     "name": "⚽ 02:00 11/05 Paris Saint Germain VS Stade Brestois 29 BLV Táo Thiên Vương",
                     "type": "single",
@@ -1023,22 +855,22 @@
                     ]
                 },
                 {
-                    "id": "ch-01d89c060876",
-                    "name": "⚽ 23:30 09/05 BLV Táo Mèo VfL VS WolfsburgKXD0-0---'Bayern MünchenBLV Táo MèoTrực tiếp BLV Táo Mèo16:30 09/05BundesligaVfL WolfsburgKXD0-0---'Bayern MünchenBLV Táo MèoTrực tiếp",
+                    "id": "ch-bdbea2edc34c",
+                    "name": "⚽ 02:00 10/05 BLV Táo Thiên Vương Real VS SociedadKXD0-0---'Real BetisBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 09/05La LigaReal SociedadKXD0-0---'Real BetisBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/01d89c060876.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bdbea2edc34c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-01d89c060876",
+                            "id": "src-bdbea2edc34c",
                             "contents": [
                                 {
-                                    "id": "ct-01d89c060876",
+                                    "id": "ct-bdbea2edc34c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -1048,7 +880,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/bundesliga-1758631341946/vfl-wolfsburg-vs-bayern-munchen.CsI_GNOQl8"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-sociedad-vs-real-betis.FD5KANr51E"
                                                         },
                                                         {
                                                             "key": "User-Agent",
