@@ -203,19 +203,28 @@ async def main():
                     team_names_dom=team_names_dom
                 )
 
-                imgs = await el.query_selector_all("img")
-                all_srcs = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in imgs]
+                # Lấy logo đội bóng bằng CSS class selector chính xác (học từ crawl_hoiquan)
+                # Theo HTML thực tế: <img class="w-[48px] h-[32px] rounded object-contain" src="...">
+                # Class "rounded" và "object-contain" là đặc trưng riêng của logo đội bóng
+                team_logo_imgs = await el.query_selector_all("img.rounded.object-contain")
+                logos = []
+                for img in team_logo_imgs:
+                    src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
+                    if src and src.startswith("http"):
+                        logos.append(src)
 
-                # Dùng WHITELIST domain thay vì blacklist để không bỏ sót logo nào
-                # Chỉ loại bỏ những URL chắc chắn KHÔNG phải logo đội bóng:
-                # - 30aaqin.png: placeholder mặc định
-                # - postimg.cc / i.postimg: ảnh BLV
-                LOGO_EXCLUDE = ("30aaqin.png", "postimg.cc", "i.postimg")
-                logos = [
-                    l for l in all_srcs
-                    if l and l.startswith("http")
-                    and not any(d in l for d in LOGO_EXCLUDE)
-                ]
+                # Fallback: nếu selector trên không ra đủ 2 logo thì lấy tất cả img lọc theo URL
+                if len(logos) < 2:
+                    all_imgs = await el.query_selector_all("img")
+                    all_srcs = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in all_imgs]
+                    LOGO_EXCLUDE = ("30aaqin.png", "postimg.cc", "i.postimg")
+                    for src in all_srcs:
+                        if (src and src.startswith("http")
+                                and not any(d in src for d in LOGO_EXCLUDE)
+                                and src not in logos):
+                            logos.append(src)
+                        if len(logos) >= 2:
+                            break
 
                 match_data.append({
                     "title":        full_title,
