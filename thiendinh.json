@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (16:55 10/05/2026)",
+    "name": "Thiên Đỉnh TV (17:25 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-164a608ef646",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taotinhtao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ef31e7a05102",
                     "name": "⚽ 18:00 10/05 Hồng Lĩnh Hà Tĩnh VS Viettel BLV Táo Mèo",
@@ -670,6 +671,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/ligue-1-1759500389658/paris-saint-germain-vs-stade-brestois-29.9ZJdddwBou"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-164a608ef646",
+                    "name": "⚽ 17:30 10/05 BLV Táo Tỉnh Táo Hellas VS VeronaKXD0-0---'ComoBLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo10:30 10/05Serie A Hellas VeronaKXD0-0---'ComoBLV Táo Tỉnh TáoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/164a608ef646.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-164a608ef646",
+                            "contents": [
+                                {
+                                    "id": "ct-164a608ef646",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/hellas-verona-vs-como.MUvRT2A_ug"
                                                         },
                                                         {
                                                             "key": "User-Agent",

@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (16:55 10/05/2026)",
+    "name": "Hội Quán TV (17:25 10/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-6dca7e1376b9",
-                    "name": "⚽ 15:00 10/05 JEF United Chiba VS Machida Zelvia BLV LƯƠNG BỔNG",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6dca7e1376b9.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6dca7e1376b9",
-                            "contents": [
-                                {
-                                    "id": "ct-6dca7e1376b9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanliem/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/j1-league-1758631930094/jef-united-chiba-vs-machida-zelvia.LHKxx_N5NW/7307"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-7553c5b94bd2",
                     "name": "⚽ 17:00 10/05 Hoang Anh Gia Lai VS Pho Hien BLV PHAN MÃ",
@@ -71,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_thienloi/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-14412ed94eea",
                     "name": "⚽ 17:30 10/05 Hellas Verona VS Como BLV PHAN MÃO",
@@ -119,54 +71,12 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanchanh/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/serie-a-1758631315616/hellas-verona-vs-como.-eOopQo-82/7291"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-9f6799656969",
-                    "name": "⚽ 18:00 10/05 Ho Chi Minh VS Song Lam Nghe An BLV PHAN TÔ",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9f6799656969.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9f6799656969",
-                            "contents": [
-                                {
-                                    "id": "ct-9f6799656969",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/vleague-1.U9-8pk5qCM/ho-chi-minh-vs-song-lam-nghe-an.C5OZjYddGJ/7292"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -203,12 +113,60 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanliem/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/vleague-1.U9-8pk5qCM/hong-linh-ha-tinh-vs-viettel.1Dr_4_bSuw/7293"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-9f6799656969",
+                    "name": "⚽ 18:00 10/05 Ho Chi Minh VS Song Lam Nghe An BLV PHAN TÔ",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9f6799656969.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9f6799656969",
+                            "contents": [
+                                {
+                                    "id": "ct-9f6799656969",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/vleague-1.U9-8pk5qCM/ho-chi-minh-vs-song-lam-nghe-an.C5OZjYddGJ/7292"
                                                         },
                                                         {
                                                             "key": "User-Agent",
