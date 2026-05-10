@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (00:55 11/05/2026)",
+    "name": "Hội Quán TV (01:25 11/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-bed24dbdef2b",
-                    "name": "⚽ 23:00 10/05 Parma VS AS Roma BLV PHAN HÀ LINH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bed24dbdef2b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-bed24dbdef2b",
-                            "contents": [
-                                {
-                                    "id": "ct-bed24dbdef2b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanhalinh/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/serie-a-1758631315616/parma-vs-as-roma.QAU0vP_08a/7300"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-faa252086269",
-                    "name": "⚽ 23:00 10/05 Vietnam U17 VS Korea Republic U17 BLV LƯƠNG BỔNG",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/faa252086269.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-faa252086269",
-                            "contents": [
-                                {
-                                    "id": "ct-faa252086269",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanliem/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/vietnam-u17-vs-korea-republic-u17.xjBJ-9FG2L/7301"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-f1de88855765",
@@ -119,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanto/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,24 +49,30 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-bc5fd42401b2",
+                    "id": "ch-8a6d1bcd1e61",
                     "name": "⚽ 02:00 11/05 Barcelona VS Real Madrid BLV THIÊN LÔI + PHAN MÃ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/bc5fd42401b2.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8a6d1bcd1e61.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-bc5fd42401b2",
+                            "id": "src-8a6d1bcd1e61",
                             "contents": [
                                 {
-                                    "id": "ct-bc5fd42401b2",
+                                    "id": "ct-8a6d1bcd1e61",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +82,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/la-liga.zb65Otf_xU/barcelona-vs-real-madrid.ptzj9ZwlkT/7322"
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/laliga-dau-cau-trung-lap.IPD3nMGnPs/barcelona-vs-real-madrid.Xl1qeqqKa9/7322"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,22 +99,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f672a64c382e",
+                    "id": "ch-5ae2a59dac1c",
                     "name": "⚽ 02:00 11/05 Barcelona VS Real Madrid BLV LƯƠNG BỔNG",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f672a64c382e.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5ae2a59dac1c.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f672a64c382e",
+                            "id": "src-5ae2a59dac1c",
                             "contents": [
                                 {
-                                    "id": "ct-f672a64c382e",
+                                    "id": "ct-5ae2a59dac1c",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/la-liga.zb65Otf_xU/barcelona-vs-real-madrid.-Yr6Jpvxf9/7324"
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/laliga-dau-cau-fan-ba-xa.bTR20ebT_T/barcelona-vs-real-madrid.uvx5eIfs5g/7324"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-d2bf9e81278b",
+                    "id": "ch-49b79e576e41",
                     "name": "⚽ 02:00 11/05 Barcelona VS Real Madrid BLV PHAN CHỚP",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/d2bf9e81278b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/49b79e576e41.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-d2bf9e81278b",
+                            "id": "src-49b79e576e41",
                             "contents": [
                                 {
-                                    "id": "ct-d2bf9e81278b",
+                                    "id": "ct-49b79e576e41",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -292,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/la-liga.zb65Otf_xU/barcelona-vs-real-madrid.62szosPc_b/7346"
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/laliga-dau-cau-fan-real.nuP5_IkD4H/barcelona-vs-real-madrid.ex0OUrUkMS/7346"
                                                         },
                                                         {
                                                             "key": "User-Agent",
