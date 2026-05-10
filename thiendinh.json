@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:25 10/05/2026)",
+    "name": "Thiên Đỉnh TV (18:55 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -91,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-a0a7d42a16ea",
                     "name": "⚽ 19:00 10/05 Mallorca VS Villarreal BLV Táo Kinh Tế(A Tích)",
@@ -119,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taokinhte/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-91eff7b38db8",
                     "name": "⚽ 20:00 10/05 Burnley VS Aston Villa BLV Táo Mèo",
@@ -729,6 +729,48 @@
                     ]
                 },
                 {
+                    "id": "ch-a0a7d42a16ea",
+                    "name": "⚽ 19:00 10/05 BLV Táo Kinh Tế(A Tích) VS MallorcaKXD0-0---'VillarrealBLV Táo Kinh Tế(A Tích)Trực tiếp BLV Táo Kinh Tế(A Tích)12:00 10/05La LigaMallorcaKXD0-0---'VillarrealBLV Táo Kinh Tế(A Tích)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a0a7d42a16ea.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a0a7d42a16ea",
+                            "contents": [
+                                {
+                                    "id": "ct-a0a7d42a16ea",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/mallorca-vs-villarreal.rmOkISiSqR"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-ef31e7a05102",
                     "name": "⚽ 18:00 10/05 BLV Táo MèoV.League 1Hồng Lĩnh VS Hà TĩnhKXD0-0---'ViettelBLV Táo MèoTrực tiếp BLV Táo Mèo11:00 10/05V.League 1Hồng Lĩnh Hà TĩnhKXD0-0---'ViettelBLV Táo MèoTrực tiếp",
                     "type": "single",
@@ -755,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/hong-linh-ha-tinh-vs-viettel.6hoLUaMedo"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-eb803ea60752",
+                    "name": "⚽ 19:15 10/05 BLV Thần ThôngV.League 1Công An VS Nhân DânKXD0-0---'Nam DinhBLV Thần ThôngTrực tiếp BLV Thần Thông12:15 10/05V.League 1Công An Nhân DânKXD0-0---'Nam DinhBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/eb803ea60752.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-eb803ea60752",
+                            "contents": [
+                                {
+                                    "id": "ct-eb803ea60752",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/cong-an-nhan-dan-vs-nam-dinh.YdkeYSOkis"
                                                         },
                                                         {
                                                             "key": "User-Agent",
