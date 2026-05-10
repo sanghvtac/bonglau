@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:26 10/05/2026)",
+    "name": "Chuoi Chien TV (20:56 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -301,16 +301,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ef847d3ac9e8",
-                    "name": "⚽ 20:30 10/05 Hamburger SV VS SC Freiburg",
+                    "id": "ch-6a92e862aeba",
+                    "name": "⚽ 20:30 10/05 Hamburger SV VS SC Freiburg [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +315,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ef847d3ac9e8",
+                            "id": "src-6a92e862aeba",
                             "contents": [
                                 {
-                                    "id": "ct-ef847d3ac9e8",
+                                    "id": "ct-6a92e862aeba",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1388599/1388599"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -349,7 +343,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f4d677c2023e",
                     "name": "⚽ 21:15 10/05 Athletic Club VS Valencia",
