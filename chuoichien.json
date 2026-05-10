@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 10/05/2026)",
+    "name": "Chuoi Chien TV (15:56 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-deeee84df00e",
-                    "name": "⚽ 14:00 10/05 Kashiwa Reysol VS Kawasaki Frontale [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1504806.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-deeee84df00e",
-                            "contents": [
-                                {
-                                    "id": "ct-deeee84df00e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-4952cfcfb781",
                     "name": "⚽ 14:00 10/05 Nagoya Grampus VS Kyoto Sanga [Nhà Đài - HD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-67029735878b",
-                    "name": "⚽ 16:06 10/05 Osaka Bluteon VS JTEKT",
+                    "id": "ch-12715c54461e",
+                    "name": "⚽ 16:06 10/05 Osaka Bluteon VS JTEKT [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,10 +147,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-67029735878b",
+                            "id": "src-12715c54461e",
                             "contents": [
                                 {
-                                    "id": "ct-67029735878b",
+                                    "id": "ct-12715c54461e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-ee024c3f5934",
+                    "name": "⚽ 14:00 10/05 Kashiwa Reysol VS Kawasaki Frontale",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1504806.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ee024c3f5934",
+                            "contents": [
+                                {
+                                    "id": "ct-ee024c3f5934",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/997109/997109"
+                                                            "value": "https://live20.chuoichientv.com/live/1504806/1504806"
                                                         },
                                                         {
                                                             "key": "User-Agent",
