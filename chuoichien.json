@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 10/05/2026)",
+    "name": "Chuoi Chien TV (17:55 10/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,13 +91,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-690a16188a0b",
                     "name": "⚽ 18:00 10/05 TP. Hồ Chí Minh VS Song Lam Nghe An",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-50fdcfa234f7",
-                    "name": "⚽ 18:00 10/05 Hồng Lĩnh Hà Tĩnh VS Viettel",
+                    "id": "ch-ced612e790ac",
+                    "name": "⚽ 18:00 10/05 Hồng Lĩnh Hà Tĩnh VS Viettel [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-50fdcfa234f7",
+                            "id": "src-ced612e790ac",
                             "contents": [
                                 {
-                                    "id": "ct-50fdcfa234f7",
+                                    "id": "ct-ced612e790ac",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518080/1518080"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-38a41797ab7d",
                     "name": "⚽ 18:00 10/05 PVF-CAND VS Khatoco Khanh Hoa",
