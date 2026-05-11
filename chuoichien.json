@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 11/05/2026)",
+    "name": "Chuoi Chien TV (16:55 11/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-dd750640cc57",
-                    "name": "⚽ 17:00 11/05 Akron VS FC Rostov",
+                    "id": "ch-9594f8fdf7c0",
+                    "name": "⚽ 17:00 11/05 Akron VS FC Rostov [BLV Chuối Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dd750640cc57",
+                            "id": "src-9594f8fdf7c0",
                             "contents": [
                                 {
-                                    "id": "ct-dd750640cc57",
+                                    "id": "ct-9594f8fdf7c0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoihothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1400256/1400256"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1d12a925bb1f",
                     "name": "⚽ 18:30 11/05 China PR U17 VS India U17",
