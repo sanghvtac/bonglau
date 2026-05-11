@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (18:25 11/05/2026)",
+    "name": "Thiên Đỉnh TV (18:55 11/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-9290e0d4556b",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taotinhtao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-871e19614784",
                     "name": "⚽ 21:30 11/05 Spartak Moscow VS Rubin BLV Táo Mèo",
@@ -250,6 +251,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/rayo-vallecano-vs-girona.bIaZBhZFy2"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9290e0d4556b",
+                    "name": "⚽ 19:00 11/05 BLV Táo Tỉnh TáoLiga 1Bhayangkara FCKXD0-0---'Persepam VS Madura UtdBLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo12:00 11/05Liga 1Bhayangkara FCKXD0-0---'Persepam Madura UtdBLV Táo Tỉnh TáoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9290e0d4556b.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9290e0d4556b",
+                            "contents": [
+                                {
+                                    "id": "ct-9290e0d4556b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persepam-madura-utd.VHu4uTmbuF"
                                                         },
                                                         {
                                                             "key": "User-Agent",
