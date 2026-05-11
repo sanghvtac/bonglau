@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:25 12/05/2026)",
+    "name": "Thiên Đỉnh TV (01:55 12/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-c16f1440dc44",
-                    "name": "⚽ 23:50 11/05 NEOM VS Al Shabab BLV Táo Thiên Vương",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c16f1440dc44.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c16f1440dc44",
-                            "contents": [
-                                {
-                                    "id": "ct-c16f1440dc44",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taothienvuong/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/neom-vs-al-shabab.uPob8s_qxt"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-2fcc57b2db43",
                     "name": "⚽ 01:45 12/05 Napoli VS Bologna BLV Thần Thông",
@@ -71,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-c46004914371",
                     "name": "⚽ 02:00 12/05 Tottenham VS Leeds BLV Táo Mèo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5293d59e9f56",
                     "name": "⚽ 17:30 12/05 Gwangju FC VS FC Seoul BLV Táo Tỉnh Táo",
@@ -603,6 +561,48 @@
                     ]
                 },
                 {
+                    "id": "ch-c46004914371",
+                    "name": "⚽ 02:00 12/05 BLV Táo Mèo VS TottenhamKXD0-0---'LeedsBLV Táo MèoTrực tiếp BLV Táo Mèo19:00 11/05Premier LeagueTottenhamKXD0-0---'LeedsBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c46004914371.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-c46004914371",
+                            "contents": [
+                                {
+                                    "id": "ct-c46004914371",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/tottenham-vs-leeds.n0l-U5PV3M"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-2fcc57b2db43",
                     "name": "⚽ 01:45 12/05 BLV Thần Thông VS NapoliKXD0-0---'BolognaBLV Thần ThôngTrực tiếp BLV Thần Thông18:45 11/05Serie ANapoliKXD0-0---'BolognaBLV Thần ThôngTrực tiếp",
                     "type": "single",
@@ -645,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-c16f1440dc44",
-                    "name": "⚽ 23:50 11/05 BLV Táo Thiên VươngPro LeagueNEOMKXD0-0---'Al VS ShababBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương16:50 11/05Pro LeagueNEOMKXD0-0---'Al ShababBLV Táo Thiên VươngTrực tiếp",
+                    "id": "ch-0187688931f6",
+                    "name": "⚽ 02:00 12/05 BLV Táo Thiên Vương Rayo VS VallecanoKXD0-0---'GironaBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương19:00 11/05La LigaRayo VallecanoKXD0-0---'GironaBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c16f1440dc44.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0187688931f6.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-c16f1440dc44",
+                            "id": "src-0187688931f6",
                             "contents": [
                                 {
-                                    "id": "ct-c16f1440dc44",
+                                    "id": "ct-0187688931f6",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/neom-vs-al-shabab.uPob8s_qxt"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/rayo-vallecano-vs-girona.bIaZBhZFy2"
                                                         },
                                                         {
                                                             "key": "User-Agent",
