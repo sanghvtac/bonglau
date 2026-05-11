@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:55 11/05/2026)",
+    "name": "Thiên Đỉnh TV (21:29 11/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,54 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-9290e0d4556b",
-                    "name": "⚽ 19:00 11/05 Bhayangkara FC VS Persepam Madura Utd BLV Táo Tỉnh Táo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9290e0d4556b.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9290e0d4556b",
-                            "contents": [
-                                {
-                                    "id": "ct-9290e0d4556b",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taotinhtao/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persepam-madura-utd.VHu4uTmbuF"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-871e19614784",
@@ -77,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c16f1440dc44",
                     "name": "⚽ 23:50 11/05 NEOM VS Al Shabab BLV Táo Thiên Vương",
@@ -687,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-9290e0d4556b",
-                    "name": "⚽ 19:00 11/05 BLV Táo Tỉnh TáoLiga 1Bhayangkara FCKXD0-0---'Persepam VS Madura UtdBLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo12:00 11/05Liga 1Bhayangkara FCKXD0-0---'Persepam Madura UtdBLV Táo Tỉnh TáoTrực tiếp",
+                    "id": "ch-871e19614784",
+                    "name": "⚽ 21:30 11/05 BLV Táo Mèo Spartak VS MoscowKXD0-0---'RubinBLV Táo MèoTrực tiếp BLV Táo Mèo14:30 11/05Premier LeagueSpartak MoscowKXD0-0---'RubinBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9290e0d4556b.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/871e19614784.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-9290e0d4556b",
+                            "id": "src-871e19614784",
                             "contents": [
                                 {
-                                    "id": "ct-9290e0d4556b",
+                                    "id": "ct-871e19614784",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -712,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/bhayangkara-fc-vs-persepam-madura-utd.VHu4uTmbuF"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/spartak-moscow-vs-rubin.68fLdFwTkB"
                                                         },
                                                         {
                                                             "key": "User-Agent",
