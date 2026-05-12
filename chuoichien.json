@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 12/05/2026)",
+    "name": "Chuoi Chien TV (17:26 12/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-39bf4ef7bc54",
-                    "name": "⚽ 17:30 12/05 Gangwon FC VS Daejeon Citizen",
+                    "id": "ch-8606f200a574",
+                    "name": "⚽ 17:30 12/05 Gangwon FC VS Daejeon Citizen [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-39bf4ef7bc54",
+                            "id": "src-8606f200a574",
                             "contents": [
                                 {
-                                    "id": "ct-39bf4ef7bc54",
+                                    "id": "ct-8606f200a574",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506974/1506974"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-162b6443f025",
-                    "name": "⚽ 17:30 12/05 Gwangju FC VS FC Seoul",
+                    "id": "ch-749998dc43ef",
+                    "name": "⚽ 17:30 12/05 Gwangju FC VS FC Seoul [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-162b6443f025",
+                            "id": "src-749998dc43ef",
                             "contents": [
                                 {
-                                    "id": "ct-162b6443f025",
+                                    "id": "ct-749998dc43ef",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506975/1506975"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -98,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-dacd04848876",
-                    "name": "⚽ 17:30 12/05 Incheon United VS Pohang Steelers",
+                    "id": "ch-e0aa7e063cf5",
+                    "name": "⚽ 17:30 12/05 Incheon United VS Pohang Steelers [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -110,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dacd04848876",
+                            "id": "src-e0aa7e063cf5",
                             "contents": [
                                 {
-                                    "id": "ct-dacd04848876",
+                                    "id": "ct-e0aa7e063cf5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1506976/1506976"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -138,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5e40c62aa678",
                     "name": "⚽ 19:30 12/05 Epitsentr Dunayivtsi VS Polessya",
