@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (06:25 14/05/2026)",
+    "name": "Thiên Đỉnh TV (06:55 14/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-fcea2f809d66",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2119d55a4616",
                     "name": "⚽ 18:30 14/05 China PR U17 W VS North Korea U17 W BLV Táo Kinh Tế(A Tích)",
@@ -334,6 +335,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-madrid-vs-oviedo.OM4fRhyyWw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-fcea2f809d66",
+                    "name": "⚽ 06:30 14/05 BLV Thần ThôngMajor League SoccerFC VS CincinnatiKXD0-0---'Inter MiamiBLV Thần ThôngTrực tiếp BLV Thần Thông23:30 13/05Major League SoccerFC CincinnatiKXD0-0---'Inter MiamiBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fcea2f809d66.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fcea2f809d66",
+                            "contents": [
+                                {
+                                    "id": "ct-fcea2f809d66",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/major-league-soccer.-Wfz8cev32/fc-cincinnati-vs-inter-miami.V6hJWxH5wr"
                                                         },
                                                         {
                                                             "key": "User-Agent",
