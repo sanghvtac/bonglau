@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 13/05/2026)",
+    "name": "Chuoi Chien TV (13:55 13/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-24c501dd2b97",
-                    "name": "⚽ 14:00 13/05 Tahiti United VS Vanuatu United",
+                    "id": "ch-5d8507d75b07",
+                    "name": "⚽ 14:00 13/05 Tahiti United VS Vanuatu United [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-24c501dd2b97",
+                            "id": "src-5d8507d75b07",
                             "contents": [
                                 {
-                                    "id": "ct-24c501dd2b97",
+                                    "id": "ct-5d8507d75b07",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1542460/1542460"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-edb2e36eae1b",
                     "name": "⚽ 16:00 13/05 Hồ Chí Minh City W VS Hà Nội Nữ",
