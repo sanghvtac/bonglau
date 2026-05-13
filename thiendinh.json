@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (22:25 13/05/2026)",
+    "name": "Thiên Đỉnh TV (22:55 13/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,11 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-89d6058c2acf",
@@ -34,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5cbe29c32625",
                     "name": "⚽ 00:00 14/05 Espanyol VS Athletic Club BLV Táo Tỉnh Táo",
@@ -670,6 +671,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-madrid-vs-oviedo.OM4fRhyyWw"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-89d6058c2acf",
+                    "name": "⚽ 23:00 13/05 BLV Táo Thiên VươngAFC U17 Asian VS Uzbekistan U17KXD0-0---'Australia U17BLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương16:00 13/05AFC U17 Asian CupUzbekistan U17KXD0-0---'Australia U17BLV Táo Thiên VươngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/89d6058c2acf.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-89d6058c2acf",
+                            "contents": [
+                                {
+                                    "id": "ct-89d6058c2acf",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/uzbekistan-u17-vs-australia-u17.t_ZyV1vpk1"
                                                         },
                                                         {
                                                             "key": "User-Agent",
