@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 14/05/2026)",
+    "name": "Chuoi Chien TV (15:55 14/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-857c23a99e52",
-                    "name": "⚽ 14:00 14/05 Japan U17 W VS Australia U17 W [Chuối Tây - FHD1]",
+                    "id": "ch-43916435c045",
+                    "name": "⚽ 14:00 14/05 Japan U17 W VS Australia U17 W",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-857c23a99e52",
+                            "id": "src-43916435c045",
                             "contents": [
                                 {
-                                    "id": "ct-857c23a99e52",
+                                    "id": "ct-43916435c045",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1544861/1544861"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-42aa756088c1",
                     "name": "⚽ 18:30 14/05 China PR U17 VS North Korea U17 W",
