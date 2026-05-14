@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:55 14/05/2026)",
+    "name": "Chuoi Chien TV (18:25 14/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-42aa756088c1",
-                    "name": "⚽ 18:30 14/05 China PR U17 VS North Korea U17 W",
+                    "id": "ch-76de998665f6",
+                    "name": "⚽ 18:30 14/05 China PR U17 VS North Korea U17 W [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-42aa756088c1",
+                            "id": "src-76de998665f6",
                             "contents": [
                                 {
-                                    "id": "ct-42aa756088c1",
+                                    "id": "ct-76de998665f6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1544862/1544862"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,32 +51,32 @@
                     ]
                 },
                 {
-                    "id": "ch-583cf207053d",
-                    "name": "⚽ 19:00 14/05 Tobol 2 VS Astana II",
+                    "id": "ch-394d3da02fcc",
+                    "name": "⚽ 18:30 14/05 China PR U17 VS North Korea U17 W [Chuối Đồng - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534741.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1544862.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-583cf207053d",
+                            "id": "src-394d3da02fcc",
                             "contents": [
                                 {
-                                    "id": "ct-583cf207053d",
+                                    "id": "ct-394d3da02fcc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1534741/1534741"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-72a8ec7643c6",
                     "name": "⚽ 19:15 14/05 Septemvri Sofia VS Spartak Varna",
@@ -838,6 +839,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1537017/1537017"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-15555f5ab800",
+                    "name": "⚽ 07:30 15/05 Vitoria VS Flamengo",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1537008.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-15555f5ab800",
+                            "contents": [
+                                {
+                                    "id": "ct-15555f5ab800",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1537008/1537008"
                                                         },
                                                         {
                                                             "key": "User-Agent",
