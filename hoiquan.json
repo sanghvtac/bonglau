@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (00:25 15/05/2026)",
+    "name": "Hội Quán TV (00:55 15/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-4c7d1ec44bcc",
-                    "name": "⚽ 22:55 14/05 Al-Fateh VS Al Najma BLV PHAN CHỚP",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4c7d1ec44bcc.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-4c7d1ec44bcc",
-                            "contents": [
-                                {
-                                    "id": "ct-4c7d1ec44bcc",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanchop/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/pro-league.Ba3nbJO6CY/al-fateh-vs-al-najma.c10zPRCd2A/7397"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-5ae5310f416f",
                     "name": "⚽ 00:00 15/05 Valencia VS Rayo Vallecano BLV PHAN TÔ",
@@ -71,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://tfvv1gr3uomttgr31hcj18yzd1c3ppbasa4mscwz81am1p3tse5tqptwzc3e.100ycdn.com/hqlive.yarncdn.live/live/hqtv_blv_phanto/playlist.m3u8?wsSession=b13a377620805d23a25c70ea-177877955722181&wsIPSercert=f48b7a081cdf9d6202f75ef826003532&wsBindIP=2&wsserid=1168243256623223254",
+                                                    "url": "https://tfvv1gr3uomttgr31hcji8rzdncjppbasa4mscwz81am1p3tse5tqptwzc3e.100ycdn.com/hqlive.yarncdn.live/live/hqtv_blv_phanto/playlist.m3u8?wsSession=19cf5258f88dc6f82a3cc5b5-177878135786131&wsIPSercert=4f51f56817eec958585760bdb866320f&wsBindIP=2&wsserid=1172665342723374681",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-9ef10ef2989b",
                     "name": "⚽ 01:00 15/05 Girona VS Real Sociedad BLV PHAN HÀ LINH",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanhalinh/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4631f395c072",
                     "name": "⚽ 02:30 15/05 Real Madrid VS Oviedo BLV PHAN MÃ",
