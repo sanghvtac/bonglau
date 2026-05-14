@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 14/05/2026)",
+    "name": "Chuoi Chien TV (13:55 14/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-43916435c045",
-                    "name": "⚽ 14:00 14/05 Japan U17 W VS Australia U17 W",
+                    "id": "ch-857c23a99e52",
+                    "name": "⚽ 14:00 14/05 Japan U17 W VS Australia U17 W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-43916435c045",
+                            "id": "src-857c23a99e52",
                             "contents": [
                                 {
-                                    "id": "ct-43916435c045",
+                                    "id": "ct-857c23a99e52",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1544861/1544861"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0af52f56d4d0",
                     "name": "⚽ 18:00 14/05 Yelimay Semey 2 VS Kaspij Aktau 2",
