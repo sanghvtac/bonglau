@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (01:55 15/05/2026)",
+    "name": "Thiên Đỉnh TV (02:25 15/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-6ef68f6e0f81",
-                    "name": "⚽ 00:00 15/05 Valencia VS Rayo Vallecano BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6ef68f6e0f81.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6ef68f6e0f81",
-                            "contents": [
-                                {
-                                    "id": "ct-6ef68f6e0f81",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/valencia-vs-rayo-vallecano.C0Hzpvv9pn"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-8bde48eec182",
                     "name": "⚽ 01:00 15/05 Girona VS Real Sociedad BLV Táo Thiên Vương",
@@ -91,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-4b7b013b12f1",
                     "name": "⚽ 02:30 15/05 Real Madrid VS Oviedo BLV Táo Mèo",
@@ -119,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taomeo/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1c7425ed4475",
                     "name": "⚽ 16:35 15/05 Adelaide United VS Auckland BLV Táo Tỉnh Táo",
@@ -519,48 +477,6 @@
                     ]
                 },
                 {
-                    "id": "ch-6ef68f6e0f81",
-                    "name": "⚽ 00:00 15/05 BLV Thần Thông ValenciaKXD0-0---'Rayo VS VallecanoBLV Thần ThôngTrực tiếp BLV Thần Thông17:00 14/05La LigaValenciaKXD0-0---'Rayo VallecanoBLV Thần ThôngTrực tiếp",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/6ef68f6e0f81.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6ef68f6e0f81",
-                            "contents": [
-                                {
-                                    "id": "ct-6ef68f6e0f81",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/valencia-vs-rayo-vallecano.C0Hzpvv9pn"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-8bde48eec182",
                     "name": "⚽ 01:00 15/05 BLV Táo Thiên Vương GironaKXD0-0---'Real VS SociedadBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương18:00 14/05La LigaGironaKXD0-0---'Real SociedadBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
@@ -587,6 +503,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/girona-vs-real-sociedad.i2rcm-dupV"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4b7b013b12f1",
+                    "name": "⚽ 02:30 15/05 BLV Táo Mèo Real VS MadridKXD0-0---'OviedoBLV Táo MèoTrực tiếp BLV Táo Mèo19:30 14/05La LigaReal MadridKXD0-0---'OviedoBLV Táo MèoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4b7b013b12f1.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4b7b013b12f1",
+                            "contents": [
+                                {
+                                    "id": "ct-4b7b013b12f1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/real-madrid-vs-oviedo.OM4fRhyyWw"
                                                         },
                                                         {
                                                             "key": "User-Agent",
