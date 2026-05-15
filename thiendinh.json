@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:25 15/05/2026)",
+    "name": "Thiên Đỉnh TV (20:55 15/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -49,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-7425eda6bea1",
                     "name": "⚽ 21:10 15/05 Sharjah FC VS Khorfakkan BLV Táo Tỉnh Táo",
@@ -77,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6f3e9ce0c324",
                     "name": "⚽ 23:00 15/05 Japan U17 VS Tajikistan U17 BLV Táo Mèo",
@@ -335,6 +335,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/psbs-biak-numfor-vs-arema-fc.2RCqOfLd2o"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-7425eda6bea1",
+                    "name": "⚽ 21:10 15/05 BLV Táo Tỉnh TáoPro LeagueSharjah VS FCKXD0-0---'KhorfakkanBLV Táo Tỉnh TáoTrực tiếp BLV Táo Tỉnh Táo14:10 15/05Pro LeagueSharjah FCKXD0-0---'KhorfakkanBLV Táo Tỉnh TáoTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/7425eda6bea1.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-7425eda6bea1",
+                            "contents": [
+                                {
+                                    "id": "ct-7425eda6bea1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/pro-league.lgBwKjBS0B/sharjah-fc-vs-khorfakkan.uD5kjTLmoj"
                                                         },
                                                         {
                                                             "key": "User-Agent",
