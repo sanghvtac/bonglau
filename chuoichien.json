@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:25 15/05/2026)",
+    "name": "Chuoi Chien TV (15:25 15/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-487e138f5ddd",
-                    "name": "⚽ 15:30 15/05 Semen Padang VS Persebaya Surabaya",
+                    "id": "ch-1c833f5ddb3c",
+                    "name": "⚽ 15:30 15/05 Semen Padang VS Persebaya Surabaya [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-487e138f5ddd",
+                            "id": "src-1c833f5ddb3c",
                             "contents": [
                                 {
-                                    "id": "ct-487e138f5ddd",
+                                    "id": "ct-1c833f5ddb3c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403850/1403850"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-56a74d4e4e0b",
                     "name": "⚽ 16:00 15/05 Penang VS DPMM FC",
