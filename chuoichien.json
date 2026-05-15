@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 15/05/2026)",
+    "name": "Chuoi Chien TV (17:56 15/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-810f89272c77",
-                    "name": "⚽ 18:00 15/05 TP. Hồ Chí Minh VS Da Nang",
+                    "id": "ch-66bb6870bb5b",
+                    "name": "⚽ 18:00 15/05 TP. Hồ Chí Minh VS Da Nang [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-810f89272c77",
+                            "id": "src-66bb6870bb5b",
                             "contents": [
                                 {
-                                    "id": "ct-810f89272c77",
+                                    "id": "ct-66bb6870bb5b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518082/1518082"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,32 +177,32 @@
                     ]
                 },
                 {
-                    "id": "ch-fac5fc1c7a5a",
-                    "name": "⚽ 18:00 15/05 PVF-CAND VS TP. Hồ Chí Minh",
+                    "id": "ch-8aa980e8baff",
+                    "name": "⚽ 18:00 15/05 TP. Hồ Chí Minh VS Da Nang [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518153.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518082.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-fac5fc1c7a5a",
+                            "id": "src-8aa980e8baff",
                             "contents": [
                                 {
-                                    "id": "ct-fac5fc1c7a5a",
+                                    "id": "ct-8aa980e8baff",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518153/1518153"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -224,6 +218,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-fe0ac9daf7e9",
+                    "name": "⚽ 18:00 15/05 PVF-CAND VS TP. Hồ Chí Minh [Chuối Đồng - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518153.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fe0ac9daf7e9",
+                            "contents": [
+                                {
+                                    "id": "ct-fe0ac9daf7e9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-09d5461eef0b",
                     "name": "⚽ 18:30 15/05 Sabah FA VS Terengganu",
