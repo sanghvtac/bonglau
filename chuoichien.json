@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 16/05/2026)",
+    "name": "Chuoi Chien TV (01:56 16/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c0375e0c1f70",
-                    "name": "⚽ 02:00 16/05 Aston Villa VS Liverpool",
+                    "id": "ch-fb0e7ef8edba",
+                    "name": "⚽ 02:00 16/05 Aston Villa VS Liverpool [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c0375e0c1f70",
+                            "id": "src-fb0e7ef8edba",
                             "contents": [
                                 {
-                                    "id": "ct-c0375e0c1f70",
+                                    "id": "ct-fb0e7ef8edba",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379330/1379330"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,32 +219,32 @@
                     ]
                 },
                 {
-                    "id": "ch-33a3390cd641",
-                    "name": "⚽ 02:00 16/05 Cordoba VS Albacete",
+                    "id": "ch-a761531fa7cc",
+                    "name": "⚽ 02:00 16/05 Aston Villa VS Liverpool [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1392200.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379330.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-33a3390cd641",
+                            "id": "src-a761531fa7cc",
                             "contents": [
                                 {
-                                    "id": "ct-33a3390cd641",
+                                    "id": "ct-a761531fa7cc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1392200/1392200"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -266,6 +260,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-5613d6a61936",
+                    "name": "⚽ 02:00 16/05 Cordoba VS Albacete [Nhà Đài - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1392200.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5613d6a61936",
+                            "contents": [
+                                {
+                                    "id": "ct-5613d6a61936",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-682871a1aee2",
                     "name": "⚽ 07:00 16/05 Coquimbo Unido VS A. Italiano",
