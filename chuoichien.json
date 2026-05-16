@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 16/05/2026)",
+    "name": "Chuoi Chien TV (15:25 16/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-2ae03c5aa6a5",
-                    "name": "⚽ 13:15 16/05 Melbourne City W VS Wellington Phoenix W [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1544697.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2ae03c5aa6a5",
-                            "contents": [
-                                {
-                                    "id": "ct-2ae03c5aa6a5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9b155fb040ad",
                     "name": "⚽ 14:00 16/05 Urawa VS FC Tokyo [Nhà Đài - HD1]",
@@ -259,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-aed95e31aed0",
-                    "name": "⚽ 15:30 16/05 Persik Kediri VS Persija",
+                    "id": "ch-e032c624266a",
+                    "name": "⚽ 15:30 16/05 Persik Kediri VS Persija [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-aed95e31aed0",
+                            "id": "src-e032c624266a",
                             "contents": [
                                 {
-                                    "id": "ct-aed95e31aed0",
+                                    "id": "ct-e032c624266a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1403852/1403852"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ef29ce54c17e",
                     "name": "⚽ 16:00 16/05 Đồng Tháp VS Long An FC",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1403854/1403854"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0c4a9614d3ae",
+                    "name": "⚽ 19:00 16/05 Yunnan Yukun VS Shanghai Shenhua",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1523154.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0c4a9614d3ae",
+                            "contents": [
+                                {
+                                    "id": "ct-0c4a9614d3ae",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1523154/1523154"
                                                         },
                                                         {
                                                             "key": "User-Agent",
