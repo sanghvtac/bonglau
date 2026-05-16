@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 16/05/2026)",
+    "name": "Chuoi Chien TV (17:56 16/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-e032c624266a",
-                    "name": "⚽ 15:30 16/05 Persik Kediri VS Persija [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1403852.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e032c624266a",
-                            "contents": [
-                                {
-                                    "id": "ct-e032c624266a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-5e60349c0df7",
-                    "name": "⚽ 16:00 16/05 Đồng Tháp VS Long An FC [Nhà Đài - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518154.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5e60349c0df7",
-                            "contents": [
-                                {
-                                    "id": "ct-5e60349c0df7",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x4/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6a08e67a4df4",
                     "name": "⚽ 16:40 16/05 Newcastle Jets VS Sydney [Nhà Đài - HD1]",
@@ -343,13 +259,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-4a11bd0a2923",
                     "name": "⚽ 18:00 16/05 Hai Phong VS Becamex Hồ Chí Minh",
@@ -393,8 +303,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1eb1fd9f3387",
-                    "name": "⚽ 18:00 16/05 Song Lam Nghe An VS Ninh Bình FC",
+                    "id": "ch-099515e57e4c",
+                    "name": "⚽ 18:00 16/05 Song Lam Nghe An VS Ninh Bình FC [Anh Sói - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -405,20 +315,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1eb1fd9f3387",
+                            "id": "src-099515e57e4c",
                             "contents": [
                                 {
-                                    "id": "ct-1eb1fd9f3387",
+                                    "id": "ct-099515e57e4c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518084/1518084"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -435,8 +345,50 @@
                     ]
                 },
                 {
-                    "id": "ch-ce3c8473d141",
-                    "name": "⚽ 18:00 16/05 Trường Tươi Đồng Nai VS Văn Hiến",
+                    "id": "ch-23f8a89606d4",
+                    "name": "⚽ 18:00 16/05 Song Lam Nghe An VS Ninh Bình FC [Chuối Tây - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518084.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-23f8a89606d4",
+                            "contents": [
+                                {
+                                    "id": "ct-23f8a89606d4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5594817c7d26",
+                    "name": "⚽ 18:00 16/05 Trường Tươi Đồng Nai VS Văn Hiến [Chuối Đồng - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -447,20 +399,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ce3c8473d141",
+                            "id": "src-5594817c7d26",
                             "contents": [
                                 {
-                                    "id": "ct-ce3c8473d141",
+                                    "id": "ct-5594817c7d26",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518156/1518156"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -503,6 +455,54 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1523152/1523152"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-ef29ce54c17e",
+                    "name": "⚽ 16:00 16/05 Đồng Tháp VS Long An FC",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518154.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ef29ce54c17e",
+                            "contents": [
+                                {
+                                    "id": "ct-ef29ce54c17e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1518154/1518154"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -881,6 +881,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1388605/1388605"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-262f4445de7e",
+                    "name": "⚽ 20:30 16/05 Bayern München VS 1.FC Köln",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1388606.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-262f4445de7e",
+                            "contents": [
+                                {
+                                    "id": "ct-262f4445de7e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1388606/1388606"
                                                         },
                                                         {
                                                             "key": "User-Agent",

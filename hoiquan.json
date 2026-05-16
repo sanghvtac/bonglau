@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (17:25 16/05/2026)",
+    "name": "Hội Quán TV (17:55 16/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -29,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -93,54 +93,6 @@
                     ]
                 },
                 {
-                    "id": "ch-009b0b02c3eb",
-                    "name": "⚽ 18:00 16/05 Wuhan Three Towns VS Shenyang Urban BLV CỦ HÀNH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/009b0b02c3eb.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-009b0b02c3eb",
-                            "contents": [
-                                {
-                                    "id": "ct-009b0b02c3eb",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/super-league.gxratlGLOJ/wuhan-three-towns-vs-shenyang-urban.YDeRf0QJxi/7474"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
                     "id": "ch-424b909f18a8",
                     "name": "⚽ 18:00 16/05 Hai Phong VS Binh Duong BLV PHAN CHỚP",
                     "type": "single",
@@ -203,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -224,6 +176,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-009b0b02c3eb",
+                    "name": "⚽ 18:00 16/05 Wuhan Three Towns VS Shenyang Urban BLV CỦ HÀNH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/009b0b02c3eb.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-009b0b02c3eb",
+                            "contents": [
+                                {
+                                    "id": "ct-009b0b02c3eb",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/super-league.gxratlGLOJ/wuhan-three-towns-vs-shenyang-urban.YDeRf0QJxi/7474"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e50a76648d5b",
                     "name": "⚽ 20:30 16/05 Bayer Leverkusen VS Hamburger SV BLV PHAN TÔ",
