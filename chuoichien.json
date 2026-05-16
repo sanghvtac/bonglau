@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:26 17/05/2026)",
+    "name": "Chuoi Chien TV (00:56 17/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -553,16 +553,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a8d8378cedac",
-                    "name": "⚽ 01:00 17/05 Al-Ahli Jeddah VS Al Kholood",
+                    "id": "ch-f1620a0bb886",
+                    "name": "⚽ 01:00 17/05 Al-Ahli Jeddah VS Al Kholood [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -573,20 +567,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a8d8378cedac",
+                            "id": "src-f1620a0bb886",
                             "contents": [
                                 {
-                                    "id": "ct-a8d8378cedac",
+                                    "id": "ct-f1620a0bb886",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1436204/1436204"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -602,6 +596,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-a63476991400",
+                    "name": "⚽ 01:00 17/05 Al-Ahli Jeddah VS Al Kholood [Chuối Đồng - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1436204.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a63476991400",
+                            "contents": [
+                                {
+                                    "id": "ct-a63476991400",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e10b92797927",
                     "name": "⚽ 01:45 17/05 St. Truiden VS Gent",
