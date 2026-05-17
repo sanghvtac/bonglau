@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:26 18/05/2026)",
+    "name": "Chuoi Chien TV (00:56 18/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-682282b10691",
-                    "name": "⚽ 23:00 17/05 Atalanta VS Bologna [Nhà đài - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378224.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-682282b10691",
-                            "contents": [
-                                {
-                                    "id": "ct-682282b10691",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m1x1hd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-b0237eeaee7a",
                     "name": "⚽ 23:30 17/05 Newcastle VS West Ham [Anh Quất - FHD1]",
@@ -511,16 +469,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c4d4b2370164",
-                    "name": "⚽ 01:00 18/05 Al Shabab VS Al-Ittihad FC",
+                    "id": "ch-8ce9b3b5d361",
+                    "name": "⚽ 01:00 18/05 Al Shabab VS Al-Ittihad FC [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -531,10 +483,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c4d4b2370164",
+                            "id": "src-8ce9b3b5d361",
                             "contents": [
                                 {
-                                    "id": "ct-c4d4b2370164",
+                                    "id": "ct-8ce9b3b5d361",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m4x3/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-9365fd111ef6",
+                    "name": "⚽ 23:00 17/05 Atalanta VS Bologna",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378224.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9365fd111ef6",
+                            "contents": [
+                                {
+                                    "id": "ct-9365fd111ef6",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1436160/1436160"
+                                                            "value": "https://live20.chuoichientv.com/live/1378224/1378224"
                                                         },
                                                         {
                                                             "key": "User-Agent",
