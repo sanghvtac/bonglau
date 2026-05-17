@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:55 17/05/2026)",
+    "name": "Chuoi Chien TV (18:26 17/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -511,16 +511,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-0508c0ce9526",
-                    "name": "⚽ 18:30 17/05 Manchester United VS Nottingham Forest",
+                    "id": "ch-20ad32bf3f66",
+                    "name": "⚽ 18:30 17/05 Manchester United VS Nottingham Forest [Anh Quất - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -531,20 +525,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0508c0ce9526",
+                            "id": "src-20ad32bf3f66",
                             "contents": [
                                 {
-                                    "id": "ct-0508c0ce9526",
+                                    "id": "ct-20ad32bf3f66",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhquathd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379336/1379336"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -560,6 +554,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-d96c3442366b",
+                    "name": "⚽ 18:30 17/05 Manchester United VS Nottingham Forest [Chuối Chanh - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379336.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d96c3442366b",
+                            "contents": [
+                                {
+                                    "id": "ct-d96c3442366b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chanhhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-312f1c637723",
                     "name": "⚽ 18:30 17/05 North Korea U17 W VS Japan U17 W",
