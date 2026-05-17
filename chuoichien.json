@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:55 17/05/2026)",
+    "name": "Chuoi Chien TV (07:25 17/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-047491f9fb76",
-                    "name": "⚽ 05:00 17/05 Fluminense VS Sao Paulo [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492266.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-047491f9fb76",
-                            "contents": [
-                                {
-                                    "id": "ct-047491f9fb76",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-c61e7cf63958",
                     "name": "⚽ 06:30 17/05 Philadelphia Union VS Columbus Crew [Nhà Đài - HD1]",
@@ -343,16 +301,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5ce1d91d215b",
-                    "name": "⚽ 07:30 17/05 Houston Dynamo VS Vancouver Whitecaps",
+                    "id": "ch-1e5c28a1a706",
+                    "name": "⚽ 07:30 17/05 Houston Dynamo VS Vancouver Whitecaps [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -363,20 +315,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5ce1d91d215b",
+                            "id": "src-1e5c28a1a706",
                             "contents": [
                                 {
-                                    "id": "ct-5ce1d91d215b",
+                                    "id": "ct-1e5c28a1a706",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x2/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490302/1490302"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -393,8 +345,8 @@
                     ]
                 },
                 {
-                    "id": "ch-945cba039f14",
-                    "name": "⚽ 07:30 17/05 Austin VS Sporting Kansas City",
+                    "id": "ch-fb7f36cf048b",
+                    "name": "⚽ 07:30 17/05 Austin VS Sporting Kansas City [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -405,20 +357,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-945cba039f14",
+                            "id": "src-fb7f36cf048b",
                             "contents": [
                                 {
-                                    "id": "ct-945cba039f14",
+                                    "id": "ct-fb7f36cf048b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m3x3/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490303/1490303"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -433,7 +385,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3bba1508b0bd",
                     "name": "⚽ 08:07 17/05 Chivas VS Cruz Azul",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1504816/1504816"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-96f2ec7ab251",
+                    "name": "⚽ 14:00 17/05 Gunma Bank Green Wings W VS LPBank Ninh Bình",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/991299.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-96f2ec7ab251",
+                            "contents": [
+                                {
+                                    "id": "ct-96f2ec7ab251",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/991299/991299"
                                                         },
                                                         {
                                                             "key": "User-Agent",
