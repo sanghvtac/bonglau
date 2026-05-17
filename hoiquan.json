@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (16:25 17/05/2026)",
+    "name": "Hội Quán TV (16:55 17/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -7,96 +7,6 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": [
-                {
-                    "id": "ch-2184f9206176",
-                    "name": "⚽ 14:30 17/05 Jeju United FC VS FC Anyang BLV CỦ HÀNH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2184f9206176.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2184f9206176",
-                            "contents": [
-                                {
-                                    "id": "ct-2184f9206176",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/k-league-1-1758630323713/jeju-united-fc-vs-fc-anyang.zo0Bk4OmC_/7574"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-71e05a2467f0",
-                    "name": "⚽ 14:40 17/05 Jeonbuk Motors VS Gimcheon Sangmu FC BLV PHAN MÃ",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/71e05a2467f0.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-71e05a2467f0",
-                            "contents": [
-                                {
-                                    "id": "ct-71e05a2467f0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/k-league-1-1758630323713/jeonbuk-motors-vs-gimcheon-sangmu-fc.bL1P3vF5eI/7537"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
                     "id": "ch-1afcd70f2429",
@@ -119,7 +29,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanchop/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -161,7 +71,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanbap/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -223,49 +133,13 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "ch-c271399d15e3",
-                    "name": "⚽ 17:00 17/05 Genoa VS AC Milan BLV PHAN CA",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c271399d15e3.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c271399d15e3",
-                            "contents": [
-                                {
-                                    "id": "ct-c271399d15e3",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/serie-a-1758631315616/genoa-vs-ac-milan.LU0DMErGdq/7510"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f9fc0f00b90b",
                     "name": "⚽ 18:00 17/05 Nam Dinh VS Viettel BLV PHAN TỪ",
@@ -393,22 +267,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f3cb330fdc73",
-                    "name": "⚽ 19:15 17/05 Công An Nhân Dân VS Thanh Hóa BLV PHAN TÔ",
+                    "id": "ch-2cfc73608094",
+                    "name": "⚽ 19:15 17/05 CAHN VS Thanh Hóa BLV PHAN TÔ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f3cb330fdc73.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2cfc73608094.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f3cb330fdc73",
+                            "id": "src-2cfc73608094",
                             "contents": [
                                 {
-                                    "id": "ct-f3cb330fdc73",
+                                    "id": "ct-2cfc73608094",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -418,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/vleague-1.U9-8pk5qCM/cong-an-nhan-dan-vs-thanh-hoa.w7pHpqPgPm/7515"
+                                                            "value": "https://sv2.hoiquan3.live/truc-tiep/bong-da/vleague-1.U9-8pk5qCM/cong-an-nhan-dan-vs-thanh-hoa.qQKFGd11a6/7515"
                                                         },
                                                         {
                                                             "key": "User-Agent",
