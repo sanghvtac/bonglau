@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đỉnh TV (20:25 17/05/2026)",
+    "name": "Thiên Đỉnh TV (20:55 17/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-30fd7e7f20a9",
-                    "name": "⚽ 18:30 17/05 Manchester United VS Nottingham Forest BLV Táo Mèo",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/30fd7e7f20a9.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-30fd7e7f20a9",
-                            "contents": [
-                                {
-                                    "id": "ct-30fd7e7f20a9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taomeo/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-nottingham-forest.i5VBmo6Fd2"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-31a8bf6495c9",
-                    "name": "⚽ 18:30 17/05 Manchester United VS Nottingham Forest BLV Thần Thông",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/31a8bf6495c9.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-31a8bf6495c9",
-                            "contents": [
-                                {
-                                    "id": "ct-31a8bf6495c9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-nottingham-forest.yWOrL5YT8E"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-ef52791d9a9d",
                     "name": "⚽ 19:15 17/05 Công An Nhân Dân VS Thanh Hóa BLV Táo Tỉnh Táo",
@@ -133,13 +49,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-855c8fab0323",
                     "name": "⚽ 21:00 17/05 Brentford VS Crystal Palace BLV Táo Mèo",
@@ -203,7 +113,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taothienvuong/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -245,7 +155,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -287,7 +197,7 @@
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://tfvy0gr4uqmtt8y41hcjw8yzdnpjufi4ge5djq311h6mbqjzgg3dqf3sg17uf.100ycdn.com/tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8?wsSession=c1cf2d6691ff8f433063200f-177902614803658&wsIPSercert=f753741c223273d5b0f621a9a27d83ea&wsBindIP=2&wsserid=1168202333418134578",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -307,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a672474519e8",
                     "name": "⚽ 23:30 17/05 Newcastle VS West Ham BLV Táo Tỉnh Táo",
@@ -519,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-30fd7e7f20a9",
-                    "name": "⚽ 18:30 17/05 BLV Táo Mèo Manchester VS UnitedKXD0-0---'Nottingham ForestBLV Táo MèoTrực tiếp BLV Táo Mèo11:30 17/05Premier LeagueManchester UnitedKXD0-0---'Nottingham ForestBLV Táo MèoTrực tiếp",
+                    "id": "ch-855c8fab0323",
+                    "name": "⚽ 21:00 17/05 BLV Táo Mèo Brentford VS KXD0-0---'Crystal PalaceBLV Táo MèoTrực tiếp BLV Táo Mèo14:00 17/05Premier LeagueBrentford KXD0-0---'Crystal PalaceBLV Táo MèoTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/30fd7e7f20a9.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/855c8fab0323.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-30fd7e7f20a9",
+                            "id": "src-855c8fab0323",
                             "contents": [
                                 {
-                                    "id": "ct-30fd7e7f20a9",
+                                    "id": "ct-855c8fab0323",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-nottingham-forest.i5VBmo6Fd2"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/brentford-vs-crystal-palace.qSCP2OXWSK"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-31a8bf6495c9",
-                    "name": "⚽ 18:30 17/05 BLV Thần Thông Manchester VS UnitedKXD0-0---'Nottingham ForestBLV Thần ThôngTrực tiếp BLV Thần Thông11:30 17/05Premier LeagueManchester UnitedKXD0-0---'Nottingham ForestBLV Thần ThôngTrực tiếp",
+                    "id": "ch-33a680d0cf22",
+                    "name": "⚽ 21:00 17/05 BLV Táo Thiên Vương VS EvertonKXD0-0---'SunderlandBLV Táo Thiên VươngTrực tiếp BLV Táo Thiên Vương14:00 17/05Premier LeagueEvertonKXD0-0---'SunderlandBLV Táo Thiên VươngTrực tiếp",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/31a8bf6495c9.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/33a680d0cf22.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-31a8bf6495c9",
+                            "id": "src-33a680d0cf22",
                             "contents": [
                                 {
-                                    "id": "ct-31a8bf6495c9",
+                                    "id": "ct-33a680d0cf22",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +502,91 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/manchester-united-vs-nottingham-forest.yWOrL5YT8E"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/everton-vs-sunderland.J_gqr3q1_I"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-daa91014f47d",
+                    "name": "⚽ 21:00 17/05 BLV Táo Kinh Tế(A Tích) VS LeedsKXD0-0---'BrightonBLV Táo Kinh Tế(A Tích)Trực tiếp BLV Táo Kinh Tế(A Tích)14:00 17/05Premier LeagueLeedsKXD0-0---'BrightonBLV Táo Kinh Tế(A Tích)Trực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/daa91014f47d.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-daa91014f47d",
+                            "contents": [
+                                {
+                                    "id": "ct-daa91014f47d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/leeds-vs-brighton._UWPCxSlje"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4fc537e3f789",
+                    "name": "⚽ 21:00 17/05 BLV Thần Thông VS WolvesKXD0-0---'FulhamBLV Thần ThôngTrực tiếp BLV Thần Thông14:00 17/05Premier LeagueWolvesKXD0-0---'FulhamBLV Thần ThôngTrực tiếp",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4fc537e3f789.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4fc537e3f789",
+                            "contents": [
+                                {
+                                    "id": "ct-4fc537e3f789",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/wolves-vs-fulham.E8kCoKE7x1"
                                                         },
                                                         {
                                                             "key": "User-Agent",
