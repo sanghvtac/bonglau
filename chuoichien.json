@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 18/05/2026)",
+    "name": "Chuoi Chien TV (06:55 18/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b0a0cf7bcf43",
-                    "name": "⚽ 07:00 18/05 Nashville SC VS Los Angeles FC",
+                    "id": "ch-4a92b7d5a0f8",
+                    "name": "⚽ 07:00 18/05 Nashville SC VS Los Angeles FC [Anh Hột - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b0a0cf7bcf43",
+                            "id": "src-4a92b7d5a0f8",
                             "contents": [
                                 {
-                                    "id": "ct-b0a0cf7bcf43",
+                                    "id": "ct-4a92b7d5a0f8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490309/1490309"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -140,6 +134,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-34c356071ea4",
+                    "name": "⚽ 07:00 18/05 Nashville SC VS Los Angeles FC [Chuối Tây - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490309.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-34c356071ea4",
+                            "contents": [
+                                {
+                                    "id": "ct-34c356071ea4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b8dab0d2bdba",
                     "name": "⚽ 08:00 18/05 U.N.A.M. - Pumas VS Pachuca",
