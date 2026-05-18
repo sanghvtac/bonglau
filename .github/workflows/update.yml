@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,7 +28,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-playwright-pillow
+          key: ${{ runner.os }}-pip-playwright-pillow-boto3
           restore-keys: ${{ runner.os }}-pip-
 
       # Cache key dùng string cố định thay vì hashFiles('requirements.txt')
@@ -38,7 +43,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright requests Pillow --quiet
+          pip install playwright requests Pillow boto3 --quiet
           if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
             playwright install chromium --with-deps
           fi
