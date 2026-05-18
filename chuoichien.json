@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 18/05/2026)",
+    "name": "Chuoi Chien TV (13:55 18/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-a8024cb73374",
-                    "name": "⚽ 14:00 18/05 Giang Tô (CN) VS Vietinbank",
+                    "id": "ch-1c7310c8b3ee",
+                    "name": "⚽ 14:00 18/05 Giang Tô (CN) VS Vietinbank [Chuối Đồng - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a8024cb73374",
+                            "id": "src-1c7310c8b3ee",
                             "contents": [
                                 {
-                                    "id": "ct-a8024cb73374",
+                                    "id": "ct-1c7310c8b3ee",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995720/995720"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6ce67971ac48",
                     "name": "⚽ 16:30 18/05 South Melbourne VS Sunshine Georgies",
