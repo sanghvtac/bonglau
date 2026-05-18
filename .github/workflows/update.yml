@@ -1,8 +1,6 @@
 name: Crawl ThienDinh & HoiQuan & ChuoiChien
 on:
   #schedule:
-    # Chạy 3 lần/ngày vào 18:00, 21:00, 00:00 giờ VN
-    # Giờ VN (UTC+7) -> UTC: 18h=11h, 21h=14h, 00h=17h
     #- cron: '0 11-14 * * *'
   workflow_dispatch:
 jobs:
@@ -10,11 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    env:
-      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
-      R2_BUCKET: ${{ secrets.R2_BUCKET }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -28,11 +21,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-playwright-pillow-boto3
+          key: ${{ runner.os }}-pip-playwright-pillow
           restore-keys: ${{ runner.os }}-pip-
 
-      # Cache key dùng string cố định thay vì hashFiles('requirements.txt')
-      # vì repo không có file đó → hash luôn rỗng → không tự invalidate được.
       - name: Cache Playwright browsers
         id: playwright-cache
         uses: actions/cache@v4
@@ -43,12 +34,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright requests Pillow boto3 --quiet
+          pip install playwright requests Pillow --quiet
           if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
             playwright install chromium --with-deps
           fi
 
-      # continue-on-error: nếu 1 trang lỗi/timeout thì vẫn tiếp tục các trang khác
       - name: Run ThienDinh crawler
         continue-on-error: true
         run: python crawl_thiendinh.py
