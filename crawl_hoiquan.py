@@ -399,3 +399,12 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+# === Upload kết quả lên Cloudflare R2 ===
+from r2_upload import upload_many
+
+upload_many({
+    'hoiquan.json': 'hoiquan.json',
+    'hoiquan_iptv.txt': 'hoiquan_iptv.txt',
+    'hoiquan_vlc.txt': 'hoiquan_vlc.txt',
+})
