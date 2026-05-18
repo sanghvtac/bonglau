@@ -401,14 +401,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 # === Upload kết quả lên Cloudflare R2 ===
-from r2_upload import upload_many
-
+from r2_upload import upload_many, upload_folder
 upload_many({
     'hoiquan.json': 'hoiquan.json',
     'hoiquan_iptv.txt': 'hoiquan_iptv.txt',
     'hoiquan_vlc.txt': 'hoiquan_vlc.txt',
 })
-# Upload thư mục ảnh nếu có (đổi tên thư mục nếu khác)
-if os.path.isdir('thumbs'):
-    for fname in os.listdir('thumbs'):
-        upload_file(f'thumbs/{fname}', f'thumbs/{fname}')
+upload_folder('thumbs', remote_prefix='thumbs')
