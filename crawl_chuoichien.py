@@ -299,6 +299,9 @@ async def main():
     print(f"   📺 Tong entries (BLV x chat luong): {total_entries}")
     print(f"   📄 Da xuat: chuoichien.json | chuoichien_iptv.txt | chuoichien_vlc.txt")
 
+if __name__ == "__main__":
+    asyncio.run(main())
+
 # === Upload kết quả lên Cloudflare R2 ===
 from r2_upload import upload_many
 
@@ -314,5 +317,3 @@ if os.path.isdir('thumbs'):
     for fname in os.listdir('thumbs'):
         from r2_upload import upload_file
         upload_file(f'thumbs/{fname}', f'thumbs/{fname}')
-if __name__ == "__main__":
-    asyncio.run(main())
