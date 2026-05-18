@@ -353,6 +353,8 @@ async def main():
 
         finally:
             await browser.close()
+if __name__ == "__main__":
+    asyncio.run(main())
 
 # === Upload kết quả lên Cloudflare R2 ===
 from r2_upload import upload_many
@@ -362,5 +364,7 @@ upload_many({
     'thiendinh_iptv.txt': 'thiendinh_iptv.txt',
     'thiendinh_vlc.txt': 'thiendinh_vlc.txt',
 })
-if __name__ == "__main__":
-    asyncio.run(main())
+# Upload thư mục ảnh nếu có (đổi tên thư mục nếu khác)
+if os.path.isdir('thumbs'):
+    for fname in os.listdir('thumbs'):
+        upload_file(f'thumbs/{fname}', f'thumbs/{fname}')
