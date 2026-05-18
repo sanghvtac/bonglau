@@ -354,5 +354,13 @@ async def main():
         finally:
             await browser.close()
 
+# === Upload kết quả lên Cloudflare R2 ===
+from r2_upload import upload_many
+
+upload_many({
+    'thiendinh.json': 'thiendinh.json',
+    'thiendinh_iptv.txt': 'thiendinh_iptv.txt',
+    'thiendinh_vlc.txt': 'thiendinh_vlc.txt',
+})
 if __name__ == "__main__":
     asyncio.run(main())
