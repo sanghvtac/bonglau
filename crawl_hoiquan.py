@@ -408,3 +408,7 @@ upload_many({
     'hoiquan_iptv.txt': 'hoiquan_iptv.txt',
     'hoiquan_vlc.txt': 'hoiquan_vlc.txt',
 })
+# Upload thư mục ảnh nếu có (đổi tên thư mục nếu khác)
+if os.path.isdir('thumbs'):
+    for fname in os.listdir('thumbs'):
+        upload_file(f'thumbs/{fname}', f'thumbs/{fname}')
