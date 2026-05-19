@@ -301,6 +301,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    'chuoichien_vlc.txt': 'chuoichien_vlc.txt',
-})
-upload_folder('thumbs', remote_prefix='thumbs')
