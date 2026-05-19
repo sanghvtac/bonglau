@@ -16,14 +16,46 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          # Lấy commit mới nhất (bao gồm cả file mới crawler vừa push)
+          # Lấy 2 commit để diff commit mới nhất với commit trước đó
+          fetch-depth: 2
           ref: main
 
+      # Kiểm tra commit gần nhất có file thay đổi không
+      # Nếu không có gì thay đổi (vd: workflow chạy nhưng không có file mới) → skip toàn bộ sync
+      - name: Check for changes in latest commit
+        id: check
+        run: |
+          # Đếm số file thay đổi (added/modified/deleted) trong commit cuối
+          CHANGED=$(git diff --name-only HEAD~1 HEAD | wc -l)
+          LAST_MSG=$(git log -1 --pretty=%s)
+          echo "Commit gần nhất: $LAST_MSG"
+          echo "Số file thay đổi: $CHANGED"
+
+          # Liệt kê file thay đổi để debug
+          if [ "$CHANGED" -gt 0 ]; then
+            echo "Danh sách file thay đổi:"
+            git diff --name-only HEAD~1 HEAD | head -20
+          fi
+
+          # Manual trigger thì luôn chạy, không skip
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "→ Manual trigger, luôn chạy sync"
+          elif [ "$CHANGED" -eq 0 ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "→ Không có file thay đổi, BỎ QUA sync để tiết kiệm Class A"
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "→ Có file thay đổi, sẽ chạy sync"
+          fi
+
       - name: Install rclone
+        if: steps.check.outputs.skip != 'true'
         run: |
           curl https://rclone.org/install.sh | sudo bash
 
       - name: Configure rclone for R2
+        if: steps.check.outputs.skip != 'true'
         run: |
           mkdir -p ~/.config/rclone
           cat > ~/.config/rclone/rclone.conf <<EOF
@@ -37,6 +69,7 @@ jobs:
           EOF
 
       - name: Sync output files to R2
+        if: steps.check.outputs.skip != 'true'
         run: |
           # Upload các file output đơn lẻ (json, txt) - song song 10 file
           rclone copy . r2:${{ secrets.R2_BUCKET }}/ \
@@ -47,10 +80,15 @@ jobs:
             --checkers 20 \
             --header-upload "Cache-Control: public, max-age=60" \
             --s3-no-check-bucket \
+            --size-only \
             --progress
 
       - name: Sync thumbs folder to R2
+        if: steps.check.outputs.skip != 'true'
         run: |
+          # Sync thư mục thumbs - chỉ upload file MỚI/THAY ĐỔI
+          # --fast-list: gom list operations thành 1 ListObjectsV2 lớn (tiết kiệm Class A)
+          # --size-only: chỉ so sánh size, bỏ HeadObject (tiết kiệm Class B)
           rclone sync thumbs/ r2:${{ secrets.R2_BUCKET }}/thumbs/ \
             --transfers 20 \
             --checkers 40 \
@@ -59,3 +97,9 @@ jobs:
             --fast-list \
             --size-only \
             --progress
+
+      - name: Skip summary
+        if: steps.check.outputs.skip == 'true'
+        run: |
+          echo "✅ Đã bỏ qua sync vì không có file thay đổi"
+          echo "   Tiết kiệm: ~450 Class A operations"
