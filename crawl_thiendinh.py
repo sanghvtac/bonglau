@@ -1,716 +1,404 @@
 import json
-
 import asyncio
-
 import re
-
 import hashlib
-
 import os
-
 import requests
-
 from concurrent.futures import ThreadPoolExecutor
-
 from datetime import datetime, timedelta, timezone
-
 from io import BytesIO
-
 from PIL import Image
-
 from playwright.async_api import async_playwright
 
-
-
 TARGET_URL    = "https://sv2.thiendinh1.live/lich-thi-dau/bong-da?by=state&value=live"
-
+BASE_DOMAIN   = "https://sv2.thiendinh1.live"
 COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
-
 GITHUB_REPO   = "sanghvtac/bonglau"
-
 GITHUB_BRANCH = "main"
-
 THUMBS_DIR    = "thumbs"
 
-
-
-# Danh sách giải đấu cần xóa
-
+# Danh sách giải đấu cần xóa (chỉ dùng cho fallback)
 LEAGUE_BLACKLIST = [
-
     "UEFA Champions League", "UEFA Youth League", "UEFA Europa League", "UEFA Conference League",
-
     "Champions League", "Youth League", "Europa League", "Conference League", "UEFA",
-
     "AFC Champions League", "AFC Cup", "Premier League", "Ngoại Hạng Anh", "La Liga", "Serie A",
-
     "Bundesliga", "Ligue 1", "V-League", "K League 1", "Asian Cup Women", "Cup", "Vòng loại", "Giao hữu"
-
 ]
 
-
-
 def generate_id(text):
-
     return hashlib.md5(text.encode()).hexdigest()[:12]
 
-
-
 # ──────────────────────────────────────────────
-
 # ẢNH: Ghép 2 logo -> lưu file PNG -> trả URL
-
 # ──────────────────────────────────────────────
-
 def _fetch_logo(url):
-
     try:
-
         proxy = f"https://images.weserv.nl/?url={url}&w=100&h=100&fit=contain&output=png&bg=ececec"
-
         res = requests.get(proxy, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
-
         return Image.open(BytesIO(res.content)).convert("RGBA")
-
     except:
-
         return None
 
-
-
 def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
-
     """Ghép 2 logo -> lưu thumbs/<match_id>.png -> trả URL GitHub raw."""
-
     os.makedirs(THUMBS_DIR, exist_ok=True)
-
     path = os.path.join(THUMBS_DIR, f"{match_id}.png")
-
     try:
-
         canvas = Image.new("RGBA", (220, 100), (236, 236, 236, 255))
-
         img_a = _fetch_logo(logo_a_url) if logo_a_url else None
-
         img_b = _fetch_logo(logo_b_url) if logo_b_url else None
-
         if img_a:
-
             canvas.paste(img_a, (0, 0), img_a)
-
         if img_b:
-
             canvas.paste(img_b, (110, 0), img_b)
-
         canvas.save(path, format="PNG", optimize=True)
-
     except:
-
         if not os.path.exists(path):
-
             Image.new("RGBA", (220, 100), (236, 236, 236, 255)).save(path, format="PNG")
-
     return f"https://raw.githubusercontent.com/{GITHUB_REPO}/refs/heads/{GITHUB_BRANCH}/{path}"
 
-
-
 async def make_thumb_async(logo_a_url, logo_b_url, match_id, executor):
-
     loop = asyncio.get_event_loop()
-
     return await loop.run_in_executor(
-
         executor, _build_and_save_thumb, logo_a_url, logo_b_url, match_id
-
     )
 
-
-
 # ──────────────────────────────────────────────
-
 # GIỜ: Tự động phát hiện timezone offset
-
 # ──────────────────────────────────────────────
-
 def detect_time_offset():
-
     """
-
     So sánh local time vs UTC để tự tính số giờ cần cộng vào giờ trận đấu.
-
     - GitHub Actions (UTC+0): cộng +7
-
     - Máy VN (UTC+7): cộng +0
-
     """
-
     local_now = datetime.now()
-
     utc_now = datetime.now(timezone.utc).replace(tzinfo=None)
-
     diff_hours = round((local_now - utc_now).total_seconds() / 3600)
-
     needed_offset = 7 - diff_hours
-
     print(f"[INFO] Local timezone: UTC+{diff_hours} → Cộng {needed_offset}h vào giờ trận")
-
     return needed_offset
 
-
-
 def adjust_time_str(time_str, offset_hours):
-
     """Cộng offset_hours vào time_str dạng 'HH:MM DD/MM'."""
-
     if not time_str or offset_hours == 0:
-
         return time_str
-
     try:
-
         dt = datetime.strptime(time_str.strip(), "%H:%M %d/%m")
-
         dt = dt.replace(year=datetime.now(timezone.utc).year)
-
         return (dt + timedelta(hours=offset_hours)).strftime("%H:%M %d/%m")
-
     except:
-
         return time_str
 
-
-
 # ──────────────────────────────────────────────
-
-# TIÊU ĐỀ: Làm sạch raw text → tên trận đấu
-
+# TIÊU ĐỀ: Build từ DOM (đã có sẵn time, teams, blv, is_live)
 # ──────────────────────────────────────────────
-
-def clean_title(text, time_offset=0, team_names_dom=None):
-
+def build_title(time_str, team_a, team_b, blv_str, time_offset=0):
     """
-
-    Trả về tiêu đề chuẩn: "HH:MM DD/MM Đội A VS Đội B [BLV ...]"
-
-    Tên đội lấy từ DOM (span.truncate) — chính xác, không cần parse text.
-
+    Build tiêu đề chuẩn: "HH:MM DD/MM Đội A VS Đội B [BLV ...]"
+    Tất cả thông tin lấy thẳng từ DOM, không cần regex parse text rác.
     """
-
-    # 1. Nhận diện Live — \b tránh bắt "Live" trong "Liverpool"
-
-    is_live_origin = bool(re.search(r'(?i)\bLive\b|●', text))
-
-
-
-    # 2. Chuẩn hóa giờ/ngày dính: "03:0019/03" → "03:00 19/03"
-
-    text = re.sub(r'(\d{2}:\d{2})\s*(\d{2}/\d{2})', r'\1 \2', text)
-
-    time_match = re.search(r'\d{2}:\d{2} \d{2}/\d{2}', text)
-
-    raw_time_str = time_match.group(0) if time_match else ""
-
-    time_str = adjust_time_str(raw_time_str, time_offset)
-
-
-
-    # 3. Tách BLV
-
-    blv_match = re.search(r'(BLV\s+\S.*?)(?:\n|$)', text, flags=re.IGNORECASE)
-
-    blv_str = f" {blv_match.group(1).strip()}" if blv_match else ""
-
-
-
-    # 4. Dùng tên đội từ DOM (ưu tiên tuyệt đối)
-
-    if team_names_dom and len(team_names_dom) == 2:
-
-        team_a, team_b = team_names_dom[0].strip(), team_names_dom[1].strip()
-
-        final_teams = f"{team_a} VS {team_b}"
-
-        return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
-
-
-
-    # 5. Fallback tối giản (chỉ dùng khi DOM không lấy được tên đội)
-
-    #    Xóa hết rác, giải đấu, chia đôi số từ còn lại
-
-    clean = re.sub(r'(?i)\bLive\b|\bnull\b|●|Sắp diễn ra|Sắp bắt đầu', ' ', text)
-
-    clean = clean.replace(raw_time_str, "").replace(blv_str.strip(), "")
-
-    for league in sorted(LEAGUE_BLACKLIST, key=len, reverse=True):
-
-        clean = re.sub(rf'(?i){re.escape(league)}', ' ', clean)
-
-    clean = re.sub(r'\s{2,}', ' ', clean).strip()
-
-    words = clean.split()
-
-    mid = len(words) // 2
-
-    team_a = " ".join(words[:mid])
-
-    team_b = " ".join(words[mid:])
-
+    time_str = adjust_time_str(time_str, time_offset)
     final_teams = f"{team_a} VS {team_b}" if team_b else team_a
-
-    return f"{time_str} {final_teams}{blv_str}".strip(), final_teams, is_live_origin
-
-
+    blv_part = f" {blv_str}" if blv_str else ""
+    full_title = f"{time_str} {final_teams}{blv_part}".strip()
+    return full_title, final_teams
 
 # ──────────────────────────────────────────────
-
 # STREAM: Lấy URL m3u8 cho từng trận live
-
 # ──────────────────────────────────────────────
-
 async def fetch_stream_url(page, item_url):
-
     """
-
     Mở page mới riêng, lắng nghe response để bắt URL .m3u8.
-
     Luôn remove_listener sau khi xong để tránh chồng chất.
-
     """
-
     m3u8_list = []
 
-
-
     def on_response(res):
-
         if ".m3u8" in res.url:
-
             m3u8_list.append(res.url)
 
-
-
     page.on("response", on_response)
-
     try:
-
         await page.goto(item_url, wait_until="domcontentloaded", timeout=15000)
-
         await asyncio.sleep(4)
-
         return max(m3u8_list, key=len) if m3u8_list else ""
-
     except:
-
         return ""
-
     finally:
-
         page.remove_listener("response", on_response)
 
+# ──────────────────────────────────────────────
+# PARSE 1 CARD: lấy time, teams, logos, blv, is_live trực tiếp từ DOM
+# ──────────────────────────────────────────────
+async def parse_match_card(el):
+    """
+    Trích xuất thông tin từ 1 thẻ <a> card trận đấu của thiendinh.
+    Trả về dict các trường đã làm sạch.
+    """
+    href = await el.get_attribute("href")
+    full_url = BASE_DOMAIN + href if href and href.startswith("/") else href
 
+    # 1. is_live: kiểm tra DOM trước (icon live pulse), sau đó fallback regex text
+    pulse_node = await el.query_selector(".animate-pulse")
+    is_live = pulse_node is not None
+    raw_text = (await el.text_content()) or ""
+    if not is_live:
+        # Fallback: text có "H1 - XX", "H2 - XX" (đang đá), "Live" (whole word) hoặc "●"
+        is_live = bool(
+            re.search(r"H[12]\s*-\s*\d+", raw_text)
+            or re.search(r"(?i)\bLive\b", raw_text)
+            or "●" in raw_text
+        )
+
+    # 2. Tên 2 đội: span.truncate (ưu tiên kèm font-medium nếu có)
+    team_nodes = await el.query_selector_all("span.truncate.font-medium")
+    if not team_nodes:
+        team_nodes = await el.query_selector_all("span.truncate")
+    team_names = []
+    for node in team_nodes:
+        t = ((await node.text_content()) or "").strip()
+        # Loại tên BLV và chuỗi quá ngắn
+        if t and len(t) > 1 and not re.match(r"(?i)^\s*BLV\b", t):
+            team_names.append(t)
+    # Dedupe giữ thứ tự
+    seen = []
+    for t in team_names:
+        if t not in seen:
+            seen.append(t)
+    team_a = seen[0] if len(seen) >= 1 else ""
+    team_b = seen[1] if len(seen) >= 2 else ""
+
+    # 3. Time + Date: thiendinh có thể nối liền 2 span "HH:MM" và "DD/MM"
+    #    "03:0019/03" → "03:00 19/03"
+    time_str = ""
+    m_combo = re.search(r"(\d{1,2}:\d{2})\s*(\d{1,2}/\d{1,2})(?:/\d{2,4})?", raw_text)
+    if m_combo:
+        time_str = f"{m_combo.group(1)} {m_combo.group(2)}"
+        # Pad 2 chữ số (2 → 02) cho khớp format adjust_time_str
+        try:
+            dt = datetime.strptime(time_str, "%H:%M %d/%m")
+            time_str = dt.strftime("%H:%M %d/%m")
+        except:
+            pass
+    else:
+        # Fallback: chỉ có giờ, không có ngày
+        m_time = re.search(r"(\d{1,2}:\d{2})", raw_text)
+        if m_time:
+            time_str = m_time.group(1)
+
+    # 4. BLV: thường có span chứa "BLV ..." trong khối info
+    blv_str = ""
+    blv_node = await el.query_selector(".bg-blue-500 span.truncate, .bg-blue-500 span.font-medium")
+    if blv_node:
+        blv_text = ((await blv_node.text_content()) or "").strip()
+        if blv_text:
+            blv_str = blv_text if blv_text.upper().startswith("BLV") else f"BLV {blv_text}"
+    else:
+        # Fallback: tìm "BLV ..." trong raw_text
+        blv_match = re.search(r"(BLV\s+\S.*?)(?:\n|$)", raw_text, flags=re.IGNORECASE)
+        if blv_match:
+            blv_str = blv_match.group(1).strip()
+
+    # 5. Logo 2 đội: img có class "rounded object-contain" — đặc trưng riêng logo đội
+    team_logo_imgs = await el.query_selector_all("img.rounded.object-contain")
+    logos = []
+    for img in team_logo_imgs:
+        src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
+        if src and src.startswith("http"):
+            logos.append(src)
+
+    # Fallback: nếu chưa đủ 2 logo thì quét tất cả img và lọc rác
+    if len(logos) < 2:
+        all_imgs = await el.query_selector_all("img")
+        LOGO_EXCLUDE = ("30aaqin.png", "postimg.cc", "i.postimg",
+                        "image2url.com", "i.imgur.com")
+        for img in all_imgs:
+            src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
+            if (src and src.startswith("http")
+                and not any(d in src for d in LOGO_EXCLUDE)
+                and src not in logos):
+                logos.append(src)
+            if len(logos) >= 2:
+                break
+
+    return {
+        "url":      full_url,
+        "team_a":   team_a,
+        "team_b":   team_b,
+        "time_str": time_str,
+        "blv_str":  blv_str,
+        "logo_a":   logos[0] if len(logos) >= 1 else "",
+        "logo_b":   logos[1] if len(logos) >= 2 else "",
+        "is_live":  is_live,
+    }
 
 # ──────────────────────────────────────────────
-
 # MAIN
-
 # ──────────────────────────────────────────────
-
 async def main():
-
     now_utc = datetime.now(timezone.utc)
-
     vn_time = now_utc + timedelta(hours=7)
-
     now_str = vn_time.strftime("%H:%M %d/%m/%Y")
-
     time_offset = detect_time_offset()
-
     executor = ThreadPoolExecutor(max_workers=8)
 
-
-
     async with async_playwright() as p:
-
         browser = await p.chromium.launch()
-
         context = await browser.new_context(user_agent="Mozilla/5.0")
-
         page = await context.new_page()
 
-
-
         try:
-
             # ── Bước 1: Lấy danh sách trận ──
-
             await page.goto(TARGET_URL, wait_until="domcontentloaded")
-
             for _ in range(3):
-
                 await page.mouse.wheel(0, 2000)
-
                 await asyncio.sleep(1)
 
-
-
+            # Selector đúng cho thiendinh: href bắt đầu bằng "/xem-truc-tiep/"
             elements = await page.query_selector_all("a[href*='/xem-truc-tiep/']")
+            print(f"[INFO] Tìm được {len(elements)} thẻ card trận đấu")
 
             match_data = []
-
-
-
             for el in elements:
+                info = await parse_match_card(el)
+                if not info["url"] or not info["team_a"]:
+                    continue   # bỏ card hỏng
 
-                url = await el.get_attribute("href")
-
-                full_url = "https://sv2.thiendinh1.live" + url if url.startswith('/') else url
-
-                raw_text = (await el.text_content()).strip()
-
-
-
-                # Lấy tên 2 đội từ span.truncate — đây là thẻ chứa tên đội theo HTML thực tế
-
-                team_nodes = await el.query_selector_all("span.truncate")
-
-                team_names_raw = []
-
-                for node in team_nodes:
-
-                    t = (await node.text_content()).strip()
-
-                    if t and len(t) > 1:
-
-                        team_names_raw.append(t)
-
-                seen = []
-
-                for t in team_names_raw:
-
-                    if t not in seen:
-
-                        seen.append(t)
-
-                team_names_dom = seen[:2]
-
-
-
-                full_title, teams_only, is_live = clean_title(
-
-                    raw_text,
-
-                    time_offset=time_offset,
-
-                    team_names_dom=team_names_dom
-
+                full_title, teams_only = build_title(
+                    info["time_str"],
+                    info["team_a"], info["team_b"],
+                    info["blv_str"],
+                    time_offset=time_offset
                 )
-
-
-
-                # Lấy logo đội bóng bằng CSS class selector chính xác (học từ crawl_hoiquan)
-
-                # Theo HTML thực tế: <img class="w-[48px] h-[32px] rounded object-contain" src="...">
-
-                # Class "rounded" và "object-contain" là đặc trưng riêng của logo đội bóng
-
-                team_logo_imgs = await el.query_selector_all("img.rounded.object-contain")
-
-                logos = []
-
-                for img in team_logo_imgs:
-
-                    src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
-
-                    if src and src.startswith("http"):
-
-                        logos.append(src)
-
-
-
-                # Fallback: nếu selector trên không ra đủ 2 logo thì lấy tất cả img lọc theo URL
-
-                if len(logos) < 2:
-
-                    all_imgs = await el.query_selector_all("img")
-
-                    all_srcs = [await img.get_attribute("data-src") or await img.get_attribute("src") for img in all_imgs]
-
-                    LOGO_EXCLUDE = ("30aaqin.png", "postimg.cc", "i.postimg")
-
-                    for src in all_srcs:
-
-                        if (src and src.startswith("http")
-
-                                and not any(d in src for d in LOGO_EXCLUDE)
-
-                                and src not in logos):
-
-                            logos.append(src)
-
-                        if len(logos) >= 2:
-
-                            break
-
-
 
                 match_data.append({
-
                     "title":        full_title,
-
-                    "url":          full_url,
-
-                    "logo_a":       logos[0] if len(logos) >= 1 else "",
-
-                    "logo_b":       logos[1] if len(logos) >= 2 else "",
-
+                    "url":          info["url"],
+                    "logo_a":       info["logo_a"],
+                    "logo_b":       info["logo_b"],
                     "combined_img": "",   # điền sau
-
-                    "is_live":      is_live,
-
+                    "is_live":      info["is_live"],
                     "stream":       ""    # điền sau
-
                 })
 
-
-
             # ── Bước 2: Khởi động tạo thumbnail song song (PIL -> thumbs/) ──
-
             thumb_tasks = [
-
                 make_thumb_async(
-
                     ch["logo_a"], ch["logo_b"],
-
                     generate_id(ch["url"]),
-
                     executor
-
                 )
-
                 for ch in match_data
-
             ]
 
-
-
             # ── Bước 3: Crawl stream song song (MAX 4 tab cung luc) ──
-
             MAX_CONCURRENT = 4
-
             live_items = [ch for ch in match_data if ch['is_live']]
 
-
-
             async def fetch_one(item):
-
                 stream_page = await context.new_page()
-
                 try:
-
                     item['stream'] = await fetch_stream_url(stream_page, item['url'])
-
                 finally:
-
                     await stream_page.close()
 
-
-
             for i in range(0, len(live_items), MAX_CONCURRENT):
-
                 batch = live_items[i : i + MAX_CONCURRENT]
-
                 await asyncio.gather(*[fetch_one(item) for item in batch])
 
-
-
             # ── Bước 4: Thu kết quả thumbnail ──
-
             thumb_results = await asyncio.gather(*thumb_tasks)
-
             for ch, img_url in zip(match_data, thumb_results):
-
                 ch["combined_img"] = img_url or ch.get("logo_a", "")
-
-
 
             executor.shutdown(wait=False)
 
-
-
             # ── Bước 5: Xuất file ──
-
             json_output = {
-
-                "name": f"Thiên Đỉnh TV ({now_str})",
-
-				"image": {"url": COVER_IMAGE},
-
+                "name": f"Thiên Đình TV ({now_str})",
+                "image": {"url": COVER_IMAGE},
                 "groups": [
-
                     {"id": "live",     "name": "🔴 Live",         "channels": []},
-
                     {"id": "upcoming", "name": "🗓 Sắp diễn ra", "channels": []}
-
                 ]
-
             }
-
-            m3u_content = f"#EXTM3U\n#PLAYLIST: Thiên Đỉnh TV ({now_str})\n"
-
-            vlc_content = f"#EXTM3U\n#PLAYLIST: Thiên Đỉnh TV ({now_str})\n"
-
-
+            m3u_content = f"#EXTM3U\n#PLAYLIST: Thiên Đình TV ({now_str})\n"
+            vlc_content = f"#EXTM3U\n#PLAYLIST: Thiên Đình TV ({now_str})\n"
 
             for ch in match_data:
-
                 match_id = generate_id(ch['url'])
-
                 stream   = ch['stream'] if ch['stream'] else "http://0.0.0.0/not-live"
-
                 group    = "LIVE" if ch['is_live'] else "UPCOMING"
-
                 img_url  = ch['combined_img'] or ch['logo_a']
 
-
-
                 # JSON cho app TV (SportTV, MonPlayer...)
-
                 channel_json = {
-
                     "id":      f"ch-{match_id}",
-
                     "name":    f"⚽ {ch['title']}",
-
                     "type":    "single",
-
                     "display": "thumbnail-only",
-
                     "image": {
-
                         "url":              img_url,   # 1 URL duy nhất chứa cả 2 logo ghép
-
                         "display":          "contain",
-
                         "padding":          1,
-
                         "background_color": "#ececec"
-
                     },
-
                     "sources": [{
-
                         "id": f"src-{match_id}",
-
                         "contents": [{
-
                             "id": f"ct-{match_id}",
-
                             "streams": [{
-
                                 "stream_links": [{
-
                                     "url":  ch['stream'] if ch['stream'] else "",
-
                                     "type": "hls",
-
                                     "request_headers": [
-
                                         {"key": "Referer",    "value": ch['url']},
-
                                         {"key": "User-Agent", "value": "Mozilla/5.0"}
-
                                     ]
-
                                 }]
-
                             }]
-
                         }]
-
                     }]
-
                 }
-
                 if ch['is_live']:
-
                     json_output["groups"][0]["channels"].append(channel_json)
-
                 else:
-
                     json_output["groups"][1]["channels"].append(channel_json)
 
-
-
                 # IPTV M3U (TiviMate, GSE Smart IPTV...) — không cần tvg-logo
-
                 m3u_content += (
-
                     f'#EXTINF:-1 tvg-id="{match_id}" '
-
                     f'group-title="{group}", {ch["title"]}\n'
-
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
-
                     f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
-
                     f'{stream}\n'
-
                 )
-
-
 
                 # VLC M3U — không cần tvg-logo
-
                 vlc_content += (
-
                     f'#EXTINF:-1 tvg-id="{match_id}" '
-
                     f'group-title="{group}", ⚽ {ch["title"]}\n'
-
                     f'#EXTVLCOPT:network-caching=1000\n'
-
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
-
                     f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\n'
-
                     f'{stream}\n'
-
                 )
 
-
-
             with open("thiendinh.json",     "w", encoding="utf-8") as f:
-
                 json.dump(json_output, f, ensure_ascii=False, indent=4)
-
             with open("thiendinh_iptv.txt", "w", encoding="utf-8") as f:
-
                 f.write(m3u_content)
-
             with open("thiendinh_vlc.txt",  "w", encoding="utf-8") as f:
-
                 f.write(vlc_content)
 
-
-
             live_count     = sum(1 for ch in match_data if ch['is_live'])
-
             upcoming_count = sum(1 for ch in match_data if not ch['is_live'])
-
             print(f"✅ Hoàn thành lúc: {now_str} (Giờ VN)")
-
             print(f"   🔴 Live: {live_count} trận  |  🗓 Sắp diễn ra: {upcoming_count} trận")
 
-
-
         finally:
-
             await browser.close()
 
-
-
 if __name__ == "__main__":
-
     asyncio.run(main())
-
