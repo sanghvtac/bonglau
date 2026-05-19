@@ -8,9 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Lấy full history để git log đọc được commit time của từng file
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,14 +29,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-playwright-pillow
+          key: ${{ runner.os }}-pip-playwright-pillow-boto3
           restore-keys: ${{ runner.os }}-pip-
 
-      # Cài pip packages TRƯỚC để biết version Playwright thực tế
       - name: Install Python dependencies
-        run: pip install playwright requests Pillow --quiet
+        run: pip install playwright requests Pillow boto3 --quiet
 
-      # Lấy version Playwright vừa cài (qua importlib.metadata, cách chuẩn Python 3.8+)
       - name: Get Playwright version
         id: pw-version
         run: |
@@ -36,7 +42,6 @@ jobs:
           echo "version=$PW_VER" >> $GITHUB_OUTPUT
           echo "Playwright version: $PW_VER"
 
-      # Cache key gắn với version → tự đổi khi Playwright update → không bao giờ lệch
       - name: Cache Playwright browsers
         id: playwright-cache
         uses: actions/cache@v4
@@ -66,14 +71,21 @@ jobs:
         continue-on-error: true
         run: python crawl_chuoichien.py
 
+      # Dọn ảnh cũ trên cả GitHub local lẫn R2 trước khi commit
+      # → Bước commit sau sẽ tự nhận diện file bị xóa và push commit delete
+      - name: Cleanup old thumbs (>2 days) on GitHub + R2
+        continue-on-error: true
+        run: python cleanup_thumbs.py
+
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update ${{ github.run_id }}"
+          # Dùng thumbs/ (cả thư mục) để bắt được cả file MỚI lẫn file BỊ XÓA
           file_pattern: >-
             thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt
             hoiquan.json hoiquan_iptv.txt hoiquan_vlc.txt
             chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt
-            thumbs/*.png
+            thumbs/
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
