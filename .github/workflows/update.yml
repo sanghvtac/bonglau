@@ -34,10 +34,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright requests Pillow --quiet
-          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
-            playwright install chromium --with-deps
-          fi
+        pip install playwright requests Pillow --quiet
+        # Kiểm tra Chromium thực sự tồn tại không, không tin tuyệt đối vào cache
+        if ! python -c "from playwright.sync_api import sync_playwright; p = sync_playwright().start(); p.chromium.launch().close(); p.stop()" 2>/dev/null; then
+        echo "⚠ Chromium không có hoặc lệch version, cài lại..."
+        playwright install chromium --with-deps
+        else
+          echo "✅ Chromium đã sẵn sàng từ cache"
+        fi
 
       - name: Run ThienDinh crawler
         continue-on-error: true
