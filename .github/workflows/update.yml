@@ -29,19 +29,27 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json', '**/poetry.lock') }}-chromium
+          # Đổi key mỗi tháng để tránh cache quá cũ bị lệch version
+          key: ${{ runner.os }}-playwright-chromium-2026-05
           restore-keys: ${{ runner.os }}-playwright-chromium-
 
-      - name: Install dependencies
+      - name: Install dependencies & verify Chromium
         run: |
-        pip install playwright requests Pillow --quiet
-        # Kiểm tra Chromium thực sự tồn tại không, không tin tuyệt đối vào cache
-        if ! python -c "from playwright.sync_api import sync_playwright; p = sync_playwright().start(); p.chromium.launch().close(); p.stop()" 2>/dev/null; then
-        echo "⚠ Chromium không có hoặc lệch version, cài lại..."
-        playwright install chromium --with-deps
-        else
-          echo "✅ Chromium đã sẵn sàng từ cache"
-        fi
+          pip install playwright requests Pillow --quiet
+          # Verify Chromium executable thực sự tồn tại và launch được
+          # Nếu cache lỗi/lệch version → tự động cài lại
+          if ! python -c "
+          from playwright.sync_api import sync_playwright
+          p = sync_playwright().start()
+          b = p.chromium.launch()
+          b.close()
+          p.stop()
+          " 2>/dev/null; then
+            echo "⚠ Chromium không có hoặc lệch version với Playwright pip, cài lại..."
+            playwright install chromium --with-deps
+          else
+            echo "✅ Chromium đã sẵn sàng từ cache"
+          fi
 
       - name: Run ThienDinh crawler
         continue-on-error: true
