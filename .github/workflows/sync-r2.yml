@@ -51,11 +51,11 @@ jobs:
 
       - name: Sync thumbs folder to R2
         run: |
-          # Sync thư mục thumbs - chỉ upload file MỚI/THAY ĐỔI
-          # rclone tự bỏ qua file đã tồn tại với cùng size + modtime
           rclone sync thumbs/ r2:${{ secrets.R2_BUCKET }}/thumbs/ \
             --transfers 20 \
             --checkers 40 \
             --header-upload "Cache-Control: public, max-age=300" \
             --s3-no-check-bucket \
+            --fast-list \
+            --size-only \
             --progress
