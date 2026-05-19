@@ -28,11 +28,11 @@ jobs:
       - name: Install Python dependencies
         run: pip install playwright requests Pillow --quiet
 
-      # Lấy version Playwright vừa cài để dùng làm cache key
+      # Lấy version Playwright vừa cài (qua importlib.metadata, cách chuẩn Python 3.8+)
       - name: Get Playwright version
         id: pw-version
         run: |
-          PW_VER=$(python -c "import playwright; print(playwright.__version__)")
+          PW_VER=$(python -c "from importlib.metadata import version; print(version('playwright'))")
           echo "version=$PW_VER" >> $GITHUB_OUTPUT
           echo "Playwright version: $PW_VER"
 
