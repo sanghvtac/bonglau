@@ -1,5 +1,5 @@
 {
-    "name": "Hội Quán TV (15:14 19/05/2026)",
+    "name": "Hội Quán TV (21:56 19/05/2026)",
     "image": {
         "url": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/588617536_122151436196909707_6590699633917049497_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFwmaoCNoFxNWW23s5_TIyKLbLYW9bIGWgtsthb1sgZaJ-KSALwzqa0JahbQepJMxhb8q9WkBQn1XZ3y0dArDFV&_nc_ohc=yQhm66r6iBIQ7kNvwHVC1bs&_nc_oc=Adqhdcp_J9MgFsVQEUz_VvjQpoG8uxKTfEp6HWNTufexU0562FiSnzRRUlrJR2W4uWXTXeHRMtIsckNlndDcIVEs&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=rjYA_QxTObuhFLABssEdSg&_nc_ss=7b2a8&oh=00_Af4ML_R3kIYQtimfXzhtH6Gu8Xh1Gyhb-CSq1EhPlOwlEA&oe=6A04DA1E"
     },
@@ -7,323 +7,72 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
+            "channels": [
+                {
+                    "id": "ch-abca1c19e978",
+                    "name": "⚽ 22:00 19/05 Japan U17 VS Uzbekistan U17 BLV CỦ HÀNH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/abca1c19e978.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-abca1c19e978",
+                            "contents": [
+                                {
+                                    "id": "ct-abca1c19e978",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/japan-u17-vs-uzbekistan-u17.tOXN_JtIJH/7588"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-62c11cfa0613",
-                    "name": "⚽ 18:35 19/05 Sichuan Jiuniu VS Dalian Zhixing BLV PHAN CA",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/62c11cfa0613.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-62c11cfa0613",
-                            "contents": [
-                                {
-                                    "id": "ct-62c11cfa0613",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/sichuan-jiuniu-vs-dalian-zhixing.rZJu3iWnmb/7581"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-b4b17ca45cc5",
-                    "name": "⚽ 18:35 19/05 Tianjin Teda VS Henan Jianye BLV CỦ HÀNH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b4b17ca45cc5.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b4b17ca45cc5",
-                            "contents": [
-                                {
-                                    "id": "ct-b4b17ca45cc5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/tianjin-teda-vs-henan-jianye.nxcHuVz9J-/7582"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-cd5061e3cc38",
-                    "name": "⚽ 19:00 19/05 Chengdu Better City VS SHANGHAI SIPG BLV PHAN HÀ LINH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/cd5061e3cc38.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-cd5061e3cc38",
-                            "contents": [
-                                {
-                                    "id": "ct-cd5061e3cc38",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/chengdu-better-city-vs-shanghai-sipg.39IyB7KKrj/7583"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-2cd13999aa35",
-                    "name": "⚽ 19:00 19/05 Qingdao Youth Island VS Beijing Guoan BLV PHAN TỪ",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/2cd13999aa35.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2cd13999aa35",
-                            "contents": [
-                                {
-                                    "id": "ct-2cd13999aa35",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/qingdao-youth-island-vs-beijing-guoan.eAPobUdUEY/7584"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-b14785294ddb",
-                    "name": "⚽ 22:00 19/05 FC Noah VS Ararat BLV CỦ HÀNH",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/b14785294ddb.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b14785294ddb",
-                            "contents": [
-                                {
-                                    "id": "ct-b14785294ddb",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/premier-league-1758631271470/fc-noah-vs-ararat.1TUQbfPYQE/7585"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-4e22ebfa3bd2",
-                    "name": "⚽ 22:00 19/05 Japan U17 VS Uzbekistan U17 BLV PHAN CHỚP",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4e22ebfa3bd2.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-4e22ebfa3bd2",
-                            "contents": [
-                                {
-                                    "id": "ct-4e22ebfa3bd2",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/afc-u17-asian-cup-1763721503123/japan-u17-vs-uzbekistan-u17.nSmSZMry_p/7588"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-83b9ea557026",
-                    "name": "⚽ 01:30 20/05 Bournemouth VS Manchester City BLV PHAN CHỚP",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/83b9ea557026.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-83b9ea557026",
-                            "contents": [
-                                {
-                                    "id": "ct-83b9ea557026",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/premier-league-1758631271470/bournemouth-vs-manchester-city.w-OjCNRhM3/7596"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-756d10448aa2",
+                    "id": "ch-8cc2d10ebe92",
                     "name": "⚽ 01:30 20/05 Bournemouth VS Manchester City BLV LƯƠNG BỔNG",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/756d10448aa2.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8cc2d10ebe92.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-756d10448aa2",
+                            "id": "src-8cc2d10ebe92",
                             "contents": [
                                 {
-                                    "id": "ct-756d10448aa2",
+                                    "id": "ct-8cc2d10ebe92",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -333,7 +82,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/premier-league-1758631271470/bournemouth-vs-manchester-city.zxFmdhVkLT/7597"
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/premier-league-1758631271470/bournemouth-vs-manchester-city.1bsaC3HLfp/7596"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -418,6 +167,300 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/premier-league-1758631271470/chelsea-vs-tottenham.V0PqKACqnk/7599"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-41b7d61f24f1",
+                    "name": "⚽ 07:00 20/05 Boca Juniors VS Cruzeiro BLV PHAN CA",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/41b7d61f24f1.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-41b7d61f24f1",
+                            "contents": [
+                                {
+                                    "id": "ct-41b7d61f24f1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/conmebol-copa-libertado-1759747814287/boca-juniors-vs-cruzeiro.6bM5c4RGbo/7615"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a26ef4f1d4b1",
+                    "name": "⚽ 09:00 20/05 Independiente Del Valle VS Libertad BLV PHAN ANH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a26ef4f1d4b1.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a26ef4f1d4b1",
+                            "contents": [
+                                {
+                                    "id": "ct-a26ef4f1d4b1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/conmebol-copa-libertado-1759747814287/independiente-del-valle-vs-libertad.gyOHewVAan/7616"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1c32ec21218c",
+                    "name": "⚽ 18:35 20/05 Shanghai Shenhua VS Wuhan Three Towns BLV CỦ HÀNH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1c32ec21218c.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1c32ec21218c",
+                            "contents": [
+                                {
+                                    "id": "ct-1c32ec21218c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/shanghai-shenhua-vs-wuhan-three-towns.Cpp9iAAFFL/7617"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a038bb2d1472",
+                    "name": "⚽ 19:00 20/05 Hangzhou Greentown VS Shandong Luneng BLV PHAN BÁCH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/a038bb2d1472.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a038bb2d1472",
+                            "contents": [
+                                {
+                                    "id": "ct-a038bb2d1472",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/super-league.gxratlGLOJ/hangzhou-greentown-vs-shandong-luneng.LmW7PaEyrr/7618"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8d9ca1a9b8c1",
+                    "name": "⚽ 20:00 20/05 Selangor VS Buriram United BLV PHAN CA",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8d9ca1a9b8c1.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-8d9ca1a9b8c1",
+                            "contents": [
+                                {
+                                    "id": "ct-8d9ca1a9b8c1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/asean-club-championship-1764562099395/selangor-vs-buriram-united.I3w-83iHJD/7619"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4193983ec474",
+                    "name": "⚽ 23:00 20/05 Start VS Bodo/Glimt BLV PHAN MÃ",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4193983ec474.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4193983ec474",
+                            "contents": [
+                                {
+                                    "id": "ct-4193983ec474",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/eliteserien.1BgghIHTi_/start-vs-bodoglimt.Xl5AdmwOx8/7620"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-56ca886a57b9",
+                    "name": "⚽ 23:00 20/05 KuPS VS FF Jaro BLV CỦ HÀNH",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/56ca886a57b9.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-56ca886a57b9",
+                            "contents": [
+                                {
+                                    "id": "ct-56ca886a57b9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.hoiquan4.live/truc-tiep/bong-da/veikkausliiga.4soMFWiLAB/kups-vs-ff-jaro.8Sj-wHFOVK/7621"
                                                         },
                                                         {
                                                             "key": "User-Agent",
