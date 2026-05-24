@@ -1,5 +1,5 @@
 {
-    "name": "Thiên Đình TV (17:01 22/05/2026)",
+    "name": "Thiên Đình TV (20:08 24/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJSuLHF9klemrEvihd_wyrOc0DkdxHcS9Kw&s"
     },
@@ -7,29 +7,114 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
+            "channels": [
+                {
+                    "id": "ch-177ba2b4eb9e",
+                    "name": "⚽ 19:15 24/05 Ha Noi VS Nam Dinh BLV Táo Kinh Tế(A Tích)",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/177ba2b4eb9e.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-177ba2b4eb9e",
+                            "contents": [
+                                {
+                                    "id": "ct-177ba2b4eb9e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/ha-noi-vs-nam-dinh.2XwiMJuZ1n"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4033ddca9b38",
+                    "name": "⚽ 20:00 24/05 Parma VS Sassuolo BLV Táo Tỉnh Táo",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/4033ddca9b38.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4033ddca9b38",
+                            "contents": [
+                                {
+                                    "id": "ct-4033ddca9b38",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/parma-vs-sassuolo.OBIdnTvJlL"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-dfa3bcf36fb7",
-                    "name": "⚽ 17:30 22/05 Machida Zelvia VS Urawa BLV Thần Thông",
+                    "id": "ch-f775f78edc8e",
+                    "name": "⚽ 22:00 24/05 Brighton VS Manchester United BLV Thần Thông",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/dfa3bcf36fb7.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f775f78edc8e.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-dfa3bcf36fb7",
+                            "id": "src-f775f78edc8e",
                             "contents": [
                                 {
-                                    "id": "ct-dfa3bcf36fb7",
+                                    "id": "ct-f775f78edc8e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -39,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/j1-league-1758631930094/machida-zelvia-vs-urawa.f6cEKwmvWS"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/brighton-vs-manchester-united.uBVnUupd0j"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,22 +141,22 @@
                     ]
                 },
                 {
-                    "id": "ch-041eb6f58637",
-                    "name": "⚽ 19:00 22/05 Dewa United VS Bali United BLV Táo Kinh Tế(A Tích)",
+                    "id": "ch-41f8aa81cb31",
+                    "name": "⚽ 22:00 24/05 Crystal Palace VS Arsenal BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/041eb6f58637.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/41f8aa81cb31.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-041eb6f58637",
+                            "id": "src-41f8aa81cb31",
                             "contents": [
                                 {
-                                    "id": "ct-041eb6f58637",
+                                    "id": "ct-41f8aa81cb31",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -81,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/liga-1.0hfYIZoZhU/dewa-united-vs-bali-united.0oSjI7zhem"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/crystal-palace-vs-arsenal.7FjdhzVkTt"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -98,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-fc0fb8d7c6d9",
-                    "name": "⚽ 19:15 22/05 Viettel VS Pho Hien BLV Táo Mèo",
+                    "id": "ch-8a7e04a5c0a4",
+                    "name": "⚽ 22:00 24/05 Liverpool VS Brentford BLV Táo Kinh Tế(A Tích)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/fc0fb8d7c6d9.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/8a7e04a5c0a4.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-fc0fb8d7c6d9",
+                            "id": "src-8a7e04a5c0a4",
                             "contents": [
                                 {
-                                    "id": "ct-fc0fb8d7c6d9",
+                                    "id": "ct-8a7e04a5c0a4",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -123,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/vleague-1.QfWPp22UQ0/viettel-vs-pho-hien._bLEJWJ5g9"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/liverpool-vs-brentford.Et9IkvLEro"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -140,22 +225,22 @@
                     ]
                 },
                 {
-                    "id": "ch-0b20076f5458",
-                    "name": "⚽ 21:00 22/05 El Gouna FC VS El Geish BLV Thần Thông",
+                    "id": "ch-16e48bc4b22d",
+                    "name": "⚽ 22:00 24/05 Tottenham VS Everton BLV Táo Tỉnh Táo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/0b20076f5458.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/16e48bc4b22d.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-0b20076f5458",
+                            "id": "src-16e48bc4b22d",
                             "contents": [
                                 {
-                                    "id": "ct-0b20076f5458",
+                                    "id": "ct-16e48bc4b22d",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -165,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/el-gouna-fc-vs-el-geish.qy-EvG4KfV"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premier-league-1758631271470/tottenham-vs-everton.MgE9V2vRyM"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -182,22 +267,22 @@
                     ]
                 },
                 {
-                    "id": "ch-1ba41892e704",
-                    "name": "⚽ 22:30 22/05 Sumqayıt VS Qarabag BLV Táo Kinh Tế(A Tích)",
+                    "id": "ch-54ef145ab776",
+                    "name": "⚽ 01:45 25/05 AC Milan VS Cagliari BLV Táo Kinh Tế(A Tích)",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1ba41892e704.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/54ef145ab776.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-1ba41892e704",
+                            "id": "src-54ef145ab776",
                             "contents": [
                                 {
-                                    "id": "ct-1ba41892e704",
+                                    "id": "ct-54ef145ab776",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -207,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/premyer-liqa.IHagG1u0qu/sumqayit-vs-qarabag._6nRbqA9n_"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/ac-milan-vs-cagliari.AixSs9Pom_"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -224,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-82bd8e961b96",
-                    "name": "⚽ 23:00 22/05 VPS VS HJK Helsinki BLV Táo Tỉnh Táo",
+                    "id": "ch-037272ffaee2",
+                    "name": "⚽ 01:45 25/05 Cremonese VS Como BLV Táo Mèo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/82bd8e961b96.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/037272ffaee2.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-82bd8e961b96",
+                            "id": "src-037272ffaee2",
                             "contents": [
                                 {
-                                    "id": "ct-82bd8e961b96",
+                                    "id": "ct-037272ffaee2",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -249,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/veikkausliiga.QCK_AA41ul/vps-vs-hjk-helsinki.aRPZ24QsmH"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/cremonese-vs-como.jsUIkpSSc0"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -266,22 +351,22 @@
                     ]
                 },
                 {
-                    "id": "ch-ea3b70529a76",
-                    "name": "⚽ 01:45 23/05 Fiorentina VS Atalanta BLV Táo Mèo",
+                    "id": "ch-c8b3eb822638",
+                    "name": "⚽ 01:45 25/05 Torino VS Juventus BLV Thần Thông",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/ea3b70529a76.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/c8b3eb822638.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-ea3b70529a76",
+                            "id": "src-c8b3eb822638",
                             "contents": [
                                 {
-                                    "id": "ct-ea3b70529a76",
+                                    "id": "ct-c8b3eb822638",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -291,7 +376,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/fiorentina-vs-atalanta.oGpt7Njrgf"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/serie-a-1758631315616/torino-vs-juventus.9br7RVJd-I"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -308,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-5430d55e7027",
-                    "name": "⚽ 02:00 23/05 Lens VS Nice BLV Táo Thiên Vương",
+                    "id": "ch-f99f6e21330e",
+                    "name": "⚽ 02:00 25/05 Villarreal VS Atletico Madrid BLV Táo Tỉnh Táo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/5430d55e7027.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/f99f6e21330e.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-5430d55e7027",
+                            "id": "src-f99f6e21330e",
                             "contents": [
                                 {
-                                    "id": "ct-5430d55e7027",
+                                    "id": "ct-f99f6e21330e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -333,7 +418,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/coupe-de-france.C_DVAW-A1T/lens-vs-nice.8jCV3Qs4BM"
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/la-liga.N3UgM6RAyv/villarreal-vs-atletico-madrid.GwJTTcE_ik"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9eabf7a615e7",
+                    "name": "⚽ 06:00 25/05 Inter Miami VS Philadelphia Union BLV Thần Thông",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/9eabf7a615e7.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9eabf7a615e7",
+                            "contents": [
+                                {
+                                    "id": "ct-9eabf7a615e7",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://sv2.thiendinh1.live/xem-truc-tiep/bong-da/major-league-soccer.-Wfz8cev32/inter-miami-vs-philadelphia-union.y3YDKiWRU-"
                                                         },
                                                         {
                                                             "key": "User-Agent",
