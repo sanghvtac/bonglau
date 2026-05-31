@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:08 24/05/2026)",
+    "name": "Chuoi Chien TV (19:01 31/05/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,27 +9,27 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-111e7c0a6d02",
-                    "name": "⚽ 18:00 24/05 Becamex Hồ Chí Minh VS Song Lam Nghe An [Nhà Đài - HD1]",
+                    "id": "ch-2e979f224d17",
+                    "name": "⚽ 17:25 31/05 Japan VS Iceland [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518093.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1540351.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-111e7c0a6d02",
+                            "id": "src-2e979f224d17",
                             "contents": [
                                 {
-                                    "id": "ct-111e7c0a6d02",
+                                    "id": "ct-2e979f224d17",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -51,69 +51,153 @@
                     ]
                 },
                 {
-                    "id": "ch-2f1c3ac0d573",
-                    "name": "⚽ 19:15 24/05 Ha Noi VS Nam Dinh [Chuối To - FHD1]",
+                    "id": "ch-38c5081ad56e",
+                    "name": "⚽ 18:00 31/05 Công An Hà Nội VS Becamex Hồ Chí Minh [Chuối Xuyên Không - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518095.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518096.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2f1c3ac0d573",
+                            "id": "src-38c5081ad56e",
                             "contents": [
                                 {
-                                    "id": "ct-2f1c3ac0d573",
+                                    "id": "ct-38c5081ad56e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/maxhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e390f17a38b9",
+                    "name": "⚽ 18:00 31/05 Hồng Lĩnh Hà Tĩnh VS Da Nang [Chuối Tây - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518099.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e390f17a38b9",
+                            "contents": [
+                                {
+                                    "id": "ct-e390f17a38b9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f72c8ec57f70",
+                    "name": "⚽ 18:00 31/05 Nam Dinh VS Song Lam Nghe An [Anh Hột - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518100.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f72c8ec57f70",
+                            "contents": [
+                                {
+                                    "id": "ct-f72c8ec57f70",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-70c801e4a964",
+                    "name": "⚽ 18:00 31/05 Thanh Hóa VS Ninh Bình FC [Chuối To - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518102.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-70c801e4a964",
+                            "contents": [
+                                {
+                                    "id": "ct-70c801e4a964",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-f9f94c07807f",
-                    "name": "⚽ 20:00 24/05 Parma VS Sassuolo [Chuối Tiêu - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378241.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f9f94c07807f",
-                            "contents": [
-                                {
-                                    "id": "ct-f9f94c07807f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -141,22 +225,22 @@
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-44e01b84ba23",
-                    "name": "⚽ 18:00 24/05 Hồng Lĩnh Hà Tĩnh VS Công An Hà Nội",
+                    "id": "ch-ec52b145eff7",
+                    "name": "⚽ 20:00 31/05 Switzerland VS Jordan",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1518094.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528283.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-44e01b84ba23",
+                            "id": "src-ec52b145eff7",
                             "contents": [
                                 {
-                                    "id": "ct-44e01b84ba23",
+                                    "id": "ct-ec52b145eff7",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1518094/1518094"
+                                                            "value": "https://live20.chuoichientv.com/live/1528283/1528283"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,22 +267,22 @@
                     ]
                 },
                 {
-                    "id": "ch-9c517ae58195",
-                    "name": "⚽ 22:00 24/05 Brighton VS Manchester United",
+                    "id": "ch-0add1fea8f74",
+                    "name": "⚽ 20:30 31/05 Cape Verde Islands VS Serbia",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379339.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1543819.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-9c517ae58195",
+                            "id": "src-0add1fea8f74",
                             "contents": [
                                 {
-                                    "id": "ct-9c517ae58195",
+                                    "id": "ct-0add1fea8f74",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379339/1379339"
+                                                            "value": "https://live20.chuoichientv.com/live/1543819/1543819"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f27bd44cc062",
-                    "name": "⚽ 22:00 24/05 Burnley VS Wolves",
+                    "id": "ch-b722c4e66437",
+                    "name": "⚽ 21:00 31/05 Madrid CFF W VS Barcelona W",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379340.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1397293.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f27bd44cc062",
+                            "id": "src-b722c4e66437",
                             "contents": [
                                 {
-                                    "id": "ct-f27bd44cc062",
+                                    "id": "ct-b722c4e66437",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -250,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379340/1379340"
+                                                            "value": "https://live20.chuoichientv.com/live/1397293/1397293"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,22 +351,22 @@
                     ]
                 },
                 {
-                    "id": "ch-23ae9f8a1cff",
-                    "name": "⚽ 22:00 24/05 Crystal Palace VS Arsenal",
+                    "id": "ch-b2dbc035a021",
+                    "name": "⚽ 21:00 31/05 RB Bragantino VS Internacional",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379341.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492282.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-23ae9f8a1cff",
+                            "id": "src-b2dbc035a021",
                             "contents": [
                                 {
-                                    "id": "ct-23ae9f8a1cff",
+                                    "id": "ct-b2dbc035a021",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -292,7 +376,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379341/1379341"
+                                                            "value": "https://live20.chuoichientv.com/live/1492282/1492282"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-3e67b47f055c",
-                    "name": "⚽ 22:00 24/05 Fulham VS Newcastle",
+                    "id": "ch-0245e5c309a3",
+                    "name": "⚽ 21:00 31/05 Czech Republic VS Kosovo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379342.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545035.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-3e67b47f055c",
+                            "id": "src-0245e5c309a3",
                             "contents": [
                                 {
-                                    "id": "ct-3e67b47f055c",
+                                    "id": "ct-0245e5c309a3",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -334,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379342/1379342"
+                                                            "value": "https://live20.chuoichientv.com/live/1545035/1545035"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -351,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-df6639bb21e1",
-                    "name": "⚽ 22:00 24/05 Liverpool VS Brentford",
+                    "id": "ch-677f4e7f4115",
+                    "name": "⚽ 21:00 31/05 Brighton W VS Manchester City W",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379343.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1544712.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-df6639bb21e1",
+                            "id": "src-677f4e7f4115",
                             "contents": [
                                 {
-                                    "id": "ct-df6639bb21e1",
+                                    "id": "ct-677f4e7f4115",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -376,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379343/1379343"
+                                                            "value": "https://live20.chuoichientv.com/live/1544712/1544712"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -393,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-1a7121b60176",
-                    "name": "⚽ 22:00 24/05 Manchester City VS Aston Villa",
+                    "id": "ch-668ae1aafce3",
+                    "name": "⚽ 22:30 31/05 Poland VS Ukraine",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379344.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1544805.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-1a7121b60176",
+                            "id": "src-668ae1aafce3",
                             "contents": [
                                 {
-                                    "id": "ct-1a7121b60176",
+                                    "id": "ct-668ae1aafce3",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -418,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379344/1379344"
+                                                            "value": "https://live20.chuoichientv.com/live/1544805/1544805"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -435,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-17026c5f8ebd",
-                    "name": "⚽ 22:00 24/05 Nottingham Forest VS Bournemouth",
+                    "id": "ch-660602b02a64",
+                    "name": "⚽ 23:30 31/05 Deportivo La Coruna VS Las Palmas",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379345.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1392224.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-17026c5f8ebd",
+                            "id": "src-660602b02a64",
                             "contents": [
                                 {
-                                    "id": "ct-17026c5f8ebd",
+                                    "id": "ct-660602b02a64",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -460,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379345/1379345"
+                                                            "value": "https://live20.chuoichientv.com/live/1392224/1392224"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -477,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-2de89459e62f",
-                    "name": "⚽ 22:00 24/05 Sunderland VS Chelsea",
+                    "id": "ch-2b470fcd6dba",
+                    "name": "⚽ 01:45 01/06 Germany VS Finland",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379346.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1501818.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2de89459e62f",
+                            "id": "src-2b470fcd6dba",
                             "contents": [
                                 {
-                                    "id": "ct-2de89459e62f",
+                                    "id": "ct-2b470fcd6dba",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -502,7 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379346/1379346"
+                                                            "value": "https://live20.chuoichientv.com/live/1501818/1501818"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -519,22 +603,22 @@
                     ]
                 },
                 {
-                    "id": "ch-8a10d242739d",
-                    "name": "⚽ 22:00 24/05 Tottenham VS Everton",
+                    "id": "ch-05390c8bff71",
+                    "name": "⚽ 02:00 01/06 Palmeiras VS Chapecoense-sc",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379347.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492286.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-8a10d242739d",
+                            "id": "src-05390c8bff71",
                             "contents": [
                                 {
-                                    "id": "ct-8a10d242739d",
+                                    "id": "ct-05390c8bff71",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -544,7 +628,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379347/1379347"
+                                                            "value": "https://live20.chuoichientv.com/live/1492286/1492286"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-a0ed0af4c685",
-                    "name": "⚽ 22:00 24/05 West Ham VS Leeds",
+                    "id": "ch-a3b3e04cf2b9",
+                    "name": "⚽ 02:00 01/06 Vasco DA Gama VS Atletico-MG",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1379348.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492289.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-a0ed0af4c685",
+                            "id": "src-a3b3e04cf2b9",
                             "contents": [
                                 {
-                                    "id": "ct-a0ed0af4c685",
+                                    "id": "ct-a3b3e04cf2b9",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1379348/1379348"
+                                                            "value": "https://live20.chuoichientv.com/live/1492289/1492289"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -603,22 +687,22 @@
                     ]
                 },
                 {
-                    "id": "ch-31cfad0a3ef5",
-                    "name": "⚽ 23:00 24/05 Napoli VS Udinese",
+                    "id": "ch-d54c03ff6d84",
+                    "name": "⚽ 02:30 01/06 USA VS Senegal",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378240.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1503008.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-31cfad0a3ef5",
+                            "id": "src-d54c03ff6d84",
                             "contents": [
                                 {
-                                    "id": "ct-31cfad0a3ef5",
+                                    "id": "ct-d54c03ff6d84",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -628,7 +712,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1378240/1378240"
+                                                            "value": "https://live20.chuoichientv.com/live/1503008/1503008"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -645,22 +729,22 @@
                     ]
                 },
                 {
-                    "id": "ch-b95eb83c3ba8",
-                    "name": "⚽ 23:00 24/05 Juventus W VS Roma W",
+                    "id": "ch-c88fb77f4df9",
+                    "name": "⚽ 04:30 01/06 Brazil VS Panama",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1542084.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1536926.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b95eb83c3ba8",
+                            "id": "src-c88fb77f4df9",
                             "contents": [
                                 {
-                                    "id": "ct-b95eb83c3ba8",
+                                    "id": "ct-c88fb77f4df9",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -670,7 +754,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1542084/1542084"
+                                                            "value": "https://live20.chuoichientv.com/live/1536926/1536926"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -687,22 +771,22 @@
                     ]
                 },
                 {
-                    "id": "ch-aec58f2b940a",
-                    "name": "⚽ 23:15 24/05 Sporting CP VS Torreense",
+                    "id": "ch-e87b03c10291",
+                    "name": "⚽ 05:00 01/06 Racing Club VS Defensa Y Justicia",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1542722.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1540059.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-aec58f2b940a",
+                            "id": "src-e87b03c10291",
                             "contents": [
                                 {
-                                    "id": "ct-aec58f2b940a",
+                                    "id": "ct-e87b03c10291",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -712,7 +796,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1542722/1542722"
+                                                            "value": "https://live20.chuoichientv.com/live/1540059/1540059"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -729,22 +813,22 @@
                     ]
                 },
                 {
-                    "id": "ch-79898595b2cd",
-                    "name": "⚽ 01:30 25/05 River Plate VS Belgrano Cordoba",
+                    "id": "ch-be1b94c4aa36",
+                    "name": "⚽ 06:30 01/06 Cruzeiro VS Fluminense",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545443.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492283.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-79898595b2cd",
+                            "id": "src-be1b94c4aa36",
                             "contents": [
                                 {
-                                    "id": "ct-79898595b2cd",
+                                    "id": "ct-be1b94c4aa36",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -754,91 +838,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545443/1545443"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-9069f1708cd5",
-                    "name": "⚽ 01:45 25/05 Cremonese VS Como",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378235.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9069f1708cd5",
-                            "contents": [
-                                {
-                                    "id": "ct-9069f1708cd5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1378235/1378235"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-37adcdc0b014",
-                    "name": "⚽ 01:45 25/05 Lecce VS Genoa",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1378238.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-37adcdc0b014",
-                            "contents": [
-                                {
-                                    "id": "ct-37adcdc0b014",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1378238/1378238"
+                                                            "value": "https://live20.chuoichientv.com/live/1492283/1492283"
                                                         },
                                                         {
                                                             "key": "User-Agent",
