@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1411">
+<title>World Cup 2026 — Lịch & Tỉ số</title>
+<style>
+  :root{
+    --pitch:#0d1411; --pitch2:#121b16; --line:#223229;
+    --chalk:#eef2ea; --muted:#8fa294;
+    --vang:#ffc53d; --vang-ink:#241a00;
+    --teal:#3ec99f; --coral:#ff6a55;
+    --r:14px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{margin:0; padding:0; background:var(--pitch); color:var(--chalk);
+    font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+  /* header */
+  header{position:sticky; top:0; z-index:20; background:linear-gradient(180deg,#0d1411 75%,rgba(13,20,17,.92));
+    padding:14px 16px 10px; border-bottom:1px solid var(--line);}
+  .wordmark{display:flex; align-items:baseline; gap:8px;}
+  .wordmark b{font-size:21px; font-weight:900; letter-spacing:-.5px;}
+  .wordmark b span{color:var(--vang);}
+  .wordmark small{color:var(--muted); font-size:11px; letter-spacing:.12em; text-transform:uppercase;}
+  nav{display:flex; gap:6px; margin-top:10px;}
+  nav button{flex:1; border:1px solid var(--line); background:var(--pitch2); color:var(--muted);
+    padding:9px 4px; border-radius:10px; font-weight:700; font-size:13px; cursor:pointer;}
+  nav button.on{background:var(--vang); color:var(--vang-ink); border-color:var(--vang);}
+  main{padding:14px 12px 90px; max-width:560px; margin:0 auto;}
+  h2{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+     margin:20px 4px 8px; font-weight:800;}
+  h2:first-child{margin-top:4px}
+  /* match card */
+  .card{background:var(--pitch2); border:1px solid var(--line); border-radius:var(--r);
+    padding:10px 12px; margin-bottom:8px;}
+  .meta{display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-bottom:7px;}
+  .meta .grp{color:var(--teal); font-weight:800;}
+  .row{display:grid; grid-template-columns:1fr 44px 16px 44px 1fr; align-items:center; gap:6px;}
+  .tname{font-weight:700; font-size:14.5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .tname.away{text-align:right}
+  .tname.tbd{color:var(--muted); font-weight:500; font-style:italic;}
+  .vs{text-align:center; color:var(--muted); font-size:11px;}
+  input.sc{width:44px; height:40px; border-radius:9px; border:none; background:var(--vang);
+    color:var(--vang-ink); font-size:18px; font-weight:900; text-align:center;
+    font-variant-numeric:tabular-nums;}
+  input.sc::placeholder{color:#a8842a}
+  input.sc:disabled{background:#2a3530; color:var(--muted)}
+  .penrow{margin-top:8px; display:flex; gap:6px; align-items:center; font-size:12px; color:var(--muted);}
+  .penrow button{border:1px solid var(--line); background:transparent; color:var(--chalk);
+    border-radius:8px; padding:5px 10px; font-size:12px; font-weight:700; cursor:pointer;}
+  .penrow button.on{background:var(--teal); color:#04140e; border-color:var(--teal);}
+  .winline{margin-top:7px; font-size:12.5px; color:var(--teal); font-weight:700;}
+  select.third{margin-top:8px; width:100%; background:var(--pitch); color:var(--chalk);
+    border:1px dashed var(--vang); border-radius:9px; padding:8px; font-size:13px;}
+  /* tables */
+  table{width:100%; border-collapse:collapse; font-size:13px;}
+  th{color:var(--muted); font-size:10.5px; text-transform:uppercase; letter-spacing:.08em;
+     text-align:right; padding:4px 5px; font-weight:700;}
+  th:first-child,td:first-child{text-align:left}
+  td{padding:6px 5px; text-align:right; border-top:1px solid var(--line);
+     font-variant-numeric:tabular-nums;}
+  td.t{font-weight:700; text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:130px;}
+  tr.q1 td:first-child{box-shadow:inset 3px 0 0 var(--teal);}
+  tr.q3 td:first-child{box-shadow:inset 3px 0 0 var(--vang);}
+  .legend{font-size:11px; color:var(--muted); margin:6px 4px 0;}
+  .legend i{display:inline-block; width:9px; height:9px; border-radius:2px; margin:0 4px 0 10px; vertical-align:-1px;}
+  .champ{margin:14px 0; padding:18px 14px; text-align:center; border-radius:var(--r);
+    background:linear-gradient(135deg,#3a2c00,#6b5400); border:1px solid var(--vang);}
+  .champ b{font-size:22px; display:block; margin-top:4px; color:var(--vang); letter-spacing:.02em;}
+  .note{font-size:12px; color:var(--muted); margin:10px 4px;}
+  .reset{margin:26px auto 0; display:block; background:none; border:1px solid var(--coral);
+    color:var(--coral); border-radius:10px; padding:9px 18px; font-weight:700; cursor:pointer;}
+  .hide{display:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wordmark"><b>WORLD CUP <span>26</span></b><small>Lịch đấu · BXH · giờ Việt Nam</small></div>
+  <nav>
+    <button id="tabSched" class="on" onclick="show('sched')">Lịch đấu</button>
+    <button id="tabTable" onclick="show('table')">Bảng xếp hạng</button>
+    <button id="tabKO" onclick="show('ko')">Knockout</button>
+  </nav>
+</header>
+<main>
+  <div id="sched"></div>
+  <div id="table" class="hide"></div>
+  <div id="ko" class="hide"></div>
+  <button class="reset" onclick="resetAll()">Xóa toàn bộ tỉ số đã nhập</button>
+  <p class="note">Dữ liệu được lưu ngay trên máy của bạn. Ô vàng = ô nhập tỉ số (giữ đúng quy ước của file Excel gốc).
+  Xếp hạng theo tiêu chí FIFA: Điểm → Hiệu số → Bàn thắng; nếu vẫn hòa, hai đội giữ thứ tự danh sách — khi đó hãy đối chiếu tiêu chí đối đầu trực tiếp của FIFA.</p>
+</main>
+<script>
+/* ================= DỮ LIỆU ================= */
+// [số trận, giờ VN, bảng, đội nhà, đội khách, sân, thành phố]
+const GM=[
+[1,"02:00 ngày 12/06","A","Mexico","South Africa","Estadio Azteca","Mexico City"],
+[2,"09:00 ngày 12/06","A","Korea Republic","Czechia","Estadio Akron","Guadalajara"],
+[3,"02:00 ngày 13/06","B","Canada","Bosnia & Herzegovina","BMO Field","Toronto"],
+[4,"08:00 ngày 13/06","D","United States","Paraguay","SoFi Stadium","Inglewood"],
+[5,"02:00 ngày 14/06","B","Qatar","Switzerland","Levi's Stadium","Santa Clara"],
+[6,"05:00 ngày 14/06","C","Brazil","Morocco","MetLife Stadium","East Rutherford"],
+[7,"08:00 ngày 14/06","C","Haiti","Scotland","Gillette Stadium","Foxborough"],
+[8,"11:00 ngày 14/06","D","Australia","Türkiye","BC Place","Vancouver"],
+[9,"00:00 ngày 15/06","E","Germany","Curaçao","NRG Stadium","Houston"],
+[10,"06:00 ngày 15/06","E","Ivory Coast","Ecuador","Lincoln Financial Field","Philadelphia"],
+[11,"03:00 ngày 15/06","F","Netherlands","Japan","AT&T Stadium","Arlington"],
+[12,"09:00 ngày 15/06","F","Sweden","Tunisia","Estadio BBVA","Monterrey"],
+[13,"02:00 ngày 16/06","G","Belgium","Egypt","Lumen Field","Seattle"],
+[14,"08:00 ngày 16/06","G","Iran","New Zealand","SoFi Stadium","Inglewood"],
+[15,"23:00 ngày 15/06","H","Spain","Cape Verde","Mercedes-Benz Stadium","Atlanta"],
+[16,"05:00 ngày 16/06","H","Saudi Arabia","Uruguay","Hard Rock Stadium","Miami"],
+[17,"02:00 ngày 17/06","I","France","Senegal","MetLife Stadium","East Rutherford"],
+[18,"05:00 ngày 17/06","I","Iraq","Norway","Gillette Stadium","Foxborough"],
+[19,"08:00 ngày 17/06","J","Argentina","Algeria","Arrowhead Stadium","Kansas City"],
+[20,"11:00 ngày 17/06","J","Austria","Jordan","Levi's Stadium","Santa Clara"],
+[21,"00:00 ngày 18/06","K","Portugal","DR Congo","NRG Stadium","Houston"],
+[22,"09:00 ngày 18/06","K","Uzbekistan","Colombia","Estadio Azteca","Mexico City"],
+[23,"03:00 ngày 18/06","L","England","Croatia","AT&T Stadium","Arlington"],
+[24,"06:00 ngày 18/06","L","Ghana","Panama","BMO Field","Toronto"],
+[25,"23:00 ngày 18/06","A","Czechia","South Africa","Mercedes-Benz Stadium","Atlanta"],
+[26,"08:00 ngày 19/06","A","Mexico","Korea Republic","Estadio Akron","Guadalajara"],
+[27,"02:00 ngày 19/06","B","Switzerland","Bosnia & Herzegovina","SoFi Stadium","Inglewood"],
+[28,"05:00 ngày 19/06","B","Canada","Qatar","BC Place","Vancouver"],
+[29,"05:00 ngày 20/06","C","Scotland","Morocco","Gillette Stadium","Foxborough"],
+[30,"07:30 ngày 20/06","C","Brazil","Haiti","Lincoln Financial Field","Philadelphia"],
+[31,"02:00 ngày 20/06","D","United States","Australia","Lumen Field","Seattle"],
+[32,"10:00 ngày 20/06","D","Türkiye","Paraguay","Levi's Stadium","Santa Clara"],
+[33,"03:00 ngày 21/06","E","Germany","Ivory Coast","BMO Field","Toronto"],
+[34,"07:00 ngày 21/06","E","Ecuador","Curaçao","Arrowhead Stadium","Kansas City"],
+[35,"00:00 ngày 21/06","F","Netherlands","Sweden","NRG Stadium","Houston"],
+[36,"11:00 ngày 21/06","F","Tunisia","Japan","Estadio BBVA","Monterrey"],
+[37,"02:00 ngày 22/06","G","Belgium","Iran","SoFi Stadium","Inglewood"],
+[38,"08:00 ngày 22/06","G","New Zealand","Egypt","BC Place","Vancouver"],
+[39,"23:00 ngày 21/06","H","Spain","Saudi Arabia","Mercedes-Benz Stadium","Atlanta"],
+[40,"05:00 ngày 22/06","H","Uruguay","Cape Verde","Hard Rock Stadium","Miami"],
+[41,"04:00 ngày 23/06","I","France","Iraq","Lincoln Financial Field","Philadelphia"],
+[42,"07:00 ngày 23/06","I","Norway","Senegal","MetLife Stadium","East Rutherford"],
+[43,"00:00 ngày 23/06","J","Argentina","Austria","AT&T Stadium","Arlington"],
+[44,"10:00 ngày 23/06","J","Jordan","Algeria","Levi's Stadium","Santa Clara"],
+[45,"00:00 ngày 24/06","K","Portugal","Uzbekistan","NRG Stadium","Houston"],
+[46,"09:00 ngày 24/06","K","Colombia","DR Congo","Estadio Akron","Guadalajara"],
+[47,"03:00 ngày 24/06","L","England","Ghana","Gillette Stadium","Foxborough"],
+[48,"06:00 ngày 24/06","L","Panama","Croatia","BMO Field","Toronto"],
+[49,"08:00 ngày 25/06","A","Czechia","Mexico","Estadio Azteca","Mexico City"],
+[50,"08:00 ngày 25/06","A","South Africa","Korea Republic","Estadio BBVA","Monterrey"],
+[51,"02:00 ngày 25/06","B","Switzerland","Canada","BC Place","Vancouver"],
+[52,"02:00 ngày 25/06","B","Bosnia & Herzegovina","Qatar","Lumen Field","Seattle"],
+[53,"05:00 ngày 25/06","C","Scotland","Brazil","Hard Rock Stadium","Miami"],
+[54,"05:00 ngày 25/06","C","Morocco","Haiti","Mercedes-Benz Stadium","Atlanta"],
+[55,"09:00 ngày 26/06","D","Türkiye","United States","SoFi Stadium","Inglewood"],
+[56,"09:00 ngày 26/06","D","Paraguay","Australia","Levi's Stadium","Santa Clara"],
+[57,"03:00 ngày 26/06","E","Curaçao","Ivory Coast","Lincoln Financial Field","Philadelphia"],
+[58,"03:00 ngày 26/06","E","Ecuador","Germany","MetLife Stadium","East Rutherford"],
+[59,"06:00 ngày 26/06","F","Japan","Sweden","AT&T Stadium","Arlington"],
+[60,"06:00 ngày 26/06","F","Tunisia","Netherlands","Arrowhead Stadium","Kansas City"],
+[61,"10:00 ngày 27/06","G","Egypt","Iran","Lumen Field","Seattle"],
+[62,"10:00 ngày 27/06","G","New Zealand","Belgium","BC Place","Vancouver"],
+[63,"07:00 ngày 27/06","H","Cape Verde","Saudi Arabia","NRG Stadium","Houston"],
+[64,"07:00 ngày 27/06","H","Uruguay","Spain","Estadio Akron","Guadalajara"],
+[65,"02:00 ngày 27/06","I","Norway","France","Gillette Stadium","Foxborough"],
+[66,"02:00 ngày 27/06","I","Senegal","Iraq","BMO Field","Toronto"],
+[67,"09:00 ngày 28/06","J","Jordan","Argentina","AT&T Stadium","Arlington"],
+[68,"09:00 ngày 28/06","J","Algeria","Austria","Arrowhead Stadium","Kansas City"],
+[69,"06:30 ngày 28/06","K","Colombia","Portugal","Hard Rock Stadium","Miami"],
+[70,"06:30 ngày 28/06","K","DR Congo","Uzbekistan","Mercedes-Benz Stadium","Atlanta"],
+[71,"04:00 ngày 28/06","L","Panama","England","AT&T Stadium","Arlington"],
+[72,"04:00 ngày 28/06","L","Croatia","Ghana","Lincoln Financial Field","Philadelphia"]];
+
+const GROUPS={};
+GM.forEach(m=>{const g=m[2];(GROUPS[g]=GROUPS[g]||new Set());GROUPS[g].add(m[3]);GROUPS[g].add(m[4]);});
+const GLIST="ABCDEFGHIJKL".split("");
+
+// Knockout (lịch chính thức FIFA, đã đổi giờ VN). slot: g1/g2 = nhất/nhì bảng, t3 = hạng 3 (chọn từ các bảng cho phép), w/l = thắng/thua trận #
+const KO=[
+{m:73,t:"02:00 ngày 29/06",v:"Inglewood",h:{k:"g2",g:"A"},a:{k:"g2",g:"B"}},
+{m:74,t:"03:30 ngày 30/06",v:"Foxborough",h:{k:"g1",g:"E"},a:{k:"t3",gs:"ABCDF"}},
+{m:75,t:"08:00 ngày 30/06",v:"Monterrey",h:{k:"g1",g:"F"},a:{k:"g2",g:"C"}},
+{m:76,t:"00:00 ngày 30/06",v:"Houston",h:{k:"g1",g:"C"},a:{k:"g2",g:"F"}},
+{m:77,t:"04:00 ngày 01/07",v:"East Rutherford",h:{k:"g1",g:"I"},a:{k:"t3",gs:"CDFGH"}},
+{m:78,t:"00:00 ngày 01/07",v:"Arlington",h:{k:"g2",g:"E"},a:{k:"g2",g:"I"}},
+{m:79,t:"08:00 ngày 01/07",v:"Mexico City",h:{k:"g1",g:"A"},a:{k:"t3",gs:"CEFHI"}},
+{m:80,t:"23:00 ngày 01/07",v:"Atlanta",h:{k:"g1",g:"L"},a:{k:"t3",gs:"EHIJK"}},
+{m:81,t:"07:00 ngày 02/07",v:"Santa Clara",h:{k:"g1",g:"D"},a:{k:"t3",gs:"BEFIJ"}},
+{m:82,t:"03:00 ngày 02/07",v:"Seattle",h:{k:"g1",g:"G"},a:{k:"t3",gs:"AEHIJ"}},
+{m:83,t:"06:00 ngày 03/07",v:"Toronto",h:{k:"g2",g:"K"},a:{k:"g2",g:"L"}},
+{m:84,t:"02:00 ngày 03/07",v:"Inglewood",h:{k:"g1",g:"H"},a:{k:"g2",g:"J"}},
+{m:85,t:"10:00 ngày 03/07",v:"Vancouver",h:{k:"g1",g:"B"},a:{k:"t3",gs:"EFGIJ"}},
+{m:86,t:"05:00 ngày 04/07",v:"Miami",h:{k:"g1",g:"J"},a:{k:"g2",g:"H"}},
+{m:87,t:"08:30 ngày 04/07",v:"Kansas City",h:{k:"g1",g:"K"},a:{k:"t3",gs:"DEIJL"}},
+{m:88,t:"01:00 ngày 04/07",v:"Arlington",h:{k:"g2",g:"D"},a:{k:"g2",g:"G"}},
+{m:89,t:"04:00 ngày 05/07",v:"Philadelphia",h:{k:"w",m:74},a:{k:"w",m:77}},
+{m:90,t:"00:00 ngày 05/07",v:"Houston",h:{k:"w",m:73},a:{k:"w",m:75}},
+{m:91,t:"03:00 ngày 06/07",v:"East Rutherford",h:{k:"w",m:76},a:{k:"w",m:78}},
+{m:92,t:"07:00 ngày 06/07",v:"Mexico City",h:{k:"w",m:79},a:{k:"w",m:80}},
+{m:93,t:"02:00 ngày 07/07",v:"Arlington",h:{k:"w",m:83},a:{k:"w",m:84}},
+{m:94,t:"07:00 ngày 07/07",v:"Seattle",h:{k:"w",m:81},a:{k:"w",m:82}},
+{m:95,t:"23:00 ngày 07/07",v:"Atlanta",h:{k:"w",m:86},a:{k:"w",m:88}},
+{m:96,t:"03:00 ngày 08/07",v:"Vancouver",h:{k:"w",m:85},a:{k:"w",m:87}},
+{m:97,t:"03:00 ngày 10/07",v:"Foxborough",h:{k:"w",m:89},a:{k:"w",m:90}},
+{m:98,t:"02:00 ngày 11/07",v:"Inglewood",h:{k:"w",m:93},a:{k:"w",m:94}},
+{m:99,t:"04:00 ngày 12/07",v:"Miami",h:{k:"w",m:91},a:{k:"w",m:92}},
+{m:100,t:"08:00 ngày 12/07",v:"Kansas City",h:{k:"w",m:95},a:{k:"w",m:96}},
+{m:101,t:"02:00 ngày 15/07",v:"Arlington",h:{k:"w",m:97},a:{k:"w",m:98}},
+{m:102,t:"02:00 ngày 16/07",v:"Atlanta",h:{k:"w",m:99},a:{k:"w",m:100}},
+{m:103,t:"04:00 ngày 19/07",v:"Miami",h:{k:"l",m:101},a:{k:"l",m:102}},
+{m:104,t:"02:00 ngày 20/07",v:"East Rutherford",h:{k:"w",m:101},a:{k:"w",m:102}}];
+const KOROUNDS=[["Vòng 32 đội · 28/06 – 04/07",73,88],["Vòng 16 đội · 04/07 – 08/07",89,96],
+["Tứ kết · 09/07 – 12/07",97,100],["Bán kết · 14/07 – 16/07",101,102],
+["Tranh hạng 3 · 18/07",103,103],["Chung kết · 19/07",104,104]];
+
+/* ================= LƯU TRỮ ================= */
+let mem={};
+const store={
+  get(k){try{return localStorage.getItem(k)}catch(e){return mem[k]??null}},
+  set(k,v){try{localStorage.setItem(k,v)}catch(e){mem[k]=v}},
+  del(k){try{localStorage.removeItem(k)}catch(e){delete mem[k]}}
+};
+let S=JSON.parse(store.get("wc26")||"null")||{sc:{1:[2,0]},pen:{},t3:{}}; // trận 1: Mexico 2-0 South Africa
+function save(){store.set("wc26",JSON.stringify(S));}
+function resetAll(){if(confirm("Xóa toàn bộ tỉ số đã nhập?")){S={sc:{},pen:{},t3:{}};save();renderAll();}}
+
+/* ================= TÍNH TOÁN ================= */
+const has=m=>{const s=S.sc[m];return s&&s[0]!==""&&s[1]!==""&&s[0]!=null&&s[1]!=null;};
+function standings(g){
+  const T={};[...GROUPS[g]].forEach(t=>T[t]={t,p:0,w:0,d:0,l:0,gf:0,ga:0});
+  GM.filter(m=>m[2]===g&&has(m[0])).forEach(m=>{
+    const[h,a]=S.sc[m[0]].map(Number),H=T[m[3]],A=T[m[4]];
+    H.p++;A.p++;H.gf+=h;H.ga+=a;A.gf+=a;A.ga+=h;
+    if(h>a){H.w++;A.l++;}else if(h<a){H.l++;A.w++;}else{H.d++;A.d++;}
+  });
+  const arr=Object.values(T);
+  arr.forEach(x=>{x.gd=x.gf-x.ga;x.pts=x.w*3+x.d;});
+  const order=[...GROUPS[g]];
+  arr.sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||order.indexOf(a.t)-order.indexOf(b.t));
+  return arr;
+}
+const groupDone=g=>GM.filter(m=>m[2]===g).every(m=>has(m[0]));
+function thirdTable(){
+  return GLIST.map(g=>({g,...standings(g)[2],done:groupDone(g)}))
+    .sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf||a.g.localeCompare(b.g));
+}
+function koWinner(m){
+  const k=KO.find(x=>x.m===m);if(!has(m))return null;
+  const[h,a]=S.sc[m].map(Number);
+  if(h>a)return resolveSlot(k.h);if(a>h)return resolveSlot(k.a);
+  const p=S.pen[m];if(p==="H")return resolveSlot(k.h);if(p==="A")return resolveSlot(k.a);
+  return null;
+}
+function koLoser(m){
+  const k=KO.find(x=>x.m===m);if(!has(m))return null;
+  const w=koWinner(m);if(!w)return null;
+  const h=resolveSlot(k.h),a=resolveSlot(k.a);
+  return w.name===h.name?a:h;
+}
+function resolveSlot(s){
+  if(s.k==="g1"||s.k==="g2"){
+    const i=s.k==="g1"?0:1;
+    if(groupDone(s.g))return{name:standings(s.g)[i].t,ok:true};
+    return{name:(i+1)+s.g+" (bảng "+s.g+" chưa xong)",ok:false};
+  }
+  if(s.k==="t3"){
+    const pick=S.t3[s.m3];
+    if(pick&&groupDone(pick))return{name:standings(pick)[2].t,ok:true};
+    return{name:"Hạng 3 bảng "+s.gs.split("").join("/"),ok:false};
+  }
+  if(s.k==="w"){const w=koWinner(s.m);return w&&w.ok?w:{name:"Thắng trận "+s.m,ok:false};}
+  if(s.k==="l"){const l=koLoser(s.m);return l&&l.ok?l:{name:"Thua trận "+s.m,ok:false};}
+}
+KO.forEach(k=>{if(k.a.k==="t3")k.a.m3=k.m;}); // gắn id trận vào slot hạng 3
+
+/* ================= GIAO DIỆN ================= */
+const $=id=>document.getElementById(id);
+function show(t){["sched","table","ko"].forEach(x=>{$(x).classList.toggle("hide",x!==t);
+  $("tab"+(x==="sched"?"Sched":x==="table"?"Table":"KO")).classList.toggle("on",x===t);});
+  window.scrollTo(0,0);}
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+
+function scoreInputs(m,disabled){
+  const s=S.sc[m]||["",""];
+  return `<input class="sc" type="number" inputmode="numeric" min="0" max="99" placeholder="–"
+      value="${s[0]}" ${disabled?"disabled":""} oninput="setScore(${m},0,this.value)">
+    <span class="vs">–</span>
+    <input class="sc" type="number" inputmode="numeric" min="0" max="99" placeholder="–"
+      value="${s[1]}" ${disabled?"disabled":""} oninput="setScore(${m},1,this.value)">`;
+}
+function setScore(m,i,v){
+  const s=S.sc[m]||(S.sc[m]=["",""]);
+  s[i]=v===""?"":Math.max(0,parseInt(v)||0);
+  if(!has(m)||Number(s[0])!==Number(s[1]))delete S.pen[m];
+  save();renderTables();renderKO();
+}
+function setPen(m,side){S.pen[m]=side;save();renderKO();}
+function setThird(m,g){if(g)S.t3[m]=g;else delete S.t3[m];save();renderKO();}
+
+function renderSched(){
+  let html="",day="";
+  GM.forEach(m=>{
+    const d=m[1].split("ngày ")[1];
+    if(d!==day){day=d;html+=`<h2>Ngày ${d}</h2>`;}
+    html+=`<div class="card"><div class="meta">
+      <span><span class="grp">Bảng ${m[2]}</span> · Trận ${m[0]} · ${m[1].split(" ")[0]}</span>
+      <span>${esc(m[5])}, ${esc(m[6])}</span></div>
+      <div class="row"><div class="tname">${esc(m[3])}</div>${scoreInputs(m[0])}
+      <div class="tname away">${esc(m[4])}</div></div></div>`;
+  });
+  $("sched").innerHTML=html;
+}
+function renderTables(){
+  let html="";
+  GLIST.forEach(g=>{
+    html+=`<h2>Bảng ${g}</h2><div class="card"><table>
+      <tr><th>Đội</th><th>Tr</th><th>T</th><th>H</th><th>B</th><th>BT</th><th>HS</th><th>Đ</th></tr>`;
+    standings(g).forEach((r,i)=>{
+      html+=`<tr class="${i<2?"q1":i===2?"q3":""}"><td class="t">${i+1}. ${esc(r.t)}</td>
+        <td>${r.p}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>
+        <td>${r.gf}</td><td>${r.gd>0?"+":""}${r.gd}</td><td><b>${r.pts}</b></td></tr>`;
+    });
+    html+=`</table></div>`;
+  });
+  html+=`<h2>Các đội hạng ba (8 đội đầu đi tiếp)</h2><div class="card"><table>
+    <tr><th>Đội</th><th>Bảng</th><th>BT</th><th>HS</th><th>Đ</th></tr>`;
+  thirdTable().forEach((r,i)=>{
+    html+=`<tr class="${i<8?"q3":""}"><td class="t">${i+1}. ${esc(r.t)}${r.done?"":" *"}</td>
+      <td>${r.g}</td><td>${r.gf}</td><td>${r.gd>0?"+":""}${r.gd}</td><td><b>${r.pts}</b></td></tr>`;
+  });
+  html+=`</table><p class="legend"><i style="background:var(--teal)"></i>Nhất/nhì bảng đi tiếp
+    <i style="background:var(--vang)"></i>Hạng 3 trong top 8 · * bảng chưa đấu xong</p></div>`;
+  $("table").innerHTML=html;
+}
+function renderKO(){
+  let html="";
+  const champ=koWinner(104);
+  if(champ&&champ.ok)html+=`<div class="champ">🏆 VÔ ĐỊCH WORLD CUP 2026<b>${esc(champ.name)}</b></div>`;
+  KOROUNDS.forEach(([title,m1,m2])=>{
+    html+=`<h2>${title}</h2>`;
+    KO.filter(k=>k.m>=m1&&k.m<=m2).forEach(k=>{
+      const h=resolveSlot(k.h),a=resolveSlot(k.a),ready=h.ok&&a.ok;
+      const s=S.sc[k.m]||["",""];
+      const draw=has(k.m)&&Number(s[0])===Number(s[1]);
+      const w=koWinner(k.m);
+      html+=`<div class="card"><div class="meta">
+        <span>Trận ${k.m} · ${k.t}</span><span>${esc(k.v)}</span></div>
+        <div class="row"><div class="tname ${h.ok?"":"tbd"}">${esc(h.name)}</div>
+        ${scoreInputs(k.m,!ready)}
+        <div class="tname away ${a.ok?"":"tbd"}">${esc(a.name)}</div></div>`;
+      if(k.a.k==="t3"){
+        const opts=k.a.gs.split("").map(g=>{
+          const t=groupDone(g)?` (${standings(g)[2].t})`:"";
+          return `<option value="${g}" ${S.t3[k.m]===g?"selected":""}>Hạng 3 bảng ${g}${t}</option>`;}).join("");
+        html+=`<select class="third" onchange="setThird(${k.m},this.value)">
+          <option value="">— Chọn đội hạng 3 cho trận này —</option>${opts}</select>`;
+      }
+      if(draw)html+=`<div class="penrow">Hòa sau 90+ phút — đội thắng luân lưu/hiệp phụ:
+        <button class="${S.pen[k.m]==="H"?"on":""}" onclick="setPen(${k.m},'H')">${esc(h.name)}</button>
+        <button class="${S.pen[k.m]==="A"?"on":""}" onclick="setPen(${k.m},'A')">${esc(a.name)}</button></div>`;
+      if(w&&w.ok&&k.m!==104)html+=`<div class="winline">→ ${esc(w.name)} đi tiếp</div>`;
+      if(k.m===103&&w&&w.ok)html+=`<div class="winline">🥉 ${esc(w.name)} giành hạng ba</div>`;
+      html+=`</div>`;
+    });
+  });
+  html+=`<p class="note">Việc đội hạng 3 nào rơi vào nhánh nào phụ thuộc tổ hợp 8 bảng có đội đi tiếp (FIFA quy định sau vòng bảng), nên app để bạn chọn từ danh sách các bảng hợp lệ của từng trận.</p>`;
+  $("ko").innerHTML=html;
+}
+function renderAll(){renderSched();renderTables();renderKO();}
+renderAll();
+</script>
+</body>
+</html>
