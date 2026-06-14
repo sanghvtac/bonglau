@@ -17,6 +17,13 @@ GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR    = "thumbs"
 
+# User-Agent Chrome đầy đủ (dùng cho cả context và VLC) → tránh bị server filter
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
+
 # Danh sách giải đấu cần xóa
 LEAGUE_BLACKLIST = [
     "UEFA Champions League", "UEFA Youth League", "UEFA Europa League", "UEFA Conference League",
@@ -105,35 +112,81 @@ def build_title(time_str, team_a, team_b, blv_str, time_offset=0):
     return full_title, final_teams
 
 # ──────────────────────────────────────────────
-# STREAM: Lấy URL m3u8 cho từng trận live
+# STREAM: Lấy URL m3u8 cho từng trận live (đã cải tiến)
 # ──────────────────────────────────────────────
-async def fetch_stream_url(page, item_url):
+async def fetch_stream_url(context, item_url, max_wait_sec=14):
     """
-    Mở page mới riêng, lắng nghe response để bắt URL .m3u8.
-    Luôn remove_listener sau khi xong để tránh chồng chất.
+    Mở page mới, lắng nghe response để bắt URL .m3u8.
+
+    Cải tiến so với version cũ:
+      - Gắn listener TRƯỚC khi goto (không bỏ sót request đầu tiên)
+      - Listener ở cấp page, bắt cả response từ iframe con
+      - Sleep dài hơn (lên tới 14s) và thoát sớm khi đã có m3u8
+      - Thử click vào trung tâm trang để trigger autoplay nếu player chờ user gesture
     """
+    page = await context.new_page()
     m3u8_list = []
 
     def on_response(res):
-        if ".m3u8" in res.url:
-            m3u8_list.append(res.url)
+        url = res.url
+        if ".m3u8" in url:
+            m3u8_list.append(url)
 
     page.on("response", on_response)
     try:
-        await page.goto(item_url, wait_until="domcontentloaded", timeout=15000)
-        await asyncio.sleep(4)
+        # `commit` trigger sớm hơn `domcontentloaded` → bắt được nhiều request hơn
+        try:
+            await page.goto(item_url, wait_until="commit", timeout=20000)
+        except Exception:
+            # Fallback nếu "commit" không hỗ trợ
+            await page.goto(item_url, wait_until="domcontentloaded", timeout=20000)
+
+        # Chờ DOM cơ bản load xong (không chặn nếu timeout)
+        try:
+            await page.wait_for_load_state("domcontentloaded", timeout=10000)
+        except:
+            pass
+
+        # Poll mỗi 0.5s, thoát sớm khi đã có m3u8 (để các trận sau chạy nhanh hơn)
+        # Sau 4s mà chưa có → thử click vào player (autoplay gate)
+        elapsed = 0.0
+        clicked = False
+        while elapsed < max_wait_sec:
+            if m3u8_list:
+                break
+            await asyncio.sleep(0.5)
+            elapsed += 0.5
+            # Sau 4s nếu chưa có m3u8, click giữa trang để bypass autoplay block
+            if not clicked and elapsed >= 4.0:
+                clicked = True
+                try:
+                    # Click vào giữa viewport - hầu hết player nằm ở giữa trên
+                    await page.mouse.click(640, 360)
+                except:
+                    pass
+
+        # Ưu tiên URL chứa "playlist" hoặc "master" (m3u8 chính),
+        # rồi mới đến URL dài nhất (chứa nhiều token)
+        for url in m3u8_list:
+            if "master" in url.lower() or "playlist" in url.lower():
+                return url
         return max(m3u8_list, key=len) if m3u8_list else ""
-    except:
+    except Exception as e:
+        print(f"  [WARN] fetch_stream_url lỗi ({item_url[-40:]}): {e}")
         return ""
     finally:
-        page.remove_listener("response", on_response)
+        try:
+            page.remove_listener("response", on_response)
+        except:
+            pass
+        await page.close()
 
 # ──────────────────────────────────────────────
 # PARSE 1 CARD: lấy time, teams, logos, blv, is_live trực tiếp từ DOM
 # ──────────────────────────────────────────────
 async def parse_match_card(el):
     """
-    Trích xuất thông tin từ 1 thẻ <a> card trận đấu của hoiquan3.
+    Trích xuất thông tin từ 1 thẻ <a> card trận đấu của hoiquan.
     Trả về dict các trường đã làm sạch.
     """
     href = await el.get_attribute("href")
@@ -144,7 +197,6 @@ async def parse_match_card(el):
     is_live = pulse_node is not None
     if not is_live:
         # Fallback: kiểm tra text có "H1 - XX", "H2 - XX" (đang đá) hoặc "Live"/"TRỰC TIẾP"
-        # Không dùng \b vì text_content nối liền các span (vd "...FCH2 - 80'")
         raw_text = (await el.text_content()) or ""
         is_live = bool(
             re.search(r"H[12]\s*-\s*\d+", raw_text)
@@ -152,17 +204,14 @@ async def parse_match_card(el):
         )
 
     # 2. Tên 2 đội: span có class chứa "truncate" và "font-medium"
-    #    (loại trừ span.truncate của BLV để không nhầm)
     team_nodes = await el.query_selector_all("span.truncate.font-medium")
     if not team_nodes:
         team_nodes = await el.query_selector_all("span.truncate")
     team_names = []
     for node in team_nodes:
         t = ((await node.text_content()) or "").strip()
-        # Loại tên BLV (thường có "BLV" ở đầu) và chuỗi quá ngắn
         if t and len(t) > 1 and not re.match(r"(?i)^\s*BLV\b", t):
             team_names.append(t)
-    # Dedupe giữ thứ tự
     seen = []
     for t in team_names:
         if t not in seen:
@@ -170,27 +219,23 @@ async def parse_match_card(el):
     team_a = seen[0] if len(seen) >= 1 else ""
     team_b = seen[1] if len(seen) >= 2 else ""
 
-    # 3. Time + Date: ở hoiquan3 chia làm 2 span riêng nối liền nhau
-    #    "14:30" + "09/05/2026" → text "14:3009/05/2026" → ghép "14:30 09/05"
+    # 3. Time + Date: chia làm 2 span riêng nối liền nhau
     time_str = ""
     full_text = (await el.text_content()) or ""
-    # Bắt combo "HH:MM" theo sau là "DD/MM" (có thể kèm /YYYY)
     m_combo = re.search(r"(\d{1,2}:\d{2})\s*(\d{1,2}/\d{1,2})(?:/\d{2,4})?", full_text)
     if m_combo:
         time_str = f"{m_combo.group(1)} {m_combo.group(2)}"
-        # Pad 2 chữ số (2 → 02) cho khớp format adjust_time_str
         try:
             dt = datetime.strptime(time_str, "%H:%M %d/%m")
             time_str = dt.strftime("%H:%M %d/%m")
         except:
             pass
     else:
-        # Fallback: chỉ có giờ, không có ngày
         m_time = re.search(r"(\d{1,2}:\d{2})", full_text)
         if m_time:
             time_str = m_time.group(1)
 
-    # 4. BLV: span.truncate trong khối .bg-blue-500 có chứa avatar BLV
+    # 4. BLV
     blv_str = ""
     blv_node = await el.query_selector(".bg-blue-500 span.truncate, .bg-blue-500 span.font-medium")
     if blv_node:
@@ -198,22 +243,21 @@ async def parse_match_card(el):
         if blv_text:
             blv_str = blv_text if blv_text.upper().startswith("BLV") else f"BLV {blv_text}"
 
-    # 5. Logo 2 đội: img có class "w-12 h-12" (kích thước cố định riêng cho team logo)
+    # 5. Logo 2 đội
     team_logo_imgs = await el.query_selector_all("img.w-12.h-12")
     logos = []
     for img in team_logo_imgs:
         src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
         if src and src.startswith("http"):
             logos.append(src)
-    # Fallback: nếu không có .w-12.h-12 thì lấy tất cả img và lọc
     if len(logos) < 2:
         all_imgs = await el.query_selector_all("img")
         for img in all_imgs:
             src = (await img.get_attribute("data-src")) or (await img.get_attribute("src")) or ""
             if (src and src.startswith("http")
-                and "30aaqin.png" not in src       # icon "Bóng đá"
-                and "image2url.com" not in src     # avatar BLV
-                and "i.imgur.com" not in src       # logo giải đấu (UtyP0MT.jpeg...)
+                and "30aaqin.png" not in src
+                and "image2url.com" not in src
+                and "i.imgur.com" not in src
                 and src not in logos):
                 logos.append(src)
             if len(logos) >= 2:
@@ -242,7 +286,11 @@ async def main():
 
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        context = await browser.new_context(user_agent="Mozilla/5.0")
+        # User-Agent Chrome đầy đủ + viewport thực tế → ít bị server filter
+        context = await browser.new_context(
+            user_agent=USER_AGENT,
+            viewport={"width": 1366, "height": 768},
+        )
         page = await context.new_page()
 
         try:
@@ -252,7 +300,6 @@ async def main():
                 await page.mouse.wheel(0, 2000)
                 await asyncio.sleep(1)
 
-            # Selector đúng cho hoiquan3: href bắt đầu bằng "/truc-tiep/"
             elements = await page.query_selector_all("a[href*='/truc-tiep/']")
             print(f"[INFO] Tìm được {len(elements)} thẻ card trận đấu")
 
@@ -260,7 +307,7 @@ async def main():
             for el in elements:
                 info = await parse_match_card(el)
                 if not info["url"] or not info["team_a"]:
-                    continue   # bỏ card hỏng
+                    continue
 
                 full_title, teams_only = build_title(
                     info["time_str"],
@@ -274,12 +321,12 @@ async def main():
                     "url":          info["url"],
                     "logo_a":       info["logo_a"],
                     "logo_b":       info["logo_b"],
-                    "combined_img": "",   # điền sau
+                    "combined_img": "",
                     "is_live":      info["is_live"],
-                    "stream":       ""    # điền sau
+                    "stream":       ""
                 })
 
-            # ── Bước 2: Khởi động tạo thumbnail song song (PIL -> thumbs/) ──
+            # ── Bước 2: Khởi động tạo thumbnail song song ──
             thumb_tasks = [
                 make_thumb_async(
                     ch["logo_a"], ch["logo_b"],
@@ -289,16 +336,16 @@ async def main():
                 for ch in match_data
             ]
 
-            # ── Bước 3: Crawl stream song song (MAX 4 tab cung luc) ──
-            MAX_CONCURRENT = 4
+            # ── Bước 3: Crawl stream song song (MAX 3 tab cùng lúc) ──
+            # Giảm từ 4 xuống 3 vì mỗi tab chạy lâu hơn (14s), tránh quá tải
+            MAX_CONCURRENT = 3
             live_items = [ch for ch in match_data if ch['is_live']]
+            print(f"[INFO] Bắt đầu crawl stream cho {len(live_items)} trận live...")
 
             async def fetch_one(item):
-                stream_page = await context.new_page()
-                try:
-                    item['stream'] = await fetch_stream_url(stream_page, item['url'])
-                finally:
-                    await stream_page.close()
+                item['stream'] = await fetch_stream_url(context, item['url'])
+                tag = "✅" if item['stream'] else "❌"
+                print(f"  {tag} {item['title'][:55]}")
 
             for i in range(0, len(live_items), MAX_CONCURRENT):
                 batch = live_items[i : i + MAX_CONCURRENT]
@@ -329,7 +376,6 @@ async def main():
                 group    = "LIVE" if ch['is_live'] else "UPCOMING"
                 img_url  = ch['combined_img'] or ch['logo_a']
 
-                # JSON cho app TV (SportTV, MonPlayer...)
                 channel_json = {
                     "id":      f"ch-{match_id}",
                     "name":    f"⚽ {ch['title']}",
@@ -351,7 +397,7 @@ async def main():
                                     "type": "hls",
                                     "request_headers": [
                                         {"key": "Referer",    "value": ch['url']},
-                                        {"key": "User-Agent", "value": "Mozilla/5.0"}
+                                        {"key": "User-Agent", "value": USER_AGENT}
                                     ]
                                 }]
                             }]
@@ -363,22 +409,22 @@ async def main():
                 else:
                     json_output["groups"][1]["channels"].append(channel_json)
 
-                # IPTV M3U (TiviMate, GSE Smart IPTV...) — không cần tvg-logo
+                # IPTV M3U
                 m3u_content += (
                     f'#EXTINF:-1 tvg-id="{match_id}" '
                     f'group-title="{group}", {ch["title"]}\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
-                    f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
+                    f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
                     f'{stream}\n'
                 )
 
-                # VLC M3U — không cần tvg-logo
+                # VLC M3U
                 vlc_content += (
                     f'#EXTINF:-1 tvg-id="{match_id}" '
                     f'group-title="{group}", ⚽ {ch["title"]}\n'
                     f'#EXTVLCOPT:network-caching=1000\n'
                     f'#EXTVLCOPT:http-referrer={ch["url"]}\n'
-                    f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\n'
+                    f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
                     f'{stream}\n'
                 )
 
@@ -391,8 +437,10 @@ async def main():
 
             live_count     = sum(1 for ch in match_data if ch['is_live'])
             upcoming_count = sum(1 for ch in match_data if not ch['is_live'])
-            print(f"✅ Hoàn thành lúc: {now_str} (Giờ VN)")
+            stream_count   = sum(1 for ch in match_data if ch['stream'])
+            print(f"\n✅ Hoàn thành lúc: {now_str} (Giờ VN)")
             print(f"   🔴 Live: {live_count} trận  |  🗓 Sắp diễn ra: {upcoming_count} trận")
+            print(f"   📡 Lấy được stream: {stream_count}/{live_count} trận live")
 
         finally:
             await browser.close()
