@@ -12,7 +12,7 @@ from playwright.async_api import async_playwright
 
 TARGET_URL    = "https://sv2.hoiquan4.live/lich-thi-dau/bong-da"
 BASE_DOMAIN   = "https://sv2.hoiquan4.live"
-COVER_IMAGE   = "https://drive.google.com/file/d/1mUPYssRG7W4f36pwRCa2tgE1xbBZiuv5/view?usp=drivesdk"
+COVER_IMAGE   = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmEb8OmurSIW7ijOqEOqxrbWSOkg5bQiIokrO8_b5ORLv8BdSKtSTbt8t&s=10"
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR    = "thumbs"
