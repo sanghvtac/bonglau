@@ -1,0 +1,35 @@
+name: Test ChuoiChien
+
+on:
+  workflow_dispatch:  # Chỉ chạy thủ công bằng nút "Run workflow"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright requests Pillow --quiet
+          playwright install chromium --with-deps
+
+      - name: Run ChuoiChien crawler
+        run: python crawl_chuoichien.py
+
+      - name: Commit and push results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "test: chuoichien ${{ github.run_id }}"
+          file_pattern: 'chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt thumbs/*.png'
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
