@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:42 23/07/2026)",
+    "name": "Chuoi Chien TV (20:53 16/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,27 +9,27 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-e323ac83dac6",
-                    "name": "⚽ 15:30 23/07 Việt Nam VS Thailand [Chuối Tây - FHD1]",
+                    "id": "ch-0dc196736aba",
+                    "name": "⚽ 20:00 16/08 Malaysia VS Việt Nam [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/991281.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1619317.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-e323ac83dac6",
+                            "id": "src-0dc196736aba",
                             "contents": [
                                 {
-                                    "id": "ct-e323ac83dac6",
+                                    "id": "ct-0dc196736aba",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -51,27 +51,111 @@
                     ]
                 },
                 {
-                    "id": "ch-b0f91b41771f",
-                    "name": "⚽ 17:00 23/07 Tensung VS Paro [A Ngao - FHD1]",
+                    "id": "ch-0e589e629996",
+                    "name": "⚽ 20:00 16/08 Malaysia VS Việt Nam [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1598631.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1619317.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-b0f91b41771f",
+                            "id": "src-0e589e629996",
                             "contents": [
                                 {
-                                    "id": "ct-b0f91b41771f",
+                                    "id": "ct-0e589e629996",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angaohd/playlist.m3u8",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5cc668b7efda",
+                    "name": "⚽ 21:00 16/08 Arsenal VS Manchester City [Trốc Tru - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1582365.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5cc668b7efda",
+                            "contents": [
+                                {
+                                    "id": "ct-5cc668b7efda",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1baf0bada691",
+                    "name": "⚽ 21:00 16/08 Arsenal VS Manchester City [Chuối Đá - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1582365.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1baf0bada691",
+                            "contents": [
+                                {
+                                    "id": "ct-1baf0bada691",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoidahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -99,22 +183,22 @@
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-81ab5ec307a1",
-                    "name": "⚽ 18:30 23/07 USA W VS China W",
+                    "id": "ch-87816b537473",
+                    "name": "⚽ 21:30 16/08 FC Basel 1893 VS Barcelona",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/209782.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1627005.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-81ab5ec307a1",
+                            "id": "src-87816b537473",
                             "contents": [
                                 {
-                                    "id": "ct-81ab5ec307a1",
+                                    "id": "ct-87816b537473",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/209782/209782"
+                                                            "value": "https://live20.chuoichientv.com/live/1627005/1627005"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,22 +225,22 @@
                     ]
                 },
                 {
-                    "id": "ch-2bb61219f10d",
-                    "name": "⚽ 19:00 23/07 Cambodia VS Philippines",
+                    "id": "ch-8ac1696fc34a",
+                    "name": "⚽ 22:00 16/08 Racing Santander VS Villarreal",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/997418.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570339.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2bb61219f10d",
+                            "id": "src-8ac1696fc34a",
                             "contents": [
                                 {
-                                    "id": "ct-2bb61219f10d",
+                                    "id": "ct-8ac1696fc34a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +250,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/997418/997418"
+                                                            "value": "https://live20.chuoichientv.com/live/1570339/1570339"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,22 +267,22 @@
                     ]
                 },
                 {
-                    "id": "ch-fcdeafacafef",
-                    "name": "⚽ 21:30 23/07 Malisheva VS Hibernian",
+                    "id": "ch-069148db9d25",
+                    "name": "⚽ 22:00 16/08 FC Schalke 04 VS Real Madrid",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1591944.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1607294.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-fcdeafacafef",
+                            "id": "src-069148db9d25",
                             "contents": [
                                 {
-                                    "id": "ct-fcdeafacafef",
+                                    "id": "ct-069148db9d25",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +292,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1591944/1591944"
+                                                            "value": "https://live20.chuoichientv.com/live/1607294/1607294"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,22 +309,22 @@
                     ]
                 },
                 {
-                    "id": "ch-4723fc052c72",
-                    "name": "⚽ 22:00 23/07 Navbahor VS Qizilqum",
+                    "id": "ch-044ad34e06b4",
+                    "name": "⚽ 00:00 17/08 Espanyol VS Levante",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516069.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570338.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-4723fc052c72",
+                            "id": "src-044ad34e06b4",
                             "contents": [
                                 {
-                                    "id": "ct-4723fc052c72",
+                                    "id": "ct-044ad34e06b4",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -250,7 +334,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1516069/1516069"
+                                                            "value": "https://live20.chuoichientv.com/live/1570338/1570338"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,22 +351,22 @@
                     ]
                 },
                 {
-                    "id": "ch-99d9861ee2fb",
-                    "name": "⚽ 22:00 23/07 Alashkert VS CFR Cluj",
+                    "id": "ch-94e7af43951d",
+                    "name": "⚽ 01:45 17/08 Lens VS Paris Saint Germain",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1593475.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1546791.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-99d9861ee2fb",
+                            "id": "src-94e7af43951d",
                             "contents": [
                                 {
-                                    "id": "ct-99d9861ee2fb",
+                                    "id": "ct-94e7af43951d",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -292,7 +376,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593475/1593475"
+                                                            "value": "https://live20.chuoichientv.com/live/1546791/1546791"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,22 +393,22 @@
                     ]
                 },
                 {
-                    "id": "ch-1367415b2c33",
-                    "name": "⚽ 23:00 23/07 Qarabag VS CSKA Sofia",
+                    "id": "ch-3e8020e5eac7",
+                    "name": "⚽ 02:15 17/08 Lazio VS Mantova",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1593521.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1564801.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-1367415b2c33",
+                            "id": "src-3e8020e5eac7",
                             "contents": [
                                 {
-                                    "id": "ct-1367415b2c33",
+                                    "id": "ct-3e8020e5eac7",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -334,7 +418,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593521/1593521"
+                                                            "value": "https://live20.chuoichientv.com/live/1564801/1564801"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -351,22 +435,22 @@
                     ]
                 },
                 {
-                    "id": "ch-f344566812ed",
-                    "name": "⚽ 00:00 24/07 Hammarby FF VS Anderlecht",
+                    "id": "ch-7c5bd81a34c1",
+                    "name": "⚽ 04:30 17/08 Vitoria VS Botafogo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1556544.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492339.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f344566812ed",
+                            "id": "src-7c5bd81a34c1",
                             "contents": [
                                 {
-                                    "id": "ct-f344566812ed",
+                                    "id": "ct-7c5bd81a34c1",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -376,7 +460,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556544/1556544"
+                                                            "value": "https://live20.chuoichientv.com/live/1492339/1492339"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -393,22 +477,22 @@
                     ]
                 },
                 {
-                    "id": "ch-0427e65b3569",
-                    "name": "⚽ 00:00 24/07 Sheriff Tiraspol VS Maccabi Tel Aviv",
+                    "id": "ch-10cd94d185ab",
+                    "name": "⚽ 06:15 17/08 Barracas Central VS Rosario Central",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1593522.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1493063.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-0427e65b3569",
+                            "id": "src-10cd94d185ab",
                             "contents": [
                                 {
-                                    "id": "ct-0427e65b3569",
+                                    "id": "ct-10cd94d185ab",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -418,7 +502,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593522/1593522"
+                                                            "value": "https://live20.chuoichientv.com/live/1493063/1493063"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -435,22 +519,22 @@
                     ]
                 },
                 {
-                    "id": "ch-7f42cbe42cf3",
-                    "name": "⚽ 01:00 24/07 Besiktas VS FC Midtjylland",
+                    "id": "ch-2a780ec9e8a5",
+                    "name": "⚽ 07:30 17/08 Austin VS FC Dallas",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1556543.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490383.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-7f42cbe42cf3",
+                            "id": "src-2a780ec9e8a5",
                             "contents": [
                                 {
-                                    "id": "ct-7f42cbe42cf3",
+                                    "id": "ct-2a780ec9e8a5",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -460,7 +544,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556543/1556543"
+                                                            "value": "https://live20.chuoichientv.com/live/1490383/1490383"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -477,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-04415b33d8b8",
-                    "name": "⚽ 01:00 24/07 FC ST. Gallen VS Benfica",
+                    "id": "ch-8fc9bfd453e5",
+                    "name": "⚽ 09:30 17/08 Seattle Sounders VS Vancouver Whitecaps",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1556545.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490390.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-04415b33d8b8",
+                            "id": "src-8fc9bfd453e5",
                             "contents": [
                                 {
-                                    "id": "ct-04415b33d8b8",
+                                    "id": "ct-8fc9bfd453e5",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -502,217 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556545/1556545"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-c630dd324f22",
-                    "name": "⚽ 01:00 24/07 Twente VS Ferencvarosi TC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1593523.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c630dd324f22",
-                            "contents": [
-                                {
-                                    "id": "ct-c630dd324f22",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593523/1593523"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-c63422bd56bd",
-                    "name": "⚽ 05:00 24/07 Bolívar VS Gremio",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1547774.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c63422bd56bd",
-                            "contents": [
-                                {
-                                    "id": "ct-c63422bd56bd",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1547774/1547774"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-d194d91eb6e9",
-                    "name": "⚽ 05:30 24/07 Botafogo VS Vitoria",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1492141.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d194d91eb6e9",
-                            "contents": [
-                                {
-                                    "id": "ct-d194d91eb6e9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492141/1492141"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-7fc9b09880a6",
-                    "name": "⚽ 07:30 24/07 Boca Juniors VS O'Higgins",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1547773.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-7fc9b09880a6",
-                            "contents": [
-                                {
-                                    "id": "ct-7fc9b09880a6",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1547773/1547773"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-d19515b62a28",
-                    "name": "⚽ 07:30 24/07 Santa Fe VS Caracas FC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1547778.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d19515b62a28",
-                            "contents": [
-                                {
-                                    "id": "ct-d19515b62a28",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1547778/1547778"
+                                                            "value": "https://live20.chuoichientv.com/live/1490390/1490390"
                                                         },
                                                         {
                                                             "key": "User-Agent",
