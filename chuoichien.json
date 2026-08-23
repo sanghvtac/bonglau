@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 24/08/2026)",
+    "name": "Chuoi Chien TV (05:55 24/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-0a3e7fcec579",
-                    "name": "⚽ 06:00 24/08 Atlanta United FC VS Sporting Kansas City",
+                    "id": "ch-975c4e68d62a",
+                    "name": "⚽ 06:00 24/08 Atlanta United FC VS Sporting Kansas City [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0a3e7fcec579",
+                            "id": "src-975c4e68d62a",
                             "contents": [
                                 {
-                                    "id": "ct-0a3e7fcec579",
+                                    "id": "ct-975c4e68d62a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490420/1490420"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9e2dfbe08084",
                     "name": "⚽ 07:30 24/08 Racing Club VS Boca Juniors",
