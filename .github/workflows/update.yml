@@ -1,8 +1,10 @@
-name: Crawl ThienDinh & HoiQuan & ChuoiChien
+name: Crawl ChuoiChien
+
 on:
   #schedule:
     #- cron: '0 11-14 * * *'
   workflow_dispatch:
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
@@ -13,6 +15,7 @@ jobs:
       R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
       R2_BUCKET: ${{ secrets.R2_BUCKET }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,43 +32,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-playwright-pillow-boto3
+          key: ${{ runner.os }}-pip-pillow-boto3
           restore-keys: ${{ runner.os }}-pip-
 
+      # crawl_chuoichien.py gọi thẳng API (requests), không cần Playwright/Chromium
       - name: Install Python dependencies
-        run: pip install playwright requests Pillow boto3 --quiet
-
-      - name: Get Playwright version
-        id: pw-version
-        run: |
-          PW_VER=$(python -c "from importlib.metadata import version; print(version('playwright'))")
-          echo "version=$PW_VER" >> $GITHUB_OUTPUT
-          echo "Playwright version: $PW_VER"
-
-      - name: Cache Playwright browsers
-        id: playwright-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ steps.pw-version.outputs.version }}-chromium
-          restore-keys: ${{ runner.os }}-playwright-
-
-      - name: Install Chromium if cache miss
-        run: |
-          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" != "true" ]; then
-            echo "⚠ Cache miss, cài Chromium cho Playwright v${{ steps.pw-version.outputs.version }}..."
-            playwright install chromium --with-deps
-          else
-            echo "✅ Chromium đã sẵn sàng từ cache (Playwright v${{ steps.pw-version.outputs.version }})"
-          fi
-
-      - name: Run ThienDinh crawler
-        continue-on-error: true
-        run: python crawl_thiendinh.py
-
-      - name: Run HoiQuan crawler
-        continue-on-error: true
-        run: python crawl_hoiquan.py
+        run: pip install requests Pillow boto3 --quiet
 
       - name: Run ChuoiChien crawler
         continue-on-error: true
@@ -83,8 +55,6 @@ jobs:
           commit_message: "chore: auto-update ${{ github.run_id }}"
           # Dùng thumbs/ (cả thư mục) để bắt được cả file MỚI lẫn file BỊ XÓA
           file_pattern: >-
-            thiendinh.json thiendinh_iptv.txt thiendinh_vlc.txt
-            hoiquan.json hoiquan_iptv.txt hoiquan_vlc.txt
             chuoichien.json chuoichien_iptv.txt chuoichien_vlc.txt
             thumbs/
           commit_user_name: "github-actions[bot]"
