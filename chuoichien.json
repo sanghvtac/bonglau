@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 23/08/2026)",
+    "name": "Chuoi Chien TV (23:25 23/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-aa2337fb3d81",
-                    "name": "⚽ 23:30 23/08 Frosinone VS Juventus",
+                    "id": "ch-04d97fb4af1d",
+                    "name": "⚽ 23:30 23/08 Frosinone VS Juventus [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-aa2337fb3d81",
+                            "id": "src-04d97fb4af1d",
                             "contents": [
                                 {
-                                    "id": "ct-aa2337fb3d81",
+                                    "id": "ct-04d97fb4af1d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550090/1550090"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-0a599df41d1d",
-                    "name": "⚽ 23:30 23/08 Venezia VS Lecce",
+                    "id": "ch-533af0ba2dfa",
+                    "name": "⚽ 23:30 23/08 Venezia VS Lecce [Nhà Đài - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0a599df41d1d",
+                            "id": "src-533af0ba2dfa",
                             "contents": [
                                 {
-                                    "id": "ct-0a599df41d1d",
+                                    "id": "ct-533af0ba2dfa",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/m4x1/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550096/1550096"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f3256248ba9c",
                     "name": "⚽ 00:30 24/08 Getafe VS Racing Santander",
