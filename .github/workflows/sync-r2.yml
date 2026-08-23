@@ -1,8 +1,9 @@
 name: Sync to Cloudflare R2
+
 on:
   # Tự động chạy sau khi workflow Crawl push thành công
   workflow_run:
-    workflows: ["Crawl ThienDinh & HoiQuan & ChuoiChien"]
+    workflows: ["Crawl ChuoiChien"]
     types: [completed]
   # Cho phép chạy thủ công để test
   workflow_dispatch:
@@ -21,23 +22,20 @@ jobs:
           ref: main
 
       # Kiểm tra commit gần nhất có file thay đổi không
-      # Nếu không có gì thay đổi (vd: workflow chạy nhưng không có file mới) → skip toàn bộ sync
+      # Nếu không có gì thay đổi → skip toàn bộ sync để tiết kiệm Class A
       - name: Check for changes in latest commit
         id: check
         run: |
-          # Đếm số file thay đổi (added/modified/deleted) trong commit cuối
           CHANGED=$(git diff --name-only HEAD~1 HEAD | wc -l)
           LAST_MSG=$(git log -1 --pretty=%s)
           echo "Commit gần nhất: $LAST_MSG"
           echo "Số file thay đổi: $CHANGED"
 
-          # Liệt kê file thay đổi để debug
           if [ "$CHANGED" -gt 0 ]; then
             echo "Danh sách file thay đổi:"
             git diff --name-only HEAD~1 HEAD | head -20
           fi
 
-          # Manual trigger thì luôn chạy, không skip
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "skip=false" >> $GITHUB_OUTPUT
             echo "→ Manual trigger, luôn chạy sync"
@@ -71,11 +69,11 @@ jobs:
       - name: Sync output files to R2
         if: steps.check.outputs.skip != 'true'
         run: |
-          # Upload các file output đơn lẻ (json, txt) - song song 10 file
+          # Upload các file output (json, txt) - song song 10 file
           rclone copy . r2:${{ secrets.R2_BUCKET }}/ \
-            --include "*.json" \
-            --include "*_iptv.txt" \
-            --include "*_vlc.txt" \
+            --include "chuoichien.json" \
+            --include "chuoichien_iptv.txt" \
+            --include "chuoichien_vlc.txt" \
             --transfers 10 \
             --checkers 20 \
             --header-upload "Cache-Control: public, max-age=60" \
