@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:55 24/08/2026)",
+    "name": "Chuoi Chien TV (00:25 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-222b78c9cc59",
-                    "name": "⚽ 00:30 25/08 Osasuna VS Levante",
+                    "id": "ch-04ab4816dae9",
+                    "name": "⚽ 00:30 25/08 Osasuna VS Levante [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-222b78c9cc59",
+                            "id": "src-04ab4816dae9",
                             "contents": [
                                 {
-                                    "id": "ct-222b78c9cc59",
+                                    "id": "ct-04ab4816dae9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570350/1570350"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-23be7c6d6f29",
                     "name": "⚽ 01:00 25/08 Al-Ittihad FC VS Al-Hazm",
