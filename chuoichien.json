@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 25/08/2026)",
+    "name": "Chuoi Chien TV (00:55 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-3d8661086f22",
-                    "name": "⚽ 23:00 24/08 Würzburger Kickers VS 1.FC Köln [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550703.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-3d8661086f22",
-                            "contents": [
-                                {
-                                    "id": "ct-3d8661086f22",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-a4ef5e6c674d",
                     "name": "⚽ 23:30 24/08 Bologna VS Lazio [Chuối Nhỏ - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-23be7c6d6f29",
-                    "name": "⚽ 01:00 25/08 Al-Ittihad FC VS Al-Hazm",
+                    "id": "ch-8f8b0194bab9",
+                    "name": "⚽ 01:00 25/08 Al-Ittihad FC VS Al-Hazm [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-23be7c6d6f29",
+                            "id": "src-8f8b0194bab9",
                             "contents": [
                                 {
-                                    "id": "ct-23be7c6d6f29",
+                                    "id": "ct-8f8b0194bab9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-0e835d54af56",
+                    "name": "⚽ 23:00 24/08 Würzburger Kickers VS 1.FC Köln",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550703.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0e835d54af56",
+                            "contents": [
+                                {
+                                    "id": "ct-0e835d54af56",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1602991/1602991"
+                                                            "value": "https://live20.chuoichientv.com/live/1550703/1550703"
                                                         },
                                                         {
                                                             "key": "User-Agent",
