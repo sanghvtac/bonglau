@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 25/08/2026)",
+    "name": "Chuoi Chien TV (01:55 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-a4ef5e6c674d",
-                    "name": "⚽ 23:30 24/08 Bologna VS Lazio [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550089.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a4ef5e6c674d",
-                            "contents": [
-                                {
-                                    "id": "ct-a4ef5e6c674d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-04ab4816dae9",
                     "name": "⚽ 00:30 25/08 Osasuna VS Levante [Chuối Chao - FHD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f09447d739f3",
-                    "name": "⚽ 02:00 25/08 Fulham VS Chelsea",
+                    "id": "ch-434a94ecfcb1",
+                    "name": "⚽ 02:00 25/08 Fulham VS Chelsea [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,10 +147,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f09447d739f3",
+                            "id": "src-434a94ecfcb1",
                             "contents": [
                                 {
-                                    "id": "ct-f09447d739f3",
+                                    "id": "ct-434a94ecfcb1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-fa59dac82413",
+                    "name": "⚽ 23:30 24/08 Bologna VS Lazio",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550089.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fa59dac82413",
+                            "contents": [
+                                {
+                                    "id": "ct-fa59dac82413",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1557376/1557376"
+                                                            "value": "https://live20.chuoichientv.com/live/1550089/1550089"
                                                         },
                                                         {
                                                             "key": "User-Agent",
