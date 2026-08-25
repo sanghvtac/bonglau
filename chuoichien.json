@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 25/08/2026)",
+    "name": "Chuoi Chien TV (08:55 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bc93a09e58b4",
-                    "name": "⚽ 09:00 25/08 Thailand W VS Kazakhstan W",
+                    "id": "ch-7afcd508d32e",
+                    "name": "⚽ 09:00 25/08 Thailand W VS Kazakhstan W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bc93a09e58b4",
+                            "id": "src-7afcd508d32e",
                             "contents": [
                                 {
-                                    "id": "ct-bc93a09e58b4",
+                                    "id": "ct-7afcd508d32e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994849/994849"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b7ff6e2cd151",
                     "name": "⚽ 13:00 25/08 Iran VS Iraq",
