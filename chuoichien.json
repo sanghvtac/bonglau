@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 25/08/2026)",
+    "name": "Chuoi Chien TV (20:55 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-f8b8155307ed",
-                    "name": "⚽ 21:00 25/08 Andijan VS Xorazm",
+                    "id": "ch-eb862de0c987",
+                    "name": "⚽ 21:00 25/08 Andijan VS Xorazm [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f8b8155307ed",
+                            "id": "src-eb862de0c987",
                             "contents": [
                                 {
-                                    "id": "ct-f8b8155307ed",
+                                    "id": "ct-eb862de0c987",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1516113/1516113"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,50 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-843af9fce1e1",
-                    "name": "⚽ 21:00 25/08 Surkhon VS Olmaliq",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516120.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-843af9fce1e1",
-                            "contents": [
-                                {
-                                    "id": "ct-843af9fce1e1",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1516120/1516120"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-68fb73202206",
-                    "name": "⚽ 21:00 25/08 Dinamo Kirov VS Amkar",
+                    "id": "ch-3590bff6aca9",
+                    "name": "⚽ 21:00 25/08 Dinamo Kirov VS Amkar [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -110,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-68fb73202206",
+                            "id": "src-3590bff6aca9",
                             "contents": [
                                 {
-                                    "id": "ct-68fb73202206",
+                                    "id": "ct-3590bff6aca9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-94fe061906a9",
+                    "name": "⚽ 21:00 25/08 Ryazan VS FK Spartak Tambov",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1627497.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-94fe061906a9",
+                            "contents": [
+                                {
+                                    "id": "ct-94fe061906a9",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -123,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1627491/1627491"
+                                                            "value": "https://live20.chuoichientv.com/live/1627497/1627497"
                                                         },
                                                         {
                                                             "key": "User-Agent",
