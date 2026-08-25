@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 25/08/2026)",
+    "name": "Chuoi Chien TV (07:55 25/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e7fd4b269dbd",
-                    "name": "⚽ 08:00 25/08 Atlas W VS Tijuana W",
+                    "id": "ch-17c70a7fc870",
+                    "name": "⚽ 08:00 25/08 Atlas W VS Tijuana W [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e7fd4b269dbd",
+                            "id": "src-17c70a7fc870",
                             "contents": [
                                 {
-                                    "id": "ct-e7fd4b269dbd",
+                                    "id": "ct-17c70a7fc870",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603335/1603335"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bc93a09e58b4",
                     "name": "⚽ 09:00 25/08 Thailand W VS Kazakhstan W",
