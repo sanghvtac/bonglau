@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 26/08/2026)",
+    "name": "Chuoi Chien TV (08:55 26/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f4aea918554e",
-                    "name": "⚽ 09:00 26/08 Hong Kong VS South Korea",
+                    "id": "ch-d840896969af",
+                    "name": "⚽ 09:00 26/08 Hong Kong VS South Korea [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f4aea918554e",
+                            "id": "src-d840896969af",
                             "contents": [
                                 {
-                                    "id": "ct-f4aea918554e",
+                                    "id": "ct-d840896969af",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993593/993593"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-628367edd18c",
                     "name": "⚽ 09:30 26/08 CS Cartagines VS FAS",
