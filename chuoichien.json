@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (03:25 28/08/2026)",
+    "name": "Chuoi Chien TV (03:55 28/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-85d86386a643",
-                    "name": "⚽ 01:30 28/08 Celta Vigo VS Osasuna [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570336.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-85d86386a643",
-                            "contents": [
-                                {
-                                    "id": "ct-85d86386a643",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-f4bceb00a799",
                     "name": "⚽ 02:00 28/08 Barcelona VS Athletic Club [Chuối Chao - FHD1]",
@@ -133,10 +91,16 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-ea7405473785",
-                    "name": "⚽ 02:00 28/08 Fulham VS AFC Wimbledon [Trốc Tru - FHD1]",
+                    "id": "ch-cc6420ed1101",
+                    "name": "⚽ 02:00 28/08 Fulham VS AFC Wimbledon",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -147,58 +111,10 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ea7405473785",
+                            "id": "src-cc6420ed1101",
                             "contents": [
                                 {
-                                    "id": "ct-ea7405473785",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-21231dab641a",
-                    "name": "⚽ 01:30 28/08 Chelsea VS Luton",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1623102.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-21231dab641a",
-                            "contents": [
-                                {
-                                    "id": "ct-21231dab641a",
+                                    "id": "ct-cc6420ed1101",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1623102/1623102"
+                                                            "value": "https://live20.chuoichientv.com/live/1623103/1623103"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -881,6 +797,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1575140/1575140"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-83ce3b634177",
+                    "name": "⚽ 01:45 29/08 AC Milan VS Venezia",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550097.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-83ce3b634177",
+                            "contents": [
+                                {
+                                    "id": "ct-83ce3b634177",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1550097/1550097"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-377a38c2e5b4",
+                    "name": "⚽ 01:45 29/08 Lille VS Paris Saint Germain",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552746.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-377a38c2e5b4",
+                            "contents": [
+                                {
+                                    "id": "ct-377a38c2e5b4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1552746/1552746"
                                                         },
                                                         {
                                                             "key": "User-Agent",
