@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 27/08/2026)",
+    "name": "Chuoi Chien TV (17:25 27/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-dac9c5b83b59",
-                    "name": "⚽ 17:30 27/08 Dinamo Barnaul VS Irtysh Omsk",
+                    "id": "ch-c1d40acdad57",
+                    "name": "⚽ 17:30 27/08 Dinamo Barnaul VS Irtysh Omsk [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dac9c5b83b59",
+                            "id": "src-c1d40acdad57",
                             "contents": [
                                 {
-                                    "id": "ct-dac9c5b83b59",
+                                    "id": "ct-c1d40acdad57",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1627487/1627487"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-8cf655bf1409",
-                    "name": "⚽ 17:30 27/08 Japan W VS Chinese Taipei W",
+                    "id": "ch-60a3bca9a9ca",
+                    "name": "⚽ 17:30 27/08 Japan W VS Chinese Taipei W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8cf655bf1409",
+                            "id": "src-60a3bca9a9ca",
                             "contents": [
                                 {
-                                    "id": "ct-8cf655bf1409",
+                                    "id": "ct-60a3bca9a9ca",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/996852/996852"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,49 +91,13 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": "ch-d5387ecb3bef",
-                    "name": "⚽ 19:00 27/08 Ekibastuz VS Turan Turkistan",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1534836.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d5387ecb3bef",
-                            "contents": [
-                                {
-                                    "id": "ct-d5387ecb3bef",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1534836/1534836"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3e10ed99328a",
                     "name": "⚽ 20:00 27/08 Luki-Energiya VS Cherepovets",
@@ -838,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1623428/1623428"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-914416811ea1",
+                    "name": "⚽ 02:00 28/08 Barcelona VS Athletic Club",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570335.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-914416811ea1",
+                            "contents": [
+                                {
+                                    "id": "ct-914416811ea1",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1570335/1570335"
                                                         },
                                                         {
                                                             "key": "User-Agent",
