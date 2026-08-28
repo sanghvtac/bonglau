@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:55 28/08/2026)",
+    "name": "Chuoi Chien TV (18:25 28/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-275d92463472",
-                    "name": "⚽ 18:30 28/08 Sabah FA VS Penang",
+                    "id": "ch-8a933fe28483",
+                    "name": "⚽ 18:30 28/08 Sabah FA VS Penang [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-275d92463472",
+                            "id": "src-8a933fe28483",
                             "contents": [
                                 {
-                                    "id": "ct-275d92463472",
+                                    "id": "ct-8a933fe28483",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1601122/1601122"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-a861fbb92551",
-                    "name": "⚽ 18:30 28/08 China VS Vietnam W",
+                    "id": "ch-bf0754252e1d",
+                    "name": "⚽ 18:30 28/08 China VS Vietnam W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a861fbb92551",
+                            "id": "src-bf0754252e1d",
                             "contents": [
                                 {
-                                    "id": "ct-a861fbb92551",
+                                    "id": "ct-bf0754252e1d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992651/992651"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bc7714ebab55",
                     "name": "⚽ 19:00 28/08 Sichuan Jiuniu VS SHANGHAI SIPG",
