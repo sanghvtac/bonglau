@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:55 28/08/2026)",
+    "name": "Chuoi Chien TV (11:25 28/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-d336a1fae4e1",
-                    "name": "⚽ 09:30 28/08 Mixco VS Alianza FC [Chuối Lá - FHD1]",
+                    "id": "ch-c99f075e9f03",
+                    "name": "⚽ 09:30 28/08 Mixco VS Alianza FC",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d336a1fae4e1",
+                            "id": "src-c99f075e9f03",
                             "contents": [
                                 {
-                                    "id": "ct-d336a1fae4e1",
+                                    "id": "ct-c99f075e9f03",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1548374/1548374"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-8743692ab190",
                     "name": "⚽ 14:00 28/08 Indonesia VS Iran",
