@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 28/08/2026)",
+    "name": "Chuoi Chien TV (18:55 28/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bc7714ebab55",
-                    "name": "⚽ 19:00 28/08 Sichuan Jiuniu VS SHANGHAI SIPG",
+                    "id": "ch-bfd6e7193588",
+                    "name": "⚽ 19:00 28/08 Sichuan Jiuniu VS SHANGHAI SIPG [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bc7714ebab55",
+                            "id": "src-bfd6e7193588",
                             "contents": [
                                 {
-                                    "id": "ct-bc7714ebab55",
+                                    "id": "ct-bfd6e7193588",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1523252/1523252"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a4e050678d24",
                     "name": "⚽ 20:00 28/08 Terengganu VS Selangor",
