@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 29/08/2026)",
+    "name": "Chuoi Chien TV (01:55 29/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-377a38c2e5b4",
-                    "name": "⚽ 01:45 29/08 Lille VS Paris Saint Germain",
+                    "id": "ch-f84abf2aa8a8",
+                    "name": "⚽ 01:45 29/08 Lille VS Paris Saint Germain [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-377a38c2e5b4",
+                            "id": "src-f84abf2aa8a8",
                             "contents": [
                                 {
-                                    "id": "ct-377a38c2e5b4",
+                                    "id": "ct-f84abf2aa8a8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1552746/1552746"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-ea79bf3dd7c9",
-                    "name": "⚽ 02:00 29/08 Crystal Palace VS Manchester City",
+                    "id": "ch-80422d13bd76",
+                    "name": "⚽ 02:00 29/08 Crystal Palace VS Manchester City [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ea79bf3dd7c9",
+                            "id": "src-80422d13bd76",
                             "contents": [
                                 {
-                                    "id": "ct-ea79bf3dd7c9",
+                                    "id": "ct-80422d13bd76",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1557381/1557381"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -266,6 +260,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-c051e581c2af",
+                    "name": "⚽ 02:00 29/08 Crystal Palace VS Manchester City [A Ngao - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557381.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-c051e581c2af",
+                            "contents": [
+                                {
+                                    "id": "ct-c051e581c2af",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ad063d0b3819",
                     "name": "⚽ 02:30 29/08 Alaves VS Villarreal",
