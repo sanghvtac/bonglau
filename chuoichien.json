@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (21:25 29/08/2026)",
+    "name": "Chuoi Chien TV (21:55 29/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f74e73c4660d",
-                    "name": "⚽ 22:00 29/08 Levante VS Real Betis",
+                    "id": "ch-4e2da279e7b5",
+                    "name": "⚽ 22:00 29/08 Levante VS Real Betis [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f74e73c4660d",
+                            "id": "src-4e2da279e7b5",
                             "contents": [
                                 {
-                                    "id": "ct-f74e73c4660d",
+                                    "id": "ct-4e2da279e7b5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570357/1570357"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5c79ec37697f",
                     "name": "⚽ 23:30 29/08 Borussia Dortmund VS Hamburger SV",
