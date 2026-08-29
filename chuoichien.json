@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:55 29/08/2026)",
+    "name": "Chuoi Chien TV (07:25 29/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-9b5fe970b375",
-                    "name": "⚽ 07:30 29/08 Boca Juniors VS Lanus",
+                    "id": "ch-daee6feac61a",
+                    "name": "⚽ 07:30 29/08 Boca Juniors VS Lanus [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9b5fe970b375",
+                            "id": "src-daee6feac61a",
                             "contents": [
                                 {
-                                    "id": "ct-9b5fe970b375",
+                                    "id": "ct-daee6feac61a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1493095/1493095"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-11f30fa477d4",
                     "name": "⚽ 08:00 29/08 Atlante FC VS Leon",
