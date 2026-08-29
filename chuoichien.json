@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:55 29/08/2026)",
+    "name": "Chuoi Chien TV (20:25 29/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-4b0d75174d7c",
-                    "name": "⚽ 20:30 29/08 SV Elversberg VS Bayer Leverkusen",
+                    "id": "ch-69e651516792",
+                    "name": "⚽ 20:30 29/08 SV Elversberg VS Bayer Leverkusen [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4b0d75174d7c",
+                            "id": "src-69e651516792",
                             "contents": [
                                 {
-                                    "id": "ct-4b0d75174d7c",
+                                    "id": "ct-69e651516792",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575143/1575143"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-5f7426a3a031",
-                    "name": "⚽ 20:30 29/08 RB Leipzig VS Borussia Mönchengladbach",
+                    "id": "ch-77df291ffc45",
+                    "name": "⚽ 20:30 29/08 RB Leipzig VS Borussia Mönchengladbach [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5f7426a3a031",
+                            "id": "src-77df291ffc45",
                             "contents": [
                                 {
-                                    "id": "ct-5f7426a3a031",
+                                    "id": "ct-77df291ffc45",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575147/1575147"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -224,6 +218,54 @@
                         }
                     ]
                 },
+                {
+                    "id": "ch-0810e313a9f6",
+                    "name": "⚽ 21:00 29/08 Coventry VS Hull City [Chuối Lá - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557380.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0810e313a9f6",
+                            "contents": [
+                                {
+                                    "id": "ct-0810e313a9f6",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9ed51ba9bf5d",
                     "name": "⚽ 21:00 29/08 Bournemouth VS Everton",
@@ -251,48 +293,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1557378/1557378"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-5bd02e49a120",
-                    "name": "⚽ 21:00 29/08 Coventry VS Hull City",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557380.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-5bd02e49a120",
-                            "contents": [
-                                {
-                                    "id": "ct-5bd02e49a120",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1557380/1557380"
                                                         },
                                                         {
                                                             "key": "User-Agent",
