@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 30/08/2026)",
+    "name": "Chuoi Chien TV (23:25 30/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f18e4eb6d370",
-                    "name": "⚽ 23:30 30/08 Napoli VS Como",
+                    "id": "ch-0ca9e3d90719",
+                    "name": "⚽ 23:30 30/08 Napoli VS Como [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f18e4eb6d370",
+                            "id": "src-0ca9e3d90719",
                             "contents": [
                                 {
-                                    "id": "ct-f18e4eb6d370",
+                                    "id": "ct-0ca9e3d90719",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550105/1550105"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-87047422f14a",
                     "name": "⚽ 00:30 31/08 Deportivo La Coruna VS Valencia",
