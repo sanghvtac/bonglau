@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 31/08/2026)",
+    "name": "Chuoi Chien TV (05:55 31/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a7119df6a9e3",
-                    "name": "⚽ 06:00 31/08 St. Louis City VS FC Dallas",
+                    "id": "ch-e90a8aec04bf",
+                    "name": "⚽ 06:00 31/08 St. Louis City VS FC Dallas [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a7119df6a9e3",
+                            "id": "src-e90a8aec04bf",
                             "contents": [
                                 {
-                                    "id": "ct-a7119df6a9e3",
+                                    "id": "ct-e90a8aec04bf",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490435/1490435"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-df0d3eb8785d",
                     "name": "⚽ 07:00 31/08 Toluca VS FC Juarez",
