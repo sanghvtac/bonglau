@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 31/08/2026)",
+    "name": "Chuoi Chien TV (16:55 31/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a83cbc28254f",
-                    "name": "⚽ 17:00 31/08 Lebanon U20 VS South Korea",
+                    "id": "ch-b8c00768fcfb",
+                    "name": "⚽ 17:00 31/08 Lebanon U20 VS South Korea [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a83cbc28254f",
+                            "id": "src-b8c00768fcfb",
                             "contents": [
                                 {
-                                    "id": "ct-a83cbc28254f",
+                                    "id": "ct-b8c00768fcfb",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991634/991634"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-db399237db29",
                     "name": "⚽ 19:00 31/08 Vietnam U20 VS Triều Tiên U20",
