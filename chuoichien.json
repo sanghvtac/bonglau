@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:55 31/08/2026)",
+    "name": "Chuoi Chien TV (00:25 01/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-4542b6eb551a",
-                    "name": "⚽ 00:30 01/09 Osasuna VS Getafe",
+                    "id": "ch-4bd98172865b",
+                    "name": "⚽ 00:30 01/09 Osasuna VS Getafe [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4542b6eb551a",
+                            "id": "src-4bd98172865b",
                             "contents": [
                                 {
-                                    "id": "ct-4542b6eb551a",
+                                    "id": "ct-4bd98172865b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570358/1570358"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-501bb22a4136",
                     "name": "⚽ 01:45 01/09 Atalanta VS Bologna",
