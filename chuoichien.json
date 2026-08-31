@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 31/08/2026)",
+    "name": "Chuoi Chien TV (19:55 31/08/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-72d7335e61f6",
-                    "name": "⚽ 20:00 31/08 Netherlands W VS Slovenia W",
+                    "id": "ch-23069c33d9cf",
+                    "name": "⚽ 20:00 31/08 Netherlands W VS Slovenia W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-72d7335e61f6",
+                            "id": "src-23069c33d9cf",
                             "contents": [
                                 {
-                                    "id": "ct-72d7335e61f6",
+                                    "id": "ct-23069c33d9cf",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995909/995909"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9b4cc3ac310a",
                     "name": "⚽ 21:00 31/08 Italy W VS Bulgaria W",
