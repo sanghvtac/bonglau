@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 01/09/2026)",
+    "name": "Chuoi Chien TV (07:55 01/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e9a34c54e752",
-                    "name": "⚽ 08:06 01/09 Santos Laguna W VS Atlante W",
+                    "id": "ch-96de2489541f",
+                    "name": "⚽ 08:06 01/09 Santos Laguna W VS Atlante W [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e9a34c54e752",
+                            "id": "src-96de2489541f",
                             "contents": [
                                 {
-                                    "id": "ct-e9a34c54e752",
+                                    "id": "ct-96de2489541f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603344/1603344"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d33aa802dc72",
                     "name": "⚽ 16:00 01/09 Kedzierzyn-Kozle VS Johor Darul Takzim FC",
