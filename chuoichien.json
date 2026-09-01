@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 01/09/2026)",
+    "name": "Chuoi Chien TV (19:55 01/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-9966a7e71321",
-                    "name": "⚽ 20:00 01/09 Belgium VS Germany",
+                    "id": "ch-773deb35ab00",
+                    "name": "⚽ 20:00 01/09 Belgium VS Germany [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9966a7e71321",
+                            "id": "src-773deb35ab00",
                             "contents": [
                                 {
-                                    "id": "ct-9966a7e71321",
+                                    "id": "ct-773deb35ab00",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992298/992298"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-ea301e9ef7f2",
-                    "name": "⚽ 20:15 01/09 Akron VS Lokomotiv",
+                    "id": "ch-8b679043b90d",
+                    "name": "⚽ 20:15 01/09 Akron VS Lokomotiv [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ea301e9ef7f2",
+                            "id": "src-8b679043b90d",
                             "contents": [
                                 {
-                                    "id": "ct-ea301e9ef7f2",
+                                    "id": "ct-8b679043b90d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1563651/1563651"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-065366633f59",
                     "name": "⚽ 21:00 01/09 Ümraniyespor VS Muğlaspor",
