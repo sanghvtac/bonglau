@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:55 02/09/2026)",
+    "name": "Chuoi Chien TV (20:25 02/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e75df84383e1",
-                    "name": "⚽ 20:15 02/09 FC Orenburg VS Rubin",
+                    "id": "ch-20bac3cf3f3f",
+                    "name": "⚽ 20:15 02/09 FC Orenburg VS Rubin [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e75df84383e1",
+                            "id": "src-20bac3cf3f3f",
                             "contents": [
                                 {
-                                    "id": "ct-e75df84383e1",
+                                    "id": "ct-20bac3cf3f3f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1563656/1563656"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4776d2bdc71e",
                     "name": "⚽ 22:30 02/09 Zenit VS Makhachkala",
