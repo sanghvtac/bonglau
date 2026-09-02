@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:55 02/09/2026)",
+    "name": "Chuoi Chien TV (16:25 02/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-72fa34ee6da3",
-                    "name": "⚽ 16:30 02/09 Sagamihara VS Jubilo Iwata",
+                    "id": "ch-82e1dae9da6a",
+                    "name": "⚽ 16:30 02/09 Sagamihara VS Jubilo Iwata [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-72fa34ee6da3",
+                            "id": "src-82e1dae9da6a",
                             "contents": [
                                 {
-                                    "id": "ct-72fa34ee6da3",
+                                    "id": "ct-82e1dae9da6a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1567424/1567424"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0481bd551e3f",
                     "name": "⚽ 17:00 02/09 Avispa Fukuoka VS Urawa",
@@ -182,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-62eb1d78a249",
-                    "name": "⚽ 19:00 02/09 Melaka VS Penang",
+                    "id": "ch-7e5ec040c01f",
+                    "name": "⚽ 19:00 02/09 Yunnan Yukun VS Chongqing Tongliang Long",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1635849.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1600224.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-62eb1d78a249",
+                            "id": "src-7e5ec040c01f",
                             "contents": [
                                 {
-                                    "id": "ct-62eb1d78a249",
+                                    "id": "ct-7e5ec040c01f",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -207,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635849/1635849"
+                                                            "value": "https://live20.chuoichientv.com/live/1600224/1600224"
                                                         },
                                                         {
                                                             "key": "User-Agent",
