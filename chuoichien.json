@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 02/09/2026)",
+    "name": "Chuoi Chien TV (16:55 02/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-0481bd551e3f",
-                    "name": "⚽ 17:00 02/09 Avispa Fukuoka VS Urawa",
+                    "id": "ch-63013389fbaf",
+                    "name": "⚽ 17:00 02/09 Avispa Fukuoka VS Urawa [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0481bd551e3f",
+                            "id": "src-63013389fbaf",
                             "contents": [
                                 {
-                                    "id": "ct-0481bd551e3f",
+                                    "id": "ct-63013389fbaf",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556041/1556041"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-d9c18eec9781",
-                    "name": "⚽ 17:00 02/09 Machida Zelvia VS Kawasaki Frontale",
+                    "id": "ch-f98f43e3f619",
+                    "name": "⚽ 17:00 02/09 Machida Zelvia VS Kawasaki Frontale [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d9c18eec9781",
+                            "id": "src-f98f43e3f619",
                             "contents": [
                                 {
-                                    "id": "ct-d9c18eec9781",
+                                    "id": "ct-f98f43e3f619",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556044/1556044"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5adda5b143c1",
                     "name": "⚽ 18:30 02/09 Sabah FA VS Selangor",
@@ -351,48 +351,6 @@
                     ]
                 },
                 {
-                    "id": "ch-924b292d0950",
-                    "name": "⚽ 00:00 03/09 Abu Qair Semad VS Al Ittihad",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1612227.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-924b292d0950",
-                            "contents": [
-                                {
-                                    "id": "ct-924b292d0950",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1612227/1612227"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-6ce2252ead8c",
                     "name": "⚽ 00:00 03/09 Real Sociedad W VS Chelsea W",
                     "type": "single",
@@ -461,6 +419,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1623475/1623475"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4c0e280cb6ad",
+                    "name": "⚽ 01:30 03/09 Red Bull Salzburg VS Rapid Vienna",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1561917.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4c0e280cb6ad",
+                            "contents": [
+                                {
+                                    "id": "ct-4c0e280cb6ad",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1561917/1561917"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,48 +561,6 @@
                     ]
                 },
                 {
-                    "id": "ch-621c81aaec44",
-                    "name": "⚽ 01:45 03/09 West Brom VS Charlton",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1563130.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-621c81aaec44",
-                            "contents": [
-                                {
-                                    "id": "ct-621c81aaec44",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1563130/1563130"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-62e4ed51674e",
                     "name": "⚽ 02:00 03/09 Burnley VS Middlesbrough",
                     "type": "single",
@@ -629,48 +587,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1563127/1563127"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-852e7a8a5972",
-                    "name": "⚽ 04:30 03/09 Deportivo Cuenca VS Guayaquil City FC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1519474.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-852e7a8a5972",
-                            "contents": [
-                                {
-                                    "id": "ct-852e7a8a5972",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1519474/1519474"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -729,22 +645,22 @@
                     ]
                 },
                 {
-                    "id": "ch-d0df0a9d4cfc",
-                    "name": "⚽ 07:15 03/09 Velez Sarsfield VS Boca Juniors",
+                    "id": "ch-b1f604cc2a7b",
+                    "name": "⚽ 07:30 03/09 Santos VS Palmeiras",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1593679.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1623075.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-d0df0a9d4cfc",
+                            "id": "src-b1f604cc2a7b",
                             "contents": [
                                 {
-                                    "id": "ct-d0df0a9d4cfc",
+                                    "id": "ct-b1f604cc2a7b",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -754,7 +670,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593679/1593679"
+                                                            "value": "https://live20.chuoichientv.com/live/1623075/1623075"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +755,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1635864/1635864"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-d72578cf7a63",
+                    "name": "⚽ 16:00 03/09 Malaysia U20 VS Australia U20",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/999813.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d72578cf7a63",
+                            "contents": [
+                                {
+                                    "id": "ct-d72578cf7a63",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/999813/999813"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8aa8fef9cbd3",
+                    "name": "⚽ 18:00 03/09 Bangladesh U20 VS Syria U20",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/992150.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-8aa8fef9cbd3",
+                            "contents": [
+                                {
+                                    "id": "ct-8aa8fef9cbd3",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/992150/992150"
                                                         },
                                                         {
                                                             "key": "User-Agent",
