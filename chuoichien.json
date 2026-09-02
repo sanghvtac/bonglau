@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 02/09/2026)",
+    "name": "Chuoi Chien TV (23:55 02/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,40 +91,34 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-6ce2252ead8c",
-                    "name": "⚽ 00:00 03/09 Real Sociedad W VS Chelsea W",
+                    "id": "ch-2d9a6fa7b811",
+                    "name": "⚽ 00:00 03/09 Slavia Sofia VS Levski Sofia [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1623469.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1551080.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-6ce2252ead8c",
+                            "id": "src-2d9a6fa7b811",
                             "contents": [
                                 {
-                                    "id": "ct-6ce2252ead8c",
+                                    "id": "ct-2d9a6fa7b811",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1623469/1623469"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-749f6e2a28f9",
                     "name": "⚽ 01:00 03/09 Real Madrid W VS Ajax W",
