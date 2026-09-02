@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:55 03/09/2026)",
+    "name": "Chuoi Chien TV (05:25 03/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-cdeb88696490",
-                    "name": "⚽ 05:30 03/09 Flamengo VS Mirassol",
+                    "id": "ch-cc590b7f5e56",
+                    "name": "⚽ 05:30 03/09 Flamengo VS Mirassol [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-cdeb88696490",
+                            "id": "src-cc590b7f5e56",
                             "contents": [
                                 {
-                                    "id": "ct-cdeb88696490",
+                                    "id": "ct-cc590b7f5e56",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492145/1492145"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b1f604cc2a7b",
                     "name": "⚽ 07:30 03/09 Santos VS Palmeiras",
