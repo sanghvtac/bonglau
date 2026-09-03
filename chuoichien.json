@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 03/09/2026)",
+    "name": "Chuoi Chien TV (17:55 03/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-8aa8fef9cbd3",
-                    "name": "⚽ 18:00 03/09 Bangladesh U20 VS Syria U20",
+                    "id": "ch-4cb21919571b",
+                    "name": "⚽ 18:00 03/09 Bangladesh U20 VS Syria U20 [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8aa8fef9cbd3",
+                            "id": "src-4cb21919571b",
                             "contents": [
                                 {
-                                    "id": "ct-8aa8fef9cbd3",
+                                    "id": "ct-4cb21919571b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992150/992150"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2eabe7a639b1",
                     "name": "⚽ 19:00 03/09 Campuchia U20 VS Japan U20",
