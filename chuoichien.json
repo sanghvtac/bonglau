@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 04/09/2026)",
+    "name": "Chuoi Chien TV (16:55 04/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-eed5860e04e2",
-                    "name": "⚽ 17:00 04/09 Chornomorets VS Livyi Bereh",
+                    "id": "ch-307620e7ab85",
+                    "name": "⚽ 17:00 04/09 Chornomorets VS Livyi Bereh [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-eed5860e04e2",
+                            "id": "src-307620e7ab85",
                             "contents": [
                                 {
-                                    "id": "ct-eed5860e04e2",
+                                    "id": "ct-307620e7ab85",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1565465/1565465"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5dc48e51de93",
                     "name": "⚽ 17:30 04/09 Japan VS Oman",
