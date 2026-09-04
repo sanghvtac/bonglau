@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 04/09/2026)",
+    "name": "Chuoi Chien TV (18:55 04/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-9022f9f476af",
-                    "name": "⚽ 19:00 04/09 Bali United VS PSS Sleman",
+                    "id": "ch-73c5ee82e13c",
+                    "name": "⚽ 19:00 04/09 Bali United VS PSS Sleman [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9022f9f476af",
+                            "id": "src-73c5ee82e13c",
                             "contents": [
                                 {
-                                    "id": "ct-9022f9f476af",
+                                    "id": "ct-73c5ee82e13c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1621305/1621305"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c74e357cbb62",
                     "name": "⚽ 21:00 04/09 Navbahor VS Lokomotiv",
