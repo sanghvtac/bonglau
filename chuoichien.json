@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 05/09/2026)",
+    "name": "Chuoi Chien TV (01:25 05/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,22 +9,64 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-87dc5ada04b3",
-                    "name": "⚽ 23:30 04/09 Arminia Bielefeld VS FC St. Pauli [Chuối Nhỏ - FHD1]",
+                    "id": "ch-63806468ecf9",
+                    "name": "⚽ 01:30 05/09 VfB Stuttgart VS 1.FC Köln [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1576161.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575149.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-87dc5ada04b3",
+                            "id": "src-63806468ecf9",
                             "contents": [
                                 {
-                                    "id": "ct-87dc5ada04b3",
+                                    "id": "ct-63806468ecf9",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-96dce8741d89",
+                    "name": "⚽ 02:05 05/09 Paris Saint Germain VS Monaco [Chuối Nhỏ - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552753.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-96dce8741d89",
+                            "contents": [
+                                {
+                                    "id": "ct-96dce8741d89",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -56,48 +98,6 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
-                {
-                    "id": "ch-e7929d38a393",
-                    "name": "⚽ 01:30 05/09 VfB Stuttgart VS 1.FC Köln",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575149.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-e7929d38a393",
-                            "contents": [
-                                {
-                                    "id": "ct-e7929d38a393",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575149/1575149"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-adb6d0180b0e",
                     "name": "⚽ 02:00 05/09 Ipswich VS Liverpool",
@@ -167,48 +167,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1570365/1570365"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-7ff7f04374dd",
-                    "name": "⚽ 02:05 05/09 Paris Saint Germain VS Monaco",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552753.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-7ff7f04374dd",
-                            "contents": [
-                                {
-                                    "id": "ct-7ff7f04374dd",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1552753/1552753"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1557392/1557392"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8f8549d255d6",
+                    "name": "⚽ 23:30 05/09 FC Schalke 04 VS Bayern München",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575156.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-8f8549d255d6",
+                            "contents": [
+                                {
+                                    "id": "ct-8f8549d255d6",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1575156/1575156"
                                                         },
                                                         {
                                                             "key": "User-Agent",
