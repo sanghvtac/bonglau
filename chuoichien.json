@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 05/09/2026)",
+    "name": "Chuoi Chien TV (04:55 05/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-f1f5cddc2e1f",
-                    "name": "⚽ 05:00 05/09 Belgrano Cordoba VS Huracan",
+                    "id": "ch-5b43f798b81e",
+                    "name": "⚽ 05:00 05/09 Belgrano Cordoba VS Huracan [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f1f5cddc2e1f",
+                            "id": "src-5b43f798b81e",
                             "contents": [
                                 {
-                                    "id": "ct-f1f5cddc2e1f",
+                                    "id": "ct-5b43f798b81e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1493109/1493109"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-67e5c56c6fb3",
                     "name": "⚽ 06:30 05/09 New York City FC VS Nashville SC",
