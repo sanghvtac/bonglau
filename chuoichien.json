@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 06/09/2026)",
+    "name": "Chuoi Chien TV (01:55 06/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a8fbf8fa5307",
-                    "name": "⚽ 02:00 06/09 Villarreal VS Deportivo La Coruna",
+                    "id": "ch-8b17641d4ca5",
+                    "name": "⚽ 02:00 06/09 Villarreal VS Deportivo La Coruna [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a8fbf8fa5307",
+                            "id": "src-8b17641d4ca5",
                             "contents": [
                                 {
-                                    "id": "ct-a8fbf8fa5307",
+                                    "id": "ct-8b17641d4ca5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570372/1570372"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6aa859afc884",
                     "name": "⚽ 06:30 06/09 Inter Miami VS Atlanta United FC",
