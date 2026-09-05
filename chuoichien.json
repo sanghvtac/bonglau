@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 06/09/2026)",
+    "name": "Chuoi Chien TV (00:55 06/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-71f1a7e392d6",
-                    "name": "⚽ 01:00 06/09 Al-Ittihad FC VS Al-Nassr",
+                    "id": "ch-f30271f74eaa",
+                    "name": "⚽ 01:00 06/09 Al-Ittihad FC VS Al-Nassr [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-71f1a7e392d6",
+                            "id": "src-f30271f74eaa",
                             "contents": [
                                 {
-                                    "id": "ct-71f1a7e392d6",
+                                    "id": "ct-f30271f74eaa",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603016/1603016"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a8fbf8fa5307",
                     "name": "⚽ 02:00 06/09 Villarreal VS Deportivo La Coruna",
