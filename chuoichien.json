@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 05/09/2026)",
+    "name": "Chuoi Chien TV (17:55 05/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c08a72d1c3bf",
-                    "name": "⚽ 18:00 05/09 Hai Phong VS Ninh Bình FC",
+                    "id": "ch-dc7f2ac26ab6",
+                    "name": "⚽ 18:00 05/09 Hai Phong VS Ninh Bình FC [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c08a72d1c3bf",
+                            "id": "src-dc7f2ac26ab6",
                             "contents": [
                                 {
-                                    "id": "ct-c08a72d1c3bf",
+                                    "id": "ct-dc7f2ac26ab6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1619912/1619912"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-dd845047c037",
-                    "name": "⚽ 18:00 05/09 TP. Hồ Chí Minh VS Ha Noi",
+                    "id": "ch-4bf0aa2e4b59",
+                    "name": "⚽ 18:00 05/09 TP. Hồ Chí Minh VS Ha Noi [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dd845047c037",
+                            "id": "src-4bf0aa2e4b59",
                             "contents": [
                                 {
-                                    "id": "ct-dd845047c037",
+                                    "id": "ct-4bf0aa2e4b59",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1619913/1619913"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1b28afd2e16f",
                     "name": "⚽ 18:30 05/09 Newcastle VS Bournemouth",
