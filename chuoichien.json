@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:55 05/09/2026)",
+    "name": "Chuoi Chien TV (16:25 05/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c74499384948",
-                    "name": "⚽ 16:30 05/09 Adelaide City VS Playford City Patriots",
+                    "id": "ch-20358292c32f",
+                    "name": "⚽ 16:30 05/09 Adelaide City VS Playford City Patriots [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c74499384948",
+                            "id": "src-20358292c32f",
                             "contents": [
                                 {
-                                    "id": "ct-c74499384948",
+                                    "id": "ct-20358292c32f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633981/1633981"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c08a72d1c3bf",
                     "name": "⚽ 18:00 05/09 Hai Phong VS Ninh Bình FC",
