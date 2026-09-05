@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:55 05/09/2026)",
+    "name": "Chuoi Chien TV (11:25 05/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7d4068221c52",
-                    "name": "⚽ 11:30 05/09 China VS India",
+                    "id": "ch-33ab4a507493",
+                    "name": "⚽ 11:30 05/09 China VS India [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7d4068221c52",
+                            "id": "src-33ab4a507493",
                             "contents": [
                                 {
-                                    "id": "ct-7d4068221c52",
+                                    "id": "ct-33ab4a507493",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/999283/999283"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d448591e543e",
                     "name": "⚽ 15:00 05/09 Qatar VS Thailand",
