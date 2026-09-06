@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 06/09/2026)",
+    "name": "Chuoi Chien TV (20:55 06/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-f0c57b00c6ff",
-                    "name": "⚽ 19:00 06/09 Iran U20 VS Vietnam U20 [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636895.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f0c57b00c6ff",
-                            "contents": [
-                                {
-                                    "id": "ct-f0c57b00c6ff",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-cf97d5cb7b23",
                     "name": "⚽ 20:00 06/09 Everton VS Manchester United [Chuối Nhỏ - FHD1]",
@@ -140,6 +98,48 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
+                {
+                    "id": "ch-556b87aae79c",
+                    "name": "⚽ 19:00 06/09 Iran U20 VS Vietnam U20",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636895.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-556b87aae79c",
+                            "contents": [
+                                {
+                                    "id": "ct-556b87aae79c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1636895/1636895"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-841ef453caae",
                     "name": "⚽ 21:15 06/09 Valencia VS Barcelona",
