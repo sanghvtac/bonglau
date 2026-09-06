@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:55 07/09/2026)",
+    "name": "Chuoi Chien TV (06:25 07/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-136a9f522a4b",
-                    "name": "⚽ 06:10 07/09 Deportivo Pereira VS Millonarios",
+                    "id": "ch-478f8cbf04f1",
+                    "name": "⚽ 06:10 07/09 Deportivo Pereira VS Millonarios [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-136a9f522a4b",
+                            "id": "src-478f8cbf04f1",
                             "contents": [
                                 {
-                                    "id": "ct-136a9f522a4b",
+                                    "id": "ct-478f8cbf04f1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1549771/1549771"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-023fe574ade7",
                     "name": "⚽ 08:00 07/09 Oman VS Australia",
