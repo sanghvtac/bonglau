@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 06/09/2026)",
+    "name": "Chuoi Chien TV (22:55 06/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-078efb323287",
-                    "name": "⚽ 23:00 06/09 Italy W VS Turkey W",
+                    "id": "ch-615f52ade326",
+                    "name": "⚽ 23:00 06/09 Italy W VS Turkey W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-078efb323287",
+                            "id": "src-615f52ade326",
                             "contents": [
                                 {
-                                    "id": "ct-078efb323287",
+                                    "id": "ct-615f52ade326",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991764/991764"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bcf531293c6e",
                     "name": "⚽ 23:30 06/09 Alaves VS Osasuna",
