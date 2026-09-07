@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:26 07/09/2026)",
+    "name": "Chuoi Chien TV (07:55 07/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-023fe574ade7",
-                    "name": "⚽ 08:00 07/09 Oman VS Australia",
+                    "id": "ch-eeaef602810e",
+                    "name": "⚽ 08:00 07/09 Oman VS Australia [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-023fe574ade7",
+                            "id": "src-eeaef602810e",
                             "contents": [
                                 {
-                                    "id": "ct-023fe574ade7",
+                                    "id": "ct-eeaef602810e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995184/995184"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d6bd30828a09",
                     "name": "⚽ 11:30 07/09 New Zealand VS China",
