@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 07/09/2026)",
+    "name": "Chuoi Chien TV (17:55 07/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bf4d56f10e62",
-                    "name": "⚽ 18:00 07/09 FarDu VS Aral",
+                    "id": "ch-93033a15847e",
+                    "name": "⚽ 18:00 07/09 FarDu VS Aral [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bf4d56f10e62",
+                            "id": "src-93033a15847e",
                             "contents": [
                                 {
-                                    "id": "ct-bf4d56f10e62",
+                                    "id": "ct-93033a15847e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1530995/1530995"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e3e433f3c5cc",
                     "name": "⚽ 20:00 07/09 New Caledonia U20 W VS China PR U20 W",
