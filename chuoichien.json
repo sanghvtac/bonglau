@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 09/09/2026)",
+    "name": "Chuoi Chien TV (00:55 09/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-74afdefd3f1c",
-                    "name": "⚽ 22:30 08/09 Al-Ettifaq VS Al-Faisaly FC [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603019.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-74afdefd3f1c",
-                            "contents": [
-                                {
-                                    "id": "ct-74afdefd3f1c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-60a8523fd1a8",
                     "name": "⚽ 23:45 08/09 AEK Athens FC VS Lask Linz [Chuối Tây - FHD1]",
@@ -140,6 +98,48 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
+                {
+                    "id": "ch-495a24ad409e",
+                    "name": "⚽ 22:30 08/09 Al-Ettifaq VS Al-Faisaly FC",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603019.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-495a24ad409e",
+                            "contents": [
+                                {
+                                    "id": "ct-495a24ad409e",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1603019/1603019"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-42ee9a63071b",
                     "name": "⚽ 02:00 09/09 Borussia Dortmund VS Villarreal",
