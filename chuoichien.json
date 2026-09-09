@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 10/09/2026)",
+    "name": "Chuoi Chien TV (00:55 10/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-71639bd95f39",
-                    "name": "⚽ 01:00 10/09 Al-Nassr VS Abha",
+                    "id": "ch-febf0b82ff82",
+                    "name": "⚽ 01:00 10/09 Al-Nassr VS Abha [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-71639bd95f39",
+                            "id": "src-febf0b82ff82",
                             "contents": [
                                 {
-                                    "id": "ct-71639bd95f39",
+                                    "id": "ct-febf0b82ff82",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603025/1603025"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0d9603700642",
                     "name": "⚽ 02:00 10/09 Liverpool VS Atletico Madrid",
