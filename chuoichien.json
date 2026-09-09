@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 09/09/2026)",
+    "name": "Chuoi Chien TV (20:55 09/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1e38cc743983",
-                    "name": "⚽ 21:00 09/09 Liverpool U19 VS Atlético Madrid U19",
+                    "id": "ch-14ba5827287e",
+                    "name": "⚽ 21:00 09/09 Liverpool U19 VS Atlético Madrid U19 [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1e38cc743983",
+                            "id": "src-14ba5827287e",
                             "contents": [
                                 {
-                                    "id": "ct-1e38cc743983",
+                                    "id": "ct-14ba5827287e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1637314/1637314"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-96d4fd1c372b",
                     "name": "⚽ 22:00 09/09 Volgar Astrakhan VS Volga Ulyanovsk",
