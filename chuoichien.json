@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (21:25 09/09/2026)",
+    "name": "Chuoi Chien TV (21:55 09/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-96d4fd1c372b",
-                    "name": "⚽ 22:00 09/09 Volgar Astrakhan VS Volga Ulyanovsk",
+                    "id": "ch-3f88df196b75",
+                    "name": "⚽ 22:00 09/09 Volgar Astrakhan VS Volga Ulyanovsk [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-96d4fd1c372b",
+                            "id": "src-3f88df196b75",
                             "contents": [
                                 {
-                                    "id": "ct-96d4fd1c372b",
+                                    "id": "ct-3f88df196b75",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635574/1635574"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1c04783c5115",
                     "name": "⚽ 23:30 09/09 Chinese Taipei VS Thailand",
