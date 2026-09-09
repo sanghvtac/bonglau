@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 09/09/2026)",
+    "name": "Chuoi Chien TV (07:55 09/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-21723e7795b8",
-                    "name": "⚽ 08:00 09/09 Bahrain VS Oman",
+                    "id": "ch-f4ee23e8992f",
+                    "name": "⚽ 08:00 09/09 Bahrain VS Oman [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-21723e7795b8",
+                            "id": "src-f4ee23e8992f",
                             "contents": [
                                 {
-                                    "id": "ct-21723e7795b8",
+                                    "id": "ct-f4ee23e8992f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/996838/996838"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7abb29a534ae",
                     "name": "⚽ 11:30 09/09 Chinese Taipei VS Thailand",
@@ -141,22 +141,22 @@
                     ]
                 },
                 {
-                    "id": "ch-78ed0cc127a9",
-                    "name": "⚽ 15:30 09/09 Penang VS Melaka",
+                    "id": "ch-897c79f81f04",
+                    "name": "⚽ 15:00 09/09 Iran VS China",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1635856.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/995717.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-78ed0cc127a9",
+                            "id": "src-897c79f81f04",
                             "contents": [
                                 {
-                                    "id": "ct-78ed0cc127a9",
+                                    "id": "ct-897c79f81f04",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635856/1635856"
+                                                            "value": "https://live20.chuoichientv.com/live/995717/995717"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,48 +225,6 @@
                     ]
                 },
                 {
-                    "id": "ch-3dcb6a2d2224",
-                    "name": "⚽ 17:30 09/09 Gangwon FC VS Jeonbuk Motors",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1507061.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-3dcb6a2d2224",
-                            "contents": [
-                                {
-                                    "id": "ct-3dcb6a2d2224",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1507061/1507061"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
                     "id": "ch-fc990aa4eebe",
                     "name": "⚽ 17:30 09/09 Pohang Steelers VS Gimcheon Sangmu FC",
                     "type": "single",
@@ -293,48 +251,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1507063/1507063"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-ca95b2529ed5",
-                    "name": "⚽ 19:00 09/09 Napoli U19 VS Arsenal U19",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1637315.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ca95b2529ed5",
-                            "contents": [
-                                {
-                                    "id": "ct-ca95b2529ed5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1637315/1637315"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +755,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1635736/1635736"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-4069a339dfe0",
+                    "name": "⚽ 07:30 10/09 Chicago Fire VS Inter Miami",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490457.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4069a339dfe0",
+                            "contents": [
+                                {
+                                    "id": "ct-4069a339dfe0",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1490457/1490457"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-0edb549d414c",
+                    "name": "⚽ 09:30 10/09 Los Angeles FC VS New York Red Bulls",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490461.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-0edb549d414c",
+                            "contents": [
+                                {
+                                    "id": "ct-0edb549d414c",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1490461/1490461"
                                                         },
                                                         {
                                                             "key": "User-Agent",
