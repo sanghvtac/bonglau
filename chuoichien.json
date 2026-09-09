@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 09/09/2026)",
+    "name": "Chuoi Chien TV (17:25 09/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-fc990aa4eebe",
-                    "name": "⚽ 17:30 09/09 Pohang Steelers VS Gimcheon Sangmu FC",
+                    "id": "ch-d4bb8b1e7c76",
+                    "name": "⚽ 17:30 09/09 Pohang Steelers VS Gimcheon Sangmu FC [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fc990aa4eebe",
+                            "id": "src-d4bb8b1e7c76",
                             "contents": [
                                 {
-                                    "id": "ct-fc990aa4eebe",
+                                    "id": "ct-d4bb8b1e7c76",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1507063/1507063"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4006d2570299",
                     "name": "⚽ 19:15 09/09 Kuala Lumpur FA VS Perak",
