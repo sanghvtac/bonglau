@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 10/09/2026)",
+    "name": "Chuoi Chien TV (23:55 10/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-ecf247d37f12",
-                    "name": "⚽ 22:00 10/09 Xorazm VS Sogdiana [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516135.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ecf247d37f12",
-                            "contents": [
-                                {
-                                    "id": "ct-ecf247d37f12",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-14e17cafd7f1",
                     "name": "⚽ 23:45 10/09 Fenerbahce VS AS Roma [Chuối Nhỏ - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-3eb9059bbd41",
-                    "name": "⚽ 23:45 10/09 PSV Eindhoven VS Shakhtar Donetsk",
+                    "id": "ch-e76ed77ba829",
+                    "name": "⚽ 23:45 10/09 PSV Eindhoven VS Shakhtar Donetsk [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3eb9059bbd41",
+                            "id": "src-e76ed77ba829",
                             "contents": [
                                 {
-                                    "id": "ct-3eb9059bbd41",
+                                    "id": "ct-e76ed77ba829",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-1514b7a08768",
+                    "name": "⚽ 22:00 10/09 Xorazm VS Sogdiana",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1516135.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1514b7a08768",
+                            "contents": [
+                                {
+                                    "id": "ct-1514b7a08768",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635708/1635708"
+                                                            "value": "https://live20.chuoichientv.com/live/1516135/1516135"
                                                         },
                                                         {
                                                             "key": "User-Agent",
