@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 11/09/2026)",
+    "name": "Chuoi Chien TV (20:55 11/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-96c42cd4292c",
-                    "name": "⚽ 21:00 11/09 Germany VS Latvia",
+                    "id": "ch-101b99e891df",
+                    "name": "⚽ 21:00 11/09 Germany VS Latvia [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-96c42cd4292c",
+                            "id": "src-101b99e891df",
                             "contents": [
                                 {
-                                    "id": "ct-96c42cd4292c",
+                                    "id": "ct-101b99e891df",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993096/993096"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a29336c67a70",
                     "name": "⚽ 22:45 11/09 Al-Faisaly FC VS Al-Ittihad FC",
