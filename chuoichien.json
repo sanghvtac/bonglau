@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 11/09/2026)",
+    "name": "Chuoi Chien TV (17:55 11/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-1a15da17e24e",
-                    "name": "⚽ 15:30 11/09 Bóng đá Huế VS Đồng Tháp [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1626782.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1a15da17e24e",
-                            "contents": [
-                                {
-                                    "id": "ct-1a15da17e24e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-1578d13225c5",
                     "name": "⚽ 17:30 11/09 Japan VS India [Chuối Kem - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c98c26c41d21",
-                    "name": "⚽ 18:00 11/09 Bắc Ninh VS TP. Hồ Chí Minh",
+                    "id": "ch-5e56e7d377cb",
+                    "name": "⚽ 18:00 11/09 Bắc Ninh VS TP. Hồ Chí Minh [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c98c26c41d21",
+                            "id": "src-5e56e7d377cb",
                             "contents": [
                                 {
-                                    "id": "ct-c98c26c41d21",
+                                    "id": "ct-5e56e7d377cb",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633894/1633894"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-30bf2c7bb622",
-                    "name": "⚽ 18:00 11/09 Da Nang VS Nam Dinh",
+                    "id": "ch-859c0a6c22e0",
+                    "name": "⚽ 18:00 11/09 Da Nang VS Nam Dinh [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-30bf2c7bb622",
+                            "id": "src-859c0a6c22e0",
                             "contents": [
                                 {
-                                    "id": "ct-30bf2c7bb622",
+                                    "id": "ct-859c0a6c22e0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633895/1633895"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1399f505cdca",
-                    "name": "⚽ 18:00 11/09 Ninh Bình FC VS Thanh Hóa",
+                    "id": "ch-7ec6d6832f09",
+                    "name": "⚽ 18:00 11/09 Ninh Bình FC VS Thanh Hóa [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1399f505cdca",
+                            "id": "src-7ec6d6832f09",
                             "contents": [
                                 {
-                                    "id": "ct-1399f505cdca",
+                                    "id": "ct-7ec6d6832f09",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633896/1633896"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c46978d85dce",
                     "name": "⚽ 20:00 11/09 Johor Darul Takzim FC VS Negeri Sembilan",
