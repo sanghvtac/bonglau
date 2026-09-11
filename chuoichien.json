@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 12/09/2026)",
+    "name": "Chuoi Chien TV (01:25 12/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,57 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-a29336c67a70",
-                    "name": "⚽ 22:45 11/09 Al-Faisaly FC VS Al-Ittihad FC",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603028.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a29336c67a70",
-                            "contents": [
-                                {
-                                    "id": "ct-a29336c67a70",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603028/1603028"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-5fce8c8b895c",
-                    "name": "⚽ 01:30 12/09 Union Berlin VS FC Schalke 04",
+                    "id": "ch-1b52f71e642d",
+                    "name": "⚽ 01:30 12/09 Union Berlin VS FC Schalke 04 [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5fce8c8b895c",
+                            "id": "src-1b52f71e642d",
                             "contents": [
                                 {
-                                    "id": "ct-5fce8c8b895c",
+                                    "id": "ct-1b52f71e642d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575164/1575164"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -98,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-83b41a7eeee1",
-                    "name": "⚽ 01:45 12/09 Venezia VS Fiorentina",
+                    "id": "ch-6dedf30f5a67",
+                    "name": "⚽ 01:45 12/09 Venezia VS Fiorentina [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -110,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-83b41a7eeee1",
+                            "id": "src-6dedf30f5a67",
                             "contents": [
                                 {
-                                    "id": "ct-83b41a7eeee1",
+                                    "id": "ct-6dedf30f5a67",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550126/1550126"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -138,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6bbd322c65b5",
                     "name": "⚽ 01:45 12/09 Rennes VS Marseille",
