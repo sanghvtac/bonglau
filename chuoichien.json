@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:55 13/09/2026)",
+    "name": "Chuoi Chien TV (06:25 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-43b7281235c9",
-                    "name": "⚽ 06:30 13/09 Inter Miami VS Nashville SC",
+                    "id": "ch-af6082f39b0a",
+                    "name": "⚽ 06:30 13/09 Inter Miami VS Nashville SC [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-43b7281235c9",
+                            "id": "src-af6082f39b0a",
                             "contents": [
                                 {
-                                    "id": "ct-43b7281235c9",
+                                    "id": "ct-af6082f39b0a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490466/1490466"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-82276d00c90b",
                     "name": "⚽ 08:30 13/09 Real Salt Lake VS New York City FC",
