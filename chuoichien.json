@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 14/09/2026)",
+    "name": "Chuoi Chien TV (01:25 14/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b785f6cf29f6",
-                    "name": "⚽ 23:00 13/09 Napoli VS Bologna [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550123.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b785f6cf29f6",
-                            "contents": [
-                                {
-                                    "id": "ct-b785f6cf29f6",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-5ec6f4d25176",
                     "name": "⚽ 23:30 13/09 Getafe VS Deportivo La Coruna [Chuối Tây - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-fbc8f388cb29",
-                    "name": "⚽ 01:45 14/09 Sassuolo VS Juventus",
+                    "id": "ch-5b86660ebbe4",
+                    "name": "⚽ 01:45 14/09 Sassuolo VS Juventus [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fbc8f388cb29",
+                            "id": "src-5b86660ebbe4",
                             "contents": [
                                 {
-                                    "id": "ct-fbc8f388cb29",
+                                    "id": "ct-5b86660ebbe4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550124/1550124"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-22b474336928",
-                    "name": "⚽ 01:45 14/09 Stade Brestois 29 VS Paris Saint Germain",
+                    "id": "ch-c04f88ff4d39",
+                    "name": "⚽ 01:45 14/09 Stade Brestois 29 VS Paris Saint Germain [A Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-22b474336928",
+                            "id": "src-c04f88ff4d39",
                             "contents": [
                                 {
-                                    "id": "ct-22b474336928",
+                                    "id": "ct-c04f88ff4d39",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1552757/1552757"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d6b66c44a9fb",
                     "name": "⚽ 02:00 14/09 Real Sociedad VS Atletico Madrid",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1629914/1629914"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-06bce27af406",
+                    "name": "⚽ 23:00 14/09 Bulgaria VS Israel",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/992270.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-06bce27af406",
+                            "contents": [
+                                {
+                                    "id": "ct-06bce27af406",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/992270/992270"
                                                         },
                                                         {
                                                             "key": "User-Agent",
