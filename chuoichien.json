@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:55 13/09/2026)",
+    "name": "Chuoi Chien TV (13:25 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-e3ba1ed9fbb6",
-                    "name": "⚽ 13:30 13/09 Australia VS South Korea",
+                    "id": "ch-90e1fb1bc0cc",
+                    "name": "⚽ 13:30 13/09 Australia VS South Korea [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e3ba1ed9fbb6",
+                            "id": "src-90e1fb1bc0cc",
                             "contents": [
                                 {
-                                    "id": "ct-e3ba1ed9fbb6",
+                                    "id": "ct-90e1fb1bc0cc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995877/995877"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d474e299fe57",
                     "name": "⚽ 14:30 13/09 Gimcheon Sangmu FC VS Gangwon FC",
