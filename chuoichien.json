@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 13/09/2026)",
+    "name": "Chuoi Chien TV (18:55 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-76a3ad5f3ff7",
-                    "name": "⚽ 19:00 13/09 Estonia VS Denmark",
+                    "id": "ch-05cc9ea53608",
+                    "name": "⚽ 19:00 13/09 Estonia VS Denmark [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-76a3ad5f3ff7",
+                            "id": "src-05cc9ea53608",
                             "contents": [
                                 {
-                                    "id": "ct-76a3ad5f3ff7",
+                                    "id": "ct-05cc9ea53608",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993392/993392"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e589407cfef0",
                     "name": "⚽ 20:00 13/09 Coventry VS Brighton",
