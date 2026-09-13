@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 13/09/2026)",
+    "name": "Chuoi Chien TV (20:55 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ef84384b350d",
-                    "name": "⚽ 21:00 13/09 Slovenia VS Sweden",
+                    "id": "ch-0ca4e0fddce5",
+                    "name": "⚽ 21:00 13/09 Slovenia VS Sweden [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ef84384b350d",
+                            "id": "src-0ca4e0fddce5",
                             "contents": [
                                 {
-                                    "id": "ct-ef84384b350d",
+                                    "id": "ct-0ca4e0fddce5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992522/992522"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e31b2c3b5305",
                     "name": "⚽ 21:15 13/09 Levante VS Barcelona",
