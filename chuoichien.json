@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:25 13/09/2026)",
+    "name": "Chuoi Chien TV (09:55 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-29e7e7559530",
-                    "name": "⚽ 10:00 13/09 Cruz Azul VS Club America",
+                    "id": "ch-0603a014d271",
+                    "name": "⚽ 10:00 13/09 Cruz Azul VS Club America [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-29e7e7559530",
+                            "id": "src-0603a014d271",
                             "contents": [
                                 {
-                                    "id": "ct-29e7e7559530",
+                                    "id": "ct-0603a014d271",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550961/1550961"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e3ba1ed9fbb6",
                     "name": "⚽ 13:30 13/09 Australia VS South Korea",
