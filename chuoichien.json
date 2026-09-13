@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 13/09/2026)",
+    "name": "Chuoi Chien TV (23:25 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-9a793a686b1e",
-                    "name": "⚽ 21:15 13/09 Levante VS Barcelona [A Ngao - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570376.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9a793a686b1e",
-                            "contents": [
-                                {
-                                    "id": "ct-9a793a686b1e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9321028ec924",
                     "name": "⚽ 22:30 13/09 Manchester United VS Manchester City [Chuối Nhỏ - FHD1]",
@@ -259,16 +217,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7257602a0f78",
-                    "name": "⚽ 23:30 13/09 Getafe VS Deportivo La Coruna",
+                    "id": "ch-5ec6f4d25176",
+                    "name": "⚽ 23:30 13/09 Getafe VS Deportivo La Coruna [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7257602a0f78",
+                            "id": "src-5ec6f4d25176",
                             "contents": [
                                 {
-                                    "id": "ct-7257602a0f78",
+                                    "id": "ct-5ec6f4d25176",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570375/1570375"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fbc8f388cb29",
                     "name": "⚽ 01:45 14/09 Sassuolo VS Juventus",
@@ -923,6 +881,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1612239/1612239"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-6d9a75b098a8",
+                    "name": "⚽ 21:00 14/09 Slovakia W VS Czech Republic",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/999353.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-6d9a75b098a8",
+                            "contents": [
+                                {
+                                    "id": "ct-6d9a75b098a8",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/999353/999353"
                                                         },
                                                         {
                                                             "key": "User-Agent",
