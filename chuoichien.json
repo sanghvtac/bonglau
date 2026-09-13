@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 13/09/2026)",
+    "name": "Chuoi Chien TV (17:25 13/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ed8f6c51c17e",
-                    "name": "⚽ 17:30 13/09 Iran VS Japan",
+                    "id": "ch-c1146be13ccd",
+                    "name": "⚽ 17:30 13/09 Iran VS Japan [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ed8f6c51c17e",
+                            "id": "src-c1146be13ccd",
                             "contents": [
                                 {
-                                    "id": "ct-ed8f6c51c17e",
+                                    "id": "ct-c1146be13ccd",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995596/995596"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-86f331d36ca6",
                     "name": "⚽ 18:00 13/09 Hồng Lĩnh Hà Tĩnh VS Trường Tươi Đồng Nai",
