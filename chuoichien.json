@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 15/09/2026)",
+    "name": "Chuoi Chien TV (04:55 15/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-46ecf8b57e72",
-                    "name": "⚽ 05:00 15/09 Banfield VS Barracas Central",
+                    "id": "ch-4c9f57d75efe",
+                    "name": "⚽ 05:00 15/09 Banfield VS Barracas Central [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-46ecf8b57e72",
+                            "id": "src-4c9f57d75efe",
                             "contents": [
                                 {
-                                    "id": "ct-46ecf8b57e72",
+                                    "id": "ct-4c9f57d75efe",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1493124/1493124"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7ef33866d7b8",
                     "name": "⚽ 06:00 15/09 Bahia VS remo",
