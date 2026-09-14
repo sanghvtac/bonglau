@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 15/09/2026)",
+    "name": "Chuoi Chien TV (06:55 15/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-4c9f57d75efe",
-                    "name": "⚽ 05:00 15/09 Banfield VS Barracas Central [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1493124.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-4c9f57d75efe",
-                            "contents": [
-                                {
-                                    "id": "ct-4c9f57d75efe",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-36d37be42c0c",
                     "name": "⚽ 06:00 15/09 Bahia VS remo [Chuối Chao - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ec77eeb3d9a0",
-                    "name": "⚽ 07:00 15/09 Toluca W VS Tijuana W",
+                    "id": "ch-29c49ff6cf2a",
+                    "name": "⚽ 07:00 15/09 Toluca W VS Tijuana W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ec77eeb3d9a0",
+                            "id": "src-29c49ff6cf2a",
                             "contents": [
                                 {
-                                    "id": "ct-ec77eeb3d9a0",
+                                    "id": "ct-29c49ff6cf2a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-46ecf8b57e72",
+                    "name": "⚽ 05:00 15/09 Banfield VS Barracas Central",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1493124.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-46ecf8b57e72",
+                            "contents": [
+                                {
+                                    "id": "ct-46ecf8b57e72",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603361/1603361"
+                                                            "value": "https://live20.chuoichientv.com/live/1493124/1493124"
                                                         },
                                                         {
                                                             "key": "User-Agent",
