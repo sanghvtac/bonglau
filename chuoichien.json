@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 14/09/2026)",
+    "name": "Chuoi Chien TV (20:55 14/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-a54d747b8189",
-                    "name": "⚽ 18:30 14/09 Geylang International VS Tanjong Pagar [Chuối Lá - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603462.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a54d747b8189",
-                            "contents": [
-                                {
-                                    "id": "ct-a54d747b8189",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-6f216a5292a0",
                     "name": "⚽ 19:30 14/09 Dynamo Kyiv VS Epitsentr Dunayivtsi [Chuối To - FHD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ff5ec2e69871",
-                    "name": "⚽ 21:00 14/09 El Geish VS Smouha SC",
+                    "id": "ch-322d1535677c",
+                    "name": "⚽ 21:00 14/09 El Geish VS Smouha SC [Trốc Tru - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ff5ec2e69871",
+                            "id": "src-322d1535677c",
                             "contents": [
                                 {
-                                    "id": "ct-ff5ec2e69871",
+                                    "id": "ct-322d1535677c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1612239/1612239"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-6d9a75b098a8",
-                    "name": "⚽ 21:00 14/09 Slovakia W VS Czech Republic",
+                    "id": "ch-894c9261394c",
+                    "name": "⚽ 21:00 14/09 Slovakia W VS Czech Republic [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-6d9a75b098a8",
+                            "id": "src-894c9261394c",
                             "contents": [
                                 {
-                                    "id": "ct-6d9a75b098a8",
+                                    "id": "ct-894c9261394c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/999353/999353"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -265,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2f690a4033e9",
                     "name": "⚽ 23:00 14/09 Shabab Al Ahli Dubai VS Tractor Sazi",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1603361/1603361"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-541f07aaba65",
+                    "name": "⚽ 08:00 15/09 Leon VS Atletico San Luis",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550960.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-541f07aaba65",
+                            "contents": [
+                                {
+                                    "id": "ct-541f07aaba65",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1550960/1550960"
                                                         },
                                                         {
                                                             "key": "User-Agent",
