@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 17/09/2026)",
+    "name": "Chuoi Chien TV (04:55 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7ac7e9ea15e2",
-                    "name": "⚽ 05:00 17/09 Atletico-MG VS Santos",
+                    "id": "ch-8b378857e4aa",
+                    "name": "⚽ 05:00 17/09 Atletico-MG VS Santos [Trốc Tru - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7ac7e9ea15e2",
+                            "id": "src-8b378857e4aa",
                             "contents": [
                                 {
-                                    "id": "ct-7ac7e9ea15e2",
+                                    "id": "ct-8b378857e4aa",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1631513/1631513"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b5b31b6c189b",
                     "name": "⚽ 07:00 17/09 Inter Miami VS Cruz Azul",
