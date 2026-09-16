@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 17/09/2026)",
+    "name": "Chuoi Chien TV (06:55 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b5b31b6c189b",
-                    "name": "⚽ 07:00 17/09 Inter Miami VS Cruz Azul",
+                    "id": "ch-64b27917a75c",
+                    "name": "⚽ 07:00 17/09 Inter Miami VS Cruz Azul [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b5b31b6c189b",
+                            "id": "src-64b27917a75c",
                             "contents": [
                                 {
-                                    "id": "ct-b5b31b6c189b",
+                                    "id": "ct-64b27917a75c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995307/995307"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c911a95481f0",
                     "name": "⚽ 08:20 17/09 Bogota FC VS Independiente Medellin",
