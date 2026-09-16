@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:55 16/09/2026)",
+    "name": "Chuoi Chien TV (19:25 16/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,27 +9,69 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-51b4afd8bb95",
-                    "name": "⚽ 17:30 16/09 Japan U23 VS U23 Hong Kong  [Chuối Chao - FHD1]",
+                    "id": "ch-42f694fa2b3f",
+                    "name": "⚽ 19:15 16/09 Port FC VS Vissel Kobe [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1639454.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1629926.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-51b4afd8bb95",
+                            "id": "src-42f694fa2b3f",
                             "contents": [
                                 {
-                                    "id": "ct-51b4afd8bb95",
+                                    "id": "ct-42f694fa2b3f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5d37b2f75468",
+                    "name": "⚽ 19:15 16/09 Viettel VS Melbourne Victory [A Ngao - HD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1630347.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5d37b2f75468",
+                            "contents": [
+                                {
+                                    "id": "ct-5d37b2f75468",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -57,22 +99,22 @@
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-2f693e0e7cf1",
-                    "name": "⚽ 17:00 16/09 Jeonbuk Motors VS Kashiwa Reysol",
+                    "id": "ch-f4d3439648fe",
+                    "name": "⚽ 17:30 16/09 Japan U23 VS U23 Hong Kong ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1629925.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1639454.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-2f693e0e7cf1",
+                            "id": "src-f4d3439648fe",
                             "contents": [
                                 {
-                                    "id": "ct-2f693e0e7cf1",
+                                    "id": "ct-f4d3439648fe",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -82,133 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629925/1629925"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-afc30eded877",
-                    "name": "⚽ 17:00 16/09 China PR U23 VS Korea DPR U23",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1639465.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-afc30eded877",
-                            "contents": [
-                                {
-                                    "id": "ct-afc30eded877",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639465/1639465"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-c77d09d79c76",
-                    "name": "⚽ 19:15 16/09 Port FC VS Vissel Kobe",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1629926.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c77d09d79c76",
-                            "contents": [
-                                {
-                                    "id": "ct-c77d09d79c76",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629926/1629926"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-1af2a29db20e",
-                    "name": "⚽ 19:15 16/09 Viettel VS Melbourne Victory",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1630347.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1af2a29db20e",
-                            "contents": [
-                                {
-                                    "id": "ct-1af2a29db20e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630347/1630347"
+                                                            "value": "https://live20.chuoichientv.com/live/1639454/1639454"
                                                         },
                                                         {
                                                             "key": "User-Agent",
