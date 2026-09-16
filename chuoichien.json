@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 16/09/2026)",
+    "name": "Chuoi Chien TV (20:55 16/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-91f6289c249f",
-                    "name": "⚽ 21:00 16/09 Buca FK VS Gaziemirspor",
+                    "id": "ch-246bd9eac1ca",
+                    "name": "⚽ 21:00 16/09 Buca FK VS Gaziemirspor [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-91f6289c249f",
+                            "id": "src-246bd9eac1ca",
                             "contents": [
                                 {
-                                    "id": "ct-91f6289c249f",
+                                    "id": "ct-246bd9eac1ca",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1637563/1637563"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4c998ca5a659",
                     "name": "⚽ 23:00 16/09 Poland W VS Bulgaria W",
