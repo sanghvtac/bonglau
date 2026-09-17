@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:55 17/09/2026)",
+    "name": "Chuoi Chien TV (08:25 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c911a95481f0",
-                    "name": "⚽ 08:20 17/09 Bogota FC VS Independiente Medellin",
+                    "id": "ch-5cc5efbfbe75",
+                    "name": "⚽ 08:20 17/09 Bogota FC VS Independiente Medellin [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c911a95481f0",
+                            "id": "src-5cc5efbfbe75",
                             "contents": [
                                 {
-                                    "id": "ct-c911a95481f0",
+                                    "id": "ct-5cc5efbfbe75",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991043/991043"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,6 +93,11 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": []
         }
     ]
 }
