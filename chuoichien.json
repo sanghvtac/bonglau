@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 18/09/2026)",
+    "name": "Chuoi Chien TV (01:55 18/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-f26631e68e19",
-                    "name": "⚽ 23:45 17/09 Levski Sofia VS Red Bull Salzburg [Chuối Lá - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636285.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-f26631e68e19",
-                            "contents": [
-                                {
-                                    "id": "ct-f26631e68e19",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-037253de5085",
-                    "name": "⚽ 23:45 17/09 OFI VS 1899 Hoffenheim [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636304.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-037253de5085",
-                            "contents": [
-                                {
-                                    "id": "ct-037253de5085",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-f4644820480b",
                     "name": "⚽ 00:00 18/09 Real Betis VS Getafe [Trốc Tru - HD1]",
@@ -175,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7e570ce6b637",
-                    "name": "⚽ 02:00 18/09 Besiktas VS Marseille",
+                    "id": "ch-b90c62ef6fc9",
+                    "name": "⚽ 02:00 18/09 Besiktas VS Marseille [A Ngao - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7e570ce6b637",
+                            "id": "src-b90c62ef6fc9",
                             "contents": [
                                 {
-                                    "id": "ct-7e570ce6b637",
+                                    "id": "ct-b90c62ef6fc9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636232/1636232"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-226b159882b5",
-                    "name": "⚽ 02:00 18/09 Juventus VS NEC Nijmegen",
+                    "id": "ch-be48c266c089",
+                    "name": "⚽ 02:00 18/09 Juventus VS NEC Nijmegen [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-226b159882b5",
+                            "id": "src-be48c266c089",
                             "contents": [
                                 {
-                                    "id": "ct-226b159882b5",
+                                    "id": "ct-be48c266c089",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636278/1636278"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-62002c148a42",
-                    "name": "⚽ 02:00 18/09 Real Sociedad VS Bournemouth",
+                    "id": "ch-90b041bf0f75",
+                    "name": "⚽ 02:00 18/09 Real Sociedad VS Bournemouth [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-62002c148a42",
+                            "id": "src-90b041bf0f75",
                             "contents": [
                                 {
-                                    "id": "ct-62002c148a42",
+                                    "id": "ct-90b041bf0f75",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636321/1636321"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fd1a203e03ed",
                     "name": "⚽ 02:30 18/09 Malaga VS Villarreal",
@@ -352,7 +268,7 @@
                 },
                 {
                     "id": "ch-2dee05c173ca",
-                    "name": "⚽ 06:00 18/09 Bucaramanga VS Independiente Medellin",
+                    "name": "⚽ 07:00 18/09 Bucaramanga VS Independiente Medellin",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -839,6 +755,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1576187/1576187"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1931eda53183",
+                    "name": "⚽ 01:30 19/09 Bayern München VS Union Berlin",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575167.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1931eda53183",
+                            "contents": [
+                                {
+                                    "id": "ct-1931eda53183",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1575167/1575167"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-9115e2d921f4",
+                    "name": "⚽ 01:45 19/09 Monaco VS Lens",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552769.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-9115e2d921f4",
+                            "contents": [
+                                {
+                                    "id": "ct-9115e2d921f4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1552769/1552769"
                                                         },
                                                         {
                                                             "key": "User-Agent",
