@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 17/09/2026)",
+    "name": "Chuoi Chien TV (16:55 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-96da4bc8aebd",
-                    "name": "⚽ 17:00 17/09 Lion City Sailors FC VS Pathum United",
+                    "id": "ch-d9d9cf41ae96",
+                    "name": "⚽ 17:00 17/09 Lion City Sailors FC VS Pathum United [A Ngao - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-96da4bc8aebd",
+                            "id": "src-d9d9cf41ae96",
                             "contents": [
                                 {
-                                    "id": "ct-96da4bc8aebd",
+                                    "id": "ct-d9d9cf41ae96",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630355/1630355"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-f417c5440bca",
-                    "name": "⚽ 17:00 17/09 Kyrgyzstan W VS Thailand W",
+                    "id": "ch-e9e8b1233f3b",
+                    "name": "⚽ 17:00 17/09 Kyrgyzstan W VS Thailand W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f417c5440bca",
+                            "id": "src-e9e8b1233f3b",
                             "contents": [
                                 {
-                                    "id": "ct-f417c5440bca",
+                                    "id": "ct-e9e8b1233f3b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/997512/997512"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b3341557aa03",
                     "name": "⚽ 17:30 17/09 Việt Nam VS Japan W",
