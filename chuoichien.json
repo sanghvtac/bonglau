@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 17/09/2026)",
+    "name": "Chuoi Chien TV (20:55 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ce0d4660047b",
-                    "name": "⚽ 21:00 17/09 Serbia VS Belgium",
+                    "id": "ch-3d2df57e5170",
+                    "name": "⚽ 21:00 17/09 Serbia VS Belgium [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ce0d4660047b",
+                            "id": "src-3d2df57e5170",
                             "contents": [
                                 {
-                                    "id": "ct-ce0d4660047b",
+                                    "id": "ct-3d2df57e5170",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994028/994028"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5f45a6ffa2c5",
                     "name": "⚽ 22:30 17/09 FC Rostov VS Dynamo",
