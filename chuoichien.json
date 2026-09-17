@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (21:55 17/09/2026)",
+    "name": "Chuoi Chien TV (22:25 17/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5f45a6ffa2c5",
-                    "name": "⚽ 22:30 17/09 FC Rostov VS Dynamo",
+                    "id": "ch-888f33b014d1",
+                    "name": "⚽ 22:30 17/09 FC Rostov VS Dynamo [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5f45a6ffa2c5",
+                            "id": "src-888f33b014d1",
                             "contents": [
                                 {
-                                    "id": "ct-5f45a6ffa2c5",
+                                    "id": "ct-888f33b014d1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1561398/1561398"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4540ec561f2e",
                     "name": "⚽ 23:45 17/09 Levski Sofia VS Red Bull Salzburg",
