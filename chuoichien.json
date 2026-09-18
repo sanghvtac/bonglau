@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:55 18/09/2026)",
+    "name": "Chuoi Chien TV (09:25 18/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,34 +7,39 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-9b6ab1c3dfe7",
-                    "name": "⚽ 07:00 18/09 Bucaramanga VS Independiente Medellin [Chuối To - FHD1]",
+                    "id": "ch-e19e7d7abfa3",
+                    "name": "⚽ 08:00 18/09 Durango VS Cruz Azul Hidalgo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1549765.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1581422.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-9b6ab1c3dfe7",
+                            "id": "src-e19e7d7abfa3",
                             "contents": [
                                 {
-                                    "id": "ct-9b6ab1c3dfe7",
+                                    "id": "ct-e19e7d7abfa3",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1581422/1581422"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -50,54 +55,6 @@
                         }
                     ]
                 },
-                {
-                    "id": "ch-4dc81b17635e",
-                    "name": "⚽ 08:00 18/09 Durango VS Cruz Azul Hidalgo [A Ngao - HD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1581422.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-4dc81b17635e",
-                            "contents": [
-                                {
-                                    "id": "ct-4dc81b17635e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
                 {
                     "id": "ch-b9318427caf4",
                     "name": "⚽ 11:00 18/09 Kazakhstan W VS China W",
@@ -839,6 +796,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1550966/1550966"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-b1d2d1204378",
+                    "name": "⚽ 10:00 19/09 FC Juarez VS Tigres UANL",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550967.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-b1d2d1204378",
+                            "contents": [
+                                {
+                                    "id": "ct-b1d2d1204378",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1550967/1550967"
                                                         },
                                                         {
                                                             "key": "User-Agent",
