@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 18/09/2026)",
+    "name": "Chuoi Chien TV (17:25 18/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-eadd46142110",
-                    "name": "⚽ 15:30 18/09 Arema FC VS Persik Kediri [Chuối To - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1622772.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-eadd46142110",
-                            "contents": [
-                                {
-                                    "id": "ct-eadd46142110",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-ab2ff6bb30c1",
                     "name": "⚽ 17:00 18/09 Chinese Taipei W VS Thailand W [Chuối Kem - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5e195274a256",
-                    "name": "⚽ 17:20 18/09 Indonesia W VS Japan W",
+                    "id": "ch-0c4c86ced621",
+                    "name": "⚽ 17:20 18/09 Indonesia W VS Japan W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5e195274a256",
+                            "id": "src-0c4c86ced621",
                             "contents": [
                                 {
-                                    "id": "ct-5e195274a256",
+                                    "id": "ct-0c4c86ced621",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992381/992381"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-098855b9468b",
-                    "name": "⚽ 17:30 18/09 Saudi Arabia U23 VS U23 Qatar",
+                    "id": "ch-bcb34c7ea45a",
+                    "name": "⚽ 17:30 18/09 Saudi Arabia U23 VS U23 Qatar [Trốc Tru - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-098855b9468b",
+                            "id": "src-bcb34c7ea45a",
                             "contents": [
                                 {
-                                    "id": "ct-098855b9468b",
+                                    "id": "ct-bcb34c7ea45a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-1403914e3d8f",
+                    "name": "⚽ 15:30 18/09 Arema FC VS Persik Kediri",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1622772.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1403914e3d8f",
+                            "contents": [
+                                {
+                                    "id": "ct-1403914e3d8f",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639466/1639466"
+                                                            "value": "https://live20.chuoichientv.com/live/1622772/1622772"
                                                         },
                                                         {
                                                             "key": "User-Agent",
