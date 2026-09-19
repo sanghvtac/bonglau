@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:55 19/09/2026)",
+    "name": "Chuoi Chien TV (20:25 19/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f98ff74c1185",
-                    "name": "⚽ 20:30 19/09 Eintracht Frankfurt VS SC Freiburg",
+                    "id": "ch-53df52dae9a7",
+                    "name": "⚽ 20:30 19/09 Eintracht Frankfurt VS SC Freiburg [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f98ff74c1185",
+                            "id": "src-53df52dae9a7",
                             "contents": [
                                 {
-                                    "id": "ct-f98ff74c1185",
+                                    "id": "ct-53df52dae9a7",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575170/1575170"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-22b097cd4590",
-                    "name": "⚽ 20:30 19/09 Borussia Mönchengladbach VS FSV Mainz 05",
+                    "id": "ch-70591a31b6df",
+                    "name": "⚽ 20:30 19/09 Borussia Mönchengladbach VS FSV Mainz 05 [A Ngao - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-22b097cd4590",
+                            "id": "src-70591a31b6df",
                             "contents": [
                                 {
-                                    "id": "ct-22b097cd4590",
+                                    "id": "ct-70591a31b6df",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575174/1575174"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -265,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6bfb153a9bfa",
                     "name": "⚽ 21:00 19/09 Brighton VS Arsenal",
@@ -293,48 +293,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1557409/1557409"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-b18cee596d8c",
-                    "name": "⚽ 21:00 19/09 Everton VS Ipswich",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557410.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b18cee596d8c",
-                            "contents": [
-                                {
-                                    "id": "ct-b18cee596d8c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1557410/1557410"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1639458/1639458"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-310fa4a6311f",
+                    "name": "⚽ 14:00 20/09 Kazakhstan W VS South Korea",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/999840.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-310fa4a6311f",
+                            "contents": [
+                                {
+                                    "id": "ct-310fa4a6311f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/999840/999840"
                                                         },
                                                         {
                                                             "key": "User-Agent",
