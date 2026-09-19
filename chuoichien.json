@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:55 19/09/2026)",
+    "name": "Chuoi Chien TV (14:25 19/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-0ff65730a82d",
-                    "name": "⚽ 14:30 19/09 Bucheon FC 1995 VS Gimcheon Sangmu FC",
+                    "id": "ch-df22fb3a8150",
+                    "name": "⚽ 14:30 19/09 Bucheon FC 1995 VS Gimcheon Sangmu FC [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0ff65730a82d",
+                            "id": "src-df22fb3a8150",
                             "contents": [
                                 {
-                                    "id": "ct-0ff65730a82d",
+                                    "id": "ct-df22fb3a8150",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1507070/1507070"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5fa62bb028c1",
                     "name": "⚽ 16:00 19/09 Long An FC VS Bắc Ninh",
