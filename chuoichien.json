@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 19/09/2026)",
+    "name": "Chuoi Chien TV (19:55 19/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b6c234482267",
-                    "name": "⚽ 20:00 19/09 Bologna VS Torino",
+                    "id": "ch-bd602f6b3b33",
+                    "name": "⚽ 20:00 19/09 Bologna VS Torino [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b6c234482267",
+                            "id": "src-bd602f6b3b33",
                             "contents": [
                                 {
-                                    "id": "ct-b6c234482267",
+                                    "id": "ct-bd602f6b3b33",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550129/1550129"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-c4e01b112ace",
-                    "name": "⚽ 20:00 19/09 Poland VS Latvia",
+                    "id": "ch-c8bf76183983",
+                    "name": "⚽ 20:00 19/09 Poland VS Latvia [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c4e01b112ace",
+                            "id": "src-c8bf76183983",
                             "contents": [
                                 {
-                                    "id": "ct-c4e01b112ace",
+                                    "id": "ct-c8bf76183983",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991035/991035"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f98ff74c1185",
                     "name": "⚽ 20:30 19/09 Eintracht Frankfurt VS SC Freiburg",
