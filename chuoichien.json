@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 20/09/2026)",
+    "name": "Chuoi Chien TV (10:55 20/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-550901f513d5",
-                    "name": "⚽ 11:00 20/09 Vietnam W VS China W",
+                    "id": "ch-f3bf5ccb7a9e",
+                    "name": "⚽ 11:00 20/09 Vietnam W VS China W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-550901f513d5",
+                            "id": "src-f3bf5ccb7a9e",
                             "contents": [
                                 {
-                                    "id": "ct-550901f513d5",
+                                    "id": "ct-f3bf5ccb7a9e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/997838/997838"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-73b07c6e7be5",
                     "name": "⚽ 14:00 20/09 U23 Hong Kong  VS U23 Thailand ",
