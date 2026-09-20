@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 20/09/2026)",
+    "name": "Chuoi Chien TV (13:55 20/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-73b07c6e7be5",
-                    "name": "⚽ 14:00 20/09 U23 Hong Kong  VS U23 Thailand ",
+                    "id": "ch-287f5a3f90c3",
+                    "name": "⚽ 14:00 20/09 U23 Hong Kong  VS U23 Thailand  [A Ngao - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-73b07c6e7be5",
+                            "id": "src-287f5a3f90c3",
                             "contents": [
                                 {
-                                    "id": "ct-73b07c6e7be5",
+                                    "id": "ct-287f5a3f90c3",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639458/1639458"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-310fa4a6311f",
-                    "name": "⚽ 14:00 20/09 Kazakhstan W VS South Korea",
+                    "id": "ch-ccf0d7898e7d",
+                    "name": "⚽ 14:00 20/09 Kazakhstan W VS South Korea [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-310fa4a6311f",
+                            "id": "src-ccf0d7898e7d",
                             "contents": [
                                 {
-                                    "id": "ct-310fa4a6311f",
+                                    "id": "ct-ccf0d7898e7d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/999840/999840"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-39ca2bc7d5d5",
                     "name": "⚽ 17:00 20/09 Hoang Anh Gia Lai VS Hung Yen",
