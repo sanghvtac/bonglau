@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 20/09/2026)",
+    "name": "Chuoi Chien TV (17:55 20/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-3b7367cc4eea",
-                    "name": "⚽ 18:00 20/09 Trường Tươi Đồng Nai VS Công An Hà Nội",
+                    "id": "ch-be5c971ca5fc",
+                    "name": "⚽ 18:00 20/09 Trường Tươi Đồng Nai VS Công An Hà Nội [A Ngao - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3b7367cc4eea",
+                            "id": "src-be5c971ca5fc",
                             "contents": [
                                 {
-                                    "id": "ct-3b7367cc4eea",
+                                    "id": "ct-be5c971ca5fc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633900/1633900"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f4eb7a3a9107",
                     "name": "⚽ 19:15 20/09 Ha Noi VS Da Nang",
