@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:55 21/09/2026)",
+    "name": "Chuoi Chien TV (01:25 21/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-8703700bed72",
-                    "name": "⚽ 01:45 21/09 AC Milan VS Lecce",
+                    "id": "ch-1e9f8eaceeec",
+                    "name": "⚽ 01:45 21/09 AC Milan VS Lecce [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8703700bed72",
+                            "id": "src-1e9f8eaceeec",
                             "contents": [
                                 {
-                                    "id": "ct-8703700bed72",
+                                    "id": "ct-1e9f8eaceeec",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550127/1550127"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-8e2788d54fcc",
-                    "name": "⚽ 01:45 21/09 Marseille VS Paris Saint Germain",
+                    "id": "ch-098bff12658a",
+                    "name": "⚽ 01:45 21/09 Marseille VS Paris Saint Germain [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8e2788d54fcc",
+                            "id": "src-098bff12658a",
                             "contents": [
                                 {
-                                    "id": "ct-8e2788d54fcc",
+                                    "id": "ct-098bff12658a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1552773/1552773"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-eef6eb9c7a01",
                     "name": "⚽ 02:00 21/09 Valencia VS Real Sociedad",
