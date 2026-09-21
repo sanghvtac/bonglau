@@ -18,10 +18,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Crawler mới gọi thẳng API JSON nên KHÔNG cần Playwright/Chromium nữa.
-      # Bỏ bước cài chromium giúp mỗi lần chạy nhanh hơn khoảng 1-2 phút.
+      # Crawler gọi API JSON, có 2 tầng:
+      #   1. requests  - nhanh, không cần Chromium
+      #   2. Playwright - dự phòng khi Cloudflare trả 403 cho requests
+      #                   (đúng trường hợp IP của GitHub Actions)
+      # Vì vậy vẫn phải cài Chromium. Nếu log báo "Transport: requests"
+      # nhiều lần liên tiếp thì có thể bỏ bước cài chromium cho nhanh.
       - name: Install dependencies
-        run: pip install requests Pillow --quiet
+        run: |
+          pip install requests Pillow playwright --quiet
+          playwright install chromium --with-deps
 
       - name: Run khandai crawler
         run: python crawl_khandai.py
