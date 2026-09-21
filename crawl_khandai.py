@@ -29,8 +29,10 @@ GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR    = "thumbs"
 
-DAYS_TO_CRAWL = 2        # Hom nay + ngay mai
-PAGE_SIZE     = 100      # API mac dinh 18/trang -> keo len cho du 1 lan goi
+DAYS_TO_CRAWL = 2        # Hom nay + ngay mai (luon kem ca hom qua, xem fetch_matches)
+# Dung DUNG page_size ma chinh trang web dung (18) va lat trang bang 'next'.
+# Xem ghi chu "BAT CHUOC APP" o muc GOI API ben duoi.
+PAGE_SIZE     = 18
 HTTP_TIMEOUT  = 20
 HTTP_RETRY    = 3
 
@@ -163,7 +165,20 @@ def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
 # GitHub Actions: Chromium headless khong tu phat video nen HLS.js khong
 # bao gio goi file .m3u8, ket qua la stream rong. Day la ly do doi sang API.
 #
-# NHUNG: Cloudflare cua site rat gat voi /api/ khi goi tu IP datacenter.
+# ─── BAT CHUOC APP ───────────────────────────────────────────────────
+# Cloudflare cua site chan /api/ tu IP datacenter, NHUNG khong chan tat ca:
+# chinh trang web van goi API duoc tu IP GitHub (bang chung: trang render
+# ra 6 card that). Da hook window.fetch tren trang that de xem app goi gi:
+#
+#   GET /api/matches/?page_size=18&page=1&ordering=smart&start_time__date=...
+#   headers: { "Content-Type": "application/json" }        <- chi co thoi
+#
+# Khong token, khong header rieng. Khac biet DUY NHAT giua truy van cua app
+# va truy van tung bi 403 cua ta la tham so 'status=live'. Vi vay:
+#   - KHONG dung endpoint '?status=live' nua
+#   - dung dung page_size=18 va lat trang bang 'next' nhu app
+#   - gui dung header 'Content-Type: application/json' nhu app
+# Tran dang live van nhan ra duoc qua truong 'status' trong tung ban ghi.
 #
 # NHAT KY GO LOI (21/09/2026, cung 1 repo GitHub Actions):
 #   15:18  Ban Playwright cu, DE TRANG TU GOI API  -> LAY DUOC 5 tran (OK)
@@ -223,9 +238,11 @@ class BrowserTransport:
     """
     name = "trinh duyet (Playwright)"
 
+    # Header y HET cai chinh trang web dung (da bat duoc bang cach hook
+    # window.fetch tren trang that): chi mot dong Content-Type, khong token.
     _JS = """
     async (u) => {
-      const r = await fetch(u, { headers: { 'Accept': 'application/json' } });
+      const r = await fetch(u, { headers: { 'Content-Type': 'application/json' } });
       if (!r.ok) return { __status: r.status };
       return await r.json();
     }
@@ -288,48 +305,53 @@ class BrowserTransport:
             return url
         return url + ("&" if "?" in url else "?") + "format=json"
 
-    def get_json(self, url: str, params: dict | None = None):
-        """DIEU HUONG trang toi URL API, KHONG dung fetch().
+    def _ensure_on_site(self):
+        """fetch() phai chay tu mot trang cua chinh site (cung goc)."""
+        try:
+            cur = self._page.url or ""
+        except Exception:
+            cur = ""
+        if (not cur.startswith(BASE_DOMAIN)) or "/api/" in cur:
+            self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded",
+                            timeout=45000)
+            self._page.wait_for_timeout(1500)
 
-        Ly do (do duoc 21/09/2026): Cloudflare cua site chan request kieu
-        XHR/API nhung cho qua request kieu mo trang:
-            mo trang /lich-truc-tiep            -> 200
-            go URL API vao thanh dia chi        -> 200
-            fetch('/api/...') trong trang       -> 403
-            requests.get(Accept: application/json) -> 403
-        Dieu huong bang page.goto() gui 'Sec-Fetch-Mode: navigate' +
-        'Accept: text/html' giong het nguoi dung mo trang, nen khong bi chan.
-        Them '?format=json' de Django tra JSON tho thay vi trang HTML.
+    def get_json(self, url: str, params: dict | None = None):
+        """Goi API GIONG HET cach chinh trang web goi (xem ghi chu BAT CHUOC APP).
+
+        Cach 1 (chinh): fetch() trong trang, header y het app.
+        Cach 2 (du phong): dieu huong toi URL co '?format=json'.
         """
-        full = self._with_format_json(url, params)
+        full = url + ("?" + urlencode(params) if params else "")
         last = None
+
         for attempt in range(3):
             if attempt:
-                self._page.wait_for_timeout(2500 * attempt)      # cho lui dan
+                self._page.wait_for_timeout(2000 * attempt)      # cho lui dan
             try:
-                resp = self._page.goto(full, wait_until="domcontentloaded",
-                                       timeout=45000)
-                if resp is not None and resp.status >= 400:
-                    last = RuntimeError(f"HTTP {resp.status} khi mo {full[:90]}")
+                self._ensure_on_site()
+                data = self._page.evaluate(self._JS, full)
+                if isinstance(data, dict) and "__status" in data:
+                    last = RuntimeError(f"HTTP {data['__status']} (fetch) "
+                                        f"{full[len(BASE_DOMAIN):][:80]}")
                     continue
-                txt = self._page.evaluate("document.body ? document.body.innerText : ''")
-                data = json.loads(txt)
-                self._page.wait_for_timeout(600)   # goi thua thot cho lich su
+                self._page.wait_for_timeout(500)   # goi thua thot cho lich su
                 return data
-            except json.JSONDecodeError:
-                last = RuntimeError("Trang tra ve khong phai JSON (co the la "
-                                    "trang chan cua Cloudflare)")
             except Exception as e:
                 last = e
 
-        # Vot vat: thu lai bang fetch() trong trang (cach cu). Thuong bi 403,
-        # nhung neu site sau nay noi long thi van chay.
+        # Du phong: mo thang URL API nhu mo mot trang
         try:
-            data = self._page.evaluate(self._JS, full)
-            if not (isinstance(data, dict) and "__status" in data):
-                return data
-        except Exception:
-            pass
+            nav  = self._with_format_json(url, params)
+            resp = self._page.goto(nav, wait_until="domcontentloaded", timeout=45000)
+            if resp is None or resp.status < 400:
+                txt = self._page.evaluate(
+                    "document.body ? document.body.innerText : ''")
+                return json.loads(txt)
+            last = RuntimeError(f"HTTP {resp.status} khi mo "
+                                f"{nav[len(BASE_DOMAIN):][:80]}")
+        except Exception as e:
+            last = e
         raise last
 
     def close(self):
@@ -350,7 +372,11 @@ TRANSPORT = None        # duoc gan trong open_transport()
 def open_transport():
     """Mac dinh chi dung trinh duyet. Tang requests phai bat bang bien
     moi truong KHANDAI_USE_REQUESTS=1 (xem ghi chu o dau muc nay)."""
-    probe = {"status": "live", "page_size": 1, "ordering": "smart"}
+    # Probe dung DUNG dang truy van ma trang web that su goi (xem BAT CHUOC APP).
+    # TUYET DOI khong dung 'status=live' o day: do la tham so duy nhat ta tung
+    # dung ma app khong dung, va moi lan dung deu bi 403 tu IP GitHub.
+    probe = {"page_size": PAGE_SIZE, "page": 1, "ordering": "smart",
+             "start_time__date": vn_now().date().strftime("%Y-%m-%d")}
 
     if USE_REQUESTS:
         t = RequestsTransport()
@@ -375,13 +401,15 @@ def open_transport():
         t.close()
         print(f"[ERROR] Khong goi duoc API tu trong trinh duyet: {e}")
         if cards:
-            print("[HINT] Trang van render duoc card, tuc la IP KHONG bi chan "
-                  "hoan toan - co the bi gioi han so lan goi. Thu chay lai sau "
-                  "vai phut.")
+            print(f"[HINT] Trang van tu render duoc {cards} card, tuc la chinh "
+                  "app GOI DUOC /api/ tu IP nay. Vay loi nam o dang truy van "
+                  "cua ta chu khong phai o IP. Chay lai voi --dump roi doi "
+                  "chieu tham so trong log voi phan ghi chu 'BAT CHUOC APP' "
+                  "o dau file.")
         else:
             print("[HINT] Trang cung khong render duoc card -> IP nay dang bi "
-                  "Cloudflare chan /api/. Cach chac an nhat la chay script tren "
-                  "may o Viet Nam roi push ket qua len GitHub.")
+                  "Cloudflare chan /api/ that su. Cach chac an nhat la chay "
+                  "script tren may o Viet Nam roi push ket qua len GitHub.")
         return None
     print(f"[INFO] Transport: {t.name}")
     return t
@@ -425,15 +453,15 @@ def fetch_matches() -> list[dict]:
             added += 1
         print(f"[INFO] {tag}: {len(items)} tran -> them {added} moi")
 
-    # Tran dang live truoc (co the bat dau tu hom qua, khong nam trong tab ngay)
-    absorb(api_get({"status": "live", "page_size": PAGE_SIZE,
-                    "ordering": "smart"}), "API status=live")
-
+    # KHONG dung endpoint '?status=live' nua (xem ghi chu BAT CHUOC APP).
+    # Tran dang live van lay duoc vi moi ban ghi deu co san truong 'status',
+    # con tran bat dau khuya hom qua ma gio van da thi nam o ngay hom qua.
     today = vn_now().date()
-    for i in range(DAYS_TO_CRAWL):
+    for i in range(-1, DAYS_TO_CRAWL):
         d = (today + timedelta(days=i)).strftime("%Y-%m-%d")
+        nhan = "hom qua" if i == -1 else ("hom nay" if i == 0 else f"+{i} ngay")
         absorb(api_get({"page_size": PAGE_SIZE, "page": 1, "ordering": "smart",
-                        "start_time__date": d}), f"API ngay {d}")
+                        "start_time__date": d}), f"API ngay {d} ({nhan})")
 
     if DEBUG_DUMP:
         with open(DEBUG_DUMP_FILE, "w", encoding="utf-8") as f:
