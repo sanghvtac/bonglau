@@ -27,7 +27,7 @@ SITE_NAME     = "Khan Dai TV"
 # Tien to ten file xuat ra: phaohoa.json / phaohoa_iptv.txt / phaohoa_vlc.txt
 # GIU NGUYEN 'phaohoa' de khong pha vo GitHub Actions + link IPTV dang dung.
 # Doi thanh 'khandai' neu muon doi ten file (nho sua ca workflow va link trong app TV).
-OUT_PREFIX    = "phaohoa"
+OUT_PREFIX    = "khandai"
 
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
@@ -64,8 +64,8 @@ SPORTS = tuple(dict.fromkeys(ICON_SPORT.values()))
 
 # ──────────────────────────────────────────────
 # CO DEBUG
-#   py crawl_phaohoa.py --dump     (hoac set PHAOHOA_DUMP=1)
-#   py crawl_phaohoa.py --debug    (hoac set PHAOHOA_DEBUG=1)
+#   py crawl_khandai.py --dump     (hoac set PHAOHOA_DUMP=1)
+#   py crawl_khandai.py --debug    (hoac set PHAOHOA_DEBUG=1)
 # ──────────────────────────────────────────────
 def _flag(env_name: str, argv_name: str) -> bool:
     if os.getenv(env_name, "").strip() in ("1", "true", "True", "yes"):
