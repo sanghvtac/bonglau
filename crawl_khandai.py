@@ -7,6 +7,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from io import BytesIO
+from urllib.parse import urlencode
 from PIL import Image
 
 # ──────────────────────────────────────────────
@@ -42,13 +43,28 @@ LIVE_STATUSES     = {"live"}
 FINISHED_STATUSES = {"finished", "ended", "ft", "full_time",
                      "canceled", "cancelled", "postponed", "abandoned"}
 
+SCHEDULE_PAGE = f"{BASE_DOMAIN}/lich-truc-tiep"
+
+USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+              "AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/122.0.0.0 Safari/537.36")
+
+# Header mo phong trinh duyet that. Cloudflare cua site chan /api/ kha gat:
+# request thieu cac header sec-* / Accept-Language thuong bi tra 403.
 API_HEADERS = {
-    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                   "AppleWebKit/537.36 (KHTML, like Gecko) "
-                   "Chrome/122.0.0.0 Safari/537.36"),
-    "Accept":  "application/json, text/plain, */*",
-    "Referer": f"{BASE_DOMAIN}/lich-truc-tiep",
-    "Origin":  BASE_DOMAIN,
+    "User-Agent":       USER_AGENT,
+    "Accept":           "application/json, text/plain, */*",
+    "Accept-Language":  "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding":  "gzip, deflate",
+    "Referer":          SCHEDULE_PAGE,
+    "Origin":           BASE_DOMAIN,
+    "sec-ch-ua":        '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+    "sec-ch-ua-mobile":   "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "Sec-Fetch-Dest":   "empty",
+    "Sec-Fetch-Mode":   "cors",
+    "Sec-Fetch-Site":   "same-origin",
+    "Connection":       "keep-alive",
 }
 
 
@@ -140,13 +156,136 @@ def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
 # GOI API
 #
 # Da do truc tiep tren khandai1.link (21/09/2026): trang /lich-truc-tiep
-# goi dung 2 endpoint duoi day, va ban thân DANH SACH da kem san
-# 'commentators[].stream_url' (link .m3u8 that) -> KHONG can Playwright.
+# goi dung 2 endpoint duoi day, va ban than DANH SACH da kem san
+# 'commentators[].stream_url' (link .m3u8 that).
 #
 # Cach cu (mo trang tran roi rinh request .m3u8) KHONG chay duoc tren
 # GitHub Actions: Chromium headless khong tu phat video nen HLS.js khong
 # bao gio goi file .m3u8, ket qua la stream rong. Day la ly do doi sang API.
+#
+# NHUNG: Cloudflare cua site chan /api/ doi voi request khong phai trinh
+# duyet -> tu GitHub Actions, requests bi 403 (tu IP Viet Nam thi khong).
+# Vi vay co 2 TANG, tu dong chuyen tang, xem open_transport():
+#   1. requests  - nhanh, khong can Chromium. Dung duoc khi IP khong bi gat.
+#   2. Playwright - mo trang roi chay fetch() NGAY TRONG trang, nen request
+#      mang dung TLS/cookie/header cua Chrome that. Cham hon nhung chac an.
 # ──────────────────────────────────────────────
+# ── Tang 1: requests thuan (nhanh, khong can Chromium) ──────────────
+class RequestsTransport:
+    name = "requests"
+
+    def __init__(self):
+        self.s = requests.Session()
+        self.s.headers.update(API_HEADERS)
+
+    def open(self):
+        # Vao trang HTML truoc de nhan cookie cua Cloudflare/Django,
+        # sau do moi goi /api/ giong het trinh duyet that.
+        try:
+            self.s.get(SCHEDULE_PAGE,
+                       headers={"Accept": "text/html,application/xhtml+xml",
+                                "Sec-Fetch-Dest": "document",
+                                "Sec-Fetch-Mode": "navigate",
+                                "Sec-Fetch-Site": "none"},
+                       timeout=HTTP_TIMEOUT)
+        except Exception:
+            pass
+
+    def get_json(self, url: str, params: dict | None = None):
+        r = self.s.get(url, params=params, timeout=HTTP_TIMEOUT)
+        r.raise_for_status()
+        return r.json()
+
+    def close(self):
+        try:
+            self.s.close()
+        except Exception:
+            pass
+
+
+# ── Tang 2: goi API TU BEN TRONG trinh duyet (vuot Cloudflare) ──────
+class BrowserTransport:
+    """Mo trang bang Chromium roi chay fetch() ngay trong trang.
+
+    Request di ra mang dung TLS fingerprint + cookie + header cua Chrome
+    that, nen Cloudflare khong chan. Da chung minh tren GitHub Actions:
+    ban Playwright truoc do tai duoc trang va doc duoc 5 tran.
+    """
+    name = "trinh duyet (Playwright)"
+
+    _JS = """
+    async (u) => {
+      const r = await fetch(u, { headers: { 'Accept': 'application/json' } });
+      if (!r.ok) return { __status: r.status };
+      return await r.json();
+    }
+    """
+
+    def __init__(self):
+        self._pw = self._browser = self._ctx = self._page = None
+
+    def open(self):
+        from playwright.sync_api import sync_playwright
+        self._pw      = sync_playwright().start()
+        self._browser = self._pw.chromium.launch()
+        self._ctx     = self._browser.new_context(
+            user_agent=USER_AGENT, locale="vi-VN",
+            viewport={"width": 1440, "height": 900})
+        self._page = self._ctx.new_page()
+        self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded", timeout=45000)
+        self._page.wait_for_timeout(3000)
+
+    def get_json(self, url: str, params: dict | None = None):
+        full = url + ("?" + urlencode(params) if params else "")
+        data = self._page.evaluate(self._JS, full)
+        if isinstance(data, dict) and "__status" in data:
+            raise RuntimeError(f"HTTP {data['__status']} tu trong trinh duyet")
+        return data
+
+    def close(self):
+        for obj in (self._ctx, self._browser):
+            try:
+                obj and obj.close()
+            except Exception:
+                pass
+        try:
+            self._pw and self._pw.stop()
+        except Exception:
+            pass
+
+
+TRANSPORT = None        # duoc gan trong open_transport()
+
+
+def open_transport():
+    """Chon cach goi API: uu tien requests, that bai thi dung trinh duyet."""
+    probe = {"status": "live", "page_size": 1, "ordering": "smart"}
+
+    t = RequestsTransport()
+    try:
+        t.open()
+        data = t.get_json(API_MATCHES, probe)
+        if isinstance(data, dict) and "results" in data:
+            print(f"[INFO] Transport: {t.name}")
+            return t
+        raise RuntimeError("API tra ve du lieu la")
+    except Exception as e:
+        print(f"[WARN] Goi API bang requests that bai: {e}")
+        print("[INFO] Chuyen sang goi API tu ben trong trinh duyet...")
+        t.close()
+
+    t = BrowserTransport()
+    try:
+        t.open()
+        t.get_json(API_MATCHES, probe)
+    except Exception as e:
+        t.close()
+        print(f"[ERROR] Ca 2 cach goi API deu that bai: {e}")
+        return None
+    print(f"[INFO] Transport: {t.name}")
+    return t
+
+
 def api_get(params: dict) -> list[dict]:
     """Goi /api/matches/ va tra ve toan bo results (tu lat trang neu con)."""
     out, url, first = [], API_MATCHES, True
@@ -154,11 +293,7 @@ def api_get(params: dict) -> list[dict]:
         data = None
         for attempt in range(HTTP_RETRY):
             try:
-                r = requests.get(url,
-                                 params=params if first else None,
-                                 headers=API_HEADERS, timeout=HTTP_TIMEOUT)
-                r.raise_for_status()
-                data = r.json()
+                data = TRANSPORT.get_json(url, params if first else None)
                 break
             except Exception as e:
                 if attempt == HTTP_RETRY - 1:
@@ -304,12 +439,21 @@ def build_title(m: dict, blv_name: str = "") -> str:
 # MAIN
 # ──────────────────────────────────────────────
 def main():
+    global TRANSPORT
     now      = vn_now()
     now_str  = now.strftime("%H:%M %d/%m/%Y")
     print(f"[INFO] Bat dau luc {now_str} (Gio VN) | host chay: "
           f"UTC{datetime.now().astimezone().utcoffset()}")
 
-    raw = fetch_matches()
+    TRANSPORT = open_transport()
+    if TRANSPORT is None:
+        print("[ERROR] Khong goi duoc API. Dung lai, KHONG ghi de file cu.")
+        sys.exit(1)
+    try:
+        raw = fetch_matches()
+    finally:
+        TRANSPORT.close()
+
     if not raw:
         print("[ERROR] Khong lay duoc du lieu tu API. Dung lai, KHONG ghi de file cu.")
         sys.exit(1)
