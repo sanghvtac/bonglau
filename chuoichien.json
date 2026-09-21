@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 21/09/2026)",
+    "name": "Chuoi Chien TV (22:55 21/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-49d961c1b0cb",
-                    "name": "⚽ 23:00 21/09 Eswatini U20 VS Lesotho U20",
+                    "id": "ch-cc00130d9291",
+                    "name": "⚽ 23:00 21/09 Eswatini U20 VS Lesotho U20 [Trốc Tru - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-49d961c1b0cb",
+                            "id": "src-cc00130d9291",
                             "contents": [
                                 {
-                                    "id": "ct-49d961c1b0cb",
+                                    "id": "ct-cc00130d9291",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640455/1640455"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-778dd2ba6cc4",
                     "name": "⚽ 00:15 22/09 Al-Duhail SC VS Al-Arabi SC",
