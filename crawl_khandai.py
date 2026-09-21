@@ -318,22 +318,29 @@ class BrowserTransport:
         self._page = self._ctx.new_page()
 
         self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded", timeout=60000)
-        # Cho chinh trang tu goi API va render card (toi da ~25s)
-        for _ in range(25):
+        # Cho chinh trang tu goi API roi render card (toi da ~30s).
+        # Dieu kien dung: da nghe duoc phan hoi API, HOAC da co card.
+        caps = 0
+        for _ in range(30):
             self._page.wait_for_timeout(1000)
+            caps = self._cap_count()
             try:
                 n = self._page.evaluate(self._COUNT_CARDS)
             except Exception:
                 n = 0
             if n:
                 self.cards_on_load = n
+            if caps and n:
                 break
-        if self.cards_on_load:
-            print(f"[INFO] Trang tu tai duoc {self.cards_on_load} card "
-                  f"-> IP nay goi /api/ duoc")
+        if caps:
+            print(f"[INFO] Trang tu goi API {caps} lan, render {self.cards_on_load} "
+                  f"card -> nghe len duoc")
+        elif self.cards_on_load:
+            print(f"[WARN] Co {self.cards_on_load} card nhung khong nghe duoc "
+                  "loi goi API nao (app co the lay tu bo nho dem).")
         else:
             print("[WARN] Trang khong render duoc card nao. Co the /api/ dang "
-                  "bi chan hoac site dang cham.")
+                  "bi chan hoan toan hoac site dang cham.")
 
     @staticmethod
     def _with_format_json(url: str, params: dict | None) -> str:
@@ -402,6 +409,27 @@ class BrowserTransport:
         "normalize-space(text())='T6' or normalize-space(text())='T7' or "
         "normalize-space(text())='CN']")
 
+    def _cap_count(self) -> int:
+        """So phan hoi API da nghe duoc (dung de biet app da goi xong chua)."""
+        try:
+            return int(self._page.evaluate("(window.__khdCap || []).length"))
+        except Exception:
+            return 0
+
+    def _wait_new_capture(self, before: int, seconds: int = 20) -> bool:
+        """Cho den khi app goi them it nhat 1 request API nua.
+
+        QUAN TRONG: khong duoc cho theo 'da co card chua' - card cua ngay
+        truoc van con hien tren man hinh nen dieu kien do dung ngay lap tuc,
+        trong khi app chua kip goi API cho ngay moi.
+        """
+        for _ in range(seconds):
+            self._page.wait_for_timeout(1000)
+            if self._cap_count() > before:
+                self._page.wait_for_timeout(800)   # cho body ve not
+                return True
+        return False
+
     def _read_captured(self) -> list[dict]:
         """Doc kho phan hoi API ma bay da ghi lai, tach ra tung tran."""
         out, seen = [], set()
@@ -453,22 +481,17 @@ class BrowserTransport:
             idx = today_idx + step
             if idx < 0 or idx >= n_tabs:
                 continue
+            before = self._cap_count()
             try:
                 nhan = (tabs.nth(idx).inner_text()).strip() or f"#{idx}"
                 tabs.nth(idx).click(timeout=8000)
             except Exception as e:
                 print(f"  [WARN] Khong bam duoc tab #{idx}: {e}")
                 continue
-            # Cho app goi API va render xong
-            for _ in range(12):
-                self._page.wait_for_timeout(1000)
-                try:
-                    if self._page.evaluate(self._COUNT_CARDS):
-                        break
-                except Exception:
-                    pass
+            moi = self._wait_new_capture(before)
             got = len(self._read_captured())
-            print(f"[INFO] Tab '{nhan}': tong da nghe duoc {got} tran")
+            trang_thai = "app da goi API" if moi else "KHONG thay app goi API"
+            print(f"[INFO] Tab '{nhan}': {trang_thai} -> tong nghe duoc {got} tran")
 
         return self._read_captured()
 
@@ -521,16 +544,18 @@ def open_transport():
             pass
         return None
 
-    # Thu tu goi API mot lan. HONG CUNG KHONG SAO: con che do nghe len.
-    try:
-        t.get_json(API_MATCHES, probe)
-        t.direct_api_ok = True
-        print(f"[INFO] Transport: {t.name} - tu goi API duoc")
-    except Exception as e:
-        t.direct_api_ok = False
-        print(f"[WARN] Tu goi API bi chan: {e}")
-        print("[INFO] Chuyen sang CHE DO NGHE LEN: de chinh trang web goi API, "
-              "ta chi doc lai ket qua no nhan duoc.")
+    # KHONG probe, KHONG tu goi API khi chay bang trinh duyet.
+    #
+    # Ly do (log GitHub 16:58 ngay 21/09/2026):
+    #   probe {page_size:18, page:1, ordering:smart, start_time__date:21/09} -> OK
+    #   ngay sau do, truy van Y HET dang do cho 20/09, 21/09, 22/09 -> 403 het
+    # Cung dang truy van, chi khac thu tu goi => khong phai tham so nao sai,
+    # ma la BI GIOI HAN SO LAN GOI: vai request dau qua, sau do chan.
+    # Moi request ta tu phat deu dot han muc va co the lam IP bi gan co,
+    # trong khi che do nghe len khong ton request nao.
+    t.direct_api_ok = False
+    print(f"[INFO] Transport: {t.name} - CHE DO NGHE LEN "
+          "(khong tu phat request nao toi /api/)")
     return t
 
 
