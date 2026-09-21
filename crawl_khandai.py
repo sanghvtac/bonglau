@@ -24,9 +24,9 @@ COVER_IMAGE   = f"{BASE_DOMAIN}/images/logo.png"
 
 # Ten hien thi trong app TV / playlist
 SITE_NAME     = "Khan Dai TV"
-# Tien to ten file xuat ra: phaohoa.json / phaohoa_iptv.txt / phaohoa_vlc.txt
-# GIU NGUYEN 'phaohoa' de khong pha vo GitHub Actions + link IPTV dang dung.
-# Doi thanh 'khandai' neu muon doi ten file (nho sua ca workflow va link trong app TV).
+# Tien to MOI ten file xuat ra + file debug:
+#   khandai.json | khandai_iptv.txt | khandai_vlc.txt
+#   khandai_debug_card.txt | khandai_debug_api.txt
 OUT_PREFIX    = "khandai"
 
 GITHUB_REPO   = "sanghvtac/bonglau"
@@ -64,8 +64,8 @@ SPORTS = tuple(dict.fromkeys(ICON_SPORT.values()))
 
 # ──────────────────────────────────────────────
 # CO DEBUG
-#   py crawl_khandai.py --dump     (hoac set PHAOHOA_DUMP=1)
-#   py crawl_khandai.py --debug    (hoac set PHAOHOA_DEBUG=1)
+#   py crawl_khandai.py --dump     (hoac set KHANDAI_DUMP=1)
+#   py crawl_khandai.py --debug    (hoac set KHANDAI_DEBUG=1)
 # ──────────────────────────────────────────────
 def _flag(env_name: str, argv_name: str) -> bool:
     if os.getenv(env_name, "").strip() in ("1", "true", "True", "yes"):
@@ -73,8 +73,12 @@ def _flag(env_name: str, argv_name: str) -> bool:
     return argv_name in sys.argv
 
 
-DEBUG_API  = _flag("PHAOHOA_DEBUG", "--debug")
-DEBUG_CARD = _flag("PHAOHOA_DUMP",  "--dump")
+DEBUG_API  = _flag("KHANDAI_DEBUG", "--debug")
+DEBUG_CARD = _flag("KHANDAI_DUMP",  "--dump")
+
+# Ten file debug, bam theo OUT_PREFIX cho nhat quan
+DEBUG_API_FILE  = f"{OUT_PREFIX}_debug_api.txt"
+DEBUG_CARD_FILE = f"{OUT_PREFIX}_debug_card.txt"
 
 
 def generate_id(text):
@@ -621,7 +625,7 @@ async def fetch_match_streams(context, match: dict) -> list[dict]:
                     found.append(u)
 
         if DEBUG_API and apis:
-            with open("phaohoa_debug_api.txt", "a", encoding="utf-8") as f:
+            with open(DEBUG_API_FILE, "a", encoding="utf-8") as f:
                 f.write(f"\n### {match['url']}\n" + "\n".join(sorted(set(apis))) + "\n")
 
     except Exception as e:
@@ -671,7 +675,7 @@ async def main():
     now_str = vn_now().strftime("%H:%M %d/%m/%Y")
     detect_time_offset()
     if DEBUG_CARD:
-        print("[INFO] DEBUG_CARD BAT -> se ghi phaohoa_debug_card.txt")
+        print(f"[INFO] DEBUG_CARD BAT -> se ghi {DEBUG_CARD_FILE}")
     executor = ThreadPoolExecutor(max_workers=8)
 
     async with async_playwright() as p:
@@ -703,7 +707,7 @@ async def main():
                 print(f"[INFO] Sau khi bo sung -> {len(raw_cards)} card")
 
             if DEBUG_CARD:
-                with open("phaohoa_debug_card.txt", "w", encoding="utf-8") as f:
+                with open(DEBUG_CARD_FILE, "w", encoding="utf-8") as f:
                     for c in raw_cards:
                         f.write(f"\n{'=' * 70}\n### {c['href']}\n"
                                 f"league={c.get('league')!r} time={c.get('time_text')!r}\n"
@@ -713,7 +717,7 @@ async def main():
                                 f"--- IMGS ---\n"
                                 + "\n".join(f"{i['alt']} | {i['src']}" for i in c["imgs"])
                                 + f"\n--- OUTER HTML ---\n" + c.get("outer", "") + "\n")
-                print(f"[INFO] Da ghi {os.path.abspath('phaohoa_debug_card.txt')}")
+                print(f"[INFO] Da ghi {os.path.abspath(DEBUG_CARD_FILE)}")
 
             all_matches = [x for x in (parse_card(c) for c in raw_cards) if x]
 
