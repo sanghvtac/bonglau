@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 21/09/2026)",
+    "name": "Chuoi Chien TV (18:55 21/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1ef0484a9195",
-                    "name": "⚽ 19:00 21/09 Botswana U20 VS Malawi U20",
+                    "id": "ch-d456ee7a5d09",
+                    "name": "⚽ 19:00 21/09 Botswana U20 VS Malawi U20 [Trốc Tru - HD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1ef0484a9195",
+                            "id": "src-d456ee7a5d09",
                             "contents": [
                                 {
-                                    "id": "ct-1ef0484a9195",
+                                    "id": "ct-d456ee7a5d09",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640453/1640453"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ee3127161fcd",
                     "name": "⚽ 20:00 21/09 South Africa U20 VS Angola U20",
