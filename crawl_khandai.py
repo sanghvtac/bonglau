@@ -15,7 +15,7 @@ from playwright.async_api import async_playwright
 # ──────────────────────────────────────────────
 # CAU HINH
 # ──────────────────────────────────────────────
-BASE_DOMAIN   = "https://phaohoa1.live"
+BASE_DOMAIN   = "https://khandai1.link"
 TARGET_URL    = f"{BASE_DOMAIN}/lich-truc-tiep"
 HOME_URL      = f"{BASE_DOMAIN}/"
 COVER_IMAGE   = f"{BASE_DOMAIN}/images/logo.png"
@@ -53,8 +53,8 @@ SPORTS = tuple(dict.fromkeys(ICON_SPORT.values()))
 
 # ──────────────────────────────────────────────
 # CO DEBUG
-#   py crawl_phaohoa.py --dump     (hoac set PHAOHOA_DUMP=1)
-#   py crawl_phaohoa.py --debug    (hoac set PHAOHOA_DEBUG=1)
+#   py crawl_khandai.py --dump     (hoac set khandai_DUMP=1)
+#   py crawl_khandai.py --debug    (hoac set khandai_DEBUG=1)
 # ──────────────────────────────────────────────
 def _flag(env_name: str, argv_name: str) -> bool:
     if os.getenv(env_name, "").strip() in ("1", "true", "True", "yes"):
@@ -62,8 +62,8 @@ def _flag(env_name: str, argv_name: str) -> bool:
     return argv_name in sys.argv
 
 
-DEBUG_API  = _flag("PHAOHOA_DEBUG", "--debug")
-DEBUG_CARD = _flag("PHAOHOA_DUMP",  "--dump")
+DEBUG_API  = _flag("khandai_DEBUG", "--debug")
+DEBUG_CARD = _flag("khandai_DUMP",  "--dump")
 
 
 def generate_id(text):
@@ -201,7 +201,7 @@ def clean_lines(raw_text: str) -> list[str]:
 # ──────────────────────────────────────────────
 # TRICH XUAT CARD
 #
-# v5: doc theo DUNG CAU TRUC THAT cua phaohoa1.live thay vi doan tu text:
+# v5: doc theo DUNG CAU TRUC THAT cua khandai1.live thay vi doan tu text:
 #   a[href*='/truc-tiep/']
 #     └ .match-schedule-ribbon > div[0] = ten giai, div[1] = 'HH:MM DD/MM/YYYY'
 #     └ span.truncate x2               = ten 2 doi
@@ -588,7 +588,7 @@ async def fetch_match_streams(context, match: dict) -> list[dict]:
                     found.append(u)
 
         if DEBUG_API and apis:
-            with open("phaohoa_debug_api.txt", "a", encoding="utf-8") as f:
+            with open("khandai_debug_api.txt", "a", encoding="utf-8") as f:
                 f.write(f"\n### {match['url']}\n" + "\n".join(sorted(set(apis))) + "\n")
 
     except Exception as e:
@@ -638,7 +638,7 @@ async def main():
     now_str = vn_now().strftime("%H:%M %d/%m/%Y")
     detect_time_offset()
     if DEBUG_CARD:
-        print("[INFO] DEBUG_CARD BAT -> se ghi phaohoa_debug_card.txt")
+        print("[INFO] DEBUG_CARD BAT -> se ghi khandai_debug_card.txt")
     executor = ThreadPoolExecutor(max_workers=8)
 
     async with async_playwright() as p:
@@ -670,7 +670,7 @@ async def main():
                 print(f"[INFO] Sau khi bo sung -> {len(raw_cards)} card")
 
             if DEBUG_CARD:
-                with open("phaohoa_debug_card.txt", "w", encoding="utf-8") as f:
+                with open("khandai_debug_card.txt", "w", encoding="utf-8") as f:
                     for c in raw_cards:
                         f.write(f"\n{'=' * 70}\n### {c['href']}\n"
                                 f"league={c.get('league')!r} time={c.get('time_text')!r}\n"
@@ -680,7 +680,7 @@ async def main():
                                 f"--- IMGS ---\n"
                                 + "\n".join(f"{i['alt']} | {i['src']}" for i in c["imgs"])
                                 + f"\n--- OUTER HTML ---\n" + c.get("outer", "") + "\n")
-                print(f"[INFO] Da ghi {os.path.abspath('phaohoa_debug_card.txt')}")
+                print(f"[INFO] Da ghi {os.path.abspath('khandai_debug_card.txt')}")
 
             all_matches = [x for x in (parse_card(c) for c in raw_cards) if x]
 
@@ -812,11 +812,11 @@ async def main():
             vlc_content += vl
             total_entries += 1
 
-    with open("phaohoa.json", "w", encoding="utf-8") as f:
+    with open("khandai.json", "w", encoding="utf-8") as f:
         json.dump(json_output, f, ensure_ascii=False, indent=4)
-    with open("phaohoa_iptv.txt", "w", encoding="utf-8") as f:
+    with open("khandai_iptv.txt", "w", encoding="utf-8") as f:
         f.write(m3u_content)
-    with open("phaohoa_vlc.txt", "w", encoding="utf-8") as f:
+    with open("khandai_vlc.txt", "w", encoding="utf-8") as f:
         f.write(vlc_content)
 
     live_count     = sum(1 for m in match_data if m["is_live"])
@@ -824,7 +824,7 @@ async def main():
     print(f"\n✅ Hoan thanh luc: {now_str} (Gio VN)")
     print(f"   🔴 Live: {live_count} tran  |  🗓 Sắp diễn ra: {upcoming_count} tran")
     print(f"   📺 Tong entries (BLV x chat luong): {total_entries}")
-    print(f"   📄 Da xuat: phaohoa.json | phaohoa_iptv.txt | phaohoa_vlc.txt")
+    print(f"   📄 Da xuat: khandai.json | khandai_iptv.txt | khandai_vlc.txt")
 
 
 if __name__ == "__main__":
