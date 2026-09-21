@@ -163,14 +163,23 @@ def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
 # GitHub Actions: Chromium headless khong tu phat video nen HLS.js khong
 # bao gio goi file .m3u8, ket qua la stream rong. Day la ly do doi sang API.
 #
-# NHUNG: Cloudflare cua site chan /api/ doi voi request khong phai trinh
-# duyet -> tu GitHub Actions, requests bi 403 (tu IP Viet Nam thi khong).
-# Vi vay co 2 TANG, tu dong chuyen tang, xem open_transport():
-#   1. requests  - nhanh, khong can Chromium. Dung duoc khi IP khong bi gat.
-#   2. Playwright - mo trang roi chay fetch() NGAY TRONG trang, nen request
-#      mang dung TLS/cookie/header cua Chrome that. Cham hon nhung chac an.
+# NHUNG: Cloudflare cua site rat gat voi /api/ khi goi tu IP datacenter.
+#
+# NHAT KY GO LOI (21/09/2026, cung 1 repo GitHub Actions):
+#   15:18  Ban Playwright cu, DE TRANG TU GOI API  -> LAY DUOC 5 tran (OK)
+#   15:37  Them tang 'requests' goi thang /api/    -> 403
+#   15:45  'requests' truoc, roi Chromium          -> 403 CA HAI
+# => Chromium headless KHONG phai van de (15:18 da chay ngon). Cai moi
+#    xuat hien la tang 'requests'; nhieu kha nang no bi Cloudflare gan co
+#    va lam IP bi chan luon, khien Chromium chay sau bi va lay.
+# => Mac dinh CHI dung trinh duyet, va de trang tu tai binh thuong truoc
+#    (giong het kich ban 15:18) roi moi fetch them trong trang.
+#    Muon thu lai tang requests: dat bien moi truong KHANDAI_USE_REQUESTS=1
 # ──────────────────────────────────────────────
-# ── Tang 1: requests thuan (nhanh, khong can Chromium) ──────────────
+USE_REQUESTS = os.getenv("KHANDAI_USE_REQUESTS", "").strip() in ("1", "true", "yes")
+
+
+# ── Tang phu (MAC DINH TAT): requests thuan ─────────────────────────
 class RequestsTransport:
     name = "requests"
 
@@ -203,13 +212,14 @@ class RequestsTransport:
             pass
 
 
-# ── Tang 2: goi API TU BEN TRONG trinh duyet (vuot Cloudflare) ──────
+# ── Tang chinh: goi API TU BEN TRONG trinh duyet ────────────────────
 class BrowserTransport:
     """Mo trang bang Chromium roi chay fetch() ngay trong trang.
 
-    Request di ra mang dung TLS fingerprint + cookie + header cua Chrome
-    that, nen Cloudflare khong chan. Da chung minh tren GitHub Actions:
-    ban Playwright truoc do tai duoc trang va doc duoc 5 tran.
+    Quan trong: de trang TU TAI BINH THUONG truoc (chinh no se goi /api/
+    de ve danh sach tran). Neu buoc nay ra duoc card thi chac chan IP dang
+    goi API duoc -> sau do fetch them moi an toan. Day dung la kich ban
+    da chay duoc tren GitHub Actions luc 15:18 ngay 21/09/2026.
     """
     name = "trinh duyet (Playwright)"
 
@@ -221,26 +231,67 @@ class BrowserTransport:
     }
     """
 
+    _COUNT_CARDS = """
+    () => new Set(
+      Array.from(document.querySelectorAll("a[href*='/truc-tiep/']"))
+           .map(a => a.getAttribute('href'))
+    ).size
+    """
+
     def __init__(self):
         self._pw = self._browser = self._ctx = self._page = None
+        self.cards_on_load = 0
 
     def open(self):
         from playwright.sync_api import sync_playwright
         self._pw      = sync_playwright().start()
-        self._browser = self._pw.chromium.launch()
-        self._ctx     = self._browser.new_context(
+        # Giu nguyen cach khoi dong da chay duoc luc 15:18, chi them vai
+        # co lam giam dau hieu tu dong hoa.
+        self._browser = self._pw.chromium.launch(args=[
+            "--disable-blink-features=AutomationControlled",
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+        ])
+        self._ctx = self._browser.new_context(
             user_agent=USER_AGENT, locale="vi-VN",
-            viewport={"width": 1440, "height": 900})
+            timezone_id="Asia/Ho_Chi_Minh",
+            viewport={"width": 1440, "height": 900},
+            extra_http_headers={"Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"})
+        self._ctx.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
         self._page = self._ctx.new_page()
-        self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded", timeout=45000)
-        self._page.wait_for_timeout(3000)
+
+        self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded", timeout=60000)
+        # Cho chinh trang tu goi API va render card (toi da ~25s)
+        for _ in range(25):
+            self._page.wait_for_timeout(1000)
+            try:
+                n = self._page.evaluate(self._COUNT_CARDS)
+            except Exception:
+                n = 0
+            if n:
+                self.cards_on_load = n
+                break
+        if self.cards_on_load:
+            print(f"[INFO] Trang tu tai duoc {self.cards_on_load} card "
+                  f"-> IP nay goi /api/ duoc")
+        else:
+            print("[WARN] Trang khong render duoc card nao. Co the /api/ dang "
+                  "bi chan hoac site dang cham.")
 
     def get_json(self, url: str, params: dict | None = None):
         full = url + ("?" + urlencode(params) if params else "")
-        data = self._page.evaluate(self._JS, full)
-        if isinstance(data, dict) and "__status" in data:
-            raise RuntimeError(f"HTTP {data['__status']} tu trong trinh duyet")
-        return data
+        last = None
+        for attempt in range(3):
+            if attempt:
+                self._page.wait_for_timeout(2500 * attempt)   # cho lui dan
+            data = self._page.evaluate(self._JS, full)
+            if isinstance(data, dict) and "__status" in data:
+                last = RuntimeError(f"HTTP {data['__status']} tu trong trinh duyet")
+                continue
+            self._page.wait_for_timeout(600)      # goi thua thot cho lich su
+            return data
+        raise last
 
     def close(self):
         for obj in (self._ctx, self._browser):
@@ -258,29 +309,40 @@ TRANSPORT = None        # duoc gan trong open_transport()
 
 
 def open_transport():
-    """Chon cach goi API: uu tien requests, that bai thi dung trinh duyet."""
+    """Mac dinh chi dung trinh duyet. Tang requests phai bat bang bien
+    moi truong KHANDAI_USE_REQUESTS=1 (xem ghi chu o dau muc nay)."""
     probe = {"status": "live", "page_size": 1, "ordering": "smart"}
 
-    t = RequestsTransport()
-    try:
-        t.open()
-        data = t.get_json(API_MATCHES, probe)
-        if isinstance(data, dict) and "results" in data:
-            print(f"[INFO] Transport: {t.name}")
-            return t
-        raise RuntimeError("API tra ve du lieu la")
-    except Exception as e:
-        print(f"[WARN] Goi API bang requests that bai: {e}")
-        print("[INFO] Chuyen sang goi API tu ben trong trinh duyet...")
-        t.close()
+    if USE_REQUESTS:
+        t = RequestsTransport()
+        try:
+            t.open()
+            data = t.get_json(API_MATCHES, probe)
+            if isinstance(data, dict) and "results" in data:
+                print(f"[INFO] Transport: {t.name}")
+                return t
+            raise RuntimeError("API tra ve du lieu la")
+        except Exception as e:
+            print(f"[WARN] Goi API bang requests that bai: {e}")
+            print("[WARN] Luu y: lan goi hong nay co the lam IP bi gan co.")
+            t.close()
 
     t = BrowserTransport()
     try:
         t.open()
         t.get_json(API_MATCHES, probe)
     except Exception as e:
+        cards = t.cards_on_load
         t.close()
-        print(f"[ERROR] Ca 2 cach goi API deu that bai: {e}")
+        print(f"[ERROR] Khong goi duoc API tu trong trinh duyet: {e}")
+        if cards:
+            print("[HINT] Trang van render duoc card, tuc la IP KHONG bi chan "
+                  "hoan toan - co the bi gioi han so lan goi. Thu chay lai sau "
+                  "vai phut.")
+        else:
+            print("[HINT] Trang cung khong render duoc card -> IP nay dang bi "
+                  "Cloudflare chan /api/. Cach chac an nhat la chay script tren "
+                  "may o Viet Nam roi push ket qua len GitHub.")
         return None
     print(f"[INFO] Transport: {t.name}")
     return t
