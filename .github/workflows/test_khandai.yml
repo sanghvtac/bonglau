@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Crawler mới gọi thẳng API JSON nên KHÔNG cần Playwright/Chromium nữa.
+      # Bỏ bước cài chromium giúp mỗi lần chạy nhanh hơn khoảng 1-2 phút.
       - name: Install dependencies
-        run: |
-          pip install playwright requests Pillow --quiet
-          playwright install chromium --with-deps
+        run: pip install requests Pillow --quiet
 
       - name: Run khandai crawler
         run: python crawl_khandai.py
