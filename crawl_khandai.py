@@ -255,9 +255,47 @@ class BrowserTransport:
     ).size
     """
 
+    # ── BAY GHI LAI PHAN HOI API CUA CHINH APP ──────────────────────
+    # Cai TRUOC khi trang tai. Khong tu goi API, chi nghe len ket qua ma
+    # app nhan duoc. Do la duong DA CHUNG MINH chay duoc tu IP GitHub.
+    _CAPTURE_INIT = """
+    (() => {
+      if (window.__khdCap) return;
+      window.__khdCap = [];
+      const keep = (u, t) => {
+        try { if (u && /\\/api\\/matches/.test(u) && t)
+                window.__khdCap.push({ url: String(u), text: String(t) }); }
+        catch (e) {}
+      };
+      const of = window.fetch;
+      window.fetch = function (...a) {
+        const p = of.apply(this, a);
+        try {
+          const u = typeof a[0] === 'string' ? a[0] : (a[0] && a[0].url) || '';
+          if (/\\/api\\/matches/.test(u)) {
+            p.then(r => { try { r.clone().text().then(t => keep(u, t)); } catch (e) {} });
+          }
+        } catch (e) {}
+        return p;
+      };
+      const xo = XMLHttpRequest.prototype.open;
+      const xs = XMLHttpRequest.prototype.send;
+      XMLHttpRequest.prototype.open = function (m, u, ...r) {
+        this.__khdUrl = u; return xo.call(this, m, u, ...r);
+      };
+      XMLHttpRequest.prototype.send = function (...r) {
+        this.addEventListener('load', () => {
+          try { keep(this.__khdUrl, this.responseText); } catch (e) {}
+        });
+        return xs.apply(this, r);
+      };
+    })();
+    """
+
     def __init__(self):
         self._pw = self._browser = self._ctx = self._page = None
         self.cards_on_load = 0
+        self.direct_api_ok = None      # None = chua thu
 
     def open(self):
         from playwright.sync_api import sync_playwright
@@ -276,6 +314,7 @@ class BrowserTransport:
             extra_http_headers={"Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7"})
         self._ctx.add_init_script(
             "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
+        self._ctx.add_init_script(self._CAPTURE_INIT)      # bay phai cai TRUOC
         self._page = self._ctx.new_page()
 
         self._page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded", timeout=60000)
@@ -354,6 +393,85 @@ class BrowserTransport:
             last = e
         raise last
 
+    # ── CHE DO NGHE LEN: de app tu goi API, ta chi doc ket qua ──────
+    _DAY_TABS_XPATH = (
+        "xpath=//*[normalize-space(text())='Hôm Nay' or "
+        "normalize-space(text())='Ngày Mai' or "
+        "normalize-space(text())='T2' or normalize-space(text())='T3' or "
+        "normalize-space(text())='T4' or normalize-space(text())='T5' or "
+        "normalize-space(text())='T6' or normalize-space(text())='T7' or "
+        "normalize-space(text())='CN']")
+
+    def _read_captured(self) -> list[dict]:
+        """Doc kho phan hoi API ma bay da ghi lai, tach ra tung tran."""
+        out, seen = [], set()
+        try:
+            caps = self._page.evaluate("window.__khdCap || []")
+        except Exception:
+            return out
+        for c in caps:
+            try:
+                data = json.loads(c.get("text") or "")
+            except Exception:
+                continue
+            if isinstance(data, dict) and data.get("results") is not None:
+                items = data["results"]
+            elif isinstance(data, dict) and data.get("slug"):
+                items = [data]
+            else:
+                continue
+            for m in items:
+                key = m.get("slug") or m.get("id")
+                if key and key not in seen:
+                    seen.add(key)
+                    out.append(m)
+        return out
+
+    def capture_matches(self, days: int) -> list[dict]:
+        """Bam lan luot cac tab ngay de app tu goi API, roi gom ket qua.
+
+        Khong he tu phat request nao toi /api/ -> khong dinh luat chan.
+        """
+        self._ensure_on_site()
+        try:
+            tabs   = self._page.locator(self._DAY_TABS_XPATH)
+            n_tabs = tabs.count()
+        except Exception:
+            n_tabs = 0
+
+        today_idx = 0
+        for i in range(n_tabs):
+            try:
+                if (tabs.nth(i).inner_text()).strip() == "Hôm Nay":
+                    today_idx = i
+                    break
+            except Exception:
+                continue
+
+        # Hom qua (bat tran bat dau khuya ma gio van da) -> hom nay -> cac ngay sau
+        for step in range(-1, days):
+            idx = today_idx + step
+            if idx < 0 or idx >= n_tabs:
+                continue
+            try:
+                nhan = (tabs.nth(idx).inner_text()).strip() or f"#{idx}"
+                tabs.nth(idx).click(timeout=8000)
+            except Exception as e:
+                print(f"  [WARN] Khong bam duoc tab #{idx}: {e}")
+                continue
+            # Cho app goi API va render xong
+            for _ in range(12):
+                self._page.wait_for_timeout(1000)
+                try:
+                    if self._page.evaluate(self._COUNT_CARDS):
+                        break
+                except Exception:
+                    pass
+            got = len(self._read_captured())
+            print(f"[INFO] Tab '{nhan}': tong da nghe duoc {got} tran")
+
+        return self._read_captured()
+
     def close(self):
         for obj in (self._ctx, self._browser):
             try:
@@ -395,23 +513,24 @@ def open_transport():
     t = BrowserTransport()
     try:
         t.open()
-        t.get_json(API_MATCHES, probe)
     except Exception as e:
-        cards = t.cards_on_load
-        t.close()
-        print(f"[ERROR] Khong goi duoc API tu trong trinh duyet: {e}")
-        if cards:
-            print(f"[HINT] Trang van tu render duoc {cards} card, tuc la chinh "
-                  "app GOI DUOC /api/ tu IP nay. Vay loi nam o dang truy van "
-                  "cua ta chu khong phai o IP. Chay lai voi --dump roi doi "
-                  "chieu tham so trong log voi phan ghi chu 'BAT CHUOC APP' "
-                  "o dau file.")
-        else:
-            print("[HINT] Trang cung khong render duoc card -> IP nay dang bi "
-                  "Cloudflare chan /api/ that su. Cach chac an nhat la chay "
-                  "script tren may o Viet Nam roi push ket qua len GitHub.")
+        print(f"[ERROR] Khong mo duoc trinh duyet: {e}")
+        try:
+            t.close()
+        except Exception:
+            pass
         return None
-    print(f"[INFO] Transport: {t.name}")
+
+    # Thu tu goi API mot lan. HONG CUNG KHONG SAO: con che do nghe len.
+    try:
+        t.get_json(API_MATCHES, probe)
+        t.direct_api_ok = True
+        print(f"[INFO] Transport: {t.name} - tu goi API duoc")
+    except Exception as e:
+        t.direct_api_ok = False
+        print(f"[WARN] Tu goi API bi chan: {e}")
+        print("[INFO] Chuyen sang CHE DO NGHE LEN: de chinh trang web goi API, "
+              "ta chi doc lai ket qua no nhan duoc.")
     return t
 
 
@@ -453,15 +572,19 @@ def fetch_matches() -> list[dict]:
             added += 1
         print(f"[INFO] {tag}: {len(items)} tran -> them {added} moi")
 
-    # KHONG dung endpoint '?status=live' nua (xem ghi chu BAT CHUOC APP).
-    # Tran dang live van lay duoc vi moi ban ghi deu co san truong 'status',
-    # con tran bat dau khuya hom qua ma gio van da thi nam o ngay hom qua.
-    today = vn_now().date()
-    for i in range(-1, DAYS_TO_CRAWL):
-        d = (today + timedelta(days=i)).strftime("%Y-%m-%d")
-        nhan = "hom qua" if i == -1 else ("hom nay" if i == 0 else f"+{i} ngay")
-        absorb(api_get({"page_size": PAGE_SIZE, "page": 1, "ordering": "smart",
-                        "start_time__date": d}), f"API ngay {d} ({nhan})")
+    # CHE DO NGHE LEN: khong tu goi API, de app goi roi doc lai ket qua.
+    if getattr(TRANSPORT, "direct_api_ok", True) is False:
+        absorb(TRANSPORT.capture_matches(DAYS_TO_CRAWL), "Nghe len tu trang web")
+    else:
+        # KHONG dung endpoint '?status=live' (xem ghi chu BAT CHUOC APP).
+        # Tran dang live van lay duoc vi moi ban ghi deu co truong 'status',
+        # con tran bat dau khuya hom qua ma gio van da thi nam o ngay hom qua.
+        today = vn_now().date()
+        for i in range(-1, DAYS_TO_CRAWL):
+            d = (today + timedelta(days=i)).strftime("%Y-%m-%d")
+            nhan = "hom qua" if i == -1 else ("hom nay" if i == 0 else f"+{i} ngay")
+            absorb(api_get({"page_size": PAGE_SIZE, "page": 1, "ordering": "smart",
+                            "start_time__date": d}), f"API ngay {d} ({nhan})")
 
     if DEBUG_DUMP:
         with open(DEBUG_DUMP_FILE, "w", encoding="utf-8") as f:
