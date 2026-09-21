@@ -279,18 +279,57 @@ class BrowserTransport:
             print("[WARN] Trang khong render duoc card nao. Co the /api/ dang "
                   "bi chan hoac site dang cham.")
 
+    @staticmethod
+    def _with_format_json(url: str, params: dict | None) -> str:
+        """Ghep '?...&format=json'. Django REST se tra JSON tho thay vi trang HTML."""
+        if params:
+            return url + "?" + urlencode({**params, "format": "json"})
+        if "format=json" in url:
+            return url
+        return url + ("&" if "?" in url else "?") + "format=json"
+
     def get_json(self, url: str, params: dict | None = None):
-        full = url + ("?" + urlencode(params) if params else "")
+        """DIEU HUONG trang toi URL API, KHONG dung fetch().
+
+        Ly do (do duoc 21/09/2026): Cloudflare cua site chan request kieu
+        XHR/API nhung cho qua request kieu mo trang:
+            mo trang /lich-truc-tiep            -> 200
+            go URL API vao thanh dia chi        -> 200
+            fetch('/api/...') trong trang       -> 403
+            requests.get(Accept: application/json) -> 403
+        Dieu huong bang page.goto() gui 'Sec-Fetch-Mode: navigate' +
+        'Accept: text/html' giong het nguoi dung mo trang, nen khong bi chan.
+        Them '?format=json' de Django tra JSON tho thay vi trang HTML.
+        """
+        full = self._with_format_json(url, params)
         last = None
         for attempt in range(3):
             if attempt:
-                self._page.wait_for_timeout(2500 * attempt)   # cho lui dan
+                self._page.wait_for_timeout(2500 * attempt)      # cho lui dan
+            try:
+                resp = self._page.goto(full, wait_until="domcontentloaded",
+                                       timeout=45000)
+                if resp is not None and resp.status >= 400:
+                    last = RuntimeError(f"HTTP {resp.status} khi mo {full[:90]}")
+                    continue
+                txt = self._page.evaluate("document.body ? document.body.innerText : ''")
+                data = json.loads(txt)
+                self._page.wait_for_timeout(600)   # goi thua thot cho lich su
+                return data
+            except json.JSONDecodeError:
+                last = RuntimeError("Trang tra ve khong phai JSON (co the la "
+                                    "trang chan cua Cloudflare)")
+            except Exception as e:
+                last = e
+
+        # Vot vat: thu lai bang fetch() trong trang (cach cu). Thuong bi 403,
+        # nhung neu site sau nay noi long thi van chay.
+        try:
             data = self._page.evaluate(self._JS, full)
-            if isinstance(data, dict) and "__status" in data:
-                last = RuntimeError(f"HTTP {data['__status']} tu trong trinh duyet")
-                continue
-            self._page.wait_for_timeout(600)      # goi thua thot cho lich su
-            return data
+            if not (isinstance(data, dict) and "__status" in data):
+                return data
+        except Exception:
+            pass
         raise last
 
     def close(self):
