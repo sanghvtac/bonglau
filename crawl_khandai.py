@@ -1,16 +1,13 @@
 import sys
 import json
-import asyncio
 import re
 import hashlib
 import os
-import unicodedata
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from io import BytesIO
 from PIL import Image
-from playwright.async_api import async_playwright
 
 # ──────────────────────────────────────────────
 # CAU HINH
@@ -18,54 +15,47 @@ from playwright.async_api import async_playwright
 # Site doi ten/domain lien tuc. Doi domain -> chi sua 1 dong BASE_DOMAIN duoi day.
 #   phaohoa1.live (cu)  ->  khandai1.link (hien tai)
 BASE_DOMAIN   = "https://khandai1.link"
-TARGET_URL    = f"{BASE_DOMAIN}/lich-truc-tiep"
-HOME_URL      = f"{BASE_DOMAIN}/"
+API_MATCHES   = f"{BASE_DOMAIN}/api/matches/"
 COVER_IMAGE   = f"{BASE_DOMAIN}/images/logo.png"
 
 # Ten hien thi trong app TV / playlist
 SITE_NAME     = "Khan Dai TV"
 # Tien to MOI ten file xuat ra + file debug:
-#   khandai.json | khandai_iptv.txt | khandai_vlc.txt
-#   khandai_debug_card.txt | khandai_debug_api.txt
+#   khandai.json | khandai_iptv.txt | khandai_vlc.txt | khandai_debug_api.json
 OUT_PREFIX    = "khandai"
 
 GITHUB_REPO   = "sanghvtac/bonglau"
 GITHUB_BRANCH = "main"
 THUMBS_DIR    = "thumbs"
 
-USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-              "AppleWebKit/537.36 (KHTML, like Gecko) "
-              "Chrome/122.0.0.0 Safari/537.36")
-
-DAYS_TO_CRAWL   = 2      # Hom nay + ngay mai
-LIVE_BATCH_SIZE = 4      # So trang tran mo song song de bat stream
-STREAM_WAIT     = 10     # So giay cho player load .m3u8 (do kiem chung: ~8-9s moi co)
-LIVE_WINDOW_H   = 3.0    # Tran duoc coi la LIVE trong X gio ke tu gio bat dau
+DAYS_TO_CRAWL = 2        # Hom nay + ngay mai
+PAGE_SIZE     = 100      # API mac dinh 18/trang -> keo len cho du 1 lan goi
+HTTP_TIMEOUT  = 20
+HTTP_RETRY    = 3
 
 # CHI LAY BONG DA. Dat None neu muon lay tat ca cac mon.
-SPORT_FILTER: str | None = "Bóng đá"
+# Gia tri lay tu truong 'sport_slug' cua API: football | bong-chuyen | ...
+SPORT_FILTER: str | None = "football"
 
-# Map icon iconify tren trang -> ten mon (trang /lich-truc-tiep khong ghi chu ten mon)
-ICON_SPORT = {
-    "soccer":        "Bóng đá",
-    "football":      "Bóng đá",
-    "volleyball":    "Bóng chuyền",
-    "basketball":    "Bóng rổ",
-    "tennis":        "Tennis",
-    "billiards":     "Billiards",
-    "badminton":     "Cầu lông",
-    "table-tennis":  "Bóng bàn",
-    "boxing-glove":  "Boxing",
-    "controller":       "Esports",
-    "gamepad-variant":  "Esports",
+# status cua API: 'live' | 'scheduled' | (ket thuc)
+LIVE_STATUSES     = {"live"}
+FINISHED_STATUSES = {"finished", "ended", "ft", "full_time",
+                     "canceled", "cancelled", "postponed", "abandoned"}
+
+API_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/122.0.0.0 Safari/537.36"),
+    "Accept":  "application/json, text/plain, */*",
+    "Referer": f"{BASE_DOMAIN}/lich-truc-tiep",
+    "Origin":  BASE_DOMAIN,
 }
-SPORTS = tuple(dict.fromkeys(ICON_SPORT.values()))
 
 
 # ──────────────────────────────────────────────
 # CO DEBUG
 #   py crawl_khandai.py --dump     (hoac set KHANDAI_DUMP=1)
-#   py crawl_khandai.py --debug    (hoac set KHANDAI_DEBUG=1)
+# Ghi nguyen JSON API ra file de soi khi site doi cau truc.
 # ──────────────────────────────────────────────
 def _flag(env_name: str, argv_name: str) -> bool:
     if os.getenv(env_name, "").strip() in ("1", "true", "True", "yes"):
@@ -73,38 +63,49 @@ def _flag(env_name: str, argv_name: str) -> bool:
     return argv_name in sys.argv
 
 
-DEBUG_API  = _flag("KHANDAI_DEBUG", "--debug")
-DEBUG_CARD = _flag("KHANDAI_DUMP",  "--dump")
-
-# Ten file debug, bam theo OUT_PREFIX cho nhat quan
-DEBUG_API_FILE  = f"{OUT_PREFIX}_debug_api.txt"
-DEBUG_CARD_FILE = f"{OUT_PREFIX}_debug_card.txt"
+DEBUG_DUMP     = _flag("KHANDAI_DUMP", "--dump")
+DEBUG_DUMP_FILE = f"{OUT_PREFIX}_debug_api.json"
 
 
 def generate_id(text):
     return hashlib.md5(text.encode()).hexdigest()[:12]
 
 
-def slugify(s: str) -> str:
-    s = (s or "").lower().replace("đ", "d")
-    s = unicodedata.normalize("NFD", s)
-    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-
-
-def unrepeat(s: str) -> str:
-    """'Đài LoanĐài Loan' -> 'Đài Loan' (site render 2 ban desktop + mobile).
-    Chi cat khi nua chuoi du dai (>=4 ky tu), tranh cat nham ten ngan
-    that su co lap am tiet nhu 'KaKa' -> 'Ka'."""
-    s = (s or "").strip()
-    n = len(s)
-    if n >= 8 and n % 2 == 0 and s[: n // 2] == s[n // 2:]:
-        return s[: n // 2]
-    return s
+def abs_url(path: str) -> str:
+    """'/media/teams/logos/x.jpg' -> 'https://khandai1.link/media/teams/logos/x.jpg'"""
+    if not path:
+        return ""
+    if path.startswith("http"):
+        return path
+    return BASE_DOMAIN + (path if path.startswith("/") else "/" + path)
 
 
 # ──────────────────────────────────────────────
-# ANH
+# TIMEZONE
+# ──────────────────────────────────────────────
+VN_TZ = timezone(timedelta(hours=7))
+
+
+def vn_now() -> datetime:
+    """Gio VN, dung ca tren may VN (UTC+7) lan GitHub Actions (UTC+0)."""
+    return datetime.now(VN_TZ)
+
+
+def parse_start(iso_str: str) -> datetime | None:
+    """'2026-09-21T14:00:00+07:00' -> datetime co tzinfo, quy ve gio VN."""
+    if not iso_str:
+        return None
+    try:
+        dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=VN_TZ)
+    return dt.astimezone(VN_TZ)
+
+
+# ──────────────────────────────────────────────
+# ANH: Ghep 2 logo doi -> luu file PNG -> tra URL
 # ──────────────────────────────────────────────
 def _fetch_logo(url):
     try:
@@ -135,523 +136,156 @@ def _build_and_save_thumb(logo_a_url, logo_b_url, match_id):
             f"/refs/heads/{GITHUB_BRANCH}/{THUMBS_DIR}/{match_id}.png")
 
 
-async def make_thumb_async(logo_a_url, logo_b_url, match_id, executor):
-    """Chi ghep anh khi CO DU 2 logo doi. Trang /lich-truc-tiep khong co logo doi
-    nen se dung avatar BLV / anh bia thay vi tao ra 1 dong PNG xam vo nghia."""
-    if not (logo_a_url and logo_b_url):
-        return ""
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(
-        executor, _build_and_save_thumb, logo_a_url, logo_b_url, match_id
-    )
-
-
 # ──────────────────────────────────────────────
-# TIMEZONE
+# GOI API
+#
+# Da do truc tiep tren khandai1.link (21/09/2026): trang /lich-truc-tiep
+# goi dung 2 endpoint duoi day, va ban thân DANH SACH da kem san
+# 'commentators[].stream_url' (link .m3u8 that) -> KHONG can Playwright.
+#
+# Cach cu (mo trang tran roi rinh request .m3u8) KHONG chay duoc tren
+# GitHub Actions: Chromium headless khong tu phat video nen HLS.js khong
+# bao gio goi file .m3u8, ket qua la stream rong. Day la ly do doi sang API.
 # ──────────────────────────────────────────────
-def detect_time_offset():
-    local_now  = datetime.now()
-    utc_now    = datetime.now(timezone.utc).replace(tzinfo=None)
-    diff_hours = round((local_now - utc_now).total_seconds() / 3600)
-    print(f"[INFO] Local timezone: UTC+{diff_hours}")
-    return diff_hours
-
-
-def vn_now() -> datetime:
-    """Gio VN, chay dung ca tren may VN (UTC+7) lan GitHub Actions (UTC+0)."""
-    return datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=7)
-
-
-# ──────────────────────────────────────────────
-# REGEX THOI GIAN
-# ──────────────────────────────────────────────
-# Trang /lich-truc-tiep: '17:30 23/08/2026'
-TIME_DMY_RE  = re.compile(r'(\d{1,2}):(\d{2})\s+(\d{1,2})/(\d{1,2})/(\d{4})')
-# Trang chu: '13:00 - 23-08'
-TIME_FULL_RE = re.compile(r'(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2})[-/](\d{1,2})')
-TIME_HM_RE   = re.compile(r'^\s*([01]?\d|2[0-3]):([0-5]\d)\s*$')
-SCORE_RE     = re.compile(r'^\d+\s*[:\-]\s*\d+$')
-STATUS_LC    = ("vs", "trực tiếp", "sắp diễn ra", "xem thêm", "kết thúc", "tạm dừng")
-
-
-def parse_start_dt(time_text: str) -> datetime | None:
-    """'17:30 23/08/2026' -> datetime."""
-    m = TIME_DMY_RE.search(time_text or "")
-    if not m:
-        return None
-    hh, mm, dd, mo, yy = (int(x) for x in m.groups())
-    try:
-        return datetime(yy, mo, dd, hh, mm)
-    except ValueError:
-        return None
-
-
-def slug_parts(href: str) -> tuple[str, str]:
-    slug = href.rstrip("/").split("/")[-1]
-    slug = re.sub(r'-\d{1,2}-\d{1,2}-\d{4}-\d+$', '', slug)
-    slug = re.sub(r'-\d{5,}$', '', slug)
-    if "-vs-" not in slug:
-        return slug, ""
-    a, b = slug.split("-vs-", 1)
-    return a, b
-
-
-def slug_to_match_id(href: str) -> str:
-    slug = href.rstrip("/").split("/")[-1]
-    m = re.search(r'(\d{5,})$', slug)
-    return m.group(1) if m else generate_id(href)
-
-
-def clean_lines(raw_text: str) -> list[str]:
-    out, seen = [], set()
-    for ln in (raw_text or "").split("\n"):
-        ln = unrepeat(ln.strip())
-        if not ln or ln in seen:
-            continue
-        seen.add(ln)
-        out.append(ln)
+def api_get(params: dict) -> list[dict]:
+    """Goi /api/matches/ va tra ve toan bo results (tu lat trang neu con)."""
+    out, url, first = [], API_MATCHES, True
+    for _ in range(20):                      # chan vong lap vo han
+        data = None
+        for attempt in range(HTTP_RETRY):
+            try:
+                r = requests.get(url,
+                                 params=params if first else None,
+                                 headers=API_HEADERS, timeout=HTTP_TIMEOUT)
+                r.raise_for_status()
+                data = r.json()
+                break
+            except Exception as e:
+                if attempt == HTTP_RETRY - 1:
+                    print(f"  [ERROR] API {params or url} -> {e}")
+                    return out
+        first = False
+        if not isinstance(data, dict):
+            break
+        out.extend(data.get("results") or [])
+        url = data.get("next")
+        if not url:
+            break
     return out
 
 
-# ──────────────────────────────────────────────
-# TRICH XUAT CARD
-#
-# v5: doc theo DUNG CAU TRUC THAT cua trang (da kiem chung lai tren
-# khandai1.link 21/09/2026 - cau truc giu nguyen so voi phaohoa1.live):
-#   a[href*='/truc-tiep/']
-#     └ .match-schedule-ribbon > div[0] = ten giai, div[1] = 'HH:MM DD/MM/YYYY'
-#     └ span.truncate x2               = ten 2 doi
-#     └ span[class*='i-mdi:']          = icon mon the thao
-#     └ img[src*='commentators']       = avatar BLV (alt = ten BLV)
-# Van giu nhanh 'text' de fallback cho trang chu (DOM khac).
-# ──────────────────────────────────────────────
-CARD_EXTRACT_JS = """
-() => {
-  const SKIP_IMG = ['/sponsors/', '/images/logo', '/images/footer/',
-                    '/images/banner/', '/sports/icons/'];
-  const uniq = el => new Set(
-    Array.from(el.querySelectorAll("a[href*='/truc-tiep/']"))
-         .map(x => x.getAttribute('href'))
-  ).size;
+def fetch_matches() -> list[dict]:
+    """Gom tran theo ngay + tran dang live, gop lai theo slug."""
+    raw, seen = [], set()
 
-  const byHref = new Map();
-  document.querySelectorAll("a[href*='/truc-tiep/']").forEach(a => {
-    const h = a.getAttribute('href') || '';
-    if (!h.includes('/truc-tiep/')) return;
-    if (!byHref.has(h)) byHref.set(h, []);
-    byHref.get(h).push(a);
-  });
-
-  const out = [];
-  byHref.forEach((anchors, href) => {
-    // The <a> co ribbon la the chuan; khong co thi lay the noi dung dai nhat
-    let best = anchors.find(a => a.querySelector('.match-schedule-ribbon')) || anchors[0];
-    anchors.forEach(a => {
-      if (!best.querySelector('.match-schedule-ribbon') &&
-          (a.innerText || '').length > (best.innerText || '').length) best = a;
-    });
-
-    let card = best;
-    for (let i = 0; i < 10; i++) {
-      const p = card.parentElement;
-      if (!p || p.tagName === 'BODY') break;
-      if (uniq(p) > 1) break;
-      card = p;
-    }
-
-    // ── Truong co cau truc ──
-    let league = '', timeText = '';
-    const ribbon = card.querySelector('.match-schedule-ribbon');
-    if (ribbon) {
-      const kids = ribbon.children;
-      if (kids[0]) league   = (kids[0].innerText || '').trim();
-      if (kids[1]) timeText = (kids[1].innerText || '').trim();
-    }
-
-    const teams = Array.from(card.querySelectorAll('span.truncate'))
-      .map(s => (s.innerText || '').trim())
-      .filter(Boolean);
-
-    const sports = [];
-    card.querySelectorAll("[class*='i-mdi:']").forEach(el => {
-      (el.className.baseVal || el.className || '').split(/\\s+/).forEach(c => {
-        if (c.startsWith('i-mdi:')) sports.push(c.slice(6));
-      });
-    });
-
-    let blv = '';
-    const blvImg = card.querySelector("img[src*='commentator'], img[src*='avatar']");
-    if (blvImg) blv = (blvImg.alt || '').trim();
-
-    // ── Fallback: text tho (dung cho trang chu) ──
-    const texts = [card.innerText || ''];
-    anchors.forEach(a => texts.push(a.innerText || ''));
-
-    const imgs = [], seenSrc = new Set();
-    [card].concat(anchors).forEach(el => {
-      el.querySelectorAll('img').forEach(i => {
-        const s = i.src || '';
-        if (!s || seenSrc.has(s)) return;
-        if (SKIP_IMG.some(k => s.includes(k))) return;
-        seenSrc.add(s);
-        imgs.push({ src: s, alt: (i.alt || '').trim() });
-      });
-    });
-
-    out.push({
-      href: href, league: league, time_text: timeText,
-      teams: teams, sports: sports, blv: blv,
-      text: texts.join('\\n'), imgs: imgs,
-      outer: (card.outerHTML || '').slice(0, 1500)
-    });
-  });
-  return out;
-}
-"""
-
-
-async def collect_cards(page) -> list[dict]:
-    for _ in range(6):
-        await page.mouse.wheel(0, 2500)
-        await asyncio.sleep(0.8)
-
-    for _ in range(10):
-        try:
-            btn = page.locator("text=/Xem th[eê]m/i").first
-            if await btn.count() == 0 or not await btn.is_visible():
-                break
-            await btn.click(timeout=3000)
-            await asyncio.sleep(1.2)
-            await page.mouse.wheel(0, 2500)
-        except Exception:
-            break
-
-    try:
-        return await page.evaluate(CARD_EXTRACT_JS)
-    except Exception as e:
-        print(f"  [WARN] collect_cards loi: {e}")
-        return []
-
-
-async def click_sport_filter(page, sport: str) -> bool:
-    if not sport:
-        return False
-    try:
-        before = len(await page.evaluate(CARD_EXTRACT_JS))
-        tab = page.locator(f"xpath=//*[normalize-space(text())='{sport}']").first
-        if await tab.count() == 0:
-            print(f"[INFO] Khong thay tab loc mon '{sport}' tren trang")
-            return False
-        await tab.click(timeout=5000)
-        await asyncio.sleep(2.5)
-        after = len(await page.evaluate(CARD_EXTRACT_JS))
-        print(f"[INFO] Da bam tab loc mon '{sport}': {before} -> {after} card")
-        return True
-    except Exception as e:
-        print(f"[WARN] Khong bam duoc tab mon '{sport}': {e}")
-        return False
-
-
-async def click_day_tabs(page, max_days: int) -> list[dict]:
-    all_cards, seen = [], set()
-
-    def absorb(cards):
+    def absorb(items, tag):
         added = 0
-        for c in cards:
-            if c["href"] in seen:
+        for m in items:
+            key = m.get("slug") or m.get("id")
+            if key in seen:
                 continue
-            seen.add(c["href"])
-            all_cards.append(c)
+            seen.add(key)
+            raw.append(m)
             added += 1
-        return added
+        print(f"[INFO] {tag}: {len(items)} tran -> them {added} moi")
 
-    absorb(await collect_cards(page))
-    if max_days <= 1:
-        return all_cards
+    # Tran dang live truoc (co the bat dau tu hom qua, khong nam trong tab ngay)
+    absorb(api_get({"status": "live", "page_size": PAGE_SIZE,
+                    "ordering": "smart"}), "API status=live")
 
-    try:
-        tabs = page.locator(
-            "xpath=//*[normalize-space(text())='Hôm Nay' or "
-            "normalize-space(text())='Ngày Mai' or "
-            "normalize-space(text())='T2' or normalize-space(text())='T3' or "
-            "normalize-space(text())='T4' or normalize-space(text())='T5' or "
-            "normalize-space(text())='T6' or normalize-space(text())='T7' or "
-            "normalize-space(text())='CN']"
-        )
-        n_tabs = await tabs.count()
-    except Exception:
-        n_tabs = 0
+    today = vn_now().date()
+    for i in range(DAYS_TO_CRAWL):
+        d = (today + timedelta(days=i)).strftime("%Y-%m-%d")
+        absorb(api_get({"page_size": PAGE_SIZE, "page": 1, "ordering": "smart",
+                        "start_time__date": d}), f"API ngay {d}")
 
-    if n_tabs == 0:
-        print("[WARN] Khong tim thay tab ngay nao")
-        return all_cards
+    if DEBUG_DUMP:
+        with open(DEBUG_DUMP_FILE, "w", encoding="utf-8") as f:
+            json.dump(raw, f, ensure_ascii=False, indent=2)
+        print(f"[INFO] Da ghi {os.path.abspath(DEBUG_DUMP_FILE)}")
 
-    today_idx = 0
-    for i in range(n_tabs):
-        try:
-            if (await tabs.nth(i).inner_text()).strip() == "Hôm Nay":
-                today_idx = i
-                break
-        except Exception:
-            continue
-
-    for step in range(1, max_days):
-        idx = today_idx + step
-        if idx >= n_tabs:
-            break
-        try:
-            label = (await tabs.nth(idx).inner_text()).strip()
-            await tabs.nth(idx).click(timeout=5000)
-            await asyncio.sleep(2.5)
-            added = absorb(await collect_cards(page))
-            print(f"[INFO] Tab '{label}': +{added} tran")
-        except Exception as e:
-            print(f"  [WARN] Khong bam duoc tab #{idx}: {e}")
-            break
-
-    return all_cards
+    return raw
 
 
-def parse_card(card: dict) -> dict | None:
-    href = card.get("href", "")
-    if not href or "/truc-tiep/" not in href:
+# ──────────────────────────────────────────────
+# PARSE 1 TRAN TU API
+# ──────────────────────────────────────────────
+def parse_match(m: dict) -> dict | None:
+    slug   = m.get("slug") or ""
+    status = str(m.get("status", "")).lower().strip()
+    if status in FINISHED_STATUSES:
         return None
 
-    full_url = href if href.startswith("http") else BASE_DOMAIN + href
-    lines    = clean_lines(card.get("text", ""))
-    joined   = " | ".join(lines)
-    low      = joined.lower()
+    match_id = str(m.get("api_football_id") or m.get("id") or generate_id(slug))
+    start_dt = parse_start(m.get("start_time", ""))
 
-    home_slug, away_slug = slug_parts(href)
-
-    # ── Ten doi: uu tien span.truncate, fallback doi chieu slug voi text ──
-    # LUU Y (khandai1.link): moi card co 3 the span.truncate -> 2 doi + ten BLV
-    # ('BLV TIỂU MÂY'), nen phai loai dong BLV ra truoc khi lay 2 doi.
-    blv_alt = unrepeat(card.get("blv", "").strip())
-    def _is_blv(t: str) -> bool:
-        t = t.strip()
-        if re.match(r'^BLV\b', t, flags=re.IGNORECASE):
-            return True
-        return bool(blv_alt) and slugify(t) == slugify(blv_alt)
-
-    teams = [unrepeat(t) for t in card.get("teams", []) if t and not _is_blv(t)]
-    if len(teams) >= 2:
-        home, away = teams[0], teams[1]
-    else:
-        def from_lines(slug):
-            if not slug:
-                return ""
-            for ln in lines:
-                s = slugify(ln)
-                if s and (s == slug or s.startswith(slug) or slug.startswith(s)) and len(ln) < 40:
-                    return ln
-            return ""
-        home = from_lines(home_slug) or home_slug.replace("-", " ").title()
-        away = from_lines(away_slug) or away_slug.replace("-", " ").title()
-
-    # ── Mon the thao: uu tien icon, fallback quet text ──
-    sport = ""
-    for ic in card.get("sports", []):
-        for key, name in ICON_SPORT.items():
-            if key in ic:
-                sport = name
-                break
-        if sport:
-            break
-    if not sport:
-        for sp in SPORTS:
-            if sp in joined:
-                sport = sp
-                break
-
-    # ── Giai dau ──
-    league = unrepeat(card.get("league", "").strip())
-    if not league:
-        for ln in lines:
-            if TIME_FULL_RE.search(ln) or TIME_DMY_RE.search(ln) or SCORE_RE.match(ln):
-                continue
-            if ln in (home, away, sport) or ln.lower() in STATUS_LC:
-                continue
-            if 2 < len(ln) < 60:
-                league = ln
-                break
-
-    # ── Thoi gian ──
-    time_text = card.get("time_text", "") or joined
-    start_dt  = parse_start_dt(time_text)
-    if start_dt:
-        time_str = start_dt.strftime("%H:%M %d/%m")
-    else:
-        m = TIME_FULL_RE.search(joined)
-        if m:
-            time_str = f"{m.group(1)} {int(m.group(2)):02d}/{int(m.group(3)):02d}"
-        else:
-            m2 = next((TIME_HM_RE.match(ln) for ln in lines if TIME_HM_RE.match(ln)), None)
-            time_str = (f"{int(m2.group(1)):02d}:{m2.group(2)} "
-                        f"{vn_now().strftime('%d/%m')}") if m2 else ""
-
-    # ── Trang thai: badge tren trang > suy ra tu gio bat dau ──
-    if "trực tiếp" in low or "đang live" in low:
-        is_live = True
-    elif "sắp diễn ra" in low or "chưa bắt đầu" in low:
-        is_live = False
-    elif any(SCORE_RE.match(ln) for ln in lines):
-        is_live = True
-    elif start_dt:
-        now = vn_now()
-        is_live = start_dt <= now <= start_dt + timedelta(hours=LIVE_WINDOW_H)
-    else:
-        is_live = False
-
-    # ── BLV: uu tien alt avatar ('Văn Minh') hon text ('BLV VĂN MINH') ──
-    blv = unrepeat(card.get("blv", "").strip())
-    if not blv:
-        for ln in reversed(lines):
-            if ln in (home, away, league, sport):
-                continue
-            if (TIME_FULL_RE.search(ln) or TIME_DMY_RE.search(ln)
-                    or SCORE_RE.match(ln) or TIME_HM_RE.match(ln)):
-                continue
-            if ln.lower() in STATUS_LC:
-                continue
-            if 1 < len(ln) <= 25:
-                blv = ln
-                break
-
-    # ── Logo doi (trang chu moi co) + avatar BLV ──
-    imgs = card.get("imgs", [])
-    logo_home = logo_away = ""
-    for im in imgs:
-        s = slugify(im.get("alt", ""))
-        if not s:
+    streams = []
+    for c in (m.get("commentators") or []):
+        url = (c.get("stream_url") or "").strip()
+        if not url:
+            url = (c.get("backup_stream_url") or "").strip()
+        if not url:
             continue
-        if not logo_home and (s == home_slug or s == slugify(home)):
-            logo_home = im.get("src", "")
-        elif not logo_away and (s == away_slug or s == slugify(away)):
-            logo_away = im.get("src", "")
-    avatar = next((im["src"] for im in imgs
-                   if "commentator" in im["src"] or "avatar" in im["src"]), "")
+        streams.append({
+            "blv_name":   (c.get("name") or "").strip() or "BLV",
+            "stream_url": url,
+            "blv_live":   bool(c.get("is_live")),
+            "avatar":     abs_url(c.get("avatar_url") or ""),
+        })
+
+    avatar = streams[0]["avatar"] if streams else ""
+    if not avatar:
+        for c in (m.get("commentators") or []):
+            if c.get("avatar_url"):
+                avatar = abs_url(c["avatar_url"])
+                break
 
     return {
-        "match_id":  slug_to_match_id(href),
-        "url":       full_url,
-        "home":      home,
-        "away":      away,
-        "logo_home": logo_home,
-        "logo_away": logo_away,
+        "match_id":  match_id,
+        "url":       f"{BASE_DOMAIN}/truc-tiep/{slug}",
+        "home":      (m.get("home_team_name") or "").strip(),
+        "away":      (m.get("away_team_name") or "").strip(),
+        "logo_home": abs_url(m.get("home_team_logo") or ""),
+        "logo_away": abs_url(m.get("away_team_logo") or ""),
         "avatar":    avatar,
-        "time_str":  time_str,
+        "league":    (m.get("tournament_name") or "").strip(),
+        "sport":     (m.get("sport_slug") or "").strip(),
+        "sport_name": (m.get("sport_name") or "").strip(),
         "start_dt":  start_dt,
-        "sport":     sport,
-        "league":    league,
-        "blv":       blv,
-        "is_live":   is_live,
-        "streams":   [],
+        "time_str":  start_dt.strftime("%H:%M %d/%m") if start_dt else "",
+        "is_live":   status in LIVE_STATUSES,
+        "streams":   streams,
         "img_url":   "",
     }
 
 
 # ──────────────────────────────────────────────
-# BAT STREAM .m3u8 TU TRANG TRAN
-#
-# DA KIEM CHUNG (21/09/2026) tren khandai1.link voi 1 tran dang live:
-#   - Trang KHONG co iframe, KHONG co .m3u8 trong HTML.
-#   - Player dung HLS.js -> the <video> chi co src "blob:", link that
-#     chi xuat hien duoi dang REQUEST MANG.
-#   => Chi bat duoc qua page.on("response"); quet HTML/iframe ben duoi
-#      chi la fallback (huu ich neu site doi player sau nay).
-#   - Link that co dang:
-#     https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=...&sign=...
-#     (CDN van giu ten mien phaohoa cu, khac voi domain trang web -> khong
-#      duoc loc stream theo BASE_DOMAIN).
-#   - Cac file .ts segment cung tu host do nhung khong khop M3U8_RE.
-# ──────────────────────────────────────────────
-M3U8_RE = re.compile(r'https?://[^\s"\'<>\\]+\.m3u8[^\s"\'<>\\]*')
-
-
-async def fetch_match_streams(context, match: dict) -> list[dict]:
-    page  = await context.new_page()
-    found: list[str] = []
-    apis:  list[str] = []
-
-    def on_response(res):
-        u = res.url
-        if ".m3u8" in u and u not in found:
-            found.append(u)
-        if DEBUG_API and ("/api/" in u or u.endswith(".json")):
-            apis.append(u)
-
-    page.on("response", on_response)
-    try:
-        await page.goto(match["url"], wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(2)
-
-        for sel in ["button[aria-label*='Play']", ".vjs-big-play-button",
-                    ".jw-icon-display", "[class*='play-button']"]:
-            try:
-                el = page.locator(sel).first
-                if await el.count() and await el.is_visible():
-                    await el.click(timeout=2000)
-                    break
-            except Exception:
-                continue
-
-        await asyncio.sleep(STREAM_WAIT)
-
-        html_parts = []
-        try:
-            html_parts.append(await page.content())
-        except Exception:
-            pass
-        for fr in page.frames:
-            try:
-                html_parts.append(await fr.content())
-            except Exception:
-                pass
-            try:
-                src = fr.url or ""
-                if "streamUrl=" in src:
-                    from urllib.parse import unquote, urlparse, parse_qs
-                    q = parse_qs(urlparse(src).query)
-                    for v in q.get("streamUrl", []):
-                        html_parts.append(unquote(v))
-            except Exception:
-                continue
-
-        for chunk in html_parts:
-            for u in M3U8_RE.findall(chunk or ""):
-                u = u.replace("\\/", "/")
-                if u not in found:
-                    found.append(u)
-
-        if DEBUG_API and apis:
-            with open(DEBUG_API_FILE, "a", encoding="utf-8") as f:
-                f.write(f"\n### {match['url']}\n" + "\n".join(sorted(set(apis))) + "\n")
-
-    except Exception as e:
-        print(f"  [WARN] {match['url']} -> {e}")
-    finally:
-        page.remove_listener("response", on_response)
-        await page.close()
-
-    clean = [u for u in found if "/ads" not in u.lower()]
-    clean = sorted(set(clean), key=len, reverse=True)
-
-    blv_default = match.get("blv") or "BLV"
-    streams = []
-    for idx, url in enumerate(clean[:3]):
-        streams.append({
-            "blv_name":   blv_default if idx == 0 else f"{blv_default} {idx + 1}",
-            "stream_url": url,
-            "quality":    "FHD1" if idx == 0 else f"HD{idx}",
-        })
-    return streams
-
-
-# ──────────────────────────────────────────────
 # TIEU DE
 # ──────────────────────────────────────────────
-def build_title(m: dict, blv_and_quality: str = "") -> str:
+def build_entries(m: dict) -> list[tuple[str, str]]:
+    """Tra ve danh sach (stream_url, blv_name) de xuat ra playlist.
+
+    CANH BAO QUAN TRONG: API tra 'stream_url' cho CA tran chua da
+    (status='scheduled'), va do la kenh co dinh cua BLV. Vi du thuc te
+    (21/09/2026): BLV KaKa dung chung URL .../phaohoa7/index.m3u8 cho
+    ca tran dang live LAN tran 17:20 chua bat dau. Neu gan link cho tran
+    chua da, nguoi xem bam vao se thay NHAM tran khac dang phat.
+    => Chi gan link khi tran dang live VA BLV do dang len song.
+    """
+    if not m["streams"]:
+        return [("", "")]
+
+    if m["is_live"]:
+        onair = [s for s in m["streams"] if s["blv_live"]]
+        if not onair:                      # API chua kip cap nhat co is_live
+            onair = m["streams"]
+        return [(s["stream_url"], s["blv_name"]) for s in onair]
+
+    # Tran chua da: van hien ten BLV trong tieu de, nhung KHONG gan link
+    return [("", m["streams"][0]["blv_name"])]
+
+
+def build_title(m: dict, blv_name: str = "") -> str:
     parts = []
     if m["time_str"]:
         parts.append(m["time_str"])
@@ -661,109 +295,59 @@ def build_title(m: dict, blv_and_quality: str = "") -> str:
         parts.append(f"{m['home']} VS {m['away']}")
     elif m["home"]:
         parts.append(m["home"])
-    if blv_and_quality:
-        parts.append(f"[{blv_and_quality}]")
-    elif m.get("blv"):
-        parts.append(f"[{m['blv']}]")
+    if blv_name:
+        parts.append(f"[{blv_name}]")
     return " ".join(parts)
 
 
 # ──────────────────────────────────────────────
 # MAIN
 # ──────────────────────────────────────────────
-async def main():
-    now_str = vn_now().strftime("%H:%M %d/%m/%Y")
-    detect_time_offset()
-    if DEBUG_CARD:
-        print(f"[INFO] DEBUG_CARD BAT -> se ghi {DEBUG_CARD_FILE}")
+def main():
+    now      = vn_now()
+    now_str  = now.strftime("%H:%M %d/%m/%Y")
+    print(f"[INFO] Bat dau luc {now_str} (Gio VN) | host chay: "
+          f"UTC{datetime.now().astimezone().utcoffset()}")
+
+    raw = fetch_matches()
+    if not raw:
+        print("[ERROR] Khong lay duoc du lieu tu API. Dung lai, KHONG ghi de file cu.")
+        sys.exit(1)
+
+    all_matches = [x for x in (parse_match(m) for m in raw) if x]
+
+    if SPORT_FILTER:
+        before     = len(all_matches)
+        match_data = [m for m in all_matches if m["sport"] == SPORT_FILTER]
+        print(f"[INFO] Loc mon '{SPORT_FILTER}': bo {before - len(match_data)} tran, "
+              f"con {len(match_data)}")
+    else:
+        match_data = all_matches
+
+    match_data.sort(key=lambda m: m["start_dt"] or datetime.max.replace(tzinfo=VN_TZ))
+
+    live_count     = sum(1 for m in match_data if m["is_live"])
+    no_stream_live = sum(1 for m in match_data if m["is_live"] and not m["streams"])
+    print(f"[INFO] {len(match_data)} tran: {live_count} live, "
+          f"{len(match_data) - live_count} sap dien ra")
+    for m in match_data:
+        if m["is_live"]:
+            tag = f"{len(m['streams'])} stream" if m["streams"] else "KHONG co stream"
+            print(f"   🔴 {m['home']} vs {m['away']}: {tag}")
+    if no_stream_live:
+        print(f"[WARN] {no_stream_live} tran live khong co stream_url tu API")
+
+    # Ghep anh 2 logo doi (API co san logo ca 2 doi)
     executor = ThreadPoolExecutor(max_workers=8)
-
-    async with async_playwright() as p:
-        browser = await p.chromium.launch()
-        context = await browser.new_context(
-            user_agent=USER_AGENT,
-            viewport={"width": 1440, "height": 900},
-        )
-        page = await context.new_page()
-
-        try:
-            print(f"[INFO] Dang tai: {TARGET_URL}")
-            await page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=40000)
-            await asyncio.sleep(3)
-
-            await click_sport_filter(page, SPORT_FILTER)
-            raw_cards = await click_day_tabs(page, DAYS_TO_CRAWL)
-            print(f"[INFO] /lich-truc-tiep -> {len(raw_cards)} card")
-
-            if len(raw_cards) < 5:
-                print(f"[INFO] Bo sung tu trang chu: {HOME_URL}")
-                await page.goto(HOME_URL, wait_until="domcontentloaded", timeout=40000)
-                await asyncio.sleep(3)
-                seen = {c["href"] for c in raw_cards}
-                for c in await collect_cards(page):
-                    if c["href"] not in seen:
-                        seen.add(c["href"])
-                        raw_cards.append(c)
-                print(f"[INFO] Sau khi bo sung -> {len(raw_cards)} card")
-
-            if DEBUG_CARD:
-                with open(DEBUG_CARD_FILE, "w", encoding="utf-8") as f:
-                    for c in raw_cards:
-                        f.write(f"\n{'=' * 70}\n### {c['href']}\n"
-                                f"league={c.get('league')!r} time={c.get('time_text')!r}\n"
-                                f"teams={c.get('teams')} sports={c.get('sports')} "
-                                f"blv={c.get('blv')!r}\n"
-                                f"--- TEXT ---\n{c.get('text','')}\n"
-                                f"--- IMGS ---\n"
-                                + "\n".join(f"{i['alt']} | {i['src']}" for i in c["imgs"])
-                                + f"\n--- OUTER HTML ---\n" + c.get("outer", "") + "\n")
-                print(f"[INFO] Da ghi {os.path.abspath(DEBUG_CARD_FILE)}")
-
-            all_matches = [x for x in (parse_card(c) for c in raw_cards) if x]
-
-            # Loc mon (icon rat dang tin, nen loc thang khong can giu 'unknown')
-            if SPORT_FILTER:
-                match_data = [m for m in all_matches
-                              if m["sport"] == SPORT_FILTER or not m["sport"]]
-                bo = len(all_matches) - len(match_data)
-                print(f"[INFO] Loc mon '{SPORT_FILTER}': bo {bo} tran, con {len(match_data)}")
-            else:
-                match_data = all_matches
-
-            match_data.sort(key=lambda m: m["start_dt"] or datetime.max)
-
-            live_matches = [m for m in match_data if m["is_live"]]
-            no_time = sum(1 for m in match_data if not m["time_str"])
-            if no_time:
-                print(f"[WARN] {no_time} tran khong lay duoc gio")
-            print(f"[INFO] {len(match_data)} tran: "
-                  f"{len(live_matches)} live, {len(match_data) - len(live_matches)} sap dien ra")
-
-            for i in range(0, len(live_matches), LIVE_BATCH_SIZE):
-                batch = live_matches[i:i + LIVE_BATCH_SIZE]
-                print(f"[INFO] Bat stream batch {i // LIVE_BATCH_SIZE + 1} "
-                      f"({len(batch)} tran)...")
-                results = await asyncio.gather(
-                    *[fetch_match_streams(context, m) for m in batch],
-                    return_exceptions=True
-                )
-                for m, r in zip(batch, results):
-                    m["streams"] = r if isinstance(r, list) else []
-                    tag = f"{len(m['streams'])} stream" if m["streams"] else "KHONG co stream"
-                    print(f"   -> {m['home']} vs {m['away']}: {tag}")
-
-        finally:
-            await browser.close()
-
-    thumb_tasks = [
-        make_thumb_async(m["logo_home"], m["logo_away"], m["match_id"], executor)
-        for m in match_data
-    ]
-    thumb_results = await asyncio.gather(*thumb_tasks)
-    for m, img_url in zip(match_data, thumb_results):
+    thumbs = list(executor.map(
+        lambda m: (_build_and_save_thumb(m["logo_home"], m["logo_away"], m["match_id"])
+                   if (m["logo_home"] and m["logo_away"]) else ""),
+        match_data))
+    executor.shutdown(wait=True)
+    for m, img_url in zip(match_data, thumbs):
         m["img_url"] = img_url or m["avatar"] or m["logo_home"] or COVER_IMAGE
-    executor.shutdown(wait=False)
 
+    # ── Xuat file ──
     json_output = {
         "name": f"{SITE_NAME} ({now_str})",
         "image": {"url": COVER_IMAGE},
@@ -775,10 +359,9 @@ async def main():
     m3u_content = f"#EXTM3U\n#PLAYLIST: {SITE_NAME} ({now_str})\n"
     vlc_content = f"#EXTM3U\n#PLAYLIST: {SITE_NAME} ({now_str})\n"
 
-    def make_entry(m, stream_url, blv_name, quality):
-        blv_qual = f"{blv_name} - {quality}" if blv_name else ""
-        title    = build_title(m, blv_qual)
-        entry_id = generate_id(m["url"] + blv_qual)
+    def make_entry(m, stream_url, blv_name):
+        title    = build_title(m, blv_name)
+        entry_id = generate_id(m["url"] + blv_name)
         group    = "LIVE" if m["is_live"] else "UPCOMING"
         stream   = stream_url or "http://0.0.0.0/not-live"
         referer  = BASE_DOMAIN + "/"
@@ -835,15 +418,9 @@ async def main():
     total_entries = 0
     for m in match_data:
         group_idx = 0 if m["is_live"] else 1
-        if m["is_live"] and m["streams"]:
-            for s in m["streams"]:
-                cj, ml, vl = make_entry(m, s["stream_url"], s["blv_name"], s["quality"])
-                json_output["groups"][group_idx]["channels"].append(cj)
-                m3u_content += ml
-                vlc_content += vl
-                total_entries += 1
-        else:
-            cj, ml, vl = make_entry(m, "", "", "")
+        entries = build_entries(m)
+        for stream_url, blv in entries:
+            cj, ml, vl = make_entry(m, stream_url, blv)
             json_output["groups"][group_idx]["channels"].append(cj)
             m3u_content += ml
             vlc_content += vl
@@ -856,13 +433,14 @@ async def main():
     with open(f"{OUT_PREFIX}_vlc.txt", "w", encoding="utf-8") as f:
         f.write(vlc_content)
 
-    live_count     = sum(1 for m in match_data if m["is_live"])
-    upcoming_count = len(match_data) - live_count
+    with_stream = sum(1 for g in json_output["groups"] for ch in g["channels"]
+                      if ch["sources"][0]["contents"][0]["streams"][0]["stream_links"][0]["url"])
     print(f"\n✅ Hoan thanh luc: {now_str} (Gio VN)")
-    print(f"   🔴 Live: {live_count} tran  |  🗓 Sắp diễn ra: {upcoming_count} tran")
-    print(f"   📺 Tong entries (BLV x chat luong): {total_entries}")
+    print(f"   🔴 Live: {live_count} tran  |  🗓 Sắp diễn ra: "
+          f"{len(match_data) - live_count} tran")
+    print(f"   📺 Tong entries: {total_entries} (co link stream: {with_stream})")
     print(f"   📄 Da xuat: {OUT_PREFIX}.json | {OUT_PREFIX}_iptv.txt | {OUT_PREFIX}_vlc.txt")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
