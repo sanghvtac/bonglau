@@ -6,6 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -18,12 +19,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Crawler gọi API JSON, có 2 tầng:
-      #   1. requests  - nhanh, không cần Chromium
-      #   2. Playwright - dự phòng khi Cloudflare trả 403 cho requests
-      #                   (đúng trường hợp IP của GitHub Actions)
-      # Vì vậy vẫn phải cài Chromium. Nếu log báo "Transport: requests"
-      # nhiều lần liên tiếp thì có thể bỏ bước cài chromium cho nhanh.
+      # Crawler chạy hoàn toàn bằng Playwright, KHÔNG tự gọi /api/.
+      # Nó mở trang lịch để đọc DOM, rồi mở từng trang trận và rình
+      # request .m3u8 mà player tự phát ra — đúng cách crawl_thiendinh.py
+      # và crawl_hoiquan.py vẫn chạy được trên GitHub Actions.
+      # requests + Pillow chỉ dùng để ghép logo thành ảnh thumbnail.
       - name: Install dependencies
         run: |
           pip install requests Pillow playwright --quiet
