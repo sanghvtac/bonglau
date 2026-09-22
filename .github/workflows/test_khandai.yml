@@ -19,15 +19,43 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Crawler chạy hoàn toàn bằng Playwright, KHÔNG tự gọi /api/.
-      # requests + Pillow chỉ dùng để ghép logo thành ảnh thumbnail.
+      # ── Rút ngắn thời gian cài ──
+      # 1. Máy chạy của GitHub đã có sẵn Google Chrome, script dùng luôn nó.
+      #    Vì vậy KHÔNG cần tải Chromium của Playwright nữa.
+      # 2. Vẫn cache thư mục Chromium để dự phòng: nếu một ngày nào đó máy
+      #    chạy không còn Chrome, bước tải chỉ chạy đúng một lần rồi lấy
+      #    từ cache cho các lần sau.
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-khandai-v1
+
+      - name: Cache Playwright browsers
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium-v1
+
+      - name: Install Python packages
+        run: pip install requests Pillow playwright --quiet
+
       # xvfb cho phép chạy Chrome CÓ GIAO DIỆN trên màn hình ảo — Chrome
       # headless bị Cloudflare nhận diện dễ hơn hẳn Chrome thật.
-      - name: Install dependencies
+      - name: Install xvfb
+        run: sudo apt-get install -y -qq xvfb
+
+      # Chỉ chạy khi máy chạy không có sẵn Chrome VÀ cache còn trống.
+      - name: Download Chromium (dự phòng)
+        if: steps.pw-cache.outputs.cache-hit != 'true'
         run: |
-          pip install requests Pillow playwright --quiet
-          playwright install chromium --with-deps
-          sudo apt-get install -y xvfb
+          if ! command -v google-chrome >/dev/null 2>&1; then
+            echo "Khong thay Google Chrome -> tai Chromium du phong"
+            playwright install chromium --with-deps
+          else
+            echo "Da co Google Chrome, bo qua buoc tai Chromium"
+          fi
 
       - name: Run khandai crawler
         run: xvfb-run -a --server-args="-screen 0 1440x900x24" python crawl_khandai.py
