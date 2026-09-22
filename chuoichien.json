@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:25 22/09/2026)",
+    "name": "Chuoi Chien TV (11:55 22/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7cfa65e1c17a",
-                    "name": "⚽ 12:00 22/09 U23 Vietnam  VS Uzbekistan U23",
+                    "id": "ch-1ea0b00e5480",
+                    "name": "⚽ 12:00 22/09 U23 Vietnam  VS Uzbekistan U23 [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7cfa65e1c17a",
+                            "id": "src-1ea0b00e5480",
                             "contents": [
                                 {
-                                    "id": "ct-7cfa65e1c17a",
+                                    "id": "ct-1ea0b00e5480",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639460/1639460"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-42945aeb079a",
-                    "name": "⚽ 12:00 22/09 Philippines U23 VS Kuwait U23",
+                    "id": "ch-dda795208918",
+                    "name": "⚽ 12:00 22/09 Philippines U23 VS Kuwait U23 [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-42945aeb079a",
+                            "id": "src-dda795208918",
                             "contents": [
                                 {
-                                    "id": "ct-42945aeb079a",
+                                    "id": "ct-dda795208918",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639461/1639461"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b2603106fa3b",
                     "name": "⚽ 14:00 22/09 South Korea VS Thailand",
