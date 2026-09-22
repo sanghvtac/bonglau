@@ -34,7 +34,9 @@ MAX_LIVE_PAGES  = 24      # tran toi da mo trong 1 lan chay (GitHub co gioi han 
 SCHEDULE_TRIES  = 3       # so lan tai lai trang lich neu chua ra card nao
 RETRY_PAUSE     = 20      # giay cho giua 2 lan tai lai
 
-SPORT_FILTER: str | None = "Bóng đá"     # None = lay tat ca cac mon
+# Mon muon lay. Muon them bong chuyen thi doi thanh {"Bóng đá", "Bóng chuyền"};
+# de trong set() de lay tat ca cac mon.
+SPORTS_WANTED = {"Bóng đá"}
 
 # Map icon iconify tren trang -> ten mon
 ICON_SPORT = {
@@ -44,7 +46,6 @@ ICON_SPORT = {
     "table-tennis": "Bóng bàn", "boxing-glove": "Boxing",
     "controller": "Esports", "gamepad-variant": "Esports",
 }
-SPORTS = tuple(dict.fromkeys(ICON_SPORT.values()))
 
 USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -273,15 +274,22 @@ def build_thumb(logo_a, logo_b, match_id):
 # ──────────────────────────────────────────────
 # DOC DU LIEU APP DA NHAN (nghe len)
 # ──────────────────────────────────────────────
-def read_captured(page) -> tuple[list[dict], list[int]]:
-    """Tra ve (danh sach tran, danh sach ma HTTP) tu bay CAPTURE_INIT."""
+def read_captured(page) -> tuple[list[dict], list[tuple[str, int]]]:
+    """Tra ve (danh sach tran, [(duong dan API, ma HTTP)]) tu bay CAPTURE_INIT.
+
+    Quan trong nhat trong so cac lenh app tu goi la:
+        /api/matches/?status=live&page_size=100&ordering=smart
+    No tra ve TAT CA tran dang live kem stream_url va ten BLV, va app phat
+    no ra moi lan tai trang. Chi can nghe duoc lenh nay la co du link.
+    """
     items, codes, seen = [], [], set()
     try:
         caps = page.evaluate("window.__khdCap || []")
     except Exception:
         return items, codes
     for c in caps:
-        codes.append(c.get("status"))
+        u = (c.get("url") or "").split("//")[-1]
+        codes.append((u[u.find("/"):] if "/" in u else u, c.get("status")))
         try:
             data = json.loads(c.get("text") or "")
         except Exception:
@@ -519,9 +527,11 @@ def main():
 
         page = ctx.new_page()
         try:
-            # Tai trang lich. Neu chua co card nao thi tai lai: /api/ bi chan
-            # theo kieu gioi han tan suat (tam thoi), doi mot lat la qua.
-            cards = []
+            # Tai trang lich. Moi lan tai, app tu phat lenh
+            # /api/matches/?status=live... -> nghe duoc lenh nay la co het link.
+            # Neu chua co card, HOAC chua nghe duoc lenh live, thi tai lai:
+            # chan kieu gioi han tan suat chi la tam thoi.
+            cards, codes = [], []
             for lan in range(1, SCHEDULE_TRIES + 1):
                 print(f"[INFO] Mo {SCHEDULE_PAGE} (lan {lan}/{SCHEDULE_TRIES})")
                 try:
@@ -536,12 +546,15 @@ def main():
                         cards = page.evaluate(CARD_EXTRACT_JS)
                     except Exception:
                         cards = []
-                    if cards:
+                    _, codes = read_captured(page)
+                    if cards and any("status=live" in u and s == 200
+                                     for u, s in codes):
                         break
-                if cards:
+                if cards and any("status=live" in u and s == 200 for u, s in codes):
                     break
                 if lan < SCHEDULE_TRIES:
-                    print(f"  [WARN] Chua co card nao, cho {RETRY_PAUSE}s roi thu lai")
+                    thieu = "card" if not cards else "danh sach live"
+                    print(f"  [WARN] Chua co {thieu}, cho {RETRY_PAUSE}s roi thu lai")
                     page.wait_for_timeout(RETRY_PAUSE * 1000)
             print(f"[INFO] Trang lich: doc duoc {len(cards)} card tu DOM")
 
@@ -585,11 +598,14 @@ def main():
                 except Exception as e:
                     print(f"  [WARN] Khong bam duoc tab #{idx}: {e}")
 
-            # Nghe len luon du lieu API ma trang lich da tu goi (neu co)
+            # Nghe len du lieu API ma chinh trang lich da goi
             api_items, codes = read_captured(page)
             if codes:
-                print(f"[INFO] App tu goi API {len(codes)} lan, ma HTTP: "
-                      f"{sorted(set(str(c) for c in codes))}")
+                print(f"[INFO] App tu goi API {len(codes)} lan:")
+                for u, s in sorted(set(codes)):
+                    print(f"        {s}  {u[:96]}")
+            else:
+                print("[WARN] Khong nghe duoc lenh API nao cua app!")
             for m in api_items:
                 a = from_api(m)
                 if a["slug"]:
@@ -602,23 +618,34 @@ def main():
                 sys.exit(1)
 
             # Loc mon
-            if SPORT_FILTER:
+            if SPORTS_WANTED:
                 truoc = len(by_slug)
+                bo = [f"{v.get('home')} vs {v.get('away')} ({v.get('sport')})"
+                      for v in by_slug.values()
+                      if v.get("sport") and v["sport"] not in SPORTS_WANTED]
                 by_slug = {k: v for k, v in by_slug.items()
-                           if not v.get("sport") or v["sport"] == SPORT_FILTER}
-                print(f"[INFO] Loc mon '{SPORT_FILTER}': bo {truoc - len(by_slug)}, "
-                      f"con {len(by_slug)}")
+                           if not v.get("sport") or v["sport"] in SPORTS_WANTED}
+                print(f"[INFO] Chi lay {sorted(SPORTS_WANTED)}: "
+                      f"bo {truoc - len(by_slug)}, con {len(by_slug)}")
+                for x in bo:
+                    print(f"        (bo) {x}")
 
-            # Chon tran can mo trang de lay stream
+            # Tran dang da. Uu tien status that tu API; khong co thi doan
+            # theo gio bat dau.
             def dang_da(m):
                 if m.get("status"):
                     return m["status"] == "live"
                 dt = m.get("start_dt")
                 return bool(dt and dt <= now <= dt + timedelta(hours=LIVE_WINDOW_H))
 
-            candidates = [m for m in by_slug.values() if dang_da(m)]
+            live_all = [m for m in by_slug.values() if dang_da(m)]
+            # Chi mo trang tran cho nhung tran CHUA co link (nghe len that bai).
+            # Nghe duoc danh sach live la da du, khoi mo trang -> nhanh hon va
+            # it request hon, do la dieu kien tien quyet de khong bi chan.
+            candidates = [m for m in live_all if not m.get("streams")]
             candidates.sort(key=lambda m: m.get("start_dt") or now)
-            print(f"[INFO] {len(candidates)} tran dang da -> mo trang lay stream")
+            print(f"[INFO] {len(live_all)} tran dang da, {len(candidates)} tran "
+                  f"chua co link -> mo trang de rinh .m3u8")
 
             for idx, m in enumerate(candidates[:MAX_LIVE_PAGES]):
                 if idx:
