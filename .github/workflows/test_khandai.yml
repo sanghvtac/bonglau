@@ -20,17 +20,27 @@ jobs:
           python-version: '3.11'
 
       # Crawler chạy hoàn toàn bằng Playwright, KHÔNG tự gọi /api/.
-      # Nó mở trang lịch để đọc DOM, rồi mở từng trang trận và rình
-      # request .m3u8 mà player tự phát ra — đúng cách crawl_thiendinh.py
-      # và crawl_hoiquan.py vẫn chạy được trên GitHub Actions.
       # requests + Pillow chỉ dùng để ghép logo thành ảnh thumbnail.
+      # xvfb cho phép chạy Chrome CÓ GIAO DIỆN trên màn hình ảo — Chrome
+      # headless bị Cloudflare nhận diện dễ hơn hẳn Chrome thật.
       - name: Install dependencies
         run: |
           pip install requests Pillow playwright --quiet
           playwright install chromium --with-deps
+          sudo apt-get install -y xvfb
 
       - name: Run khandai crawler
-        run: python crawl_khandai.py
+        run: xvfb-run -a --server-args="-screen 0 1440x900x24" python crawl_khandai.py
+
+      # Nếu bị chặn, script lưu HTML trang thật ra file. Tải về để xem.
+      - name: Upload debug HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: khandai-debug
+          path: khandai_debug_*.html
+          if-no-files-found: ignore
+          retention-days: 3
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v5
