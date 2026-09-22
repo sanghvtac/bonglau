@@ -561,13 +561,30 @@ def main():
         # Chrome headless bi Cloudflare nhan dien de hon han chrome that;
         # chay duoi xvfb la chrome that, chi khac la ve vao man hinh ao.
         headless = not os.environ.get("DISPLAY")
-        print(f"[INFO] Chromium: {'headless' if headless else 'co giao dien (xvfb)'}")
-        browser = p.chromium.launch(headless=headless, args=[
+        args = [
             "--autoplay-policy=no-user-gesture-required",   # cho player tu chay
             "--mute-audio",
             "--disable-blink-features=AutomationControlled",
             "--no-sandbox", "--disable-dev-shm-usage",
-        ])
+        ]
+        # May chay cua GitHub da cai san Google Chrome. Dung luon no thi
+        # workflow khoi phai tai Chromium (tiet kiem phan lon thoi gian cai),
+        # va Chrome that con it bi nhan dien hon Chromium di kem.
+        # Neu khong co Chrome thi quay ve Chromium nhu cu.
+        browser = None
+        for kenh in ("chrome", None):
+            try:
+                browser = p.chromium.launch(headless=headless, args=args,
+                                            **({"channel": kenh} if kenh else {}))
+                print(f"[INFO] Trinh duyet: {kenh or 'chromium (playwright)'}, "
+                      f"{'headless' if headless else 'co giao dien (xvfb)'}")
+                break
+            except Exception as e:
+                if kenh:
+                    print(f"[INFO] Khong co Google Chrome ({str(e)[:60]}), "
+                          f"dung Chromium di kem")
+                else:
+                    raise
         ctx = browser.new_context(
             user_agent=USER_AGENT, locale="vi-VN",
             timezone_id="Asia/Ho_Chi_Minh",
