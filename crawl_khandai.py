@@ -527,11 +527,16 @@ def main():
 
         page = ctx.new_page()
         try:
-            # Tai trang lich. Moi lan tai, app tu phat lenh
-            # /api/matches/?status=live... -> nghe duoc lenh nay la co het link.
-            # Neu chua co card, HOAC chua nghe duoc lenh live, thi tai lai:
-            # chan kieu gioi han tan suat chi la tam thoi.
-            cards, codes = [], []
+            # Tai trang lich.
+            #
+            # LUAT SAT: chi tai lai khi KHONG co card nao. Tuyet doi khong
+            # tai lai chi vi thieu danh sach live.
+            # Bai hoc that (09:34 22/09): lan tai dau da co card, nhung vi
+            # thieu danh sach live nen script tai lai -> lan 2 va 3 bi site
+            # chan, mat sach card, ket qua ve 0. Cang tai nhieu cang de bi
+            # chan, nen moi lan tai them la mot canh bac. Thieu danh sach
+            # live thi da co duong khac: mo trang tran de rinh .m3u8.
+            cards = []
             for lan in range(1, SCHEDULE_TRIES + 1):
                 print(f"[INFO] Mo {SCHEDULE_PAGE} (lan {lan}/{SCHEDULE_TRIES})")
                 try:
@@ -539,22 +544,20 @@ def main():
                               timeout=60000)
                 except Exception as e:
                     print(f"  [WARN] Tai trang loi: {e}")
-                for _ in range(30):
+                for _ in range(25):
                     page.wait_for_timeout(1000)
                     try:
                         page.evaluate(KILL_OVERLAY)
-                        cards = page.evaluate(CARD_EXTRACT_JS)
+                        got = page.evaluate(CARD_EXTRACT_JS)
                     except Exception:
-                        cards = []
-                    _, codes = read_captured(page)
-                    if cards and any("status=live" in u and s == 200
-                                     for u, s in codes):
+                        got = []
+                    if got:
+                        cards = got
                         break
-                if cards and any("status=live" in u and s == 200 for u, s in codes):
+                if cards:
                     break
                 if lan < SCHEDULE_TRIES:
-                    thieu = "card" if not cards else "danh sach live"
-                    print(f"  [WARN] Chua co {thieu}, cho {RETRY_PAUSE}s roi thu lai")
+                    print(f"  [WARN] Chua co card nao, cho {RETRY_PAUSE}s roi thu lai")
                     page.wait_for_timeout(RETRY_PAUSE * 1000)
             print(f"[INFO] Trang lich: doc duoc {len(cards)} card tu DOM")
 
@@ -597,6 +600,20 @@ def main():
                     print(f"[INFO] Tab '{nhan}': them {them} tran")
                 except Exception as e:
                     print(f"  [WARN] Khong bam duoc tab #{idx}: {e}")
+
+            # Neu chua nghe duoc danh sach live, bam ve tab hom nay: app se
+            # goi lai API ma KHONG phai tai lai trang -> them mot co hoi
+            # mien phi, khong lam tang rui ro bi chan.
+            _, codes0 = read_captured(page)
+            if not any("status=live" in u and s == 200 for u, s in codes0) \
+                    and n_tabs and DAYS_TO_CRAWL > 1:
+                try:
+                    print("[INFO] Chua co danh sach live -> bam ve tab hom nay")
+                    page.evaluate(KILL_OVERLAY)
+                    tabs.nth(today_idx).click(timeout=8000)
+                    page.wait_for_timeout(6000)
+                except Exception as e:
+                    print(f"  [WARN] Khong bam duoc tab hom nay: {e}")
 
             # Nghe len du lieu API ma chinh trang lich da goi
             api_items, codes = read_captured(page)
