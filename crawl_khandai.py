@@ -500,6 +500,53 @@ def build_title(m: dict, blv: str = "") -> str:
 
 
 # ──────────────────────────────────────────────
+# CHAN DOAN: khi khong doc duoc card, in ro trang that su tra ve cai gi
+# thay vi de phai doan.
+# ──────────────────────────────────────────────
+CHALLENGE_RE = re.compile(
+    r'just a moment|checking your browser|cf[-_]chl|challenge-platform|'
+    r'attention required|cf-browser-verification|enable javascript and cookies|'
+    r'ddos-guard|are you human|captcha', re.I)
+
+
+def dump_page(page, resp, lan: int):
+    try:
+        html = page.content()
+    except Exception as e:
+        print(f"  [DEBUG] Khong doc duoc noi dung trang: {e}")
+        return
+    try:
+        tieu_de = page.title()
+    except Exception:
+        tieu_de = "?"
+    try:
+        chu = page.evaluate(
+            "document.body ? document.body.innerText.slice(0,500) : ''")
+    except Exception:
+        chu = ""
+    print(f"  [DEBUG] HTTP {resp.status if resp else '?'} | url sau khi tai: "
+          f"{page.url}")
+    print(f"  [DEBUG] title: {tieu_de!r}")
+    print(f"  [DEBUG] do dai HTML: {len(html)} ky tu")
+    print(f"  [DEBUG] chu tren trang: "
+          f"{' '.join(chu.split())[:300]!r}")
+    if CHALLENGE_RE.search(html):
+        print("  [DEBUG] >>> DAY LA TRANG KIEM TRA CHONG BOT "
+              "(Cloudflare/DDoS-Guard), khong phai trang lich.")
+    elif len(html) < 3000:
+        print("  [DEBUG] >>> Trang gan nhu rong: bi chan hoac tra ve trang loi.")
+    else:
+        print("  [DEBUG] >>> Trang co noi dung nhung khong khop selector card: "
+              "co the site da doi giao dien.")
+    try:
+        with open(f"khandai_debug_{lan}.html", "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"  [DEBUG] Da luu khandai_debug_{lan}.html de xem chi tiet")
+    except Exception:
+        pass
+
+
+# ──────────────────────────────────────────────
 # MAIN
 # ──────────────────────────────────────────────
 def main():
@@ -510,7 +557,12 @@ def main():
     by_slug: dict[str, dict] = {}
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(args=[
+        # Chay CO GIAO DIEN khi co man hinh ao (workflow dung xvfb-run).
+        # Chrome headless bi Cloudflare nhan dien de hon han chrome that;
+        # chay duoi xvfb la chrome that, chi khac la ve vao man hinh ao.
+        headless = not os.environ.get("DISPLAY")
+        print(f"[INFO] Chromium: {'headless' if headless else 'co giao dien (xvfb)'}")
+        browser = p.chromium.launch(headless=headless, args=[
             "--autoplay-policy=no-user-gesture-required",   # cho player tu chay
             "--mute-audio",
             "--disable-blink-features=AutomationControlled",
@@ -520,7 +572,14 @@ def main():
             user_agent=USER_AGENT, locale="vi-VN",
             timezone_id="Asia/Ho_Chi_Minh",
             viewport={"width": 1440, "height": 900},
-            extra_http_headers={"Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8"})
+            extra_http_headers={
+                "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8",
+                "sec-ch-ua": '"Chromium";v="122", "Not(A:Brand";v="24", '
+                             '"Google Chrome";v="122"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": '"Windows"',
+                "Upgrade-Insecure-Requests": "1",
+            })
         ctx.add_init_script(
             "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
         ctx.add_init_script(CAPTURE_INIT)
@@ -539,9 +598,10 @@ def main():
             cards = []
             for lan in range(1, SCHEDULE_TRIES + 1):
                 print(f"[INFO] Mo {SCHEDULE_PAGE} (lan {lan}/{SCHEDULE_TRIES})")
+                resp = None
                 try:
-                    page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded",
-                              timeout=60000)
+                    resp = page.goto(SCHEDULE_PAGE, wait_until="domcontentloaded",
+                                     timeout=60000)
                 except Exception as e:
                     print(f"  [WARN] Tai trang loi: {e}")
                 for _ in range(25):
@@ -556,6 +616,7 @@ def main():
                         break
                 if cards:
                     break
+                dump_page(page, resp, lan)      # 0 card -> noi ro trang co gi
                 if lan < SCHEDULE_TRIES:
                     print(f"  [WARN] Chua co card nao, cho {RETRY_PAUSE}s roi thu lai")
                     page.wait_for_timeout(RETRY_PAUSE * 1000)
