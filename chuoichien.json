@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:55 22/09/2026)",
+    "name": "Chuoi Chien TV (16:55 22/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-4f779aeec7c7",
-                    "name": "⚽ 17:00 22/09 U23 Hàn Quốc  VS Saudi Arabia U23",
+                    "id": "ch-e89a654d090a",
+                    "name": "⚽ 17:00 22/09 U23 Hàn Quốc  VS Saudi Arabia U23 [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4f779aeec7c7",
+                            "id": "src-e89a654d090a",
                             "contents": [
                                 {
-                                    "id": "ct-4f779aeec7c7",
+                                    "id": "ct-e89a654d090a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639468/1639468"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-dbcd919c3af6",
                     "name": "⚽ 17:20 22/09 Japan VS China",
