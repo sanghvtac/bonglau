@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 22/09/2026)",
+    "name": "Chuoi Chien TV (17:25 22/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-dbcd919c3af6",
-                    "name": "⚽ 17:20 22/09 Japan VS China",
+                    "id": "ch-f2cd0772ce7d",
+                    "name": "⚽ 17:20 22/09 Japan VS China [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dbcd919c3af6",
+                            "id": "src-f2cd0772ce7d",
                             "contents": [
                                 {
-                                    "id": "ct-dbcd919c3af6",
+                                    "id": "ct-f2cd0772ce7d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/996965/996965"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1bf90acb25c0",
-                    "name": "⚽ 18:00 22/09 Santa Clara U23 VS Portimonense U23",
+                    "id": "ch-185220caea06",
+                    "name": "⚽ 18:00 22/09 Santa Clara U23 VS Portimonense U23 [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1bf90acb25c0",
+                            "id": "src-185220caea06",
                             "contents": [
                                 {
-                                    "id": "ct-1bf90acb25c0",
+                                    "id": "ct-185220caea06",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1598700/1598700"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-22dd5606db71",
                     "name": "⚽ 20:00 22/09 France VS Romania",
