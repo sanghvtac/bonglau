@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 22/09/2026)",
+    "name": "Chuoi Chien TV (23:55 22/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,58 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-78ec65b5c851",
-                    "name": "⚽ 21:30 22/09 Dumbrăviţa VS CSM Reşiţa",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1602487.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-78ec65b5c851",
-                            "contents": [
-                                {
-                                    "id": "ct-78ec65b5c851",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1602487/1602487"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-8aef4cfad661",
-                    "name": "⚽ 23:45 22/09 Inter Milano W VS Häcken",
+                    "id": "ch-a6c538cd4d14",
+                    "name": "⚽ 23:45 22/09 Inter Milano W VS Häcken [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8aef4cfad661",
+                            "id": "src-a6c538cd4d14",
                             "contents": [
                                 {
-                                    "id": "ct-8aef4cfad661",
+                                    "id": "ct-a6c538cd4d14",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638309/1638309"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-605385992264",
-                    "name": "⚽ 00:00 23/09 ASA Targu Mures VS CS Dinamo București",
+                    "id": "ch-c57268c5345b",
+                    "name": "⚽ 00:00 23/09 ASA Targu Mures VS CS Dinamo București [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-605385992264",
+                            "id": "src-c57268c5345b",
                             "contents": [
                                 {
-                                    "id": "ct-605385992264",
+                                    "id": "ct-c57268c5345b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1602489/1602489"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9e31879cf49b",
                     "name": "⚽ 00:15 23/09 Muaither SC VS Al-Khor",
