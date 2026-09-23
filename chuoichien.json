@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:55 23/09/2026)",
+    "name": "Chuoi Chien TV (19:25 23/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-155604f9fb23",
-                    "name": "⚽ 17:30 23/09 Japan U23 VS U23 Thailand  [A Ngao - HD1]",
+                    "id": "ch-5d109fbd7575",
+                    "name": "⚽ 17:30 23/09 Japan U23 VS U23 Thailand ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-155604f9fb23",
+                            "id": "src-5d109fbd7575",
                             "contents": [
                                 {
-                                    "id": "ct-155604f9fb23",
+                                    "id": "ct-5d109fbd7575",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1639463/1639463"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -51,8 +56,8 @@
                     ]
                 },
                 {
-                    "id": "ch-ea1df7c9c0e5",
-                    "name": "⚽ 17:30 23/09 Kyrgyz Republic U23 VS U23 Hong Kong  [Chuối Lá - FHD1]",
+                    "id": "ch-2a3120a98723",
+                    "name": "⚽ 17:30 23/09 Kyrgyz Republic U23 VS U23 Hong Kong ",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -63,20 +68,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ea1df7c9c0e5",
+                            "id": "src-2a3120a98723",
                             "contents": [
                                 {
-                                    "id": "ct-ea1df7c9c0e5",
+                                    "id": "ct-2a3120a98723",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1639464/1639464"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -91,13 +96,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-d6ce69272e5b",
                     "name": "⚽ 20:00 23/09 Malawi U20 VS Comoros U20",
