@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:55 23/09/2026)",
+    "name": "Chuoi Chien TV (12:25 23/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-041eb9386971",
-                    "name": "⚽ 12:30 23/09 China PR U23 VS UAE U23",
+                    "id": "ch-b136d7362d5a",
+                    "name": "⚽ 12:30 23/09 China PR U23 VS UAE U23 [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-041eb9386971",
+                            "id": "src-b136d7362d5a",
                             "contents": [
                                 {
-                                    "id": "ct-041eb9386971",
+                                    "id": "ct-b136d7362d5a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639462/1639462"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-8fe7fcaf7c0c",
-                    "name": "⚽ 12:30 23/09 U23 Iran  VS Korea DPR U23",
+                    "id": "ch-b7c70ec1d485",
+                    "name": "⚽ 12:30 23/09 U23 Iran  VS Korea DPR U23 [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8fe7fcaf7c0c",
+                            "id": "src-b7c70ec1d485",
                             "contents": [
                                 {
-                                    "id": "ct-8fe7fcaf7c0c",
+                                    "id": "ct-b7c70ec1d485",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639469/1639469"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c3c529285d0a",
                     "name": "⚽ 15:00 23/09 Gamba Osaka VS Tokushima Vortis",
