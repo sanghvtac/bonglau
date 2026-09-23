@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 24/09/2026)",
+    "name": "Chuoi Chien TV (00:55 24/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bdef7eded5a4",
-                    "name": "⚽ 01:00 24/09 Saudi Arabia VS Kuwait",
+                    "id": "ch-831160c2705d",
+                    "name": "⚽ 01:00 24/09 Saudi Arabia VS Kuwait [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bdef7eded5a4",
+                            "id": "src-831160c2705d",
                             "contents": [
                                 {
-                                    "id": "ct-bdef7eded5a4",
+                                    "id": "ct-831160c2705d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1637929/1637929"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-91669b55eda1",
                     "name": "⚽ 02:00 24/09 Barcelona W VS Paris FC W",
