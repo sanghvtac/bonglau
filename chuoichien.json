@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 24/09/2026)",
+    "name": "Chuoi Chien TV (08:55 24/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-cf68bde5a1da",
-                    "name": "⚽ 09:00 24/09 Vancouver FC VS York United",
+                    "id": "ch-617a6461a20a",
+                    "name": "⚽ 09:00 24/09 Vancouver FC VS York United [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-cf68bde5a1da",
+                            "id": "src-617a6461a20a",
                             "contents": [
                                 {
-                                    "id": "ct-cf68bde5a1da",
+                                    "id": "ct-617a6461a20a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1517352/1517352"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b5d24a00c7b6",
                     "name": "⚽ 16:00 24/09 Laos VS Brunei",
