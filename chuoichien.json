@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 24/09/2026)",
+    "name": "Chuoi Chien TV (20:55 24/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-316279eecb51",
-                    "name": "⚽ 18:35 24/09 China VS Maldives [Chuối Kem - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1640057.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-316279eecb51",
-                            "contents": [
-                                {
-                                    "id": "ct-316279eecb51",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-a09d8bf0624f",
-                    "name": "⚽ 19:00 24/09 Myanmar VS Timor-Leste [Chuối Sấy - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1641701.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-a09d8bf0624f",
-                            "contents": [
-                                {
-                                    "id": "ct-a09d8bf0624f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-249550172e69",
                     "name": "⚽ 20:00 24/09 Namibia VS Congo [Chuối To - FHD1]",
@@ -133,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1435d4e497e4",
-                    "name": "⚽ 21:00 24/09 Uzbekistan VS Iran",
+                    "id": "ch-cef2bc1cd41a",
+                    "name": "⚽ 21:00 24/09 Uzbekistan VS Iran [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1435d4e497e4",
+                            "id": "src-cef2bc1cd41a",
                             "contents": [
                                 {
-                                    "id": "ct-1435d4e497e4",
+                                    "id": "ct-cef2bc1cd41a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-5a979ab7f153",
+                    "name": "⚽ 19:00 24/09 Myanmar VS Timor-Leste",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1641701.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5a979ab7f153",
+                            "contents": [
+                                {
+                                    "id": "ct-5a979ab7f153",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638591/1638591"
+                                                            "value": "https://live20.chuoichientv.com/live/1641701/1641701"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -184,7 +142,7 @@
                 },
                 {
                     "id": "ch-19b715397799",
-                    "name": "⚽ 22:00 24/09 United Arab Emirates VS Yemen",
+                    "name": "⚽ 22:55 24/09 United Arab Emirates VS Yemen",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
