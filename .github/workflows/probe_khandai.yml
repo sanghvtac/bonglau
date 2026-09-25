@@ -1,0 +1,36 @@
+name: Probe khandai API
+
+# Thử xem máy GitHub có gọi THẲNG được API khandai không.
+# Chạy riêng, không đụng tới crawler chính, không commit gì vào repo.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install requests --quiet
+
+      - name: Probe API
+        run: python probe_khandai.py
+
+      # Lưu nguyên phản hồi của từng lần gọi để xem chi tiết nếu cần.
+      - name: Upload responses
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: khandai-probe
+          path: probe_out/
+          if-no-files-found: ignore
+          retention-days: 3
