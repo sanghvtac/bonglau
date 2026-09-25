@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:25 25/09/2026)",
+    "name": "Chuoi Chien TV (12:55 25/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-60a3786e4158",
-                    "name": "⚽ 13:00 25/09 China W VS Vietnam W",
+                    "id": "ch-df18f2a4736d",
+                    "name": "⚽ 13:00 25/09 China W VS Vietnam W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-60a3786e4158",
+                            "id": "src-df18f2a4736d",
                             "contents": [
                                 {
-                                    "id": "ct-60a3786e4158",
+                                    "id": "ct-df18f2a4736d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1641131/1641131"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b88dc5d3c5a7",
                     "name": "⚽ 15:00 25/09 Bangladesh VS Malaysia",
