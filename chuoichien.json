@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 26/09/2026)",
+    "name": "Chuoi Chien TV (22:55 26/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e255eeccae91",
-                    "name": "⚽ 23:00 26/09 San Marino VS Finland",
+                    "id": "ch-a22433081f5d",
+                    "name": "⚽ 23:00 26/09 San Marino VS Finland [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e255eeccae91",
+                            "id": "src-a22433081f5d",
                             "contents": [
                                 {
-                                    "id": "ct-e255eeccae91",
+                                    "id": "ct-a22433081f5d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528888/1528888"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-5b32721ff08e",
-                    "name": "⚽ 23:00 26/09 Iceland VS Estonia",
+                    "id": "ch-dd0083f37e3d",
+                    "name": "⚽ 23:00 26/09 Iceland VS Estonia [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5b32721ff08e",
+                            "id": "src-dd0083f37e3d",
                             "contents": [
                                 {
-                                    "id": "ct-5b32721ff08e",
+                                    "id": "ct-dd0083f37e3d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528890/1528890"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-67972d03df75",
                     "name": "⚽ 01:00 27/09 Oman VS Saudi Arabia",
