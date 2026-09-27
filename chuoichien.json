@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 28/09/2026)",
+    "name": "Chuoi Chien TV (00:55 28/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-501d7fdcaca6",
-                    "name": "⚽ 23:00 27/09 Serbia VS Netherlands [Chuối Ngao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528896.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-501d7fdcaca6",
-                            "contents": [
-                                {
-                                    "id": "ct-501d7fdcaca6",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoingaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-0fb06cd21f46",
-                    "name": "⚽ 23:00 27/09 Denmark VS Wales [Trốc Tru - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528897.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-0fb06cd21f46",
-                            "contents": [
-                                {
-                                    "id": "ct-0fb06cd21f46",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-048acd5d11c7",
                     "name": "⚽ 23:00 27/09 Austria VS Kosovo [Chuối Chao - FHD1]",
@@ -133,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-4b80981c9e96",
-                    "name": "⚽ 01:00 28/09 Bahrain VS United Arab Emirates",
+                    "id": "ch-47a7cdefe54f",
+                    "name": "⚽ 01:00 28/09 Bahrain VS United Arab Emirates [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4b80981c9e96",
+                            "id": "src-47a7cdefe54f",
                             "contents": [
                                 {
-                                    "id": "ct-4b80981c9e96",
+                                    "id": "ct-47a7cdefe54f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-4ddfdfa20ff3",
+                    "name": "⚽ 23:00 27/09 Serbia VS Netherlands",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528896.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-4ddfdfa20ff3",
+                            "contents": [
+                                {
+                                    "id": "ct-4ddfdfa20ff3",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +124,49 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1637935/1637935"
+                                                            "value": "https://live20.chuoichientv.com/live/1528896/1528896"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-22892ee72f62",
+                    "name": "⚽ 23:00 27/09 Denmark VS Wales",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528897.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-22892ee72f62",
+                            "contents": [
+                                {
+                                    "id": "ct-22892ee72f62",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1528897/1528897"
                                                         },
                                                         {
                                                             "key": "User-Agent",
