@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 28/09/2026)",
+    "name": "Chuoi Chien TV (05:55 28/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5bfc56c5943f",
-                    "name": "⚽ 06:00 28/09 Columbus Crew VS Inter Miami",
+                    "id": "ch-8893b248cb66",
+                    "name": "⚽ 06:00 28/09 Columbus Crew VS Inter Miami [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5bfc56c5943f",
+                            "id": "src-8893b248cb66",
                             "contents": [
                                 {
-                                    "id": "ct-5bfc56c5943f",
+                                    "id": "ct-8893b248cb66",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490510/1490510"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-9244ed3426ac",
                     "name": "⚽ 08:00 28/09 Leon VS FC Juarez",
