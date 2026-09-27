@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 27/09/2026)",
+    "name": "Chuoi Chien TV (13:55 27/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-68b83c79e49a",
-                    "name": "⚽ 14:00 27/09 India VS Việt Nam",
+                    "id": "ch-d2efd0e8ef36",
+                    "name": "⚽ 14:00 27/09 India VS Việt Nam [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-68b83c79e49a",
+                            "id": "src-d2efd0e8ef36",
                             "contents": [
                                 {
-                                    "id": "ct-68b83c79e49a",
+                                    "id": "ct-d2efd0e8ef36",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995852/995852"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-8826138e355f",
-                    "name": "⚽ 14:00 27/09 Hong Kong VS Laos",
+                    "id": "ch-21f299b317a2",
+                    "name": "⚽ 14:00 27/09 Hong Kong VS Laos [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8826138e355f",
+                            "id": "src-21f299b317a2",
                             "contents": [
                                 {
-                                    "id": "ct-8826138e355f",
+                                    "id": "ct-21f299b317a2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1641706/1641706"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-16befe1ca562",
                     "name": "⚽ 16:00 27/09 Đồng Tháp VS Thai Nguyen",
