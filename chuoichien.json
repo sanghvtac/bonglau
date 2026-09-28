@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 28/09/2026)",
+    "name": "Chuoi Chien TV (20:55 28/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-38e83797b1e1",
-                    "name": "⚽ 21:00 28/09 Kyrgyzstan W VS Maldives",
+                    "id": "ch-f8d9de813a1f",
+                    "name": "⚽ 21:00 28/09 Kyrgyzstan W VS Maldives [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-38e83797b1e1",
+                            "id": "src-f8d9de813a1f",
                             "contents": [
                                 {
-                                    "id": "ct-38e83797b1e1",
+                                    "id": "ct-f8d9de813a1f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/998477/998477"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1128d502fc95",
                     "name": "⚽ 23:00 28/09 Georgia VS Ukraine",
