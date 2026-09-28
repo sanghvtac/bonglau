@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 28/09/2026)",
+    "name": "Chuoi Chien TV (16:55 28/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-277206105705",
-                    "name": "⚽ 17:00 28/09 Chinese Taipei VS South Korea",
+                    "id": "ch-f3656b6d2067",
+                    "name": "⚽ 17:00 28/09 Chinese Taipei VS South Korea [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-277206105705",
+                            "id": "src-f3656b6d2067",
                             "contents": [
                                 {
-                                    "id": "ct-277206105705",
+                                    "id": "ct-f3656b6d2067",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991840/991840"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2f9f39399856",
                     "name": "⚽ 17:20 28/09 Kazakhstan VS Japan",
