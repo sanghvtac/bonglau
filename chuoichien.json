@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:25 29/09/2026)",
+    "name": "Chuoi Chien TV (12:55 29/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d1d75fb7c4d1",
-                    "name": "⚽ 13:00 29/09 Korea DPR VS China W",
+                    "id": "ch-b2ca16839580",
+                    "name": "⚽ 13:00 29/09 Korea DPR VS China W [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d1d75fb7c4d1",
+                            "id": "src-b2ca16839580",
                             "contents": [
                                 {
-                                    "id": "ct-d1d75fb7c4d1",
+                                    "id": "ct-b2ca16839580",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1642007/1642007"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b0729f3308e8",
                     "name": "⚽ 14:00 29/09 Iran VS Indonesia",
