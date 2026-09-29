@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 30/09/2026)",
+    "name": "Chuoi Chien TV (06:55 30/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bc68b9ed6010",
-                    "name": "⚽ 07:00 30/09 USA VS Chile",
+                    "id": "ch-bc343aa77782",
+                    "name": "⚽ 07:00 30/09 USA VS Chile [Chuối Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bc68b9ed6010",
+                            "id": "src-bc343aa77782",
                             "contents": [
                                 {
-                                    "id": "ct-bc68b9ed6010",
+                                    "id": "ct-bc343aa77782",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoingaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629002/1629002"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-00ee08ecd782",
                     "name": "⚽ 08:05 30/09 Atlético Nacional VS Millonarios",
