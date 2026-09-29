@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 29/09/2026)",
+    "name": "Chuoi Chien TV (22:55 29/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c60ffdb592a3",
-                    "name": "⚽ 23:00 29/09 Finland VS Belarus",
+                    "id": "ch-960a975d47d1",
+                    "name": "⚽ 23:00 29/09 Finland VS Belarus [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c60ffdb592a3",
+                            "id": "src-960a975d47d1",
                             "contents": [
                                 {
-                                    "id": "ct-c60ffdb592a3",
+                                    "id": "ct-960a975d47d1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528912/1528912"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d0a5aa9900a9",
                     "name": "⚽ 01:45 30/09 Spain VS Croatia",
