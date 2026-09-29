@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 29/09/2026)",
+    "name": "Chuoi Chien TV (10:55 29/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5264f688e450",
-                    "name": "⚽ 11:00 29/09 Philippines VS Chinese Taipei",
+                    "id": "ch-c5221b688685",
+                    "name": "⚽ 11:00 29/09 Philippines VS Chinese Taipei [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5264f688e450",
+                            "id": "src-c5221b688685",
                             "contents": [
                                 {
-                                    "id": "ct-5264f688e450",
+                                    "id": "ct-c5221b688685",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993413/993413"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d1d75fb7c4d1",
                     "name": "⚽ 13:00 29/09 Korea DPR VS China W",
