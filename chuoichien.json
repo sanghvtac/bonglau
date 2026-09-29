@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:55 30/09/2026)",
+    "name": "Chuoi Chien TV (05:25 30/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-29ad916b47fb",
-                    "name": "⚽ 05:30 30/09 Botafogo SP VS Ponte Preta",
+                    "id": "ch-2c70fc44cbcd",
+                    "name": "⚽ 05:30 30/09 Botafogo SP VS Ponte Preta [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-29ad916b47fb",
+                            "id": "src-2c70fc44cbcd",
                             "contents": [
                                 {
-                                    "id": "ct-29ad916b47fb",
+                                    "id": "ct-2c70fc44cbcd",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1520891/1520891"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bc68b9ed6010",
                     "name": "⚽ 07:00 30/09 USA VS Chile",
