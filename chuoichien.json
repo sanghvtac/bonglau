@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 29/09/2026)",
+    "name": "Chuoi Chien TV (15:55 29/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c1811b301dd0",
-                    "name": "⚽ 16:00 29/09 Philippines VS Pakistan",
+                    "id": "ch-828efee6f32f",
+                    "name": "⚽ 16:00 29/09 Philippines VS Pakistan [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c1811b301dd0",
+                            "id": "src-828efee6f32f",
                             "contents": [
                                 {
-                                    "id": "ct-c1811b301dd0",
+                                    "id": "ct-828efee6f32f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1641710/1641710"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-45d15aa9fb44",
                     "name": "⚽ 17:00 29/09 Australia VS Brazil",
