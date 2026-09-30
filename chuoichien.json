@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 30/09/2026)",
+    "name": "Chuoi Chien TV (15:55 30/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-b1b4e25a4245",
-                    "name": "⚽ 16:00 30/09 Timor-Leste VS Cambodia",
+                    "id": "ch-55dd47edee52",
+                    "name": "⚽ 16:00 30/09 Timor-Leste VS Cambodia [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b1b4e25a4245",
+                            "id": "src-55dd47edee52",
                             "contents": [
                                 {
-                                    "id": "ct-b1b4e25a4245",
+                                    "id": "ct-55dd47edee52",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1641712/1641712"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ddc707fc1c83",
                     "name": "⚽ 17:30 30/09 Uzbekistan U23 VS Japan U23",
