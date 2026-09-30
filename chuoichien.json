@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 01/10/2026)",
+    "name": "Chuoi Chien TV (06:55 01/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-d0d7b8124e5f",
-                    "name": "⚽ 07:00 01/10 Argentina VS Bolivia",
+                    "id": "ch-58bc522b6ff2",
+                    "name": "⚽ 07:00 01/10 Argentina VS Bolivia [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d0d7b8124e5f",
+                            "id": "src-58bc522b6ff2",
                             "contents": [
                                 {
-                                    "id": "ct-d0d7b8124e5f",
+                                    "id": "ct-58bc522b6ff2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640511/1640511"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-22c1ffea1f17",
                     "name": "⚽ 08:00 01/10 India VS Pakistan",
