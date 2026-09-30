@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:55 30/09/2026)",
+    "name": "Chuoi Chien TV (12:25 30/09/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-f31c022b4dba",
-                    "name": "⚽ 13:00 30/09 U23 Hàn Quốc  VS China PR U23",
+                    "id": "ch-2d844d5b5f8d",
+                    "name": "⚽ 13:00 30/09 U23 Hàn Quốc  VS China PR U23 [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f31c022b4dba",
+                            "id": "src-2d844d5b5f8d",
                             "contents": [
                                 {
-                                    "id": "ct-f31c022b4dba",
+                                    "id": "ct-2d844d5b5f8d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1642010/1642010"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b1b4e25a4245",
                     "name": "⚽ 16:00 30/09 Timor-Leste VS Cambodia",
