@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 01/10/2026)",
+    "name": "Chuoi Chien TV (22:55 01/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,27 +9,69 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-bc53fbe83a6e",
-                    "name": "⚽ 21:00 01/10 Uzbekistan VS Syria [Chuối Lá - FHD1]",
+                    "id": "ch-a25df815ba7c",
+                    "name": "⚽ 23:00 01/10 Azerbaijan VS Liechtenstein [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1640512.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528916.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-bc53fbe83a6e",
+                            "id": "src-a25df815ba7c",
                             "contents": [
                                 {
-                                    "id": "ct-bc53fbe83a6e",
+                                    "id": "ct-a25df815ba7c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-106ac34dc2f4",
+                    "name": "⚽ 23:00 01/10 Guinea VS Kenya [Chuối Kem - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545851.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-106ac34dc2f4",
+                            "contents": [
+                                {
+                                    "id": "ct-106ac34dc2f4",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -57,22 +99,22 @@
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-08a1f49aa489",
-                    "name": "⚽ 23:00 01/10 Azerbaijan VS Liechtenstein",
+                    "id": "ch-bd6225e2a23e",
+                    "name": "⚽ 21:00 01/10 Uzbekistan VS Syria",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528916.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1640512.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-08a1f49aa489",
+                            "id": "src-bd6225e2a23e",
                             "contents": [
                                 {
-                                    "id": "ct-08a1f49aa489",
+                                    "id": "ct-bd6225e2a23e",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -82,49 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528916/1528916"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-ea8836b66081",
-                    "name": "⚽ 23:00 01/10 Guinea VS Kenya",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545851.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ea8836b66081",
-                            "contents": [
-                                {
-                                    "id": "ct-ea8836b66081",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545851/1545851"
+                                                            "value": "https://live20.chuoichientv.com/live/1640512/1640512"
                                                         },
                                                         {
                                                             "key": "User-Agent",
