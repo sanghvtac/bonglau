@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:25 01/10/2026)",
+    "name": "Chuoi Chien TV (12:55 01/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-a6246f9407af",
-                    "name": "⚽ 13:10 01/10 Panama VS New Zealand",
+                    "id": "ch-6e119169a640",
+                    "name": "⚽ 13:10 01/10 Panama VS New Zealand [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a6246f9407af",
+                            "id": "src-6e119169a640",
                             "contents": [
                                 {
-                                    "id": "ct-a6246f9407af",
+                                    "id": "ct-6e119169a640",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991250/991250"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e321d9f038ae",
                     "name": "⚽ 14:00 01/10 Việt Nam VS Uzbekistan",
