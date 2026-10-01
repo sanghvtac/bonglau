@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 02/10/2026)",
+    "name": "Chuoi Chien TV (04:55 02/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-ac1b318b60c5",
-                    "name": "⚽ 05:00 02/10 Curaçao VS Trinidad and Tobago",
+                    "id": "ch-834a6b9bc569",
+                    "name": "⚽ 05:00 02/10 Curaçao VS Trinidad and Tobago [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ac1b318b60c5",
+                            "id": "src-834a6b9bc569",
                             "contents": [
                                 {
-                                    "id": "ct-ac1b318b60c5",
+                                    "id": "ct-834a6b9bc569",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639970/1639970"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e36bd2b1c0db",
                     "name": "⚽ 08:00 02/10 India VS South Korea",
