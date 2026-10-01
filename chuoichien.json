@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 01/10/2026)",
+    "name": "Chuoi Chien TV (20:55 01/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bd6225e2a23e",
-                    "name": "⚽ 21:00 01/10 Uzbekistan VS Syria",
+                    "id": "ch-bc53fbe83a6e",
+                    "name": "⚽ 21:00 01/10 Uzbekistan VS Syria [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bd6225e2a23e",
+                            "id": "src-bc53fbe83a6e",
                             "contents": [
                                 {
-                                    "id": "ct-bd6225e2a23e",
+                                    "id": "ct-bc53fbe83a6e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640512/1640512"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-08a1f49aa489",
                     "name": "⚽ 23:00 01/10 Azerbaijan VS Liechtenstein",
