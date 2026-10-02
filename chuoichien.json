@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 02/10/2026)",
+    "name": "Chuoi Chien TV (22:55 02/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -9,27 +9,69 @@
             "name": "🔴 Live",
             "channels": [
                 {
-                    "id": "ch-958e37f199f8",
-                    "name": "⚽ 21:00 02/10 Kazakhstan VS Moldova [Chuối Chao - FHD1]",
+                    "id": "ch-575758fe7201",
+                    "name": "⚽ 23:00 02/10 Cyprus VS Armenia [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528923.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528930.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-958e37f199f8",
+                            "id": "src-575758fe7201",
                             "contents": [
                                 {
-                                    "id": "ct-958e37f199f8",
+                                    "id": "ct-575758fe7201",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-45a4f170a9ca",
+                    "name": "⚽ 23:00 02/10 Latvia VS Montenegro [Trốc Tru - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545608.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-45a4f170a9ca",
+                            "contents": [
+                                {
+                                    "id": "ct-45a4f170a9ca",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -57,22 +99,22 @@
             "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-9cd8f3851e1f",
-                    "name": "⚽ 23:00 02/10 Cyprus VS Armenia",
+                    "id": "ch-920fd446ed59",
+                    "name": "⚽ 21:00 02/10 Kazakhstan VS Moldova",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528930.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528923.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-9cd8f3851e1f",
+                            "id": "src-920fd446ed59",
                             "contents": [
                                 {
-                                    "id": "ct-9cd8f3851e1f",
+                                    "id": "ct-920fd446ed59",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -82,49 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528930/1528930"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-fa50e0d9536e",
-                    "name": "⚽ 23:00 02/10 Latvia VS Montenegro",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545608.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-fa50e0d9536e",
-                            "contents": [
-                                {
-                                    "id": "ct-fa50e0d9536e",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545608/1545608"
+                                                            "value": "https://live20.chuoichientv.com/live/1528923/1528923"
                                                         },
                                                         {
                                                             "key": "User-Agent",
