@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:55 02/10/2026)",
+    "name": "Chuoi Chien TV (17:25 02/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ab0c8d2d88f6",
-                    "name": "⚽ 17:20 02/10 Japan VS China",
+                    "id": "ch-45cceec00cf2",
+                    "name": "⚽ 17:20 02/10 Japan VS China [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ab0c8d2d88f6",
+                            "id": "src-45cceec00cf2",
                             "contents": [
                                 {
-                                    "id": "ct-ab0c8d2d88f6",
+                                    "id": "ct-45cceec00cf2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/998711/998711"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-52a8242f2da0",
                     "name": "⚽ 19:00 02/10 Congo DR VS Uganda",
