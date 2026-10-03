@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 03/10/2026)",
+    "name": "Chuoi Chien TV (16:55 03/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7771e209d733",
-                    "name": "⚽ 17:00 03/10 Chinese Taipei VS Việt Nam",
+                    "id": "ch-0c314bacfa48",
+                    "name": "⚽ 17:00 03/10 Chinese Taipei VS Việt Nam [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7771e209d733",
+                            "id": "src-0c314bacfa48",
                             "contents": [
                                 {
-                                    "id": "ct-7771e209d733",
+                                    "id": "ct-0c314bacfa48",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993804/993804"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-99605337b841",
-                    "name": "⚽ 17:00 03/10 Hong Kong VS Cambodia",
+                    "id": "ch-cf9192544337",
+                    "name": "⚽ 17:00 03/10 Hong Kong VS Cambodia [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-99605337b841",
+                            "id": "src-cf9192544337",
                             "contents": [
                                 {
-                                    "id": "ct-99605337b841",
+                                    "id": "ct-cf9192544337",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1643350/1643350"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2fa8cd4c483e",
                     "name": "⚽ 17:20 03/10 Japan VS Iran",
