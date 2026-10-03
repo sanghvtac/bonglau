@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 03/10/2026)",
+    "name": "Chuoi Chien TV (22:55 03/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-11faf273c784",
-                    "name": "⚽ 23:00 03/10 Croatia VS England",
+                    "id": "ch-cf911a3e67dd",
+                    "name": "⚽ 23:00 03/10 Croatia VS England [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-11faf273c784",
+                            "id": "src-cf911a3e67dd",
                             "contents": [
                                 {
-                                    "id": "ct-11faf273c784",
+                                    "id": "ct-cf911a3e67dd",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528933/1528933"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,32 +93,32 @@
                     ]
                 },
                 {
-                    "id": "ch-968ce5bb832c",
-                    "name": "⚽ 23:30 03/10 Cadiz VS Leganes",
+                    "id": "ch-3de7f3393fe1",
+                    "name": "⚽ 23:00 03/10 Croatia VS England [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1569950.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528933.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-968ce5bb832c",
+                            "id": "src-3de7f3393fe1",
                             "contents": [
                                 {
-                                    "id": "ct-968ce5bb832c",
+                                    "id": "ct-3de7f3393fe1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1569950/1569950"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c06ceddfb1b5",
                     "name": "⚽ 01:45 04/10 Spain VS Czech Republic",
