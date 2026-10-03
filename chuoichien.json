@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 03/10/2026)",
+    "name": "Chuoi Chien TV (20:55 03/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-afcffa6bca47",
-                    "name": "⚽ 21:00 03/10 India VS Brazil",
+                    "id": "ch-1eb921946f73",
+                    "name": "⚽ 21:00 03/10 India VS Brazil [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-afcffa6bca47",
+                            "id": "src-1eb921946f73",
                             "contents": [
                                 {
-                                    "id": "ct-afcffa6bca47",
+                                    "id": "ct-1eb921946f73",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1632355/1632355"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-11faf273c784",
                     "name": "⚽ 23:00 03/10 Croatia VS England",
