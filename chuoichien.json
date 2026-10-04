@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:55 04/10/2026)",
+    "name": "Chuoi Chien TV (10:25 04/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,34 +49,40 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-3fcf471defe9",
-                    "name": "⚽ 10:10 04/10 Necaxa W VS Cruz Azul W [Chuối Kem - FHD1]",
+                    "id": "ch-f9f231881e7a",
+                    "name": "⚽ 11:00 04/10 Consadole Sapporo VS Iwaki",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603387.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1606681.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-3fcf471defe9",
+                            "id": "src-f9f231881e7a",
                             "contents": [
                                 {
-                                    "id": "ct-3fcf471defe9",
+                                    "id": "ct-f9f231881e7a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1606681/1606681"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -91,13 +97,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-59a1d53b74cf",
                     "name": "⚽ 13:00 04/10 Vegalta Sendai VS Jubilo Iwata",
