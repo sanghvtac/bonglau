@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 04/10/2026)",
+    "name": "Chuoi Chien TV (19:55 04/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-e5a0bb508a20",
-                    "name": "⚽ 20:00 04/10 Azerbaijan VS Lithuania",
+                    "id": "ch-b065c5c4a58b",
+                    "name": "⚽ 20:00 04/10 Azerbaijan VS Lithuania [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e5a0bb508a20",
+                            "id": "src-b065c5c4a58b",
                             "contents": [
                                 {
-                                    "id": "ct-e5a0bb508a20",
+                                    "id": "ct-b065c5c4a58b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528937/1528937"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-6cb403498262",
-                    "name": "⚽ 20:00 04/10 West Ham W VS Chelsea W",
+                    "id": "ch-62c442a54eba",
+                    "name": "⚽ 20:00 04/10 West Ham W VS Chelsea W [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-6cb403498262",
+                            "id": "src-62c442a54eba",
                             "contents": [
                                 {
-                                    "id": "ct-6cb403498262",
+                                    "id": "ct-62c442a54eba",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1607696/1607696"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d7f1862e1b2c",
                     "name": "⚽ 21:15 04/10 Sporting Gijon VS Celta de Vigo II",
