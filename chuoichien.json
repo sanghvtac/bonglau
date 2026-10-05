@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:55 05/10/2026)",
+    "name": "Chuoi Chien TV (19:25 05/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-2c5137a6380e",
-                    "name": "⚽ 17:30 05/10 Japan VS New Zealand [Chuối Sấy - FHD1]",
+                    "id": "ch-e3c7434e4598",
+                    "name": "⚽ 17:30 05/10 Japan VS New Zealand",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-2c5137a6380e",
+                            "id": "src-e3c7434e4598",
                             "contents": [
                                 {
-                                    "id": "ct-2c5137a6380e",
+                                    "id": "ct-e3c7434e4598",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1643813/1643813"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-3d468a37a2de",
                     "name": "⚽ 20:00 05/10 Indonesia VS Thailand",
