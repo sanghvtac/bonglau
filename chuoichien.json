@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 06/10/2026)",
+    "name": "Chuoi Chien TV (06:55 06/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-3e6a8eaf8300",
-                    "name": "⚽ 07:00 06/10 Guatemala VS Suriname",
+                    "id": "ch-5e46f888edd0",
+                    "name": "⚽ 07:00 06/10 Guatemala VS Suriname [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3e6a8eaf8300",
+                            "id": "src-5e46f888edd0",
                             "contents": [
                                 {
-                                    "id": "ct-3e6a8eaf8300",
+                                    "id": "ct-5e46f888edd0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1639997/1639997"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7f6b2d2d884f",
                     "name": "⚽ 09:00 06/10 Honduras VS Jamaica",
