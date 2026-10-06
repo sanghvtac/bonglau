@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 07/10/2026)",
+    "name": "Chuoi Chien TV (06:55 07/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b5d91838a3a3",
-                    "name": "⚽ 07:00 07/10 USA VS Canada",
+                    "id": "ch-02b607d2c5ba",
+                    "name": "⚽ 07:00 07/10 USA VS Canada [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b5d91838a3a3",
+                            "id": "src-02b607d2c5ba",
                             "contents": [
                                 {
-                                    "id": "ct-b5d91838a3a3",
+                                    "id": "ct-02b607d2c5ba",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629007/1629007"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-cda111f7e7b7",
                     "name": "⚽ 09:30 07/10 Mexico VS Chile",
