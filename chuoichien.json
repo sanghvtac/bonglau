@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 06/10/2026)",
+    "name": "Chuoi Chien TV (10:55 06/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-6d25ccafa822",
-                    "name": "⚽ 09:00 06/10 Honduras VS Jamaica [Chuối Kem - FHD1]",
+                    "id": "ch-7f6b2d2d884f",
+                    "name": "⚽ 09:00 06/10 Honduras VS Jamaica",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-6d25ccafa822",
+                            "id": "src-7f6b2d2d884f",
                             "contents": [
                                 {
-                                    "id": "ct-6d25ccafa822",
+                                    "id": "ct-7f6b2d2d884f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1639998/1639998"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-99cb49cdaa8e",
                     "name": "⚽ 15:30 06/10 Lam Dong VS Song Lam Nghe An",
