@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:55 08/10/2026)",
+    "name": "Chuoi Chien TV (05:25 08/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-86da58fc9a3b",
-                    "name": "⚽ 05:30 08/10 RB Bragantino VS Mirassol",
+                    "id": "ch-1d3651e5e4c8",
+                    "name": "⚽ 05:30 08/10 RB Bragantino VS Mirassol [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-86da58fc9a3b",
+                            "id": "src-1d3651e5e4c8",
                             "contents": [
                                 {
-                                    "id": "ct-86da58fc9a3b",
+                                    "id": "ct-1d3651e5e4c8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492392/1492392"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-a5485c800fa9",
-                    "name": "⚽ 05:30 08/10 Internacional VS Corinthians",
+                    "id": "ch-e3164aaacdf5",
+                    "name": "⚽ 05:30 08/10 Internacional VS Corinthians [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a5485c800fa9",
+                            "id": "src-e3164aaacdf5",
                             "contents": [
                                 {
-                                    "id": "ct-a5485c800fa9",
+                                    "id": "ct-e3164aaacdf5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492395/1492395"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e727db883a91",
                     "name": "⚽ 07:30 08/10 Cruzeiro VS Sao Paulo",
