@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 07/10/2026)",
+    "name": "Chuoi Chien TV (22:55 07/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d02b840b84c1",
-                    "name": "⚽ 23:00 07/10 Gnistan VS Inter Turku",
+                    "id": "ch-760640919e1f",
+                    "name": "⚽ 23:00 07/10 Gnistan VS Inter Turku [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d02b840b84c1",
+                            "id": "src-760640919e1f",
                             "contents": [
                                 {
-                                    "id": "ct-d02b840b84c1",
+                                    "id": "ct-760640919e1f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638101/1638101"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-17f1b9e57453",
                     "name": "⚽ 00:00 08/10 Ceramica Cleopatra VS AL Masry",
