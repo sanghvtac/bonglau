@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 08/10/2026)",
+    "name": "Chuoi Chien TV (22:55 08/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d81a358c62d6",
-                    "name": "⚽ 23:00 08/10 KuPS VS AC Oulu",
+                    "id": "ch-bdc994d2924d",
+                    "name": "⚽ 23:00 08/10 KuPS VS AC Oulu [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d81a358c62d6",
+                            "id": "src-bdc994d2924d",
                             "contents": [
                                 {
-                                    "id": "ct-d81a358c62d6",
+                                    "id": "ct-bdc994d2924d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638103/1638103"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3ed8fab402db",
                     "name": "⚽ 00:00 09/10 Orduspor 1967 VS Karadeniz Ereğli BSK",
