@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 08/10/2026)",
+    "name": "Chuoi Chien TV (15:55 08/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-84131a19f698",
-                    "name": "⚽ 16:00 08/10 Hồ Chí Minh City W VS TKS Việt Nam Nữ",
+                    "id": "ch-067319a95f13",
+                    "name": "⚽ 16:00 08/10 Hồ Chí Minh City W VS TKS Việt Nam Nữ [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-84131a19f698",
+                            "id": "src-067319a95f13",
                             "contents": [
                                 {
-                                    "id": "ct-84131a19f698",
+                                    "id": "ct-067319a95f13",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992978/992978"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-263963783a7d",
-                    "name": "⚽ 16:00 08/10 Phong Phú Hà Nam Nữ VS Hà Nội Nữ",
+                    "id": "ch-9316234053a8",
+                    "name": "⚽ 16:00 08/10 Phong Phú Hà Nam Nữ VS Hà Nội Nữ [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-263963783a7d",
+                            "id": "src-9316234053a8",
                             "contents": [
                                 {
-                                    "id": "ct-263963783a7d",
+                                    "id": "ct-9316234053a8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993348/993348"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-15de1bcf0729",
                     "name": "⚽ 18:00 08/10 Việt Nam VS Northern Mariana Islands U17",
