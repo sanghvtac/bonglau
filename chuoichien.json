@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:55 09/10/2026)",
+    "name": "Chuoi Chien TV (05:25 09/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7b4f40904ad5",
-                    "name": "⚽ 05:30 09/10 Santos VS Flamengo",
+                    "id": "ch-a6787fc21896",
+                    "name": "⚽ 05:30 09/10 Santos VS Flamengo [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7b4f40904ad5",
+                            "id": "src-a6787fc21896",
                             "contents": [
                                 {
-                                    "id": "ct-7b4f40904ad5",
+                                    "id": "ct-a6787fc21896",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492398/1492398"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c901a63ea847",
                     "name": "⚽ 07:30 09/10 Fluminense VS Coritiba",
