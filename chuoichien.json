@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 09/10/2026)",
+    "name": "Chuoi Chien TV (15:55 09/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-58d6170bfbec",
-                    "name": "⚽ 16:00 09/10 Johor Darul Takzim FC VS Penang",
+                    "id": "ch-d46a727423a8",
+                    "name": "⚽ 16:00 09/10 Johor Darul Takzim FC VS Penang [Chuối Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-58d6170bfbec",
+                            "id": "src-d46a727423a8",
                             "contents": [
                                 {
-                                    "id": "ct-58d6170bfbec",
+                                    "id": "ct-d46a727423a8",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoingaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638889/1638889"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-22f0bcf2d58a",
                     "name": "⚽ 17:00 09/10 Kashiwa Reysol VS Vissel Kobe",
