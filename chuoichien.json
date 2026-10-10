@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:55 10/10/2026)",
+    "name": "Chuoi Chien TV (21:25 10/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -133,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bda3d3005bc9",
-                    "name": "⚽ 21:15 10/10 Alaves VS Atletico Madrid",
+                    "id": "ch-f9b32c502347",
+                    "name": "⚽ 21:15 10/10 Alaves VS Atletico Madrid [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bda3d3005bc9",
+                            "id": "src-f9b32c502347",
                             "contents": [
                                 {
-                                    "id": "ct-bda3d3005bc9",
+                                    "id": "ct-f9b32c502347",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570403/1570403"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0244d17882d3",
                     "name": "⚽ 23:00 10/10 Inter VS Parma",
