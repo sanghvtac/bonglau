@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 10/10/2026)",
+    "name": "Chuoi Chien TV (07:55 10/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-565bb3833fa7",
-                    "name": "⚽ 08:00 10/10 Puebla VS Leon",
+                    "id": "ch-c167d38a1afa",
+                    "name": "⚽ 08:00 10/10 Puebla VS Leon [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-565bb3833fa7",
+                            "id": "src-c167d38a1afa",
                             "contents": [
                                 {
-                                    "id": "ct-565bb3833fa7",
+                                    "id": "ct-c167d38a1afa",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550984/1550984"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-32fb79b5b301",
                     "name": "⚽ 10:00 10/10 Tigres UANL VS Toluca",
