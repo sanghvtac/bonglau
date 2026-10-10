@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 10/10/2026)",
+    "name": "Chuoi Chien TV (15:55 10/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-148444c71d79",
-                    "name": "⚽ 16:00 10/10 Long An FC VS Than Quang Ninh",
+                    "id": "ch-8f85130c4663",
+                    "name": "⚽ 16:00 10/10 Long An FC VS Than Quang Ninh [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-148444c71d79",
+                            "id": "src-8f85130c4663",
                             "contents": [
                                 {
-                                    "id": "ct-148444c71d79",
+                                    "id": "ct-8f85130c4663",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1634970/1634970"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1ce9f4cccb7d",
-                    "name": "⚽ 16:05 10/10 Hisamitsu Springs W VS Body Queenseis W",
+                    "id": "ch-26f892bbfc66",
+                    "name": "⚽ 16:05 10/10 Hisamitsu Springs W VS Body Queenseis W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1ce9f4cccb7d",
+                            "id": "src-26f892bbfc66",
                             "contents": [
                                 {
-                                    "id": "ct-1ce9f4cccb7d",
+                                    "id": "ct-26f892bbfc66",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/992987/992987"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-78fbc1a7b578",
                     "name": "⚽ 17:00 10/10 Hoang Anh Gia Lai VS Da Nang",
