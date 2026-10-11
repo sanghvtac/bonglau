@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:25 11/10/2026)",
+    "name": "Chuoi Chien TV (09:55 11/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bad607edfa3a",
-                    "name": "⚽ 10:00 11/10 Club America VS Monterrey",
+                    "id": "ch-e121a6cbbd7f",
+                    "name": "⚽ 10:00 11/10 Club America VS Monterrey [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bad607edfa3a",
+                            "id": "src-e121a6cbbd7f",
                             "contents": [
                                 {
-                                    "id": "ct-bad607edfa3a",
+                                    "id": "ct-e121a6cbbd7f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550989/1550989"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1130773c7bd5",
                     "name": "⚽ 12:00 11/10 Gwangju FC VS Ulsan Hyundai FC",
