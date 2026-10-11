@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 11/10/2026)",
+    "name": "Chuoi Chien TV (18:55 11/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-907b91e1e5da",
-                    "name": "⚽ 16:05 11/10 Hisamitsu Springs W VS Body Queenseis W [Chuối Tây - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/997914.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-907b91e1e5da",
-                            "contents": [
-                                {
-                                    "id": "ct-907b91e1e5da",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-902e693a5ae1",
                     "name": "⚽ 17:00 11/10 Khatoco Khanh Hoa VS PVF-CAND [Chuối Ngao - FHD1]",
@@ -217,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b2a2b5f0393d",
-                    "name": "⚽ 19:00 11/10 Elche VS Celta Vigo",
+                    "id": "ch-425d7b20dd46",
+                    "name": "⚽ 19:00 11/10 Elche VS Celta Vigo [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b2a2b5f0393d",
+                            "id": "src-425d7b20dd46",
                             "contents": [
                                 {
-                                    "id": "ct-b2a2b5f0393d",
+                                    "id": "ct-425d7b20dd46",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570406/1570406"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-9998ad083c14",
-                    "name": "⚽ 19:15 11/10 Ha Noi VS Bắc Ninh",
+                    "id": "ch-9ba97deed06d",
+                    "name": "⚽ 19:15 11/10 Ha Noi VS Bắc Ninh [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9998ad083c14",
+                            "id": "src-9ba97deed06d",
                             "contents": [
                                 {
-                                    "id": "ct-9998ad083c14",
+                                    "id": "ct-9ba97deed06d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633906/1633906"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7a97775080f8",
                     "name": "⚽ 20:00 11/10 Crystal Palace VS Nottingham Forest",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/991226/991226"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-f9cb0cfd0edd",
+                    "name": "⚽ 15:00 12/10 Guangzhou Dandelion VS Shanghai Second",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1638521.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-f9cb0cfd0edd",
+                            "contents": [
+                                {
+                                    "id": "ct-f9cb0cfd0edd",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1638521/1638521"
                                                         },
                                                         {
                                                             "key": "User-Agent",
