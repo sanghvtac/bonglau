@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 13/10/2026)",
+    "name": "Chuoi Chien TV (22:55 13/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -30,48 +30,6 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-d359324e7dd6",
-                    "name": "⚽ 21:00 13/10 Atlético Madrid U19 VS Manchester United U19 [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1637326.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d359324e7dd6",
-                            "contents": [
-                                {
-                                    "id": "ct-d359324e7dd6",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ce2c4ec0748a",
-                    "name": "⚽ 23:00 13/10 Al Sadd VS Al-Hilal Saudi FC",
+                    "id": "ch-8e2f41acf45d",
+                    "name": "⚽ 23:00 13/10 Al Sadd VS Al-Hilal Saudi FC [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ce2c4ec0748a",
+                            "id": "src-8e2f41acf45d",
                             "contents": [
                                 {
-                                    "id": "ct-ce2c4ec0748a",
+                                    "id": "ct-8e2f41acf45d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629939/1629939"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-bc4ec209ffdc",
-                    "name": "⚽ 23:00 13/10 Al Seeb VS Al Hussein",
+                    "id": "ch-c7dd2be25f43",
+                    "name": "⚽ 23:00 13/10 Al Seeb VS Al Hussein [Chuối Ngao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,10 +147,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bc4ec209ffdc",
+                            "id": "src-c7dd2be25f43",
                             "contents": [
                                 {
-                                    "id": "ct-bc4ec209ffdc",
+                                    "id": "ct-c7dd2be25f43",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoingaohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-60e60c5369ca",
+                    "name": "⚽ 21:00 13/10 Atlético Madrid U19 VS Manchester United U19",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1637326.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-60e60c5369ca",
+                            "contents": [
+                                {
+                                    "id": "ct-60e60c5369ca",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630361/1630361"
+                                                            "value": "https://live20.chuoichientv.com/live/1637326/1637326"
                                                         },
                                                         {
                                                             "key": "User-Agent",
