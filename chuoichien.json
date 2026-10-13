@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:25 13/10/2026)",
+    "name": "Chuoi Chien TV (14:55 13/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-45fbc04b5925",
-                    "name": "⚽ 14:45 13/10 Newcastle Jets VS Gamba Osaka",
+                    "id": "ch-27083cd41c13",
+                    "name": "⚽ 14:45 13/10 Newcastle Jets VS Gamba Osaka [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-45fbc04b5925",
+                            "id": "src-27083cd41c13",
                             "contents": [
                                 {
-                                    "id": "ct-45fbc04b5925",
+                                    "id": "ct-27083cd41c13",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629933/1629933"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e5c29ecc5288",
                     "name": "⚽ 17:00 13/10 Kyoto Sanga VS Ratchaburi",
