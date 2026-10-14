@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:25 14/10/2026)",
+    "name": "Chuoi Chien TV (11:55 14/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-5c985a555326",
-                    "name": "⚽ 12:00 14/10 Deren VS Erchim",
+                    "id": "ch-a910f1c29201",
+                    "name": "⚽ 12:00 14/10 Deren VS Erchim [Chuối To - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5c985a555326",
+                            "id": "src-a910f1c29201",
                             "contents": [
                                 {
-                                    "id": "ct-5c985a555326",
+                                    "id": "ct-a910f1c29201",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640440/1640440"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d3e5fe0b45ed",
                     "name": "⚽ 14:45 14/10 Melbourne Victory VS FC Seoul",
