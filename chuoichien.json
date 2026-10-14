@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:55 15/10/2026)",
+    "name": "Chuoi Chien TV (06:25 15/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d3984853a33e",
-                    "name": "⚽ 06:30 15/10 Inter Miami VS New York City FC",
+                    "id": "ch-f91cad85f443",
+                    "name": "⚽ 06:30 15/10 Inter Miami VS New York City FC [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d3984853a33e",
+                            "id": "src-f91cad85f443",
                             "contents": [
                                 {
-                                    "id": "ct-d3984853a33e",
+                                    "id": "ct-f91cad85f443",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490526/1490526"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-97dfe71e68b1",
                     "name": "⚽ 08:30 15/10 Colorado Rapids VS Minnesota United FC",
@@ -519,6 +519,48 @@
                     ]
                 },
                 {
+                    "id": "ch-d4a21f6033d2",
+                    "name": "⚽ 21:00 15/10 Mardin BB VS Fatih Karagümrük",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1585784.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d4a21f6033d2",
+                            "contents": [
+                                {
+                                    "id": "ct-d4a21f6033d2",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1585784/1585784"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-25d8cb7c560d",
                     "name": "⚽ 21:50 15/10 Al Khaleej Saihat VS Al-Fayha",
                     "type": "single",
@@ -755,48 +797,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1636401/1636401"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-2135e60f4139",
-                    "name": "⚽ 01:00 16/10 Al-Ahli Jeddah VS Al-Nassr",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1603044.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-2135e60f4139",
-                            "contents": [
-                                {
-                                    "id": "ct-2135e60f4139",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1603044/1603044"
                                                         },
                                                         {
                                                             "key": "User-Agent",
