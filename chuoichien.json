@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 15/10/2026)",
+    "name": "Chuoi Chien TV (13:55 15/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-ee606dcf1485",
-                    "name": "⚽ 12:00 15/10 Hunters VS Khovd [Chuối Tây - FHD1]",
+                    "id": "ch-c6106d56e785",
+                    "name": "⚽ 12:00 15/10 Hunters VS Khovd",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ee606dcf1485",
+                            "id": "src-c6106d56e785",
                             "contents": [
                                 {
-                                    "id": "ct-ee606dcf1485",
+                                    "id": "ct-c6106d56e785",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1640426/1640426"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-750da2c02ec8",
                     "name": "⚽ 15:30 15/10 Preston Lions VS Wollongong Wolves",
