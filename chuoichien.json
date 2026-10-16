@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (12:25 16/10/2026)",
+    "name": "Chuoi Chien TV (12:55 16/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-ff88e1ae65a6",
-                    "name": "⚽ 13:00 16/10 Waterside Karori VS Wellington Phoenix II",
+                    "id": "ch-2b3ca7cddb58",
+                    "name": "⚽ 13:00 16/10 Waterside Karori VS Wellington Phoenix II [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ff88e1ae65a6",
+                            "id": "src-2b3ca7cddb58",
                             "contents": [
                                 {
-                                    "id": "ct-ff88e1ae65a6",
+                                    "id": "ct-2b3ca7cddb58",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993693/993693"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5208af468aca",
                     "name": "⚽ 15:30 16/10 PSIM Yogyakarta VS PSM Makassar",
