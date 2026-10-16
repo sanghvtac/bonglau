@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:55 16/10/2026)",
+    "name": "Chuoi Chien TV (09:25 16/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-63b00c647288",
-                    "name": "⚽ 07:30 16/10 Estudiantes L.P. VS Flamengo [Chuối Kem - FHD1]",
+                    "id": "ch-fd7e19bf29e0",
+                    "name": "⚽ 07:30 16/10 Estudiantes L.P. VS Flamengo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-63b00c647288",
+                            "id": "src-fd7e19bf29e0",
                             "contents": [
                                 {
-                                    "id": "ct-63b00c647288",
+                                    "id": "ct-fd7e19bf29e0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1640555/1640555"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-ff88e1ae65a6",
                     "name": "⚽ 13:00 16/10 Waterside Karori VS Wellington Phoenix II",
