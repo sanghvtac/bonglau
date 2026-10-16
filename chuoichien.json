@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 16/10/2026)",
+    "name": "Chuoi Chien TV (15:55 16/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c94c1f5b8be3",
-                    "name": "⚽ 16:00 16/10 Sydney VS Western Sydney Wanderers",
+                    "id": "ch-289b4cf440a4",
+                    "name": "⚽ 16:00 16/10 Sydney VS Western Sydney Wanderers [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c94c1f5b8be3",
+                            "id": "src-289b4cf440a4",
                             "contents": [
                                 {
-                                    "id": "ct-c94c1f5b8be3",
+                                    "id": "ct-289b4cf440a4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593680/1593680"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d8b5cfb05cd0",
                     "name": "⚽ 17:00 16/10 Đồng Tháp VS Quy Nhơn FC",
