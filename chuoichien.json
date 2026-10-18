@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 18/10/2026)",
+    "name": "Chuoi Chien TV (17:55 18/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-d5ad00e2c6a0",
-                    "name": "⚽ 15:30 18/10 Persebaya Surabaya VS PSS Sleman [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1622797.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-d5ad00e2c6a0",
-                            "contents": [
-                                {
-                                    "id": "ct-d5ad00e2c6a0",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-9388c563d616",
                     "name": "⚽ 17:00 18/10 TP. Hồ Chí Minh VS Becamex Hồ Chí Minh [Chuối Sấy - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f41bdd0f0f34",
-                    "name": "⚽ 18:00 18/10 Bắc Ninh VS Trường Tươi Đồng Nai",
+                    "id": "ch-610ec7bba513",
+                    "name": "⚽ 18:00 18/10 Bắc Ninh VS Trường Tươi Đồng Nai [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f41bdd0f0f34",
+                            "id": "src-610ec7bba513",
                             "contents": [
                                 {
-                                    "id": "ct-f41bdd0f0f34",
+                                    "id": "ct-610ec7bba513",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633910/1633910"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-f3c66ed68f0f",
-                    "name": "⚽ 18:00 18/10 Ninh Bình FC VS Hoang Anh Gia Lai",
+                    "id": "ch-4a154da1840e",
+                    "name": "⚽ 18:00 18/10 Ninh Bình FC VS Hoang Anh Gia Lai [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f3c66ed68f0f",
+                            "id": "src-4a154da1840e",
                             "contents": [
                                 {
-                                    "id": "ct-f3c66ed68f0f",
+                                    "id": "ct-4a154da1840e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633911/1633911"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bc5cbbb201f2",
                     "name": "⚽ 19:15 18/10 Công An Hà Nội VS Ha Noi",
