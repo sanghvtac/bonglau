@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 19/10/2026)",
+    "name": "Chuoi Chien TV (15:25 19/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -10,7 +10,7 @@
             "channels": [
                 {
                     "id": "ch-67ee7ba90f00",
-                    "name": "⚽ 15:00 19/10 Ulaangom City VS Khovd [Chuối Tây - FHD1]",
+                    "name": "⚽ 15:00 19/10 Wofoo Tai Po VS Southern District [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -25,6 +25,48 @@
                             "contents": [
                                 {
                                     "id": "ct-67ee7ba90f00",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e105597427af",
+                    "name": "⚽ 15:00 19/10 Wofoo Tai Po VS Southern District [Chuối Tây - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1607329.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e105597427af",
+                            "contents": [
+                                {
+                                    "id": "ct-e105597427af",
                                     "streams": [
                                         {
                                             "stream_links": [
