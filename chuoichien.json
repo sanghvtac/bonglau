@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 19/10/2026)",
+    "name": "Chuoi Chien TV (07:55 19/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-60e34bb57e80",
-                    "name": "⚽ 08:00 19/10 Monterrey VS Pachuca",
+                    "id": "ch-0a02acd4f2ae",
+                    "name": "⚽ 08:00 19/10 Monterrey VS Pachuca [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-60e34bb57e80",
+                            "id": "src-0a02acd4f2ae",
                             "contents": [
                                 {
-                                    "id": "ct-60e34bb57e80",
+                                    "id": "ct-0a02acd4f2ae",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1551001/1551001"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-36b4f35b31dd",
                     "name": "⚽ 15:00 19/10 Ulaangom City VS Khovd",
