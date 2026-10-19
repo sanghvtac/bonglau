@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 19/10/2026)",
+    "name": "Chuoi Chien TV (18:55 19/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-1819d07b6498",
-                    "name": "⚽ 17:00 19/10 FarDu VS Metalourg [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1531010.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-1819d07b6498",
-                            "contents": [
-                                {
-                                    "id": "ct-1819d07b6498",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-812d2bbafd0f",
                     "name": "⚽ 18:00 19/10 TP. Hồ Chí Minh VS Viettel [Chuối Sấy - FHD1]",
@@ -98,6 +56,48 @@
             "id": "upcoming",
             "name": "🗓 Sắp diễn ra",
             "channels": [
+                {
+                    "id": "ch-e03564b27dff",
+                    "name": "⚽ 17:00 19/10 FarDu VS Metalourg",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1531010.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e03564b27dff",
+                            "contents": [
+                                {
+                                    "id": "ct-e03564b27dff",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1531010/1531010"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
                 {
                     "id": "ch-0efc70b77830",
                     "name": "⚽ 21:00 19/10 Manisa BBSK VS Muğlaspor",
