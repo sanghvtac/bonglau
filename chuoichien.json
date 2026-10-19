@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 20/10/2026)",
+    "name": "Chuoi Chien TV (05:55 20/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-02aef5be98fd",
-                    "name": "⚽ 06:00 20/10 Corinthians VS Vitoria",
+                    "id": "ch-f172912dc666",
+                    "name": "⚽ 06:00 20/10 Corinthians VS Vitoria [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-02aef5be98fd",
+                            "id": "src-f172912dc666",
                             "contents": [
                                 {
-                                    "id": "ct-02aef5be98fd",
+                                    "id": "ct-f172912dc666",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492414/1492414"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3bbacc617bb4",
                     "name": "⚽ 08:06 20/10 León W VS Atlante W",
