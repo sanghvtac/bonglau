@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 20/10/2026)",
+    "name": "Chuoi Chien TV (23:55 20/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f52e5bcfa79e",
-                    "name": "⚽ 23:45 20/10 Fenerbahce VS Slavia Praha",
+                    "id": "ch-f9818e279021",
+                    "name": "⚽ 23:45 20/10 Fenerbahce VS Slavia Praha [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f52e5bcfa79e",
+                            "id": "src-f9818e279021",
                             "contents": [
                                 {
-                                    "id": "ct-f52e5bcfa79e",
+                                    "id": "ct-f9818e279021",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635661/1635661"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-bb8cd4ecee8f",
-                    "name": "⚽ 23:45 20/10 Sabah FA VS Borussia Dortmund",
+                    "id": "ch-c6b1cab364a0",
+                    "name": "⚽ 23:45 20/10 Sabah FA VS Borussia Dortmund [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bb8cd4ecee8f",
+                            "id": "src-c6b1cab364a0",
                             "contents": [
                                 {
-                                    "id": "ct-bb8cd4ecee8f",
+                                    "id": "ct-c6b1cab364a0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635719/1635719"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0af4c816e758",
                     "name": "⚽ 01:00 21/10 Al-Nassr VS Al Neom",
