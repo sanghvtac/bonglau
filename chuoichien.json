@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 21/10/2026)",
+    "name": "Chuoi Chien TV (15:25 21/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-21cce3010705",
-                    "name": "⚽ 15:30 21/10 Bali United VS Garudayaksa",
+                    "id": "ch-dc73bc3e35db",
+                    "name": "⚽ 15:30 21/10 Bali United VS Garudayaksa [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-21cce3010705",
+                            "id": "src-dc73bc3e35db",
                             "contents": [
                                 {
-                                    "id": "ct-21cce3010705",
+                                    "id": "ct-dc73bc3e35db",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1622802/1622802"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7a1b3ba19d91",
                     "name": "⚽ 17:00 21/10 Shimizu S-pulse VS Machida Zelvia",
