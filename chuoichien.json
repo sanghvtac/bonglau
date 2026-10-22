@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 22/10/2026)",
+    "name": "Chuoi Chien TV (16:55 22/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-bacf0068a7ed",
-                    "name": "⚽ 17:00 22/10 Văn Hiến VS Bình Minh Sài Gòn",
+                    "id": "ch-9a016bba7101",
+                    "name": "⚽ 17:00 22/10 Văn Hiến VS Bình Minh Sài Gòn [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bacf0068a7ed",
+                            "id": "src-9a016bba7101",
                             "contents": [
                                 {
-                                    "id": "ct-bacf0068a7ed",
+                                    "id": "ct-9a016bba7101",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1634983/1634983"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-047afe36fa01",
                     "name": "⚽ 18:00 22/10 Xuan Thien Phu Tho VS PVF-CAND",
