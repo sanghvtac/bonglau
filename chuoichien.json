@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:25 22/10/2026)",
+    "name": "Chuoi Chien TV (09:55 22/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-da736c9c62a5",
-                    "name": "⚽ 10:00 22/10 Santos Laguna VS U.N.A.M. - Pumas",
+                    "id": "ch-a3000c96ef36",
+                    "name": "⚽ 10:00 22/10 Santos Laguna VS U.N.A.M. - Pumas [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-da736c9c62a5",
+                            "id": "src-a3000c96ef36",
                             "contents": [
                                 {
-                                    "id": "ct-da736c9c62a5",
+                                    "id": "ct-a3000c96ef36",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1551010/1551010"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-de9b794c5cd7",
                     "name": "⚽ 15:30 22/10 Persik Kediri VS PSS Sleman",
