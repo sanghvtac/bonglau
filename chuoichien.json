@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 22/10/2026)",
+    "name": "Chuoi Chien TV (23:25 22/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-3ec963579a3e",
-                    "name": "⚽ 21:30 22/10 Kairat Almaty VS Panathinaikos [Chuối Nhỏ - FHD1]",
+                    "id": "ch-f790f784b4c2",
+                    "name": "⚽ 21:30 22/10 Kairat Almaty VS Panathinaikos",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3ec963579a3e",
+                            "id": "src-f790f784b4c2",
                             "contents": [
                                 {
-                                    "id": "ct-3ec963579a3e",
+                                    "id": "ct-f790f784b4c2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1636434/1636434"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-bc8e245df00b",
                     "name": "⚽ 23:45 22/10 Juventus VS Rennes",
