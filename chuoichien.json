@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 23/10/2026)",
+    "name": "Chuoi Chien TV (23:25 23/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-12da16fb9839",
-                    "name": "⚽ 23:30 23/10 Akhmat VS FC Orenburg",
+                    "id": "ch-b4ae730657de",
+                    "name": "⚽ 23:30 23/10 Akhmat VS FC Orenburg [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-12da16fb9839",
+                            "id": "src-b4ae730657de",
                             "contents": [
                                 {
-                                    "id": "ct-12da16fb9839",
+                                    "id": "ct-b4ae730657de",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1561419/1561419"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-be88d405d50a",
                     "name": "⚽ 01:30 24/10 VfB Stuttgart VS Borussia Mönchengladbach",
