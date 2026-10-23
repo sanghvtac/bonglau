@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:55 23/10/2026)",
+    "name": "Chuoi Chien TV (07:25 23/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-b0d92c94b5c2",
-                    "name": "⚽ 07:30 23/10 Flamengo VS Estudiantes L.P.",
+                    "id": "ch-54eb5ee91de7",
+                    "name": "⚽ 07:30 23/10 Flamengo VS Estudiantes L.P. [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b0d92c94b5c2",
+                            "id": "src-54eb5ee91de7",
                             "contents": [
                                 {
-                                    "id": "ct-b0d92c94b5c2",
+                                    "id": "ct-54eb5ee91de7",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640556/1640556"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2a9420960deb",
                     "name": "⚽ 08:00 23/10 Atletico Nacional VS Deportivo Pasto",
