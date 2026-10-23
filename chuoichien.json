@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 23/10/2026)",
+    "name": "Chuoi Chien TV (15:55 23/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7724f6781020",
-                    "name": "⚽ 16:00 23/10 Brisbane Roar VS Perth Glory",
+                    "id": "ch-aee068584ac2",
+                    "name": "⚽ 16:00 23/10 Brisbane Roar VS Perth Glory [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7724f6781020",
+                            "id": "src-aee068584ac2",
                             "contents": [
                                 {
-                                    "id": "ct-7724f6781020",
+                                    "id": "ct-aee068584ac2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593686/1593686"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-0c15c72d623a",
-                    "name": "⚽ 16:05 23/10 Body Queenseis W VS JT Marvelous W",
+                    "id": "ch-36c20d4fed2a",
+                    "name": "⚽ 16:05 23/10 Body Queenseis W VS JT Marvelous W [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0c15c72d623a",
+                            "id": "src-36c20d4fed2a",
                             "contents": [
                                 {
-                                    "id": "ct-0c15c72d623a",
+                                    "id": "ct-36c20d4fed2a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/993383/993383"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-41c093ac6d84",
                     "name": "⚽ 17:00 23/10 Hoang Anh Gia Lai VS Song Lam Nghe An",
