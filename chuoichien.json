@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:55 26/10/2026)",
+    "name": "Chuoi Chien TV (02:25 26/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,34 +7,39 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-f366f44988b9",
-                    "name": "⚽ 00:00 26/10 Lecce VS Juventus [Chuối Già - FHD1]",
+                    "id": "ch-8b6089a1c253",
+                    "name": "⚽ 00:30 26/10 Real Sociedad VS Levante",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550163.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570430.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-f366f44988b9",
+                            "id": "src-8b6089a1c253",
                             "contents": [
                                 {
-                                    "id": "ct-f366f44988b9",
+                                    "id": "ct-8b6089a1c253",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1570430/1570430"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -50,54 +55,6 @@
                         }
                     ]
                 },
-                {
-                    "id": "ch-eeae6fd0dc5c",
-                    "name": "⚽ 00:30 26/10 Real Sociedad VS Levante [Trốc Tru - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570430.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-eeae6fd0dc5c",
-                            "contents": [
-                                {
-                                    "id": "ct-eeae6fd0dc5c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
                 {
                     "id": "ch-e73fcdd118b8",
                     "name": "⚽ 02:45 26/10 Udinese VS AC Milan",
@@ -839,6 +796,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1492421/1492421"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ba334bd230da",
+                    "name": "⚽ 07:15 27/10 Instituto Cordoba VS Deportivo Riestra",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1493205.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ba334bd230da",
+                            "contents": [
+                                {
+                                    "id": "ct-ba334bd230da",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1493205/1493205"
                                                         },
                                                         {
                                                             "key": "User-Agent",
