@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 25/10/2026)",
+    "name": "Chuoi Chien TV (23:55 25/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-9521c01a56b7",
-                    "name": "⚽ 00:00 26/10 Lecce VS Juventus",
+                    "id": "ch-f366f44988b9",
+                    "name": "⚽ 00:00 26/10 Lecce VS Juventus [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-9521c01a56b7",
+                            "id": "src-f366f44988b9",
                             "contents": [
                                 {
-                                    "id": "ct-9521c01a56b7",
+                                    "id": "ct-f366f44988b9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1550163/1550163"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-8b6089a1c253",
                     "name": "⚽ 00:30 26/10 Real Sociedad VS Levante",
