@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:55 25/10/2026)",
+    "name": "Chuoi Chien TV (00:25 26/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-95b3ad72cad9",
-                    "name": "⚽ 22:15 25/10 Celta Vigo VS Real Betis [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570427.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-95b3ad72cad9",
-                            "contents": [
-                                {
-                                    "id": "ct-95b3ad72cad9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-195db1787893",
                     "name": "⚽ 23:30 25/10 SC Freiburg VS Bayern München [Chuối Kem - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-8b6089a1c253",
-                    "name": "⚽ 00:30 26/10 Real Sociedad VS Levante",
+                    "id": "ch-eeae6fd0dc5c",
+                    "name": "⚽ 00:30 26/10 Real Sociedad VS Levante [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-8b6089a1c253",
+                            "id": "src-eeae6fd0dc5c",
                             "contents": [
                                 {
-                                    "id": "ct-8b6089a1c253",
+                                    "id": "ct-eeae6fd0dc5c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570430/1570430"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e73fcdd118b8",
                     "name": "⚽ 02:45 26/10 Udinese VS AC Milan",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/995361/995361"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ed8a556a262b",
+                    "name": "⚽ 03:00 27/10 Sevilla VS Osasuna",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1570431.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ed8a556a262b",
+                            "contents": [
+                                {
+                                    "id": "ct-ed8a556a262b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1570431/1570431"
                                                         },
                                                         {
                                                             "key": "User-Agent",
