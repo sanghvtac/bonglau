@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (02:25 27/10/2026)",
+    "name": "Chuoi Chien TV (02:55 27/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ed8a556a262b",
-                    "name": "⚽ 03:00 27/10 Sevilla VS Osasuna",
+                    "id": "ch-5d3bbd74ddda",
+                    "name": "⚽ 03:00 27/10 Sevilla VS Osasuna [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ed8a556a262b",
+                            "id": "src-5d3bbd74ddda",
                             "contents": [
                                 {
-                                    "id": "ct-ed8a556a262b",
+                                    "id": "ct-5d3bbd74ddda",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570431/1570431"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -225,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-17efff465f25",
-                    "name": "⚽ 05:30 27/10 Coritiba VS Gremio",
+                    "id": "ch-c1143e3807d6",
+                    "name": "⚽ 05:30 27/10 Coritiba VS Gremio [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-17efff465f25",
+                            "id": "src-c1143e3807d6",
                             "contents": [
                                 {
-                                    "id": "ct-17efff465f25",
+                                    "id": "ct-c1143e3807d6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492421/1492421"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -265,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ba334bd230da",
                     "name": "⚽ 07:15 27/10 Instituto Cordoba VS Deportivo Riestra",
