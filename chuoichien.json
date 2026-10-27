@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 27/10/2026)",
+    "name": "Chuoi Chien TV (15:25 27/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-86a9b8a2fc0f",
-                    "name": "⚽ 15:30 27/10 PSS Sleman VS Pusamania Borneo",
+                    "id": "ch-08211027f721",
+                    "name": "⚽ 15:30 27/10 PSS Sleman VS Pusamania Borneo [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-86a9b8a2fc0f",
+                            "id": "src-08211027f721",
                             "contents": [
                                 {
-                                    "id": "ct-86a9b8a2fc0f",
+                                    "id": "ct-08211027f721",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1622816/1622816"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-0eab4ee6580a",
-                    "name": "⚽ 15:30 27/10 Lam Dong VS PVF-CAND",
+                    "id": "ch-7979381af0c4",
+                    "name": "⚽ 15:30 27/10 Lam Dong VS PVF-CAND [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0eab4ee6580a",
+                            "id": "src-7979381af0c4",
                             "contents": [
                                 {
-                                    "id": "ct-0eab4ee6580a",
+                                    "id": "ct-7979381af0c4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1634990/1634990"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-565ed7d9f0bb",
                     "name": "⚽ 17:00 27/10 Johor Darul Takzim FC VS Port FC",
