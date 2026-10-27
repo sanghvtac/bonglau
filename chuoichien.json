@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 28/10/2026)",
+    "name": "Chuoi Chien TV (05:55 28/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-ef8cd3cefad2",
-                    "name": "⚽ 06:00 28/10 Cucuta VS Rionegro Aguilas",
+                    "id": "ch-ea983f063cd9",
+                    "name": "⚽ 06:00 28/10 Cucuta VS Rionegro Aguilas [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ef8cd3cefad2",
+                            "id": "src-ea983f063cd9",
                             "contents": [
                                 {
-                                    "id": "ct-ef8cd3cefad2",
+                                    "id": "ct-ea983f063cd9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1549727/1549727"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-107a6a5b1f78",
                     "name": "⚽ 08:05 28/10 Chico VS Junior",
