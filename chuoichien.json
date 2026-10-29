@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:55 29/10/2026)",
+    "name": "Chuoi Chien TV (23:25 29/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-fdab7d569790",
-                    "name": "⚽ 23:30 29/10 CSKA Moscow VS Lokomotiv",
+                    "id": "ch-0d987e85824f",
+                    "name": "⚽ 23:30 29/10 CSKA Moscow VS Lokomotiv [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fdab7d569790",
+                            "id": "src-0d987e85824f",
                             "contents": [
                                 {
-                                    "id": "ct-fdab7d569790",
+                                    "id": "ct-0d987e85824f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1563668/1563668"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-38435dbaf7e9",
                     "name": "⚽ 00:30 30/10 Frosinone VS Lecce",
