@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 31/10/2026)",
+    "name": "Chuoi Chien TV (00:55 31/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d5a02be46bb2",
-                    "name": "⚽ 01:00 31/10 LE Havre VS Paris Saint Germain",
+                    "id": "ch-9de5423f97ee",
+                    "name": "⚽ 01:00 31/10 LE Havre VS Paris Saint Germain [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d5a02be46bb2",
+                            "id": "src-9de5423f97ee",
                             "contents": [
                                 {
-                                    "id": "ct-d5a02be46bb2",
+                                    "id": "ct-9de5423f97ee",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1552801/1552801"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-bc410a7a6f02",
                     "name": "⚽ 02:30 31/10 SV Elversberg VS FSV Mainz 05",
