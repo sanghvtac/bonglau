@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (02:25 31/10/2026)",
+    "name": "Chuoi Chien TV (02:55 31/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-046681ef7d02",
-                    "name": "⚽ 00:30 31/10 Energie Cottbus VS VfL Bochum [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1576216.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-046681ef7d02",
-                            "contents": [
-                                {
-                                    "id": "ct-046681ef7d02",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-9de5423f97ee",
-                    "name": "⚽ 01:00 31/10 LE Havre VS Paris Saint Germain [Chuối Lá - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552801.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9de5423f97ee",
-                            "contents": [
-                                {
-                                    "id": "ct-9de5423f97ee",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-e887c909818a",
                     "name": "⚽ 02:30 31/10 SV Elversberg VS FSV Mainz 05 [Trốc Tru - FHD1]",
@@ -133,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-50a80bf9994b",
-                    "name": "⚽ 03:00 31/10 Villarreal VS Espanyol",
+                    "id": "ch-f9e588a18f5a",
+                    "name": "⚽ 03:00 31/10 Villarreal VS Espanyol [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-50a80bf9994b",
+                            "id": "src-f9e588a18f5a",
                             "contents": [
                                 {
-                                    "id": "ct-50a80bf9994b",
+                                    "id": "ct-f9e588a18f5a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-d5a02be46bb2",
+                    "name": "⚽ 01:00 31/10 LE Havre VS Paris Saint Germain",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1552801.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-d5a02be46bb2",
+                            "contents": [
+                                {
+                                    "id": "ct-d5a02be46bb2",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1570442/1570442"
+                                                            "value": "https://live20.chuoichientv.com/live/1552801/1552801"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1575204/1575204"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-b939592d474b",
+                    "name": "⚽ 22:00 31/10 Bournemouth VS Leeds",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557448.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-b939592d474b",
+                            "contents": [
+                                {
+                                    "id": "ct-b939592d474b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1557448/1557448"
                                                         },
                                                         {
                                                             "key": "User-Agent",
