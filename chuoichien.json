@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:25 31/10/2026)",
+    "name": "Chuoi Chien TV (15:55 31/10/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-25d21b84b7ea",
-                    "name": "⚽ 13:35 31/10 NEC Red Rockets W VS Kurobe Aqua Fairies W [Chuối Tây - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/994393.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-25d21b84b7ea",
-                            "contents": [
-                                {
-                                    "id": "ct-25d21b84b7ea",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-f297e454b611",
                     "name": "⚽ 15:40 31/10 Macarthur VS Western Sydney Wanderers [Chuối Già - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-b30f59746e89",
-                    "name": "⚽ 16:00 31/10 Osaka Marvelous W VS Prestige Aranmare W",
+                    "id": "ch-96a47e8a174b",
+                    "name": "⚽ 16:00 31/10 Osaka Marvelous W VS Prestige Aranmare W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-b30f59746e89",
+                            "id": "src-96a47e8a174b",
                             "contents": [
                                 {
-                                    "id": "ct-b30f59746e89",
+                                    "id": "ct-96a47e8a174b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/995941/995941"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-95bc64627fdd",
                     "name": "⚽ 18:00 31/10 Hai Phong VS Trường Tươi Đồng Nai",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1549850/1549850"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-ee8edf4fdaf6",
+                    "name": "⚽ 08:30 01/11 Colorado Rapids VS Chicago Fire",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1490593.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-ee8edf4fdaf6",
+                            "contents": [
+                                {
+                                    "id": "ct-ee8edf4fdaf6",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1490593/1490593"
                                                         },
                                                         {
                                                             "key": "User-Agent",
