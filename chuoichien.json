@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 02/11/2026)",
+    "name": "Chuoi Chien TV (05:55 02/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-59b1e5f4c5ce",
-                    "name": "⚽ 06:10 02/11 Independiente Medellín VS Alianza Petrolera",
+                    "id": "ch-3aa397a4fa27",
+                    "name": "⚽ 06:10 02/11 Independiente Medellín VS Alianza Petrolera [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-59b1e5f4c5ce",
+                            "id": "src-3aa397a4fa27",
                             "contents": [
                                 {
-                                    "id": "ct-59b1e5f4c5ce",
+                                    "id": "ct-3aa397a4fa27",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1549848/1549848"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ed0e0768fb0d",
                     "name": "⚽ 07:00 02/11 New England Revolution VS Inter Miami",
