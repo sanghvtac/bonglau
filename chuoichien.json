@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 02/11/2026)",
+    "name": "Chuoi Chien TV (06:55 02/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ed0e0768fb0d",
-                    "name": "⚽ 07:00 02/11 New England Revolution VS Inter Miami",
+                    "id": "ch-a63d866a94c9",
+                    "name": "⚽ 07:00 02/11 New England Revolution VS Inter Miami [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ed0e0768fb0d",
+                            "id": "src-a63d866a94c9",
                             "contents": [
                                 {
-                                    "id": "ct-ed0e0768fb0d",
+                                    "id": "ct-a63d866a94c9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1490598/1490598"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c1c0dea83786",
                     "name": "⚽ 08:30 02/11 Los Angeles FC VS Minnesota United FC",
