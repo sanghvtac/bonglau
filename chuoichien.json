@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 02/11/2026)",
+    "name": "Chuoi Chien TV (17:55 02/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-953d13c4b42f",
-                    "name": "⚽ 17:45 02/11 Talant VS Asia Talas",
+                    "id": "ch-c67678fc1fa7",
+                    "name": "⚽ 17:45 02/11 Talant VS Asia Talas [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-953d13c4b42f",
+                            "id": "src-c67678fc1fa7",
                             "contents": [
                                 {
-                                    "id": "ct-953d13c4b42f",
+                                    "id": "ct-c67678fc1fa7",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1647241/1647241"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-c2ebf20d9f55",
                     "name": "⚽ 19:00 02/11 Chonburi FC VS Pathum United",
