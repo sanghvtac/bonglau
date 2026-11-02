@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:25 02/11/2026)",
+    "name": "Chuoi Chien TV (14:55 02/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-efda7b958b8d",
-                    "name": "⚽ 15:00 02/11 Tuv Azarganuud VS Deren",
+                    "id": "ch-74e909479303",
+                    "name": "⚽ 15:00 02/11 Tuv Azarganuud VS Deren [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-efda7b958b8d",
+                            "id": "src-74e909479303",
                             "contents": [
                                 {
-                                    "id": "ct-efda7b958b8d",
+                                    "id": "ct-74e909479303",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1646990/1646990"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-953d13c4b42f",
                     "name": "⚽ 17:45 02/11 Talant VS Asia Talas",
