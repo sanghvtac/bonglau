@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 04/11/2026)",
+    "name": "Chuoi Chien TV (22:55 04/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-44b80472d3ba",
-                    "name": "⚽ 20:45 04/11 Arkadag VS Gol Gohar [Chuối Tây - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1630393.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-44b80472d3ba",
-                            "contents": [
-                                {
-                                    "id": "ct-44b80472d3ba",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-279916aec3f3",
                     "name": "⚽ 22:00 04/11 Al Nasr VS Qatar SC [Chuối Nhỏ - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-c08f6fda3694",
-                    "name": "⚽ 23:00 04/11 Al Kuwait VS Nasaf",
+                    "id": "ch-225870a64cb5",
+                    "name": "⚽ 23:00 04/11 Al Kuwait VS Nasaf [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c08f6fda3694",
+                            "id": "src-225870a64cb5",
                             "contents": [
                                 {
-                                    "id": "ct-c08f6fda3694",
+                                    "id": "ct-225870a64cb5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630394/1630394"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1979de33e800",
-                    "name": "⚽ 23:00 04/11 Al-Rayyan SC VS Al-Nahda",
+                    "id": "ch-ad3bcb9e1b0c",
+                    "name": "⚽ 23:00 04/11 Al-Rayyan SC VS Al-Nahda [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1979de33e800",
+                            "id": "src-ad3bcb9e1b0c",
                             "contents": [
                                 {
-                                    "id": "ct-1979de33e800",
+                                    "id": "ct-ad3bcb9e1b0c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630395/1630395"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3135161254fc",
                     "name": "⚽ 00:45 05/11 AEK Athens FC VS Real Madrid",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1636208/1636208"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-5dbcc32281e2",
+                    "name": "⚽ 00:45 06/11 Anderlecht VS Red Bull Salzburg",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636211.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-5dbcc32281e2",
+                            "contents": [
+                                {
+                                    "id": "ct-5dbcc32281e2",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1636211/1636211"
                                                         },
                                                         {
                                                             "key": "User-Agent",
