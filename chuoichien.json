@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 06/11/2026)",
+    "name": "Chuoi Chien TV (16:55 06/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -91,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-dc97a23f342c",
-                    "name": "⚽ 17:00 06/11 Văn Hiến VS Bóng đá Huế",
+                    "id": "ch-3cbb80b4203c",
+                    "name": "⚽ 17:00 06/11 Văn Hiến VS Bóng đá Huế [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-dc97a23f342c",
+                            "id": "src-3cbb80b4203c",
                             "contents": [
                                 {
-                                    "id": "ct-dc97a23f342c",
+                                    "id": "ct-3cbb80b4203c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1635004/1635004"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-4b1f1ac00a4a",
                     "name": "⚽ 18:00 06/11 Hồng Lĩnh Hà Tĩnh VS Nam Dinh",
