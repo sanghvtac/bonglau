@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 07/11/2026)",
+    "name": "Chuoi Chien TV (10:55 07/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7e534117e7af",
-                    "name": "⚽ 11:00 07/11 Auckland VS Wellington Phoenix",
+                    "id": "ch-21958f2a0438",
+                    "name": "⚽ 11:00 07/11 Auckland VS Wellington Phoenix [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7e534117e7af",
+                            "id": "src-21958f2a0438",
                             "contents": [
                                 {
-                                    "id": "ct-7e534117e7af",
+                                    "id": "ct-21958f2a0438",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1593699/1593699"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-bc0522f78918",
-                    "name": "⚽ 11:05 07/11 Toray Arrows W VS Gunma Bank Green Wings W",
+                    "id": "ch-752462b42b92",
+                    "name": "⚽ 11:05 07/11 Toray Arrows W VS Gunma Bank Green Wings W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-bc0522f78918",
+                            "id": "src-752462b42b92",
                             "contents": [
                                 {
-                                    "id": "ct-bc0522f78918",
+                                    "id": "ct-752462b42b92",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991042/991042"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-e22576036af0",
                     "name": "⚽ 12:05 07/11 Body Queenseis W VS Okayama Seagulls W",
