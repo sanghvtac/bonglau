@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:55 07/11/2026)",
+    "name": "Chuoi Chien TV (14:25 07/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-070ce1592b0b",
-                    "name": "⚽ 14:30 07/11 Gimcheon Sangmu FC VS FC Anyang",
+                    "id": "ch-b05ecd79e713",
+                    "name": "⚽ 14:30 07/11 Gimcheon Sangmu FC VS FC Anyang [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-070ce1592b0b",
+                            "id": "src-b05ecd79e713",
                             "contents": [
                                 {
-                                    "id": "ct-070ce1592b0b",
+                                    "id": "ct-b05ecd79e713",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1647394/1647394"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-34508bbb96f1",
                     "name": "⚽ 15:30 07/11 Hwacheon KSPO VS Hồ Chí Minh City W",
