@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 09/11/2026)",
+    "name": "Chuoi Chien TV (07:55 09/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-cb11329984cd",
-                    "name": "⚽ 08:15 09/11 Alianza Petrolera VS Llaneros",
+                    "id": "ch-7d5db64f61c6",
+                    "name": "⚽ 08:15 09/11 Alianza Petrolera VS Llaneros [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-cb11329984cd",
+                            "id": "src-7d5db64f61c6",
                             "contents": [
                                 {
-                                    "id": "ct-cb11329984cd",
+                                    "id": "ct-7d5db64f61c6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1549853/1549853"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2480ab5688aa",
                     "name": "⚽ 09:00 09/11 Leon VS Guadalajara Chivas",
@@ -309,6 +309,48 @@
                     ]
                 },
                 {
+                    "id": "ch-caab24ba172b",
+                    "name": "⚽ 22:00 09/11 CS Dinamo București VS CSM Ramnicu Valcea",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1602544.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-caab24ba172b",
+                            "contents": [
+                                {
+                                    "id": "ct-caab24ba172b",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1602544/1602544"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "id": "ch-92e7a3149d49",
                     "name": "⚽ 22:00 09/11 Masr VS Samanod",
                     "type": "single",
@@ -335,48 +377,6 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1648305/1648305"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-be513780a468",
-                    "name": "⚽ 22:00 09/11 Ikorodu City VS Inter Lagos",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/994029.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-be513780a468",
-                            "contents": [
-                                {
-                                    "id": "ct-be513780a468",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994029/994029"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -561,22 +561,22 @@
                     ]
                 },
                 {
-                    "id": "ch-4f4b97fde023",
-                    "name": "⚽ 05:00 10/11 Chapelton VS Racing United",
+                    "id": "ch-2d53b8d22676",
+                    "name": "⚽ 05:30 10/11 Sportivo Luqueno VS 2 de Mayo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/994594.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1632060.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-4f4b97fde023",
+                            "id": "src-2d53b8d22676",
                             "contents": [
                                 {
-                                    "id": "ct-4f4b97fde023",
+                                    "id": "ct-2d53b8d22676",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -586,7 +586,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994594/994594"
+                                                            "value": "https://live20.chuoichientv.com/live/1632060/1632060"
                                                         },
                                                         {
                                                             "key": "User-Agent",
