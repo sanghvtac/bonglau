@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 10/11/2026)",
+    "name": "Chuoi Chien TV (00:55 10/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-9ba8f7b58668",
-                    "name": "⚽ 23:00 09/11 Saburtalo VS Gagra [Chuối Tây - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1509214.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-9ba8f7b58668",
-                            "contents": [
-                                {
-                                    "id": "ct-9ba8f7b58668",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-11dd4aba2e81",
                     "name": "⚽ 23:30 09/11 Veles VS KAMAZ [Chuối Già - FHD1]",
@@ -72,6 +30,48 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-46b25bdc26df",
+                    "name": "⚽ 01:00 10/11 FC Botosani VS Oţelul [Chuối Tây - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1565299.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-46b25bdc26df",
+                            "contents": [
+                                {
+                                    "id": "ct-46b25bdc26df",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -183,22 +183,22 @@
                     ]
                 },
                 {
-                    "id": "ch-d68a6fcbcad9",
-                    "name": "⚽ 01:00 10/11 FC Botosani VS Oţelul",
+                    "id": "ch-ce1a776952b4",
+                    "name": "⚽ 23:00 09/11 Saburtalo VS Gagra",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1565299.png",
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1509214.png",
                         "display": "contain",
                         "padding": 1,
                         "background_color": "#ececec"
                     },
                     "sources": [
                         {
-                            "id": "src-d68a6fcbcad9",
+                            "id": "src-ce1a776952b4",
                             "contents": [
                                 {
-                                    "id": "ct-d68a6fcbcad9",
+                                    "id": "ct-ce1a776952b4",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +208,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1565299/1565299"
+                                                            "value": "https://live20.chuoichientv.com/live/1509214/1509214"
                                                         },
                                                         {
                                                             "key": "User-Agent",
