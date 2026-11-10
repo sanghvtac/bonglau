@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 10/11/2026)",
+    "name": "Chuoi Chien TV (16:55 10/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7f46ce14466e",
-                    "name": "⚽ 15:00 10/11 U23 Qatar VS Singapore U23 [Chuối Sấy - FHD1]",
+                    "id": "ch-8b1ab545f11d",
+                    "name": "⚽ 15:00 10/11 U23 Qatar VS Singapore U23",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7f46ce14466e",
+                            "id": "src-8b1ab545f11d",
                             "contents": [
                                 {
-                                    "id": "ct-7f46ce14466e",
+                                    "id": "ct-8b1ab545f11d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1649005/1649005"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -51,8 +56,8 @@
                     ]
                 },
                 {
-                    "id": "ch-7fba04d943cd",
-                    "name": "⚽ 15:00 10/11 Deren VS Ulaanbaatar [Chuối Tây - FHD1]",
+                    "id": "ch-f98e80e74072",
+                    "name": "⚽ 15:00 10/11 Deren VS Ulaanbaatar",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -63,20 +68,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7fba04d943cd",
+                            "id": "src-f98e80e74072",
                             "contents": [
                                 {
-                                    "id": "ct-7fba04d943cd",
+                                    "id": "ct-f98e80e74072",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1646998/1646998"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -91,13 +96,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-4ee3661a9b10",
                     "name": "⚽ 19:00 10/11 U23 Vietnam  VS U23 Thailand ",
