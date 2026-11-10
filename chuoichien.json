@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 11/11/2026)",
+    "name": "Chuoi Chien TV (00:55 11/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-27a1e9e77a5e",
-                    "name": "⚽ 00:45 11/11 Real Madrid W VS Paris FC W",
+                    "id": "ch-ae5981dc7ea1",
+                    "name": "⚽ 00:45 11/11 Real Madrid W VS Paris FC W [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-27a1e9e77a5e",
+                            "id": "src-ae5981dc7ea1",
                             "contents": [
                                 {
-                                    "id": "ct-27a1e9e77a5e",
+                                    "id": "ct-ae5981dc7ea1",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638332/1638332"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-f7664a5b1243",
                     "name": "⚽ 03:00 11/11 Inter Milano W VS Manchester City W",
