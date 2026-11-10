@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 10/11/2026)",
+    "name": "Chuoi Chien TV (18:55 10/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-4ee3661a9b10",
-                    "name": "⚽ 19:00 10/11 U23 Vietnam  VS U23 Thailand ",
+                    "id": "ch-af88477f6f39",
+                    "name": "⚽ 19:00 10/11 U23 Vietnam  VS U23 Thailand  [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4ee3661a9b10",
+                            "id": "src-af88477f6f39",
                             "contents": [
                                 {
-                                    "id": "ct-4ee3661a9b10",
+                                    "id": "ct-af88477f6f39",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1649006/1649006"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-615d5c7fd863",
                     "name": "⚽ 20:00 10/11 Hull City U21 VS Fleetwood Town U21",
