@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 10/11/2026)",
+    "name": "Chuoi Chien TV (19:55 10/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-615d5c7fd863",
-                    "name": "⚽ 20:00 10/11 Hull City U21 VS Fleetwood Town U21",
+                    "id": "ch-2a63d6ef434f",
+                    "name": "⚽ 20:00 10/11 Hull City U21 VS Fleetwood Town U21 [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-615d5c7fd863",
+                            "id": "src-2a63d6ef434f",
                             "contents": [
                                 {
-                                    "id": "ct-615d5c7fd863",
+                                    "id": "ct-2a63d6ef434f",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1619186/1619186"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1ae0a106174d",
                     "name": "⚽ 21:00 10/11 Colchester United U21 VS Charlton Athletic U21",
