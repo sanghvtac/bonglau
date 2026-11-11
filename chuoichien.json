@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:25 11/11/2026)",
+    "name": "Chuoi Chien TV (14:55 11/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-552fc523437b",
-                    "name": "⚽ 15:00 11/11 Maldives U17 VS Hong Kong U17",
+                    "id": "ch-e275ec971156",
+                    "name": "⚽ 15:00 11/11 Maldives U17 VS Hong Kong U17 [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-552fc523437b",
+                            "id": "src-e275ec971156",
                             "contents": [
                                 {
-                                    "id": "ct-552fc523437b",
+                                    "id": "ct-e275ec971156",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1638009/1638009"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b28c79c72193",
                     "name": "⚽ 15:30 11/11 Philippines U17 VS Indonesia U17",
