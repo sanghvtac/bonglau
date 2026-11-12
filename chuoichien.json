@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:25 12/11/2026)",
+    "name": "Chuoi Chien TV (09:55 12/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-fee9519a0681",
-                    "name": "⚽ 10:00 12/11 Pachuca W VS Monterrey W",
+                    "id": "ch-52ed31e7a5b3",
+                    "name": "⚽ 10:00 12/11 Pachuca W VS Monterrey W [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fee9519a0681",
+                            "id": "src-52ed31e7a5b3",
                             "contents": [
                                 {
-                                    "id": "ct-fee9519a0681",
+                                    "id": "ct-52ed31e7a5b3",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994936/994936"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1db7385f8703",
                     "name": "⚽ 13:00 12/11 New Zealand VS India",
