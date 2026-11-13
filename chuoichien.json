@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (20:25 13/11/2026)",
+    "name": "Chuoi Chien TV (20:55 13/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b029fafbb727",
-                    "name": "⚽ 19:00 13/11 Singapore VS Paraguay [Chuối Sấy - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1640083.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b029fafbb727",
-                            "contents": [
-                                {
-                                    "id": "ct-b029fafbb727",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-d46842a88e6d",
                     "name": "⚽ 20:00 13/11 Comoros VS Congo [Chuối Lá - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-010e1ac8c938",
-                    "name": "⚽ 21:00 13/11 Kuwait VS Syria",
+                    "id": "ch-0809a55251f5",
+                    "name": "⚽ 21:00 13/11 Kuwait VS Syria [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-010e1ac8c938",
+                            "id": "src-0809a55251f5",
                             "contents": [
                                 {
-                                    "id": "ct-010e1ac8c938",
+                                    "id": "ct-0809a55251f5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-fd3933955024",
+                    "name": "⚽ 19:00 13/11 Singapore VS Paraguay",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1640083.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-fd3933955024",
+                            "contents": [
+                                {
+                                    "id": "ct-fd3933955024",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1649542/1649542"
+                                                            "value": "https://live20.chuoichientv.com/live/1640083/1640083"
                                                         },
                                                         {
                                                             "key": "User-Agent",
