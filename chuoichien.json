@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:25 13/11/2026)",
+    "name": "Chuoi Chien TV (19:55 13/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-5a111a72efc9",
-                    "name": "⚽ 20:00 13/11 Comoros VS Congo",
+                    "id": "ch-d46842a88e6d",
+                    "name": "⚽ 20:00 13/11 Comoros VS Congo [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5a111a72efc9",
+                            "id": "src-d46842a88e6d",
                             "contents": [
                                 {
-                                    "id": "ct-5a111a72efc9",
+                                    "id": "ct-d46842a88e6d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545868/1545868"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-151559833151",
-                    "name": "⚽ 20:00 13/11 Mozambique VS Ethiopia",
+                    "id": "ch-a80f297d98d0",
+                    "name": "⚽ 20:00 13/11 Mozambique VS Ethiopia [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-151559833151",
+                            "id": "src-a80f297d98d0",
                             "contents": [
                                 {
-                                    "id": "ct-151559833151",
+                                    "id": "ct-a80f297d98d0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545879/1545879"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-010e1ac8c938",
                     "name": "⚽ 21:00 13/11 Kuwait VS Syria",
