@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 14/11/2026)",
+    "name": "Chuoi Chien TV (15:25 14/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-78f9c28d0a55",
-                    "name": "⚽ 13:00 14/11 Central Coast Mariners W VS Perth Glory FC W [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1632124.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-78f9c28d0a55",
-                            "contents": [
-                                {
-                                    "id": "ct-78f9c28d0a55",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-b353c28c3abd",
                     "name": "⚽ 14:30 14/11 India U17 VS Guam U17 [Chuối Nhỏ - FHD1]",
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-e7cac1539308",
-                    "name": "⚽ 15:30 14/11 Bayswater City VS Sydney Olympic",
+                    "id": "ch-2b5d2d94efee",
+                    "name": "⚽ 15:30 14/11 Bayswater City VS Sydney Olympic [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e7cac1539308",
+                            "id": "src-2b5d2d94efee",
                             "contents": [
                                 {
-                                    "id": "ct-e7cac1539308",
+                                    "id": "ct-2b5d2d94efee",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640365/1640365"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -183,8 +135,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1d989d550601",
-                    "name": "⚽ 15:30 14/11 Việt Nam VS South Korea",
+                    "id": "ch-3150e938fda0",
+                    "name": "⚽ 15:30 14/11 Việt Nam VS South Korea [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1d989d550601",
+                            "id": "src-3150e938fda0",
                             "contents": [
                                 {
-                                    "id": "ct-1d989d550601",
+                                    "id": "ct-3150e938fda0",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/994292/994292"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ced33de84fa6",
                     "name": "⚽ 17:15 14/11 Japan VS Brazil",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1492312/1492312"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-a9bfefe2c5ed",
+                    "name": "⚽ 08:00 15/11 Wellington Phoenix W VS Sydney FC W",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1632125.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-a9bfefe2c5ed",
+                            "contents": [
+                                {
+                                    "id": "ct-a9bfefe2c5ed",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1632125/1632125"
                                                         },
                                                         {
                                                             "key": "User-Agent",
