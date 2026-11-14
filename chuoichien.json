@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:25 14/11/2026)",
+    "name": "Chuoi Chien TV (08:55 14/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-24595a94ac74",
-                    "name": "⚽ 09:00 14/11 Guatemala VS Canada",
+                    "id": "ch-5f3b761b9f99",
+                    "name": "⚽ 09:00 14/11 Guatemala VS Canada [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-24595a94ac74",
+                            "id": "src-5f3b761b9f99",
                             "contents": [
                                 {
-                                    "id": "ct-24595a94ac74",
+                                    "id": "ct-5f3b761b9f99",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1644692/1644692"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1ae66f02bf1e",
                     "name": "⚽ 11:00 14/11 Melbourne Victory W VS Adelaide United W",
