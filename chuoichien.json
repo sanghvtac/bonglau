@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 14/11/2026)",
+    "name": "Chuoi Chien TV (10:55 14/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1ae66f02bf1e",
-                    "name": "⚽ 11:00 14/11 Melbourne Victory W VS Adelaide United W",
+                    "id": "ch-fd98643ab3ae",
+                    "name": "⚽ 11:00 14/11 Melbourne Victory W VS Adelaide United W [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1ae66f02bf1e",
+                            "id": "src-fd98643ab3ae",
                             "contents": [
                                 {
-                                    "id": "ct-1ae66f02bf1e",
+                                    "id": "ct-fd98643ab3ae",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1632123/1632123"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-148bff9b7b70",
-                    "name": "⚽ 11:05 14/11 Hisamitsu Springs W VS PFU Blue Cats W",
+                    "id": "ch-dedafc59ff73",
+                    "name": "⚽ 11:05 14/11 Hisamitsu Springs W VS PFU Blue Cats W [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-148bff9b7b70",
+                            "id": "src-dedafc59ff73",
                             "contents": [
                                 {
-                                    "id": "ct-148bff9b7b70",
+                                    "id": "ct-dedafc59ff73",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/999270/999270"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-80b51896a649",
                     "name": "⚽ 12:05 14/11 Okayama Seagulls W VS NEC Red Rockets W",
