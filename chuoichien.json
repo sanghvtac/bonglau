@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 14/11/2026)",
+    "name": "Chuoi Chien TV (16:55 14/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,90 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-b353c28c3abd",
-                    "name": "⚽ 14:30 14/11 India U17 VS Guam U17 [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1638017.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-b353c28c3abd",
-                            "contents": [
-                                {
-                                    "id": "ct-b353c28c3abd",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-cc0abd0de003",
-                    "name": "⚽ 15:00 14/11 U23 Thailand  VS Singapore U23 [Chuối Kem - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1649017.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-cc0abd0de003",
-                            "contents": [
-                                {
-                                    "id": "ct-cc0abd0de003",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-2b5d2d94efee",
                     "name": "⚽ 15:30 14/11 Bayswater City VS Sydney Olympic [Chuối Già - FHD1]",
@@ -175,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-ced33de84fa6",
-                    "name": "⚽ 17:15 14/11 Japan VS Brazil",
+                    "id": "ch-b65be5ba9097",
+                    "name": "⚽ 17:15 14/11 Japan VS Brazil [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-ced33de84fa6",
+                            "id": "src-b65be5ba9097",
                             "contents": [
                                 {
-                                    "id": "ct-ced33de84fa6",
+                                    "id": "ct-b65be5ba9097",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-471559916a79",
+                    "name": "⚽ 15:00 14/11 U23 Thailand  VS Singapore U23",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1649017.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-471559916a79",
+                            "contents": [
+                                {
+                                    "id": "ct-471559916a79",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -208,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640086/1640086"
+                                                            "value": "https://live20.chuoichientv.com/live/1649017/1649017"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1632125/1632125"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-1d51d8363932",
+                    "name": "⚽ 08:00 15/11 Jamaica VS Mexico",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1644691.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-1d51d8363932",
+                            "contents": [
+                                {
+                                    "id": "ct-1d51d8363932",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1644691/1644691"
                                                         },
                                                         {
                                                             "key": "User-Agent",
