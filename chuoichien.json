@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:25 16/11/2026)",
+    "name": "Chuoi Chien TV (05:55 16/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-e5a50cffdf64",
-                    "name": "⚽ 06:00 16/11 Panama VS Curaçao",
+                    "id": "ch-21633d53d0ee",
+                    "name": "⚽ 06:00 16/11 Panama VS Curaçao [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e5a50cffdf64",
+                            "id": "src-21633d53d0ee",
                             "contents": [
                                 {
-                                    "id": "ct-e5a50cffdf64",
+                                    "id": "ct-21633d53d0ee",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1644696/1644696"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-41c041b1db18",
                     "name": "⚽ 07:00 16/11 New Mexico United VS Sacramento Republic",
