@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (23:25 15/11/2026)",
+    "name": "Chuoi Chien TV (23:55 15/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1793cb971a0e",
-                    "name": "⚽ 00:00 16/11 Belarus VS Albania",
+                    "id": "ch-084cb000384e",
+                    "name": "⚽ 00:00 16/11 Belarus VS Albania [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1793cb971a0e",
+                            "id": "src-084cb000384e",
                             "contents": [
                                 {
-                                    "id": "ct-1793cb971a0e",
+                                    "id": "ct-084cb000384e",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528980/1528980"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-54c3288dbff9",
-                    "name": "⚽ 00:00 16/11 Finland VS San Marino",
+                    "id": "ch-6408249de274",
+                    "name": "⚽ 00:00 16/11 Finland VS San Marino [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-54c3288dbff9",
+                            "id": "src-6408249de274",
                             "contents": [
                                 {
-                                    "id": "ct-54c3288dbff9",
+                                    "id": "ct-6408249de274",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1528981/1528981"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-28281439d9aa",
                     "name": "⚽ 00:30 16/11 Eibar VS Cadiz",
