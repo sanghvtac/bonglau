@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 17/11/2026)",
+    "name": "Chuoi Chien TV (06:55 17/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-fd1faf104e99",
-                    "name": "⚽ 07:00 17/11 Martinique VS Aruba",
+                    "id": "ch-7a41cf7044b6",
+                    "name": "⚽ 07:00 17/11 Martinique VS Aruba [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-fd1faf104e99",
+                            "id": "src-7a41cf7044b6",
                             "contents": [
                                 {
-                                    "id": "ct-fd1faf104e99",
+                                    "id": "ct-7a41cf7044b6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1649033/1649033"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d35af7339a38",
                     "name": "⚽ 08:00 17/11 Canada VS Guatemala",
