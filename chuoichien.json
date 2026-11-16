@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (17:25 16/11/2026)",
+    "name": "Chuoi Chien TV (17:55 16/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-2c24cd6ff3e2",
-                    "name": "⚽ 18:00 16/11 Uzbekistan U20 VS Venezuela U20",
+                    "id": "ch-d48ad91d7945",
+                    "name": "⚽ 18:00 16/11 Uzbekistan U20 VS Venezuela U20 [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-2c24cd6ff3e2",
+                            "id": "src-d48ad91d7945",
                             "contents": [
                                 {
-                                    "id": "ct-2c24cd6ff3e2",
+                                    "id": "ct-d48ad91d7945",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/991775/991775"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-0031382b458d",
                     "name": "⚽ 20:00 16/11 Namibia VS Cameroon",
