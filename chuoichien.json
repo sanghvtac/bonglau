@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (01:25 17/11/2026)",
+    "name": "Chuoi Chien TV (01:55 17/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-dc334f7119d3",
-                    "name": "⚽ 00:00 17/11 Estonia VS Bulgaria [Chuối Lửa - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528988.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-dc334f7119d3",
-                            "contents": [
-                                {
-                                    "id": "ct-dc334f7119d3",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-91755ede7233",
                     "name": "⚽ 00:00 17/11 Lithuania VS Liechtenstein [Trốc Tru - FHD1]",
@@ -91,10 +49,58 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-89b97e3e17a0",
+                    "name": "⚽ 00:00 17/11 Estonia VS Bulgaria",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1528988.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-89b97e3e17a0",
+                            "contents": [
+                                {
+                                    "id": "ct-89b97e3e17a0",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1528988/1528988"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "id": "ch-3b71c5de041c",
-                    "name": "⚽ 00:00 17/11 Iceland VS Luxembourg [Chuối Già - FHD1]",
+                    "id": "ch-ae43bbd3be97",
+                    "name": "⚽ 00:00 17/11 Iceland VS Luxembourg",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -105,58 +111,10 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3b71c5de041c",
+                            "id": "src-ae43bbd3be97",
                             "contents": [
                                 {
-                                    "id": "ct-3b71c5de041c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-4beee9afa4df",
-                    "name": "⚽ 23:00 16/11 Central African Republic VS Benin",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545888.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-4beee9afa4df",
-                            "contents": [
-                                {
-                                    "id": "ct-4beee9afa4df",
+                                    "id": "ct-ae43bbd3be97",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,49 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545888/1545888"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-71919341df40",
-                    "name": "⚽ 23:00 16/11 Eritrea VS Guinea",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1545890.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-71919341df40",
-                            "contents": [
-                                {
-                                    "id": "ct-71919341df40",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1545890/1545890"
+                                                            "value": "https://live20.chuoichientv.com/live/1545617/1545617"
                                                         },
                                                         {
                                                             "key": "User-Agent",
