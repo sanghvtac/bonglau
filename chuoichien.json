@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 18/11/2026)",
+    "name": "Chuoi Chien TV (13:55 18/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-a54b51e1dbb8",
-                    "name": "⚽ 12:00 18/11 Albirex Niigata W VS Elfen Saitama W [Chuối Tây - FHD1]",
+                    "id": "ch-70325ddffe96",
+                    "name": "⚽ 12:00 18/11 Albirex Niigata W VS Elfen Saitama W",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a54b51e1dbb8",
+                            "id": "src-70325ddffe96",
                             "contents": [
                                 {
-                                    "id": "ct-a54b51e1dbb8",
+                                    "id": "ct-70325ddffe96",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1560979/1560979"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-e4812e4cf562",
                     "name": "⚽ 15:30 18/11 Persibangga Purbalingga VS Persibo",
