@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 19/11/2026)",
+    "name": "Chuoi Chien TV (15:25 19/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-992ad9ac6bc3",
-                    "name": "⚽ 15:30 19/11 Preston Lions VS South Hobart",
+                    "id": "ch-b60b639b7867",
+                    "name": "⚽ 15:30 19/11 Preston Lions VS South Hobart [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-992ad9ac6bc3",
+                            "id": "src-b60b639b7867",
                             "contents": [
                                 {
-                                    "id": "ct-992ad9ac6bc3",
+                                    "id": "ct-b60b639b7867",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640368/1640368"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-f91644492d81",
-                    "name": "⚽ 15:30 19/11 Lions VS Wollongong Wolves",
+                    "id": "ch-ac161db5109b",
+                    "name": "⚽ 15:30 19/11 Lions VS Wollongong Wolves [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f91644492d81",
+                            "id": "src-ac161db5109b",
                             "contents": [
                                 {
-                                    "id": "ct-f91644492d81",
+                                    "id": "ct-ac161db5109b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1640369/1640369"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-abab5bb9a825",
                     "name": "⚽ 16:00 19/11 Omiya Ardija Ventus W VS INAC Kobe Leonessa W",
