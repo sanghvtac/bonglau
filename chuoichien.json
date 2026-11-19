@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (08:55 19/11/2026)",
+    "name": "Chuoi Chien TV (09:25 19/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-03b03a3a9a85",
-                    "name": "⚽ 07:30 19/11 Corinthians VS Botafogo [Chuối Sấy - FHD1]",
+                    "id": "ch-4478b7706984",
+                    "name": "⚽ 07:30 19/11 Corinthians VS Botafogo",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-03b03a3a9a85",
+                            "id": "src-4478b7706984",
                             "contents": [
                                 {
-                                    "id": "ct-03b03a3a9a85",
+                                    "id": "ct-4478b7706984",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1492450/1492450"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-992ad9ac6bc3",
                     "name": "⚽ 15:30 19/11 Preston Lions VS South Hobart",
