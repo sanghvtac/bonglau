@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 20/11/2026)",
+    "name": "Chuoi Chien TV (18:55 20/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -30,48 +30,6 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-82068412cb09",
-                    "name": "⚽ 17:00 20/11 TP. Hồ Chí Minh VS Thai Nguyen [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1635011.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-82068412cb09",
-                            "contents": [
-                                {
-                                    "id": "ct-82068412cb09",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -133,16 +91,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-f780bd4d193e",
-                    "name": "⚽ 19:15 20/11 Viettel VS Song Lam Nghe An",
+                    "id": "ch-772e627fd23d",
+                    "name": "⚽ 19:15 20/11 Viettel VS Song Lam Nghe An [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,10 +105,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f780bd4d193e",
+                            "id": "src-772e627fd23d",
                             "contents": [
                                 {
-                                    "id": "ct-f780bd4d193e",
+                                    "id": "ct-772e627fd23d",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-19e50d147fc5",
+                    "name": "⚽ 17:00 20/11 TP. Hồ Chí Minh VS Thai Nguyen",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1635011.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-19e50d147fc5",
+                            "contents": [
+                                {
+                                    "id": "ct-19e50d147fc5",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -166,7 +166,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1633936/1633936"
+                                                            "value": "https://live20.chuoichientv.com/live/1635011/1635011"
                                                         },
                                                         {
                                                             "key": "User-Agent",
