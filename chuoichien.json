@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 21/11/2026)",
+    "name": "Chuoi Chien TV (04:55 21/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-a384c2df60d5",
-                    "name": "⚽ 03:00 21/11 Athletic Club VS Espanyol [Trốc Tru - FHD1]",
+                    "id": "ch-44756dcf7ea2",
+                    "name": "⚽ 03:00 21/11 Athletic Club VS Espanyol",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,58 +26,10 @@
                     },
                     "sources": [
                         {
-                            "id": "src-a384c2df60d5",
+                            "id": "src-44756dcf7ea2",
                             "contents": [
                                 {
-                                    "id": "ct-a384c2df60d5",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-12fa52eaff31",
-                    "name": "⚽ 02:30 21/11 Bayern München VS 1.FC Köln",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575221.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-12fa52eaff31",
-                            "contents": [
-                                {
-                                    "id": "ct-12fa52eaff31",
+                                    "id": "ct-44756dcf7ea2",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -82,7 +39,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1575221/1575221"
+                                                            "value": "https://live20.chuoichientv.com/live/1570454/1570454"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -839,6 +796,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1550205/1550205"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-444449bb7d8a",
+                    "name": "⚽ 00:30 22/11 Newcastle VS Arsenal",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1557475.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-444449bb7d8a",
+                            "contents": [
+                                {
+                                    "id": "ct-444449bb7d8a",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1557475/1557475"
                                                         },
                                                         {
                                                             "key": "User-Agent",
