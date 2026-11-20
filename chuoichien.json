@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (11:55 20/11/2026)",
+    "name": "Chuoi Chien TV (12:25 20/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,10 +7,15 @@
         {
             "id": "live",
             "name": "🔴 Live",
+            "channels": []
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-59f0e081b498",
-                    "name": "⚽ 10:00 20/11 Seattle Sounders VS Real Salt Lake [Trốc Tru - FHD1]",
+                    "id": "ch-293091e35b31",
+                    "name": "⚽ 10:00 20/11 Seattle Sounders VS Real Salt Lake",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -21,20 +26,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-59f0e081b498",
+                            "id": "src-293091e35b31",
                             "contents": [
                                 {
-                                    "id": "ct-59f0e081b498",
+                                    "id": "ct-293091e35b31",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1649492/1649492"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -49,13 +54,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-315424219a2d",
                     "name": "⚽ 12:50 20/11 Western Sydney Wanderers W VS Wellington Phoenix W",
