@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 22/11/2026)",
+    "name": "Chuoi Chien TV (15:25 22/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-e5e55e578266",
-                    "name": "⚽ 15:30 22/11 Isenmulang Kalteng VS Pusamania Borneo",
+                    "id": "ch-2e8e26a21eea",
+                    "name": "⚽ 15:30 22/11 Isenmulang Kalteng VS Pusamania Borneo [Chuối Già - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e5e55e578266",
+                            "id": "src-2e8e26a21eea",
                             "contents": [
                                 {
-                                    "id": "ct-e5e55e578266",
+                                    "id": "ct-2e8e26a21eea",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1622842/1622842"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-70a5e8429a0b",
                     "name": "⚽ 16:30 22/11 Kuala Lumpur FA VS Penang",
