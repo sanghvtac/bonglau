@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:55 23/11/2026)",
+    "name": "Chuoi Chien TV (19:25 23/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-5ce9cd8a24ff",
-                    "name": "⚽ 19:30 23/11 Spain U17 VS Fiji U17",
+                    "id": "ch-46ae7bd65bb4",
+                    "name": "⚽ 19:30 23/11 Spain U17 VS Fiji U17 [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-5ce9cd8a24ff",
+                            "id": "src-46ae7bd65bb4",
                             "contents": [
                                 {
-                                    "id": "ct-5ce9cd8a24ff",
+                                    "id": "ct-46ae7bd65bb4",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546178/1546178"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-1db086cb23b8",
-                    "name": "⚽ 19:30 23/11 Tajikistan U17 VS Croatia U17",
+                    "id": "ch-c19070d169c2",
+                    "name": "⚽ 19:30 23/11 Tajikistan U17 VS Croatia U17 [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1db086cb23b8",
+                            "id": "src-c19070d169c2",
                             "contents": [
                                 {
-                                    "id": "ct-1db086cb23b8",
+                                    "id": "ct-c19070d169c2",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546179/1546179"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-1c5794b7839b",
                     "name": "⚽ 20:00 23/11 Uzbekistan U17 VS Jamaica U17",
