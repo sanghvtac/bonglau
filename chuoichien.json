@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 23/11/2026)",
+    "name": "Chuoi Chien TV (22:55 23/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-74c4d5d7421d",
-                    "name": "⚽ 20:45 23/11 Neftchi VS Al-Hilal Saudi FC [Chuối Kem - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1629975.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-74c4d5d7421d",
-                            "contents": [
-                                {
-                                    "id": "ct-74c4d5d7421d",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-244b36ef3574",
                     "name": "⚽ 21:30 23/11 Italy U17 VS Côte d'Ivoire U17 [Chuối Lửa - FHD1]",
@@ -217,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d8cd90015432",
-                    "name": "⚽ 23:00 23/11 Al Ain VS Esteghlal FC",
+                    "id": "ch-deffa3dedcf6",
+                    "name": "⚽ 23:00 23/11 Al Ain VS Esteghlal FC [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d8cd90015432",
+                            "id": "src-deffa3dedcf6",
                             "contents": [
                                 {
-                                    "id": "ct-d8cd90015432",
+                                    "id": "ct-deffa3dedcf6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629976/1629976"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-7acd07f69fd0",
-                    "name": "⚽ 23:00 23/11 Al Shamal VS Al-Ahli Jeddah",
+                    "id": "ch-7dfdfbf9e3ce",
+                    "name": "⚽ 23:00 23/11 Al Shamal VS Al-Ahli Jeddah [Trốc Tru - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7acd07f69fd0",
+                            "id": "src-7dfdfbf9e3ce",
                             "contents": [
                                 {
-                                    "id": "ct-7acd07f69fd0",
+                                    "id": "ct-7dfdfbf9e3ce",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629977/1629977"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -307,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5bf5dfa27def",
                     "name": "⚽ 01:15 24/11 Al-Ittihad FC VS Pakhtakor",
@@ -881,6 +839,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1629985/1629985"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-e915a74e3556",
+                    "name": "⚽ 19:15 24/11 SHANGHAI SIPG VS Buriram United",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1629986.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e915a74e3556",
+                            "contents": [
+                                {
+                                    "id": "ct-e915a74e3556",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1629986/1629986"
                                                         },
                                                         {
                                                             "key": "User-Agent",
