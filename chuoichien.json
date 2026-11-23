@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (04:25 24/11/2026)",
+    "name": "Chuoi Chien TV (04:55 24/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-086122311f50",
-                    "name": "⚽ 02:45 24/11 Monza VS Fiorentina [Chuối Chao - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550203.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-086122311f50",
-                            "contents": [
-                                {
-                                    "id": "ct-086122311f50",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-99bfed66ae33",
                     "name": "⚽ 03:00 24/11 Brentford VS Everton [Chuối Già - FHD1]",
@@ -91,10 +49,16 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
-                    "id": "ch-3e67ef32435c",
-                    "name": "⚽ 03:00 24/11 Levante VS Elche [Trốc Tru - FHD1]",
+                    "id": "ch-3fa2ebf32290",
+                    "name": "⚽ 03:00 24/11 Levante VS Elche",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -105,20 +69,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-3e67ef32435c",
+                            "id": "src-3fa2ebf32290",
                             "contents": [
                                 {
-                                    "id": "ct-3e67ef32435c",
+                                    "id": "ct-3fa2ebf32290",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
+                                                    "url": "",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
+                                                            "value": "https://live20.chuoichientv.com/live/1570457/1570457"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -133,13 +97,7 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
                     "id": "ch-5ffa8b334e9e",
                     "name": "⚽ 05:30 24/11 Internacional VS Vitoria",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1563682/1563682"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-8af5f0741bd2",
+                    "name": "⚽ 00:45 25/11 Bodo/Glimt VS Lask Linz",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1635641.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-8af5f0741bd2",
+                            "contents": [
+                                {
+                                    "id": "ct-8af5f0741bd2",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1635641/1635641"
                                                         },
                                                         {
                                                             "key": "User-Agent",
