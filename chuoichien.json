@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (10:25 23/11/2026)",
+    "name": "Chuoi Chien TV (10:55 23/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-cc4a1e8c3a0a",
-                    "name": "⚽ 11:00 23/11 Albirex Niigata W VS Sanfrecce Hiroshima W",
+                    "id": "ch-6c1b26e21320",
+                    "name": "⚽ 11:00 23/11 Albirex Niigata W VS Sanfrecce Hiroshima W [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-cc4a1e8c3a0a",
+                            "id": "src-6c1b26e21320",
                             "contents": [
                                 {
-                                    "id": "ct-cc4a1e8c3a0a",
+                                    "id": "ct-6c1b26e21320",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1560985/1560985"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-5ce9cd8a24ff",
                     "name": "⚽ 19:30 23/11 Spain U17 VS Fiji U17",
