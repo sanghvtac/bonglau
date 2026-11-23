@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (06:25 24/11/2026)",
+    "name": "Chuoi Chien TV (06:55 24/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-1feb253504c4",
-                    "name": "⚽ 07:00 24/11 Santos VS Gremio",
+                    "id": "ch-a8daccf677d5",
+                    "name": "⚽ 07:00 24/11 Santos VS Gremio [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1feb253504c4",
+                            "id": "src-a8daccf677d5",
                             "contents": [
                                 {
-                                    "id": "ct-1feb253504c4",
+                                    "id": "ct-a8daccf677d5",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1492469/1492469"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-b984946418a9",
                     "name": "⚽ 08:00 24/11 St. Louis City VS Los Angeles FC",
