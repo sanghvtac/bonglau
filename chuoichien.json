@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:55 24/11/2026)",
+    "name": "Chuoi Chien TV (20:25 24/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -175,16 +175,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-d69d3a7bbfdd",
-                    "name": "⚽ 20:30 24/11 Mexico U17 VS Cameroon U17",
+                    "id": "ch-1bbd87793889",
+                    "name": "⚽ 20:30 24/11 Mexico U17 VS Cameroon U17 [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-d69d3a7bbfdd",
+                            "id": "src-1bbd87793889",
                             "contents": [
                                 {
-                                    "id": "ct-d69d3a7bbfdd",
+                                    "id": "ct-1bbd87793889",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546173/1546173"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +217,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-d22b130000c1",
                     "name": "⚽ 20:45 24/11 East Bengal II VS Al Hussein",
