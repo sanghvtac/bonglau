@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (05:55 25/11/2026)",
+    "name": "Chuoi Chien TV (06:25 25/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-7e3511213d75",
-                    "name": "⚽ 06:20 25/11 Millonarios VS Bucaramanga",
+                    "id": "ch-65929b2c9d47",
+                    "name": "⚽ 06:20 25/11 Millonarios VS Bucaramanga [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7e3511213d75",
+                            "id": "src-65929b2c9d47",
                             "contents": [
                                 {
-                                    "id": "ct-7e3511213d75",
+                                    "id": "ct-65929b2c9d47",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1650513/1650513"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-abc502d0479a",
                     "name": "⚽ 08:30 25/11 America de Cali VS Deportivo Cali",
