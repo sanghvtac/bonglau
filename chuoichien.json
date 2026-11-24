@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:25 24/11/2026)",
+    "name": "Chuoi Chien TV (14:55 24/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-1cbaf6ff38ad",
-                    "name": "⚽ 14:45 24/11 Newcastle Jets VS Kashiwa Reysol",
+                    "id": "ch-f5fe44c51963",
+                    "name": "⚽ 14:45 24/11 Newcastle Jets VS Kashiwa Reysol [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-1cbaf6ff38ad",
+                            "id": "src-f5fe44c51963",
                             "contents": [
                                 {
-                                    "id": "ct-1cbaf6ff38ad",
+                                    "id": "ct-f5fe44c51963",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1629981/1629981"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-fad99fc08741",
                     "name": "⚽ 16:00 24/11 Garudayaksa VS PSS Sleman",
