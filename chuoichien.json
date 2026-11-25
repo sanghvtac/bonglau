@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (19:55 25/11/2026)",
+    "name": "Chuoi Chien TV (20:25 25/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-ea2eff3eee8f",
-                    "name": "⚽ 18:00 25/11 Chiangmai United VS Mahasarakham United [Chuối Sấy - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1602747.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-ea2eff3eee8f",
-                            "contents": [
-                                {
-                                    "id": "ct-ea2eff3eee8f",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-646add4fc7d8",
                     "name": "⚽ 19:15 25/11 Persib Bandung VS FC Seoul [Chuối Nhỏ - FHD1]",
@@ -175,16 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-aaac605940f9",
-                    "name": "⚽ 20:30 25/11 Uruguay U17 VS France U17",
+                    "id": "ch-eb8b05e55c79",
+                    "name": "⚽ 20:30 25/11 Uruguay U17 VS France U17 [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -195,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-aaac605940f9",
+                            "id": "src-eb8b05e55c79",
                             "contents": [
                                 {
-                                    "id": "ct-aaac605940f9",
+                                    "id": "ct-eb8b05e55c79",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546203/1546203"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -223,7 +175,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-8b43b4924170",
                     "name": "⚽ 22:30 25/11 Denmark U17 VS Argentina U17",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1630417/1630417"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-02680b1d9a50",
+                    "name": "⚽ 19:15 26/11 Svay Rieng VS Machida Zelvia",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1630418.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-02680b1d9a50",
+                            "contents": [
+                                {
+                                    "id": "ct-02680b1d9a50",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1630418/1630418"
                                                         },
                                                         {
                                                             "key": "User-Agent",
