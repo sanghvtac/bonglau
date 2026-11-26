@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (18:25 26/11/2026)",
+    "name": "Chuoi Chien TV (18:55 26/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-6a82db1f238a",
-                    "name": "⚽ 17:00 26/11 Gangwon FC VS Kitchee [Chuối Tây - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1630414.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-6a82db1f238a",
-                            "contents": [
-                                {
-                                    "id": "ct-6a82db1f238a",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-75f8ccee86bf",
                     "name": "⚽ 17:00 26/11 Tampines Rovers VS Shanghai Shenhua [Chuối Sấy - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7cae5820f6c7",
-                    "name": "⚽ 19:15 26/11 Pathum United VS Lion City Sailors FC",
+                    "id": "ch-9e56ed975a0d",
+                    "name": "⚽ 19:15 26/11 Pathum United VS Lion City Sailors FC [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7cae5820f6c7",
+                            "id": "src-9e56ed975a0d",
                             "contents": [
                                 {
-                                    "id": "ct-7cae5820f6c7",
+                                    "id": "ct-9e56ed975a0d",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630417/1630417"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -141,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-02680b1d9a50",
-                    "name": "⚽ 19:15 26/11 Svay Rieng VS Machida Zelvia",
+                    "id": "ch-64520fa1062c",
+                    "name": "⚽ 19:15 26/11 Svay Rieng VS Machida Zelvia [Chuối Lửa - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -153,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-02680b1d9a50",
+                            "id": "src-64520fa1062c",
                             "contents": [
                                 {
-                                    "id": "ct-02680b1d9a50",
+                                    "id": "ct-64520fa1062c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630418/1630418"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -181,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a384ee1bfa43",
                     "name": "⚽ 20:00 26/11 Vietnam U17 VS Mali U17",
@@ -839,6 +797,48 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1633943/1633943"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-b7e9e85dfff5",
+                    "name": "⚽ 20:00 27/11 Honduras U17 VS Japan U17",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1546194.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-b7e9e85dfff5",
+                            "contents": [
+                                {
+                                    "id": "ct-b7e9e85dfff5",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1546194/1546194"
                                                         },
                                                         {
                                                             "key": "User-Agent",
