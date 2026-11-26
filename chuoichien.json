@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (00:25 27/11/2026)",
+    "name": "Chuoi Chien TV (00:55 27/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -30,6 +30,48 @@
                                             "stream_links": [
                                                 {
                                                     "url": "https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-447dc7e93b11",
+                    "name": "⚽ 00:45 27/11 Celta Vigo VS Bournemouth [Chuối Già - FHD1]",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636244.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-447dc7e93b11",
+                            "contents": [
+                                {
+                                    "id": "ct-447dc7e93b11",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
@@ -91,142 +133,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
-                {
-                    "id": "ch-38ef0f152a2c",
-                    "name": "⚽ 22:00 26/11 Morocco U17 VS Spain U17",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1546198.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-38ef0f152a2c",
-                            "contents": [
-                                {
-                                    "id": "ct-38ef0f152a2c",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546198/1546198"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 },
                 {
-                    "id": "ch-c2f425a86dc9",
-                    "name": "⚽ 22:30 26/11 Kairat Almaty VS Mjallby",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636435.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-c2f425a86dc9",
-                            "contents": [
-                                {
-                                    "id": "ct-c2f425a86dc9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636435/1636435"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-749d80e45df4",
-                    "name": "⚽ 00:45 27/11 Celta Vigo VS Bournemouth",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1636244.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-749d80e45df4",
-                            "contents": [
-                                {
-                                    "id": "ct-749d80e45df4",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636244/1636244"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "ch-e831d30141e0",
-                    "name": "⚽ 00:45 27/11 Olympiakos Piraeus VS AC Milan",
+                    "id": "ch-5a17fa573a3b",
+                    "name": "⚽ 00:45 27/11 Olympiakos Piraeus VS AC Milan [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -237,20 +147,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-e831d30141e0",
+                            "id": "src-5a17fa573a3b",
                             "contents": [
                                 {
-                                    "id": "ct-e831d30141e0",
+                                    "id": "ct-5a17fa573a3b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636307/1636307"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -267,8 +177,8 @@
                     ]
                 },
                 {
-                    "id": "ch-4ef87917ba31",
-                    "name": "⚽ 00:45 27/11 Brighton VS Universitatea Craiova",
+                    "id": "ch-485d9aee05fd",
+                    "name": "⚽ 00:45 27/11 Brighton VS Universitatea Craiova [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -279,20 +189,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-4ef87917ba31",
+                            "id": "src-485d9aee05fd",
                             "contents": [
                                 {
-                                    "id": "ct-4ef87917ba31",
+                                    "id": "ct-485d9aee05fd",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636395/1636395"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -309,8 +219,8 @@
                     ]
                 },
                 {
-                    "id": "ch-0c0e106d49fe",
-                    "name": "⚽ 00:45 27/11 Heart Of Midlothian VS Monaco",
+                    "id": "ch-14ae241d2bfc",
+                    "name": "⚽ 00:45 27/11 Heart Of Midlothian VS Monaco [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -321,20 +231,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-0c0e106d49fe",
+                            "id": "src-14ae241d2bfc",
                             "contents": [
                                 {
-                                    "id": "ct-0c0e106d49fe",
+                                    "id": "ct-14ae241d2bfc",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1636421/1636421"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -349,7 +259,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-3cfe91e3464e",
                     "name": "⚽ 03:00 27/11 Crystal Palace VS Real Sociedad",
@@ -839,6 +755,90 @@
                                                         {
                                                             "key": "Referer",
                                                             "value": "https://live20.chuoichientv.com/live/1603086/1603086"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-899d2ce7169f",
+                    "name": "⚽ 02:30 28/11 Werder Bremen VS Borussia Mönchengladbach",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1575237.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-899d2ce7169f",
+                            "contents": [
+                                {
+                                    "id": "ct-899d2ce7169f",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1575237/1575237"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "ch-3857dbf46eea",
+                    "name": "⚽ 02:45 28/11 Venezia VS Bologna",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1550216.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-3857dbf46eea",
+                            "contents": [
+                                {
+                                    "id": "ct-3857dbf46eea",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live20.chuoichientv.com/live/1550216/1550216"
                                                         },
                                                         {
                                                             "key": "User-Agent",
