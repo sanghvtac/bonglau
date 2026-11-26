@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (16:25 26/11/2026)",
+    "name": "Chuoi Chien TV (16:55 26/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-2592a5e5858a",
-                    "name": "⚽ 17:00 26/11 Gangwon FC VS Kitchee",
+                    "id": "ch-6a82db1f238a",
+                    "name": "⚽ 17:00 26/11 Gangwon FC VS Kitchee [Chuối Tây - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-2592a5e5858a",
+                            "id": "src-6a82db1f238a",
                             "contents": [
                                 {
-                                    "id": "ct-2592a5e5858a",
+                                    "id": "ct-6a82db1f238a",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630414/1630414"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -99,8 +93,8 @@
                     ]
                 },
                 {
-                    "id": "ch-33ad5937a763",
-                    "name": "⚽ 17:00 26/11 Tampines Rovers VS Shanghai Shenhua",
+                    "id": "ch-75f8ccee86bf",
+                    "name": "⚽ 17:00 26/11 Tampines Rovers VS Shanghai Shenhua [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +105,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-33ad5937a763",
+                            "id": "src-75f8ccee86bf",
                             "contents": [
                                 {
-                                    "id": "ct-33ad5937a763",
+                                    "id": "ct-75f8ccee86bf",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1630416/1630416"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +133,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-7cae5820f6c7",
                     "name": "⚽ 19:15 26/11 Pathum United VS Lion City Sailors FC",
