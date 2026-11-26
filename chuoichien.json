@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (14:55 26/11/2026)",
+    "name": "Chuoi Chien TV (15:25 26/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-f4dfcab9b2b7",
-                    "name": "⚽ 15:30 26/11 South Melbourne VS Oakleigh Cannons",
+                    "id": "ch-38470f2cdc11",
+                    "name": "⚽ 15:30 26/11 South Melbourne VS Oakleigh Cannons [Chuối Nhỏ - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-f4dfcab9b2b7",
+                            "id": "src-38470f2cdc11",
                             "contents": [
                                 {
-                                    "id": "ct-f4dfcab9b2b7",
+                                    "id": "ct-38470f2cdc11",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1651254/1651254"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -54,7 +49,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-2592a5e5858a",
                     "name": "⚽ 17:00 26/11 Gangwon FC VS Kitchee",
