@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (09:25 27/11/2026)",
+    "name": "Chuoi Chien TV (09:55 27/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-51420aa0238f",
-                    "name": "⚽ 10:10 27/11 Leon VS Cruz Azul",
+                    "id": "ch-ffebc6f7055c",
+                    "name": "⚽ 10:10 27/11 Leon VS Cruz Azul [Chuối Chao - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-51420aa0238f",
+                            "id": "src-ffebc6f7055c",
                             "contents": [
                                 {
-                                    "id": "ct-51420aa0238f",
+                                    "id": "ct-ffebc6f7055c",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1651502/1651502"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-a504bae0df8d",
                     "name": "⚽ 15:40 27/11 Macarthur VS Melbourne City",
