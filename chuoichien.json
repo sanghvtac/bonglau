@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (22:25 27/11/2026)",
+    "name": "Chuoi Chien TV (22:55 27/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-96907cf4a108",
-                    "name": "⚽ 21:00 27/11 Costa Rica U17 VS Brazil U17 [Chuối Nhỏ - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1546188.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-96907cf4a108",
-                            "contents": [
-                                {
-                                    "id": "ct-96907cf4a108",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-a9ba423a2279",
                     "name": "⚽ 21:20 27/11 Al-Qadisiyah FC VS Al-Fayha [Chuối Lửa - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-16e820e96471",
-                    "name": "⚽ 23:00 27/11 Romania U17 VS Cameroon U17",
+                    "id": "ch-965b97068f75",
+                    "name": "⚽ 23:00 27/11 Romania U17 VS Cameroon U17 [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,10 +63,58 @@
                     },
                     "sources": [
                         {
-                            "id": "src-16e820e96471",
+                            "id": "src-965b97068f75",
                             "contents": [
                                 {
-                                    "id": "ct-16e820e96471",
+                                    "id": "ct-965b97068f75",
+                                    "streams": [
+                                        {
+                                            "stream_links": [
+                                                {
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
+                                                    "type": "hls",
+                                                    "request_headers": [
+                                                        {
+                                                            "key": "Referer",
+                                                            "value": "https://live.chuoichien.tv/"
+                                                        },
+                                                        {
+                                                            "key": "User-Agent",
+                                                            "value": "Mozilla/5.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
+                {
+                    "id": "ch-e26e065c283a",
+                    "name": "⚽ 21:00 27/11 Costa Rica U17 VS Brazil U17",
+                    "type": "single",
+                    "display": "thumbnail-only",
+                    "image": {
+                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1546188.png",
+                        "display": "contain",
+                        "padding": 1,
+                        "background_color": "#ececec"
+                    },
+                    "sources": [
+                        {
+                            "id": "src-e26e065c283a",
+                            "contents": [
+                                {
+                                    "id": "ct-e26e065c283a",
                                     "streams": [
                                         {
                                             "stream_links": [
@@ -124,7 +124,7 @@
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1546201/1546201"
+                                                            "value": "https://live20.chuoichientv.com/live/1546188/1546188"
                                                         },
                                                         {
                                                             "key": "User-Agent",
