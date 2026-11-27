@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (07:25 27/11/2026)",
+    "name": "Chuoi Chien TV (07:55 27/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -49,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-7951775a4f3b",
-                    "name": "⚽ 08:00 27/11 Pachuca VS Guadalajara Chivas",
+                    "id": "ch-a2eab9bb74a6",
+                    "name": "⚽ 08:00 27/11 Pachuca VS Guadalajara Chivas [Chuối Kem - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -69,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-7951775a4f3b",
+                            "id": "src-a2eab9bb74a6",
                             "contents": [
                                 {
-                                    "id": "ct-7951775a4f3b",
+                                    "id": "ct-a2eab9bb74a6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1651504/1651504"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -97,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-51420aa0238f",
                     "name": "⚽ 10:10 27/11 Leon VS Cruz Azul",
