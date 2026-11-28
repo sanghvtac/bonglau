@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (13:25 28/11/2026)",
+    "name": "Chuoi Chien TV (13:55 28/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -7,15 +7,10 @@
         {
             "id": "live",
             "name": "🔴 Live",
-            "channels": []
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
             "channels": [
                 {
-                    "id": "ch-c0436727092c",
-                    "name": "⚽ 14:00 28/11 Kashiwa Reysol VS Sanfrecce Hiroshima",
+                    "id": "ch-056e34805cf9",
+                    "name": "⚽ 14:00 28/11 Kashiwa Reysol VS Sanfrecce Hiroshima [Chuối Lá - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -26,20 +21,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-c0436727092c",
+                            "id": "src-056e34805cf9",
                             "contents": [
                                 {
-                                    "id": "ct-c0436727092c",
+                                    "id": "ct-056e34805cf9",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/1556162/1556162"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -56,8 +51,8 @@
                     ]
                 },
                 {
-                    "id": "ch-60ac9fd327f6",
-                    "name": "⚽ 14:00 28/11 Hồ Chí Minh Nữ VS Geleximco Hưng Yên",
+                    "id": "ch-7d11bc94915b",
+                    "name": "⚽ 14:00 28/11 Hồ Chí Minh Nữ VS Geleximco Hưng Yên [Chuối Lửa - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -68,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-60ac9fd327f6",
+                            "id": "src-7d11bc94915b",
                             "contents": [
                                 {
-                                    "id": "ct-60ac9fd327f6",
+                                    "id": "ct-7d11bc94915b",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/997208/997208"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -96,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-ab293f59bcf5",
                     "name": "⚽ 15:40 28/11 Central Coast Mariners VS Auckland",
