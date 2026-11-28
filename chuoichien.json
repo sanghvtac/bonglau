@@ -1,5 +1,5 @@
 {
-    "name": "Chuoi Chien TV (15:55 28/11/2026)",
+    "name": "Chuoi Chien TV (16:25 28/11/2026)",
     "image": {
         "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_WU7q-J42BJcIQWyyTv1ESYVbZkT4_xb6g&s"
     },
@@ -8,48 +8,6 @@
             "id": "live",
             "name": "🔴 Live",
             "channels": [
-                {
-                    "id": "ch-056e34805cf9",
-                    "name": "⚽ 14:00 28/11 Kashiwa Reysol VS Sanfrecce Hiroshima [Chuối Lá - FHD1]",
-                    "type": "single",
-                    "display": "thumbnail-only",
-                    "image": {
-                        "url": "https://raw.githubusercontent.com/sanghvtac/bonglau/refs/heads/main/thumbs/1556162.png",
-                        "display": "contain",
-                        "padding": 1,
-                        "background_color": "#ececec"
-                    },
-                    "sources": [
-                        {
-                            "id": "src-056e34805cf9",
-                            "contents": [
-                                {
-                                    "id": "ct-056e34805cf9",
-                                    "streams": [
-                                        {
-                                            "stream_links": [
-                                                {
-                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8",
-                                                    "type": "hls",
-                                                    "request_headers": [
-                                                        {
-                                                            "key": "Referer",
-                                                            "value": "https://live.chuoichien.tv/"
-                                                        },
-                                                        {
-                                                            "key": "User-Agent",
-                                                            "value": "Mozilla/5.0"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
                 {
                     "id": "ch-ea810fbb8268",
                     "name": "⚽ 15:40 28/11 Central Coast Mariners VS Auckland [Chuối Chao - FHD1]",
@@ -91,16 +49,10 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "upcoming",
-            "name": "🗓 Sắp diễn ra",
-            "channels": [
+                },
                 {
-                    "id": "ch-62f3aab1f2bb",
-                    "name": "⚽ 16:30 28/11 Đà Nẵng VS TP Hồ Chí Minh ",
+                    "id": "ch-186e8ad21eb6",
+                    "name": "⚽ 16:30 28/11 Đà Nẵng VS TP Hồ Chí Minh  [Chuối Sấy - FHD1]",
                     "type": "single",
                     "display": "thumbnail-only",
                     "image": {
@@ -111,20 +63,20 @@
                     },
                     "sources": [
                         {
-                            "id": "src-62f3aab1f2bb",
+                            "id": "src-186e8ad21eb6",
                             "contents": [
                                 {
-                                    "id": "ct-62f3aab1f2bb",
+                                    "id": "ct-186e8ad21eb6",
                                     "streams": [
                                         {
                                             "stream_links": [
                                                 {
-                                                    "url": "",
+                                                    "url": "https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8",
                                                     "type": "hls",
                                                     "request_headers": [
                                                         {
                                                             "key": "Referer",
-                                                            "value": "https://live20.chuoichientv.com/live/998936/998936"
+                                                            "value": "https://live.chuoichien.tv/"
                                                         },
                                                         {
                                                             "key": "User-Agent",
@@ -139,7 +91,13 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "upcoming",
+            "name": "🗓 Sắp diễn ra",
+            "channels": [
                 {
                     "id": "ch-6dd37bb4f842",
                     "name": "⚽ 18:00 28/11 TP. Hồ Chí Minh VS Hoang Anh Gia Lai",
